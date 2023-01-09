@@ -39,7 +39,7 @@ class SubcaseContext:
     def cmdArgs(self):
         arg_list = []
         for arg in self.args:
-            arg_list.append(f"--{arg} {self.args[arg]}")
+            arg_list.append(f"--{arg} \"{str(self.args[arg])}\"")
         return ' '.join(arg_list)
 
 
@@ -91,7 +91,8 @@ if __name__ == '__main__':
     if 'args' in testcase:
         for arg in testcase['args']:
             values = testcase['args'][arg]
-            parser.add_argument(f"--{arg}", action='store', choices=values)
+            str_values = [str(value) for value in testcase['args'][arg]]
+            parser.add_argument(f"--{arg}", action='store', choices=str_values)
             arg_name_list.append(arg)
             arg_value_list.append(values)
 
@@ -120,7 +121,7 @@ if __name__ == '__main__':
 
         for arg in arg_name_list:
             arg_value = getattr(cli_args, arg)
-            if arg_value is not None and arg_value != subcase[arg]:
+            if arg_value is not None and arg_value != str(subcase[arg]):
                 skip_subcase = True
 
         if skip_subcase:
@@ -248,7 +249,7 @@ if __name__ == '__main__':
             messages.append(f"    Subcase #{subcase_index + 1} FAILED:")
             messages.extend(["      " + msg for msg in subcase_messages])
             messages.append(f"      Run subcase with:")
-            messages.append(f"        clitest.py {cli_args.json_test_file} {ctx.cmdArgs()}")
+            messages.append(f"        clitest.py -e {cli_args.executable_path} {cli_args.json_test_file} {ctx.cmdArgs()}")
             subcases_failed += 1
             failed = True
 
