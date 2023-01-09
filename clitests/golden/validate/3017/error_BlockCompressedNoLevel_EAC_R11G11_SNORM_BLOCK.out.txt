@@ -1,2 +1,2 @@
 error-3017: Invalid levelCount. levelCount cannot be 0 for block-compressed formats.
-    levelCount is 0 but for block-compressed format VK_FORMAT_EAC_R11G11_SNORM_BLOCK it cannot be 0.
+    levelCount is 0 but for block-compressed format VK_FORMAT_EAC_R11G11_SNORM_BLOCK it must not be 0.

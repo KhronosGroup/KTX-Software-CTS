@@ -1,2 +1,2 @@
 fatal-1003: Unexpected end of file.
-    Unexpected end of file. Expected 80 more byte for the header but only found 67 byte.
+    Unexpected end of file. Cannot read 80 bytes at offset 0 to access the header as file size is only 67 bytes.
