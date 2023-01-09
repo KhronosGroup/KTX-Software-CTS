@@ -1,0 +1,2 @@
+error-3009: Invalid pixelHeight. pixelHeight cannot be 0 if pixelDepth is not also 0.
+    pixelHeight is 0 and pixelDepth is 4, but pixelHeight cannot be 0 if pixelDepth is not 0 as well.

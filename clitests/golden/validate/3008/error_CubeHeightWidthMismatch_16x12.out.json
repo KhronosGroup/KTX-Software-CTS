@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3008,
+            "type": "error",
+            "message": "Mismatching pixelWidth and pixelHeight for a cube map.",
+            "details": "pixelWidth is 16 and pixelHeight is 12, but for a cube map they must be equal."
+        }
+    ]
+}

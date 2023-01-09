@@ -1,0 +1,2 @@
+error-3007: Invalid pixelHeight. pixelHeight cannot be 0 for a block compressed formats.
+    pixelHeight is 0, but for block-compressed format VK_FORMAT_BC7_UNORM_BLOCK it cannot be 0.

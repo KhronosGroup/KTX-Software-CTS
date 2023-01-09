@@ -1,0 +1,2 @@
+error-3019: Invalid supercompressionScheme.
+    Invalid supercompressionScheme: 0x20000.

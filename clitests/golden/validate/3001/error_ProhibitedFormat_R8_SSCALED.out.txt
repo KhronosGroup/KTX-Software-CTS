@@ -1,0 +1,2 @@
+error-3001: Prohibited VkFormat.
+    Prohibited VkFormat VK_FORMAT_R8_SSCALED cannot be used in a KTX2 file.

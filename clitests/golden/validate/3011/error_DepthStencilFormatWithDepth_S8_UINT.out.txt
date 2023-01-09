@@ -1,0 +1,2 @@
+error-3011: Invalid pixelDepth. pixelDepth must be 0 for depth or stencil formats.
+    pixelDepth is 1 but for depth or stencil format VK_FORMAT_S8_UINT it must be 0.

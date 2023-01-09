@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3001,
+            "type": "error",
+            "message": "Prohibited VkFormat.",
+            "details": "Prohibited VkFormat VK_FORMAT_G16_B16R16_2PLANE_420_UNORM cannot be used in a KTX2 file."
+        }
+    ]
+}

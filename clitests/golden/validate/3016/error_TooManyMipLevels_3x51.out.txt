@@ -1,0 +1,2 @@
+error-3016: Too many mip levels
+    levelCount is 7 for the largest image dimension 51 is too many levels.

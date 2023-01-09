@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":3006,"type":"error","message":"Invalid pixelWidth. pixelWidth cannot be 0.","details":"pixelWidth is 0, but textures must have width."}]}

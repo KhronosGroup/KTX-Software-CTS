@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3005,
+            "type": "error",
+            "message": "Invalid typeSize. typeSize must be 1 for block-compressed or supercompressed formats.",
+            "details": "typeSize is 3 but for block-compressed or supercompressed format VK_FORMAT_ASTC_4x4_UNORM_BLOCK it must be 1."
+        }
+    ]
+}

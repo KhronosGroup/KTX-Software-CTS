@@ -1,0 +1,2 @@
+error-3001: Prohibited VkFormat.
+    Prohibited VkFormat VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM cannot be used in a KTX2 file.

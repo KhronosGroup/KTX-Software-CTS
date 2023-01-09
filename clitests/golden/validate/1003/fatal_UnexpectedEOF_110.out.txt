@@ -1,0 +1,6 @@
+error-3023: Invalid dataFormatDescriptor index. Defined region cannot exceed the size of the file.
+    dataFormatDescriptor.byteOffset is 152 and dataFormatDescriptor.byteLength is 92, but the file is only 110 byte long.
+error-3026: Invalid keyValueData index. Defined region cannot exceed the size of the file.
+    keyValueData.byteOffset is 244 and keyValueData.byteLength is 44, but the file is only 110 byte long.
+fatal-1007: Unexpected end of file. Requested seek position is not in the file.
+    Requested seek position is 244 for accessing the KVD, but the file is only 110 byte long.

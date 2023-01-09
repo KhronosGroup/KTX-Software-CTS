@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":3016,"type":"error","message":"Too many mip levels","details":"levelCount is 7 for the largest image dimension 51 is too many levels."}]}

@@ -1,0 +1,2 @@
+error-3005: Invalid typeSize. typeSize must be 1 for block-compressed or supercompressed formats.
+    typeSize is 4 but for block-compressed or supercompressed format VK_FORMAT_ASTC_5x4x4_SRGB_BLOCK_EXT it must be 1.

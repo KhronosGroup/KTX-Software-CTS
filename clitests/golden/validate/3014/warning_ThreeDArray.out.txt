@@ -1,0 +1,2 @@
+warning-3014: File contains a 3D array texture.
+    File contains a 3D array texture. No APIs support these.

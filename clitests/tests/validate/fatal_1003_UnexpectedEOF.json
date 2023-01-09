@@ -1,0 +1,34 @@
+{
+    "description": "File must be bigger than the size of the header",
+    "command": "ktx validate ${format[args]} input/validate/1003/fatal_UnexpectedEOF_${size}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/1003/fatal_UnexpectedEOF_${size}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "size": [
+            "10",
+            "36",
+            "48",
+            "67",
+            "80",
+            "110"
+        ]
+    }
+}

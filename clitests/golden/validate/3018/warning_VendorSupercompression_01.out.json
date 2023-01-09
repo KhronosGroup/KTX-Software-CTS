@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3018,
+            "type": "warning",
+            "message": "Using vendor supercompressionScheme. Cannot validate.",
+            "details": "supercompressionScheme is 0x1002A which falls into the reserved vendor range. Cannot validate."
+        }
+    ]
+}

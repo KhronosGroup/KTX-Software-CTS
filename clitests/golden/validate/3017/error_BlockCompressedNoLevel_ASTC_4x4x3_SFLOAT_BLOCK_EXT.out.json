@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3017,
+            "type": "error",
+            "message": "Invalid levelCount. levelCount cannot be 0 for block-compressed formats.",
+            "details": "levelCount is 0 but for block-compressed format VK_FORMAT_ASTC_4x4x3_SFLOAT_BLOCK_EXT it cannot be 0."
+        }
+    ]
+}

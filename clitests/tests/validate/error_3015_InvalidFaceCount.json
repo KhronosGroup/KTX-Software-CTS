@@ -1,0 +1,31 @@
+{
+    "description": "faceCount can only be 1 or 6",
+    "command": "ktx validate ${format[args]} input/validate/3015/error_InvalidFaceCount_${faceCount}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/3015/error_InvalidFaceCount_${faceCount}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "faceCount": [
+            "0",
+            "2",
+            "12"
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":3004,"type":"error","message":"Invalid VkFormat. VkFormat must be VK_FORMAT_UNDEFINED for BASIS_LZ supercompression.","details":"VkFormat is VK_FORMAT_R8G8B8A8_UNORM but for supercompressionScheme BASIS_LZ it must be VK_FORMAT_UNDEFINED."}]}

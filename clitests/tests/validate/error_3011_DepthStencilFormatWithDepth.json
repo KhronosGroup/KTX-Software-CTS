@@ -1,0 +1,35 @@
+{
+    "description": "pixelDepth must be 0 for depth or stencil formats",
+    "command": "ktx validate ${format[args]} input/validate/3011/error_DepthStencilFormatWithDepth_${vkformat}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/3011/error_DepthStencilFormatWithDepth_${vkformat}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "vkformat": [
+            "D16_UNORM",
+            "X8_D24_UNORM_PACK32",
+            "D32_SFLOAT",
+            "S8_UINT",
+            "D16_UNORM_S8_UINT",
+            "D24_UNORM_S8_UINT",
+            "D32_SFLOAT_S8_UINT"
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "description": "If faceCount is equal to 6, pixelHeight must be equal to pixelWidth",
+    "command": "ktx validate ${format[args]} input/validate/3008/error_CubeHeightWidthMismatch_${size}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/3008/error_CubeHeightWidthMismatch_${size}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "size": [
+            "16x12",
+            "8x16"
+        ]
+    }
+}

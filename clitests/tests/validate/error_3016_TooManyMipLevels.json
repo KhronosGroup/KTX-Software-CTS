@@ -1,0 +1,33 @@
+{
+    "description": "Too many mip levels",
+    "command": "ktx validate ${format[args]} input/validate/3016/error_TooManyMipLevels_${size}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/3016/error_TooManyMipLevels_${size}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "size": [
+            "32x16",
+            "5x20",
+            "11x9",
+            "3x51",
+            "3x5x7"
+        ]
+    }
+}

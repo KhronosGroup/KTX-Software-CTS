@@ -1,0 +1,2 @@
+error-3008: Mismatching pixelWidth and pixelHeight for a cube map.
+    pixelWidth is 8 and pixelHeight is 16, but for a cube map they must be equal.

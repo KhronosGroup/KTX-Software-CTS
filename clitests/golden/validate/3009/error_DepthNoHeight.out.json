@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3009,
+            "type": "error",
+            "message": "Invalid pixelHeight. pixelHeight cannot be 0 if pixelDepth is not also 0.",
+            "details": "pixelHeight is 0 and pixelDepth is 4, but pixelHeight cannot be 0 if pixelDepth is not 0 as well."
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3001,
+            "type": "error",
+            "message": "Prohibited VkFormat.",
+            "details": "Prohibited VkFormat VK_FORMAT_A8B8G8R8_SSCALED_PACK32 cannot be used in a KTX2 file."
+        }
+    ]
+}

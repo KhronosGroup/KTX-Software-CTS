@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":3005,"type":"error","message":"Invalid typeSize. typeSize must be 1 for block-compressed or supercompressed formats.","details":"typeSize is 3 but for block-compressed or supercompressed format VK_FORMAT_ASTC_6x6x5_UNORM_BLOCK_EXT it must be 1."}]}

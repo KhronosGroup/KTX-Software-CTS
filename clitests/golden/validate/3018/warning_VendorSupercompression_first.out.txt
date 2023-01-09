@@ -1,0 +1,2 @@
+warning-3018: Using vendor supercompressionScheme. Cannot validate.
+    supercompressionScheme is 0x10000 which falls into the reserved vendor range. Cannot validate.

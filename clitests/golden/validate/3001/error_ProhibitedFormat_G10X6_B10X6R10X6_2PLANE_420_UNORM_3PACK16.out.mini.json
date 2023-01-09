@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":3001,"type":"error","message":"Prohibited VkFormat.","details":"Prohibited VkFormat VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16 cannot be used in a KTX2 file."}]}

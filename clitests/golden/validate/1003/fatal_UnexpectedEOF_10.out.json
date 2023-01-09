@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 1003,
+            "type": "fatal",
+            "message": "Unexpected end of file.",
+            "details": "Unexpected end of file. Expected 80 more byte for the header but only found 10 byte."
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "description": "If faceCount is equal to 6, pixelDepth must be 0.",
+    "command": "ktx validate ${format[args]} input/validate/3013/error_CubeWithDepth_${depth}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/3013/error_CubeWithDepth_${depth}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "depth": [
+            "1",
+            "6"
+        ]
+    }
+}

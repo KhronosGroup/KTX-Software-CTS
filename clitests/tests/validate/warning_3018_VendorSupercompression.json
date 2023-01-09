@@ -1,0 +1,43 @@
+{
+    "description": "Vendor-specific supercompression scheme",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/3018/warning_VendorSupercompression_${subcase}.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/3018/${warnAsErr[outPrefix]}_VendorSupercompression_${subcase}.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "first",
+            "01",
+            "last"
+        ]
+    }
+}

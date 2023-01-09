@@ -1,0 +1,2 @@
+error-3002: Invalid VkFormat.
+    Invalid VkFormat (0xFEEDFEED).

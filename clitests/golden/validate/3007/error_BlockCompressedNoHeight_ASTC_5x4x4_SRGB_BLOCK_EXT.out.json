@@ -1,0 +1,17 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3007,
+            "type": "error",
+            "message": "Invalid pixelHeight. pixelHeight cannot be 0 for a block compressed formats.",
+            "details": "pixelHeight is 0, but for block-compressed format VK_FORMAT_ASTC_5x4x4_SRGB_BLOCK_EXT it cannot be 0."
+        },
+        {
+            "id": 3009,
+            "type": "error",
+            "message": "Invalid pixelHeight. pixelHeight cannot be 0 if pixelDepth is not also 0.",
+            "details": "pixelHeight is 0 and pixelDepth is 4, but pixelHeight cannot be 0 if pixelDepth is not 0 as well."
+        }
+    ]
+}

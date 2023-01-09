@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3010,
+            "type": "error",
+            "message": "Invalid pixelDepth. pixelDepth cannot be 0 for block-compressed formats with non-zero block depth.",
+            "details": "pixelDepth is 0, but for format VK_FORMAT_ASTC_6x6x5_UNORM_BLOCK_EXT (which is a block-compressed format with non-zero block depth) it cannot be 0."
+        }
+    ]
+}

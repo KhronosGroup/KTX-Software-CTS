@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":2001,"type":"fatal","message":"Not a KTX2 file.","details":"Not a KTX2 file. The beginning of the file does not matches the expected file identifier \"«KTX 20»\\r\\n\\x1A\\n\"."}]}

@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3002,
+            "type": "error",
+            "message": "Invalid VkFormat.",
+            "details": "Invalid VkFormat (0xFEEDFEED)."
+        }
+    ]
+}

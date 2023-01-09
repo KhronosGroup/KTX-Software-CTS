@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3011,
+            "type": "error",
+            "message": "Invalid pixelDepth. pixelDepth must be 0 for depth or stencil formats.",
+            "details": "pixelDepth is 1 but for depth or stencil format VK_FORMAT_D16_UNORM it must be 0."
+        }
+    ]
+}

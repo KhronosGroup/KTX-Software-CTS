@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3019,
+            "type": "error",
+            "message": "Invalid supercompressionScheme.",
+            "details": "Invalid supercompressionScheme: 0xFFFF."
+        }
+    ]
+}

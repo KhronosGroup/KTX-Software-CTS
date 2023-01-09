@@ -1,0 +1,2 @@
+error-3001: Prohibited VkFormat.
+    Prohibited VkFormat VK_FORMAT_A8B8G8R8_SRGB_PACK32 cannot be used in a KTX2 file.

@@ -1,0 +1,23 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3023,
+            "type": "error",
+            "message": "Invalid dataFormatDescriptor index. Defined region cannot exceed the size of the file.",
+            "details": "dataFormatDescriptor.byteOffset is 152 and dataFormatDescriptor.byteLength is 92, but the file is only 110 byte long."
+        },
+        {
+            "id": 3026,
+            "type": "error",
+            "message": "Invalid keyValueData index. Defined region cannot exceed the size of the file.",
+            "details": "keyValueData.byteOffset is 244 and keyValueData.byteLength is 44, but the file is only 110 byte long."
+        },
+        {
+            "id": 1007,
+            "type": "fatal",
+            "message": "Unexpected end of file. Requested seek position is not in the file.",
+            "details": "Requested seek position is 244 for accessing the KVD, but the file is only 110 byte long."
+        }
+    ]
+}

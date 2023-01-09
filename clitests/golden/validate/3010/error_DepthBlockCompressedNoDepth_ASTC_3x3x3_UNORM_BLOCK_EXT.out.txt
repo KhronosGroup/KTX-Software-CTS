@@ -1,0 +1,2 @@
+error-3010: Invalid pixelDepth. pixelDepth cannot be 0 for block-compressed formats with non-zero block depth.
+    pixelDepth is 0, but for format VK_FORMAT_ASTC_3x3x3_UNORM_BLOCK_EXT (which is a block-compressed format with non-zero block depth) it cannot be 0.

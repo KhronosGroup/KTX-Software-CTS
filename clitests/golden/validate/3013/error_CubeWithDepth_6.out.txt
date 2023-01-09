@@ -1,0 +1,2 @@
+error-3013: Invalid pixelDepth. pixelDepth must be 0 for cube maps.
+    pixelDepth is 6 but for cube maps it must be 0 (cube map faces must be 2D).
