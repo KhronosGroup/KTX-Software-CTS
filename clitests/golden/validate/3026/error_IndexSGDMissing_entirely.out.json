@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3026,
+            "type": "error",
+            "message": "sgdByteLength must not be 0 for supercompression schemes with global data.",
+            "details": "sgdByteLength is 0 but for supercompression scheme KTX_SS_BASIS_LZ (which has global data) it must not be 0."
+        }
+    ]
+}

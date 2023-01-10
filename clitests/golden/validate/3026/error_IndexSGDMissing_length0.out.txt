@@ -1,0 +1,4 @@
+error-3025: sgdByteOffset must be 0 when sgdByteLength = 0.
+    sgdByteOffset is 208 but must be 0 when sgdByteLength is 0.
+error-3026: sgdByteLength must not be 0 for supercompression schemes with global data.
+    sgdByteLength is 0 but for supercompression scheme KTX_SS_BASIS_LZ (which has global data) it must not be 0.
