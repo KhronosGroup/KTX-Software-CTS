@@ -1,0 +1,32 @@
+{
+    "description": "DFD must follow level index (order, 4 byte alignment, continuity)",
+    "command": "ktx validate ${format[args]} input/validate/3021/error_IndexDFDInvalidOffset_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/3021/error_IndexDFDInvalidOffset_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "minus1",
+            "plus1",
+            "plus2",
+            "plus4"
+        ]
+    }
+}

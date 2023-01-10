@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":3021,"type":"error","message":"Invalid dfdByteOffset.","details":"dfdByteOffset is 106 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104."}]}
