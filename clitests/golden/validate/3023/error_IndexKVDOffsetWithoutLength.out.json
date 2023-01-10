@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3023,
+            "type": "error",
+            "message": "kvdByteOffset must be 0 when kvdByteLength = 0.",
+            "details": "kvdByteOffset is 196 but must be 0 when kvdByteLength is 0."
+        }
+    ]
+}
