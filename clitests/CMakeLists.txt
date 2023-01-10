@@ -31,7 +31,8 @@ set(CASELIST
     tests/validate/warning_3018_VendorSupercompression.json
     tests/validate/error_3019_InvalidSupercompression.json
     tests/validate/error_3020_IndexDFDMissing.json
-    tests/validate/error_3021_IndexDFDInvalidOffset.json)
+    tests/validate/error_3021_IndexDFDInvalidOffset.json
+    tests/validate/error_3022_IndexKVDInvalidOffset.json)
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
 

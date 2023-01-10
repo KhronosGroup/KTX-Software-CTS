@@ -1,0 +1,2 @@
+error-3022: Invalid kvdByteOffset.
+    kvdByteOffset is 200 but the Key/Value Data must immediately follow (with 4 byte alignment) the Data Format Descriptor so it must be 196.
