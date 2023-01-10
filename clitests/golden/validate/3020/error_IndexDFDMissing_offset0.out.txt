@@ -1,0 +1,4 @@
+error-3020: Missing Data Format Descriptor
+    Data Format Descriptor is mandatory but dfdByteOffset is 0 and dfdByteLength is 92.
+error-3021: Invalid dfdByteOffset.
+    dfdByteOffset is 0 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104.

@@ -255,7 +255,7 @@ if __name__ == '__main__':
 
             if cmd_failed and cli_args.regen_golden:
                 print("STOPPED: Reference data regeneration was requested but command execution failed.")
-                exit(1)
+                break
         else:
             subcases_passed += 1
 

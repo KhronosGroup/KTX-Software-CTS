@@ -1,0 +1,2 @@
+error-3020: Missing Data Format Descriptor
+    Data Format Descriptor is mandatory but dfdByteOffset is 104 and dfdByteLength is 0.
