@@ -1,0 +1,33 @@
+{
+    "description": "SGD must follow previous block (order, 8 byte alignment, continuity)",
+    "command": "ktx validate ${format[args]} input/validate/3024/error_IndexSGDInvalidOffset_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/3024/error_IndexSGDInvalidOffset_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "minus1",
+            "plus1",
+            "plus2",
+            "plus4",
+            "plus8"
+        ]
+    }
+}

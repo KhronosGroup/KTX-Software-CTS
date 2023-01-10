@@ -1,0 +1,17 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 3024,
+            "type": "error",
+            "message": "Invalid sgdByteOffset.",
+            "details": "sgdByteOffset is 207 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 208."
+        },
+        {
+            "id": 7011,
+            "type": "error",
+            "message": "Invalid padding byte value. Every padding byte's value must be 0.",
+            "details": "A padding byte value is 6 after a Key-Value entry but it must be 0."
+        }
+    ]
+}

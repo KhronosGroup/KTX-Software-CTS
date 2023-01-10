@@ -1,0 +1,2 @@
+error-3024: Invalid sgdByteOffset.
+    sgdByteOffset is 209 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 208.
