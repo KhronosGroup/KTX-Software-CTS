@@ -1,0 +1,2 @@
+error-3025: sgdByteOffset must be 0 when sgdByteLength = 0.
+    sgdByteOffset is 240 but must be 0 when sgdByteLength is 0.
