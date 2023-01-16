@@ -1,5 +1,7 @@
 {
-    "$id": "ktx-schema-url-1.0",
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": true,
+    "messages": [],
     "header": {
         "identifier": "«KTX 20»\r\n\x1A\n",
         "vkFormat": "VK_FORMAT_R8G8B8_UNORM",

@@ -1,3 +1,7 @@
+Valid: false
+warning-0060: 
+    DFD says data is unsigned float but there are no such texture formats.
+
 Header
 
 identifier: «KTX 20»\r\n\x1A\n

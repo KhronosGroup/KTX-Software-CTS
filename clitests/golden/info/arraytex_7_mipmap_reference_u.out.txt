@@ -1,3 +1,5 @@
+Valid: true
+
 Header
 
 identifier: «KTX 20»\r\n\x1A\n
