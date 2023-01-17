@@ -5,7 +5,7 @@
             "id": 1003,
             "type": "fatal",
             "message": "Unexpected end of file.",
-            "details": "Unexpected end of file. Cannot read 44 bytes at offset 196 to access the Key/Value Data as file size is only 80 bytes."
+            "details": "Unexpected end of file. Failed to read 92 bytes at offset 104 to access the DFD. Only able to read 0 bytes."
         }
     ]
 }

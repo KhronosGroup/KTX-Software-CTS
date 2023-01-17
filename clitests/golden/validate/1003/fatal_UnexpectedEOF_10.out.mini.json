@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":1003,"type":"fatal","message":"Unexpected end of file.","details":"Unexpected end of file. Cannot read 80 bytes at offset 0 to access the header as file size is only 10 bytes."}]}
+{"valid":false,"messages":[{"id":1003,"type":"fatal","message":"Unexpected end of file.","details":"Unexpected end of file. Failed to read 80 bytes at offset 0 to access the header. Only able to read 10 bytes."}]}

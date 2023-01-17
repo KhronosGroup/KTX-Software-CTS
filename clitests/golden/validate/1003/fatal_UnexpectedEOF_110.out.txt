@@ -1,2 +1,2 @@
 fatal-1003: Unexpected end of file.
-    Unexpected end of file. Cannot read 44 bytes at offset 244 to access the Key/Value Data as file size is only 110 bytes.
+    Unexpected end of file. Failed to read 92 bytes at offset 152 to access the DFD. Only able to read 0 bytes.
