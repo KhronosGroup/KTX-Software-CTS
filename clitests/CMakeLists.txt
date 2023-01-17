@@ -43,7 +43,8 @@ set(CASELIST
     tests/validate/error_7004_KeyAndValueByteLengthTooSmall.json
     tests/validate/error_7005_KeyMissingNullTerminator.json
     tests/validate/error_7006_KeyForbiddenBOM.json
-    tests/validate/warning_7007_KeyInvalidUTF8.json)
+    tests/validate/warning_7007_KeyInvalidUTF8.json
+    tests/validate/error_7008_SizesDontAddUp.json)
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
 

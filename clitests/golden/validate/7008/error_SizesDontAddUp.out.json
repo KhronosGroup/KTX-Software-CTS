@@ -1,0 +1,17 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7008,
+            "type": "error",
+            "message": "kvdByteLength must add up to sum of the key-value entries with paddings.",
+            "details": "The processed Key/Value Data length is 56 but kvdByteLength is 54 and they must match."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"ZZZZ\" found in Key/Value Data."
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "description": "Sum of every entry + alignment paddings + every value's lenght data size must add up to kvdByteLength",
+    "command": "ktx validate ${format[args]} input/validate/7008/error_SizesDontAddUp.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7008/error_SizesDontAddUp.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}
