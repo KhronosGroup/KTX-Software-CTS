@@ -1,0 +1,26 @@
+{
+    "description": "keyAndValueByteLength must be at least 2, that is a 1 byte key plus its NULL terminator.",
+    "command": "ktx validate ${format[args]} input/validate/7004/error_KeyAndValueByteLengthTooSmall.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7004/error_KeyAndValueByteLengthTooSmall.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,2 @@
+error-7002: Invalid Key/Value Data. Not enough data left in Key/Value Data to process another key-value entry
+    Key/Value Data has 4 byte unprocessed but for a key value entry at least 6 byte is required (4 byte size + 1 byte key + null terminator).

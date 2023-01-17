@@ -1,0 +1,38 @@
+{
+    "description": "Key must be a valid UTF-8",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7007/warning_KeyInvalidUTF8.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/7007/${warnAsErr[outPrefix]}_KeyInvalidUTF8.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

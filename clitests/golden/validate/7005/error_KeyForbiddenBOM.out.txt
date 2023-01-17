@@ -1,0 +1,4 @@
+error-7006: Invalid key in Key/Value Data. Key cannot contain BOM.
+    The beginning of the key "UTF8WithBOM" has forbidden BOM.
+warning-7010: Custom key in Key/Value Data.
+    Custom key "UTF8WithBOM" found in Key/Value Data.

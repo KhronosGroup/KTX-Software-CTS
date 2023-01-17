@@ -1,0 +1,26 @@
+{
+    "description": "keyAndValueByteLength cannot exceed the limits of the KVD region",
+    "command": "ktx validate ${format[args]} input/validate/7003/error_KeyAndValueByteLengthTooLarge.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7003/error_KeyAndValueByteLengthTooLarge.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

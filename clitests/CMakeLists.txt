@@ -37,7 +37,12 @@ set(CASELIST
     tests/validate/error_3024_IndexSGDInvalidOffset.json
     tests/validate/error_3025_IndexSGDOffsetWithoutLength.json
     tests/validate/error_3026_IndexSGDMissing.json
-    tests/validate/error_7001_TooManyEntries.json)
+    tests/validate/error_7001_TooManyEntries.json
+    tests/validate/error_7002_NotEnoughDataForAnEntry.json
+    tests/validate/error_7003_KeyAndValueByteLengthTooLarge.json
+    tests/validate/error_7004_KeyAndValueByteLengthTooSmall.json
+    tests/validate/error_7005_KeyMissingNullTerminator.json
+    tests/validate/error_7006_KeyForbiddenBOM.json)
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
 
