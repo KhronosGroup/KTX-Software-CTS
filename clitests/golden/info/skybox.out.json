@@ -1,14 +1,7 @@
 {
     "$schema": "https://schema.khronos.org/ktx/info_v0.json",
-    "valid": false,
-    "messages": [
-        {
-            "id": 60,
-            "type": "warning",
-            "message": "",
-            "details": "DFD says data is unsigned float but there are no such texture formats."
-        }
-    ],
+    "valid": true,
+    "messages": [],
     "header": {
         "identifier": "«KTX 20»\r\n\x1A\n",
         "vkFormat": "VK_FORMAT_B10G11R11_UFLOAT_PACK32",

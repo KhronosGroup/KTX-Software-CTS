@@ -4,7 +4,7 @@
         {
             "id": 3020,
             "type": "error",
-            "message": "Missing Data Format Descriptor",
+            "message": "Missing Data Format Descriptor.",
             "details": "Data Format Descriptor is mandatory but dfdByteOffset is 0 and dfdByteLength is 0."
         },
         {

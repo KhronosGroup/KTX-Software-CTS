@@ -1,6 +1,4 @@
-Valid: false
-warning-0060: 
-    DFD says data is unsigned float but there are no such texture formats.
+Valid: true
 
 Header
 
