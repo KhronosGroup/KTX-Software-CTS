@@ -1,0 +1,23 @@
+{
+    "valid": true,
+    "messages": [
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"CustomKTXFlag\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"CustomMetadata\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"CustomString\" found in Key/Value Data."
+        }
+    ]
+}

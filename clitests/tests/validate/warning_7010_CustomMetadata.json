@@ -1,0 +1,38 @@
+{
+    "description": "Warning on custom metadata (KVD key)",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7010/warning_CustomMetadata.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/7010/${warnAsErr[outPrefix]}_CustomMetadata.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}
