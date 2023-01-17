@@ -1,5 +1,3 @@
-error-7012: Invalid Key/Value Data. Key-value entries must be sorted by key.
-    Key-value entries are not sorted but they must be sorted by key.
 warning-7010: Custom key in Key/Value Data.
     Custom key "AcceptedKTXName" found in Key/Value Data.
 error-7009: Invalid key in Key/Value Data. Keys with "KTX" or "ktx" prefix are reserved.
