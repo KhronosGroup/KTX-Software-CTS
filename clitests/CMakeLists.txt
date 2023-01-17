@@ -46,7 +46,8 @@ set(CASELIST
     tests/validate/warning_7007_KeyInvalidUTF8.json
     tests/validate/error_7008_SizesDontAddUp.json
     tests/validate/error_7009_UnknownReservedKey.json
-    tests/validate/warning_7010_CustomMetadata.json)
+    tests/validate/warning_7010_CustomMetadata.json
+    tests/validate/error_7011_PaddingNotZero.json)
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
 

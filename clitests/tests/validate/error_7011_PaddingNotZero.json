@@ -1,0 +1,26 @@
+{
+    "description": "Padding after key/value pairs must contain zero bytes",
+    "command": "ktx validate ${format[args]} input/validate/7011/error_PaddingNotZero.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7011/error_PaddingNotZero.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

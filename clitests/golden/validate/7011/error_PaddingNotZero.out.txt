@@ -1,0 +1,14 @@
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 42 after a Key-Value entry but it must be 0.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 42 after a Key-Value entry but it must be 0.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 1 after a Key-Value entry but it must be 0.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 7 after a Key-Value entry but it must be 0.
+warning-7010: Custom key in Key/Value Data.
+    Custom key "Pad" found in Key/Value Data.
+warning-7010: Custom key in Key/Value Data.
+    Custom key "Padded" found in Key/Value Data.
+warning-7010: Custom key in Key/Value Data.
+    Custom key "Padding" found in Key/Value Data.
