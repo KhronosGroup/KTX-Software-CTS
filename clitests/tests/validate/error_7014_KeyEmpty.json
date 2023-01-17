@@ -1,0 +1,26 @@
+{
+    "description": "Key/value data must have unique keys",
+    "command": "ktx validate ${format[args]} input/validate/7014/error_KeyEmpty.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7014/error_KeyEmpty.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

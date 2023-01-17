@@ -47,7 +47,10 @@ set(CASELIST
     tests/validate/error_7008_SizesDontAddUp.json
     tests/validate/error_7009_UnknownReservedKey.json
     tests/validate/warning_7010_CustomMetadata.json
-    tests/validate/error_7011_PaddingNotZero.json)
+    tests/validate/error_7011_PaddingNotZero.json
+    tests/validate/error_7012_OutOfOrder.json
+    tests/validate/error_7013_DuplicateKey.json
+    tests/validate/error_7014_KeyEmpty.json)
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
 
