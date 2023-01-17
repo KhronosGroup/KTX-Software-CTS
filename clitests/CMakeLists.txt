@@ -36,7 +36,8 @@ set(CASELIST
     tests/validate/error_3023_IndexKVDOffsetWithoutLength.json
     tests/validate/error_3024_IndexSGDInvalidOffset.json
     tests/validate/error_3025_IndexSGDOffsetWithoutLength.json
-    tests/validate/error_3026_IndexSGDMissing.json)
+    tests/validate/error_3026_IndexSGDMissing.json
+    tests/validate/error_7001_TooManyEntries.json)
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
 
