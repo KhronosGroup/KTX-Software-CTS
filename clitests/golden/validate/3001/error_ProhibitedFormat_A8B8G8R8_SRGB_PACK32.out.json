@@ -11,7 +11,7 @@
             "id": 60,
             "type": "error",
             "message": "Invalid transferFunction for sRGB vkFormat. For sRGB vkFormats the transferFunction must be KHR_DF_TRANSFER_SRGB.",
-            "details": "transferFunction is (0x1) but for vkFormat VK_FORMAT_A8B8G8R8_SRGB_PACK32 it must be KHR_DF_TRANSFER_SRGB."
+            "details": "transferFunction is KHR_DF_TRANSFER_LINEAR but for vkFormat VK_FORMAT_A8B8G8R8_SRGB_PACK32 it must be KHR_DF_TRANSFER_SRGB."
         }
     ]
 }
