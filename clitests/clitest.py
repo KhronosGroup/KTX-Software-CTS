@@ -191,6 +191,7 @@ if __name__ == '__main__':
                 output_ref_filename = ctx.eval(testcase[stdfile])
 
                 if not cmd_failed and cli_args.regen_golden:
+                    os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
                     output_ref_file = open(output_ref_filename, 'w+', newline='\n', encoding='utf-8')
                     output_ref_file.write(output[stdfile])
                     output_ref_file.close()
