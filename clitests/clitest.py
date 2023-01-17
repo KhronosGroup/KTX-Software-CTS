@@ -269,5 +269,5 @@ if __name__ == '__main__':
     print(f"  Failed:  {subcases_failed}")
     print(f"  Total:   {len(subcases)}")
 
-    if failed:
+    if failed and not cli_args.regen_golden:
         exit(1)
