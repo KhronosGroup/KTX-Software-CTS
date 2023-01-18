@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 6011,
+            "type": "error",
+            "message": "Unsupported basic DFD version.",
+            "details": "Basic DFD #1 versionNumber is KHR_DF_VERSIONNUMBER_1_1 but must be KHR_DF_VERSIONNUMBER_1_3."
+        }
+    ]
+}
