@@ -1,0 +1,4 @@
+Validation failed
+
+error-6012: Invalid transferFunction for basic DFD. It must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.
+    Basic DFD #1 transferFunction is KHR_DF_TRANSFER_HLG_OETF but must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.
