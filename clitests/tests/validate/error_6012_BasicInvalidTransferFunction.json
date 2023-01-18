@@ -1,5 +1,5 @@
 {
-    "description": "trasferFunction must be KHR_DF_TRANSFER_SRGB or KHR_DF_TRANSFER_LINEAR",
+    "description": "transferFunction must be KHR_DF_TRANSFER_SRGB or KHR_DF_TRANSFER_LINEAR",
     "command": "ktx validate ${format[args]} input/validate/6012/error_BasicInvalidTransferFunction_${transferFunction}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6012/error_BasicInvalidTransferFunction_${transferFunction}.out.${format[ext]}",
