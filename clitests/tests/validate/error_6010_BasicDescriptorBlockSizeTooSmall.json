@@ -1,0 +1,32 @@
+{
+    "description": "For BasicDFDBlock descriptorBlockSize must be at least 24",
+    "command": "ktx validate ${format[args]} input/validate/6010/error_BasicDescriptorBlockSizeTooSmall_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6010/error_BasicDescriptorBlockSizeTooSmall_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "8",
+            "12",
+            "16",
+            "20"
+        ]
+    }
+}

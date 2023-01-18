@@ -48,6 +48,8 @@ set(CASELIST
     tests/validate/error_6006_DescriptorBlockSizeTooSmall.json
     tests/validate/error_6007_DescriptorBlockSizeTooBig.json
     tests/validate/error_6008_MissingBDFD.json
+    tests/validate/error_6009_BasicDescriptorBlockSizeInvalid.json
+    tests/validate/error_6010_BasicDescriptorBlockSizeTooSmall.json
 
     tests/validate/error_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json

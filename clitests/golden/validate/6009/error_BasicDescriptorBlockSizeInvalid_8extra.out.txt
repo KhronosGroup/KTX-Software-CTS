@@ -1,0 +1,4 @@
+Validation failed
+
+error-6009: Basic DFD descriptorBlockSize is invalid.
+    Basic DFD #1 descriptorBlockSize is 96 which does not fit the criteria (descriptorBlockSize - 24) % 16 == 0.
