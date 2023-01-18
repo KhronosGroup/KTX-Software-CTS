@@ -1,4 +1,4 @@
 Validation successful
 
 warning-6003: Unrecognized DFD block.
-    DFD #2 with vendorId (0x3) and descriptorType KHR_DF_KHR_DESCRIPTORTYPE_ADDITIONAL_DIMENSIONS is not recognized and thus ignored.
+    DFD #2 with vendorId (0x3) and descriptorType 24578 is not recognized and thus ignored.

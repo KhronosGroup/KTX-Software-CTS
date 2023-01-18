@@ -1,1 +1,1 @@
-{"valid":true,"messages":[{"id":6003,"type":"warning","message":"Unrecognized DFD block.","details":"DFD #2 with vendorId (0x1) and descriptorType KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT is not recognized and thus ignored."}]}
+{"valid":true,"messages":[{"id":6003,"type":"warning","message":"Unrecognized DFD block.","details":"DFD #2 with vendorId (0x1) and descriptorType 0 is not recognized and thus ignored."}]}

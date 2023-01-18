@@ -1,0 +1,30 @@
+{
+    "description": "Missing basic DFD",
+    "command": "ktx validate ${format[args]} input/validate/6008/error_MissingBDFD${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6008/error_MissingBDFD${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "",
+            "_notFirst"
+        ]
+    }
+}
