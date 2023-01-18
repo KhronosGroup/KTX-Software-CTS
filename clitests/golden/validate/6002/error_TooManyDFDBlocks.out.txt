@@ -1,0 +1,22 @@
+Validation failed
+
+warning-6003: Unrecognized DFD block.
+    DFD #2 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #3 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #4 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #5 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #6 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #7 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #8 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #9 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD #10 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+error-6002: Too many DFD blocks.
+    The number of DFD blocks exceeds the maximum allowed 11. 8 bytes left unprocessed.
