@@ -1,0 +1,4 @@
+Validation failed
+
+error-6013: Invalid transferFunction for basic DFD. For an sRGB vkFormat it must be KHR_DF_TRANSFER_SRGB.
+    Basic DFD #1 transferFunction is KHR_DF_TRANSFER_LINEAR but for vkFormat VK_FORMAT_PVRTC2_4BPP_SRGB_BLOCK_IMG it must be KHR_DF_TRANSFER_SRGB.

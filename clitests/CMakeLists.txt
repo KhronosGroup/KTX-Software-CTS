@@ -52,6 +52,8 @@ set(CASELIST
     tests/validate/error_6010_BasicDescriptorBlockSizeTooSmall.json
     tests/validate/error_6011_BasicVersionNotSupported.json
     tests/validate/error_6012_BasicInvalidTransferFunction.json
+    tests/validate/error_6013_BasicSRGBMismatch.json
+    tests/validate/error_6014_BasicNotSRGBMismatch.json
 
     tests/validate/error_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json

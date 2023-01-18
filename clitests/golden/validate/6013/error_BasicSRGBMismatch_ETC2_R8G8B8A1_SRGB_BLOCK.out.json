@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 6013,
+            "type": "error",
+            "message": "Invalid transferFunction for basic DFD. For an sRGB vkFormat it must be KHR_DF_TRANSFER_SRGB.",
+            "details": "Basic DFD #1 transferFunction is KHR_DF_TRANSFER_LINEAR but for vkFormat VK_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK it must be KHR_DF_TRANSFER_SRGB."
+        }
+    ]
+}

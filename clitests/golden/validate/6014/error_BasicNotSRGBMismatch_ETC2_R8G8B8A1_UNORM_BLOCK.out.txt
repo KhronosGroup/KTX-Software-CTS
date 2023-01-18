@@ -1,0 +1,4 @@
+Validation failed
+
+error-6014: Invalid transferFunction for basic DFD. For a non-sRGB vkFormat with sRGB variants it must not be KHR_DF_TRANSFER_SRGB.
+    Basic DFD #1 transferFunction is KHR_DF_TRANSFER_SRGB but for vkFormat VK_FORMAT_ETC2_R8G8B8A1_UNORM_BLOCK it must not be KHR_DF_TRANSFER_SRGB.
