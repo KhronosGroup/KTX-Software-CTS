@@ -166,13 +166,15 @@ if __name__ == '__main__':
                 subcase_failed = True
 
             output = {
-                'stdout': stdout.decode('utf-8').replace("\r\n", "\n"),
-                'stderr': stderr.decode('utf-8').replace("\r\n", "\n")
+                'stdout': stdout.decode('utf-8', 'replace').replace("\r\n", "\n"),
+                'stderr': stderr.decode('utf-8', 'replace').replace("\r\n", "\n")
             }
 
         except Exception as excp:
             subcase_messages.append("Failed to execute command:")
             subcase_messages.append(f"  {ctx.eval(testcase['command'])}")
+            subcase_messages.append(f"  Exception:")
+            subcase_messages.append(str(excp))
             output = {
                 'stdout': output['stdout'],
                 'stderr': output['stderr'] + str(excp)
