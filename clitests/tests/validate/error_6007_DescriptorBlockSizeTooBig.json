@@ -1,0 +1,31 @@
+{
+    "description": "descriptorBlockSize cannot be more than the remaining unprocessed bytes in the DFD",
+    "command": "ktx validate ${format[args]} input/validate/6007/error_DescriptorBlockSizeTooBig_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6007/error_DescriptorBlockSizeTooBig_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "plus1",
+            "plus4",
+            "plus5000"
+        ]
+    }
+}
