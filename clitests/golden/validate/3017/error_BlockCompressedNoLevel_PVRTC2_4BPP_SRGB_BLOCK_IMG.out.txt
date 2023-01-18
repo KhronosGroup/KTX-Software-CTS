@@ -1,2 +1,4 @@
+Validation failed
+
 error-3017: Invalid levelCount. levelCount cannot be 0 for block-compressed formats.
     levelCount is 0 but for block-compressed format VK_FORMAT_PVRTC2_4BPP_SRGB_BLOCK_IMG it must not be 0.

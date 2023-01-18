@@ -1,3 +1,5 @@
+Validation failed
+
 error-3001: Prohibited VkFormat.
     Prohibited VkFormat VK_FORMAT_A8B8G8R8_SRGB_PACK32 must not be used in a KTX2 file.
 error-0060: Invalid transferFunction for sRGB vkFormat. For sRGB vkFormats the transferFunction must be KHR_DF_TRANSFER_SRGB.

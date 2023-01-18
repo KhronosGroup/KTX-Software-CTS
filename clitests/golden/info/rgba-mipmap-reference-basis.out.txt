@@ -1,4 +1,4 @@
-Valid: true
+Validation successful
 
 Header
 

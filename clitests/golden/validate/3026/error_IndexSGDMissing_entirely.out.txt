@@ -1,2 +1,4 @@
+Validation failed
+
 error-3026: sgdByteLength must not be 0 for supercompression schemes with global data.
     sgdByteLength is 0 but for supercompression scheme KTX_SS_BASIS_LZ (which has global data) it must not be 0.

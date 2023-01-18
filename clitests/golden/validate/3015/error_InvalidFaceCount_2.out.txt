@@ -1,2 +1,4 @@
+Validation failed
+
 error-3015: Invalid faceCount. faceCount must be either 6 for Cubemaps and Cubemap Arrays or 1 otherwise.
     faceCount is 2 but it must be either 6 for Cubemaps and Cubemap Arrays or 1 otherwise.

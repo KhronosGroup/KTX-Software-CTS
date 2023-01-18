@@ -1,2 +1,4 @@
+Validation failed
+
 error-3001: Prohibited VkFormat.
     Prohibited VkFormat VK_FORMAT_B16G16R16G16_422_UNORM must not be used in a KTX2 file.
