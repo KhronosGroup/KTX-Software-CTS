@@ -72,7 +72,7 @@ set(CASELIST
 
     tests/validate/error_7100_KTXcubemapIncompleteInvalidSize.json
     tests/validate/error_7101_KTXcubemapIncompleteInvalidBitSet.json
-    tests/validate/warning_7102_KTXcubemapIncompleteAllBitSet.json
+    tests/validate/warning_7102_KTXcubemapIncompleteAllBitsSet.json
     tests/validate/error_7103_KTXcubemapIncompleteNoBitSet.json
     tests/validate/error_7104_KTXcubemapIncompleteIncompatibleLayerCount.json
     tests/validate/error_7105_KTXcubemapIncompleteWithFaceCountNot1.json

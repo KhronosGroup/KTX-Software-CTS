@@ -1,6 +1,0 @@
-Validation failed
-
-error-7101: Invalid KTXcubemapIncomplete value. The two MSB must be 0.
-    The value is 11111111 but the two MSB must be 0 (00XXXXXX).
-warning-7102: KTXcubemapIncomplete is not incomplete. Every face is marked present.
-    Every face bit is set as present. Prefer using normal Cube maps instead.

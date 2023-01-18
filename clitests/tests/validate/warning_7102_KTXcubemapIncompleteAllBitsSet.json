@@ -1,8 +1,8 @@
 {
     "description": "KTXcubemapIncomplete should not set every bit. Normal cube map could be used instead.",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7102/error_KTXcubemapIncompleteAllBitSet_${subcase}.ktx2",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7102/error_KTXcubemapIncompleteAllBitsSet_${subcase}.ktx2",
     "status": "${warnAsErr[status]}",
-    "stdout": "golden/validate/7102/${warnAsErr[outPrefix]}_KTXcubemapIncompleteAllBitSet_${subcase}.out.${format[ext]}",
+    "stdout": "golden/validate/7102/${warnAsErr[outPrefix]}_KTXcubemapIncompleteAllBitsSet_${subcase}.out.${format[ext]}",
     "args": {
         "warnAsErr": [
             {
@@ -35,7 +35,6 @@
             }
         ],
         "subcase": [
-            "11111111",
             "00111111"
         ]
     }
