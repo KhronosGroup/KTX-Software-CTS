@@ -1,4 +1,4 @@
-Validation successful
+Validation failed
 
-warning-7102: KTXcubemapIncomplete is not incomplete. Every face is marked present.
+error-7102: KTXcubemapIncomplete is not incomplete. Every face is marked present.
     Every face bit is set as present. Prefer using normal Cube maps instead.

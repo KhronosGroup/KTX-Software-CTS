@@ -9,7 +9,7 @@
         },
         {
             "id": 7102,
-            "type": "warning",
+            "type": "error",
             "message": "KTXcubemapIncomplete is not incomplete. Every face is marked present.",
             "details": "Every face bit is set as present. Prefer using normal Cube maps instead."
         }
