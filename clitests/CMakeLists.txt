@@ -42,6 +42,7 @@ set(CASELIST
 
     tests/validate/error_6001_SizeMismatch.json
     tests/validate/error_6002_TooManyDFDBlocks.json
+    tests/validate/warning_6003_UnknownDFDBlock.json
 
     tests/validate/error_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json

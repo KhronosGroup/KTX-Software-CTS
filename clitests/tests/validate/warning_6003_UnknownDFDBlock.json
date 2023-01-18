@@ -1,0 +1,44 @@
+{
+    "description": "Warn and ignore unrecognized DFD blocks",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/6003/warning_UnknownDFDBlock_${subcase}.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/6003/${warnAsErr[outPrefix]}_UnknownDFDBlock_${subcase}.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "0_0x7FFF",
+            "1_0",
+            "2_0x6001",
+            "3_0x6002"
+        ]
+    }
+}
