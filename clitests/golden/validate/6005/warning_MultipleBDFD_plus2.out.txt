@@ -1,0 +1,6 @@
+Validation successful
+
+warning-6005: Multiple basic DFD blocks.
+    DFD #2 is a basic DFD block but one was already processed before. It will be ignored.
+warning-6005: Multiple basic DFD blocks.
+    DFD #3 is a basic DFD block but one was already processed before. It will be ignored.

@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 6005,
+            "type": "error",
+            "message": "Multiple basic DFD blocks.",
+            "details": "DFD #2 is a basic DFD block but one was already processed before. It will be ignored."
+        }
+    ]
+}
