@@ -1,0 +1,4 @@
+Validation failed
+
+error-7103: Invalid KTXcubemapIncomplete value. No face is marked present.
+    No face bit is set as present but at least 1 face must be present.

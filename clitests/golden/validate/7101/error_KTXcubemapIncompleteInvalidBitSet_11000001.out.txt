@@ -1,0 +1,4 @@
+Validation failed
+
+error-7101: Invalid KTXcubemapIncomplete value. The two MSB must be 0.
+    The value is 11000001 but the two MSB must be 0 (00XXXXXX).

@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7105,
+            "type": "error",
+            "message": "Invalid faceCount. faceCount must be 1 if KTXcubemapIncomplete is present.",
+            "details": "faceCount is 6 but if KTXcubemapIncomplete is present it must be 1."
+        }
+    ]
+}

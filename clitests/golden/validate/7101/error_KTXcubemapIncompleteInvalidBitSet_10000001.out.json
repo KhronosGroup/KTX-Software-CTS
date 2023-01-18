@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7101,
+            "type": "error",
+            "message": "Invalid KTXcubemapIncomplete value. The two MSB must be 0.",
+            "details": "The value is 10000001 but the two MSB must be 0 (00XXXXXX)."
+        }
+    ]
+}

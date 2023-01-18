@@ -50,7 +50,15 @@ set(CASELIST
     tests/validate/error_7011_PaddingNotZero.json
     tests/validate/error_7012_OutOfOrder.json
     tests/validate/error_7013_DuplicateKey.json
-    tests/validate/error_7014_KeyEmpty.json)
+    tests/validate/error_7014_KeyEmpty.json
+
+    tests/validate/error_7100_KTXcubemapIncompleteInvalidSize.json
+    tests/validate/error_7101_KTXcubemapIncompleteInvalidBitSet.json
+    tests/validate/error_7102_KTXcubemapIncompleteAllBitSet.json
+    tests/validate/error_7103_KTXcubemapIncompleteNoBitSet.json
+    tests/validate/error_7104_KTXcubemapIncompleteIncompatibleLayerCount.json
+    tests/validate/error_7105_KTXcubemapIncompleteWithFaceCountNot1.json
+)
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
 

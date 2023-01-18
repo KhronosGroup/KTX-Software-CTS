@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7104,
+            "type": "error",
+            "message": "Incompatible KTXcubemapIncomplete and layerCount. layerCount must be the multiple of the number of faces present.",
+            "details": "layerCount is 2 and KTXcubemapIncomplete indicates 3 faces present but layerCount must the multiple of the number of faces present."
+        }
+    ]
+}

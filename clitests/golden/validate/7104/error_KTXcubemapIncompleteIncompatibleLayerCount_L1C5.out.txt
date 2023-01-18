@@ -1,0 +1,4 @@
+Validation failed
+
+error-7104: Incompatible KTXcubemapIncomplete and layerCount. layerCount must be the multiple of the number of faces present.
+    layerCount is 1 and KTXcubemapIncomplete indicates 5 faces present but layerCount must the multiple of the number of faces present.

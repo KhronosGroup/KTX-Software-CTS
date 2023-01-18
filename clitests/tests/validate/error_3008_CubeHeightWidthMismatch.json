@@ -24,7 +24,11 @@
         ],
         "size": [
             "16x12",
-            "8x16"
+            "8x16",
+            "KTXcubemapIncomplete_Layer1_16x12",
+            "KTXcubemapIncomplete_Layer1_8x16",
+            "KTXcubemapIncomplete_Layer4_16x12",
+            "KTXcubemapIncomplete_Layer4_8x16"
         ]
     }
 }

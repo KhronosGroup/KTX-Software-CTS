@@ -1,0 +1,17 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7101,
+            "type": "error",
+            "message": "Invalid KTXcubemapIncomplete value. The two MSB must be 0.",
+            "details": "The value is 11000000 but the two MSB must be 0 (00XXXXXX)."
+        },
+        {
+            "id": 7103,
+            "type": "error",
+            "message": "Invalid KTXcubemapIncomplete value. No face is marked present.",
+            "details": "No face bit is set as present but at least 1 face must be present."
+        }
+    ]
+}

@@ -1,8 +1,8 @@
 {
-    "description": "If faceCount is equal to 6, pixelDepth must be 0.",
-    "command": "ktx validate ${format[args]} input/validate/3013/error_CubeWithDepth_${depth}.ktx2",
+    "description": "faceCount must be 1 if KTXcubemapIncomplete is present.",
+    "command": "ktx validate ${format[args]} input/validate/7105/error_KTXcubemapIncompleteWithFaceCountNot1_${subcase}.ktx2",
     "status": 3,
-    "stdout": "golden/validate/3013/error_CubeWithDepth_${depth}.out.${format[ext]}",
+    "stdout": "golden/validate/7105/error_KTXcubemapIncompleteWithFaceCountNot1_${subcase}.out.${format[ext]}",
     "args": {
         "format": [
             {
@@ -22,11 +22,10 @@
                 "ext": "mini.json"
             }
         ],
-        "depth": [
-            "1",
-            "6",
-            "KTXcubemapIncomplete_1",
-            "KTXcubemapIncomplete_6"
+        "subcase": [
+            "Face0",
+            "Face2",
+            "Face6"
         ]
     }
 }

@@ -1,0 +1,4 @@
+Validation failed
+
+error-7100: Invalid KTXcubemapIncomplete metadata. The size of the value must be 1 byte.
+    The size of the KTXcubemapIncomplete value is 2 but it must be 1 byte.
