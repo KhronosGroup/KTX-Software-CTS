@@ -5,7 +5,7 @@
             "id": 7002,
             "type": "error",
             "message": "Invalid Key/Value Data. Not enough data left in Key/Value Data to process another key-value entry",
-            "details": "Key/Value Data has 4 byte unprocessed but for a key value entry at least 6 byte is required (4 byte size + 1 byte key + null terminator)."
+            "details": "Key/Value Data has 4 byte(s) unprocessed but for a key value entry at least 6 bytes are required (4 byte size + 1 byte key + null terminator)."
         }
     ]
 }

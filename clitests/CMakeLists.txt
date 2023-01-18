@@ -10,8 +10,10 @@ set(CASELIST
     tests/info/sample_text.json
     tests/info/sample_json.json
     tests/info/sample_mini.json
+
     tests/validate/fatal_1003_UnexpectedEOF.json
     tests/validate/fatal_2001_NotKTX2.json
+
     tests/validate/error_3001_ProhibitedFormat.json
     tests/validate/error_3002_InvalidFormat.json
     tests/validate/warning_3003_UnknownFormat.json
@@ -37,6 +39,9 @@ set(CASELIST
     tests/validate/error_3024_IndexSGDInvalidOffset.json
     tests/validate/error_3025_IndexSGDOffsetWithoutLength.json
     tests/validate/error_3026_IndexSGDMissing.json
+
+    tests/validate/error_6001_SizeMismatch.json
+
     tests/validate/error_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json
     tests/validate/error_7003_KeyAndValueByteLengthTooLarge.json
