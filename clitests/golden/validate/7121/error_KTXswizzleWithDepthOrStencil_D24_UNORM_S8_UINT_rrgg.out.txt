@@ -1,0 +1,4 @@
+Validation failed
+
+error-7121: KTXswizzle has no effect on depth or stencil texture formats.
+    KTXswizzle is present but for vkFormat VK_FORMAT_D24_UNORM_S8_UINT it has no effect.

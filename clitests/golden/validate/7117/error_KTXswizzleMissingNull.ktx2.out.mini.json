@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":7117,"type":"error","message":"Invalid KTXswizzle value. The value is missing the NULL terminator.","details":"The last byte of the value must be a NULL terminator."}]}

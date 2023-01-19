@@ -1,8 +1,8 @@
 {
-    "description": "The value of KTXorientation must be NULL terminated.",
-    "command": "ktx validate ${format[args]} input/validate/7107/error_KTXorientationMissingNull_${subcase}.ktx2",
+    "description": "The value of KTXswizzle must be NULL terminated.",
+    "command": "ktx validate ${format[args]} input/validate/7117/error_KTXswizzleMissingNull.ktx2",
     "status": 3,
-    "stdout": "golden/validate/7107/error_KTXorientationMissingNull_${subcase}.out.${format[ext]}",
+    "stdout": "golden/validate/7117/error_KTXswizzleMissingNull.ktx2.out.${format[ext]}",
     "args": {
         "format": [
             {
@@ -21,11 +21,6 @@
                 "args": "--format mini-json",
                 "ext": "mini.json"
             }
-        ],
-        "subcase": [
-            "1D",
-            "2D",
-            "3D"
         ]
     }
 }

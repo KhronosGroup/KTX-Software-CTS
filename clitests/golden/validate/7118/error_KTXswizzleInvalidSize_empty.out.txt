@@ -1,0 +1,4 @@
+Validation failed
+
+error-7118: Invalid KTXswizzle value. The size of the value must be 5 bytes (including the NULL terminator).
+    The size of KTXswizzle value is 1 byte(s) but it must be 5 bytes (including the NULL terminator).

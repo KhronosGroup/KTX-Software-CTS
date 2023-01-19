@@ -1,0 +1,47 @@
+{
+    "description": "KTXswizzle has no effect on depth or stencil texture formats.",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7121/error_KTXswizzleWithDepthOrStencil_${subcase}.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/7121/${warnAsErr[outPrefix]}_KTXswizzleWithDepthOrStencil_${subcase}.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "D16_UNORM_rrgg",
+            "X8_D24_UNORM_PACK32_rrgg",
+            "D32_SFLOAT_rrgg",
+            "S8_UINT_rrgg",
+            "D16_UNORM_S8_UINT_rrgg",
+            "D24_UNORM_S8_UINT_rrgg",
+            "D32_SFLOAT_S8_UINT_rrgg"
+        ]
+    }
+}
