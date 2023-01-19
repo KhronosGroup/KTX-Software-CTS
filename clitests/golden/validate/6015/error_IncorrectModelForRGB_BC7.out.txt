@@ -1,0 +1,10 @@
+Validation failed
+
+error-6015: Invalid colorModel in basic DFD block for RGB vkFormat.
+    DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_BC7 but for vkFormat VK_FORMAT_R8G8B8A8_UNORM it must be KHR_DF_MODEL_RGBSDA.
+error-6101: Invalid channelType for colorModel in basic DFD block.
+    DFD block #1 sample #1 in basic DFD block specifies channel (0x1) which is not valid for color model KHR_DF_MODEL_BC7.
+error-6101: Invalid channelType for colorModel in basic DFD block.
+    DFD block #1 sample #2 in basic DFD block specifies channel (0x2) which is not valid for color model KHR_DF_MODEL_BC7.
+error-6101: Invalid channelType for colorModel in basic DFD block.
+    DFD block #1 sample #3 in basic DFD block specifies channel (0xF) which is not valid for color model KHR_DF_MODEL_BC7.

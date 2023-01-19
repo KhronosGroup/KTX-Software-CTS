@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":6018,"type":"error","message":"Invalid colorModel in basic DFD block for BasisLZ supercompression.","details":"DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_HSLA_ANG but for BasisLZ supercompression it must be KHR_DF_MODEL_ETC1S."}]}

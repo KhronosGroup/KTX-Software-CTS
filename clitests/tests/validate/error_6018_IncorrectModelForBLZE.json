@@ -1,0 +1,57 @@
+{
+    "description": "For BasisLZ color model must be ETC1S",
+    "command": "ktx validate ${format[args]} input/validate/6018/error_IncorrectModelForBLZE_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6018/error_IncorrectModelForBLZE_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "ASTC",
+            "BC1A",
+            "BC2",
+            "BC3",
+            "BC4",
+            "BC5",
+            "BC6H",
+            "BC7",
+            "CIEXYY",
+            "CIEXYZ",
+            "CMYKA",
+            "ETC1",
+            "ETC2",
+            "HSLA_ANG",
+            "HSLA_HEX",
+            "HSVA_ANG",
+            "HSVA_HEX",
+            "ICTCP",
+            "LABSDA",
+            "PVRTC2",
+            "PVRTC",
+            "RGBSDA",
+            "UASTC",
+            "UNSPECIFIED",
+            "XYZW",
+            "YCCBCCRC",
+            "YCGCOA",
+            "YIQSDA",
+            "YUVSDA"
+        ]
+    }
+}

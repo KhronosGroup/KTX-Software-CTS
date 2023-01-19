@@ -54,6 +54,10 @@ set(CASELIST
     tests/validate/error_6012_BasicInvalidTransferFunction.json
     tests/validate/error_6013_BasicSRGBMismatch.json
     tests/validate/error_6014_BasicNotSRGBMismatch.json
+    tests/validate/error_6015_IncorrectModelForRGB.json
+    tests/validate/error_6016_IncorrectModelForBlock.json
+    #tests/validate/error_6017_IncorrectModelFor422.json
+    tests/validate/error_6018_IncorrectModelForBLZE.json
 
     tests/validate/error_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json

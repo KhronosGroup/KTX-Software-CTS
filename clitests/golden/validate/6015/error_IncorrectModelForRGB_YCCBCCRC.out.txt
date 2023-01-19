@@ -1,0 +1,4 @@
+Validation failed
+
+error-6015: Invalid colorModel in basic DFD block for RGB vkFormat.
+    DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_YCCBCCRC but for vkFormat VK_FORMAT_R8G8B8A8_UNORM it must be KHR_DF_MODEL_RGBSDA.

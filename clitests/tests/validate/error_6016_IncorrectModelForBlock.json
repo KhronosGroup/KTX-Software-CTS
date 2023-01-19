@@ -1,0 +1,49 @@
+{
+    "description": "Block compressed formats must have a matching colorModel",
+    "command": "ktx validate ${format[args]} input/validate/6016/error_IncorrectModelForBlock_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6016/error_IncorrectModelForBlock_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "ASTC_10x6_UNORM_BLOCK",
+            "ASTC_12x10_SFLOAT_BLOCK_EXT",
+            "ASTC_12x12_SRGB_BLOCK",
+            "ASTC_3x3x3_UNORM_BLOCK_EXT",
+            "ASTC_4x4_UNORM_BLOCK",
+            "ASTC_4x4x3_SFLOAT_BLOCK_EXT",
+            "ASTC_5x4_SFLOAT_BLOCK_EXT",
+            "ASTC_5x4x4_SRGB_BLOCK_EXT",
+            "ASTC_6x6x5_UNORM_BLOCK_EXT",
+            "ASTC_8x5_SRGB_BLOCK",
+            "ASTC_8x6_SFLOAT_BLOCK_EXT",
+            "BC1_RGBA_SRGB_BLOCK",
+            "BC1_RGB_UNORM_BLOCK",
+            "BC6H_UFLOAT_BLOCK",
+            "BC7_UNORM_BLOCK",
+            "EAC_R11G11_SNORM_BLOCK",
+            "EAC_R11_UNORM_BLOCK",
+            "ETC2_R8G8B8A1_SRGB_BLOCK",
+            "ETC2_R8G8B8_UNORM_BLOCK",
+            "PVRTC1_2BPP_UNORM_BLOCK_IMG",
+            "PVRTC2_4BPP_SRGB_BLOCK_IMG"
+        ]
+    }
+}

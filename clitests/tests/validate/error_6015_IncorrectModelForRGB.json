@@ -1,0 +1,57 @@
+{
+    "description": "Unless otherwise stated (e.g. for block compressed, BasisLZ, and 422 formats) color model must be RGBSDA",
+    "command": "ktx validate ${format[args]} input/validate/6015/error_IncorrectModelForRGB_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6015/error_IncorrectModelForRGB_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "ASTC",
+            "BC1A",
+            "BC2",
+            "BC3",
+            "BC4",
+            "BC5",
+            "BC6H",
+            "BC7",
+            "CIEXYY",
+            "CIEXYZ",
+            "CMYKA",
+            "ETC1",
+            "ETC1S",
+            "ETC2",
+            "HSLA_ANG",
+            "HSLA_HEX",
+            "HSVA_ANG",
+            "HSVA_HEX",
+            "ICTCP",
+            "LABSDA",
+            "PVRTC2",
+            "PVRTC",
+            "UASTC",
+            "UNSPECIFIED",
+            "XYZW",
+            "YCCBCCRC",
+            "YCGCOA",
+            "YIQSDA",
+            "YUVSDA"
+        ]
+    }
+}
