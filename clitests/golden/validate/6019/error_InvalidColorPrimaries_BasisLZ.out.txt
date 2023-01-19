@@ -1,0 +1,4 @@
+Validation failed
+
+error-6019: Invalid colorPrimaries in basic DFD block.
+    DFD block #1 colorPrimaries in basic DFD block is 42 which is invalid.
