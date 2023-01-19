@@ -1,0 +1,6 @@
+Validation failed
+
+error-7109: Invalid KTXorientation value. The value must match /^[rl]$/ for 1D, /^[rl][du]$/ for 2D and /^[rl][du][oi]$/ for 3D texture types.
+    Dimension 0 is "x" but it must be either "r" or "l".
+error-7109: Invalid KTXorientation value. The value must match /^[rl]$/ for 1D, /^[rl][du]$/ for 2D and /^[rl][du][oi]$/ for 3D texture types.
+    Dimension 1 is "x" but it must be either "d" or "u".

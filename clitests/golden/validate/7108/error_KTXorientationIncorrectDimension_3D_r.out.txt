@@ -1,0 +1,4 @@
+Validation failed
+
+error-7108: Invalid KTXorientation value. The number of dimensions specified must match the number of dimensions in the texture type.
+    The value has 1 dimension but the texture type has 3 and they must match.

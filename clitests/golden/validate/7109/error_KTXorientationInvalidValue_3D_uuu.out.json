@@ -1,0 +1,17 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7109,
+            "type": "error",
+            "message": "Invalid KTXorientation value. The value must match /^[rl]$/ for 1D, /^[rl][du]$/ for 2D and /^[rl][du][oi]$/ for 3D texture types.",
+            "details": "Dimension 0 is \"u\" but it must be either \"r\" or \"l\"."
+        },
+        {
+            "id": 7109,
+            "type": "error",
+            "message": "Invalid KTXorientation value. The value must match /^[rl]$/ for 1D, /^[rl][du]$/ for 2D and /^[rl][du][oi]$/ for 3D texture types.",
+            "details": "Dimension 2 is \"u\" but it must be either \"o\" or \"i\"."
+        }
+    ]
+}

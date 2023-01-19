@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":7108,"type":"error","message":"Invalid KTXorientation value. The number of dimensions specified must match the number of dimensions in the texture type.","details":"The value has 2 dimension but the texture type has 3 and they must match."}]}

@@ -1,0 +1,42 @@
+{
+    "description": "The value of error_KTXorientation must match /^[rl]$/ for 1D, /^[rl][du]$/ for 2D and /^[rl][du][oi]$/ for 3D texture types.",
+    "command": "ktx validate ${format[args]} input/validate/7109/error_KTXorientationInvalidValue_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7109/error_KTXorientationInvalidValue_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "1D_x",
+            "1D_u",
+            "2D_ur",
+            "2D_xd",
+            "2D_lx",
+            "2D_xx",
+            "2D_uu",
+            "2D_ur",
+            "3D_xdi",
+            "3D_lxi",
+            "3D_ldx",
+            "3D_xxx",
+            "3D_uuu",
+            "3D_iul"
+        ]
+    }
+}

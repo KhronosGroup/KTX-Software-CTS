@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7107,
+            "type": "error",
+            "message": "Invalid KTXorientation metadata. The value is missing the NULL terminator.",
+            "details": "The last byte of the value must be a NULL terminator."
+        }
+    ]
+}

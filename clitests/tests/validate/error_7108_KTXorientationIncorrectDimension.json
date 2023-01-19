@@ -1,0 +1,40 @@
+{
+    "description": "Number of dimension in KTXorientationIncorrect must match the number dimensions of the texture type.",
+    "command": "ktx validate ${format[args]} input/validate/7108/error_KTXorientationIncorrectDimension_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7108/error_KTXorientationIncorrectDimension_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "1D_empty",
+            "1D_ru",
+            "1D_ruo",
+            "1D_ruox",
+            "2D_empty",
+            "2D_r",
+            "2D_ruo",
+            "2D_ruox",
+            "3D_empty",
+            "3D_r",
+            "3D_ru",
+            "3D_ruox"
+        ]
+    }
+}

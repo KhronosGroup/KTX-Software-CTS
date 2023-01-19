@@ -76,6 +76,9 @@ set(CASELIST
     tests/validate/error_7103_KTXcubemapIncompleteNoBitSet.json
     tests/validate/error_7104_KTXcubemapIncompleteIncompatibleLayerCount.json
     tests/validate/error_7105_KTXcubemapIncompleteWithFaceCountNot1.json
+    tests/validate/error_7107_KTXorientationMissingNull.json
+    tests/validate/error_7108_KTXorientationIncorrectDimension.json
+    tests/validate/error_7109_KTXorientationInvalidValue.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
