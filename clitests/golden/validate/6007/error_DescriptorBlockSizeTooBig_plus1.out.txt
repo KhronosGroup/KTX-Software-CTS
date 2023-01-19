@@ -1,4 +1,4 @@
 Validation failed
 
-error-6007: DFD descriptorBlockSize is too big.
-    DFD #2 descriptorBlockSize is 13 but only 12 bytes left in the DFD region.
+error-6007: DFD block descriptorBlockSize is too big.
+    DFD block #2 descriptorBlockSize is 13 but only 12 bytes left in the DFD.

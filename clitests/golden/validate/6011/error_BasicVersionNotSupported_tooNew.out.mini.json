@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":6011,"type":"error","message":"Unsupported basic DFD version.","details":"Basic DFD #1 versionNumber is (0x3) but must be KHR_DF_VERSIONNUMBER_1_3."}]}
+{"valid":false,"messages":[{"id":6011,"type":"error","message":"Unsupported basic DFD block version.","details":"DFD block #1 versionNumber in basic DFD block is (0x3) but must be KHR_DF_VERSIONNUMBER_1_3."}]}

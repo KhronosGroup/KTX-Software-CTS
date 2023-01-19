@@ -1,4 +1,4 @@
 Validation successful
 
 warning-6003: Unrecognized DFD block.
-    DFD #2 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+    DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.

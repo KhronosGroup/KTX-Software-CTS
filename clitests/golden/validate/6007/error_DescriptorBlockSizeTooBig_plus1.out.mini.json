@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":6007,"type":"error","message":"DFD descriptorBlockSize is too big.","details":"DFD #2 descriptorBlockSize is 13 but only 12 bytes left in the DFD region."}]}
+{"valid":false,"messages":[{"id":6007,"type":"error","message":"DFD block descriptorBlockSize is too big.","details":"DFD block #2 descriptorBlockSize is 13 but only 12 bytes left in the DFD."}]}

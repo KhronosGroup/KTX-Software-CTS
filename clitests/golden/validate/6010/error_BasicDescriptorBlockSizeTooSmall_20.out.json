@@ -4,8 +4,8 @@
         {
             "id": 6010,
             "type": "error",
-            "message": "Basic DFD descriptorBlockSize is too small.",
-            "details": "Basic DFD #1 descriptorBlockSize is 20 which is smaller than the minimum size of a basic DFD (24 bytes)."
+            "message": "Basic DFD block descriptorBlockSize is too small.",
+            "details": "DFD block #1 descriptorBlockSize is 20 which is smaller than the minimum size of a basic DFD block (24 bytes)."
         }
     ]
 }

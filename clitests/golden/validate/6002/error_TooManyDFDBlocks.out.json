@@ -5,55 +5,55 @@
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #2 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #3 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #3 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #4 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #4 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #5 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #5 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #6 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #6 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #7 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #7 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #8 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #8 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #9 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #9 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #10 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #10 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6002,

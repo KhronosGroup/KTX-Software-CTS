@@ -5,25 +5,25 @@
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #2 with vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored."
+            "details": "DFD block #2 vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored."
         },
         {
             "id": 6005,
             "type": "warning",
             "message": "Multiple basic DFD blocks.",
-            "details": "DFD #3 is a basic DFD block but one was already processed before. It will be ignored."
+            "details": "DFD block #3 is a basic DFD block but one was already processed before. It will be ignored."
         },
         {
             "id": 6003,
             "type": "warning",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #4 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #4 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6005,
             "type": "warning",
             "message": "Multiple basic DFD blocks.",
-            "details": "DFD #5 is a basic DFD block but one was already processed before. It will be ignored."
+            "details": "DFD block #5 is a basic DFD block but one was already processed before. It will be ignored."
         }
     ]
 }

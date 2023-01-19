@@ -1,4 +1,4 @@
 Validation failed
 
-error-6010: Basic DFD descriptorBlockSize is too small.
-    Basic DFD #1 descriptorBlockSize is 12 which is smaller than the minimum size of a basic DFD (24 bytes).
+error-6010: Basic DFD block descriptorBlockSize is too small.
+    DFD block #1 descriptorBlockSize is 12 which is smaller than the minimum size of a basic DFD block (24 bytes).

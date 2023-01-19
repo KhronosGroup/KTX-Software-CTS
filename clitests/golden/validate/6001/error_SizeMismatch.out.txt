@@ -3,4 +3,4 @@ Validation failed
 error-6001: Mismatching dfdTotalSize and dfdByteLength. dfdTotalSize must match dfdByteLength.
     dfdTotalSize is 100 but dfdByteLength is 92 and they must match.
 warning-6003: Unrecognized DFD block.
-    DFD #2 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+    DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.

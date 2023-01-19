@@ -2,5 +2,5 @@ Validation failed
 
 error-3004: Invalid VkFormat. VkFormat must be VK_FORMAT_UNDEFINED for BASIS_LZ supercompression.
     VkFormat is VK_FORMAT_R8G8B8A8_UNORM but for supercompressionScheme BASIS_LZ it must be VK_FORMAT_UNDEFINED.
-error-6015: Invalid colorModel for basic DFD. If vkFormat is not VK_FORMAT_UNDEFINED colorModel must be either KHR_DF_MODEL_RGBSDA or KHR_DF_MODEL_YUVSDA.
-    Basic DFD #1 colorModel is KHR_DF_MODEL_ETC1S but for vkFormat VK_FORMAT_R8G8B8A8_UNORM it must be must be either KHR_DF_MODEL_RGBSDA or KHR_DF_MODEL_YUVSDA.
+error-6015: Invalid colorModel for basic DFD block. If vkFormat is not VK_FORMAT_UNDEFINED colorModel must be either KHR_DF_MODEL_RGBSDA or KHR_DF_MODEL_YUVSDA.
+    DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_ETC1S but for vkFormat VK_FORMAT_R8G8B8A8_UNORM it must be must be either KHR_DF_MODEL_RGBSDA or KHR_DF_MODEL_YUVSDA.

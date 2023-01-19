@@ -4,8 +4,8 @@
         {
             "id": 6012,
             "type": "error",
-            "message": "Invalid transferFunction for basic DFD. It must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.",
-            "details": "Basic DFD #1 transferFunction is KHR_DF_TRANSFER_HLG_EOTF but must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB."
+            "message": "Invalid transferFunction for basic DFD block. It must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.",
+            "details": "DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_HLG_EOTF but must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB."
         }
     ]
 }

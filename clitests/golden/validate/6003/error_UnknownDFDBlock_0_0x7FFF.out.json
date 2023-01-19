@@ -5,7 +5,7 @@
             "id": 6003,
             "type": "error",
             "message": "Unrecognized DFD block.",
-            "details": "DFD #2 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
+            "details": "DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."
         }
     ]
 }

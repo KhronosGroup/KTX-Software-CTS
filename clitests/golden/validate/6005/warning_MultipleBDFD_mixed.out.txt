@@ -1,10 +1,10 @@
 Validation successful
 
 warning-6003: Unrecognized DFD block.
-    DFD #2 with vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored.
+    DFD block #2 vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored.
 warning-6005: Multiple basic DFD blocks.
-    DFD #3 is a basic DFD block but one was already processed before. It will be ignored.
+    DFD block #3 is a basic DFD block but one was already processed before. It will be ignored.
 warning-6003: Unrecognized DFD block.
-    DFD #4 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+    DFD block #4 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
 warning-6005: Multiple basic DFD blocks.
-    DFD #5 is a basic DFD block but one was already processed before. It will be ignored.
+    DFD block #5 is a basic DFD block but one was already processed before. It will be ignored.

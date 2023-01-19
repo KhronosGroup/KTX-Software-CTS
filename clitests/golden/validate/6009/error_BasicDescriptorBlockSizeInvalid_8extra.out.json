@@ -4,8 +4,8 @@
         {
             "id": 6009,
             "type": "error",
-            "message": "Basic DFD descriptorBlockSize is invalid.",
-            "details": "Basic DFD #1 descriptorBlockSize is 96 which does not fit the criteria (descriptorBlockSize - 24) % 16 == 0."
+            "message": "Basic DFD block descriptorBlockSize is invalid.",
+            "details": "DFD block #1 descriptorBlockSize is 96 which does not fit the criteria (descriptorBlockSize - 24) % 16 == 0 for basic DFD blocks."
         }
     ]
 }

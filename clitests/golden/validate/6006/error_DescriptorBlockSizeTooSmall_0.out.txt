@@ -1,4 +1,4 @@
 Validation failed
 
-error-6006: DFD descriptorBlockSize is too small.
-    DFD #2 descriptorBlockSize is 0 but has to be at least 8 bytes.
+error-6006: DFD block descriptorBlockSize is too small.
+    DFD block #2 descriptorBlockSize is 0 but has to be at least 8 bytes.

@@ -4,8 +4,8 @@
         {
             "id": 6006,
             "type": "error",
-            "message": "DFD descriptorBlockSize is too small.",
-            "details": "DFD #2 descriptorBlockSize is 7 but has to be at least 8 bytes."
+            "message": "DFD block descriptorBlockSize is too small.",
+            "details": "DFD block #2 descriptorBlockSize is 7 but has to be at least 8 bytes."
         }
     ]
 }

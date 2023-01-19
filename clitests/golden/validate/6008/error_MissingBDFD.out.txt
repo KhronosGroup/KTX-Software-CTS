@@ -1,10 +1,10 @@
 Validation failed
 
 warning-6003: Unrecognized DFD block.
-    DFD #1 with vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+    DFD block #1 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
 warning-6003: Unrecognized DFD block.
-    DFD #2 with vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored.
+    DFD block #2 vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored.
 warning-6003: Unrecognized DFD block.
-    DFD #3 with vendorId (0x2) and descriptorType 0 is not recognized and thus ignored.
+    DFD block #3 vendorId (0x2) and descriptorType 0 is not recognized and thus ignored.
 error-6008: Missing basic DFD block.
-    No basic data format descriptor was found in the DFD region, or it was not the first DFD block.
+    No basic data format descriptor block was found in the DFD, or it was not the first DFD block.

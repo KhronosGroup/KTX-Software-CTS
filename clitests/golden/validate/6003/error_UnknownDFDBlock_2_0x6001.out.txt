@@ -1,4 +1,4 @@
 Validation failed
 
 error-6003: Unrecognized DFD block.
-    DFD #2 with vendorId (0x2) and descriptorType 24577 is not recognized and thus ignored.
+    DFD block #2 vendorId (0x2) and descriptorType 24577 is not recognized and thus ignored.

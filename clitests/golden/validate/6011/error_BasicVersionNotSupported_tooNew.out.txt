@@ -1,4 +1,4 @@
 Validation failed
 
-error-6011: Unsupported basic DFD version.
-    Basic DFD #1 versionNumber is (0x3) but must be KHR_DF_VERSIONNUMBER_1_3.
+error-6011: Unsupported basic DFD block version.
+    DFD block #1 versionNumber in basic DFD block is (0x3) but must be KHR_DF_VERSIONNUMBER_1_3.

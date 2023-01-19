@@ -1,6 +1,6 @@
 Validation failed
 
 warning-6003: Unrecognized DFD block.
-    DFD #1 with vendorId (0x2) and descriptorType 24577 is not recognized and thus ignored.
+    DFD block #1 vendorId (0x2) and descriptorType 24577 is not recognized and thus ignored.
 error-6008: Missing basic DFD block.
-    No basic data format descriptor was found in the DFD region, or it was not the first DFD block.
+    No basic data format descriptor block was found in the DFD, or it was not the first DFD block.
