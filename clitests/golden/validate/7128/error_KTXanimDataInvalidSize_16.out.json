@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7128,
+            "type": "error",
+            "message": "Invalid KTXanimData metadata. The size of the value must be 12 bytes.",
+            "details": "The size of KTXanimData value is 16 byte(s) but it must be 12 bytes."
+        }
+    ]
+}

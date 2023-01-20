@@ -1,0 +1,4 @@
+Validation failed
+
+error-7129: Invalid KTXanimData metadata. KTXanimData can only be used with array textures.
+    KTXanimData is present but with layerCount 0 the texture is not an array texture.

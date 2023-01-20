@@ -1,0 +1,4 @@
+Validation failed
+
+error-7130: Incompatible KTXanimData and KTXcubemapIncomplete metadata. KTXanimData and KTXcubemapIncomplete cannot be present at the same time.
+    Both KTXanimData and KTXcubemapIncomplete is present but they are incompatible.

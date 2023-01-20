@@ -104,9 +104,9 @@ set(CASELIST
     tests/validate/warning_7125_KTXwriterMissing.json
     tests/validate/error_7126_KTXwriterScParamsMissingNull.json
     tests/validate/error_7127_KTXwriterScParamsInvalidUTF8.json
-#    tests/validate/error_7128_KTXanimDataInvalidSize.json
-#    tests/validate/error_7129_KTXanimDataNotArray.json
-#    tests/validate/error_7130_KTXanimDataWithCubeIncomplete.json
+    tests/validate/error_7128_KTXanimDataInvalidSize.json
+    tests/validate/error_7129_KTXanimDataNotArray.json
+    tests/validate/error_7130_KTXanimDataWithCubeIncomplete.json
     tests/validate/error_7131_KTXastcDecodeModeMissingNull.json
     tests/validate/error_7132_KTXastcDecodeModeInvalidValue.json
 #    tests/validate/error_7133_KTXastcDecodeModeunorm8NotLDR.json
