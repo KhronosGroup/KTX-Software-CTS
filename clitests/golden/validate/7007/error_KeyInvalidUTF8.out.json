@@ -2,56 +2,92 @@
     "valid": false,
     "messages": [
         {
-            "id": 7010,
+            "id": 7007,
             "type": "error",
+            "message": "Invalid key in Key/Value Data. Key must be a valid UTF-8 string.",
+            "details": "Key is \"UTF-8 2 Octet Sequence �( - 2nd byte invalid\", which contains an invalid UTF-8 character at position: 23."
+        },
+        {
+            "id": 7007,
+            "type": "error",
+            "message": "Invalid key in Key/Value Data. Key must be a valid UTF-8 string.",
+            "details": "Key is \"UTF-8 3 Octet Sequence �(� - 2nd byte invalid\", which contains an invalid UTF-8 character at position: 23."
+        },
+        {
+            "id": 7007,
+            "type": "error",
+            "message": "Invalid key in Key/Value Data. Key must be a valid UTF-8 string.",
+            "details": "Key is \"UTF-8 3 Octet Sequence �( - 3rd byte invalid\", which contains an invalid UTF-8 character at position: 23."
+        },
+        {
+            "id": 7007,
+            "type": "error",
+            "message": "Invalid key in Key/Value Data. Key must be a valid UTF-8 string.",
+            "details": "Key is \"UTF-8 4 Octet Sequence �(�� - 2nd byte invalid\", which contains an invalid UTF-8 character at position: 23."
+        },
+        {
+            "id": 7007,
+            "type": "error",
+            "message": "Invalid key in Key/Value Data. Key must be a valid UTF-8 string.",
+            "details": "Key is \"UTF-8 4 Octet Sequence �(� - 3rd byte invalid\", which contains an invalid UTF-8 character at position: 23."
+        },
+        {
+            "id": 7007,
+            "type": "error",
+            "message": "Invalid key in Key/Value Data. Key must be a valid UTF-8 string.",
+            "details": "Key is \"UTF-8 4 Octet Sequence �( - 4th byte invalid\", which contains an invalid UTF-8 character at position: 23."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 2 Octet Sequence �( - 2nd byte invalid\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 2 Octet Sequence ñ\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 3 Octet Sequence �(� - 2nd byte invalid\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 3 Octet Sequence �( - 3rd byte invalid\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 3 Octet Sequence ₡\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 4 Octet Sequence �(�� - 2nd byte invalid\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 4 Octet Sequence �(� - 3rd byte invalid\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 4 Octet Sequence �( - 4th byte invalid\" found in Key/Value Data."
         },
         {
             "id": 7010,
-            "type": "error",
+            "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 4 Octet Sequence 𐌼\" found in Key/Value Data."
         }
