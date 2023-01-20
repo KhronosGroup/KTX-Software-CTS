@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "The value of KTXastcDecodeMode must be either \"rgb9e5\" or \"unorm8\".",
     "command": "ktx validate ${format[args]} input/validate/7132/error_KTXastcDecodeModeInvalidValue_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7132/error_KTXastcDecodeModeInvalidValue_${subcase}.out.${format[ext]}",

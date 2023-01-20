@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "The value of KTXwriter must be a valid UTF8 string.",
     "command": "ktx validate ${format[args]} input/validate/7123/error_KTXwriterInvalidUTF8_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7123/error_KTXwriterInvalidUTF8_${subcase}.out.${format[ext]}",

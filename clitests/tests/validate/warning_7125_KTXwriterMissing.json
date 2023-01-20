@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Writers are strongly urged to identify themselves via KTXwriter metadata.",
     "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7125/warning_KTXwriterMissing.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/7125/${warnAsErr[outPrefix]}_KTXwriterMissing.out.${format[ext]}",

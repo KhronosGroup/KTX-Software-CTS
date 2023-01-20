@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "KTXastcDecodeMode has no effect on and should not be present in KTX files that use the sRGB transfer function.",
     "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7135/warning_KTXastcDecodeModeWithsRGB_${subcase}.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/7135/${warnAsErr[outPrefix]}_KTXastcDecodeModeWithsRGB_${subcase}.out.${format[ext]}",

@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "KTXastcDecodeMode has no effect on and should not be present in KTX files that use a non-ASTC formats.",
     "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7134/warning_KTXastcDecodeModeNotASTC.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/7134/${warnAsErr[outPrefix]}_KTXastcDecodeModeNotASTC.out.${format[ext]}",
