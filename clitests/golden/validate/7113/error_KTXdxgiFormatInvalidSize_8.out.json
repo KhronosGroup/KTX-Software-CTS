@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7113,
+            "type": "error",
+            "message": "Invalid KTXdxgiFormat__ metadata. The size of the value must be 4 byte.",
+            "details": "The size of KTXdxgiFormat__ value is 8 but it must be 4 byte."
+        }
+    ]
+}

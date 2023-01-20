@@ -1,0 +1,1 @@
+{"valid":false,"messages":[{"id":7110,"type":"error","message":"Invalid KTXglFormat metadata. The size of the value must be 12 bytes.","details":"The size of KTXglFormat value is 11 byte(s) but it must be 12 bytes."}]}

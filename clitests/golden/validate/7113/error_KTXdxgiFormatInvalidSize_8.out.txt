@@ -1,0 +1,4 @@
+Validation failed
+
+error-7113: Invalid KTXdxgiFormat__ metadata. The size of the value must be 4 byte.
+    The size of KTXdxgiFormat__ value is 8 but it must be 4 byte.

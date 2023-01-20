@@ -1,0 +1,4 @@
+Validation failed
+
+error-7110: Invalid KTXglFormat metadata. The size of the value must be 12 bytes.
+    The size of KTXglFormat value is 11 byte(s) but it must be 12 bytes.

@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7116,
+            "type": "error",
+            "message": "Incompatible KTXmetalPixelFormat and vkFormat. If KTXmetalPixelFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
+            "details": "vkFormat is VK_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK but it must be VK_FORMAT_UNDEFINED if KTXmetalPixelFormat is present."
+        }
+    ]
+}

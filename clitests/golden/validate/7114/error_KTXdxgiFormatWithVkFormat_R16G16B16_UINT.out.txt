@@ -1,0 +1,4 @@
+Validation failed
+
+error-7114: Incompatible KTXdxgiFormat__ and vkFormat. If KTXdxgiFormat__ is present vkFormat must be VK_FORMAT_UNDEFINED.
+    vkFormat is VK_FORMAT_R16G16B16_UINT but it must be VK_FORMAT_UNDEFINED if KTXdxgiFormat__ is present.

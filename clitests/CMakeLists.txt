@@ -85,18 +85,17 @@ set(CASELIST
     tests/validate/error_7107_KTXorientationMissingNull.json
     tests/validate/error_7108_KTXorientationIncorrectDimension.json
     tests/validate/error_7109_KTXorientationInvalidValue.json
-#    tests/validate/error_7110_KTXglFormatInvalidSize.json
-#    tests/validate/error_7111_KTXglFormatWithVkFormat.json
-#    tests/validate/error_7112_KTXglFormatInvalidValueForCompressed.json
-#    tests/validate/error_7112_KTXglFormatInvalidValueForCompressed.json
-#    tests/validate/error_7113_KTXdxgiFormatInvalidSize.json
-#    tests/validate/error_7114_KTXdxgiFormatWithVkFormat.json
-#    tests/validate/error_7115_KTXmetalPixelFormatInvalidSize.json
-#    tests/validate/error_7116_KTXmetalPixelFormatWithVkFormat.json
+    tests/validate/error_7110_KTXglFormatInvalidSize.json
+    tests/validate/error_7111_KTXglFormatWithVkFormat.json
+    # tests/validate/error_7112_KTXglFormatInvalidValueForCompressed.json
+    tests/validate/error_7113_KTXdxgiFormatInvalidSize.json
+    tests/validate/error_7114_KTXdxgiFormatWithVkFormat.json
+    tests/validate/error_7115_KTXmetalPixelFormatInvalidSize.json
+    tests/validate/error_7116_KTXmetalPixelFormatWithVkFormat.json
     tests/validate/error_7117_KTXswizzleMissingNull.json
     tests/validate/error_7118_KTXswizzleInvalidSize.json
     tests/validate/error_7119_KTXswizzleInvalidValue.json
-#    tests/validate/error_7120_KTXswizzleInvalidValueMissingChannel.json
+    # tests/validate/error_7120_KTXswizzleInvalidValueMissingChannel.json
     tests/validate/warning_7121_KTXswizzleWithDepthOrStencil.json
     tests/validate/error_7122_KTXwriterMissingNull.json
     tests/validate/error_7123_KTXwriterInvalidUTF8.json
@@ -109,7 +108,7 @@ set(CASELIST
     tests/validate/error_7130_KTXanimDataWithCubeIncomplete.json
     tests/validate/error_7131_KTXastcDecodeModeMissingNull.json
     tests/validate/error_7132_KTXastcDecodeModeInvalidValue.json
-#    tests/validate/error_7133_KTXastcDecodeModeunorm8NotLDR.json
+    # tests/validate/error_7133_KTXastcDecodeModeunorm8NotLDR.json
     tests/validate/warning_7134_KTXastcDecodeModeNotASTC.json
     tests/validate/warning_7135_KTXastcDecodeModeWithsRGB.json
 )
