@@ -1,0 +1,4 @@
+Validation failed
+
+error-7124: Missing KTXwriter metadata. When KTXwriterScParams is present KTXwriter must also be present.
+    KTXwriter metadata is missing. When KTXwriterScParams is present KTXwriter must also be present.

@@ -1,0 +1,11 @@
+{
+    "valid": true,
+    "messages": [
+        {
+            "id": 7134,
+            "type": "warning",
+            "message": "KTXastcDecodeMode has no effect on and should not be present in KTX files that use a non-ASTC formats.",
+            "details": "KTXastcDecodeMode is present but for color model KHR_DF_MODEL_RGBSDA it has no effect."
+        }
+    ]
+}

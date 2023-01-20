@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7127,
+            "type": "error",
+            "message": "Invalid KTXwriterScParams value. The value must be a valid UTF8 string.",
+            "details": "The value contains an invalid UTF8 character at position: 23."
+        }
+    ]
+}

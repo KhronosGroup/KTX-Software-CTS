@@ -98,20 +98,20 @@ set(CASELIST
     tests/validate/error_7119_KTXswizzleInvalidValue.json
 #    tests/validate/error_7120_KTXswizzleInvalidValueMissingChannel.json
     tests/validate/warning_7121_KTXswizzleWithDepthOrStencil.json
-#    tests/validate/error_7122_KTXwriterMissingNull.json
-#    tests/validate/error_7123_KTXwriterInvalidUTF8.json
-#    tests/validate/error_7124_KTXwriterRequiredButMissing.json
-#    tests/validate/warning_7125_KTXwriterMissing.json
-#    tests/validate/error_7126_KTXwriterScParamsMissingNull.json
-#    tests/validate/error_7127_KTXwriterScParamsInvalidUTF8.json
+    tests/validate/error_7122_KTXwriterMissingNull.json
+    tests/validate/error_7123_KTXwriterInvalidUTF8.json
+    tests/validate/error_7124_KTXwriterRequiredButMissing.json
+    tests/validate/warning_7125_KTXwriterMissing.json
+    tests/validate/error_7126_KTXwriterScParamsMissingNull.json
+    tests/validate/error_7127_KTXwriterScParamsInvalidUTF8.json
 #    tests/validate/error_7128_KTXanimDataInvalidSize.json
 #    tests/validate/error_7129_KTXanimDataNotArray.json
 #    tests/validate/error_7130_KTXanimDataWithCubeIncomplete.json
-#    tests/validate/error_7131_KTXastcDecodeModeMissingNull.json
-#    tests/validate/error_7132_KTXastcDecodeModeInvalidValue.json
+    tests/validate/error_7131_KTXastcDecodeModeMissingNull.json
+    tests/validate/error_7132_KTXastcDecodeModeInvalidValue.json
 #    tests/validate/error_7133_KTXastcDecodeModeunorm8NotLDR.json
-#    tests/validate/warning_7134_KTXastcDecodeModeNotASTC.json
-#    tests/validate/warning_7135_KTXastcDecodeModeWithsRGB.json
+    tests/validate/warning_7134_KTXastcDecodeModeNotASTC.json
+    tests/validate/warning_7135_KTXastcDecodeModeWithsRGB.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)

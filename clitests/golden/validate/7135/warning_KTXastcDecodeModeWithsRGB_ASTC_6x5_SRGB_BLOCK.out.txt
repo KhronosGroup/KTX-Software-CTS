@@ -1,0 +1,4 @@
+Validation successful
+
+warning-7135: KTXastcDecodeMode has no effect on and should not be present in KTX files that use the sRGB transfer function.
+    KTXastcDecodeMode is present but for transfer function KHR_DF_TRANSFER_SRGB it has no effect.

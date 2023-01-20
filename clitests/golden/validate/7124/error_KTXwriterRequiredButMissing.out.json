@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7124,
+            "type": "error",
+            "message": "Missing KTXwriter metadata. When KTXwriterScParams is present KTXwriter must also be present.",
+            "details": "KTXwriter metadata is missing. When KTXwriterScParams is present KTXwriter must also be present."
+        }
+    ]
+}

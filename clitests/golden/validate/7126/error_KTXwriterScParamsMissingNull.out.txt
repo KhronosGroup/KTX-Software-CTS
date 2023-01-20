@@ -1,0 +1,4 @@
+Validation failed
+
+error-7126: Invalid KTXwriterScParams metadata. The value is missing the NULL terminator.
+    The last byte of the value must be a NULL terminator.

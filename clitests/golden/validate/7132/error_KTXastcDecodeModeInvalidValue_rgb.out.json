@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 7132,
+            "type": "error",
+            "message": "Invalid KTXastcDecodeMode value. The value must be either \"rgb9e5\" or \"unorm8\".",
+            "details": "The value is \"rgb\" but the value must be either \"rgb9e5\" or \"unorm8\"."
+        }
+    ]
+}

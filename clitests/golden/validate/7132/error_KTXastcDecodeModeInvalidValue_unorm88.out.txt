@@ -1,0 +1,4 @@
+Validation failed
+
+error-7132: Invalid KTXastcDecodeMode value. The value must be either "rgb9e5" or "unorm8".
+    The value is "unorm88" but the value must be either "rgb9e5" or "unorm8".

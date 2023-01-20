@@ -1,0 +1,4 @@
+Validation failed
+
+error-7131: Invalid KTXastcDecodeMode metadata. The value is missing the NULL terminator.
+    The last byte of the value must be a NULL terminator.

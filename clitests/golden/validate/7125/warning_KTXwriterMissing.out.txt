@@ -1,0 +1,4 @@
+Validation successful
+
+warning-7125: Missing KTXwriter metadata. Writers are strongly urged to identify themselves via this.
+    KTXwriter metadata is missing. Writers are strongly urged to identify themselves via this.
