@@ -8,7 +8,7 @@
             "details": "DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_LINEAR but for vkFormat VK_FORMAT_R8G8B8_SRGB it must be KHR_DF_TRANSFER_SRGB."
         },
         {
-            "id": 60,
+            "id": 6028,
             "type": "error",
             "message": "",
             "details": "DFD does not match VK_FORMAT w.r.t. sign, float or normalization."

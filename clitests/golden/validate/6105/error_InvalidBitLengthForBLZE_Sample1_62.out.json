@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 6105,
+            "type": "error",
+            "message": "Invalid sample bitLength for BasisLZ/ETC1S texture in the basic DFD block.",
+            "details": "DFD block #1 sample #2 bitLength in basic DFD block is 62 but for BasisLZ/ETC1S textures it must be 63."
+        }
+    ]
+}

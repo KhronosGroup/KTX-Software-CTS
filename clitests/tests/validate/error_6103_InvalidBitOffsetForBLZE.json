@@ -1,0 +1,36 @@
+{
+    "description": "For ETC1S the bitoffset must be 0 for the first and 64 for the second sample",
+    "command": "ktx validate ${format[args]} input/validate/6103/error_InvalidBitOffsetForBLZE_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6103/error_InvalidBitOffsetForBLZE_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "Sample0_1",
+            "Sample0_42",
+            "Sample0_FFFF",
+            "Sample1_0",
+            "Sample1_42",
+            "Sample1_63",
+            "Sample1_65",
+            "Sample1_FFFF"
+        ]
+    }
+}

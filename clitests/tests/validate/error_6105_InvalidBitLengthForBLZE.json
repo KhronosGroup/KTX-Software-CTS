@@ -1,0 +1,38 @@
+{
+    "description": "For ETC1S the bitLength must be 63.",
+    "command": "ktx validate ${format[args]} input/validate/6105/error_InvalidBitLengthForBLZE_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6105/error_InvalidBitLengthForBLZE_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "Sample0_0",
+            "Sample0_42",
+            "Sample0_62",
+            "Sample0_64",
+            "Sample0_FF",
+            "Sample1_0",
+            "Sample1_42",
+            "Sample1_62",
+            "Sample1_64",
+            "Sample1_FF"
+        ]
+    }
+}

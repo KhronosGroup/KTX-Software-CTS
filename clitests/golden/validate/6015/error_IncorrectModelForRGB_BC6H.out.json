@@ -10,20 +10,20 @@
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid channelType for colorModel in basic DFD block.",
-            "details": "DFD block #1 sample #1 in basic DFD block specifies channel (0x1) which is not valid for color model KHR_DF_MODEL_BC6H."
+            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #2 channelType in basic DFD block is (0x1) which is not valid for colorModel KHR_DF_MODEL_BC6H."
         },
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid channelType for colorModel in basic DFD block.",
-            "details": "DFD block #1 sample #2 in basic DFD block specifies channel (0x2) which is not valid for color model KHR_DF_MODEL_BC6H."
+            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #3 channelType in basic DFD block is (0x2) which is not valid for colorModel KHR_DF_MODEL_BC6H."
         },
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid channelType for colorModel in basic DFD block.",
-            "details": "DFD block #1 sample #3 in basic DFD block specifies channel (0xF) which is not valid for color model KHR_DF_MODEL_BC6H."
+            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #4 channelType in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_BC6H."
         }
     ]
 }

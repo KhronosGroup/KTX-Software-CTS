@@ -1,0 +1,4 @@
+Validation failed
+
+error-6105: Invalid sample bitLength for BasisLZ/ETC1S texture in the basic DFD block.
+    DFD block #1 sample #2 bitLength in basic DFD block is 64 but for BasisLZ/ETC1S textures it must be 63.

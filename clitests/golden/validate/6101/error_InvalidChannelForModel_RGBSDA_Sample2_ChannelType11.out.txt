@@ -1,0 +1,4 @@
+Validation failed
+
+error-6101: Invalid sample channelType for colorModel in the basic DFD block.
+    DFD block #1 sample #3 channelType in basic DFD block is (0xB) which is not valid for colorModel KHR_DF_MODEL_RGBSDA.
