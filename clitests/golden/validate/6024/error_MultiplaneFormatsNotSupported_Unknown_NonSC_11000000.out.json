@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 6024,
+            "type": "error",
+            "message": "Invalid bytesPlanes in basic DFD block. Multiplane formats are not supported.",
+            "details": "DFD block #1 bytesPlanes in basic DFD block are 16 16 0 0 0 0 0 0 but bytesPlane[1-7] must be 0 as multiplane formats are not supported."
+        }
+    ]
+}

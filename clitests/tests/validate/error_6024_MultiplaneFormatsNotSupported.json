@@ -1,0 +1,32 @@
+{
+    "description": "For KTX_SS_NONE, not KHR_DF_MODEL_UASTC: bytesPlane[1-7] must be 0.",
+    "command": "ktx validate ${format[args]} input/validate/6024/error_MultiplaneFormatsNotSupported_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6024/error_MultiplaneFormatsNotSupported_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "Unknown_NonSC_11000000",
+            "R8G8B8A8_UNORM_41000000",
+            "R8G8B8A8_UNORM_44000000",
+            "R8G8B8A8_UNORM_44111111"
+        ]
+    }
+}

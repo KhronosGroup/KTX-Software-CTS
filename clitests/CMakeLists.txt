@@ -60,10 +60,10 @@ set(CASELIST
     tests/validate/error_6018_IncorrectModelForBLZE.json
     tests/validate/error_6019_InvalidColorPrimaries.json
     tests/validate/error_6020_InvalidTexelBlockDimension.json
-    #tests/validate/error_6021_BytesPlanesMismatch.json
-    #tests/validate/error_6022_BytesPlanesNotUnsized.json
-    #tests/validate/error_6023_BytesPlane0Zero.json
-    #tests/validate/error_6024_MultiplaneFormatsNotSupported.json
+    tests/validate/error_6021_BytesPlanesMismatch.json
+    tests/validate/error_6022_BytesPlanesNotUnsized.json
+    tests/validate/error_6023_BytesPlane0Zero.json
+    tests/validate/error_6024_MultiplaneFormatsNotSupported.json
     #tests/validate/error_6025_SampleCountMismatch.json
     #tests/validate/error_6026_InvalidSampleCount.json
     #tests/validate/error_6027_ZeroSamples.json

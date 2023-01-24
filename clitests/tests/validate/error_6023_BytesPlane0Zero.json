@@ -1,0 +1,29 @@
+{
+    "description": "For VK_FORMAT_UNDEFINED, KTX_SS_NONE, not KHR_DF_MODEL_UASTC: bytesPlane0 must not be 0",
+    "command": "ktx validate ${format[args]} input/validate/6023/error_BytesPlane0Zero_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6023/error_BytesPlane0Zero_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "0"
+        ]
+    }
+}

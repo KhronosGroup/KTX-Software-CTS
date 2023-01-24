@@ -1,0 +1,48 @@
+{
+    "description": "For KTX_SS_NONE, not VK_FORMAT_UNDEFINED bytesPlanes must match the expected value based on VkFormat. For UASTC with KTX_SS_NONE bytesPlane0 must be 16 while the rest must be 0.",
+    "command": "ktx validate ${format[args]} input/validate/6021/error_BytesPlanesMismatch_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6021/error_BytesPlanesMismatch_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "R8G8B8A8_UNORM_00000000",
+            "R8G8B8A8_UNORM_30000000",
+            "R8G8B8A8_UNORM_50000000",
+            "R8G8B8A8_UNORM_41111111",
+            "D32_SFLOAT_S8_UINT_00000000",
+            "D32_SFLOAT_S8_UINT_70000000",
+            "D32_SFLOAT_S8_UINT_90000000",
+            "D32_SFLOAT_S8_UINT_81111111",
+            "R32G32B32_SFLOAT_00000000",
+            "R32G32B32_SFLOAT_11_0000000",
+            "R32G32B32_SFLOAT_13_0000000",
+            "R32G32B32_SFLOAT_12_1111111",
+            "BC3_SRGB_BLOCK_00000000",
+            "BC3_SRGB_BLOCK_15_0000000",
+            "BC3_SRGB_BLOCK_17_0000000",
+            "BC3_SRGB_BLOCK_16_1111111",
+            "UASTC_00000000",
+            "UASTC_15_0000000",
+            "UASTC_17_0000000",
+            "UASTC_16_1111111"
+        ]
+    }
+}

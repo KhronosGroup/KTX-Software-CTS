@@ -1,0 +1,4 @@
+Validation failed
+
+error-6021: Invalid bytesPlanes in basic DFD block. The values do not match the expected values.
+    DFD block #1 bytesPlanes in basic DFD block are 0 0 0 0 0 0 0 0 but for VK_FORMAT_D32_SFLOAT_S8_UINT textures these must be 8 0 0 0 0 0 0 0.

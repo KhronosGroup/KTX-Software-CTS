@@ -1,0 +1,4 @@
+Validation failed
+
+error-6023: Invalid bytesPlane0 in basic DFD block. BytesPlane0 must be non-zero for non-supercompressed VK_FORMAT_UNDEFINED textures.
+    DFD block #1 bytesPlane0 in basic DFD block is 0 but it must non-zero for non-supercompressed VK_FORMAT_UNDEFINED textures.
