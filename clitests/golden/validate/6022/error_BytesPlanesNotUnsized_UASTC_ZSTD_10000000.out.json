@@ -1,0 +1,11 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 6022,
+            "type": "error",
+            "message": "Invalid bytesPlanes in basic DFD block. BytesPlanes must be 0 for supercompressed textures.",
+            "details": "DFD block #1 bytesPlanes in basic DFD block are 1 0 0 0 0 0 0 0 but for UASTC supercompressed textures these must be zeros."
+        }
+    ]
+}
