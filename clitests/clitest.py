@@ -147,11 +147,17 @@ if __name__ == '__main__':
             cmd_args = [ arg for arg in ctx.eval(testcase['command']).split(' ') if arg ]
             cmd_args[0] = cli_args.executable_path
 
+            # Use a file as stdin if specified
+            if 'stdin' in testcase:
+                stdin_pipe = open(ctx.eval(testcase['stdin']), mode='rb')
+            else:
+                stdin_pipe = subprocess.DEVNULL
+
             proc = subprocess.Popen(
                 cmd_args,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
-                stdin=subprocess.DEVNULL)
+                stdin=stdin_pipe)
 
             stdout, stderr = proc.communicate()
             status = proc.returncode
