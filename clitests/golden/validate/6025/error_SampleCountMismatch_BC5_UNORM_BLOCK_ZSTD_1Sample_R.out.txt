@@ -1,0 +1,4 @@
+Validation failed
+
+error-6025: Invalid sample count in basic DFD block. The sample count must match the expected sample count of the VkFormat.
+    DFD block #1 sample count in basic DFD block is 1 but for VkFormat VK_FORMAT_BC5_UNORM_BLOCK it must be 2.

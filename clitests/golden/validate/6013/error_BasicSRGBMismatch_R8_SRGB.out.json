@@ -10,8 +10,8 @@
         {
             "id": 6028,
             "type": "error",
-            "message": "",
-            "details": "DFD does not match VK_FORMAT w.r.t. sign, float or normalization."
+            "message": "Invalid sample qualifierFlags in basic DFD block. QualifierFlags must match the expected format of the VkFormat.",
+            "details": "DFD block #1 sample qualifierFlags in basic DFD block are indicating UNORM but they must match the expected sign, float and normalization of VK_FORMAT_R8_SRGB."
         }
     ]
 }

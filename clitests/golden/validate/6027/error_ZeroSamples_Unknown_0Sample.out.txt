@@ -1,0 +1,4 @@
+Validation failed
+
+error-6027: Invalid sample count in basic DFD block. The sample count must be non-zero for non-supercompressed textures with VK_FORMAT_UNDEFINED.
+    DFD block #1 sample count in basic DFD block is 0 but non-supercompressed VK_FORMAT_UNDEFINED textures must have sample information.
