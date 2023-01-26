@@ -1,4 +1,4 @@
 Validation failed
 
 error-7123: Invalid KTXwriter value. The value must be a valid UTF8 string.
-    The value contains an invalid UTF8 character at position: 23.
+    The value contains an invalid UTF8 character at index: 23.

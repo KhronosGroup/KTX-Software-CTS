@@ -1,0 +1,4 @@
+Validation failed
+
+error-7133: Invalid KTXastcDecodeMode value. "unorm8" is only valid for LDR formats.
+    The value is "unorm8" but it is invalid for non-LDR VkFormat VK_FORMAT_ASTC_12x12_SFLOAT_BLOCK_EXT.

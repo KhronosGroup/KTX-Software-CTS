@@ -1,0 +1,37 @@
+{
+    "description": "In KTXglFormat the glFormat and glType must be zero for compressed formats.",
+    "command": "ktx validate ${format[args]} input/validate/7112/error_KTXglFormatInvalidValueForCompressed_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7112/error_KTXglFormatInvalidValueForCompressed_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "BLZE_123",
+            "BLZE_103",
+            "BLZE_023",
+            "UASTC_123",
+            "UASTC_103",
+            "UASTC_023",
+            "BC5_UNORM_BLOCK_123",
+            "BC5_UNORM_BLOCK_103",
+            "BC5_UNORM_BLOCK_023"
+        ]
+    }
+}

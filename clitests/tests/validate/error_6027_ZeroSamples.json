@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "The sample count must be non-zero for non-supercompressed textures with VK_FORMAT_UNDEFINED.",
     "command": "ktx validate ${format[args]} input/validate/6027/error_ZeroSamples_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6027/error_ZeroSamples_${subcase}.out.${format[ext]}",

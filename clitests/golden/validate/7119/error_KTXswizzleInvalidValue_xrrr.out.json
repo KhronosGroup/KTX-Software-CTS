@@ -5,7 +5,7 @@
             "id": 7119,
             "type": "error",
             "message": "Invalid KTXswizzle value. The value must match /^[rgba01]{4}$/.",
-            "details": "The character at position 0 is \"x\" but it must be one of \"rgba01\"."
+            "details": "The character at index 0 is \"x\" but it must be one of \"rgba01\"."
         }
     ]
 }

@@ -1,4 +1,4 @@
 Validation failed
 
 error-7119: Invalid KTXswizzle value. The value must match /^[rgba01]{4}$/.
-    The character at position 3 is "2" but it must be one of "rgba01".
+    The character at index 3 is "2" but it must be one of "rgba01".

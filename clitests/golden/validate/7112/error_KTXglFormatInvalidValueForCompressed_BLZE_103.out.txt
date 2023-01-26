@@ -1,0 +1,4 @@
+Validation failed
+
+error-7112: Invalid KTXglFormatInvalidValue value. glFormat and glType must be zero for compressed formats.
+    glFormat is 0 and glType is 3 but for compressed formats with KTX_SS_BASIS_LZ both must be zero.

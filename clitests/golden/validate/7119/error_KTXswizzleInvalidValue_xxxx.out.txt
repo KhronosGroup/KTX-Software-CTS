@@ -1,10 +1,10 @@
 Validation failed
 
 error-7119: Invalid KTXswizzle value. The value must match /^[rgba01]{4}$/.
-    The character at position 0 is "x" but it must be one of "rgba01".
+    The character at index 0 is "x" but it must be one of "rgba01".
 error-7119: Invalid KTXswizzle value. The value must match /^[rgba01]{4}$/.
-    The character at position 1 is "x" but it must be one of "rgba01".
+    The character at index 1 is "x" but it must be one of "rgba01".
 error-7119: Invalid KTXswizzle value. The value must match /^[rgba01]{4}$/.
-    The character at position 2 is "x" but it must be one of "rgba01".
+    The character at index 2 is "x" but it must be one of "rgba01".
 error-7119: Invalid KTXswizzle value. The value must match /^[rgba01]{4}$/.
-    The character at position 3 is "x" but it must be one of "rgba01".
+    The character at index 3 is "x" but it must be one of "rgba01".

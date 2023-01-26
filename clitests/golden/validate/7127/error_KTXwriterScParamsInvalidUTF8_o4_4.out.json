@@ -5,7 +5,7 @@
             "id": 7127,
             "type": "error",
             "message": "Invalid KTXwriterScParams value. The value must be a valid UTF8 string.",
-            "details": "The value contains an invalid UTF8 character at position: 23."
+            "details": "The value contains an invalid UTF8 character at index: 23."
         }
     ]
 }
