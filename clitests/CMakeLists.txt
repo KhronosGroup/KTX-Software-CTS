@@ -67,6 +67,7 @@ set(CASELIST
     tests/validate/error_6025_SampleCountMismatch.json
     tests/validate/error_6026_InvalidSampleCount.json
     tests/validate/error_6027_ZeroSamples.json
+    tests/validate/error_6028_FormatMismatch.json
 
     tests/validate/error_6101_InvalidChannelForModel.json
     tests/validate/error_6102_InvalidBitOffsetForUASTC.json

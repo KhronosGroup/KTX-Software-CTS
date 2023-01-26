@@ -2,3 +2,5 @@ Validation failed
 
 error-6101: Invalid sample channelType for colorModel in the basic DFD block.
     DFD block #1 sample #4 channelType in basic DFD block is (0x9) which is not valid for colorModel KHR_DF_MODEL_RGBSDA.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.
+    DFD block #1 sample #4 channelType in basic DFD block is (0x9) but the expected value is KHR_DF_CHANNEL_RGBSDA_ALPHA for VK_FORMAT_R8G8B8A8_UNORM.

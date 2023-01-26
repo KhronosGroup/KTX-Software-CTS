@@ -6,6 +6,12 @@
             "type": "error",
             "message": "Invalid sample channelType for colorModel in the basic DFD block.",
             "details": "DFD block #1 sample #4 channelType in basic DFD block is (0xA) which is not valid for colorModel KHR_DF_MODEL_RGBSDA."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #4 channelType in basic DFD block is (0xA) but the expected value is KHR_DF_CHANNEL_RGBSDA_ALPHA for VK_FORMAT_R8G8B8A8_UNORM."
         }
     ]
 }

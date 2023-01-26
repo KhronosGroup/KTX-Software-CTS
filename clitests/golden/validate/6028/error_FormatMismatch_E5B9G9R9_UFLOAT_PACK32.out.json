@@ -1,0 +1,77 @@
+{
+    "valid": false,
+    "messages": [
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 bitOffset in basic DFD block is 8 but the expected value is 27 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 bitLength in basic DFD block is 8 but the expected value is 4 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 qualifierSigned in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition0 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition1 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition2 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition3 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 sampleLower in basic DFD block is 1 but the expected value is 15 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "details": "DFD block #1 sample #6 sampleUpper in basic DFD block is 1 but the expected value is 31 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6204,
+            "type": "error",
+            "message": "",
+            "details": "DFD indicates multiple sample locations."
+        }
+    ]
+}
