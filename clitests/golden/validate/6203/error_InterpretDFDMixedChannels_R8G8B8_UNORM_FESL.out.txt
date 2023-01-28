@@ -1,0 +1,12 @@
+Validation failed
+
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 qualifierSigned in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 qualifierFloat in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 qualifierExponent in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6203: Mixed sample types. The Signed/Unsigned and Float/Integer flags of Basic DFD samples must be the consistent.
+    DFD block #1 has mixed Signed/Unsigned or Float/Integer samples but they must be consistent.

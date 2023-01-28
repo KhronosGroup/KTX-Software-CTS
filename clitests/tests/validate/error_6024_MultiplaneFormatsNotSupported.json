@@ -26,7 +26,10 @@
             "Unknown_NonSC_11000000",
             "R8G8B8A8_UNORM_41000000",
             "R8G8B8A8_UNORM_44000000",
-            "R8G8B8A8_UNORM_44111111"
+            "R8G8B8A8_UNORM_44111111",
+            "R8G8B8A8_UNORM_ZSTD_41000000",
+            "R8G8B8A8_UNORM_ZSTD_44000000",
+            "R8G8B8A8_UNORM_ZSTD_44111111"
         ]
     }
 }

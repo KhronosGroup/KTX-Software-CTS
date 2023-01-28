@@ -77,6 +77,10 @@ set(CASELIST
     tests/validate/error_6106_InvalidLower.json
     tests/validate/error_6107_InvalidUpper.json
 
+    tests/validate/error_6203_InterpretDFDMixedChannels.json
+    tests/validate/error_6204_InterpretDFDMultisample.json
+    tests/validate/error_6205_InterpretDFDNonTrivialEndianness.json
+
     tests/validate/error_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json
     tests/validate/error_7003_KeyAndValueByteLengthTooLarge.json

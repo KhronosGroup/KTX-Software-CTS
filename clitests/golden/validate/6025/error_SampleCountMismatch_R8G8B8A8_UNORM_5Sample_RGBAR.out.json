@@ -11,8 +11,8 @@
         {
             "id": 6205,
             "type": "error",
-            "message": "",
-            "details": "DFD describes non little-endian data."
+            "message": "Non-trivial endianness detected in the basic DFD block.",
+            "details": "DFD block #1 describes non little-endian or not supported format."
         }
     ]
 }

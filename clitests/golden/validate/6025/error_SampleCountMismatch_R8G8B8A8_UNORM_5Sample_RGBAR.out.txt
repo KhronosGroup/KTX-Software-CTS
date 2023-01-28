@@ -2,5 +2,5 @@ Validation failed
 
 error-6025: Invalid sample count in basic DFD block. The sample count must match the expected sample count of the VkFormat.
     DFD block #1 sample count in basic DFD block is 5 but for VkFormat VK_FORMAT_R8G8B8A8_UNORM it must be 4.
-error-6205: 
-    DFD describes non little-endian data.
+error-6205: Non-trivial endianness detected in the basic DFD block.
+    DFD block #1 describes non little-endian or not supported format.

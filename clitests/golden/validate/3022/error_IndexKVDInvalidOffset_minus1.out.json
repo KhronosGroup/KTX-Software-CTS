@@ -11,7 +11,7 @@
         {
             "id": 6028,
             "type": "error",
-            "message": "Invalid sample in basic DFD block. The samples must match the expected samples for the given VkFormat.",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
             "details": "DFD block #1 sample #4 sampleUpper in basic DFD block is 620757247 but the expected value is 255 for VK_FORMAT_R8G8B8A8_UNORM."
         }
     ]
