@@ -1,1 +1,1 @@
-{"valid":true,"messages":[{"id":6003,"type":"warning","message":"Unrecognized DFD block.","details":"DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":true,"messages":[{"id":6003,"type":"warning","message":"Unrecognized DFD block.","details":"DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored."}]}

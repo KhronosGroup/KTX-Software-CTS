@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":7115,"type":"error","message":"Invalid KTXmetalPixelFormat metadata. The size of the value must be 4 byte.","details":"The size of KTXmetalPixelFormat value is 5 but it must be 4 byte."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":7115,"type":"error","message":"Invalid KTXmetalPixelFormat metadata. The size of the value must be 4 byte.","details":"The size of KTXmetalPixelFormat value is 5 but it must be 4 byte."}]}

@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":3025,"type":"error","message":"sgdByteOffset must be 0 when sgdByteLength = 0.","details":"sgdByteOffset is 240 but must be 0 when sgdByteLength is 0."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":3025,"type":"error","message":"sgdByteOffset must be 0 when sgdByteLength = 0.","details":"sgdByteOffset is 240 but must be 0 when sgdByteLength is 0."}]}

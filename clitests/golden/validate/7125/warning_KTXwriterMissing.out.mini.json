@@ -1,1 +1,1 @@
-{"valid":true,"messages":[{"id":7125,"type":"warning","message":"Missing KTXwriter metadata. Writers are strongly urged to identify themselves via this.","details":"KTXwriter metadata is missing. Writers are strongly urged to identify themselves via this."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":true,"messages":[{"id":7125,"type":"warning","message":"Missing KTXwriter metadata. Writers are strongly urged to identify themselves via this.","details":"KTXwriter metadata is missing. Writers are strongly urged to identify themselves via this."}]}

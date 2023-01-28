@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":6103,"type":"error","message":"Invalid sample bitOffset for BasisLZ/ETC1S texture in the basic DFD block.","details":"DFD block #1 sample #1 bitOffset in basic DFD block is 65535 but for BasisLZ/ETC1S textures it must be 0."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":6103,"type":"error","message":"Invalid sample bitOffset for BasisLZ/ETC1S texture in the basic DFD block.","details":"DFD block #1 sample #1 bitOffset in basic DFD block is 65535 but for BasisLZ/ETC1S textures it must be 0."}]}

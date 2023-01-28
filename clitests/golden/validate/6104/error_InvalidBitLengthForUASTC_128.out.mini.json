@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":6104,"type":"error","message":"Invalid sample bitLength for UASTC texture in the basic DFD block.","details":"DFD block #1 sample #1 bitLength in basic DFD block is 128 but for UASTC textures it must be 127."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":6104,"type":"error","message":"Invalid sample bitLength for UASTC texture in the basic DFD block.","details":"DFD block #1 sample #1 bitLength in basic DFD block is 128 but for UASTC textures it must be 127."}]}

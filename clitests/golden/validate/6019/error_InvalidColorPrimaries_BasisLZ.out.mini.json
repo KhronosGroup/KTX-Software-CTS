@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":6019,"type":"error","message":"Invalid colorPrimaries in basic DFD block.","details":"DFD block #1 colorPrimaries in basic DFD block is 42 which is invalid."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":6019,"type":"error","message":"Invalid colorPrimaries in basic DFD block.","details":"DFD block #1 colorPrimaries in basic DFD block is 42 which is invalid."}]}

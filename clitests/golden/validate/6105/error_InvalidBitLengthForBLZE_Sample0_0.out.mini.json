@@ -1,1 +1,1 @@
-{"valid":false,"messages":[{"id":6105,"type":"error","message":"Invalid sample bitLength for BasisLZ/ETC1S texture in the basic DFD block.","details":"DFD block #1 sample #1 bitLength in basic DFD block is 0 but for BasisLZ/ETC1S textures it must be 63."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":6105,"type":"error","message":"Invalid sample bitLength for BasisLZ/ETC1S texture in the basic DFD block.","details":"DFD block #1 sample #1 bitLength in basic DFD block is 0 but for BasisLZ/ETC1S textures it must be 63."}]}

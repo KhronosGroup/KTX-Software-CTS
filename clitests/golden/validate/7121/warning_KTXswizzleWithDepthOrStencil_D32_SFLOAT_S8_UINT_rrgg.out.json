@@ -1,4 +1,5 @@
 {
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
     "valid": true,
     "messages": [
         {

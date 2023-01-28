@@ -1,1 +1,1 @@
-{"valid":true,"messages":[{"id":3014,"type":"warning","message":"File contains a 3D array texture.","details":"File contains a 3D array texture. No APIs support these."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":true,"messages":[{"id":3014,"type":"warning","message":"File contains a 3D array texture.","details":"File contains a 3D array texture. No APIs support these."}]}
