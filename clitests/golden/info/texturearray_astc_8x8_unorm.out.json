@@ -3,7 +3,7 @@
     "valid": true,
     "messages": [],
     "header": {
-        "identifier": "«KTX 20»\r\n\x1A\n",
+        "identifier": "«KTX 20»\r\n\u001A\n",
         "vkFormat": "VK_FORMAT_ASTC_8x8_UNORM_BLOCK",
         "typeSize": 1,
         "pixelWidth": 256,
