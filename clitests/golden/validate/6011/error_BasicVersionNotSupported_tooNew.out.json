@@ -6,7 +6,7 @@
             "id": 6011,
             "type": "error",
             "message": "Unsupported basic DFD block version.",
-            "details": "DFD block #1 versionNumber in basic DFD block is (0x3) but must be KHR_DF_VERSIONNUMBER_1_3."
+            "details": "DFD block #1 versionNumber in basic DFD block is (0x0003) but must be KHR_DF_VERSIONNUMBER_1_3."
         }
     ]
 }

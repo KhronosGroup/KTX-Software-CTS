@@ -1,7 +1,7 @@
 Validation successful
 
 warning-6003: Unrecognized DFD block.
-    DFD block #2 vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored.
+    DFD block #2 vendorId (0x00001) and descriptorType (0x7FFF) is not recognized and thus ignored.
 warning-6005: Multiple basic DFD blocks.
     DFD block #3 is a basic DFD block but one was already processed before. It will be ignored.
 warning-6003: Unrecognized DFD block.

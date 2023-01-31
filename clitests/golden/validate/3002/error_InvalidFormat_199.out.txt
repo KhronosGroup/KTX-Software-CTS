@@ -1,4 +1,4 @@
 Validation failed
 
 error-3002: Invalid VkFormat.
-    Invalid VkFormat (0xC7).
+    Invalid VkFormat (0x000000C7).

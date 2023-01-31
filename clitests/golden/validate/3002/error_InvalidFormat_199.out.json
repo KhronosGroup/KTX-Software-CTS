@@ -6,7 +6,7 @@
             "id": 3002,
             "type": "error",
             "message": "Invalid VkFormat.",
-            "details": "Invalid VkFormat (0xC7)."
+            "details": "Invalid VkFormat (0x000000C7)."
         }
     ]
 }

@@ -6,7 +6,7 @@
             "id": 6003,
             "type": "error",
             "message": "Unrecognized DFD block.",
-            "details": "DFD block #2 vendorId (0x1) and descriptorType 32767 is not recognized and thus ignored."
+            "details": "DFD block #2 vendorId (0x00001) and descriptorType (0x7FFF) is not recognized and thus ignored."
         },
         {
             "id": 6005,
