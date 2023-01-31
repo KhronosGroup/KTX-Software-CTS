@@ -96,12 +96,12 @@ set(CASELIST
     tests/validate/error_7013_DuplicateKey.json
     tests/validate/error_7014_KeyEmpty.json
 
-    tests/validate/error_7100_KTXcubemapIncompleteInvalidSize.json
     tests/validate/error_7101_KTXcubemapIncompleteInvalidBitSet.json
     tests/validate/warning_7102_KTXcubemapIncompleteAllBitsSet.json
     tests/validate/error_7103_KTXcubemapIncompleteNoBitSet.json
     tests/validate/error_7104_KTXcubemapIncompleteIncompatibleLayerCount.json
     tests/validate/error_7105_KTXcubemapIncompleteWithFaceCountNot1.json
+    tests/validate/error_7106_KTXcubemapIncompleteInvalidSize.json
     tests/validate/error_7107_KTXorientationMissingNull.json
     tests/validate/error_7108_KTXorientationIncorrectDimension.json
     tests/validate/error_7109_KTXorientationInvalidValue.json
