@@ -5,7 +5,7 @@
         {
             "id": 7111,
             "type": "error",
-            "message": "Incompatible KTXglFormat and vkFormat. If KTXglFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
+            "message": "Incompatible KTXglFormat and VkFormat. If KTXglFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
             "details": "vkFormat is VK_FORMAT_R16G16B16A16_UINT but it must be VK_FORMAT_UNDEFINED if KTXglFormat is present."
         }
     ]

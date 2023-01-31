@@ -1,4 +1,4 @@
 Validation failed
 
-error-6013: Invalid transferFunction in basic DFD block. For an sRGB vkFormat it must be KHR_DF_TRANSFER_SRGB.
-    DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_LINEAR but for vkFormat VK_FORMAT_BC3_SRGB_BLOCK it must be KHR_DF_TRANSFER_SRGB.
+error-6013: Invalid transferFunction in basic DFD block. For an sRGB VkFormat it must be KHR_DF_TRANSFER_SRGB.
+    DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_LINEAR but for VkFormat VK_FORMAT_BC3_SRGB_BLOCK it must be KHR_DF_TRANSFER_SRGB.

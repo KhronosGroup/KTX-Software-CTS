@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":3016,"type":"error","message":"Too many mip levels.","details":"levelCount is 7 for the largest image dimension 32 is too many levels."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":3016,"type":"error","message":"Too many mip levels.","details":"levelCount is 7 but for the largest image dimension which is 32 it is too many level."}]}

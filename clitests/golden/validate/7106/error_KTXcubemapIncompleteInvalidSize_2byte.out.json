@@ -6,7 +6,7 @@
             "id": 7106,
             "type": "error",
             "message": "Invalid KTXcubemapIncomplete metadata. The size of the value must be 1 byte.",
-            "details": "The size of the KTXcubemapIncomplete value is 2 but it must be 1 byte."
+            "details": "The size of the KTXcubemapIncomplete value is 2 byte(s) but it must be 1 byte."
         }
     ]
 }

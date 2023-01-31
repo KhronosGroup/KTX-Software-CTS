@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":7121,"type":"error","message":"KTXswizzle has no effect on depth or stencil texture formats.","details":"KTXswizzle is present but for vkFormat VK_FORMAT_S8_UINT it has no effect."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":7121,"type":"error","message":"KTXswizzle has no effect on depth or stencil texture formats.","details":"KTXswizzle is present but for VkFormat VK_FORMAT_S8_UINT it has no effect."}]}

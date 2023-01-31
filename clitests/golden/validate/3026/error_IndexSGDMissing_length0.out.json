@@ -5,7 +5,7 @@
         {
             "id": 3025,
             "type": "error",
-            "message": "sgdByteOffset must be 0 when sgdByteLength = 0.",
+            "message": "sgdByteOffset must be 0 when sgdByteLength is 0.",
             "details": "sgdByteOffset is 208 but must be 0 when sgdByteLength is 0."
         },
         {

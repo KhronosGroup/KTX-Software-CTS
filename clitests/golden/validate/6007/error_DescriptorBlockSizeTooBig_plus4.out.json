@@ -6,7 +6,7 @@
             "id": 6007,
             "type": "error",
             "message": "DFD block descriptorBlockSize is too big.",
-            "details": "DFD block #2 descriptorBlockSize is 18 but only 16 bytes left in the DFD."
+            "details": "DFD block #2 descriptorBlockSize is 18 but only 16 byte(s) left in the DFD."
         }
     ]
 }

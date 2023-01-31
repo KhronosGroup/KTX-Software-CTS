@@ -6,7 +6,7 @@
             "id": 6020,
             "type": "error",
             "message": "Invalid texelBlockDimensions in basic DFD block.",
-            "details": "DFD block #1 texel block dimensions in basic DFD block are 3x3x1x1 but must be 4x4x1x1 for BasisLZ/ETC1S texture."
+            "details": "DFD block #1 texel block dimensions in basic DFD block are 3x3x1x1 but these must be 4x4x1x1 for BasisLZ/ETC1S textures."
         }
     ]
 }

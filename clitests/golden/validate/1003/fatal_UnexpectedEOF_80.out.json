@@ -6,7 +6,7 @@
             "id": 1003,
             "type": "fatal",
             "message": "Unexpected end of file.",
-            "details": "Unexpected end of file. Failed to read 92 bytes at offset 104 to access the DFD. Only able to read 0 bytes."
+            "details": "Unexpected end of file. Failed to read 92 byte(s) at offset 104 to access the DFD. Only able to read 0 byte(s)."
         }
     ]
 }

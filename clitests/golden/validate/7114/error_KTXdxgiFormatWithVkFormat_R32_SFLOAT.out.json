@@ -5,7 +5,7 @@
         {
             "id": 7114,
             "type": "error",
-            "message": "Incompatible KTXdxgiFormat__ and vkFormat. If KTXdxgiFormat__ is present vkFormat must be VK_FORMAT_UNDEFINED.",
+            "message": "Incompatible KTXdxgiFormat__ and VkFormat. If KTXdxgiFormat__ is present vkFormat must be VK_FORMAT_UNDEFINED.",
             "details": "vkFormat is VK_FORMAT_R32_SFLOAT but it must be VK_FORMAT_UNDEFINED if KTXdxgiFormat__ is present."
         }
     ]

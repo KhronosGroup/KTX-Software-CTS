@@ -6,7 +6,7 @@
             "id": 3019,
             "type": "error",
             "message": "Invalid supercompressionScheme.",
-            "details": "Invalid supercompressionScheme: 0xFFFF."
+            "details": "Invalid supercompressionScheme: (0x0000FFFF)."
         }
     ]
 }

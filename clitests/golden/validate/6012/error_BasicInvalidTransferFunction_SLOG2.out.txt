@@ -1,4 +1,4 @@
 Validation failed
 
 error-6012: Invalid transferFunction in basic DFD block. It must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.
-    DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_SLOG2 but must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.
+    DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_SLOG2 but it must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.

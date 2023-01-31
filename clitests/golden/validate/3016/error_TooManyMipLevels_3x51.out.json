@@ -6,7 +6,7 @@
             "id": 3016,
             "type": "error",
             "message": "Too many mip levels.",
-            "details": "levelCount is 7 for the largest image dimension 51 is too many levels."
+            "details": "levelCount is 7 but for the largest image dimension which is 51 it is too many level."
         }
     ]
 }

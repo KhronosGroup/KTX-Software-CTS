@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":6007,"type":"error","message":"DFD block descriptorBlockSize is too big.","details":"DFD block #2 descriptorBlockSize is 13 but only 12 bytes left in the DFD."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":6007,"type":"error","message":"DFD block descriptorBlockSize is too big.","details":"DFD block #2 descriptorBlockSize is 13 but only 12 byte(s) left in the DFD."}]}

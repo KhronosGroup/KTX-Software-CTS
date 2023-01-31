@@ -6,7 +6,7 @@
             "id": 7013,
             "type": "error",
             "message": "Empty key in Key/Value Data.",
-            "details": "Key length is 0 in key-value entry."
+            "details": "Key length is 0 byte in key-value entry."
         }
     ]
 }

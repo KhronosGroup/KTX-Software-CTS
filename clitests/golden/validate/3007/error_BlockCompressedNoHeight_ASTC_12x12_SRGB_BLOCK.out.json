@@ -6,7 +6,7 @@
             "id": 3007,
             "type": "error",
             "message": "Invalid pixelHeight. pixelHeight must not be 0 for a block compressed formats.",
-            "details": "pixelHeight is 0 but for block-compressed format VK_FORMAT_ASTC_12x12_SRGB_BLOCK it must not be 0."
+            "details": "pixelHeight is 0 but for block-compressed VK_FORMAT_ASTC_12x12_SRGB_BLOCK it must not be 0."
         }
     ]
 }

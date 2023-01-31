@@ -1,6 +1,6 @@
 Validation failed
 
 error-3007: Invalid pixelHeight. pixelHeight must not be 0 for a block compressed formats.
-    pixelHeight is 0 but for block-compressed format VK_FORMAT_ASTC_6x6x5_UNORM_BLOCK_EXT it must not be 0.
+    pixelHeight is 0 but for block-compressed VK_FORMAT_ASTC_6x6x5_UNORM_BLOCK_EXT it must not be 0.
 error-3009: Invalid pixelHeight. pixelHeight must not be 0 if pixelDepth is not also 0.
     pixelHeight is 0 and pixelDepth is 4 but pixelHeight must not be 0 if pixelDepth is not 0 as well.

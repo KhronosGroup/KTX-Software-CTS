@@ -5,8 +5,8 @@
         {
             "id": 6016,
             "type": "error",
-            "message": "Invalid colorModel in basic DFD block for block compressed vkFormat.",
-            "details": "DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_YUVSDA but for vkFormat VK_FORMAT_ASTC_3x3x3_UNORM_BLOCK_EXT it must be KHR_DF_MODEL_ASTC."
+            "message": "Invalid colorModel in basic DFD block for block compressed VkFormat.",
+            "details": "DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_YUVSDA but for VkFormat VK_FORMAT_ASTC_3x3x3_UNORM_BLOCK_EXT it must be KHR_DF_MODEL_ASTC."
         }
     ]
 }

@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":7004,"type":"error","message":"keyAndValueByteLength must be at least 2.","details":"keyAndValueByteLength is 1 but it must be at least 2 (1 byte key + null terminator)."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":7004,"type":"error","message":"Invalid keyAndValueByteLength. keyAndValueByteLength must be at least 2.","details":"keyAndValueByteLength is 1 but it must be at least 2 (1 byte key + null terminator)."}]}

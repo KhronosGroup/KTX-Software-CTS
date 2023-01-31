@@ -6,7 +6,7 @@
             "id": 7121,
             "type": "warning",
             "message": "KTXswizzle has no effect on depth or stencil texture formats.",
-            "details": "KTXswizzle is present but for vkFormat VK_FORMAT_D16_UNORM it has no effect."
+            "details": "KTXswizzle is present but for VkFormat VK_FORMAT_D16_UNORM it has no effect."
         }
     ]
 }

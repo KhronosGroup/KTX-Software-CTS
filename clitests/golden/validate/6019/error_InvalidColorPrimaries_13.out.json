@@ -6,7 +6,7 @@
             "id": 6019,
             "type": "error",
             "message": "Invalid colorPrimaries in basic DFD block.",
-            "details": "DFD block #1 colorPrimaries in basic DFD block is 13 which is invalid."
+            "details": "DFD block #1 colorPrimaries in basic DFD block is invalid: 13."
         }
     ]
 }

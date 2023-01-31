@@ -6,7 +6,7 @@
             "id": 3018,
             "type": "error",
             "message": "Using vendor supercompressionScheme. Cannot validate.",
-            "details": "supercompressionScheme is 0x10000 which falls into the reserved vendor range. Cannot validate."
+            "details": "supercompressionScheme is Vendor (0x00010000) which falls into the reserved vendor range. Cannot validate."
         }
     ]
 }

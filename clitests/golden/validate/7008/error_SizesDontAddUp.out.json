@@ -5,8 +5,8 @@
         {
             "id": 7008,
             "type": "error",
-            "message": "kvdByteLength must add up to sum of the key-value entries with paddings.",
-            "details": "The processed Key/Value Data length is 56 but kvdByteLength is 54 and they must match."
+            "message": "kvdByteLength must add up to the sum of the size of the key-value entries with paddings.",
+            "details": "The processed Key/Value Data length is 56 byte(s) but kvdByteLength is 54 byte(s) and they must match."
         },
         {
             "id": 7010,

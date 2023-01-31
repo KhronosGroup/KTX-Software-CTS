@@ -1,4 +1,4 @@
 Validation failed
 
 error-3010: Invalid pixelDepth. pixelDepth must not be 0 for block-compressed formats with non-zero block depth.
-    pixelDepth is 0 but for format VK_FORMAT_ASTC_5x4x4_SRGB_BLOCK_EXT (which is a block-compressed format with non-zero block depth) it must not be 0.
+    pixelDepth is 0 but for VK_FORMAT_ASTC_5x4x4_SRGB_BLOCK_EXT (which is a block-compressed format with non-zero block depth) it must not be 0.

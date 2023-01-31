@@ -6,7 +6,7 @@
             "id": 3014,
             "type": "warning",
             "message": "File contains a 3D array texture.",
-            "details": "File contains a 3D array texture. No APIs support these."
+            "details": "File contains a 3D array texture. No API supports these."
         }
     ]
 }

@@ -6,7 +6,7 @@
             "id": 1003,
             "type": "fatal",
             "message": "Unexpected end of file.",
-            "details": "Unexpected end of file. Failed to read 80 bytes at offset 0 to access the header. Only able to read 36 bytes."
+            "details": "Unexpected end of file. Failed to read 80 byte(s) at offset 0 to access the header. Only able to read 36 byte(s)."
         }
     ]
 }

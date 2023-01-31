@@ -24,7 +24,7 @@
             "id": 6008,
             "type": "error",
             "message": "Missing basic DFD block.",
-            "details": "No basic data format descriptor block was found in the DFD, or it was not the first DFD block."
+            "details": "No basic data format descriptor block is found in the DFD, or it is not the first DFD block."
         }
     ]
 }

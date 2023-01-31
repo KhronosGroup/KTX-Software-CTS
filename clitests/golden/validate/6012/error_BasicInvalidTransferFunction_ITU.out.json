@@ -6,7 +6,7 @@
             "id": 6012,
             "type": "error",
             "message": "Invalid transferFunction in basic DFD block. It must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB.",
-            "details": "DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_ITU but must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB."
+            "details": "DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_ITU but it must be either KHR_DF_TRANSFER_LINEAR or KHR_DF_TRANSFER_SRGB."
         }
     ]
 }

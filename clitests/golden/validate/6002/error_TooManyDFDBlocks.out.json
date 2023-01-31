@@ -60,7 +60,7 @@
             "id": 6002,
             "type": "error",
             "message": "Too many DFD blocks.",
-            "details": "The number of DFD blocks exceeds the maximum allowed 11. 8 bytes left unprocessed."
+            "details": "The number of DFD blocks exceeds the maximum allowed 11. 8 byte(s) left unprocessed."
         }
     ]
 }

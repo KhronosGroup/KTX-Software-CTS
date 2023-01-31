@@ -5,8 +5,8 @@
         {
             "id": 6015,
             "type": "error",
-            "message": "Invalid colorModel in basic DFD block for RGB vkFormat.",
-            "details": "DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_YCCBCCRC but for vkFormat VK_FORMAT_R8G8B8A8_UNORM it must be KHR_DF_MODEL_RGBSDA."
+            "message": "Invalid colorModel in basic DFD block for RGB VkFormat.",
+            "details": "DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_YCCBCCRC but for VkFormat VK_FORMAT_R8G8B8A8_UNORM it must be KHR_DF_MODEL_RGBSDA."
         }
     ]
 }

@@ -77,4 +77,4 @@ error-6028: Invalid sample in basic DFD block. The samples must match the expect
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #3 sampleUpper in basic DFD block is 1 but the expected value is 255 for VK_FORMAT_R8G8B8_UNORM.
 error-6204: Unsupported multiple-sample format. Every sample position must be zero.
-    DFD block #1 indicates multiple sample locations but multiple-sample formats are not supported.
+    DFD block #1 indicates multiple sample locations but multisample formats are not supported.

@@ -6,7 +6,7 @@
             "id": 7001,
             "type": "error",
             "message": "Invalid Key/Value Data. The number of key-value entries exceeds the maximum allowed.",
-            "details": "The number of key-value entries exceeds the maximum allowed 100. 28 bytes left unprocessed."
+            "details": "The number of key-value entries exceeds the maximum allowed 100. 28 byte(s) left unprocessed."
         },
         {
             "id": 7010,

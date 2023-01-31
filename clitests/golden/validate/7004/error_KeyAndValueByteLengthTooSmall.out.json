@@ -5,7 +5,7 @@
         {
             "id": 7004,
             "type": "error",
-            "message": "keyAndValueByteLength must be at least 2.",
+            "message": "Invalid keyAndValueByteLength. keyAndValueByteLength must be at least 2.",
             "details": "keyAndValueByteLength is 1 but it must be at least 2 (1 byte key + null terminator)."
         }
     ]

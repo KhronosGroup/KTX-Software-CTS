@@ -5,7 +5,7 @@
         {
             "id": 7116,
             "type": "error",
-            "message": "Incompatible KTXmetalPixelFormat and vkFormat. If KTXmetalPixelFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
+            "message": "Incompatible KTXmetalPixelFormat and VkFormat. If KTXmetalPixelFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
             "details": "vkFormat is VK_FORMAT_R64G64B64A64_SINT but it must be VK_FORMAT_UNDEFINED if KTXmetalPixelFormat is present."
         }
     ]

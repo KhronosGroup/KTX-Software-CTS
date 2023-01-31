@@ -1,6 +1,6 @@
 Validation failed
 
-error-7008: kvdByteLength must add up to sum of the key-value entries with paddings.
-    The processed Key/Value Data length is 56 but kvdByteLength is 54 and they must match.
+error-7008: kvdByteLength must add up to the sum of the size of the key-value entries with paddings.
+    The processed Key/Value Data length is 56 byte(s) but kvdByteLength is 54 byte(s) and they must match.
 warning-7010: Custom key in Key/Value Data.
     Custom key "ZZZZ" found in Key/Value Data.

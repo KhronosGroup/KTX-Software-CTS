@@ -1,4 +1,4 @@
 Validation failed
 
-error-7004: keyAndValueByteLength must be at least 2.
+error-7004: Invalid keyAndValueByteLength. keyAndValueByteLength must be at least 2.
     keyAndValueByteLength is 1 but it must be at least 2 (1 byte key + null terminator).

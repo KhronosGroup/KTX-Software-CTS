@@ -1,4 +1,4 @@
 Validation failed
 
 error-3016: Too many mip levels.
-    levelCount is 6 for the largest image dimension 20 is too many levels.
+    levelCount is 6 but for the largest image dimension which is 20 it is too many level.
