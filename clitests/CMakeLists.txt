@@ -41,7 +41,7 @@ set(CASELIST
     tests/validate/error_3026_IndexSGDMissing.json
 
     tests/validate/error_6001_SizeMismatch.json
-    tests/validate/error_6002_TooManyDFDBlocks.json
+    tests/validate/warning_6002_TooManyDFDBlocks.json
     tests/validate/warning_6003_UnknownDFDBlock.json
     tests/validate/error_6004_NotEnoughDataForBlockHeader.json
     tests/validate/warning_6005_MultipleBDFD.json
@@ -81,7 +81,7 @@ set(CASELIST
     tests/validate/error_6204_InterpretDFDMultisample.json
     tests/validate/error_6205_InterpretDFDNonTrivialEndianness.json
 
-    tests/validate/error_7001_TooManyEntries.json
+    tests/validate/warning_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json
     tests/validate/error_7003_KeyAndValueByteLengthTooLarge.json
     tests/validate/error_7004_KeyAndValueByteLengthTooSmall.json

@@ -1,0 +1,38 @@
+{
+    "description": "Too many DFD blocks (limit is 10)",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/6002/warning_TooManyDFDBlocks.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/6002/${warnAsErr[outPrefix]}_TooManyDFDBlocks.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

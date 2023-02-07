@@ -1,22 +1,22 @@
-Validation failed
+Validation successful
 
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #3 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #4 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #5 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #6 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #7 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #8 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #9 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6003: Unrecognized DFD block.
+warning-6003: Unrecognized DFD block.
     DFD block #10 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
-error-6002: Too many DFD blocks. The number of DFD blocks exceeds the validator limit.
+warning-6002: Too many DFD blocks. The number of DFD blocks exceeds the validator limit.
     The number of DFD blocks exceeds the validator limit of 11. Skipping validation of the remaining 8 byte(s).
