@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":3001,"type":"error","message":"Prohibited VkFormat.","details":"Prohibited VkFormat VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM must not be used in a KTX2 file."}]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":3001,"type":"error","message":"Prohibited VkFormat.","details":"VkFormat VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM is prohibited in a KTX2 file."}]}

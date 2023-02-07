@@ -6,7 +6,7 @@
             "id": 3001,
             "type": "error",
             "message": "Prohibited VkFormat.",
-            "details": "Prohibited VkFormat VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM must not be used in a KTX2 file."
+            "details": "VkFormat VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM is prohibited in a KTX2 file."
         }
     ]
 }

@@ -1,4 +1,4 @@
 Validation failed
 
 error-3001: Prohibited VkFormat.
-    Prohibited VkFormat VK_FORMAT_R8G8_USCALED must not be used in a KTX2 file.
+    VkFormat VK_FORMAT_R8G8_USCALED is prohibited in a KTX2 file.

@@ -6,7 +6,7 @@
             "id": 3001,
             "type": "error",
             "message": "Prohibited VkFormat.",
-            "details": "Prohibited VkFormat VK_FORMAT_A8B8G8R8_SNORM_PACK32 must not be used in a KTX2 file."
+            "details": "VkFormat VK_FORMAT_A8B8G8R8_SNORM_PACK32 is prohibited in a KTX2 file."
         }
     ]
 }
