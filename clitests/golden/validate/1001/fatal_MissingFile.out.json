@@ -6,7 +6,7 @@
             "id": 1001,
             "type": "fatal",
             "message": "Failed to open file.",
-            "details": "Failed to open file input/validate/1001/fatal_MissingFile.ktx2: no such file or directory."
+            "details": "Failed to open file input/validate/1001/fatal_MissingFile.ktx2: `.+`."
         }
     ]
 }

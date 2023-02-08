@@ -199,10 +199,21 @@ if __name__ == '__main__':
                 output_ref_filename = ctx.eval(testcase[stdfile])
 
                 if not cmd_failed and cli_args.regen_golden:
-                    os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
-                    output_ref_file = open(output_ref_filename, 'w+', newline='\n', encoding='utf-8')
-                    output_ref_file.write(output[stdfile])
-                    output_ref_file.close()
+                    old_output_ref_contains_regex = False
+                    if os.path.isfile(output_ref_filename):
+                        old_output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
+                        old_output_ref = old_output_ref_file.read()
+                        old_output_ref_file.close()
+                        old_output_ref_contains_regex = bool(re.findall(r'`.*`', old_output_ref))
+
+                    if old_output_ref_contains_regex:
+                        subcase_messages.append(f"Warning: reference file '{output_ref_filename}' was not updated as it contains a regex")
+                        subcase_failed = True
+                    else:
+                        os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
+                        output_ref_file = open(output_ref_filename, 'w+', newline='\n', encoding='utf-8')
+                        output_ref_file.write(output[stdfile])
+                        output_ref_file.close()
 
                 if not os.path.isfile(output_ref_filename):
                     subcase_messages.append(f"Cannot find reference {stdfile} file '{output_ref_filename}'")

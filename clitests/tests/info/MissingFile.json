@@ -1,26 +1,22 @@
 {
-    "description": "File must exists.",
-    "command": "ktx info ${format[args]} input/info/1001/fatal_${subcase}.ktx2",
+    "description": "Missing files must be handled with grace.",
+    "command": "ktx info ${format[args]} input/info/${subcase}.ktx2",
     "status": 2,
-    "stdout": "golden/info/MissingFile/${subcase}.out.${format[ext]}",
-    "stderr": "golden/info/MissingFile/${subcase}.err.${format[ext]}",
+    "stdout": "golden/info/empty.txt",
+    "stderr": "golden/info/MissingFile/${subcase}.err",
     "args": {
         "format": [
             {
-                "args": "",
-                "ext": "txt"
+                "args": ""
             },
             {
-                "args": "--format text",
-                "ext": "txt"
+                "args": "--format text"
             },
             {
-                "args": "--format json",
-                "ext": "json"
+                "args": "--format json"
             },
             {
-                "args": "--format mini-json",
-                "ext": "mini.json"
+                "args": "--format mini-json"
             }
         ],
         "subcase": [
