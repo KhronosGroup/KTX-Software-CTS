@@ -1,0 +1,4 @@
+Validation failed
+
+fatal-1001: Failed to open file.
+    Failed to open file input/validate/1001/fatal_MissingFile.ktx2: no such file or directory.

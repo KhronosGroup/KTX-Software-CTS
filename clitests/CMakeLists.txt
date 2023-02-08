@@ -10,7 +10,9 @@ set(CASELIST
     tests/info/sample_text.json
     tests/info/sample_json.json
     tests/info/sample_mini.json
+    tests/info/MissingFile.json
 
+    tests/validate/fatal_1001_FileOpen.json
     tests/validate/fatal_1003_UnexpectedEOF.json
     tests/validate/fatal_2001_NotKTX2.json
 

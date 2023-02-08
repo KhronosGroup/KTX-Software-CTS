@@ -1,0 +1,30 @@
+{
+    "description": "File must exists.",
+    "command": "ktx info ${format[args]} input/info/1001/fatal_${subcase}.ktx2",
+    "status": 2,
+    "stdout": "golden/info/MissingFile/${subcase}.out.${format[ext]}",
+    "stderr": "golden/info/MissingFile/${subcase}.err.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "MissingFile"
+        ]
+    }
+}
