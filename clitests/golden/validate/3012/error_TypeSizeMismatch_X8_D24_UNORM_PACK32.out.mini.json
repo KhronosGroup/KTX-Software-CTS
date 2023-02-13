@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":3012,"type":"error","message":"Invalid typeSize. The value must match the expected typeSize of the VkFormat.","details":"typeSize is 3 but for VkFormat VK_FORMAT_X8_D24_UNORM_PACK32 it must be 4."}]}

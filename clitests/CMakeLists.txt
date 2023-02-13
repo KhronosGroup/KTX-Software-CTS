@@ -27,6 +27,7 @@ set(CASELIST
     tests/validate/error_3009_DepthNoHeight.json
     tests/validate/error_3010_DepthBlockCompressedNoDepth.json
     tests/validate/error_3011_DepthStencilFormatWithDepth.json
+    tests/validate/error_3012_TypeSizeMismatch.json
     tests/validate/error_3013_CubeWithDepth.json
     tests/validate/warning_3014_ThreeDArray.json
     tests/validate/error_3015_InvalidFaceCount.json

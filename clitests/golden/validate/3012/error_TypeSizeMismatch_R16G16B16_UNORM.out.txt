@@ -1,0 +1,4 @@
+Validation failed
+
+error-3012: Invalid typeSize. The value must match the expected typeSize of the VkFormat.
+    typeSize is 3 but for VkFormat VK_FORMAT_R16G16B16_UNORM it must be 2.
