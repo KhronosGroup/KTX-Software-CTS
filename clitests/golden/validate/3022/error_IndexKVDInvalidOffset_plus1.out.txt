@@ -1,4 +1,6 @@
 Validation failed
 
+error-3028: Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.
+    dfdByteLength is 92 but it must be equal to kvdByteOffset - dfdByteOffset which is 93.
 error-3022: Invalid kvdByteOffset.
     kvdByteOffset is 197 but the Key/Value Data must immediately follow (with 4 byte alignment) the Data Format Descriptor so it must be 196.

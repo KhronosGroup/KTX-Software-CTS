@@ -42,6 +42,8 @@ set(CASELIST
     tests/validate/error_3024_IndexSGDInvalidOffset.json
     tests/validate/error_3025_IndexSGDOffsetWithoutLength.json
     tests/validate/error_3026_IndexSGDMissing.json
+    #tests/validate/error_3027_IndexSGDNotApplicable.json
+    tests/validate/error_3028_IndexDFDInvalidLength.json
 
     tests/validate/error_6001_SizeMismatch.json
     tests/validate/warning_6002_TooManyDFDBlocks.json

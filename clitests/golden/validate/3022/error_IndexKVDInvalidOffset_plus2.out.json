@@ -3,6 +3,12 @@
     "valid": false,
     "messages": [
         {
+            "id": 3028,
+            "type": "error",
+            "message": "Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.",
+            "details": "dfdByteLength is 92 but it must be equal to kvdByteOffset - dfdByteOffset which is 94."
+        },
+        {
             "id": 3022,
             "type": "error",
             "message": "Invalid kvdByteOffset.",

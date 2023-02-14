@@ -2,3 +2,5 @@ Validation failed
 
 error-3021: Invalid dfdByteOffset.
     dfdByteOffset is 103 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104.
+error-3028: Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.
+    dfdByteLength is 92 but it must be equal to kvdByteOffset - dfdByteOffset which is 93.
