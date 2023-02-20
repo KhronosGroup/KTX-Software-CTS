@@ -1,0 +1,8 @@
+Validation failed
+
+error-4003: Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.
+    Level 2 byteOffset is 287 but based on the vkFormat, DFD and image sizes the required alignment is 4 and the expected value is 288.
+error-4003: Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.
+    Level 1 byteOffset is 351 but based on the vkFormat, DFD and image sizes the required alignment is 4 and the expected value is 352.
+error-4003: Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.
+    Level 0 byteOffset is 607 but based on the vkFormat, DFD and image sizes the required alignment is 4 and the expected value is 608.

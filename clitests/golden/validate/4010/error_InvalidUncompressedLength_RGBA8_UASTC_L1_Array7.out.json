@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 4010,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. uncompressedByteLength must be equally divisible between every face and layer.",
+            "details": "Level 0 uncompressedByteLength is 1 but it must be divisible with faceCount * max(1, layerCount)."
+        }
+    ]
+}

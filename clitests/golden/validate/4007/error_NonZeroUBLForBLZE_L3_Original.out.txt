@@ -1,0 +1,8 @@
+Validation failed
+
+error-4007: Invalid uncompressedByteLength in Level Index. For BasisLZ supercompression uncompressedByteLength must be 0.
+    Level 2 uncompressedByteLength is 64 but for BasisLZ supercompression it must be 0.
+error-4007: Invalid uncompressedByteLength in Level Index. For BasisLZ supercompression uncompressedByteLength must be 0.
+    Level 1 uncompressedByteLength is 256 but for BasisLZ supercompression it must be 0.
+error-4007: Invalid uncompressedByteLength in Level Index. For BasisLZ supercompression uncompressedByteLength must be 0.
+    Level 0 uncompressedByteLength is 1024 but for BasisLZ supercompression it must be 0.

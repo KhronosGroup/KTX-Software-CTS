@@ -1,0 +1,8 @@
+Validation failed
+
+error-4010: Invalid uncompressedByteLength in Level Index. uncompressedByteLength must be equally divisible between every face and layer.
+    Level 2 uncompressedByteLength is 1 but it must be divisible with faceCount * max(1, layerCount).
+error-4010: Invalid uncompressedByteLength in Level Index. uncompressedByteLength must be equally divisible between every face and layer.
+    Level 1 uncompressedByteLength is 1 but it must be divisible with faceCount * max(1, layerCount).
+error-4010: Invalid uncompressedByteLength in Level Index. uncompressedByteLength must be equally divisible between every face and layer.
+    Level 0 uncompressedByteLength is 1 but it must be divisible with faceCount * max(1, layerCount).

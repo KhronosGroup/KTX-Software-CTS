@@ -2,3 +2,5 @@ Validation failed
 
 error-6021: Invalid bytesPlanes in basic DFD block. The values do not match the expected values.
     DFD block #1 bytesPlanes in basic DFD block are 15 0 0 0 0 0 0 0 but for UASTC textures these must be 16 0 0 0 0 0 0 0.
+error-4003: Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.
+    Level 0 byteOffset is 192 but based on the vkFormat, DFD and image sizes the required alignment is 60 and the expected value is 240.

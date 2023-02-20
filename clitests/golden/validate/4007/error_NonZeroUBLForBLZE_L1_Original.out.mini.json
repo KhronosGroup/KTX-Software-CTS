@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":4007,"type":"error","message":"Invalid uncompressedByteLength in Level Index. For BasisLZ supercompression uncompressedByteLength must be 0.","details":"Level 0 uncompressedByteLength is 1024 but for BasisLZ supercompression it must be 0."}]}

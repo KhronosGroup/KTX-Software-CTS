@@ -1,0 +1,8 @@
+Validation failed
+
+error-4009: Invalid uncompressedByteLength in Level Index. For non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+    Level 2 uncompressedByteLength is 0 but for non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+error-4009: Invalid uncompressedByteLength in Level Index. For non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+    Level 1 uncompressedByteLength is 0 but for non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+error-4009: Invalid uncompressedByteLength in Level Index. For non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+    Level 0 uncompressedByteLength is 0 but for non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.

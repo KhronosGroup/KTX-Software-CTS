@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 4003,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.",
+            "details": "Level 0 byteOffset is 241 but based on the vkFormat, DFD and image sizes the required alignment is 4 and the expected value is 240."
+        }
+    ]
+}

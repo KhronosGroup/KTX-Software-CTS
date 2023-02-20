@@ -1,0 +1,32 @@
+{
+    "description": "Must satisfy: uncompressedByteLength % (faceCount * max(1, layerCount)) == 0.",
+    "command": "ktx validate ${format[args]} input/validate/4010/error_InvalidUncompressedLength_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/4010/error_InvalidUncompressedLength_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA8_UASTC_L1_Cube",
+            "RGBA8_UASTC_L3_Cube",
+            "RGBA8_UASTC_L1_Array7",
+            "RGBA8_UASTC_L3_Array7"
+        ]
+    }
+}

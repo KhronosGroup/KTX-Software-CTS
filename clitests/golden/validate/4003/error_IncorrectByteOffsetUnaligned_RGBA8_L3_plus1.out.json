@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 4003,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.",
+            "details": "Level 2 byteOffset is 289 but based on the vkFormat, DFD and image sizes the required alignment is 4 and the expected value is 288."
+        },
+        {
+            "id": 4003,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.",
+            "details": "Level 1 byteOffset is 353 but based on the vkFormat, DFD and image sizes the required alignment is 4 and the expected value is 352."
+        },
+        {
+            "id": 4003,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.",
+            "details": "Level 0 byteOffset is 609 but based on the vkFormat, DFD and image sizes the required alignment is 4 and the expected value is 608."
+        }
+    ]
+}

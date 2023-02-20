@@ -7,6 +7,72 @@
             "type": "error",
             "message": "Too many mip levels.",
             "details": "levelCount is 5 but for the largest image dimension which is 11 it is too many level."
+        },
+        {
+            "id": 4005,
+            "type": "error",
+            "message": "Invalid byteLength in Level Index. byteLength must match the expected value.",
+            "details": "Level 3 byteLength is 8 but based on the vkFormat, DFD and image sizes the expected value is 4."
+        },
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 3 uncompressedByteLength is 8 but based on the vkFormat, DFD and image sizes the expected value is 4."
+        },
+        {
+            "id": 4004,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset must match the expected value.",
+            "details": "Level 2 byteOffset is 348 but based on the vkFormat, DFD and image sizes the expected value is 344."
+        },
+        {
+            "id": 4005,
+            "type": "error",
+            "message": "Invalid byteLength in Level Index. byteLength must match the expected value.",
+            "details": "Level 2 byteLength is 40 but based on the vkFormat, DFD and image sizes the expected value is 16."
+        },
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 2 uncompressedByteLength is 40 but based on the vkFormat, DFD and image sizes the expected value is 16."
+        },
+        {
+            "id": 4004,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset must match the expected value.",
+            "details": "Level 1 byteOffset is 388 but based on the vkFormat, DFD and image sizes the expected value is 360."
+        },
+        {
+            "id": 4005,
+            "type": "error",
+            "message": "Invalid byteLength in Level Index. byteLength must match the expected value.",
+            "details": "Level 1 byteLength is 176 but based on the vkFormat, DFD and image sizes the expected value is 80."
+        },
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 1 uncompressedByteLength is 176 but based on the vkFormat, DFD and image sizes the expected value is 80."
+        },
+        {
+            "id": 4004,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset must match the expected value.",
+            "details": "Level 0 byteOffset is 564 but based on the vkFormat, DFD and image sizes the expected value is 440."
+        },
+        {
+            "id": 4005,
+            "type": "error",
+            "message": "Invalid byteLength in Level Index. byteLength must match the expected value.",
+            "details": "Level 0 byteLength is 792 but based on the vkFormat, DFD and image sizes the expected value is 396."
+        },
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 0 uncompressedByteLength is 792 but based on the vkFormat, DFD and image sizes the expected value is 396."
         }
     ]
 }

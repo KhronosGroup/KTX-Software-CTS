@@ -1,4 +1,0 @@
-Validation failed
-
-error-7111: Incompatible KTXglFormat and VkFormat. If KTXglFormat is present vkFormat must be VK_FORMAT_UNDEFINED.
-    vkFormat is VK_FORMAT_R64G64B64_SINT but it must be VK_FORMAT_UNDEFINED if KTXglFormat is present.

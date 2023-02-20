@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 2 uncompressedByteLength is 63 but based on the vkFormat, DFD and image sizes the expected value is 64."
+        },
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 1 uncompressedByteLength is 255 but based on the vkFormat, DFD and image sizes the expected value is 256."
+        },
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 0 uncompressedByteLength is 1023 but based on the vkFormat, DFD and image sizes the expected value is 1024."
+        }
+    ]
+}

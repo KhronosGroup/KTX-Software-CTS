@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":4005,"type":"error","message":"Invalid byteLength in Level Index. byteLength must match the expected value.","details":"Level 0 byteLength is 1020 but based on the vkFormat, DFD and image sizes the expected value is 1024."}]}

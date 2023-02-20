@@ -43,11 +43,7 @@
             "R32_SFLOAT",
             "R32G32_SFLOAT",
             "R32G32B32_SFLOAT",
-            "R32G32B32A32_SFLOAT",
-            "R64_SINT",
-            "R64G64_SINT",
-            "R64G64B64_SINT",
-            "R64G64B64A64_SINT"
+            "R32G32B32A32_SFLOAT"
         ]
     }
 }

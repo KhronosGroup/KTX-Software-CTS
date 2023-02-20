@@ -1,0 +1,36 @@
+{
+    "description": "Defined region has to be aligned to lcm(texel_block_size, 4).",
+    "command": "ktx validate ${format[args]} input/validate/4003/error_IncorrectByteOffsetUnaligned_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/4003/error_IncorrectByteOffsetUnaligned_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA8_L1_plus1",
+            "RGBA8_L1_minus1",
+            "RGBA8_L3_plus1",
+            "RGBA8_L3_minus1",
+            "BC7_L1_plus1",
+            "BC7_L1_minus1",
+            "BC7_L3_plus1",
+            "BC7_L3_minus1"
+        ]
+    }
+}

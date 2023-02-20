@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid bytesPlanes in basic DFD block. The values do not match the expected values.",
             "details": "DFD block #1 bytesPlanes in basic DFD block are 17 0 0 0 0 0 0 0 but for UASTC textures these must be 16 0 0 0 0 0 0 0."
+        },
+        {
+            "id": 4003,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.",
+            "details": "Level 0 byteOffset is 192 but based on the vkFormat, DFD and image sizes the required alignment is 68 and the expected value is 204."
         }
     ]
 }

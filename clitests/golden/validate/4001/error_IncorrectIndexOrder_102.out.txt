@@ -1,0 +1,14 @@
+Validation failed
+
+error-4001: Invalid Level Index. Indices must be sorted from the largest level to the smallest level.
+    Indexes for level 0 with byteLength 256 and level 1 with byteLength 1024 are incorrectly ordered.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 1 byteLength is 1024 but based on the vkFormat, DFD and image sizes the expected value is 256.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 1 uncompressedByteLength is 1024 but based on the vkFormat, DFD and image sizes the expected value is 256.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 0 byteOffset is 1376 but based on the vkFormat, DFD and image sizes the expected value is 608.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 0 byteLength is 256 but based on the vkFormat, DFD and image sizes the expected value is 1024.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 0 uncompressedByteLength is 256 but based on the vkFormat, DFD and image sizes the expected value is 1024.

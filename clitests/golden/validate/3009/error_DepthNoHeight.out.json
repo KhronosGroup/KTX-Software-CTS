@@ -7,6 +7,18 @@
             "type": "error",
             "message": "Invalid pixelHeight. pixelHeight must not be 0 if pixelDepth is not also 0.",
             "details": "pixelHeight is 0 and pixelDepth is 4 but pixelHeight must not be 0 if pixelDepth is not 0 as well."
+        },
+        {
+            "id": 4005,
+            "type": "error",
+            "message": "Invalid byteLength in Level Index. byteLength must match the expected value.",
+            "details": "Level 0 byteLength is 512 but based on the vkFormat, DFD and image sizes the expected value is 128."
+        },
+        {
+            "id": 4006,
+            "type": "error",
+            "message": "Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.",
+            "details": "Level 0 uncompressedByteLength is 512 but based on the vkFormat, DFD and image sizes the expected value is 128."
         }
     ]
 }

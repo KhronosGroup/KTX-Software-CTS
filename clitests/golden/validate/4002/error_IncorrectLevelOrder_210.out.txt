@@ -1,0 +1,12 @@
+Validation failed
+
+error-4002: Invalid Level Index. Level images must be sorted from the smallest level to the largest level in the file.
+    Level Image for level 0 with byteOffset 288 and level 1 with byteOffset 1312 are incorrectly ordered.
+error-4002: Invalid Level Index. Level images must be sorted from the smallest level to the largest level in the file.
+    Level Image for level 1 with byteOffset 1312 and level 2 with byteOffset 1568 are incorrectly ordered.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 2 byteOffset is 1568 but based on the vkFormat, DFD and image sizes the expected value is 288.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 1 byteOffset is 1312 but based on the vkFormat, DFD and image sizes the expected value is 352.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 0 byteOffset is 288 but based on the vkFormat, DFD and image sizes the expected value is 608.

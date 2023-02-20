@@ -2,3 +2,7 @@ Validation failed
 
 error-3007: Invalid pixelHeight. pixelHeight must not be 0 for a block compressed formats.
     pixelHeight is 0 but for block-compressed VK_FORMAT_ASTC_4x4_UNORM_BLOCK it must not be 0.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 0 byteLength is 256 but based on the vkFormat, DFD and image sizes the expected value is 64.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 0 uncompressedByteLength is 256 but based on the vkFormat, DFD and image sizes the expected value is 64.

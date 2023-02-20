@@ -1,0 +1,4 @@
+Validation failed
+
+error-4007: Invalid uncompressedByteLength in Level Index. For BasisLZ supercompression uncompressedByteLength must be 0.
+    Level 0 uncompressedByteLength is 1024 but for BasisLZ supercompression it must be 0.

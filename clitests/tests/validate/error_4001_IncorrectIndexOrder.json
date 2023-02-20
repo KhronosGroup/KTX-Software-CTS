@@ -1,0 +1,31 @@
+{
+    "description": "Index must be ordered from largest to smallest entry (uncompressedByteLength).",
+    "command": "ktx validate ${format[args]} input/validate/4001/error_IncorrectIndexOrder_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/4001/error_IncorrectIndexOrder_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "10",
+            "210",
+            "102"
+        ]
+    }
+}

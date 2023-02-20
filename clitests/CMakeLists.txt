@@ -12,6 +12,8 @@ set(CASELIST
     tests/info/sample_mini.json
     tests/info/MissingFile.json
 
+    #tests/validate/valid.json
+
     tests/validate/fatal_1001_FileOpen.json
     tests/validate/fatal_1003_UnexpectedEOF.json
     tests/validate/fatal_2001_NotKTX2.json
@@ -44,6 +46,17 @@ set(CASELIST
     tests/validate/error_3026_IndexSGDMissing.json
     #tests/validate/error_3027_IndexSGDNotApplicable.json
     tests/validate/error_3028_IndexDFDInvalidLength.json
+
+    tests/validate/error_4001_IncorrectIndexOrder.json
+    tests/validate/error_4002_IncorrectLevelOrder.json
+    tests/validate/error_4003_IncorrectByteOffsetUnaligned.json
+    tests/validate/error_4004_IncorrectByteOffset.json
+    tests/validate/error_4005_IncorrectByteLength.json
+    tests/validate/error_4006_IncorrectUncompressedByteLength.json
+    tests/validate/error_4007_NonZeroUBLForBLZE.json
+    #tests/validate/error_4008_?.json
+    tests/validate/error_4009_ZeroUncompressedLength.json
+    tests/validate/error_4010_InvalidUncompressedLength.json
 
     tests/validate/error_6001_SizeMismatch.json
     tests/validate/warning_6002_TooManyDFDBlocks.json

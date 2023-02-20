@@ -1,0 +1,8 @@
+Validation failed
+
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 2 byteOffset is 292 but based on the vkFormat, DFD and image sizes the expected value is 288.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 1 byteOffset is 356 but based on the vkFormat, DFD and image sizes the expected value is 352.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 0 byteOffset is 612 but based on the vkFormat, DFD and image sizes the expected value is 608.

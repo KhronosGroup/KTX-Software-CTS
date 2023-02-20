@@ -1,0 +1,32 @@
+{
+    "description": "If the level size can be calculated byteOffset must match expected byte offset.",
+    "command": "ktx validate ${format[args]} input/validate/4004/error_IncorrectByteOffset_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/4004/error_IncorrectByteOffset_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA8_L1_plus4",
+            "RGBA8_L1_minus4",
+            "RGBA8_L3_plus4",
+            "RGBA8_L3_minus4"
+        ]
+    }
+}
