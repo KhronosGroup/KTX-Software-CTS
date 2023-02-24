@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 8105,
+            "type": "error",
+            "message": "Incompatible PFrame with missing KTXanimData. Only animation sequences can have PFrames.",
+            "details": "There is a PFrame in a BasisLzEtc1sImageDesc but the KTXanimData is missing."
+        }
+    ]
+}

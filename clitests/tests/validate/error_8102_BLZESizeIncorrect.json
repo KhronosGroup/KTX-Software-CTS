@@ -1,0 +1,44 @@
+{
+    "description": "sgdByteLength must be consistent with image count and BasisLzGlobalHeader.",
+    "command": "ktx validate ${format[args]} input/validate/8102/error_BLZESizeIncorrect_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8102/error_BLZESizeIncorrect_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA_L1_39",
+            "RGBA_L1_40",
+            "RGBA_L1_137",
+            "RGBA_L1_139",
+            "RGBA_L3_79",
+            "RGBA_L3_80",
+            "RGBA_L3_201",
+            "RGBA_L3_203",
+            "RGB_L1_79",
+            "RGB_L1_80",
+            "RGB_L1_181",
+            "RGB_L1_183",
+            "RGB_L3_79",
+            "RGB_L3_80",
+            "RGB_L3_240",
+            "RGB_L3_242"
+        ]
+    }
+}

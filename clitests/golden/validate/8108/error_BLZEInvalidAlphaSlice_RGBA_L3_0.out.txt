@@ -1,0 +1,4 @@
+Validation failed
+
+error-8108: Invalid alphaSliceByteOffset or alphaSliceByteLength. The defined byte region must be within the corresponding mip level.
+    For Level 0 Layer 0 Face 0 zSlice 0 the alphaSliceByteOffset is 0 and the alphaSliceByteLength is 7 but the defined region must fit in the level's byteLength of 6.

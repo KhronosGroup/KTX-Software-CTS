@@ -1,0 +1,36 @@
+{
+    "description": "sgdByteLength must be at least 20 bytes (sizeof ktxBasisLzGlobalHeader).",
+    "command": "ktx validate ${format[args]} input/validate/8101/error_BLZESizeTooSmallHeader_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8101/error_BLZESizeTooSmallHeader_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA_L1_1",
+            "RGBA_L1_19",
+            "RGBA_L3_1",
+            "RGBA_L3_19",
+            "RGB_L1_1",
+            "RGB_L1_19",
+            "RGB_L3_1",
+            "RGB_L3_19"
+        ]
+    }
+}

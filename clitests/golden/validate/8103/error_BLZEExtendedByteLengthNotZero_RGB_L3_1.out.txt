@@ -1,0 +1,6 @@
+Validation failed
+
+error-8102: Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consistent with image count and BasisLzGlobalHeader.
+    sgdByteLength is 241 but based on image count of 3 and the BasisLzGlobalHeader the expected value is 242 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength).
+error-8103: Invalid extendedByteLength in BasisLzGlobalHeader. For BasisLZ/ETC1S the extendedByteLength must be 0.
+    extendedByteLength is 1 but for BasisLZ/ETC1S it must be 0.

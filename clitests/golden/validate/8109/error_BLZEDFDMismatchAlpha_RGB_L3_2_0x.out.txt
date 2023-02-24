@@ -1,0 +1,4 @@
+Validation failed
+
+error-8110: Incompatible alphaSliceByteLength and DFD sampleCount. If DFD indicates no alpha slice the alphaSliceByteLength in BasisLzEtc1sImageDesc must be 0.
+    For Level 2 Layer 0 Face 0 zSlice 0 the alphaSliceByteLength is 1 but DFD indicates no alpha slice so it must be 0.

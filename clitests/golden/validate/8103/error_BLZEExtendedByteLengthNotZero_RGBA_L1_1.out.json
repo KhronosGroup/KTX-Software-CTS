@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 8102,
+            "type": "error",
+            "message": "Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consistent with image count and BasisLzGlobalHeader.",
+            "details": "sgdByteLength is 138 but based on image count of 1 and the BasisLzGlobalHeader the expected value is 139 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength)."
+        },
+        {
+            "id": 8103,
+            "type": "error",
+            "message": "Invalid extendedByteLength in BasisLzGlobalHeader. For BasisLZ/ETC1S the extendedByteLength must be 0.",
+            "details": "extendedByteLength is 1 but for BasisLZ/ETC1S it must be 0."
+        }
+    ]
+}

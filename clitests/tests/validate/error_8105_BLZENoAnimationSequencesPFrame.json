@@ -1,0 +1,30 @@
+{
+    "description": "Only animation sequences can have PFrames. PFrame should indicate the presence of KTXanimData.",
+    "command": "ktx validate ${format[args]} input/validate/8105/error_BLZENoAnimationSequencesPFrame_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8105/error_BLZENoAnimationSequencesPFrame_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "0",
+            "1"
+        ]
+    }
+}

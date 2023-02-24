@@ -1,0 +1,4 @@
+Validation failed
+
+error-8106: Invalid rgbSliceByteLength in BasisLzEtc1sImageDesc. rgbSliceByteLength must not be 0.
+    For Level 1 Layer 0 Face 0 zSlice 0 the rgbSliceByteLength is 0 but it must not be 0.

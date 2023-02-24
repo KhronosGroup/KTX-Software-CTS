@@ -1,0 +1,4 @@
+Validation failed
+
+error-8105: Incompatible PFrame with missing KTXanimData. Only animation sequences can have PFrames.
+    There is a PFrame in a BasisLzEtc1sImageDesc but the KTXanimData is missing.

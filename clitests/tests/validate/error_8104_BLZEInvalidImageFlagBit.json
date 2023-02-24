@@ -1,0 +1,30 @@
+{
+    "description": "imageFlags in BasisLzEtc1sImageDesc must be valid.",
+    "command": "ktx validate ${format[args]} input/validate/8104/error_BLZEInvalidImageFlagBit_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8104/error_BLZEInvalidImageFlagBit_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "L1",
+            "L3"
+        ]
+    }
+}

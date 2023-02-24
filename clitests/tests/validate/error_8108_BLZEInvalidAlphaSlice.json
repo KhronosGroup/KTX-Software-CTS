@@ -1,0 +1,35 @@
+{
+    "description": "The defined byte region must be within the corresponding mip level.",
+    "command": "ktx validate ${format[args]} input/validate/8108/error_BLZEInvalidAlphaSlice_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8108/error_BLZEInvalidAlphaSlice_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA_L1_0",
+            "RGBA_L1_1",
+            "RGBA_L1_3",
+            "RGBA_L3_0",
+            "RGBA_L3_1",
+            "RGBA_L3_2",
+            "RGBA_L3_3"
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+Validation failed
+
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 0 byteOffset is 374 but based on the vkFormat, DFD and image sizes the expected value is 193.
+error-8101: Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be at least 20 bytes (sizeof ktxBasisLzGlobalHeader).
+    sgdByteLength is 1 but for BasisLZ/ETC1S textures it must be at least 20 bytes (sizeof ktxBasisLzGlobalHeader).

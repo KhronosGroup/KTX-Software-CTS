@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 8106,
+            "type": "error",
+            "message": "Invalid rgbSliceByteLength in BasisLzEtc1sImageDesc. rgbSliceByteLength must not be 0.",
+            "details": "For Level 0 Layer 0 Face 0 zSlice 0 the rgbSliceByteLength is 0 but it must not be 0."
+        },
+        {
+            "id": 8106,
+            "type": "error",
+            "message": "Invalid rgbSliceByteLength in BasisLzEtc1sImageDesc. rgbSliceByteLength must not be 0.",
+            "details": "For Level 1 Layer 0 Face 0 zSlice 0 the rgbSliceByteLength is 0 but it must not be 0."
+        },
+        {
+            "id": 8106,
+            "type": "error",
+            "message": "Invalid rgbSliceByteLength in BasisLzEtc1sImageDesc. rgbSliceByteLength must not be 0.",
+            "details": "For Level 2 Layer 0 Face 0 zSlice 0 the rgbSliceByteLength is 0 but it must not be 0."
+        }
+    ]
+}

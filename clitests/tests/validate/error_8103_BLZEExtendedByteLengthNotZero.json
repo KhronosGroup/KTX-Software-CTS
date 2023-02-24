@@ -1,0 +1,36 @@
+{
+    "description": "For BasisLZ/ETC1S the extendedByteLength must be 0.",
+    "command": "ktx validate ${format[args]} input/validate/8103/error_BLZEExtendedByteLengthNotZero_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8103/error_BLZEExtendedByteLengthNotZero_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA_L1_1",
+            "RGBA_L1_8",
+            "RGBA_L3_1",
+            "RGBA_L3_8",
+            "RGB_L1_1",
+            "RGB_L1_8",
+            "RGB_L3_1",
+            "RGB_L3_8"
+        ]
+    }
+}

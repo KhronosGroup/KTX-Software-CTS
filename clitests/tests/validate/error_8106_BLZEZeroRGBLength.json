@@ -1,0 +1,34 @@
+{
+    "description": "rgbSliceByteLength must not be 0.",
+    "command": "ktx validate ${format[args]} input/validate/8106/error_BLZEZeroRGBLength_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8106/error_BLZEZeroRGBLength_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "RGBA_L1_0",
+            "RGBA_L3_000",
+            "RGBA_L3_x0x",
+            "RGB_L3_000",
+            "RGB_L3_xx0",
+            "RGB_L3_Array2_xxx_x0x"
+        ]
+    }
+}

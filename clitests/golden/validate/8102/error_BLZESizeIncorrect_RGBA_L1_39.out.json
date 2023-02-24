@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 4004,
+            "type": "error",
+            "message": "Invalid byteOffset in Level Index. byteOffset must match the expected value.",
+            "details": "Level 0 byteOffset is 346 but based on the vkFormat, DFD and image sizes the expected value is 247."
+        },
+        {
+            "id": 8102,
+            "type": "error",
+            "message": "Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consistent with image count and BasisLzGlobalHeader.",
+            "details": "sgdByteLength is 39 but based on image count of 1 and the BasisLzGlobalHeader the expected value is 138 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength)."
+        }
+    ]
+}

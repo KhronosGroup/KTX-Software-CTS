@@ -148,6 +148,17 @@ set(CASELIST
     tests/validate/error_7133_KTXastcDecodeModeunorm8NotLDR.json
     tests/validate/warning_7134_KTXastcDecodeModeNotASTC.json
     tests/validate/warning_7135_KTXastcDecodeModeWithsRGB.json
+
+    tests/validate/error_8101_BLZESizeTooSmallHeader.json
+    tests/validate/error_8102_BLZESizeIncorrect.json
+    tests/validate/error_8103_BLZEExtendedByteLengthNotZero.json
+    tests/validate/error_8104_BLZEInvalidImageFlagBit.json
+    tests/validate/error_8105_BLZENoAnimationSequencesPFrame.json
+    tests/validate/error_8106_BLZEZeroRGBLength.json
+    tests/validate/error_8107_BLZEInvalidRGBSlice.json
+    tests/validate/error_8108_BLZEInvalidAlphaSlice.json
+    tests/validate/error_8109_BLZEDFDMismatchAlpha.json
+    tests/validate/error_8110_BLZEDFDMismatchNoAlpha.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
