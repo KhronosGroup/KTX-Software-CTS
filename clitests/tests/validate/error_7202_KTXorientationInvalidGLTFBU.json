@@ -1,0 +1,46 @@
+{
+    "description": "KHR_texture_basisu requires 2D texture type",
+    "command": "ktx validate ${GLTFBasisU[flag]} ${format[args]} input/validate/7202/error_KTXorientationInvalidGLTFBU_${subcase}.ktx2",
+    "status": "${GLTFBasisU[status]}",
+    "stdout": "golden/validate/7202/error_${GLTFBasisU[outPrefix]}_KTXorientationInvalidGLTFBU_${subcase}.out.${format[ext]}",
+    "args": {
+        "GLTFBasisU": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "disabled"
+            },
+            {
+                "flag": "--gltf-basisu",
+                "status": 3,
+                "outPrefix": "enabled"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "ETC1S_ru",
+            "ETC1S_ld",
+            "ETC1S_lu",
+            "UASTC_ru",
+            "UASTC_ld",
+            "UASTC_lu"
+        ]
+    }
+}

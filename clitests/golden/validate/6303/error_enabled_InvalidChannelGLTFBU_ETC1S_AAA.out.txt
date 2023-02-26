@@ -1,0 +1,4 @@
+Validation failed
+
+error-6303: Invalid sample channelType for colorModel for KHR_texture_basisu compatibility.
+    DFD block #1 colorModel is KHR_DF_MODEL_ETC1S but sample #0 channelType is KHR_DF_CHANNEL_ETC1S_AAA while KHR_texture_basisu requires KHR_DF_CHANNEL_ETC1S_RGB or KHR_DF_CHANNEL_ETC1S_RRR.

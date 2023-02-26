@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":7201,"type":"error","message":"Invalid KTXswizzle metadata for KHR_texture_basisu compatibility.","details":"KTXswizzle is \"bgra\" but must be \"rgba\", if present, for KHR_texture_basisu compatibility."}]}

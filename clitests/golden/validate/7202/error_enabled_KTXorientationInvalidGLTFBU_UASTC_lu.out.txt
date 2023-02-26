@@ -1,0 +1,4 @@
+Validation failed
+
+error-7202: Invalid KTXorientation metadata for KHR_texture_basisu compatibility.
+    KTXorientation is "lu" but must be "rd", if present, for KHR_texture_basis compatibility.

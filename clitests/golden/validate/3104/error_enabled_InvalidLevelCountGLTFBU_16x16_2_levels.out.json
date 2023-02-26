@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 3104,
+            "type": "error",
+            "message": "When multiple mip levels are present KHR_texture_basisu requires a full mip pyramid.",
+            "details": "levelCount is 2 but it must be 1 (single level) or 5 (full mip pyramid) for KHR_texture_basisu compatibility."
+        }
+    ]
+}

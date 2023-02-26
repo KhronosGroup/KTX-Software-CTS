@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 6304,
+            "type": "error",
+            "message": "Color space information is incompatible with KHR_texture_basisu.",
+            "details": "DFD block #1 primaries is KHR_DF_PRIMARIES_ADOBERGB and transfer is KHR_DF_TRANSFER_LINEAR but KHR_texture_basisu requires either KHR_DF_PRIMARIES_BT709 with KHR_DF_TRANSFER_SRGB or KHR_DF_PRIMARIES_UNSPECIFIED with KHR_DF_TRANSFER_LINEAR."
+        }
+    ]
+}

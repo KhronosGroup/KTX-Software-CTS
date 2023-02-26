@@ -1,0 +1,48 @@
+{
+    "description": "KHR_texture_basisu requires 2D texture type",
+    "command": "ktx validate ${GLTFBasisU[flag]} ${format[args]} input/validate/6304/error_InvalidColorSpaceGLTFBU_${subcase}.ktx2",
+    "status": "${GLTFBasisU[status]}",
+    "stdout": "golden/validate/6304/error_${GLTFBasisU[outPrefix]}_InvalidColorSpaceGLTFBU_${subcase}.out.${format[ext]}",
+    "args": {
+        "GLTFBasisU": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "disabled"
+            },
+            {
+                "flag": "--gltf-basisu",
+                "status": 3,
+                "outPrefix": "enabled"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "ETC1S_BT2020",
+            "ETC1S_ADOBERGB",
+            "ETC1S_BT709_LINEAR",
+            "ETC1S_UNSPECIFIED_SRGB",
+            "UASTC_BT2020",
+            "UASTC_ADOBERGB",
+            "UASTC_BT709_LINEAR",
+            "UASTC_UNSPECIFIED_SRGB"
+        ]
+    }
+}

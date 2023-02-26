@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 3102,
+            "type": "error",
+            "message": "Texture type must be 2D for KHR_texture_basisu compatibility.",
+            "details": "Texture type is not 2D as pixelDepth is 1 instead of 0 which is incompatible with KHR_texture_basisu requirements."
+        }
+    ]
+}

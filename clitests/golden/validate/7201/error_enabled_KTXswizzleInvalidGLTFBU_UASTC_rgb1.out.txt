@@ -1,0 +1,4 @@
+Validation failed
+
+error-7201: Invalid KTXswizzle metadata for KHR_texture_basisu compatibility.
+    KTXswizzle is "rgb1" but must be "rgba", if present, for KHR_texture_basisu compatibility.

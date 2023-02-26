@@ -1,0 +1,4 @@
+Validation failed
+
+error-6304: Color space information is incompatible with KHR_texture_basisu.
+    DFD block #1 primaries is KHR_DF_PRIMARIES_ADOBERGB and transfer is KHR_DF_TRANSFER_LINEAR but KHR_texture_basisu requires either KHR_DF_PRIMARIES_BT709 with KHR_DF_TRANSFER_SRGB or KHR_DF_PRIMARIES_UNSPECIFIED with KHR_DF_TRANSFER_LINEAR.

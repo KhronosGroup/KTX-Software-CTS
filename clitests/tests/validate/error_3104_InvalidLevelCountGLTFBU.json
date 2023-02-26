@@ -1,0 +1,44 @@
+{
+    "description": "KHR_texture_basisu requires 2D texture type",
+    "command": "ktx validate ${GLTFBasisU[flag]} ${format[args]} input/validate/3104/error_InvalidLevelCountGLTFBU_${subcase}.ktx2",
+    "status": "${GLTFBasisU[status]}",
+    "stdout": "golden/validate/3104/error_${GLTFBasisU[outPrefix]}_InvalidLevelCountGLTFBU_${subcase}.out.${format[ext]}",
+    "args": {
+        "GLTFBasisU": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "disabled"
+            },
+            {
+                "flag": "--gltf-basisu",
+                "status": 3,
+                "outPrefix": "enabled"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "16x16_2_levels",
+            "16x16_3_levels",
+            "16x16_4_levels",
+            "32x16_5_levels"
+        ]
+    }
+}

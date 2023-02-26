@@ -1,0 +1,4 @@
+Validation failed
+
+error-3104: When multiple mip levels are present KHR_texture_basisu requires a full mip pyramid.
+    levelCount is 2 but it must be 1 (single level) or 5 (full mip pyramid) for KHR_texture_basisu compatibility.

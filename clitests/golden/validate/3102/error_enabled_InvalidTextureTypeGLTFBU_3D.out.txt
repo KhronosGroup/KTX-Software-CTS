@@ -1,0 +1,4 @@
+Validation failed
+
+error-3102: Texture type must be 2D for KHR_texture_basisu compatibility.
+    Texture type is not 2D as pixelDepth is 1 instead of 0 which is incompatible with KHR_texture_basisu requirements.
