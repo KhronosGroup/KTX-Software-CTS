@@ -17,12 +17,12 @@ dataFormatDescriptor.byteLength: 44
 keyValueData.byteOffset: 0x94
 keyValueData.byteLength: 120
 supercompressionGlobalData.byteOffset: 0x110
-supercompressionGlobalData.byteLength: 8454
+supercompressionGlobalData.byteLength: 8568
 
 Level Index
 
-Level0.byteOffset: 0x2216
-Level0.byteLength: 73934
+Level0.byteOffset: 0x2288
+Level0.byteLength: 81097
 Level0.uncompressedByteLength: 0
 
 Data Format Descriptor
@@ -54,15 +54,15 @@ KTXwriterScParams: --bcmp
 
 Basis Supercompression Global Data
 
-endpointCount: 552
-selectorCount: 2685
-endpointsByteLength: 1148
-selectorsByteLength: 6086
-tablesByteLength: 1180
+endpointCount: 565
+selectorCount: 2687
+endpointsByteLength: 1167
+selectorsByteLength: 6052
+tablesByteLength: 1309
 extendedByteLength: 0
 
 imageFlags: 0
-rgbSliceByteLength: 73934
+rgbSliceByteLength: 81097
 rgbSliceByteOffset: 0
 alphaSliceByteLength: 0
 alphaSliceByteOffset: 0

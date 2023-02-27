@@ -25,12 +25,12 @@
         },
         "supercompressionGlobalData": {
             "byteOffset": 272,
-            "byteLength": 8454
+            "byteLength": 8568
         },
         "levels": [
             {
-                "byteOffset": 8726,
-                "byteLength": 73934,
+                "byteOffset": 8840,
+                "byteLength": 81097,
                 "uncompressedByteLength": 0
             }
         ]
@@ -72,16 +72,16 @@
     },
     "supercompressionGlobalData": {
         "type": "KTX_SS_BASIS_LZ",
-        "endpointCount": 552,
-        "selectorCount": 2685,
-        "endpointsByteLength": 1148,
-        "selectorsByteLength": 6086,
-        "tablesByteLength": 1180,
+        "endpointCount": 565,
+        "selectorCount": 2687,
+        "endpointsByteLength": 1167,
+        "selectorsByteLength": 6052,
+        "tablesByteLength": 1309,
         "extendedByteLength": 0,
         "images": [
             {
                 "imageFlags": [],
-                "rgbSliceByteLength": 73934,
+                "rgbSliceByteLength": 81097,
                 "rgbSliceByteOffset": 0,
                 "alphaSliceByteLength": 0,
                 "alphaSliceByteOffset": 0
