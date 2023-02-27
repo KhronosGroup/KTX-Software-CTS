@@ -47,6 +47,10 @@ set(CASELIST
     #tests/validate/error_3027_IndexSGDNotApplicable.json
     tests/validate/error_3028_IndexDFDInvalidLength.json
 
+    tests/validate/error_3102_InvalidTextureTypeGLTFBU.json
+    tests/validate/error_3103_InvalidPixelWidthHeightGLTFBU.json
+    tests/validate/error_3104_InvalidLevelCountGLTFBU.json
+
     tests/validate/error_4001_IncorrectIndexOrder.json
     tests/validate/error_4002_IncorrectLevelOrder.json
     tests/validate/error_4003_IncorrectByteOffsetUnaligned.json
@@ -99,6 +103,10 @@ set(CASELIST
     tests/validate/error_6204_InterpretDFDMultisample.json
     tests/validate/error_6205_InterpretDFDNonTrivialEndianness.json
 
+    tests/validate/error_6301_IncorrectModelGLTFBU.json
+    tests/validate/error_6303_InvalidChannelGLTFBU.json
+    tests/validate/error_6304_InvalidColorSpaceGLTFBU.json
+
     tests/validate/warning_7001_TooManyEntries.json
     tests/validate/error_7002_NotEnoughDataForAnEntry.json
     tests/validate/error_7003_KeyAndValueByteLengthTooLarge.json
@@ -148,6 +156,9 @@ set(CASELIST
     tests/validate/error_7133_KTXastcDecodeModeunorm8NotLDR.json
     tests/validate/warning_7134_KTXastcDecodeModeNotASTC.json
     tests/validate/warning_7135_KTXastcDecodeModeWithsRGB.json
+
+    tests/validate/error_7201_KTXswizzleInvalidGLTFBU.json
+    tests/validate/error_7202_KTXorientationInvalidGLTFBU.json
 
     tests/validate/error_8101_BLZESizeTooSmallHeader.json
     tests/validate/error_8102_BLZESizeIncorrect.json
