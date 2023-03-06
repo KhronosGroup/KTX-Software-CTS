@@ -243,16 +243,18 @@ if __name__ == '__main__':
             for output, output_ref in testcase['outputs'].items():
                 files_found = True
 
+                output = ctx.eval(output)
+                output_ref = ctx.eval(output_ref)
+
                 if not cmd_failed and cli_args.regen_golden:
+                    os.makedirs(os.path.dirname(output_ref), exist_ok=True)
                     shutil.copyfile(output, output_ref)
 
-                output = ctx.eval(output)
                 if not os.path.isfile(output):
                     subcase_messages.append(f"Cannot find output file '{output}'")
                     subcase_failed = True
                     files_found = False
 
-                output_ref = ctx.eval(output_ref)
                 if not os.path.isfile(output_ref):
                     subcase_messages.append(f"Cannot find reference file '{output_ref}' for output file '{output}'")
                     subcase_failed = True

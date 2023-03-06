@@ -170,6 +170,11 @@ set(CASELIST
     tests/validate/error_8108_BLZEInvalidAlphaSlice.json
     tests/validate/error_8109_BLZEDFDMismatchAlpha.json
     tests/validate/error_8110_BLZEDFDMismatchNoAlpha.json
+
+    tests/extract/raw_all_2d.json
+    tests/extract/raw_all_2d_mip.json
+    tests/extract/raw_all_2d_array.json
+    tests/extract/raw_all_2d_array_mip.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
