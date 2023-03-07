@@ -19,6 +19,12 @@
             "type": "error",
             "message": "Invalid sample channelType for colorModel in the basic DFD block.",
             "details": "DFD block #1 sample #3 channelType in basic DFD block is (0x2) which is not valid for colorModel KHR_DF_MODEL_BC2."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

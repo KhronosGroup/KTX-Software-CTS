@@ -2,3 +2,5 @@ Validation failed
 
 error-3012: Invalid typeSize. The value must match the expected typeSize of the VkFormat.
     typeSize is 3 but for VkFormat VK_FORMAT_D16_UNORM it must be 2.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

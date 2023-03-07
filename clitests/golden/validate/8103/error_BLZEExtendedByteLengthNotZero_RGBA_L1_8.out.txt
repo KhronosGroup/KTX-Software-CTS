@@ -4,3 +4,5 @@ error-8102: Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consi
     sgdByteLength is 138 but based on image count of 1 and the BasisLzGlobalHeader the expected value is 146 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength).
 error-8103: Invalid extendedByteLength in BasisLzGlobalHeader. For BasisLZ/ETC1S the extendedByteLength must be 0.
     extendedByteLength is 8 but for BasisLZ/ETC1S it must be 0.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

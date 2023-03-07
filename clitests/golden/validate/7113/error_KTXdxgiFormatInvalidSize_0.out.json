@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid KTXdxgiFormat__ metadata. The size of the value must be 4 byte.",
             "details": "The size of KTXdxgiFormat__ value is 0 byte(s) but it must be 4 byte."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

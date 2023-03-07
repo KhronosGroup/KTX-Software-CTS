@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid KTXwriter metadata. The value is missing the NULL terminator.",
             "details": "The last byte of the value must be a NULL terminator."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

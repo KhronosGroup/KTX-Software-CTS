@@ -13,6 +13,12 @@
             "type": "error",
             "message": "Invalid bytesPlanes in basic DFD block. Multiplane formats are not supported.",
             "details": "DFD block #1 bytesPlanes in basic DFD block are 8 1 1 1 1 1 1 1 but bytesPlane[1-7] must be 0 as multiplane formats are not supported."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

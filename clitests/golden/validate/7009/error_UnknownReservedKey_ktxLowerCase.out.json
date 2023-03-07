@@ -25,6 +25,12 @@
             "type": "error",
             "message": "Invalid key in Key/Value Data. Keys with \"KTX\" or \"ktx\" prefix are reserved.",
             "details": "The key is \"ktxwriter\" but its not recognized and keys with \"KTX\" or \"ktx\" prefix are reserved."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

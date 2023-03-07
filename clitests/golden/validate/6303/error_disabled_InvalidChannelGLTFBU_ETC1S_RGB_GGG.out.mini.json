@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":true,"messages":[]}
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":5007,"type":"error","message":"Failed to transcode texture.","details":"Transcoding of texture with color model KHR_DF_MODEL_ETC1S failed with the error: File data is inconsistent with KTX spec."}]}

@@ -2,3 +2,5 @@ Validation failed
 
 error-8105: Incompatible PFrame with missing KTXanimData. Only animation sequences can have PFrames.
     There is a PFrame in a BasisLzEtc1sImageDesc but the KTXanimData is missing.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

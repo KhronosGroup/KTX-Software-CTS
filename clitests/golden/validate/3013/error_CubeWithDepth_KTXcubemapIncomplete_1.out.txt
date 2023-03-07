@@ -2,3 +2,5 @@ Validation failed
 
 error-3013: Invalid pixelDepth. pixelDepth must be 0 for cube maps.
     pixelDepth is 1 but for cube maps it must be 0 (cube map faces must be 2D).
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

@@ -4,3 +4,5 @@ error-7101: Invalid KTXcubemapIncomplete value. The two MSB must be 0.
     The value is 11000000 but the two MSB must be 0 (00XXXXXX).
 error-7103: Invalid KTXcubemapIncomplete value. No face is marked present.
     No face bit is set as present but at least 1 face must be present.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

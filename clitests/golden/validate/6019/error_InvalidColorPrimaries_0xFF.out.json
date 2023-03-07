@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid colorPrimaries in basic DFD block.",
             "details": "DFD block #1 colorPrimaries in basic DFD block is invalid: 255."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

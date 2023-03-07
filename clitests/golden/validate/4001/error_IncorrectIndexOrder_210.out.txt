@@ -16,3 +16,5 @@ error-4005: Invalid byteLength in Level Index. byteLength must match the expecte
     Level 0 byteLength is 64 but based on the vkFormat, DFD and image sizes the expected value is 1024.
 error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
     Level 0 uncompressedByteLength is 64 but based on the vkFormat, DFD and image sizes the expected value is 1024.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

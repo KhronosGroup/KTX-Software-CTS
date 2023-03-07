@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid KTXastcDecodeMode value. \"unorm8\" is only valid for LDR formats.",
             "details": "The value is \"unorm8\" but it is invalid for non-LDR VkFormat VK_FORMAT_ASTC_10x8_SFLOAT_BLOCK_EXT."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

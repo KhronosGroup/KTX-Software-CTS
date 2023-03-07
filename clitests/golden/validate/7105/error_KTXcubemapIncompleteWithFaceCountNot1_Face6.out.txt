@@ -6,3 +6,5 @@ error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompress
     Level 0 uncompressedByteLength is 1024 but based on the vkFormat, DFD and image sizes the expected value is 6144.
 error-7105: Invalid faceCount. faceCount must be 1 if KTXcubemapIncomplete is present.
     faceCount is 6 but if KTXcubemapIncomplete is present it must be 1.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

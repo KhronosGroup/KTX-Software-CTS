@@ -24,7 +24,7 @@
             "id": 6004,
             "type": "error",
             "message": "Invalid DFD data. Not enough data left to process another DFD block header.",
-            "details": "DFD has 1 byte(s) unprocessed but for a key value entry at least 8 bytes are required."
+            "details": "DFD has 1 byte(s) unprocessed but for a valid DFD at least 8 bytes are required."
         }
     ]
 }

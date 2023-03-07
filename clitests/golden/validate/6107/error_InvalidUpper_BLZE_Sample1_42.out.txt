@@ -2,3 +2,5 @@ Validation failed
 
 error-6107: Invalid sample upper for UASTC or BasisLZ/ETC1S texture in the basic DFD block.
     DFD block #1 sample #2 upper in basic DFD block is 42 but for BasisLZ/ETC1S textures it must be UINT32_MAX (0xFFFFFFFF).
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

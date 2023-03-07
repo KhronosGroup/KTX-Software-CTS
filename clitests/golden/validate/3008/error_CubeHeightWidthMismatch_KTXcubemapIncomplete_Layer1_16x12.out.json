@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Mismatching pixelWidth and pixelHeight for a cube map.",
             "details": "pixelWidth is 16 and pixelHeight is 12 but for a cube map they must be equal."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

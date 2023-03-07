@@ -2,3 +2,5 @@ Validation failed
 
 error-7130: Incompatible KTXanimData and KTXcubemapIncomplete metadata. KTXanimData and KTXcubemapIncomplete cannot be present at the same time.
     Both KTXanimData and KTXcubemapIncomplete is present but they are incompatible.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

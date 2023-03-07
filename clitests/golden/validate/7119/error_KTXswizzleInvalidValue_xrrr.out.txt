@@ -2,3 +2,5 @@ Validation failed
 
 error-7119: Invalid KTXswizzle value. The value must match /^[rgba01]{4}$/.
     The character at index 0 is "x" but it must be one of "rgba01".
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

@@ -2,3 +2,5 @@ Validation failed
 
 error-7116: Incompatible KTXmetalPixelFormat and VkFormat. If KTXmetalPixelFormat is present vkFormat must be VK_FORMAT_UNDEFINED.
     vkFormat is VK_FORMAT_ASTC_12x12_SRGB_BLOCK but it must be VK_FORMAT_UNDEFINED if KTXmetalPixelFormat is present.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

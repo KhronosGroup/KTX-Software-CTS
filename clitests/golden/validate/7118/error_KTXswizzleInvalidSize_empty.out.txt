@@ -2,3 +2,5 @@ Validation failed
 
 error-7118: Invalid KTXswizzle value. The size of the value must be 5 bytes (including the NULL terminator).
     The size of KTXswizzle value is 1 byte(s) but it must be 5 bytes (including the NULL terminator).
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

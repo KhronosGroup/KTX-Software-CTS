@@ -13,6 +13,12 @@
             "type": "error",
             "message": "Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consistent with image count and BasisLzGlobalHeader.",
             "details": "sgdByteLength is 40 but based on image count of 1 and the BasisLzGlobalHeader the expected value is 182 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength)."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

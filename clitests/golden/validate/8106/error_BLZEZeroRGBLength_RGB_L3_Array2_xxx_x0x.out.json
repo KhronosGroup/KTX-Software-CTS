@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid rgbSliceByteLength in BasisLzEtc1sImageDesc. rgbSliceByteLength must not be 0.",
             "details": "For Level 2 Layer 0 Face 0 zSlice 0 the rgbSliceByteLength is 0 but it must not be 0."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

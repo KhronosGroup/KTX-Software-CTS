@@ -162,12 +162,17 @@ if __name__ == '__main__':
             stdout, stderr = proc.communicate()
             status = proc.returncode
 
+            any_status = False
             if isinstance(testcase['status'], str):
-                expected_status = int(ctx.eval(testcase['status']))
+                status_expr = ctx.eval(testcase['status'])
+                if status_expr == "*":
+                    any_status = True
+                else:
+                    expected_status = int(status_expr)
             else:
                 expected_status = testcase['status']
 
-            if status != expected_status:
+            if not any_status and status != expected_status:
                 subcase_messages.append(f"Expected return code '{expected_status}' but got '{status}'")
                 subcase_failed = True
 

@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Incompatible alphaSliceByteLength and DFD sampleCount. If DFD indicates no alpha slice the alphaSliceByteLength in BasisLzEtc1sImageDesc must be 0.",
             "details": "For Level 1 Layer 0 Face 0 zSlice 0 the alphaSliceByteLength is 2 but DFD indicates no alpha slice so it must be 0."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

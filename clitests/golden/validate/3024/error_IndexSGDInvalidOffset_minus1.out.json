@@ -13,6 +13,12 @@
             "type": "error",
             "message": "Invalid padding byte value. Every padding byte's value must be 0.",
             "details": "A padding byte value is 6 after a Key-Value entry but it must be 0."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

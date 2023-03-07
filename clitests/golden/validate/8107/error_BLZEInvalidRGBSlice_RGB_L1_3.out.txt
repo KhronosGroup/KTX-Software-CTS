@@ -2,3 +2,5 @@ Validation failed
 
 error-8107: Invalid rgbSliceByteOffset or rgbSliceByteLength. The defined byte region must be within the corresponding mip level.
     For Level 0 Layer 0 Face 0 zSlice 0 the rgbSliceByteOffset is 8 and the rgbSliceByteLength is 8 but the defined region must fit in the level's byteLength of 8.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

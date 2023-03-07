@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid sample bitOffset for BasisLZ/ETC1S texture in the basic DFD block.",
             "details": "DFD block #1 sample #1 bitOffset in basic DFD block is 42 but for BasisLZ/ETC1S textures it must be 0."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

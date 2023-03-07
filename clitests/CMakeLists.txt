@@ -58,9 +58,11 @@ set(CASELIST
     tests/validate/error_4005_IncorrectByteLength.json
     tests/validate/error_4006_IncorrectUncompressedByteLength.json
     tests/validate/error_4007_NonZeroUBLForBLZE.json
-    #tests/validate/error_4008_?.json
+    tests/validate/error_4008_UncompressedByteLengthMismatch.json
     tests/validate/error_4009_ZeroUncompressedLength.json
     tests/validate/error_4010_InvalidUncompressedLength.json
+
+    tests/validate/error_5006_DecompressChecksumError.json
 
     tests/validate/error_6001_SizeMismatch.json
     tests/validate/warning_6002_TooManyDFDBlocks.json

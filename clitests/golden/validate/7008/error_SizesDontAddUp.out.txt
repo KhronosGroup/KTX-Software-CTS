@@ -4,3 +4,5 @@ error-7008: kvdByteLength must add up to the sum of the size of the key-value en
     The processed Key/Value Data length is 56 byte(s) but kvdByteLength is 54 byte(s) and they must match.
 warning-7010: Custom key in Key/Value Data.
     Custom key "ZZZZ" found in Key/Value Data.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

@@ -2,3 +2,5 @@ Validation failed
 
 error-6016: Invalid colorModel in basic DFD block for block compressed VkFormat.
     DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_RGBSDA but for VkFormat VK_FORMAT_EAC_R11G11_SNORM_BLOCK it must be KHR_DF_MODEL_ETC2.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

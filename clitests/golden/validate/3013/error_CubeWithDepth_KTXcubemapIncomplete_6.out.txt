@@ -6,3 +6,5 @@ error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompress
     Level 0 uncompressedByteLength is 1024 but based on the vkFormat, DFD and image sizes the expected value is 6144.
 error-3013: Invalid pixelDepth. pixelDepth must be 0 for cube maps.
     pixelDepth is 6 but for cube maps it must be 0 (cube map faces must be 2D).
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid alphaSliceByteOffset or alphaSliceByteLength. The defined byte region must be within the corresponding mip level.",
             "details": "For Level 0 Layer 0 Face 0 zSlice 0 the alphaSliceByteOffset is 0 and the alphaSliceByteLength is 7 but the defined region must fit in the level's byteLength of 6."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

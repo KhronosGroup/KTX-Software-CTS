@@ -2,3 +2,5 @@ Validation failed
 
 error-7132: Invalid KTXastcDecodeMode value. The value must be either "rgb9e5" or "unorm8".
     The value is "" but the value must be either "rgb9e5" or "unorm8".
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

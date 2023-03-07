@@ -1,0 +1,4 @@
+Validation failed
+
+fatal-5005: Failed to load texture using libktx.
+    KTX 2.0 file is valid but libktx loading returned error: File data is inconsistent with KTX spec.

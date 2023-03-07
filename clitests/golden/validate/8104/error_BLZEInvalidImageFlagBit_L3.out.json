@@ -55,6 +55,12 @@
             "type": "error",
             "message": "Invalid imageFlags in BasisLzEtc1sImageDesc.",
             "details": "For Level 2 Layer 2 Face 0 zSlice 0 the imageFlags is 0xFFFFFFFF which has an invalid bit set."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

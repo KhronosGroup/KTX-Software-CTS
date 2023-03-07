@@ -13,6 +13,12 @@
             "type": "error",
             "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
             "details": "DFD block #1 sample #1 channelType in basic DFD block is (0x4) but the expected value is KHR_DF_CHANNEL_PVRTC2_COLOR for VK_FORMAT_PVRTC2_4BPP_SRGB_BLOCK_IMG."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid KTXswizzle value. The size of the value must be 5 bytes (including the NULL terminator).",
             "details": "The size of KTXswizzle value is 6 byte(s) but it must be 5 bytes (including the NULL terminator)."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

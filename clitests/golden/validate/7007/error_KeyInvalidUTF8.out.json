@@ -91,6 +91,12 @@
             "type": "warning",
             "message": "Custom key in Key/Value Data.",
             "details": "Custom key \"UTF-8 4 Octet Sequence 𐌼\" found in Key/Value Data."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

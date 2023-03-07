@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid bytesPlanes in basic DFD block. The values do not match the expected values.",
             "details": "DFD block #1 bytesPlanes in basic DFD block are 17 0 0 0 0 0 0 0 but for VK_FORMAT_BC3_SRGB_BLOCK textures these must be 16 0 0 0 0 0 0 0."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

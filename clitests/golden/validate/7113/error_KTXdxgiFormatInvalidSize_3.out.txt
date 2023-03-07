@@ -2,3 +2,5 @@ Validation failed
 
 error-7113: Invalid KTXdxgiFormat__ metadata. The size of the value must be 4 byte.
     The size of KTXdxgiFormat__ value is 3 byte(s) but it must be 4 byte.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

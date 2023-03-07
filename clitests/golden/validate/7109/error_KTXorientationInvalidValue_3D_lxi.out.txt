@@ -2,3 +2,5 @@ Validation failed
 
 error-7109: Invalid KTXorientation value. The value must match /^[rl]$/ for 1D, /^[rl][du]$/ for 2D and /^[rl][du][oi]$/ for 3D texture types.
     Dimension 1 is "x" but it must be either "d" or "u".
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

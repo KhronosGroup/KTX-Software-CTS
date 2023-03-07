@@ -1,0 +1,4 @@
+Validation failed
+
+error-4008: Mismatch between uncompresedByteLength in Level Index and actually decompressed bytes.
+    Decompressing supercompression KTX_SS_ZSTD resulted in a different number of bytes than expected according to uncompressedByteLength.

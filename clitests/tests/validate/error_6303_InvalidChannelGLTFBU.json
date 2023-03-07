@@ -7,7 +7,7 @@
         "GLTFBasisU": [
             {
                 "flag": "",
-                "status": 0,
+                "status": "*",
                 "outPrefix": "disabled"
             },
             {

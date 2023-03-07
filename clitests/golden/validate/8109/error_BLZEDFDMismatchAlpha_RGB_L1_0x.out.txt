@@ -2,3 +2,5 @@ Validation failed
 
 error-8110: Incompatible alphaSliceByteLength and DFD sampleCount. If DFD indicates no alpha slice the alphaSliceByteLength in BasisLzEtc1sImageDesc must be 0.
     For Level 0 Layer 0 Face 0 zSlice 0 the alphaSliceByteLength is 4 but DFD indicates no alpha slice so it must be 0.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

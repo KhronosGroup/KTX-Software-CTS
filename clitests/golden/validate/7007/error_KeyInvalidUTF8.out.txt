@@ -30,3 +30,5 @@ warning-7010: Custom key in Key/Value Data.
     Custom key "UTF-8 4 Octet Sequence �( - 4th byte invalid" found in Key/Value Data.
 warning-7010: Custom key in Key/Value Data.
     Custom key "UTF-8 4 Octet Sequence 𐌼" found in Key/Value Data.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

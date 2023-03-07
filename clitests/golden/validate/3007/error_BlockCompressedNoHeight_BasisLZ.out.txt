@@ -2,3 +2,5 @@ Validation failed
 
 error-3007: Invalid pixelHeight. pixelHeight must not be 0 for a block compressed formats.
     pixelHeight is 0 but for block-compressed KTX_SS_BASIS_LZ it must not be 0.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

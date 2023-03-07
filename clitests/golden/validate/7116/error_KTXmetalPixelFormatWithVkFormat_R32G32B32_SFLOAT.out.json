@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Incompatible KTXmetalPixelFormat and VkFormat. If KTXmetalPixelFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
             "details": "vkFormat is VK_FORMAT_R32G32B32_SFLOAT but it must be VK_FORMAT_UNDEFINED if KTXmetalPixelFormat is present."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

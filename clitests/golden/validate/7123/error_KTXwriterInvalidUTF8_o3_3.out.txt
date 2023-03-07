@@ -2,3 +2,5 @@ Validation failed
 
 error-7123: Invalid KTXwriter value. The value must be a valid UTF8 string.
     The value contains an invalid UTF8 character at index: 23.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

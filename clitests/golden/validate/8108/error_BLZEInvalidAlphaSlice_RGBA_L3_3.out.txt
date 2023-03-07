@@ -2,3 +2,5 @@ Validation failed
 
 error-8108: Invalid alphaSliceByteOffset or alphaSliceByteLength. The defined byte region must be within the corresponding mip level.
     For Level 2 Layer 0 Face 0 zSlice 0 the alphaSliceByteOffset is 3 and the alphaSliceByteLength is 1 but the defined region must fit in the level's byteLength of 2.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Invalid KTXglFormat metadata. The size of the value must be 12 bytes.",
             "details": "The size of KTXglFormat value is 0 byte(s) but it must be 12 bytes."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

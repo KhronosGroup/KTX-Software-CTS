@@ -2,3 +2,5 @@ Validation failed
 
 error-6021: Invalid bytesPlanes in basic DFD block. The values do not match the expected values.
     DFD block #1 bytesPlanes in basic DFD block are 11 0 0 0 0 0 0 0 but for VK_FORMAT_R32G32B32_SFLOAT textures these must be 12 0 0 0 0 0 0 0.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

@@ -2,3 +2,5 @@ Validation failed
 
 error-7201: Invalid KTXswizzle metadata for KHR_texture_basisu compatibility.
     KTXswizzle is "rg0a" but must be "rgba", if present, for KHR_texture_basisu compatibility.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

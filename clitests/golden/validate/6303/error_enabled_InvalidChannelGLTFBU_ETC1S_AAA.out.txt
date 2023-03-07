@@ -1,4 +1,6 @@
 Validation failed
 
-error-6303: Invalid sample channelType for colorModel for KHR_texture_basisu compatibility.
-    DFD block #1 colorModel is KHR_DF_MODEL_ETC1S but sample #0 channelType is KHR_DF_CHANNEL_ETC1S_AAA while KHR_texture_basisu requires KHR_DF_CHANNEL_ETC1S_RGB or KHR_DF_CHANNEL_ETC1S_RRR.
+error-6101: Invalid sample channelType for colorModel in the basic DFD block.
+    DFD block #1 sample #KHR_DF_MODEL_ETC1S channelType in basic DFD block is 1 which is not valid for colorModel KHR_DF_CHANNEL_ETC1S_AAA.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

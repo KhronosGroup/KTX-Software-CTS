@@ -2,3 +2,5 @@ Validation failed
 
 error-7114: Incompatible KTXdxgiFormat__ and VkFormat. If KTXdxgiFormat__ is present vkFormat must be VK_FORMAT_UNDEFINED.
     vkFormat is VK_FORMAT_R8G8B8_UNORM but it must be VK_FORMAT_UNDEFINED if KTXdxgiFormat__ is present.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

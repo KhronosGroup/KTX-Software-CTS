@@ -2,3 +2,5 @@ Validation failed
 
 error-3010: Invalid pixelDepth. pixelDepth must not be 0 for block-compressed formats with non-zero block depth.
     pixelDepth is 0 but for VK_FORMAT_ASTC_4x4x3_SFLOAT_BLOCK_EXT (which is a block-compressed format with non-zero block depth) it must not be 0.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

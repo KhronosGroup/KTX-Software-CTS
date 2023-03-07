@@ -13,6 +13,12 @@
             "type": "error",
             "message": "Invalid byteOffset in Level Index. byteOffset has to be aligned to lcm(texel_block_size, 4) and must match expected value.",
             "details": "Level 0 byteOffset is 192 but based on the vkFormat, DFD and image sizes the required alignment is 60 and the expected value is 240."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

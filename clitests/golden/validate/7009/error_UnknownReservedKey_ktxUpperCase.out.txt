@@ -6,3 +6,5 @@ error-7009: Invalid key in Key/Value Data. Keys with "KTX" or "ktx" prefix are r
     The key is "KTX" but its not recognized and keys with "KTX" or "ktx" prefix are reserved.
 error-7009: Invalid key in Key/Value Data. Keys with "KTX" or "ktx" prefix are reserved.
     The key is "KTXwrite" but its not recognized and keys with "KTX" or "ktx" prefix are reserved.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

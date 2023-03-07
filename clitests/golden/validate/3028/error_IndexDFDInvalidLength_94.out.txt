@@ -7,4 +7,4 @@ error-3022: Invalid kvdByteOffset.
 error-6001: Mismatching dfdTotalSize and dfdByteLength. dfdTotalSize must match dfdByteLength.
     dfdTotalSize is 94 but dfdByteLength is 92 and they must match.
 error-6004: Invalid DFD data. Not enough data left to process another DFD block header.
-    DFD has 2 byte(s) unprocessed but for a key value entry at least 8 bytes are required.
+    DFD has 2 byte(s) unprocessed but for a valid DFD at least 8 bytes are required.

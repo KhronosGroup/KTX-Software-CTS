@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Incompatible KTXanimData and KTXcubemapIncomplete metadata. KTXanimData and KTXcubemapIncomplete cannot be present at the same time.",
             "details": "Both KTXanimData and KTXcubemapIncomplete is present but they are incompatible."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

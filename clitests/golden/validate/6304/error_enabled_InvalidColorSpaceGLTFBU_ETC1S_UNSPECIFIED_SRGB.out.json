@@ -7,6 +7,12 @@
             "type": "error",
             "message": "Color space information is incompatible with KHR_texture_basisu.",
             "details": "DFD block #1 primaries is KHR_DF_PRIMARIES_UNSPECIFIED and transfer is KHR_DF_TRANSFER_SRGB but KHR_texture_basisu requires either KHR_DF_PRIMARIES_BT709 with KHR_DF_TRANSFER_SRGB or KHR_DF_PRIMARIES_UNSPECIFIED with KHR_DF_TRANSFER_LINEAR."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }
