@@ -175,6 +175,10 @@ set(CASELIST
     tests/extract/raw_all_2d_mip.json
     tests/extract/raw_all_2d_array.json
     tests/extract/raw_all_2d_array_mip.json
+    tests/extract/raw_select_2d.json
+    tests/extract/raw_select_2d_mip.json
+    tests/extract/raw_select_2d_array.json
+    tests/extract/raw_select_2d_array_mip.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
