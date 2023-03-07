@@ -1,0 +1,53 @@
+{
+    "description": "Test case description.",
+    "command": "ktx extract --raw --all input/valid/valid_${subcase}.ktx2 output/extract/raw_all_1d_array_mip/output_${subcase}",
+    "status": 0,
+    "outputs": {
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer0.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer0.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer1.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer1.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer2.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer2.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer3.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level0_layer3.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer0.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer0.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer1.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer1.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer2.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer2.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer3.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level1_layer3.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer0.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer0.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer1.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer1.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer2.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer2.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer3.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level2_layer3.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer0.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer0.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer1.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer1.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer2.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer2.raw",
+        "output/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer3.raw": "golden/extract/raw_all_1d_array_mip/output_${subcase}/output_level3_layer3.raw"
+    },
+    "args": {
+        "subcase": [
+            "A1R5G5B5_UNORM_PACK16_1D_ARRAY_MIP",
+            "A2R10G10B10_SINT_PACK32_1D_ARRAY_MIP",
+            "A2R10G10B10_UINT_PACK32_1D_ARRAY_MIP",
+            "A4R4G4B4_UNORM_PACK16_EXT_1D_ARRAY_MIP",
+            "R16G16B16A16_UNORM_1D_ARRAY_MIP",
+            "R16G16B16_UNORM_1D_ARRAY_MIP",
+            "R16G16_UNORM_1D_ARRAY_MIP",
+            "R16_UNORM_1D_ARRAY_MIP",
+            "R32G32B32A32_UINT_1D_ARRAY_MIP",
+            "R32G32B32_UINT_1D_ARRAY_MIP",
+            "R32G32_UINT_1D_ARRAY_MIP",
+            "R32_UINT_1D_ARRAY_MIP",
+            "R4G4B4A4_UNORM_PACK16_1D_ARRAY_MIP",
+            "R4G4_UNORM_PACK8_1D_ARRAY_MIP",
+            "R5G5B5A1_UNORM_PACK16_1D_ARRAY_MIP",
+            "R5G6B5_UNORM_PACK16_1D_ARRAY_MIP",
+            "R8G8B8A8_UNORM_1D_ARRAY_MIP",
+            "R8G8B8_UNORM_1D_ARRAY_MIP",
+            "R8G8_UNORM_1D_ARRAY_MIP",
+            "R8_SINT_1D_ARRAY_MIP",
+            "R8_SRGB_1D_ARRAY_MIP",
+            "R8_UINT_1D_ARRAY_MIP",
+            "R8_UNORM_1D_ARRAY_MIP"
+        ]
+    }
+}
+
+
+

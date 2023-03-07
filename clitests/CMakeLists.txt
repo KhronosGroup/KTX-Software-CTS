@@ -171,14 +171,24 @@ set(CASELIST
     tests/validate/error_8109_BLZEDFDMismatchAlpha.json
     tests/validate/error_8110_BLZEDFDMismatchNoAlpha.json
 
+    tests/extract/raw_all_1d.json
+    tests/extract/raw_all_1d_mip.json
+    tests/extract/raw_all_1d_array.json
+    tests/extract/raw_all_1d_array_mip.json
     tests/extract/raw_all_2d.json
     tests/extract/raw_all_2d_mip.json
     tests/extract/raw_all_2d_array.json
     tests/extract/raw_all_2d_array_mip.json
+    tests/extract/raw_all_3d.json
+    tests/extract/raw_all_3d_mip.json
     tests/extract/raw_all_cube.json
     tests/extract/raw_all_cube_mip.json
     tests/extract/raw_all_cube_array.json
     tests/extract/raw_all_cube_array_mip.json
+    tests/extract/raw_select_1d.json
+    tests/extract/raw_select_1d_mip.json
+    tests/extract/raw_select_1d_array.json
+    tests/extract/raw_select_1d_array_mip.json
     tests/extract/raw_select_2d.json
     tests/extract/raw_select_2d_mip.json
     tests/extract/raw_select_2d_array.json
@@ -187,6 +197,8 @@ set(CASELIST
     tests/extract/raw_select_cube_mip.json
     tests/extract/raw_select_cube_array.json
     tests/extract/raw_select_cube_array_mip.json
+    tests/extract/raw_select_3d.json
+    tests/extract/raw_select_3d_mip.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)

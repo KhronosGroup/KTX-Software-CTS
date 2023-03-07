@@ -1,0 +1,53 @@
+{
+    "description": "Test case description.",
+    "command": "ktx extract --raw ${select[flags]} input/valid/valid_${subcase}.ktx2 output/extract/raw_select_1d_array_mip/output_${subcase}/output${select[id]}.raw",
+    "status": 0,
+    "outputs": {
+        "output/extract/raw_select_1d_array_mip/output_${subcase}/output${select[id]}.raw": "golden/extract/raw_select_1d_array_mip/output_${subcase}/output${select[id]}.raw"
+    },
+    "args": {
+        "select": [
+            { "id": "_level0_layer0", "flags": "--level 0 --layer 0" },
+            { "id": "_level0_layer1", "flags": "--level 0 --layer 1" },
+            { "id": "_level0_layer2", "flags": "--level 0 --layer 2" },
+            { "id": "_level0_layer3", "flags": "--level 0 --layer 3" },
+            { "id": "_level1_layer0", "flags": "--level 1 --layer 0" },
+            { "id": "_level1_layer1", "flags": "--level 1 --layer 1" },
+            { "id": "_level1_layer2", "flags": "--level 1 --layer 2" },
+            { "id": "_level1_layer3", "flags": "--level 1 --layer 3" },
+            { "id": "_level2_layer0", "flags": "--level 2 --layer 0" },
+            { "id": "_level2_layer1", "flags": "--level 2 --layer 1" },
+            { "id": "_level2_layer2", "flags": "--level 2 --layer 2" },
+            { "id": "_level2_layer3", "flags": "--level 2 --layer 3" },
+            { "id": "_level3_layer0", "flags": "--level 3 --layer 0" },
+            { "id": "_level3_layer1", "flags": "--level 3 --layer 1" },
+            { "id": "_level3_layer2", "flags": "--level 3 --layer 2" },
+            { "id": "_level3_layer3", "flags": "--level 3 --layer 3" }
+        ],
+        "subcase": [
+            "A1R5G5B5_UNORM_PACK16_1D_ARRAY_MIP",
+            "A2R10G10B10_SINT_PACK32_1D_ARRAY_MIP",
+            "A2R10G10B10_UINT_PACK32_1D_ARRAY_MIP",
+            "A4R4G4B4_UNORM_PACK16_EXT_1D_ARRAY_MIP",
+            "R16G16B16A16_UNORM_1D_ARRAY_MIP",
+            "R16G16B16_UNORM_1D_ARRAY_MIP",
+            "R16G16_UNORM_1D_ARRAY_MIP",
+            "R16_UNORM_1D_ARRAY_MIP",
+            "R32G32B32A32_UINT_1D_ARRAY_MIP",
+            "R32G32B32_UINT_1D_ARRAY_MIP",
+            "R32G32_UINT_1D_ARRAY_MIP",
+            "R32_UINT_1D_ARRAY_MIP",
+            "R4G4B4A4_UNORM_PACK16_1D_ARRAY_MIP",
+            "R4G4_UNORM_PACK8_1D_ARRAY_MIP",
+            "R5G5B5A1_UNORM_PACK16_1D_ARRAY_MIP",
+            "R5G6B5_UNORM_PACK16_1D_ARRAY_MIP",
+            "R8G8B8A8_UNORM_1D_ARRAY_MIP",
+            "R8G8B8_UNORM_1D_ARRAY_MIP",
+            "R8G8_UNORM_1D_ARRAY_MIP",
+            "R8_SINT_1D_ARRAY_MIP",
+            "R8_SRGB_1D_ARRAY_MIP",
+            "R8_UINT_1D_ARRAY_MIP",
+            "R8_UNORM_1D_ARRAY_MIP"
+        ]
+    }
+}
