@@ -1,0 +1,6 @@
+Validation failed
+
+error-3101: Invalid supercompressionScheme for KHR_texture_basisu compatibility.
+    supercompressionScheme is KTX_SS_ZLIB but it must either be BASIS_LZ for ETC1S or either NONE or ZSTD for UASTC textures for KHR_texture_basisu compatibility.
+error-6301: Invalid colorModel in basic DFD block for KHR_texture_basisu compatibility.
+    DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_RGBSDA but for KHR_texture_basisu compatibility it must be either ETC1S or UASTC.

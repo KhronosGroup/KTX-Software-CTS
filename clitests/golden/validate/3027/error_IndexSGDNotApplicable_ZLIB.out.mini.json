@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":3027,"type":"error","message":"sgdByteLength must be 0 for supercompression schemes with no global data.","details":"sgdByteLength is 8 but for supercompression scheme KTX_SS_ZLIB (which does not have global data) it must be 0."}]}

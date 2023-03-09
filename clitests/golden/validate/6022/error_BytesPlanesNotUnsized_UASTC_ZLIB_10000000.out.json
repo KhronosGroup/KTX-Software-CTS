@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 6022,
+            "type": "error",
+            "message": "Invalid bytesPlanes in basic DFD block. BytesPlanes must be 0 for supercompressed textures.",
+            "details": "DFD block #1 bytesPlanes in basic DFD block are 1 0 0 0 0 0 0 0 but for UASTC supercompressed textures these must be zeros."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
+        }
+    ]
+}

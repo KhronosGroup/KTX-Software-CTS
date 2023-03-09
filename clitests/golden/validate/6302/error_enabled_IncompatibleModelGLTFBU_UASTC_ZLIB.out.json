@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 3101,
+            "type": "error",
+            "message": "Invalid supercompressionScheme for KHR_texture_basisu compatibility.",
+            "details": "supercompressionScheme is KTX_SS_ZLIB but it must either be BASIS_LZ for ETC1S or either NONE or ZSTD for UASTC textures for KHR_texture_basisu compatibility."
+        },
+        {
+            "id": 6302,
+            "type": "error",
+            "message": "Incompatible supercompressionScheme and colorModel for KHR_texture_basisu compatibility.",
+            "details": "DFD block #1 colorModel is KHR_DF_MODEL_UASTC while supercompressionScheme is KTX_SS_ZLIB but KHR_texture_basisu requires supercompressionScheme KTX_SS_NONE or KTX_SS_ZSTD for this colorModel."
+        }
+    ]
+}

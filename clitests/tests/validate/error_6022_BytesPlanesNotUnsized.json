@@ -26,6 +26,9 @@
             "UASTC_ZSTD_10000000",
             "UASTC_ZSTD_16_0000000",
             "UASTC_ZSTD_16_1111111",
+            "UASTC_ZLIB_10000000",
+            "UASTC_ZLIB_16_0000000",
+            "UASTC_ZLIB_16_1111111",
             "BLZE_10000000",
             "BLZE_16_0000000",
             "BLZE_16_1111111"

@@ -1,0 +1,42 @@
+{
+    "description": "KHR_texture_basisu does not allow ZLIB compression",
+    "command": "ktx validate ${GLTFBasisU[flag]} ${format[args]} input/validate/3101/error_InvalidSupercompressionGLTFBU_${subcase}.ktx2",
+    "status": "${GLTFBasisU[status]}",
+    "stdout": "golden/validate/3101/error_${GLTFBasisU[outPrefix]}_InvalidSupercompressionGLTFBU_${subcase}.out.${format[ext]}",
+    "args": {
+        "GLTFBasisU": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "disabled"
+            },
+            {
+                "flag": "--gltf-basisu",
+                "status": 3,
+                "outPrefix": "enabled"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "ZLIB",
+            "UASTC_ZLIB"
+        ]
+    }
+}

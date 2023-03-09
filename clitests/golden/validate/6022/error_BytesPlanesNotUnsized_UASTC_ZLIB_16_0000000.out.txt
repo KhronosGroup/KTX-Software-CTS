@@ -1,0 +1,6 @@
+Validation failed
+
+error-6022: Invalid bytesPlanes in basic DFD block. BytesPlanes must be 0 for supercompressed textures.
+    DFD block #1 bytesPlanes in basic DFD block are 16 0 0 0 0 0 0 0 but for UASTC supercompressed textures these must be zeros.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

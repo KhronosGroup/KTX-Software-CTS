@@ -1,8 +1,8 @@
 {
-    "description": "Checksum mismatch during decompression.",
-    "command": "ktx validate ${format[args]} input/validate/5006/error_DecompressChecksumError.ktx2",
+    "description": "SGD is not applicable to Zstd and ZLIB compression",
+    "command": "ktx validate ${format[args]} input/validate/3027/error_IndexSGDNotApplicable_${subcase}.ktx2",
     "status": 3,
-    "stdout": "golden/validate/5006/error_DecompressChecksumError.out.${format[ext]}",
+    "stdout": "golden/validate/3027/error_IndexSGDNotApplicable_${subcase}.out.${format[ext]}",
     "args": {
         "format": [
             {
@@ -21,6 +21,12 @@
                 "args": "--format mini-json",
                 "ext": "mini.json"
             }
+        ],
+        "subcase": [
+            "ZSTD",
+            "ZLIB",
+            "UASTC_ZSTD",
+            "UASTC_ZLIB"
         ]
     }
 }
