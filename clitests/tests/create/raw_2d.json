@@ -1,0 +1,63 @@
+{
+    "description": "Test case description.",
+    "command": "ktx create --raw --format ${subcase} --width 8 --height 8 --depth 1 --levels 1 --layers 1 input/raw/raw_${subcase}_2D/input.raw output/create/raw_2d/output_${subcase}_2D.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/raw_2d/output_${subcase}_2D.ktx2": "golden/create/raw_2d/output_${subcase}_2D.ktx2"
+    },
+    "args": {
+        "subcase": [
+            "R8_UNORM",
+            "R8_SRGB",
+            "R8G8_UNORM",
+            "R8G8_SRGB",
+            "R8G8B8_UNORM",
+            "R8G8B8_SRGB",
+            "B8G8R8_UNORM",
+            "B8G8R8_SRGB",
+            "R8G8B8A8_UNORM",
+            "R8G8B8A8_SRGB",
+            "B8G8R8A8_UNORM",
+            "B8G8R8A8_SRGB",
+
+            "R16_UNORM",
+            "R16G16_UNORM",
+            "R16G16B16_UNORM",
+            "R16G16B16A16_UNORM",
+
+            "R8_UINT",
+            "R8_SINT",
+            "R16_UINT",
+            "R16_SINT",
+            "R32_UINT",
+            "R8G8_UINT",
+            "R8G8_SINT",
+            "R16G16_UINT",
+            "R16G16_SINT",
+            "R32G32_UINT",
+            "R8G8B8_UINT",
+            "R8G8B8_SINT",
+            "B8G8R8_UINT",
+            "B8G8R8_SINT",
+            "R16G16B16_UINT",
+            "R16G16B16_SINT",
+            "R32G32B32_UINT",
+            "R8G8B8A8_UINT",
+            "R8G8B8A8_SINT",
+            "B8G8R8A8_UINT",
+            "B8G8R8A8_SINT",
+            "R16G16B16A16_UINT",
+            "R16G16B16A16_SINT",
+            "R32G32B32A32_UINT",
+
+            "R16_SFLOAT",
+            "R16G16_SFLOAT",
+            "R16G16B16_SFLOAT",
+            "R16G16B16A16_SFLOAT",
+            "R32_SFLOAT",
+            "R32G32_SFLOAT",
+            "R32G32B32_SFLOAT",
+            "R32G32B32A32_SFLOAT"
+        ]
+    }
+}

@@ -243,30 +243,34 @@ if __name__ == '__main__':
 
 
         # Check output files
-
         if 'outputs' in testcase:
-            for output, output_ref in testcase['outputs'].items():
+            for output_cur, output_ref in testcase['outputs'].items():
                 files_found = True
 
-                output = ctx.eval(output)
+                output_cur = ctx.eval(output_cur)
                 output_ref = ctx.eval(output_ref)
 
                 if not cmd_failed and cli_args.regen_golden:
                     os.makedirs(os.path.dirname(output_ref), exist_ok=True)
-                    shutil.copyfile(output, output_ref)
+                    if os.path.isfile(output_cur):
+                        shutil.copyfile(output_cur, output_ref)
+                    else:
+                        subcase_failed = True
+                        subcase_messages.append(f"stdout:\n{output['stdout']}")
+                        subcase_messages.append(f"stderr:\n{output['stderr']}")
 
-                if not os.path.isfile(output):
-                    subcase_messages.append(f"Cannot find output file '{output}'")
+                if not os.path.isfile(output_cur):
+                    subcase_messages.append(f"Cannot find output file '{output_cur}'")
                     subcase_failed = True
                     files_found = False
 
                 if not os.path.isfile(output_ref):
-                    subcase_messages.append(f"Cannot find reference file '{output_ref}' for output file '{output}'")
+                    subcase_messages.append(f"Cannot find reference file '{output_ref}' for output file '{output_cur}'")
                     subcase_failed = True
                     files_found = False
 
-                if files_found and not filecmp.cmp(output, output_ref, shallow=False):
-                    subcase_messages.append(f"Mismatch between output file '{output}' and reference file '{output_ref}'")
+                if files_found and not filecmp.cmp(output_cur, output_ref, shallow=False):
+                    subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
                     subcase_failed = True
 
 

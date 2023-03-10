@@ -203,6 +203,8 @@ set(CASELIST
     tests/extract/raw_select_cube_array_mip.json
     tests/extract/raw_select_3d.json
     tests/extract/raw_select_3d_mip.json
+
+    tests/create/raw_2d.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
