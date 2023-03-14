@@ -1,0 +1,37 @@
+{
+    "description": "Test case description.",
+    "command": "ktx extract --raw ${transcode[flag]} input/valid/valid_${subcase}_2D_BLZE.ktx2 output/extract/raw_transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.raw",
+    "status": 0,
+    "outputs": {
+        "output/extract/raw_transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.raw": "golden/extract/raw_transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.raw"
+    },
+    "args": {
+        "transcode": [
+            { "id": "etc-rgb", "flag": "--transcode etc-rgb" },
+            { "id": "etc-rgba", "flag": "--transcode etc-rgba" },
+            { "id": "eac-r11", "flag": "--transcode eac-r11" },
+            { "id": "eac-rg11", "flag": "--transcode eac-rg11" },
+            { "id": "bc1", "flag": "--transcode bc1" },
+            { "id": "bc3", "flag": "--transcode bc3" },
+            { "id": "bc4", "flag": "--transcode bc4" },
+            { "id": "bc5", "flag": "--transcode bc5" },
+            { "id": "bc7", "flag": "--transcode bc7" },
+            { "id": "astc", "flag": "--transcode astc" },
+            { "id": "r8", "flag": "--transcode r8" },
+            { "id": "rg8", "flag": "--transcode rg8" },
+            { "id": "rgb8", "flag": "--transcode rgb8" },
+            { "id": "rgba8", "flag": "--transcode rgba8" },
+            { "id": "auto", "flag": "" }
+        ],
+        "subcase": [
+            "R8_UNORM",
+            "R8_SRGB",
+            "R8G8_UNORM",
+            "R8G8_SRGB",
+            "R8G8B8_UNORM",
+            "R8G8B8_SRGB",
+            "R8G8B8A8_UNORM",
+            "R8G8B8A8_SRGB"
+        ]
+    }
+}
