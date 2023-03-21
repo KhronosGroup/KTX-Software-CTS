@@ -6,7 +6,7 @@
             "id": 3024,
             "type": "error",
             "message": "Invalid sgdByteOffset.",
-            "details": "sgdByteOffset is 210 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 208."
+            "details": "sgdByteOffset is 214 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 208."
         },
         {
             "id": 5004,

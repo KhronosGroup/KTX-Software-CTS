@@ -206,7 +206,15 @@ set(CASELIST
     tests/extract/raw_transcode_blze.json
     tests/extract/raw_transcode_uastc.json
 
+#    tests/create/raw_1d.json
+#    tests/create/raw_1d_array.json
+#    tests/create/raw_1d_array_mip.json
+#    tests/create/raw_1d_mip.json
     tests/create/raw_2d.json
+#    tests/create/raw_2d_array.json
+#    tests/create/raw_cube.json
+#    tests/create/raw_cube_array.json
+#    tests/create/raw_3d.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)

@@ -3,6 +3,12 @@
     "valid": false,
     "messages": [
         {
+            "id": 3024,
+            "type": "error",
+            "message": "Invalid sgdByteOffset.",
+            "details": "sgdByteOffset is 248 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 240."
+        },
+        {
             "id": 7112,
             "type": "error",
             "message": "Invalid KTXglFormatInvalidValue value. glFormat and glType must be zero for compressed formats.",

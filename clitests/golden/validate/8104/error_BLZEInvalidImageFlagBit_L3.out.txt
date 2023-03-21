@@ -1,5 +1,7 @@
 Validation failed
 
+error-3024: Invalid sgdByteOffset.
+    sgdByteOffset is 280 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 272.
 error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
     For Level 0 Layer 0 Face 0 zSlice 0 the imageFlags is 0x00000001 which has an invalid bit set.
 error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.

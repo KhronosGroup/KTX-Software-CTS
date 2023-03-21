@@ -3,6 +3,12 @@
     "valid": false,
     "messages": [
         {
+            "id": 3024,
+            "type": "error",
+            "message": "Invalid sgdByteOffset.",
+            "details": "sgdByteOffset is 280 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 272."
+        },
+        {
             "id": 8104,
             "type": "error",
             "message": "Invalid imageFlags in BasisLzEtc1sImageDesc.",
