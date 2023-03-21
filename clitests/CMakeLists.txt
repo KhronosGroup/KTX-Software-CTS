@@ -11,6 +11,7 @@ set(CASELIST
     tests/info/sample_json.json
     tests/info/sample_mini.json
     tests/info/MissingFile.json
+    #tests/info/Invalids.json
 
     #tests/validate/valid.json
 
@@ -206,15 +207,20 @@ set(CASELIST
     tests/extract/raw_transcode_blze.json
     tests/extract/raw_transcode_uastc.json
 
-#    tests/create/raw_1d.json
-#    tests/create/raw_1d_array.json
-#    tests/create/raw_1d_array_mip.json
-#    tests/create/raw_1d_mip.json
+    tests/create/raw_1d.json
+    tests/create/raw_1d_array.json
+    tests/create/raw_1d_array_mip.json
+    tests/create/raw_1d_mip.json
     tests/create/raw_2d.json
-#    tests/create/raw_2d_array.json
-#    tests/create/raw_cube.json
-#    tests/create/raw_cube_array.json
-#    tests/create/raw_3d.json
+    tests/create/raw_2d_array.json
+    tests/create/raw_2d_array_mip.json
+    tests/create/raw_2d_mip.json
+    tests/create/raw_cube.json
+    tests/create/raw_cube_array.json
+    tests/create/raw_cube_array_mip.json
+    tests/create/raw_cube_mip.json
+    tests/create/raw_3d.json
+    tests/create/raw_3d_mip.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)
