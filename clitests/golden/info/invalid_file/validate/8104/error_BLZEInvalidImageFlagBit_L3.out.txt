@@ -1,0 +1,147 @@
+Validation failed
+
+error-3024: Invalid sgdByteOffset.
+    sgdByteOffset is 280 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 272.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 0 Layer 0 Face 0 zSlice 0 the imageFlags is 0x00000001 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 0 Layer 1 Face 0 zSlice 0 the imageFlags is 0x00000003 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 0 Layer 2 Face 0 zSlice 0 the imageFlags is 0x00000007 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 1 Layer 0 Face 0 zSlice 0 the imageFlags is 0x0000000F which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 1 Layer 1 Face 0 zSlice 0 the imageFlags is 0x00000010 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 1 Layer 2 Face 0 zSlice 0 the imageFlags is 0x00000030 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 2 Layer 0 Face 0 zSlice 0 the imageFlags is 0x00000070 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 2 Layer 1 Face 0 zSlice 0 the imageFlags is 0x80000000 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 2 Layer 2 Face 0 zSlice 0 the imageFlags is 0xFFFFFFFF which has an invalid bit set.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_UNDEFINED
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 3
+faceCount: 1
+levelCount: 3
+supercompressionScheme: KTX_SS_BASIS_LZ
+dataFormatDescriptor.byteOffset: 0x98
+dataFormatDescriptor.byteLength: 44
+keyValueData.byteOffset: 0xc4
+keyValueData.byteLength: 72
+supercompressionGlobalData.byteOffset: 0x118
+supercompressionGlobalData.byteLength: 358
+
+Level Index
+
+Level0.byteOffset: 0x28a
+Level0.byteLength: 33
+Level0.uncompressedByteLength: 0
+Level1.byteOffset: 0x281
+Level1.byteLength: 9
+Level1.uncompressedByteLength: 0
+Level2.byteOffset: 0x27e
+Level2.byteLength: 3
+Level2.uncompressedByteLength: 0
+
+Data Format Descriptor
+
+DFD total bytes: 44
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 40
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_ETC1S
+Dimensions: 4, 4, 1, 1
+Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x0 (KHR_DF_CHANNEL_ETC1S_RGB)
+    Length: 64 bits Offset: 0
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0xffffffff
+
+Key/Value Data
+
+KTXanimData:
+    duration: 1
+    timescale: 2
+    loopCount: 3
+KTXwriter: Unidentified app / libktx 
+
+Basis Supercompression Global Data
+
+endpointCount: 19
+selectorCount: 9
+endpointsByteLength: 73
+selectorsByteLength: 34
+tablesByteLength: 51
+extendedByteLength: 0
+
+imageFlags: 0x1
+rgbSliceByteLength: 11
+rgbSliceByteOffset: 0
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0x3
+rgbSliceByteLength: 11
+rgbSliceByteOffset: 0xb
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0x7
+rgbSliceByteLength: 11
+rgbSliceByteOffset: 0x16
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0xf
+rgbSliceByteLength: 3
+rgbSliceByteOffset: 0
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0x10
+rgbSliceByteLength: 3
+rgbSliceByteOffset: 0x3
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0x30
+rgbSliceByteLength: 3
+rgbSliceByteOffset: 0x6
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0x70
+rgbSliceByteLength: 1
+rgbSliceByteOffset: 0
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0x80000000
+rgbSliceByteLength: 1
+rgbSliceByteOffset: 0x1
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0
+
+imageFlags: 0xffffffff
+rgbSliceByteLength: 1
+rgbSliceByteOffset: 0x2
+alphaSliceByteLength: 0
+alphaSliceByteOffset: 0

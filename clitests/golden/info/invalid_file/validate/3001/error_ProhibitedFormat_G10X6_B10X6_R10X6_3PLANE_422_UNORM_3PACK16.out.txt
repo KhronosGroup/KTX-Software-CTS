@@ -1,0 +1,75 @@
+Validation failed
+
+error-3001: Prohibited VkFormat.
+    VkFormat VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16 is prohibited in a KTX2 file.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 92
+keyValueData.byteOffset: 0xc4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xf0
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+
+DFD total bytes: 92
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 88
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_RGBSDA
+Dimensions: 1, 1, 1, 1
+Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Length: 8 bits Offset: 0
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 1:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Length: 8 bits Offset: 8
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 2:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Length: 8 bits Offset: 16
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 3:
+    Qualifiers: 0x0 ()
+    Channel Type: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+    Length: 8 bits Offset: 24
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

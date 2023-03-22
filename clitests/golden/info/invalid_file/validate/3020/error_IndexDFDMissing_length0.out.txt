@@ -1,0 +1,33 @@
+Validation failed
+
+error-3020: Missing Data Format Descriptor.
+    Data Format Descriptor is mandatory but dfdByteOffset is 104 and dfdByteLength is 0.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 0
+keyValueData.byteOffset: 0x68
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0x94
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

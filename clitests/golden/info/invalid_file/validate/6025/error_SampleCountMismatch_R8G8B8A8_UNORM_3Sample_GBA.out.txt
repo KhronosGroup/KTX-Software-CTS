@@ -1,0 +1,82 @@
+Validation failed
+
+error-6025: Invalid sample count in basic DFD block. The sample count must match the expected sample count of the VkFormat.
+    DFD block #1 sample count in basic DFD block is 3 but for VkFormat VK_FORMAT_R8G8B8A8_UNORM it must be 4.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 bitOffset in basic DFD block is 8 but the expected value is 0 for VK_FORMAT_R8G8B8A8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_GREEN but the expected value is KHR_DF_CHANNEL_RGBSDA_RED for VK_FORMAT_R8G8B8A8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 bitOffset in basic DFD block is 16 but the expected value is 8 for VK_FORMAT_R8G8B8A8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_BLUE but the expected value is KHR_DF_CHANNEL_RGBSDA_GREEN for VK_FORMAT_R8G8B8A8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 bitOffset in basic DFD block is 24 but the expected value is 16 for VK_FORMAT_R8G8B8A8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_ALPHA but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8A8_UNORM.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 76
+keyValueData.byteOffset: 0xb4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xe0
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+
+DFD total bytes: 76
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 72
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_RGBSDA
+Dimensions: 1, 1, 1, 1
+Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Length: 8 bits Offset: 8
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 1:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Length: 8 bits Offset: 16
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 2:
+    Qualifiers: 0x0 ()
+    Channel Type: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+    Length: 8 bits Offset: 24
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

@@ -1,0 +1,36 @@
+Validation failed
+
+error-3021: Invalid dfdByteOffset.
+    dfdByteOffset is 108 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104.
+error-3028: Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.
+    dfdByteLength is 92 but it must be equal to kvdByteOffset - dfdByteOffset which is 88.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #4 sampleUpper in basic DFD block is 37 but the expected value is 255 for VK_FORMAT_R8G8B8A8_UNORM.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x6c
+dataFormatDescriptor.byteLength: 92
+keyValueData.byteOffset: 0xc4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xf0
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+

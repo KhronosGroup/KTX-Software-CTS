@@ -1,0 +1,76 @@
+Validation failed
+
+error-5007: Failed to transcode texture.
+    Transcoding of texture with color model KHR_DF_MODEL_ETC1S failed with the error: File data is inconsistent with KTX spec.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_UNDEFINED
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_BASIS_LZ
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 60
+keyValueData.byteOffset: 0xa4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0xd0
+supercompressionGlobalData.byteLength: 138
+
+Level Index
+
+Level0.byteOffset: 0x15a
+Level0.byteLength: 4
+Level0.uncompressedByteLength: 0
+
+Data Format Descriptor
+
+DFD total bytes: 60
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 56
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_UNSPECIFIED
+Model: KHR_DF_MODEL_ETC1S
+Dimensions: 4, 4, 1, 1
+Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x0 (KHR_DF_CHANNEL_ETC1S_RGB)
+    Length: 64 bits Offset: 0
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0xffffffff
+Sample 1:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x3 (KHR_DF_CHANNEL_ETC1S_RRR)
+    Length: 64 bits Offset: 64
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0xffffffff
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 
+
+Basis Supercompression Global Data
+
+endpointCount: 6
+selectorCount: 1
+endpointsByteLength: 48
+selectorsByteLength: 5
+tablesByteLength: 45
+extendedByteLength: 0
+
+imageFlags: 0
+rgbSliceByteLength: 2
+rgbSliceByteOffset: 0
+alphaSliceByteLength: 2
+alphaSliceByteOffset: 0x2

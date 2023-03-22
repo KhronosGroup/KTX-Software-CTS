@@ -1,0 +1,41 @@
+Validation failed
+
+error-6010: Basic DFD block descriptorBlockSize is too small.
+    DFD block #1 descriptorBlockSize is 16 which is smaller than the minimum size of a basic DFD block (24 bytes).
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 20
+keyValueData.byteOffset: 0x7c
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xa8
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+
+DFD total bytes: 20
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 16
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

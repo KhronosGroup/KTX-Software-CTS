@@ -1,0 +1,118 @@
+Validation failed
+
+error-3016: Too many mip levels.
+    levelCount is 6 but for the largest image dimension which is 20 it is too many level.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 4 byteLength is 8 but based on the vkFormat, DFD and image sizes the expected value is 4.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 4 uncompressedByteLength is 8 but based on the vkFormat, DFD and image sizes the expected value is 4.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 3 byteOffset is 372 but based on the vkFormat, DFD and image sizes the expected value is 368.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 3 byteLength is 20 but based on the vkFormat, DFD and image sizes the expected value is 8.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 3 uncompressedByteLength is 20 but based on the vkFormat, DFD and image sizes the expected value is 8.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 2 byteOffset is 392 but based on the vkFormat, DFD and image sizes the expected value is 376.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 2 byteLength is 40 but based on the vkFormat, DFD and image sizes the expected value is 20.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 2 uncompressedByteLength is 40 but based on the vkFormat, DFD and image sizes the expected value is 20.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 1 byteOffset is 432 but based on the vkFormat, DFD and image sizes the expected value is 396.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 1 byteLength is 160 but based on the vkFormat, DFD and image sizes the expected value is 80.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 1 uncompressedByteLength is 160 but based on the vkFormat, DFD and image sizes the expected value is 80.
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 0 byteOffset is 592 but based on the vkFormat, DFD and image sizes the expected value is 476.
+error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
+    Level 0 byteLength is 800 but based on the vkFormat, DFD and image sizes the expected value is 400.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 0 uncompressedByteLength is 800 but based on the vkFormat, DFD and image sizes the expected value is 400.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 5
+pixelHeight: 20
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 6
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0xe0
+dataFormatDescriptor.byteLength: 92
+keyValueData.byteOffset: 0x13c
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0x250
+Level0.byteLength: 800
+Level0.uncompressedByteLength: 800
+Level1.byteOffset: 0x1b0
+Level1.byteLength: 160
+Level1.uncompressedByteLength: 160
+Level2.byteOffset: 0x188
+Level2.byteLength: 40
+Level2.uncompressedByteLength: 40
+Level3.byteOffset: 0x174
+Level3.byteLength: 20
+Level3.uncompressedByteLength: 20
+Level4.byteOffset: 0x16c
+Level4.byteLength: 8
+Level4.uncompressedByteLength: 8
+Level5.byteOffset: 0x168
+Level5.byteLength: 4
+Level5.uncompressedByteLength: 4
+
+Data Format Descriptor
+
+DFD total bytes: 92
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 88
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_RGBSDA
+Dimensions: 1, 1, 1, 1
+Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Length: 8 bits Offset: 0
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 1:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Length: 8 bits Offset: 8
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 2:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Length: 8 bits Offset: 16
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 3:
+    Qualifiers: 0x0 ()
+    Channel Type: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+    Length: 8 bits Offset: 24
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

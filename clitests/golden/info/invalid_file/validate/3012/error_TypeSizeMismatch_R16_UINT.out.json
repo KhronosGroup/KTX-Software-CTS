@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 3012,
+            "type": "error",
+            "message": "Invalid typeSize. The value must match the expected typeSize of the VkFormat.",
+            "details": "typeSize is 3 but for VkFormat VK_FORMAT_R16_UINT it must be 2."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_R16_UINT",
+        "typeSize": 3,
+        "pixelWidth": 16,
+        "pixelHeight": 16,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 104,
+            "byteLength": 44
+        },
+        "keyValueData": {
+            "byteOffset": 148,
+            "byteLength": 44
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 192,
+                "byteLength": 512,
+                "uncompressedByteLength": 512
+            }
+        ]
+    },
+    "dataFormatDescriptor": {
+        "totalSize": 44,
+        "blocks": [
+            {
+                "vendorId": "KHR_DF_VENDORID_KHRONOS",
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
+                "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 40,
+                "flags": [
+                    "KHR_DF_FLAG_ALPHA_STRAIGHT"
+                ],
+                "transferFunction": "KHR_DF_TRANSFER_LINEAR",
+                "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
+                "colorModel": "KHR_DF_MODEL_RGBSDA",
+                "texelBlockDimension": [1, 1, 1, 1],
+                "bytesPlane": [2, 0, 0, 0, 0, 0, 0, 0],
+                "samples": [
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 15,
+                        "bitOffset": 0,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "keyValueData": {
+        "KTXwriter": "Unidentified app / libktx "
+    }
+}

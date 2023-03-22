@@ -1,0 +1,144 @@
+Validation failed
+
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 bitOffset in basic DFD block is 8 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 bitLength in basic DFD block is 8 but the expected value is 7 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_GREEN but the expected value is KHR_DF_CHANNEL_RGBSDA_RED for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 qualifierExponent in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 qualifierSigned in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 qualifierFloat in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 samplePosition0 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 samplePosition1 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 samplePosition2 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 samplePosition3 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 sampleLower in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #1 sampleUpper in basic DFD block is 1 but the expected value is 255 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 bitLength in basic DFD block is 8 but the expected value is 7 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_BLUE but the expected value is KHR_DF_CHANNEL_RGBSDA_GREEN for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 qualifierExponent in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 qualifierSigned in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 qualifierFloat in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 samplePosition0 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 samplePosition1 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 samplePosition2 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 samplePosition3 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 sampleLower in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #2 sampleUpper in basic DFD block is 1 but the expected value is 255 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 bitOffset in basic DFD block is 8 but the expected value is 16 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 bitLength in basic DFD block is 8 but the expected value is 7 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 qualifierExponent in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 qualifierSigned in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 qualifierFloat in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 samplePosition0 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 samplePosition1 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 samplePosition2 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 samplePosition3 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 sampleLower in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #3 sampleUpper in basic DFD block is 1 but the expected value is 255 for VK_FORMAT_R8G8B8_UNORM.
+error-6204: Unsupported multiple-sample format. Every sample position must be zero.
+    DFD block #1 indicates multiple sample locations but multisample formats are not supported.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 76
+keyValueData.byteOffset: 0xb4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xe4
+Level0.byteLength: 768
+Level0.uncompressedByteLength: 768
+
+Data Format Descriptor
+
+DFD total bytes: 76
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 72
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_RGBSDA
+Dimensions: 1, 1, 1, 1
+Plane bytes: 3, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0xF0 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED, KHR_DF_SAMPLE_DATATYPE_FLOAT)
+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Length: 9 bits Offset: 8
+    Position: 1, 1, 1, 1
+    Lower: 0x00000001
+    Upper: 0x00000001
+Sample 1:
+    Qualifiers: 0xF0 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED, KHR_DF_SAMPLE_DATATYPE_FLOAT)
+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Length: 9 bits Offset: 8
+    Position: 1, 1, 1, 1
+    Lower: 0x00000001
+    Upper: 0x00000001
+Sample 2:
+    Qualifiers: 0xF0 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED, KHR_DF_SAMPLE_DATATYPE_FLOAT)
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Length: 9 bits Offset: 8
+    Position: 1, 1, 1, 1
+    Lower: 0x00000001
+    Upper: 0x00000001
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

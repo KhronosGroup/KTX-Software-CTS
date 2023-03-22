@@ -1,0 +1,119 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 7103,
+            "type": "error",
+            "message": "Invalid KTXcubemapIncomplete value. No face is marked present.",
+            "details": "No face bit is set as present but at least 1 face must be present."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_R8G8B8A8_UNORM",
+        "typeSize": 1,
+        "pixelWidth": 16,
+        "pixelHeight": 16,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 104,
+            "byteLength": 92
+        },
+        "keyValueData": {
+            "byteOffset": 196,
+            "byteLength": 72
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 268,
+                "byteLength": 1024,
+                "uncompressedByteLength": 1024
+            }
+        ]
+    },
+    "dataFormatDescriptor": {
+        "totalSize": 92,
+        "blocks": [
+            {
+                "vendorId": "KHR_DF_VENDORID_KHRONOS",
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
+                "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 88,
+                "flags": [
+                    "KHR_DF_FLAG_ALPHA_STRAIGHT"
+                ],
+                "transferFunction": "KHR_DF_TRANSFER_LINEAR",
+                "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
+                "colorModel": "KHR_DF_MODEL_RGBSDA",
+                "texelBlockDimension": [1, 1, 1, 1],
+                "bytesPlane": [4, 0, 0, 0, 0, 0, 0, 0],
+                "samples": [
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 7,
+                        "bitOffset": 0,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "bitLength": 7,
+                        "bitOffset": 8,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
+                        "bitLength": 7,
+                        "bitOffset": 16,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "bitLength": 7,
+                        "bitOffset": 24,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    }
+                ]
+            }
+        ]
+    },
+    "keyValueData": {
+        "KTXcubemapIncomplete": {
+            "positiveX": false,
+            "negativeX": false,
+            "positiveY": false,
+            "negativeY": false,
+            "positiveZ": false,
+            "negativeZ": false
+        },
+        "KTXwriter": "Unidentified app / libktx "
+    }
+}

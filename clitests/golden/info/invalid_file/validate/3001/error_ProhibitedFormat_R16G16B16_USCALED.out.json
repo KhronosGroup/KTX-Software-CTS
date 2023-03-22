@@ -1,0 +1,105 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 3001,
+            "type": "error",
+            "message": "Prohibited VkFormat.",
+            "details": "VkFormat VK_FORMAT_R16G16B16_USCALED is prohibited in a KTX2 file."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_R16G16B16_USCALED",
+        "typeSize": 1,
+        "pixelWidth": 16,
+        "pixelHeight": 16,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 104,
+            "byteLength": 92
+        },
+        "keyValueData": {
+            "byteOffset": 196,
+            "byteLength": 44
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 240,
+                "byteLength": 1024,
+                "uncompressedByteLength": 1024
+            }
+        ]
+    },
+    "dataFormatDescriptor": {
+        "totalSize": 92,
+        "blocks": [
+            {
+                "vendorId": "KHR_DF_VENDORID_KHRONOS",
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
+                "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 88,
+                "flags": [
+                    "KHR_DF_FLAG_ALPHA_STRAIGHT"
+                ],
+                "transferFunction": "KHR_DF_TRANSFER_LINEAR",
+                "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
+                "colorModel": "KHR_DF_MODEL_RGBSDA",
+                "texelBlockDimension": [1, 1, 1, 1],
+                "bytesPlane": [4, 0, 0, 0, 0, 0, 0, 0],
+                "samples": [
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 7,
+                        "bitOffset": 0,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "bitLength": 7,
+                        "bitOffset": 8,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
+                        "bitLength": 7,
+                        "bitOffset": 16,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "bitLength": 7,
+                        "bitOffset": 24,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    }
+                ]
+            }
+        ]
+    },
+    "keyValueData": {
+        "KTXwriter": "Unidentified app / libktx "
+    }
+}

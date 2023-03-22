@@ -10,8 +10,8 @@ set(CASELIST
     tests/info/sample_text.json
     tests/info/sample_json.json
     tests/info/sample_mini.json
-    tests/info/MissingFile.json
-    #tests/info/Invalids.json
+    tests/info/missing_file.json
+    tests/info/invalid_file.json
 
     #tests/validate/valid.json
 

@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 3020,
+            "type": "error",
+            "message": "Missing Data Format Descriptor.",
+            "details": "Data Format Descriptor is mandatory but dfdByteOffset is 0 and dfdByteLength is 0."
+        },
+        {
+            "id": 3021,
+            "type": "error",
+            "message": "Invalid dfdByteOffset.",
+            "details": "dfdByteOffset is 0 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_R8G8B8A8_UNORM",
+        "typeSize": 1,
+        "pixelWidth": 16,
+        "pixelHeight": 16,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "keyValueData": {
+            "byteOffset": 104,
+            "byteLength": 44
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 148,
+                "byteLength": 1024,
+                "uncompressedByteLength": 1024
+            }
+        ]
+    },
+    "keyValueData": {
+        "KTXwriter": "Unidentified app / libktx "
+    }
+}

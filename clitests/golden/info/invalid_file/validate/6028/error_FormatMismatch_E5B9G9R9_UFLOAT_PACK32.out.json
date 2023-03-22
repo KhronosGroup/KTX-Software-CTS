@@ -1,0 +1,197 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 bitOffset in basic DFD block is 8 but the expected value is 27 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 bitLength in basic DFD block is 8 but the expected value is 4 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 qualifierSigned in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition0 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition1 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition2 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 samplePosition3 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 sampleLower in basic DFD block is 1 but the expected value is 15 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6028,
+            "type": "error",
+            "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+            "details": "DFD block #1 sample #6 sampleUpper in basic DFD block is 1 but the expected value is 31 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+        },
+        {
+            "id": 6204,
+            "type": "error",
+            "message": "Unsupported multiple-sample format. Every sample position must be zero.",
+            "details": "DFD block #1 indicates multiple sample locations but multisample formats are not supported."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_E5B9G9R9_UFLOAT_PACK32",
+        "typeSize": 4,
+        "pixelWidth": 16,
+        "pixelHeight": 16,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 104,
+            "byteLength": 124
+        },
+        "keyValueData": {
+            "byteOffset": 228,
+            "byteLength": 44
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 272,
+                "byteLength": 1024,
+                "uncompressedByteLength": 1024
+            }
+        ]
+    },
+    "dataFormatDescriptor": {
+        "totalSize": 124,
+        "blocks": [
+            {
+                "vendorId": "KHR_DF_VENDORID_KHRONOS",
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
+                "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 120,
+                "flags": [
+                    "KHR_DF_FLAG_ALPHA_STRAIGHT"
+                ],
+                "transferFunction": "KHR_DF_TRANSFER_LINEAR",
+                "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
+                "colorModel": "KHR_DF_MODEL_RGBSDA",
+                "texelBlockDimension": [1, 1, 1, 1],
+                "bytesPlane": [4, 0, 0, 0, 0, 0, 0, 0],
+                "samples": [
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 8,
+                        "bitOffset": 0,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 8448
+                    },
+                    {
+                        "qualifiers": [
+                            "KHR_DF_SAMPLE_DATATYPE_EXPONENT"
+                        ],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 4,
+                        "bitOffset": 27,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 15,
+                        "sampleUpper": 31
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "bitLength": 8,
+                        "bitOffset": 9,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 8448
+                    },
+                    {
+                        "qualifiers": [
+                            "KHR_DF_SAMPLE_DATATYPE_EXPONENT"
+                        ],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "bitLength": 4,
+                        "bitOffset": 27,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 15,
+                        "sampleUpper": 31
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
+                        "bitLength": 8,
+                        "bitOffset": 18,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 8448
+                    },
+                    {
+                        "qualifiers": [
+                            "KHR_DF_SAMPLE_DATATYPE_LINEAR",
+                            "KHR_DF_SAMPLE_DATATYPE_EXPONENT",
+                            "KHR_DF_SAMPLE_DATATYPE_SIGNED"
+                        ],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 8,
+                        "bitOffset": 8,
+                        "samplePosition": [1, 1, 1, 1],
+                        "sampleLower": 1,
+                        "sampleUpper": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "keyValueData": {
+        "KTXwriter": "Unidentified app / libktx "
+    }
+}

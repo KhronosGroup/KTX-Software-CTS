@@ -1,0 +1,143 @@
+Validation successful
+
+warning-6003: Unrecognized DFD block.
+    DFD block #2 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #3 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #4 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #5 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #6 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #7 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #8 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #9 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #10 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6002: Too many DFD blocks. The number of DFD blocks exceeds the validator limit.
+    The number of DFD blocks exceeds the validator limit of 11. Skipping validation of the remaining 8 byte(s).
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 172
+keyValueData.byteOffset: 0x114
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0x140
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+
+DFD total bytes: 172
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 88
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_RGBSDA
+Dimensions: 1, 1, 1, 1
+Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Length: 8 bits Offset: 0
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 1:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Length: 8 bits Offset: 8
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 2:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Length: 8 bits Offset: 16
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Sample 3:
+    Qualifiers: 0x0 ()
+    Channel Type: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+    Length: 8 bits Offset: 24
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x000000ff
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

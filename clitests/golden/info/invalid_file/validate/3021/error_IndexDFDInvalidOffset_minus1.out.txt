@@ -1,0 +1,36 @@
+Validation failed
+
+error-3021: Invalid dfdByteOffset.
+    dfdByteOffset is 103 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104.
+error-3028: Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.
+    dfdByteLength is 92 but it must be equal to kvdByteOffset - dfdByteOffset which is 93.
+error-4006: Invalid uncompressedByteLength in Level Index. For non-supercompressed files the uncompressedByteLength must match the expected value of byteLength.
+    Level 0 uncompressedByteLength is 6629298651489371136 but based on the vkFormat, DFD and image sizes the expected value is 1024.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x67
+dataFormatDescriptor.byteLength: 92
+keyValueData.byteOffset: 0xc4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xf0
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 6629298651489371136
+
+Data Format Descriptor
+

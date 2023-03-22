@@ -1,0 +1,56 @@
+Validation failed
+
+error-3005: Invalid typeSize. typeSize must be 1 for block-compressed or supercompressed formats.
+    typeSize is 4 but for block-compressed or supercompressed format VK_FORMAT_ASTC_5x4_SFLOAT_BLOCK_EXT it must be 1.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_ASTC_5x4_SFLOAT_BLOCK_EXT
+typeSize: 4
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 44
+keyValueData.byteOffset: 0x94
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xc0
+Level0.byteLength: 256
+Level0.uncompressedByteLength: 256
+
+Data Format Descriptor
+
+DFD total bytes: 44
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 40
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_ASTC
+Dimensions: 5, 4, 1, 1
+Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0xC0 (KHR_DF_SAMPLE_DATATYPE_SIGNED, KHR_DF_SAMPLE_DATATYPE_FLOAT)
+    Channel Type: 0x0 (KHR_DF_CHANNEL_ASTC_DATA)
+    Length: 128 bits Offset: 0
+    Position: 0, 0, 0, 0
+    Lower: 0xbf800000
+    Upper: 0x3f800000
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

@@ -1,0 +1,112 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 7116,
+            "type": "error",
+            "message": "Incompatible KTXmetalPixelFormat and VkFormat. If KTXmetalPixelFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
+            "details": "vkFormat is VK_FORMAT_R32G32B32_SFLOAT but it must be VK_FORMAT_UNDEFINED if KTXmetalPixelFormat is present."
+        },
+        {
+            "id": 5004,
+            "type": "warning",
+            "message": "Non-conformant texture file accepted by libktx.",
+            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_R32G32B32_SFLOAT",
+        "typeSize": 4,
+        "pixelWidth": 16,
+        "pixelHeight": 16,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 104,
+            "byteLength": 76
+        },
+        "keyValueData": {
+            "byteOffset": 180,
+            "byteLength": 72
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 252,
+                "byteLength": 3072,
+                "uncompressedByteLength": 3072
+            }
+        ]
+    },
+    "dataFormatDescriptor": {
+        "totalSize": 76,
+        "blocks": [
+            {
+                "vendorId": "KHR_DF_VENDORID_KHRONOS",
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
+                "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 72,
+                "flags": [
+                    "KHR_DF_FLAG_ALPHA_STRAIGHT"
+                ],
+                "transferFunction": "KHR_DF_TRANSFER_LINEAR",
+                "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
+                "colorModel": "KHR_DF_MODEL_RGBSDA",
+                "texelBlockDimension": [1, 1, 1, 1],
+                "bytesPlane": [12, 0, 0, 0, 0, 0, 0, 0],
+                "samples": [
+                    {
+                        "qualifiers": [
+                            "KHR_DF_SAMPLE_DATATYPE_SIGNED",
+                            "KHR_DF_SAMPLE_DATATYPE_FLOAT"
+                        ],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 31,
+                        "bitOffset": 0,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": -1082130432,
+                        "sampleUpper": 1065353216
+                    },
+                    {
+                        "qualifiers": [
+                            "KHR_DF_SAMPLE_DATATYPE_SIGNED",
+                            "KHR_DF_SAMPLE_DATATYPE_FLOAT"
+                        ],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "bitLength": 31,
+                        "bitOffset": 32,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": -1082130432,
+                        "sampleUpper": 1065353216
+                    },
+                    {
+                        "qualifiers": [
+                            "KHR_DF_SAMPLE_DATATYPE_SIGNED",
+                            "KHR_DF_SAMPLE_DATATYPE_FLOAT"
+                        ],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
+                        "bitLength": 31,
+                        "bitOffset": 64,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": -1082130432,
+                        "sampleUpper": 1065353216
+                    }
+                ]
+            }
+        ]
+    },
+    "keyValueData": {
+        "KTXmetalPixelFormat": 42,
+        "KTXwriter": "Unidentified app / libktx "
+    }
+}

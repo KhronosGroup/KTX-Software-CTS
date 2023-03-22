@@ -1,0 +1,111 @@
+Validation failed
+
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 bitOffset in basic DFD block is 8 but the expected value is 27 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 bitLength in basic DFD block is 8 but the expected value is 4 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 qualifierSigned in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 samplePosition0 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 samplePosition1 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 samplePosition2 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 samplePosition3 in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 sampleLower in basic DFD block is 1 but the expected value is 15 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #6 sampleUpper in basic DFD block is 1 but the expected value is 31 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+error-6204: Unsupported multiple-sample format. Every sample position must be zero.
+    DFD block #1 indicates multiple sample locations but multisample formats are not supported.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_E5B9G9R9_UFLOAT_PACK32
+typeSize: 4
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 124
+keyValueData.byteOffset: 0xe4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0x110
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+
+DFD total bytes: 124
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 120
+Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
+Transfer: KHR_DF_TRANSFER_LINEAR
+Primaries: KHR_DF_PRIMARIES_BT709
+Model: KHR_DF_MODEL_RGBSDA
+Dimensions: 1, 1, 1, 1
+Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
+Sample 0:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Length: 9 bits Offset: 0
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x00002100
+Sample 1:
+    Qualifiers: 0x20 (KHR_DF_SAMPLE_DATATYPE_EXPONENT)
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Length: 5 bits Offset: 27
+    Position: 0, 0, 0, 0
+    Lower: 0x0000000f
+    Upper: 0x0000001f
+Sample 2:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Length: 9 bits Offset: 9
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x00002100
+Sample 3:
+    Qualifiers: 0x20 (KHR_DF_SAMPLE_DATATYPE_EXPONENT)
+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Length: 5 bits Offset: 27
+    Position: 0, 0, 0, 0
+    Lower: 0x0000000f
+    Upper: 0x0000001f
+Sample 4:
+    Qualifiers: 0x0 ()
+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Length: 9 bits Offset: 18
+    Position: 0, 0, 0, 0
+    Lower: 0x00000000
+    Upper: 0x00002100
+Sample 5:
+    Qualifiers: 0x70 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED)
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Length: 9 bits Offset: 8
+    Position: 1, 1, 1, 1
+    Lower: 0x00000001
+    Upper: 0x00000001
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

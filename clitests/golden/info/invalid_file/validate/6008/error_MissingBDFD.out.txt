@@ -1,0 +1,58 @@
+Validation failed
+
+warning-6003: Unrecognized DFD block.
+    DFD block #1 vendorId KHR_DF_VENDORID_KHRONOS and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #2 vendorId (0x00001) and descriptorType (0x7FFF) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #3 vendorId (0x00002) and descriptorType (0x0000) is not recognized and thus ignored.
+error-6008: Missing basic DFD block.
+    No basic data format descriptor block is found in the DFD, or it is not the first DFD block.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 16
+pixelHeight: 16
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 76
+keyValueData.byteOffset: 0xb4
+keyValueData.byteLength: 44
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0xe0
+Level0.byteLength: 1024
+Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+
+DFD total bytes: 76
+Vendor ID: KHR_DF_VENDORID_KHRONOS
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 40
+Unknown block
+Vendor ID: 1
+Descriptor type: 32767
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 8
+Unknown block
+Vendor ID: 2
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_1
+Descriptor block size: 24
+Unknown block
+
+Key/Value Data
+
+KTXwriter: Unidentified app / libktx 

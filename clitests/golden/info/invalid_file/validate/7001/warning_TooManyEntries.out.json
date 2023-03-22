@@ -1,0 +1,799 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "valid": true,
+    "messages": [
+        {
+            "id": 7001,
+            "type": "warning",
+            "message": "Too many Key/Value entries. The number of key-value entries exceeds the validator limit.",
+            "details": "The number of key-value entries exceeds the validator limit of 100. Skipping validation of the remaining 28 byte(s)."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey1\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey10\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey100\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey11\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey12\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey13\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey14\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey15\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey16\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey17\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey18\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey19\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey2\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey20\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey21\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey22\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey23\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey24\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey25\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey26\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey27\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey28\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey29\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey3\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey30\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey31\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey32\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey33\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey34\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey35\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey36\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey37\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey38\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey39\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey4\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey40\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey41\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey42\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey43\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey44\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey45\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey46\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey47\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey48\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey49\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey5\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey50\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey51\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey52\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey53\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey54\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey55\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey56\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey57\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey58\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey59\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey6\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey60\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey61\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey62\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey63\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey64\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey65\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey66\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey67\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey68\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey69\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey7\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey70\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey71\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey72\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey73\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey74\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey75\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey76\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey77\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey78\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey79\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey8\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey80\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey81\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey82\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey83\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey84\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey85\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey86\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey87\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey88\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey89\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey9\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey90\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey91\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey92\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey93\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey94\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey95\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey96\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey97\" found in Key/Value Data."
+        },
+        {
+            "id": 7010,
+            "type": "warning",
+            "message": "Custom key in Key/Value Data.",
+            "details": "Custom key \"placeholderKey98\" found in Key/Value Data."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_R8G8B8A8_UNORM",
+        "typeSize": 1,
+        "pixelWidth": 16,
+        "pixelHeight": 16,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 104,
+            "byteLength": 92
+        },
+        "keyValueData": {
+            "byteOffset": 196,
+            "byteLength": 2808
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 3004,
+                "byteLength": 1024,
+                "uncompressedByteLength": 1024
+            }
+        ]
+    },
+    "dataFormatDescriptor": {
+        "totalSize": 92,
+        "blocks": [
+            {
+                "vendorId": "KHR_DF_VENDORID_KHRONOS",
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
+                "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 88,
+                "flags": [
+                    "KHR_DF_FLAG_ALPHA_STRAIGHT"
+                ],
+                "transferFunction": "KHR_DF_TRANSFER_LINEAR",
+                "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
+                "colorModel": "KHR_DF_MODEL_RGBSDA",
+                "texelBlockDimension": [1, 1, 1, 1],
+                "bytesPlane": [4, 0, 0, 0, 0, 0, 0, 0],
+                "samples": [
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "bitLength": 7,
+                        "bitOffset": 0,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "bitLength": 7,
+                        "bitOffset": 8,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
+                        "bitLength": 7,
+                        "bitOffset": 16,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    },
+                    {
+                        "qualifiers": [],
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "bitLength": 7,
+                        "bitOffset": 24,
+                        "samplePosition": [0, 0, 0, 0],
+                        "sampleLower": 0,
+                        "sampleUpper": 255
+                    }
+                ]
+            }
+        ]
+    },
+    "keyValueData": {
+        "KTXwriter": "Unidentified app / libktx ",
+        "placeholderKey1": [1, 0, 0, 0],
+        "placeholderKey10": [10, 0, 0, 0],
+        "placeholderKey100": [100, 0, 0, 0],
+        "placeholderKey11": [11, 0, 0, 0],
+        "placeholderKey12": [12, 0, 0, 0],
+        "placeholderKey13": [13, 0, 0, 0],
+        "placeholderKey14": [14, 0, 0, 0],
+        "placeholderKey15": [15, 0, 0, 0],
+        "placeholderKey16": [16, 0, 0, 0],
+        "placeholderKey17": [17, 0, 0, 0],
+        "placeholderKey18": [18, 0, 0, 0],
+        "placeholderKey19": [19, 0, 0, 0],
+        "placeholderKey2": [2, 0, 0, 0],
+        "placeholderKey20": [20, 0, 0, 0],
+        "placeholderKey21": [21, 0, 0, 0],
+        "placeholderKey22": [22, 0, 0, 0],
+        "placeholderKey23": [23, 0, 0, 0],
+        "placeholderKey24": [24, 0, 0, 0],
+        "placeholderKey25": [25, 0, 0, 0],
+        "placeholderKey26": [26, 0, 0, 0],
+        "placeholderKey27": [27, 0, 0, 0],
+        "placeholderKey28": [28, 0, 0, 0],
+        "placeholderKey29": [29, 0, 0, 0],
+        "placeholderKey3": [3, 0, 0, 0],
+        "placeholderKey30": [30, 0, 0, 0],
+        "placeholderKey31": [31, 0, 0, 0],
+        "placeholderKey32": [32, 0, 0, 0],
+        "placeholderKey33": [33, 0, 0, 0],
+        "placeholderKey34": [34, 0, 0, 0],
+        "placeholderKey35": [35, 0, 0, 0],
+        "placeholderKey36": [36, 0, 0, 0],
+        "placeholderKey37": [37, 0, 0, 0],
+        "placeholderKey38": [38, 0, 0, 0],
+        "placeholderKey39": [39, 0, 0, 0],
+        "placeholderKey4": [4, 0, 0, 0],
+        "placeholderKey40": [40, 0, 0, 0],
+        "placeholderKey41": [41, 0, 0, 0],
+        "placeholderKey42": [42, 0, 0, 0],
+        "placeholderKey43": [43, 0, 0, 0],
+        "placeholderKey44": [44, 0, 0, 0],
+        "placeholderKey45": [45, 0, 0, 0],
+        "placeholderKey46": [46, 0, 0, 0],
+        "placeholderKey47": [47, 0, 0, 0],
+        "placeholderKey48": [48, 0, 0, 0],
+        "placeholderKey49": [49, 0, 0, 0],
+        "placeholderKey5": [5, 0, 0, 0],
+        "placeholderKey50": [50, 0, 0, 0],
+        "placeholderKey51": [51, 0, 0, 0],
+        "placeholderKey52": [52, 0, 0, 0],
+        "placeholderKey53": [53, 0, 0, 0],
+        "placeholderKey54": [54, 0, 0, 0],
+        "placeholderKey55": [55, 0, 0, 0],
+        "placeholderKey56": [56, 0, 0, 0],
+        "placeholderKey57": [57, 0, 0, 0],
+        "placeholderKey58": [58, 0, 0, 0],
+        "placeholderKey59": [59, 0, 0, 0],
+        "placeholderKey6": [6, 0, 0, 0],
+        "placeholderKey60": [60, 0, 0, 0],
+        "placeholderKey61": [61, 0, 0, 0],
+        "placeholderKey62": [62, 0, 0, 0],
+        "placeholderKey63": [63, 0, 0, 0],
+        "placeholderKey64": [64, 0, 0, 0],
+        "placeholderKey65": [65, 0, 0, 0],
+        "placeholderKey66": [66, 0, 0, 0],
+        "placeholderKey67": [67, 0, 0, 0],
+        "placeholderKey68": [68, 0, 0, 0],
+        "placeholderKey69": [69, 0, 0, 0],
+        "placeholderKey7": [7, 0, 0, 0],
+        "placeholderKey70": [70, 0, 0, 0],
+        "placeholderKey71": [71, 0, 0, 0],
+        "placeholderKey72": [72, 0, 0, 0],
+        "placeholderKey73": [73, 0, 0, 0],
+        "placeholderKey74": [74, 0, 0, 0],
+        "placeholderKey75": [75, 0, 0, 0],
+        "placeholderKey76": [76, 0, 0, 0],
+        "placeholderKey77": [77, 0, 0, 0],
+        "placeholderKey78": [78, 0, 0, 0],
+        "placeholderKey79": [79, 0, 0, 0],
+        "placeholderKey8": [8, 0, 0, 0],
+        "placeholderKey80": [80, 0, 0, 0],
+        "placeholderKey81": [81, 0, 0, 0],
+        "placeholderKey82": [82, 0, 0, 0],
+        "placeholderKey83": [83, 0, 0, 0],
+        "placeholderKey84": [84, 0, 0, 0],
+        "placeholderKey85": [85, 0, 0, 0],
+        "placeholderKey86": [86, 0, 0, 0],
+        "placeholderKey87": [87, 0, 0, 0],
+        "placeholderKey88": [88, 0, 0, 0],
+        "placeholderKey89": [89, 0, 0, 0],
+        "placeholderKey9": [9, 0, 0, 0],
+        "placeholderKey90": [90, 0, 0, 0],
+        "placeholderKey91": [91, 0, 0, 0],
+        "placeholderKey92": [92, 0, 0, 0],
+        "placeholderKey93": [93, 0, 0, 0],
+        "placeholderKey94": [94, 0, 0, 0],
+        "placeholderKey95": [95, 0, 0, 0],
+        "placeholderKey96": [96, 0, 0, 0],
+        "placeholderKey97": [97, 0, 0, 0],
+        "placeholderKey98": [98, 0, 0, 0],
+        "placeholderKey99": [99, 0, 0, 0]
+    }
+}
