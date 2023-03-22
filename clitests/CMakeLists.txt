@@ -225,6 +225,10 @@ set(CASELIST
     tests/create/raw_cube_mip.json
     tests/create/raw_3d.json
     tests/create/raw_3d_mip.json
+    tests/create/raw_zlib.json
+    tests/create/raw_zstd.json
+    tests/create/sample_zlib.json
+    tests/create/sample_zstd.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)

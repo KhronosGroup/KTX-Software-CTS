@@ -1,0 +1,30 @@
+{
+    "description": "Test case description.",
+    "command": "ktx create --testrun ${level[flag]} --raw --format ${subcase} --width 8 --height 8 --depth 1 --levels 1 --layers 1 input/raw/raw_${subcase}_2D_8x8.raw output/create/raw_zstd/output_${subcase}_2D_ZSTD${level[name]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/raw_zstd/output_${subcase}_2D_ZSTD${level[name]}.ktx2": "golden/create/raw_zstd/output_${subcase}_2D_ZSTD${level[name]}.ktx2"
+    },
+    "args": {
+        "level": [
+            { "flag": "--zstd 1", "name": "_1" },
+            { "flag": "--zstd 9", "name": "_9" },
+            { "flag": "--zstd 22", "name": "_22" }
+        ],
+        "subcase": [
+            "R8_UNORM",
+            "R8G8_UNORM",
+            "R8G8B8_UNORM",
+            "R8G8B8A8_UNORM",
+            "ASTC_4x4_UNORM_BLOCK",
+            "R4G4_UNORM_PACK8",
+            "R5G6B5_UNORM_PACK16",
+            "R4G4B4A4_UNORM_PACK16",
+            "A2B10G10R10_UNORM_PACK32",
+            "R16G16B16A16_UINT",
+            "A2R10G10B10_UINT_PACK32",
+            "R32G32B32A32_SFLOAT",
+            "B10G11R11_UFLOAT_PACK32"
+        ]
+    }
+}

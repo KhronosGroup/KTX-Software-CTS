@@ -1,0 +1,20 @@
+{
+    "description": "Test case description.",
+    "command": "ktx create --testrun ${level[flag]} --format ${subcase[format]} ../../srcimages/${subcase[file]}${subcase[ext]} output/create/sample_zstd/${subcase[file]}_ZSTD${level[name]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/sample_zstd/${subcase[file]}_ZSTD${level[name]}.ktx2": "golden/create/sample_zstd/${subcase[file]}_ZSTD${level[name]}.ktx2"
+    },
+    "args": {
+        "level": [
+            { "flag": "--zstd 1", "name": "_1" },
+            { "flag": "--zstd 9", "name": "_9" },
+            { "flag": "--zstd 22", "name": "_22" }
+        ],
+        "subcase": [
+            { "format": "R8G8B8A8_UNORM", "file": "green16", "ext": ".png" },
+            { "format": "R8G8B8A8_UNORM", "file": "color_grid", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "CesiumLogoFlat_palette", "ext": ".png" }
+        ]
+    }
+}
