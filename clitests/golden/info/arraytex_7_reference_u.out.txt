@@ -28,10 +28,10 @@ Level0.uncompressedByteLength: 7168
 Data Format Descriptor
 
 DFD total bytes: 92
-BDB descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
 Vendor ID: KHR_DF_VENDORID_KHRONOS
-Descriptor block size: 88 (4 samples)
-VersionNumber: KHR_DF_VERSIONNUMBER_1_3
+Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
+Version: KHR_DF_VERSIONNUMBER_1_3
+Descriptor block size: 88
 Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
 Transfer: KHR_DF_TRANSFER_SRGB
 Primaries: KHR_DF_PRIMARIES_BT709
@@ -60,8 +60,8 @@ Sample 2:
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 3:
-    Qualifiers: 0x1 (1)
-    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+    Qualifiers: 0x10 (KHR_DF_SAMPLE_DATATYPE_LINEAR)
+    Channel Type: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
     Length: 8 bits Offset: 24
     Position: 0, 0, 0, 0
     Lower: 0x00000000

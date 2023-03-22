@@ -69,10 +69,10 @@
         "totalSize": 76,
         "blocks": [
             {
-                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
                 "vendorId": "KHR_DF_VENDORID_KHRONOS",
-                "descriptorBlockSize": 72,
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
                 "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 72,
                 "flags": [
                     "KHR_DF_FLAG_ALPHA_STRAIGHT"
                 ],

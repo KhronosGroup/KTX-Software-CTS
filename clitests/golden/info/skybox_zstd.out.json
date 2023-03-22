@@ -39,10 +39,10 @@
         "totalSize": 76,
         "blocks": [
             {
-                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
                 "vendorId": "KHR_DF_VENDORID_KHRONOS",
-                "descriptorBlockSize": 72,
+                "descriptorType": "KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT",
                 "versionNumber": "KHR_DF_VERSIONNUMBER_1_3",
+                "descriptorBlockSize": 72,
                 "flags": [
                     "KHR_DF_FLAG_ALPHA_STRAIGHT"
                 ],
@@ -54,7 +54,7 @@
                 "samples": [
                     {
                         "qualifiers": [
-                            8
+                            "KHR_DF_SAMPLE_DATATYPE_FLOAT"
                         ],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 10,
@@ -65,7 +65,7 @@
                     },
                     {
                         "qualifiers": [
-                            8
+                            "KHR_DF_SAMPLE_DATATYPE_FLOAT"
                         ],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
                         "bitLength": 10,
@@ -76,7 +76,7 @@
                     },
                     {
                         "qualifiers": [
-                            8
+                            "KHR_DF_SAMPLE_DATATYPE_FLOAT"
                         ],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
                         "bitLength": 9,
