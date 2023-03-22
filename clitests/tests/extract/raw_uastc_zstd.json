@@ -1,0 +1,24 @@
+{
+    "description": "Test case description.",
+    "command": "ktx extract --raw input/valid/valid_${subcase}_2D_UASTC_ZSTD${level}.ktx2 output/extract/raw_uastc_zstd/output_${subcase}_2D_UASTC_ZSTD${level}.raw",
+    "status": 0,
+    "outputs": {
+        "output/extract/raw_uastc_zstd/output_${subcase}_2D_UASTC_ZSTD${level}.raw": "golden/extract/raw_uastc_zstd/output_${subcase}_2D_UASTC_ZSTD${level}.raw"
+    },
+    "args": {
+        "level": [
+            "_1",
+            "_9"
+        ],
+        "subcase": [
+            "R8_UNORM",
+            "R8_SRGB",
+            "R8G8_UNORM",
+            "R8G8_SRGB",
+            "R8G8B8_UNORM",
+            "R8G8B8_SRGB",
+            "R8G8B8A8_UNORM",
+            "R8G8B8A8_SRGB"
+        ]
+    }
+}

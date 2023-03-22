@@ -206,6 +206,10 @@ set(CASELIST
     tests/extract/raw_select_3d_mip.json
     tests/extract/raw_transcode_blze.json
     tests/extract/raw_transcode_uastc.json
+    tests/extract/raw_uastc_zlib.json
+    tests/extract/raw_uastc_zstd.json
+    tests/extract/raw_zlib.json
+    tests/extract/raw_zstd.json
 
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
