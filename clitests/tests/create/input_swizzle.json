@@ -1,0 +1,29 @@
+{
+    "description": "Test case description.",
+    "command": "ktx create --testrun ${swizzle[flag]} --format ${subcase[format]} ../../srcimages/${subcase[file]}${subcase[ext]} output/create/input_swizzle/${subcase[file]}_${subcase[format]}${swizzle[name]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/input_swizzle/${subcase[file]}_${subcase[format]}${swizzle[name]}.ktx2": "golden/create/input_swizzle/${subcase[file]}_${subcase[format]}${swizzle[name]}.ktx2"
+    },
+    "args": {
+        "swizzle": [
+            { "flag": "--input-swizzle 1110", "name": "_1110" },
+            { "flag": "--input-swizzle 0001", "name": "_0001" },
+            { "flag": "--input-swizzle abgr", "name": "_abgr" },
+            { "flag": "--input-swizzle rgba", "name": "_rgba" },
+            { "flag": "--input-swizzle rrrr", "name": "_rrrr" },
+            { "flag": "--input-swizzle gggg", "name": "_gggg" },
+            { "flag": "--input-swizzle bbbb", "name": "_bbbb" },
+            { "flag": "--input-swizzle aaaa", "name": "_aaaa" }
+        ],
+        "subcase": [
+            { "format": "R8_UNORM", "file": "red16", "ext": ".png" },
+            { "format": "R8G8_UNORM", "file": "red16", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "red16", "ext": ".png" },
+            { "format": "R8G8B8A8_UNORM", "file": "red16", "ext": ".png" },
+            { "format": "R8G8B8A8_UNORM", "file": "green16", "ext": ".png" },
+            { "format": "R8G8B8A8_UNORM", "file": "blue16", "ext": ".png" },
+            { "format": "R8G8B8A8_UNORM", "file": "alpha_simple", "ext": ".png" }
+        ]
+    }
+}

@@ -229,7 +229,8 @@ set(CASELIST
     tests/create/raw_zstd.json
     tests/create/sample_zlib.json
     tests/create/sample_zstd.json
-
+#    tests/create/png_sample.json
+    tests/create/input_swizzle.json
     tests/create/encode_blze.json
     tests/create/encode_blze_params.json
     tests/create/encode_uastc.json
