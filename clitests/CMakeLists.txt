@@ -229,6 +229,25 @@ set(CASELIST
     tests/create/raw_zstd.json
     tests/create/sample_zlib.json
     tests/create/sample_zstd.json
+
+    tests/create/encode_blze.json
+    tests/create/encode_blze_params.json
+    tests/create/encode_uastc.json
+    tests/create/encode_uastc_params.json
+    tests/create/encode_error_codec.json
+    tests/create/encode_error_format.json
+    tests/create/encode_error_blze_zstd_zlib.json
+
+    tests/encode/encode_blze.json
+    tests/encode/encode_blze_params.json
+    tests/encode/encode_uastc.json
+    tests/encode/encode_uastc_params.json
+    tests/encode/encode_error_invalid.json
+    tests/encode/encode_error_codec.json
+    tests/encode/encode_error_format.json
+    tests/encode/encode_error_blze_input.json
+    tests/encode/encode_error_blze_zstd_zlib.json
+    tests/encode/encode_error_normal_mode.json
 )
 
 set(CASE_REGEN_GOLDEN_COMMANDS)

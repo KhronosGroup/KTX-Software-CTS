@@ -1,0 +1,29 @@
+{
+    "description": "Test create with BasisLZ encoding with various parameter combinations.",
+    "command": "ktx create --raw --format ${subcase} --width 8 --height 8 --testrun --threads 1 --encode basis-lz ${select[args]} input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_blze_params/output_${subcase}_${select[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/encode_blze_params/output_${subcase}_${select[id]}.ktx2": "golden/create/encode_blze_params/output_${subcase}_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "clevel_0", "args": "--clevel 0" },
+            { "id": "clevel_5", "args": "--clevel 5" },
+            { "id": "qlevel_1", "args": "--qlevel 1" },
+            { "id": "qlevel_255", "args": "--qlevel 255" },
+            { "id": "combination_1", "args": "--clevel 2 --qlevel 16 --no-sse" },
+            { "id": "combination_2", "args": "--clevel 1 --qlevel 200 --normal-mode" },
+            { "id": "combination_3", "args": "--clevel 2 --max-endpoints 9 --endpoint-rdo-threshold 1.5 --max-selectors 2" },
+            { "id": "combination_4", "args": "--clevel 3 --endpoint-rdo-threshold 2.0 --max-selectors 5 --selector-rdo-threshold 1.0 --no-sse" },
+            { "id": "combination_5", "args": "--clevel 1 --max-endpoints 10 --max-selectors 5 --selector-rdo-threshold 2.5" },
+            { "id": "combination_6", "args": "--clevel 0 --max-endpoints 6 --endpoint-rdo-threshold 1.5 --selector-rdo-threshold 1.5" },
+            { "id": "combination_7", "args": "--max-endpoints 3 --endpoint-rdo-threshold 1.2 --no-selector-rdo --normal-mode" },
+            { "id": "combination_8", "args": "--no-endpoint-rdo --max-selectors 8 --selector-rdo-threshold 2.75" },
+            { "id": "combination_9", "args": "--qlevel 155 --normal-mode --no-sse" }
+        ],
+        "subcase": [
+            "R8G8_UNORM",
+            "R8G8B8A8_UNORM"
+        ]
+    }
+}

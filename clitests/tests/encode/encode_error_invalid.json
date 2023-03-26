@@ -1,0 +1,19 @@
+{
+    "description": "Test encode with some randomly selected invalid files.",
+    "command": "ktx encode --codec ${codec} input/${subcase}.ktx2 output/encode/encode_error_invalid/output_${subcase}.ktx2",
+    "status": 3,
+    "stderr": "golden/encode/encode_error_invalid/${subcase}.err.txt",
+    "args": {
+        "codec": [
+            "basis-lz",
+            "uastc"
+        ],
+        "subcase": [
+            "validate/1003/fatal_UnexpectedEOF_10",
+            "validate/2001/fatal_NotKTX2",
+            "validate/3008/error_CubeHeightWidthMismatch_16x12",
+            "validate/3019/error_InvalidSupercompression_01",
+            "validate/7002/error_NotEnoughDataForAnEntry"
+        ]
+    }
+}

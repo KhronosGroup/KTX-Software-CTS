@@ -1,0 +1,22 @@
+{
+    "description": "Test that BasisLZ compressed input is not accepted.",
+    "command": "ktx encode --codec ${codec} input/valid/valid_${subcase}.ktx2 output/encode/encode_error_blze_input/output_${subcase}.ktx2",
+    "status": 3,
+    "stderr": "golden/encode/encode_error_blze_input/common.err.txt",
+    "args": {
+        "codec": [
+            "basis-lz",
+            "uastc"
+        ],
+        "subcase": [
+            "R8_UNORM_2D_BLZE",
+            "R8_SRGB_2D_BLZE",
+            "R8G8_UNORM_2D_BLZE",
+            "R8G8_SRGB_2D_BLZE",
+            "R8G8B8_UNORM_2D_BLZE",
+            "R8G8B8_SRGB_2D_BLZE",
+            "R8G8B8A8_UNORM_2D_BLZE",
+            "R8G8B8A8_SRGB_2D_BLZE"
+        ]
+    }
+}

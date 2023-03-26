@@ -1,0 +1,16 @@
+{
+    "description": "Test create with default behavior of BasisLZ encoding.",
+    "command": "ktx create --raw --format ${subcase} --width 8 --height 8 --testrun --threads 1 --encode basis-lz input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_blze/output_${subcase}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/encode_blze/output_${subcase}.ktx2": "golden/create/encode_blze/output_${subcase}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            "R8_UNORM",
+            "R8G8_UNORM",
+            "R8G8B8_UNORM",
+            "R8G8B8A8_UNORM"
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+ktx create fatal: Only R8, RG8, RGB8, or RGBA8 UNORM and SRGB formats can be encoded, but format is VK_FORMAT`(_\w+)+`.

@@ -1,0 +1,1 @@
+ktx create fatal: Cannot encode to BasisLZ and supercompress with Zstd.

@@ -1,0 +1,1 @@
+ktx encode fatal: --normal-mode specified but the input file uses non-linear transfer function KHR_DF_TRANSFER_SRGB.
