@@ -1,4 +1,2 @@
-Validation failed
-
 error-3019: Invalid supercompressionScheme.
     Invalid supercompressionScheme: (0x00000010).
