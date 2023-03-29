@@ -250,10 +250,16 @@ set(CASELIST
     tests/encode/encode_error_normal_mode.json
 )
 
-set(CASE_REGEN_GOLDEN_COMMANDS)
+set(CASE_REGEN_GOLDEN_OUTPUTS)
 
 if(NOT DEFINED KTX_TOOLS_PATH)
     message(FATAL_ERROR "KTX_TOOLS_PATH not defined")
+endif()
+
+if(MSVC)
+    set(CLITEST_ARGS "--msvc")
+else()
+    set(CLITEST_ARGS "")
 endif()
 
 foreach(CASE_FILE ${CASELIST})
@@ -263,14 +269,16 @@ foreach(CASE_FILE ${CASELIST})
     string(REPLACE "/" "." CASE_GROUP "${CASE_TRIMMED_DIR}")
     set(FULL_CASE_NAME "${CASE_GROUP}${CASE_NAME}")
 
-    list(APPEND CASE_REGEN_GOLDEN_COMMANDS
-        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} --executable-path ${KTX_TOOLS_PATH} --regen-golden)
+    list(APPEND CASE_REGEN_GOLDEN_OUTPUTS ${CASE_FILE})
+    add_custom_command(
+        OUTPUT ${CASE_FILE}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path ${KTX_TOOLS_PATH} --regen-golden)
 
     add_test(NAME ${FULL_CASE_NAME}
-        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} --executable-path ${KTX_TOOLS_PATH}
+        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path ${KTX_TOOLS_PATH}
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endforeach()
 
 add_custom_target(clitests_regen_golden
-    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CASE_REGEN_GOLDEN_COMMANDS})
+    DEPENDS ${CASE_REGEN_GOLDEN_OUTPUTS})

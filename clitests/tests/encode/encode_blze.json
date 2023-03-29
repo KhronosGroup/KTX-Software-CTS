@@ -2,6 +2,7 @@
     "description": "Test default behavior of BasisLZ encoding.",
     "command": "ktx encode --testrun --threads 1 --codec basis-lz input/valid/valid_${subcase}.ktx2 output/encode/encode_blze/output_${subcase}.ktx2",
     "status": 0,
+    "allowOutputMismatchOnMSVC": "BasisLZ compression relies on undefined order of std::unordered_map containers.",
     "outputs": {
         "output/encode/encode_blze/output_${subcase}.ktx2": "golden/encode/encode_blze/output_${subcase}.ktx2"
     },

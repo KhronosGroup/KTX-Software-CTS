@@ -2,6 +2,7 @@
     "description": "Test create with BasisLZ encoding with various parameter combinations.",
     "command": "ktx create --raw --format ${subcase} --width 8 --height 8 --testrun --threads 1 --encode basis-lz ${select[args]} input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_blze_params/output_${subcase}_${select[id]}.ktx2",
     "status": 0,
+    "allowOutputMismatchOnMSVC": "BasisLZ compression relies on undefined order of std::unordered_map containers.",
     "outputs": {
         "output/create/encode_blze_params/output_${subcase}_${select[id]}.ktx2": "golden/create/encode_blze_params/output_${subcase}_${select[id]}.ktx2"
     },

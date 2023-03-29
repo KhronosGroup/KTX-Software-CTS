@@ -55,6 +55,8 @@ if __name__ == '__main__':
                         help='Regenerate reference files')
     parser.add_argument('-e', '--executable-path', action='store', required=True,
                         help='Path to use for the executed command')
+    parser.add_argument('--msvc', action='store_true',
+                        help='Indicates that test runs against MSVC build')
 
     cli_args, unknown_args = parser.parse_known_args()
 
@@ -108,13 +110,16 @@ if __name__ == '__main__':
 
     # Execute subcases
 
-    print(f"Executing test case '{cli_args.json_test_file}'...")
+    if not cli_args.regen_golden:
+        print(f"Executing test case '{cli_args.json_test_file}'...")
 
     failed = False
     messages = []
     subcases_passed = 0
     subcases_skipped = 0
     subcases_failed = 0
+
+    ref_not_updated = {}
 
     for subcase_index, subcase in enumerate(subcases):
         skip_subcase = False
@@ -134,7 +139,8 @@ if __name__ == '__main__':
         subcase_failed = False
         subcase_messages = []
 
-        messages.append(f"  {ctx.eval(testcase['command'])}")
+        if not cli_args.regen_golden:
+            messages.append(f"  {ctx.eval(testcase['command'])}")
 
         # Run command
 
@@ -212,8 +218,7 @@ if __name__ == '__main__':
                         old_output_ref_contains_regex = bool(re.findall(r'`.*`', old_output_ref))
 
                     if old_output_ref_contains_regex:
-                        subcase_messages.append(f"Warning: reference file '{output_ref_filename}' was not updated as it contains a regex")
-                        subcase_failed = True
+                        ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated as it contains a regex"
                     else:
                         os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
                         output_ref_file = open(output_ref_filename, 'w+', newline='\n', encoding='utf-8')
@@ -253,7 +258,10 @@ if __name__ == '__main__':
                 if not cmd_failed and cli_args.regen_golden:
                     os.makedirs(os.path.dirname(output_ref), exist_ok=True)
                     if os.path.isfile(output_cur):
-                        shutil.copyfile(output_cur, output_ref)
+                        if cli_args.msvc and 'allowOutputMismatchOnMSVC' in testcase:
+                            ref_not_updated[output_ref] = f"NOTE: reference file '{output_ref}' was not updated on MSVC build as it has MSVC output mismatches allowed"
+                        else:
+                            shutil.copyfile(output_cur, output_ref)
                     else:
                         subcase_failed = True
                         subcase_messages.append(f"stdout:\n{output['stdout']}")
@@ -270,8 +278,11 @@ if __name__ == '__main__':
                     files_found = False
 
                 if files_found and not filecmp.cmp(output_cur, output_ref, shallow=False):
-                    subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
-                    subcase_failed = True
+                    if cli_args.msvc and 'allowOutputMismatchOnMSVC' in testcase:
+                        messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{output_cur}' and reference file '{output_ref}'")
+                    else:
+                        subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
+                        subcase_failed = True
 
 
         # Handle subcase failure
@@ -293,11 +304,15 @@ if __name__ == '__main__':
     for message in messages:
         print(message)
 
-    print("Subcase summary:")
-    print(f"  Passed:  {subcases_passed}")
-    print(f"  Skipped: {subcases_skipped}")
-    print(f"  Failed:  {subcases_failed}")
-    print(f"  Total:   {len(subcases)}")
+    for ref in ref_not_updated:
+        print(ref_not_updated[ref])
 
-    if failed and not cli_args.regen_golden:
+    if not cli_args.regen_golden:
+        print("Subcase summary:")
+        print(f"  Passed:  {subcases_passed}")
+        print(f"  Skipped: {subcases_skipped}")
+        print(f"  Failed:  {subcases_failed}")
+        print(f"  Total:   {len(subcases)}")
+
+    if failed:
         exit(1)
