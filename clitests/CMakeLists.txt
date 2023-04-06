@@ -210,6 +210,8 @@ set(CASELIST
     tests/extract/raw_uastc_zstd.json
     tests/extract/raw_zlib.json
     tests/extract/raw_zstd.json
+    tests/extract/png_2d.json
+    tests/extract/exr_2d.json
 
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json

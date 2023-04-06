@@ -1,0 +1,50 @@
+{
+    "description": "Test case description.",
+    "command": "ktx extract input/valid/valid_${subcase}_2D.ktx2 output/extract/exr_2d/output_${subcase}_2D.exr",
+    "status": 0,
+    "outputs": {
+        "output/extract/exr_2d/output_${subcase}_2D.exr": "golden/extract/exr_2d/output_${subcase}_2D.exr"
+    },
+    "args": {
+        "subcase": [
+            "R8_UINT",
+            "R8_SINT",
+            "R16_UINT",
+            "R16_SINT",
+            "R32_UINT",
+            "R8G8_UINT",
+            "R8G8_SINT",
+            "R16G16_UINT",
+            "R16G16_SINT",
+            "R32G32_UINT",
+            "R8G8B8_UINT",
+            "R8G8B8_SINT",
+            "B8G8R8_UINT",
+            "B8G8R8_SINT",
+            "R16G16B16_UINT",
+            "R16G16B16_SINT",
+            "R32G32B32_UINT",
+            "R8G8B8A8_UINT",
+            "R8G8B8A8_SINT",
+            "B8G8R8A8_UINT",
+            "B8G8R8A8_SINT",
+            "R16G16B16A16_UINT",
+            "R16G16B16A16_SINT",
+            "R32G32B32A32_UINT",
+
+            "A2R10G10B10_UINT_PACK32",
+            "A2R10G10B10_SINT_PACK32",
+            "A2B10G10R10_SINT_PACK32",
+            "A2B10G10R10_UINT_PACK32",
+
+            "R16_SFLOAT",
+            "R16G16_SFLOAT",
+            "R16G16B16_SFLOAT",
+            "R16G16B16A16_SFLOAT",
+            "R32_SFLOAT",
+            "R32G32_SFLOAT",
+            "R32G32B32_SFLOAT",
+            "R32G32B32A32_SFLOAT"
+        ]
+    }
+}
