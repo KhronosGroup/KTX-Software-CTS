@@ -1,0 +1,14 @@
+{
+    "description": "Test transcoding with ZSTD supercompression.",
+    "command": "ktx transcode --testrun --zstd 11 --target bc7 input/transcode/large_${subcase}.ktx2 output/transcode/transcode_zstd/output_${subcase}_ZSTD.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/transcode/transcode_zstd/output_${subcase}_ZSTD.ktx2": "golden/transcode/transcode_zstd/output_${subcase}_ZSTD.ktx2"
+    },
+    "args": {
+        "subcase": [
+            "BLZE",
+            "UASTC"
+        ]
+    }
+}

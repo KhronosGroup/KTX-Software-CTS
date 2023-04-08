@@ -1,0 +1,32 @@
+{
+    "description": "Test transcode with some inputs that are not transcodable.",
+    "command": "ktx transcode ${args} input/valid/valid_${subcase}.ktx2 output/transcode/transcode_error_not_transcodable/output_${subcase}.ktx2",
+    "status": 3,
+    "stderr": "golden/transcode/transcode_error_not_transcodable/common.err.txt",
+    "args": {
+        "args": [
+            "",
+            "--target etc-rgb",
+            "--target etc-rgba",
+            "--target eac-r11",
+            "--target eac-rg11",
+            "--target bc1",
+            "--target bc3",
+            "--target bc4",
+            "--target bc5",
+            "--target bc7",
+            "--target astc",
+            "--target r8",
+            "--target rg8",
+            "--target rgb8",
+            "--target rgba8"
+        ],
+        "subcase": [
+            "ASTC_4x4_SRGB_BLOCK_2D",
+            "ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9",
+            "R16G16_SFLOAT_CUBE_ARRAY",
+            "R8G8B8A8_SRGB_2D",
+            "R8G8B8_UNORM_CUBE_ARRAY_MIP"
+        ]
+    }
+}

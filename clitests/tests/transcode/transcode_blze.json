@@ -1,0 +1,37 @@
+{
+    "description": "Test BasisLZ transcoding.",
+    "command": "ktx transcode --testrun ${transcode[flag]} input/valid/valid_${subcase}_2D_BLZE.ktx2 output/transcode/transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/transcode/transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.ktx2": "golden/transcode/transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.ktx2"
+    },
+    "args": {
+        "transcode": [
+            { "id": "etc-rgb", "flag": "--target etc-rgb" },
+            { "id": "etc-rgba", "flag": "--target etc-rgba" },
+            { "id": "eac-r11", "flag": "--target eac-r11" },
+            { "id": "eac-rg11", "flag": "--target eac-rg11" },
+            { "id": "bc1", "flag": "--target bc1" },
+            { "id": "bc3", "flag": "--target bc3" },
+            { "id": "bc4", "flag": "--target bc4" },
+            { "id": "bc5", "flag": "--target bc5" },
+            { "id": "bc7", "flag": "--target bc7" },
+            { "id": "astc", "flag": "--target astc" },
+            { "id": "r8", "flag": "--target r8" },
+            { "id": "rg8", "flag": "--target rg8" },
+            { "id": "rgb8", "flag": "--target rgb8" },
+            { "id": "rgba8", "flag": "--target rgba8" },
+            { "id": "auto", "flag": "" }
+        ],
+        "subcase": [
+            "R8_UNORM",
+            "R8_SRGB",
+            "R8G8_UNORM",
+            "R8G8_SRGB",
+            "R8G8B8_UNORM",
+            "R8G8B8_SRGB",
+            "R8G8B8A8_UNORM",
+            "R8G8B8A8_SRGB"
+        ]
+    }
+}

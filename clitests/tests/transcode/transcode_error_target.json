@@ -1,0 +1,18 @@
+{
+    "description": "Test invalid transcode target argument.",
+    "command": "ktx transcode --target ${target} input/transcode/transcode_error_target/large_${subcase}.ktx2 output/transcode/transcode_error_target/output_${subcase}_${target}.ktx2",
+    "status": 1,
+    "stderr": "golden/transcode/transcode_error_target/error_target_${target}.err.txt",
+    "args": {
+        "target": [
+            "etc_rgb",
+            "eac-rgb",
+            "uastc",
+            "bgra8"
+        ],
+        "subcase": [
+            "BLZE",
+            "UASTC"
+        ]
+    }
+}

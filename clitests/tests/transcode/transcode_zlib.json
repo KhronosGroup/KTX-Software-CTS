@@ -1,0 +1,14 @@
+{
+    "description": "Test transcoding with ZLIB supercompression.",
+    "command": "ktx transcode --testrun --zlib 6 --target bc7 input/transcode/large_${subcase}.ktx2 output/transcode/transcode_zlib/output_${subcase}_ZLIB.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/transcode/transcode_zlib/output_${subcase}_ZLIB.ktx2": "golden/transcode/transcode_zlib/output_${subcase}_ZLIB.ktx2"
+    },
+    "args": {
+        "subcase": [
+            "BLZE",
+            "UASTC"
+        ]
+    }
+}

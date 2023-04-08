@@ -1,0 +1,15 @@
+{
+    "description": "Test transcode with some randomly selected invalid files.",
+    "command": "ktx transcode input/${subcase}.ktx2 output/transcode/transcode_error_invalid/output_${subcase}.ktx2",
+    "status": 3,
+    "stderr": "golden/transcode/transcode_error_invalid/${subcase}.err.txt",
+    "args": {
+        "subcase": [
+            "validate/3005/error_TypeSizeNotOne_BasisLZ",
+            "validate/6018/error_IncorrectModelForBLZE_UASTC",
+            "validate/3005/error_TypeSizeNotOne_UASTC",
+            "validate/3027/error_IndexSGDNotApplicable_UASTC_ZSTD",
+            "validate/6026/error_InvalidSampleCount_UASTC_2Sample"
+        ]
+    }
+}

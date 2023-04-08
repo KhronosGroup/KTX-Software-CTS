@@ -253,6 +253,14 @@ set(CASELIST
     tests/encode/encode_error_blze_input.json
     tests/encode/encode_error_blze_zstd_zlib.json
     tests/encode/encode_error_normal_mode.json
+
+    tests/transcode/transcode_blze.json
+    tests/transcode/transcode_uastc.json
+    tests/transcode/transcode_zstd.json
+    tests/transcode/transcode_zlib.json
+    tests/transcode/transcode_error_invalid.json
+    tests/transcode/transcode_error_target.json
+    tests/transcode/transcode_error_not_transcodable.json
 )
 
 set(CASE_REGEN_GOLDEN_OUTPUTS)
