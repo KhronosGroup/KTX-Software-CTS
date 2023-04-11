@@ -1,0 +1,1 @@
+ktx create fatal: Input image "input/png/colorspace_`[A-Za-z0-9_]+`.png" has different transfer function (`[A-Za-z0-9_]+`) than preceding image(s) (KHR_DF_TRANSFER_SRGB).

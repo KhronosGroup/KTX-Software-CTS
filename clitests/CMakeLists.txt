@@ -242,6 +242,25 @@ set(CASELIST
     tests/create/encode_error_codec.json
     tests/create/encode_error_format.json
     tests/create/encode_error_blze_zstd_zlib.json
+    tests/create/colorspaces_png.json
+    tests/create/colorspaces_png_hdr.json
+    tests/create/colorspaces_exr.json
+    tests/create/colorspaces_assign_oetf_linear.json
+    tests/create/colorspaces_assign_oetf_srgb.json
+    tests/create/colorspaces_convert_oetf_linear.json
+    tests/create/colorspaces_convert_oetf_srgb.json
+    tests/create/colorspaces_assign_and_convert_oetf_linear.json
+    tests/create/colorspaces_assign_and_convert_oetf_srgb.json
+    tests/create/colorspaces_assign_primaries_png.json
+    tests/create/colorspaces_assign_primaries_exr.json
+    tests/create/colorspaces_convert_primaries_png.json
+    tests/create/colorspaces_convert_primaries_exr.json
+    tests/create/colorspaces_combinations.json
+    tests/create/colorspaces_error_png_unknown_icc.json
+    tests/create/colorspaces_error_png_primaries_mismatch.json
+    tests/create/colorspaces_error_exr_primaries_mismatch.json
+    tests/create/colorspaces_error_png_transfer_mismatch.json
+    tests/create/colorspaces_error_srgb_oetf.json
 
     tests/encode/encode_blze.json
     tests/encode/encode_blze_params.json

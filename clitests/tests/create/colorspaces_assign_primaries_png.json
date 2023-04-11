@@ -1,0 +1,37 @@
+{
+    "description": "Test PNG input images with --assign-primaries option.",
+    "command": "ktx create --testrun --format R8G8B8A8_UNORM --assign-primaries ${primaries} input/png/colorspace_${subcase}.png output/create/colorspaces_assign_primaries_png/output_${subcase}_to_${primaries}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/colorspaces_assign_primaries_png/output_${subcase}_to_${primaries}.ktx2": "golden/create/colorspaces_assign_primaries_png/output_${primaries}.ktx2"
+    },
+    "args": {
+        "primaries": [
+            "bt709",
+            "bt601-ebu",
+            "bt601-smpte",
+            "bt2020",
+            "ciexyz",
+            "ACES",
+            "ACEScc",
+            "ntsc1953",
+            "pal525",
+            "DisplayP3",
+            "AdobeRGB"
+        ],
+        "subcase": [
+            "cHRM_BT709",
+            "cHRM_BT601_EBU",
+            "cHRM_BT601_SMPTE",
+            "cHRM_BT2020",
+            "cHRM_CIEXYZ",
+            "cHRM_ACES",
+            "cHRM_ACEScc",
+            "cHRM_NTSC1953",
+            "cHRM_PAL525",
+            "cHRM_DisplayP3",
+            "cHRM_AdobeRGB",
+            "cHRM_unknown"
+        ]
+    }
+}

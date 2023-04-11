@@ -1,0 +1,24 @@
+{
+    "description": "Test EXR input images with various color space.",
+    "command": "ktx create --testrun --format R16G16B16A16_SFLOAT input/exr/chromaticities_${subcase}.exr output/create/colorspaces_exr/chromaticities_${subcase}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/colorspaces_exr/chromaticities_${subcase}.ktx2": "golden/create/colorspaces_exr/chromaticities_${subcase}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            "BT709",
+            "BT601_EBU",
+            "BT601_SMPTE",
+            "BT2020",
+            "CIEXYZ",
+            "ACES",
+            "ACEScc",
+            "NTSC1953",
+            "PAL525",
+            "DisplayP3",
+            "AdobeRGB",
+            "unknown"
+        ]
+    }
+}

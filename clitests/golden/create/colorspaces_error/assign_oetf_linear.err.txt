@@ -1,0 +1,1 @@
+ktx create fatal: Invalid value to --assign-oetf "linear" for format "`[A-Z0-9]+`_SRGB". Transfer function must be sRGB for sRGB formats.

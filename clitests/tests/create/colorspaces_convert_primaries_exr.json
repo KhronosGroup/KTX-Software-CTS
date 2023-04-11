@@ -1,0 +1,36 @@
+{
+    "description": "Test EXR input images with --convert-primaries option.",
+    "command": "ktx create --testrun --format R16G16B16A16_SFLOAT --convert-primaries ${primaries} input/exr/chromaticities_${subcase}.exr output/create/colorspaces_convert_primaries_exr/output_${subcase}_to_${primaries}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/colorspaces_convert_primaries_exr/output_${subcase}_to_${primaries}.ktx2": "golden/create/colorspaces_convert_primaries_exr/output_${subcase}_to_${primaries}.ktx2"
+    },
+    "args": {
+        "primaries": [
+            "bt709",
+            "bt601-ebu",
+            "bt601-smpte",
+            "bt2020",
+            "ciexyz",
+            "ACES",
+            "ACEScc",
+            "ntsc1953",
+            "pal525",
+            "DisplayP3",
+            "AdobeRGB"
+        ],
+        "subcase": [
+            "BT709",
+            "BT601_EBU",
+            "BT601_SMPTE",
+            "BT2020",
+            "CIEXYZ",
+            "ACES",
+            "ACEScc",
+            "NTSC1953",
+            "PAL525",
+            "DisplayP3",
+            "AdobeRGB"
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "description": "Test that create fails with multiple PNGs if primaries mismatch.",
+    "command": "ktx create --format R8G8B8A8_SRGB --layers 2 input/png/colorspace_cHRM_BT709.png input/png/colorspace_${subcase}.png output/create/colorspaces_error/png_primaries_mismatch_${subcase}.ktx2",
+    "status": 3,
+    "stderr": "golden/create/colorspaces_error/png_primaries_mismatch.err.txt",
+    "args": {
+        "subcase": [
+            "cHRM_BT601_EBU",
+            "cHRM_BT601_SMPTE",
+            "cHRM_BT2020",
+            "cHRM_CIEXYZ",
+            "cHRM_ACES",
+            "cHRM_ACEScc",
+            "cHRM_NTSC1953",
+            "cHRM_PAL525",
+            "cHRM_DisplayP3",
+            "cHRM_AdobeRGB"
+        ]
+    }
+}

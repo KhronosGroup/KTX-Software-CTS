@@ -1,0 +1,20 @@
+{
+    "description": "Test that create fails with multiple EXRs if primaries mismatch.",
+    "command": "ktx create --format R16G16B16A16_SFLOAT --layers 2 input/exr/chromaticities_BT709.exr input/exr/chromaticities_${subcase}.exr output/create/colorspaces_error/exr_primaries_mismatch_${subcase}.ktx2",
+    "status": 3,
+    "stderr": "golden/create/colorspaces_error/exr_primaries_mismatch.err.txt",
+    "args": {
+        "subcase": [
+            "BT601_EBU",
+            "BT601_SMPTE",
+            "BT2020",
+            "CIEXYZ",
+            "ACES",
+            "ACEScc",
+            "NTSC1953",
+            "PAL525",
+            "DisplayP3",
+            "AdobeRGB"
+        ]
+    }
+}
