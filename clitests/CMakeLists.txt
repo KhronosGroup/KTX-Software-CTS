@@ -203,7 +203,9 @@ set(CASELIST
     tests/extract/raw_select_cube_array.json
     tests/extract/raw_select_cube_array_mip.json
     tests/extract/raw_select_3d.json
+    tests/extract/raw_select_3d_depthall.json
     tests/extract/raw_select_3d_mip.json
+    tests/extract/raw_select_3d_mip_depthall.json
     tests/extract/raw_transcode_blze.json
     tests/extract/raw_transcode_uastc.json
     tests/extract/raw_uastc_zlib.json

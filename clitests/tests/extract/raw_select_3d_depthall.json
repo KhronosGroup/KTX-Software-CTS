@@ -1,0 +1,38 @@
+{
+    "description": "Test case description.",
+    "command": "ktx extract --raw ${select[flags]} input/valid/valid_${subcase}.ktx2 output/extract/raw_select_3d_depthall/output_${subcase}/output${select[id]}.raw",
+    "status": 0,
+    "outputs": {
+        "output/extract/raw_select_3d_depthall/output_${subcase}/output${select[id]}.raw": "golden/extract/raw_select_3d_depthall/output_${subcase}/output${select[id]}.raw"
+    },
+    "args": {
+        "select": [
+            { "id": "_depth_all", "flags": "--level 0" }
+        ],
+        "subcase": [
+            "A1R5G5B5_UNORM_PACK16_3D",
+            "A2R10G10B10_SINT_PACK32_3D",
+            "A2R10G10B10_UINT_PACK32_3D",
+            "A4R4G4B4_UNORM_PACK16_EXT_3D",
+            "R16G16B16A16_UNORM_3D",
+            "R16G16B16_UNORM_3D",
+            "R16G16_UNORM_3D",
+            "R16_UNORM_3D",
+            "R32G32B32A32_UINT_3D",
+            "R32G32B32_UINT_3D",
+            "R32G32_UINT_3D",
+            "R32_UINT_3D",
+            "R4G4B4A4_UNORM_PACK16_3D",
+            "R4G4_UNORM_PACK8_3D",
+            "R5G5B5A1_UNORM_PACK16_3D",
+            "R5G6B5_UNORM_PACK16_3D",
+            "R8G8B8A8_UNORM_3D",
+            "R8G8B8_UNORM_3D",
+            "R8G8_UNORM_3D",
+            "R8_SINT_3D",
+            "R8_SRGB_3D",
+            "R8_UINT_3D",
+            "R8_UNORM_3D"
+        ]
+    }
+}
