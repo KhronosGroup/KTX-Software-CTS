@@ -3,7 +3,7 @@ Validation failed
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #3 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8_UNORM.
 error-6205: Non-trivial endianness detected in the basic DFD block.
-    DFD block #1 describes non little-endian or not supported format.
+    DFD block #1 describes non little-endian or unsupported format.
 
 Header
 
