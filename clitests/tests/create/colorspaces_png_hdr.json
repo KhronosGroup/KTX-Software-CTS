@@ -1,6 +1,6 @@
 {
     "description": "Test PNG input images with various HDR color spaces.",
-    "command": "ktx create --testrun --format R16G16B16A16_SFLOAT input/png/colorspace_${subcase}.png output/create/colorspaces_png_hdr/colorspace_${subcase}.ktx2",
+    "command": "ktx create --testrun --format R16G16B16A16_UNORM input/png/colorspace_${subcase}.png output/create/colorspaces_png_hdr/colorspace_${subcase}.ktx2",
     "status": 0,
     "outputs": {
         "output/create/colorspaces_png_hdr/colorspace_${subcase}.ktx2": "golden/create/colorspaces_png_hdr/colorspace_${subcase}.ktx2"
