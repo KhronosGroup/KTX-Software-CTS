@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test extraction with --transcode from BLZE textures.",
     "command": "ktx extract --raw ${transcode[flag]} input/valid/valid_${subcase}_2D_BLZE.ktx2 output/extract/raw_transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.raw",
     "status": 0,
     "outputs": {

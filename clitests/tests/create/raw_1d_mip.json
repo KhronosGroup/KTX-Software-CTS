@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test creation of 1D Mip textures with raw input files.",
     "command": "ktx create --testrun --1d --raw --format ${subcase} --width 8 --height 1 --depth 1 --levels 2 --layers 1 input/raw/raw_${subcase}_1D_8.raw input/raw/raw_${subcase}_1D_4.raw output/create/raw_1d_mip/output_${subcase}_1D_MIP.ktx2",
     "status": 0,
     "outputs": {

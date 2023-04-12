@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "The samples must match the expected samples of the VkFormat.",
     "command": "ktx validate ${format[args]} input/validate/6028/error_FormatMismatch_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6028/error_FormatMismatch_${subcase}.out.${format[ext]}",

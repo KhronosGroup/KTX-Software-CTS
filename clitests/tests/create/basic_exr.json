@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test create with basic EXR input files.",
     "command": "ktx create --testrun --format ${subcase[format]} input/exr/basic_${subcase[file]}${subcase[ext]} output/create/basic_exr/${subcase[format]}_${subcase[file]}.ktx2",
     "status": 0,
     "outputs": {

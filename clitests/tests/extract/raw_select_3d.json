@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test extraction from 3D textures to raw output files with fully specifying the images with --level, --layer, --face and --depth.",
     "command": "ktx extract --raw ${select[flags]} input/valid/valid_${subcase}.ktx2 output/extract/raw_select_3d/output_${subcase}/output${select[id]}.raw",
     "status": 0,
     "outputs": {

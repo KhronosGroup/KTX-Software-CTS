@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test creation of 1D textures with raw input files.",
     "command": "ktx create --testrun --1d --raw --format ${subcase} --width 8 --height 1 --depth 1 --levels 1 --layers 1 input/raw/raw_${subcase}_1D_8.raw output/create/raw_1d/output_${subcase}_1D.ktx2",
     "status": 0,
     "outputs": {

@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test creation of ZLIB compressed textures with the sample PNG input files.",
     "command": "ktx create --testrun ${level[flag]} --format ${subcase[format]} ../../srcimages/${subcase[file]}${subcase[ext]} output/create/sample_zlib/${subcase[file]}_ZLIB${level[name]}.ktx2",
     "status": 0,
     "outputs": {

@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test creation of Cube textures with raw input files.",
     "command": "ktx create --testrun --cubemap --raw --format ${subcase} --width 8 --height 8 --depth 1 --levels 1 --layers 1 input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw output/create/raw_cube/output_${subcase}_CUBE.ktx2",
     "status": 0,
     "outputs": {

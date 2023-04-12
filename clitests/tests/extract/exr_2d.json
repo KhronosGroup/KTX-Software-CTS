@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test extraction to EXR output files.",
     "command": "ktx extract input/valid/valid_${subcase}_2D.ktx2 output/extract/exr_2d/output_${subcase}_2D.exr",
     "status": 0,
     "outputs": {

@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test texture creation with --input-swizzle.",
     "command": "ktx create --testrun ${swizzle[flag]} --format ${subcase[format]} ../../srcimages/${subcase[file]}${subcase[ext]} output/create/input_swizzle/${subcase[file]}_${subcase[format]}${swizzle[name]}.ktx2",
     "status": 0,
     "outputs": {

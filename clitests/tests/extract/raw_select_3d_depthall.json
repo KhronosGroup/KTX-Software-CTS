@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test extraction from 3D textures to combined (including every depth slice) raw \"3D\" output files by not specifying the --depth or --all.",
     "command": "ktx extract --raw ${select[flags]} input/valid/valid_${subcase}.ktx2 output/extract/raw_select_3d_depthall/output_${subcase}/output${select[id]}.raw",
     "status": 0,
     "outputs": {

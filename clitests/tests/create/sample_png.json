@@ -1,5 +1,5 @@
 {
-    "description": "Test case description.",
+    "description": "Test create with the sample PNG input files.",
     "command": "ktx create --testrun --format ${subcase[format]} ../../srcimages/${subcase[file]}${subcase[ext]} output/create/sample_png/${subcase[file]}_${subcase[format]}.ktx2",
     "status": 0,
     "outputs": {
