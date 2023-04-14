@@ -1,0 +1,1 @@
+ktx create fatal: Input image "input/exr/basic_RGB_HALF_LDR_16x16.exr" with size 16x16 does not match expected size 8x8 for level 1.

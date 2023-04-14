@@ -1,0 +1,1 @@
+ktx create fatal: Output file must be specified. See 'ktx create --help'.

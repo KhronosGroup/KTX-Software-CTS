@@ -1,0 +1,1 @@
+ktx create fatal: --cubemap specified but the input image "input/raw/raw_R8_UNORM_1D_8.raw" with size 8x1 is not square.

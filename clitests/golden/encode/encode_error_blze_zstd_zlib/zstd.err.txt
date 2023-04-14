@@ -1,1 +1,1 @@
-ktx encode fatal: Cannot encode to BasisLZ and supercompress with Zstd.
+ktx encode fatal: Cannot encode to BasisLZ and supercompress with Zstd. See 'ktx encode --help'.

@@ -1,0 +1,1 @@
+ktx create fatal: Requested 5 levels is too many. With base size 8x8x1 the texture can only have 4 levels at most. See 'ktx create --help'.

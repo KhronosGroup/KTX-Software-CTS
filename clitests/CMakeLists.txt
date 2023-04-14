@@ -215,6 +215,8 @@ set(CASELIST
     tests/extract/png_2d.json
     tests/extract/exr_2d.json
 
+    tests/create/help.json
+    tests/create/cli_arguments.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
     tests/create/raw_1d_array_mip.json

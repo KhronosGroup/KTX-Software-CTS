@@ -1,0 +1,1 @@
+ktx create fatal: For --1d textures the --height must be 1. See 'ktx create --help'.

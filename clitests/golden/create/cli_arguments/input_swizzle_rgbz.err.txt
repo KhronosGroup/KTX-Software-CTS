@@ -1,0 +1,1 @@
+ktx create fatal: Invalid --swizzle value: "rgbz". The value must match the "[rgba01]{4}" regex. See 'ktx create --help'.

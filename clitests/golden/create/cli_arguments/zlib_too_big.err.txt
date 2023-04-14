@@ -1,0 +1,1 @@
+ktx create fatal: Invalid zlib level: "50". Value must be between 1 and 9 inclusive. See 'ktx create --help'.

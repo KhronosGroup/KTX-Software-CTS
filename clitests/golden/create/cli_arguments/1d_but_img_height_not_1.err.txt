@@ -1,0 +1,1 @@
+ktx create fatal: For --1d textures the input image height must be 1, but for "input/png/basic_RGB8_16x16.png" it was 16.

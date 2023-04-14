@@ -1,1 +1,1 @@
-ktx create fatal: Invalid encode codec: "zlib".
+ktx create fatal: Invalid encode codec: "zlib". See 'ktx create --help'.

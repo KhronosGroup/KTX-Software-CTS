@@ -1,0 +1,1 @@
+ktx create fatal: Cubemaps cannot have 3D textures. --depth is 2. See 'ktx create --help'.
