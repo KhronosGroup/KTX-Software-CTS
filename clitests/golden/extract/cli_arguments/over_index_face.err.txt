@@ -1,0 +1,1 @@
+ktx extract fatal: Requested face index 10 is missing. The input file only has 6 face(s).

@@ -1,0 +1,1 @@
+ktx extract fatal: Invalid transcode target: "xyz". See 'ktx extract --help'.

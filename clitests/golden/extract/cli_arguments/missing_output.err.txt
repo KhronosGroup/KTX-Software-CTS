@@ -1,0 +1,1 @@
+ktx extract fatal: Missing output file or directory path. See 'ktx extract --help'.

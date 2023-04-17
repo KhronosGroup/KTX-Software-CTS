@@ -1,1 +1,1 @@
-ktx transcode fatal: Invalid transcode target: "etc_rgb".
+ktx transcode fatal: Invalid transcode target: "etc_rgb". See 'ktx transcode --help'.

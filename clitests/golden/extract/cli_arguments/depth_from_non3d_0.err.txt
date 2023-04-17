@@ -1,0 +1,1 @@
+ktx extract fatal: Requested depth index 0 from a non-3D texture.

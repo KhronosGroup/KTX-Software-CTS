@@ -1,0 +1,1 @@
+ktx extract fatal: Requested level index 10 is missing. The input file only has 4 level(s).

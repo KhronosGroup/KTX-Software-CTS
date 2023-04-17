@@ -1,0 +1,1 @@
+ktx extract fatal: Requested format conversion from VK_FORMAT_R32G32B32_SINT is not supported.

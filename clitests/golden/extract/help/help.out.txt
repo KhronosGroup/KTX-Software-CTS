@@ -1,0 +1,20 @@
+ktx extract: Export selected images from a KTX2 file.
+
+Usage:
+  ktx extract [OPTION...] <input-file> <output>
+
+      --transcode <target>  Target transcode format. Case-insensitive.
+                            Possible options are: etc-rgb | etc-rgba | eac-r11 | eac-rg11 | bc1 | 
+                            bc3 | bc4 | bc5 | bc7 | astc | r8 | rg8 | rgb8 | rgba8
+      --uri <uri>           KTX Fragment URI.
+      --level [0-9]+ | all  Level to extract. Defaults to 0.
+      --layer [0-9]+ | all  Layer to extract. Defaults to 0.
+      --face [0-5] | all    Face to extract. Defaults to 0.
+      --depth [0-9]+ | all  Depth slice to extract. Defaults to 0.
+      --all                 Extract all image slices.
+      --raw                 Extract raw image data.
+  -s, --stdin               Use stdin as the input file
+  -h, --help                Print this usage message and exit
+  -v, --version             Print the version number of this program and exit
+      --testrun             Indicates test run. If enabled ktx tools will only include the default 
+                            version information in any output

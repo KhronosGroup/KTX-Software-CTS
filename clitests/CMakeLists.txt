@@ -176,6 +176,8 @@ set(CASELIST
     tests/validate/error_8109_BLZEDFDMismatchAlpha.json
     tests/validate/error_8110_BLZEDFDMismatchNoAlpha.json
 
+    tests/extract/help.json
+    tests/extract/cli_arguments.json
     tests/extract/raw_all_1d.json
     tests/extract/raw_all_1d_mip.json
     tests/extract/raw_all_1d_array.json

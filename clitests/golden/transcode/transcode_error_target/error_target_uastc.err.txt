@@ -1,1 +1,1 @@
-ktx transcode fatal: Invalid transcode target: "uastc".
+ktx transcode fatal: Invalid transcode target: "uastc". See 'ktx transcode --help'.

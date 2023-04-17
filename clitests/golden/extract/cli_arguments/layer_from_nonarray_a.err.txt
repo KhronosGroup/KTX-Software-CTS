@@ -1,0 +1,1 @@
+ktx extract fatal: Requested all layers from a non-array texture.

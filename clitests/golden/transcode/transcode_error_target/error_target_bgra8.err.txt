@@ -1,1 +1,1 @@
-ktx transcode fatal: Invalid transcode target: "bgra8".
+ktx transcode fatal: Invalid transcode target: "bgra8". See 'ktx transcode --help'.
