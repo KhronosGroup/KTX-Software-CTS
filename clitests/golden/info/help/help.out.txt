@@ -1,0 +1,15 @@
+ktx info: Prints information about the KTX2 file provided as argument to the stdout.
+
+Usage:
+  ktx info [OPTION...] <input-file>
+
+  -f, --format text|json|mini-json
+                                Specifies the output format. The default format is 'text'.
+                                  text: Human readable text based format
+                                  json: Formatted JSON
+                                  mini-json: Minified JSON (default: text)
+  -s, --stdin                   Use stdin as the input file
+  -h, --help                    Print this usage message and exit
+  -v, --version                 Print the version number of this program and exit
+      --testrun                 Indicates test run. If enabled ktx tools will only include the 
+                                default version information in any output

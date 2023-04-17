@@ -7,12 +7,14 @@ find_package(PythonInterp 3 REQUIRED)
 enable_testing()
 
 set(CASELIST
+    tests/info/help.json
     tests/info/sample_text.json
     tests/info/sample_json.json
     tests/info/sample_mini.json
     tests/info/missing_file.json
     tests/info/invalid_file.json
 
+    tests/validate/help.json
     #tests/validate/valid.json
 
     tests/validate/fatal_1001_FileOpen.json
@@ -268,6 +270,7 @@ set(CASELIST
     tests/create/colorspaces_error_png_transfer_mismatch.json
     tests/create/colorspaces_error_srgb_oetf.json
 
+    tests/encode/help.json
     tests/encode/encode_blze.json
     tests/encode/encode_blze_params.json
     tests/encode/encode_uastc.json
@@ -279,6 +282,7 @@ set(CASELIST
     tests/encode/encode_error_blze_zstd_zlib.json
     tests/encode/encode_error_normal_mode.json
 
+    tests/transcode/help.json
     tests/transcode/transcode_blze.json
     tests/transcode/transcode_uastc.json
     tests/transcode/transcode_zstd.json
