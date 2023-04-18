@@ -1,1 +1,1 @@
-ktx extract fatal: Option `.`unknown`.` does not exist. See 'ktx extract --help'.
+ktx extract fatal: Option 'unknown' does not exist. See 'ktx extract --help'.
