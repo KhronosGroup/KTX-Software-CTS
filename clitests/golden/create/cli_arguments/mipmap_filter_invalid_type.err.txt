@@ -1,0 +1,1 @@
+ktx create fatal: Invalid or unsupported mipmap filter specified as --mipmap-filter argument: "2". See 'ktx create --help'.

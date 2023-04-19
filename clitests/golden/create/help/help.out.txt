@@ -13,9 +13,10 @@ Usage:
       --layers [0-9]+           Number of layers.
       --levels [0-9]+           Number of mip levels.
       --mipmap-runtime          Runtime mipmap generation mode.
-      --mipmap-generate <filtering-options>
-                                Mipmap generation mode followed by filtering options.
-      --encode <codec>          Encode the created KTX file.
+      --mipmap-generate         Causes mipmaps to be generated. When used it enables the use of 
+                                'Generate Mipmap' options. This option is mutually exclusive with 
+                                --mipmap-runtime.
+      --encode <codec>          Encode the created KTX file. Case insensitive.
                                 Possible options are: basis-lz | uastc
       --swizzle [rgba01]{4}     KTX swizzle metadata.
       --input-swizzle [rgba01]{4}
@@ -29,7 +30,7 @@ Usage:
                                 ignoring the color primaries of the input file(s). Case insensitive.
                                 Possible options are: bt709 | srgb | bt601-ebu | bt601-smpte | 
                                 bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
-                                adobergb
+                                adobergb.
       --convert-oetf <oetf>     Convert the input image(s) to the specified transfer function, if 
                                 different from the transfer function of the input file(s). If both 
                                 this and --assign-oetf are specified, convertion will be performed 
@@ -42,7 +43,7 @@ Usage:
                                 specified by --assign-primaries. Case insensitive.
                                 Possible options are: bt709 | srgb | bt601-ebu | bt601-smpte | 
                                 bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
-                                adobergb
+                                adobergb.
       --fail-on-color-conversions
                                 Generates an error if any of the input images would need to be 
                                 color converted.
@@ -150,3 +151,17 @@ Usage:
                          1 if value returned is 0.
       --no-sse           Forbit use of the SSE instruction set. Ignored if CPU does not support 
                          SSE.
+
+ Generate Mipmap options:
+      --mipmap-filter <filter>  Specifies the filter to use when generating the mipmaps. Case 
+                                insensitive.
+                                Possible options are: box | tent | bell | b-spline | mitchell | 
+                                blackman | lanczos3 | lanczos4 | lanczos6 | lanczos12 | kaiser | 
+                                gaussian | catmullrom | quadratic_interp | quadratic_approx | 
+                                quadratic_mix. The default value is lanczos4.
+      --mipmap-filter-scale <float>
+                                The filter scale to use. The default is 1.0.
+      --mipmap-wrap wrap|reflect|clamp
+                                Specify how to sample pixels near the image boundaries. Case 
+                                insensitive. Possible options are: wrap | reflect | clamp. The 
+                                default is clamp.

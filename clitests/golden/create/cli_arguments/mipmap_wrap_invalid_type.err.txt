@@ -1,0 +1,1 @@
+ktx create fatal: Invalid or unsupported mipmap wrap mode specified as --mipmap-wrap argument: "1". See 'ktx create --help'.
