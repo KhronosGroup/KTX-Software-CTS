@@ -1,0 +1,60 @@
+{
+    "description": "Test mipmap generation and filtering.",
+    "command": "ktx create --testrun --mipmap-generate ${flagLevels[flag]} ${flagFilter[flag]} ${flagFilterScale[flag]} ${flagWrap[flag]} --format ${subcase[format]} ${subcase[file]} output/create/mipmap_generate/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/mipmap_generate/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2": "golden/create/mipmap_generate/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2"
+    },
+    "args": {
+        "flagLevels": [
+            { "id": "levels3", "flag": "--levels 3" },
+            { "id": "levels5", "flag": "--levels 5" }
+        ],
+        "flagFilter": [
+            { "id": "lanczos4", "flag": "--mipmap-filter lanczos4" },
+            { "id": "box", "flag": "--mipmap-filter box" }
+        ],
+        "flagFilterScale": [
+            { "id": "scale10", "flag": "--mipmap-filter-scale 1.0" },
+            { "id": "scale09", "flag": "--mipmap-filter-scale 0.9" }
+        ],
+        "flagWrap": [
+            { "id": "wrap", "flag": "--mipmap-wrap wrap" },
+            { "id": "clamp", "flag": "--mipmap-wrap clamp" }
+        ],
+        "subcase": [
+            { "format": "R8_UINT", "file": "input/exr/basic_R_HALF_HDR_16x16.exr" },
+            { "format": "R16_UINT", "file": "input/exr/basic_R_FLOAT_HDR_16x16.exr" },
+            { "format": "R8G8_UINT", "file": "input/exr/basic_RG_HALF_HDR_16x16.exr" },
+            { "format": "R16G16_UINT", "file": "input/exr/basic_RG_FLOAT_HDR_16x16.exr" },
+            { "format": "R8G8B8_UINT", "file": "input/exr/basic_RGB_HALF_HDR_16x16.exr" },
+            { "format": "R16G16B16_UINT", "file": "input/exr/basic_RGB_FLOAT_HDR_16x16.exr" },
+            { "format": "R8G8B8A8_UINT", "file": "input/exr/basic_RGBA_HALF_HDR_16x16.exr" },
+            { "format": "R8G8B8A8_SINT", "file": "input/exr/basic_RGBA_HALF_HDR_16x16.exr" },
+            { "format": "B8G8R8A8_UINT", "file": "input/exr/basic_RGBA_HALF_HDR_16x16.exr" },
+            { "format": "B8G8R8A8_SINT", "file": "input/exr/basic_RGBA_HALF_HDR_16x16.exr" },
+            { "format": "R16G16B16A16_UINT", "file": "input/exr/basic_RGBA_FLOAT_HDR_16x16.exr" },
+            { "format": "R16G16B16A16_SINT", "file": "input/exr/basic_RGBA_FLOAT_HDR_16x16.exr" },
+            { "format": "R16G16B16_SFLOAT", "file": "input/exr/basic_RGB_HALF_HDR_16x16.exr" },
+            { "format": "R16G16B16A16_SFLOAT", "file": "input/exr/basic_RGBA_HALF_HDR_16x16.exr" },
+            { "format": "R32G32B32_SFLOAT", "file": "input/exr/basic_RGB_FLOAT_HDR_16x16.exr" },
+            { "format": "R32G32B32A32_SFLOAT", "file": "input/exr/basic_RGBA_FLOAT_HDR_16x16.exr" },
+
+            { "format": "R8_UNORM", "file": "input/png/basic_RGB8_16x16.png" },
+            { "format": "R8G8_UNORM", "file": "input/png/basic_RGB8_16x16.png" },
+            { "format": "R8G8B8_UNORM", "file": "input/png/basic_RGBA8_16x16.png" },
+            { "format": "R8G8B8A8_UNORM", "file": "input/png/basic_RGBA16_16x16.png" },
+            { "format": "R16G16B16_UNORM", "file": "input/png/basic_RGB16_16x16.png" },
+            { "format": "R16G16B16A16_UNORM", "file": "input/png/basic_RGBA16_16x16.png" },
+            { "format": "R8G8B8_SRGB", "file": "input/png/colorspace_sRGB.png" },
+            { "format": "R8G8B8A8_SRGB", "file": "input/png/colorspace_sRGB.png" },
+            { "format": "ASTC_4x4_UNORM_BLOCK", "file": "input/png/basic_RGBA8_16x16.png" },
+            { "format": "ASTC_4x4_SRGB_BLOCK", "file": "input/png/colorspace_sRGB.png" },
+            { "format": "R4G4_UNORM_PACK8", "file": "input/png/basic_RGB8_16x16.png" },
+            { "format": "R5G6B5_UNORM_PACK16", "file": "input/png/basic_RGB8_16x16.png" },
+            { "format": "B5G6R5_UNORM_PACK16", "file": "input/png/basic_RGB8_16x16.png" },
+            { "format": "A2R10G10B10_UNORM_PACK32", "file": "input/png/basic_RGBA16_16x16.png" },
+            { "format": "A2B10G10R10_UNORM_PACK32", "file": "input/png/basic_RGBA16_16x16.png" }
+        ]
+    }
+}

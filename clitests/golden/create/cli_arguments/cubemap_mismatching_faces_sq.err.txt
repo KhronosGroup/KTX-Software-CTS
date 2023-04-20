@@ -1,2 +1,0 @@
-ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/basic_RGB8_16x16.png", defaulting to KHR_DF_TRANSFER_SRGB.
-ktx create fatal: Input image "input/png/basic_RGB8_16x8.png" with size 16x8 does not match expected size 16x16 for level 0.

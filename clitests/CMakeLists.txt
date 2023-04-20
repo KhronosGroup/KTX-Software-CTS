@@ -179,7 +179,7 @@ set(CASELIST
     tests/validate/error_8110_BLZEDFDMismatchNoAlpha.json
 
     tests/extract/help.json
-    tests/extract/cli_arguments.json
+    tests/extract/cli_errors.json
     tests/extract/raw_all_1d.json
     tests/extract/raw_all_1d_mip.json
     tests/extract/raw_all_1d_array.json
@@ -220,7 +220,7 @@ set(CASELIST
     tests/extract/exr_2d.json
 
     tests/create/help.json
-    tests/create/cli_arguments.json
+    tests/create/cli_errors.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
     tests/create/raw_1d_array_mip.json
@@ -269,6 +269,8 @@ set(CASELIST
     tests/create/colorspaces_error_exr_primaries_mismatch.json
     tests/create/colorspaces_error_png_transfer_mismatch.json
     tests/create/colorspaces_error_srgb_oetf.json
+    tests/create/mipmap_generate.json
+    tests/create/mipmap_runtime.json
 
     tests/encode/help.json
     tests/encode/encode_blze.json

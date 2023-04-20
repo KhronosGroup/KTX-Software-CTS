@@ -13,9 +13,11 @@ Usage:
       --layers [0-9]+           Number of layers.
       --levels [0-9]+           Number of mip levels.
       --mipmap-runtime          Runtime mipmap generation mode.
-      --mipmap-generate         Causes mipmaps to be generated. When used it enables the use of 
-                                'Generate Mipmap' options. This option is mutually exclusive with 
-                                --mipmap-runtime.
+      --mipmap-generate         Causes mipmaps to be generated. It enables the use of 'Generate 
+                                Mipmap' options. If the --levels is not specified the maximum 
+                                possible mip level will be generated. This option is mutually 
+                                exclusive with --mipmap-runtime and cannot be used with UINT or 3D 
+                                textures.
       --encode <codec>          Encode the created KTX file. Case insensitive.
                                 Possible options are: basis-lz | uastc
       --swizzle [rgba01]{4}     KTX swizzle metadata.

@@ -1,0 +1,1 @@
+ktx create fatal: input/exr/basic_RGB_HALF_LDR_16x16.exr: Input file data type "exr_float" does not match the expected input data type of 8 bit "UNORM" for VK_FORMAT_R8_UNORM.

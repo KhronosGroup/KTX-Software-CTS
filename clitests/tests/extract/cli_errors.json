@@ -1,0 +1,40 @@
+{
+    "description": "Test cli argument combinations and incorrect usages.",
+    "command": "ktx extract --testrun ${subcase[flags]}",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/extract/cli_errors/empty.out.txt",
+    "stderr": "golden/extract/cli_errors/${subcase[id]}.err.txt",
+    "args": {
+        "subcase": [
+            { "rc": 1, "id": "missing_input_output", "flags": "" },
+            { "rc": 1, "id": "missing_output", "flags": "input/valid/valid_R8_UNORM_2D.ktx2" },
+            { "rc": 1, "id": "unknown_option", "flags": "--unknown input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 3, "id": "invalid_input", "flags": "input/validate/4002/error_IncorrectLevelOrder_102.ktx2 output" },
+            { "rc": 3, "id": "unsupported_format", "flags": "input/valid/valid_R32G32B32_SINT_2D.ktx2 output" },
+            { "rc": 2, "id": "missing_input_file", "flags": "input/valid/missing_file.ktx2 output" },
+
+            { "rc": 1, "id": "transcode_invalid_xyz", "flags": "--transcode xyz input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 1, "id": "transcode_nonrgba_nonraw", "flags": "--transcode bc7 input/valid/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output" },
+            { "rc": 3, "id": "transcode_nontranscodable", "flags": "--transcode r8 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+
+            { "rc": 1, "id": "all_output_not_a_dir", "flags": "--all input/valid/valid_R8_UNORM_2D.ktx2 input/valid/valid_R8_UNORM_2D.ktx2" },
+
+            { "rc": 1, "id": "all_with_level", "flags": "--all --level 0 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 1, "id": "all_with_layer", "flags": "--all --layer 0 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 1, "id": "all_with_face", "flags": "--all --face 0 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 1, "id": "all_with_depth", "flags": "--all --depth 0 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+
+            { "rc": 3, "id": "over_index_level", "flags": "--level 10 input/valid/valid_R8_UNORM_2D_MIP.ktx2 output" },
+            { "rc": 3, "id": "over_index_layer", "flags": "--layer 10 input/valid/valid_R8_UNORM_2D_ARRAY.ktx2 output" },
+            { "rc": 3, "id": "over_index_face", "flags": "--face 10 input/valid/valid_R8_UNORM_CUBE.ktx2 output" },
+            { "rc": 3, "id": "over_index_depth", "flags": "--depth 10 input/valid/valid_R8_UNORM_3D.ktx2 output" },
+
+            { "rc": 3, "id": "layer_from_nonarray_0", "flags": "--layer 0 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 3, "id": "layer_from_nonarray_a", "flags": "--layer all input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 3, "id": "face_from_noncube_0", "flags": "--face 0 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 3, "id": "face_from_noncube_a", "flags": "--face all input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 3, "id": "depth_from_non3d_0", "flags": "--depth 0 input/valid/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 3, "id": "depth_from_non3d_a", "flags": "--depth all input/valid/valid_R8_UNORM_2D.ktx2 output" }
+        ]
+    }
+}

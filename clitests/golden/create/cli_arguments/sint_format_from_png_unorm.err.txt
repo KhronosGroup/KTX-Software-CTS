@@ -1,2 +1,0 @@
-ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/basic_RGB8_16x16.png", defaulting to KHR_DF_TRANSFER_SRGB.
-ktx create fatal: input/png/basic_RGB8_16x16.png: Input file data type "png_rgb" does not match the expected input data type "SFLOAT" for VK_FORMAT_R8_SINT.
