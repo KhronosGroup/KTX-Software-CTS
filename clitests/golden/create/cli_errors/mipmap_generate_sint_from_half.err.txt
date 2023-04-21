@@ -1,0 +1,1 @@
+ktx create fatal: Mipmap generation for SINT or UINT format VK_FORMAT_R8_SINT is not supported.

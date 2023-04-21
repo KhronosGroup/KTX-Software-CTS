@@ -1,1 +1,0 @@
-ktx create fatal: Mipmap generation for UINT types are not supported.
