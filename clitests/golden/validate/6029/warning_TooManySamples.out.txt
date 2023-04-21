@@ -1,0 +1,8 @@
+Validation failed
+
+warning-6029: Too many BDFD sample. The number of BDFD samples exceeds the validator limit.
+    DFD block #1 sample count in basic DFD block is 20 which exceeds the validator limit of 16. Skipping validation of the last 4 sample(s) (64 byte(s)).
+error-6025: Invalid sample count in basic DFD block. The sample count must match the expected sample count of the VkFormat.
+    DFD block #1 sample count in basic DFD block is 16 but for VkFormat VK_FORMAT_R8G8B8_UNORM it must be 3.
+error-6205: Non-trivial endianness detected in the basic DFD block.
+    DFD block #1 describes non little-endian or unsupported format.

@@ -592,6 +592,7 @@
             "validate/6027/error_ZeroSamples_Unknown_ZSTD_0Sample",
             "validate/6028/error_FormatMismatch_E5B9G9R9_UFLOAT_PACK32",
             "validate/6028/error_FormatMismatch_R8G8B8_UNORM",
+            "validate/6029/warning_TooManySamples",
             "validate/6101/error_InvalidChannelForModel_BC1_Sample0_ChannelType01",
             "validate/6101/error_InvalidChannelForModel_BC1_Sample0_ChannelType02",
             "validate/6101/error_InvalidChannelForModel_BC1_Sample0_ChannelType03",

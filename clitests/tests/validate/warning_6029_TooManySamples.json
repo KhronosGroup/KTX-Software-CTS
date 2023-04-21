@@ -1,0 +1,38 @@
+{
+    "description": "Too many BDFD samples (limit is 16)",
+    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/6029/warning_TooManySamples.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/6029/${warnAsErr[outPrefix]}_TooManySamples.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 3,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}
