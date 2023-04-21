@@ -132,11 +132,6 @@ Descriptor type: 32767
 Version: KHR_DF_VERSIONNUMBER_1_1
 Descriptor block size: 8
 Unknown block
-Vendor ID: KHR_DF_VENDORID_KHRONOS
-Descriptor type: 32767
-Version: KHR_DF_VERSIONNUMBER_1_1
-Descriptor block size: 8
-Unknown block
 
 Key/Value Data
 

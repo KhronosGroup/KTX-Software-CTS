@@ -204,12 +204,6 @@
                 "descriptorType": 32767,
                 "versionNumber": "KHR_DF_VERSIONNUMBER_1_1",
                 "descriptorBlockSize": 8
-            },
-            {
-                "vendorId": "KHR_DF_VENDORID_KHRONOS",
-                "descriptorType": 32767,
-                "versionNumber": "KHR_DF_VERSIONNUMBER_1_1",
-                "descriptorBlockSize": 8
             }
         ]
     },

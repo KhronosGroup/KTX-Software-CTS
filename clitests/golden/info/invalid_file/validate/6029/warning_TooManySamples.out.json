@@ -214,42 +214,6 @@
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 4294967295
-                    },
-                    {
-                        "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
-                        "bitLength": 8,
-                        "bitOffset": 8,
-                        "samplePosition": [0, 0, 0, 0],
-                        "sampleLower": 0,
-                        "sampleUpper": 4294967295
-                    },
-                    {
-                        "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
-                        "bitLength": 8,
-                        "bitOffset": 8,
-                        "samplePosition": [0, 0, 0, 0],
-                        "sampleLower": 0,
-                        "sampleUpper": 4294967295
-                    },
-                    {
-                        "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
-                        "bitLength": 8,
-                        "bitOffset": 8,
-                        "samplePosition": [0, 0, 0, 0],
-                        "sampleLower": 0,
-                        "sampleUpper": 4294967295
-                    },
-                    {
-                        "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
-                        "bitLength": 8,
-                        "bitOffset": 8,
-                        "samplePosition": [0, 0, 0, 0],
-                        "sampleLower": 0,
-                        "sampleUpper": 4294967295
                     }
                 ]
             }
