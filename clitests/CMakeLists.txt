@@ -293,6 +293,9 @@ set(CASELIST
     tests/transcode/transcode_error_invalid.json
     tests/transcode/transcode_error_target.json
     tests/transcode/transcode_error_not_transcodable.json
+
+    tests/help/help.json
+    tests/help/cli_errors.json
 )
 
 set(CASE_REGEN_GOLDEN_OUTPUTS)

@@ -1,0 +1,13 @@
+{
+    "description": "Test cli argument combinations and incorrect usages.",
+    "command": "ktx help --testrun ${subcase[flags]}",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/help/cli_errors/empty.out.txt",
+    "stderr": "golden/help/cli_errors/${subcase[id]}.err.txt",
+    "args": {
+        "subcase": [
+            { "rc": 1, "id": "unknown_option", "flags": "--unknown" },
+            { "rc": 1, "id": "invalid_command", "flags": "invalid" }
+        ]
+    }
+}

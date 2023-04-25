@@ -1,0 +1,9 @@
+ktx help: Display help information about the ktx tool and its commands in a html or man page format.
+
+Usage:
+  ktx help [OPTION...] <command>
+
+  -h, --help     Print this usage message and exit
+  -v, --version  Print the version number of this program and exit
+      --testrun  Indicates test run. If enabled ktx tools will only include the default version 
+                 information in any output
