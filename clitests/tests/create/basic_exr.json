@@ -52,6 +52,15 @@
             { "format": "R16G16B16A16_SINT", "file": "RGBA_FLOAT_LDR_16x16", "ext": ".exr" },
             { "format": "R32G32B32A32_UINT", "file": "RGBA_UINT_16x16", "ext": ".exr" },
 
+            { "format": "A2R10G10B10_UINT_PACK32", "file": "RGBA_HALF_HDR_16x16", "ext": ".exr" },
+            { "format": "A2R10G10B10_UINT_PACK32", "file": "RGBA_HALF_LDR_16x16", "ext": ".exr" },
+            { "format": "A2R10G10B10_SINT_PACK32", "file": "RGBA_HALF_HDR_16x16", "ext": ".exr" },
+            { "format": "A2R10G10B10_SINT_PACK32", "file": "RGBA_HALF_LDR_16x16", "ext": ".exr" },
+            { "format": "A2B10G10R10_UINT_PACK32", "file": "RGBA_HALF_HDR_16x16", "ext": ".exr" },
+            { "format": "A2B10G10R10_UINT_PACK32", "file": "RGBA_HALF_LDR_16x16", "ext": ".exr" },
+            { "format": "A2B10G10R10_SINT_PACK32", "file": "RGBA_HALF_HDR_16x16", "ext": ".exr" },
+            { "format": "A2B10G10R10_SINT_PACK32", "file": "RGBA_HALF_LDR_16x16", "ext": ".exr" },
+
             { "format": "R16_SFLOAT", "file": "R_HALF_HDR_16x16", "ext": ".exr" },
             { "format": "R16_SFLOAT", "file": "R_HALF_LDR_16x16", "ext": ".exr" },
             { "format": "R16G16_SFLOAT", "file": "RG_HALF_HDR_16x16", "ext": ".exr" },
