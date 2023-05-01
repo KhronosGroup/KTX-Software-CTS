@@ -3,21 +3,28 @@ ktx create: Creates a KTX2 file from the given input file(s).
 Usage:
   ktx create [OPTION...] <input-file...> <output-file>
 
-      --format <enum>           KTX format enum. Required. Case insensitive.
-      --1d                      Create a 1D texture.
-      --cubemap                 Create a cubemap texture.
+      --format <enum>           KTX format enum. The enum names are matching the VkFormats without 
+                                the VK_FORMAT_ prefix. If the format is an ASTC formats the ASTC 
+                                encoder specific options become valid, otherwise they are ignored. 
+                                Required. Case insensitive.
+      --1d                      Create a 1D texture. If not set the texture will be a 2D or 3D 
+                                texture.
+      --cubemap                 Create a cubemap texture. If not set the texture will be a 2D or 3D 
+                                texture.
       --raw                     Create from raw image data.
       --width [0-9]+            Base level width in pixels.
       --height [0-9]+           Base level height in pixels.
-      --depth [0-9]+            Base level depth in pixels.
-      --layers [0-9]+           Number of layers.
+      --depth [0-9]+            Base level depth in pixels. If it is greater than 1 the texture 
+                                will be a 3D texture. Defaults to 1.
+      --layers [0-9]+           Number of layers. If it is greater than 1 the texture will be an 
+                                Array texture. Defaults to 1.
       --levels [0-9]+           Number of mip levels.
       --mipmap-runtime          Runtime mipmap generation mode.
-      --mipmap-generate         Causes mipmaps to be generated. It enables the use of 'Generate 
-                                Mipmap' options. If the --levels is not specified the maximum 
-                                possible mip level will be generated. This option is mutually 
-                                exclusive with --mipmap-runtime and cannot be used with UINT or 3D 
-                                textures.
+      --mipmap-generate         Causes mipmaps to be generated during texture creation. It enables 
+                                the use of 'Generate Mipmap' options. If the --levels is not 
+                                specified the maximum possible mip level will be generated. This 
+                                option is mutually exclusive with --mipmap-runtime and cannot be 
+                                used with UINT or 3D textures.
       --encode <codec>          Encode the created KTX file. Case insensitive.
                                 Possible options are: basis-lz | uastc
       --swizzle [rgba01]{4}     KTX swizzle metadata.
@@ -35,7 +42,7 @@ Usage:
                                 adobergb.
       --convert-oetf <oetf>     Convert the input image(s) to the specified transfer function, if 
                                 different from the transfer function of the input file(s). If both 
-                                this and --assign-oetf are specified, convertion will be performed 
+                                this and --assign-oetf are specified, conversion will be performed 
                                 from the assigned transfer function to the transfer function 
                                 specified by this option, if different. Case insensitive.
                                 Possible options are: linear | srgb
@@ -51,16 +58,18 @@ Usage:
                                 color converted.
       --warn-on-color-conversions
                                 Generates a warning if any of the input images are color converted.
-      --zstd <level>            Supercompress the data with Zstandard. Level range is [1,22]. 
-                                Default level is 3.
-      --zlib <level>            Supercompress the data with ZLIB. Level range is [1,9]. Default 
-                                level is 2.
+      --zstd <level>            Supercompress the data with Zstandard. Cannot be used with ETC1S / 
+                                BasisLZ format. Level range is [1,22].
+      --zlib <level>            Supercompress the data with ZLIB. Cannot be used with ETC1S / 
+                                BasisLZ format. Level range is [1,9].
   -h, --help                    Print this usage message and exit
   -v, --version                 Print the version number of this program and exit
       --testrun                 Indicates test run. If enabled ktx tools will only include the 
                                 default version information in any output
 
  Encode ASTC options:
+      --astc-mode ldr | hdr   Specify which encoding mode to use. LDR is the default unless the 
+                              input image is 16-bit in which case the default is HDR.
       --astc-quality <level>  The quality level configures the quality-performance tradeoff for the 
                               compressor; more complete searches of the search space improve image 
                               quality at the expense of compression time. Default is 'medium'. The 
@@ -160,10 +169,9 @@ Usage:
                                 Possible options are: box | tent | bell | b-spline | mitchell | 
                                 blackman | lanczos3 | lanczos4 | lanczos6 | lanczos12 | kaiser | 
                                 gaussian | catmullrom | quadratic_interp | quadratic_approx | 
-                                quadratic_mix. The default value is lanczos4.
+                                quadratic_mix. Defaults to lanczos4.
       --mipmap-filter-scale <float>
-                                The filter scale to use. The default is 1.0.
-      --mipmap-wrap wrap|reflect|clamp
-                                Specify how to sample pixels near the image boundaries. Case 
-                                insensitive. Possible options are: wrap | reflect | clamp. The 
-                                default is clamp.
+                                The filter scale to use. Defaults to 1.0.
+      --mipmap-wrap <mode>      Specify how to sample pixels near the image boundaries. Case 
+                                insensitive.
+                                Possible options are: wrap | reflect | clamp. Defaults to clamp.

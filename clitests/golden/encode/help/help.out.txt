@@ -3,11 +3,13 @@ ktx encode: Encode a KTX2 file.
 Usage:
   ktx encode [OPTION...] <input-file> <output-file>
 
-      --codec <target>  Target codec.
+      --codec <target>  Target codec. With each encoding option the encoder specific options become 
+                        valid, otherwise they are ignored. Case-insensitive.
                         Possible options are: basis-lz | uastc
-      --zstd <level>    Supercompress the data with Zstandard. Level range is [1,22]. Default level 
-                        is 3.
-      --zlib <level>    Supercompress the data with ZLIB. Level range is [1,9]. Default level is 2.
+      --zstd <level>    Supercompress the data with Zstandard. Cannot be used with ETC1S / BasisLZ 
+                        format. Level range is [1,22].
+      --zlib <level>    Supercompress the data with ZLIB. Cannot be used with ETC1S / BasisLZ 
+                        format. Level range is [1,9].
   -s, --stdin           Use stdin as the input file
   -h, --help            Print this usage message and exit
   -v, --version         Print the version number of this program and exit
