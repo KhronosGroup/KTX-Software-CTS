@@ -182,6 +182,13 @@ if __name__ == '__main__':
                 subcase_messages.append(f"Expected return code '{expected_status}' but got '{status}'")
                 subcase_failed = True
 
+            allowMismatchOnMSVC = False
+            if 'allowMismatchOnMSVC' in testcase:
+                if isinstance(testcase['allowMismatchOnMSVC'], str):
+                    allowMismatchOnMSVC = ctx.eval(testcase['allowMismatchOnMSVC'])
+                else:
+                    allowMismatchOnMSVC = testcase['allowMismatchOnMSVC']
+
             output = {
                 'stdout': stdout.decode('utf-8', 'replace').replace("\r\n", "\n"),
                 'stderr': stderr.decode('utf-8', 'replace').replace("\r\n", "\n")
@@ -219,6 +226,8 @@ if __name__ == '__main__':
 
                     if old_output_ref_contains_regex:
                         ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated as it contains a regex"
+                    elif cli_args.msvc and allowMismatchOnMSVC:
+                        ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated on MSVC build as it has MSVC output mismatches allowed"
                     else:
                         os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
                         output_ref_file = open(output_ref_filename, 'w+', newline='\n', encoding='utf-8')
@@ -235,16 +244,19 @@ if __name__ == '__main__':
                 output_ref_file.close()
 
             if not ctx.match(output_ref, output[stdfile]):
-                output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
-                output_file = open(output_filename, 'w+', newline='\n', encoding='utf-8')
-                output_file.write(output[stdfile])
-                output_file.close()
-                if output_ref_filename:
-                    subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")
+                if cli_args.msvc and allowMismatchOnMSVC:
+                    messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{stdfile}' and reference file '{output_ref_filename}'")
                 else:
-                    subcase_messages.append(f"Expected no {stdfile} but {stdfile} is not empty")
-                subcase_messages.append(f"  {stdfile} for subcase is written to '{output_filename}'")
-                subcase_failed = True
+                    output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
+                    output_file = open(output_filename, 'w+', newline='\n', encoding='utf-8')
+                    output_file.write(output[stdfile])
+                    output_file.close()
+                    if output_ref_filename:
+                        subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")
+                    else:
+                        subcase_messages.append(f"Expected no {stdfile} but {stdfile} is not empty")
+                    subcase_messages.append(f"  {stdfile} for subcase is written to '{output_filename}'")
+                    subcase_failed = True
 
 
         # Check output files
@@ -258,7 +270,7 @@ if __name__ == '__main__':
                 if not cmd_failed and cli_args.regen_golden:
                     os.makedirs(os.path.dirname(output_ref), exist_ok=True)
                     if os.path.isfile(output_cur):
-                        if cli_args.msvc and 'allowOutputMismatchOnMSVC' in testcase:
+                        if cli_args.msvc and allowMismatchOnMSVC:
                             ref_not_updated[output_ref] = f"NOTE: reference file '{output_ref}' was not updated on MSVC build as it has MSVC output mismatches allowed"
                         else:
                             shutil.copyfile(output_cur, output_ref)
@@ -278,7 +290,7 @@ if __name__ == '__main__':
                     files_found = False
 
                 if files_found and not filecmp.cmp(output_cur, output_ref, shallow=False):
-                    if cli_args.msvc and 'allowOutputMismatchOnMSVC' in testcase:
+                    if cli_args.msvc and allowMismatchOnMSVC:
                         messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{output_cur}' and reference file '{output_ref}'")
                     else:
                         subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")

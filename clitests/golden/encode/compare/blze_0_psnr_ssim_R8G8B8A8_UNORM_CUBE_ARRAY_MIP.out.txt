@@ -1,0 +1,148 @@
+Level 0 Layer 0 Face 0:
+    SSIM R: +0.983227, G: +0.984060, B: +0.984689, A: +0.985118
+    PSNR: 31.368156
+Level 0 Layer 0 Face 1:
+    SSIM R: +0.983227, G: +0.984060, B: +0.984993, A: +0.985118
+    PSNR: 31.368156
+Level 0 Layer 0 Face 2:
+    SSIM R: +0.983227, G: +0.984060, B: +0.985276, A: +0.985118
+    PSNR: 31.368156
+Level 0 Layer 0 Face 3:
+    SSIM R: +0.983227, G: +0.984060, B: +0.985537, A: +0.985118
+    PSNR: 31.368156
+Level 0 Layer 0 Face 4:
+    SSIM R: +0.983227, G: +0.984060, B: +0.985776, A: +0.985118
+    PSNR: 31.368156
+Level 0 Layer 0 Face 5:
+    SSIM R: +0.983227, G: +0.984060, B: +0.985994, A: +0.985118
+    PSNR: 31.368156
+Level 0 Layer 1 Face 0:
+    SSIM R: +0.983227, G: +0.984369, B: +0.984689, A: +0.985118
+    PSNR: 31.409824
+Level 0 Layer 1 Face 1:
+    SSIM R: +0.983227, G: +0.984369, B: +0.984993, A: +0.985118
+    PSNR: 31.409824
+Level 0 Layer 1 Face 2:
+    SSIM R: +0.983227, G: +0.984369, B: +0.985276, A: +0.985118
+    PSNR: 31.409824
+Level 0 Layer 1 Face 3:
+    SSIM R: +0.983227, G: +0.984369, B: +0.985537, A: +0.985118
+    PSNR: 31.409824
+Level 0 Layer 1 Face 4:
+    SSIM R: +0.983227, G: +0.984369, B: +0.985776, A: +0.985118
+    PSNR: 31.409824
+Level 0 Layer 1 Face 5:
+    SSIM R: +0.983227, G: +0.984369, B: +0.985994, A: +0.985118
+    PSNR: 31.409824
+Level 1 Layer 0 Face 0:
+    SSIM R: +0.955698, G: +0.957168, B: +0.956791, A: +0.943325
+    PSNR: 33.888115
+Level 1 Layer 0 Face 1:
+    SSIM R: +0.955698, G: +0.957168, B: +0.956433, A: +0.943325
+    PSNR: 33.888115
+Level 1 Layer 0 Face 2:
+    SSIM R: +0.955698, G: +0.957168, B: +0.955769, A: +0.943325
+    PSNR: 33.888115
+Level 1 Layer 0 Face 3:
+    SSIM R: +0.955698, G: +0.957168, B: +0.954799, A: +0.943325
+    PSNR: 33.888115
+Level 1 Layer 0 Face 4:
+    SSIM R: +0.955698, G: +0.957168, B: +0.953523, A: +0.943325
+    PSNR: 33.877907
+Level 1 Layer 0 Face 5:
+    SSIM R: +0.955698, G: +0.957168, B: +0.951940, A: +0.943325
+    PSNR: 33.877907
+Level 1 Layer 1 Face 0:
+    SSIM R: +0.955698, G: +0.956773, B: +0.956791, A: +0.943325
+    PSNR: 33.877907
+Level 1 Layer 1 Face 1:
+    SSIM R: +0.955698, G: +0.956773, B: +0.956433, A: +0.943325
+    PSNR: 33.877907
+Level 1 Layer 1 Face 2:
+    SSIM R: +0.955698, G: +0.956773, B: +0.955769, A: +0.943325
+    PSNR: 33.877907
+Level 1 Layer 1 Face 3:
+    SSIM R: +0.955698, G: +0.956773, B: +0.954799, A: +0.943325
+    PSNR: 33.877907
+Level 1 Layer 1 Face 4:
+    SSIM R: +0.955698, G: +0.956773, B: +0.953523, A: +0.943325
+    PSNR: 33.877907
+Level 1 Layer 1 Face 5:
+    SSIM R: +0.955698, G: +0.956773, B: +0.951940, A: +0.943325
+    PSNR: 33.877907
+Level 2 Layer 0 Face 0:
+    SSIM R: +0.954506, G: +0.971494, B: +0.961763, A: +0.993608
+    PSNR: 43.737476
+Level 2 Layer 0 Face 1:
+    SSIM R: +0.954506, G: +0.971494, B: +0.958726, A: +0.993608
+    PSNR: 43.737476
+Level 2 Layer 0 Face 2:
+    SSIM R: +0.954506, G: +0.971494, B: +0.950978, A: +0.993608
+    PSNR: 43.359592
+Level 2 Layer 0 Face 3:
+    SSIM R: +0.933188, G: +0.931881, B: +0.952380, A: +0.993608
+    PSNR: 40.349289
+Level 2 Layer 0 Face 4:
+    SSIM R: +0.933188, G: +0.931881, B: +0.949036, A: +0.993608
+    PSNR: 40.349289
+Level 2 Layer 0 Face 5:
+    SSIM R: +0.933188, G: +0.931881, B: +0.940991, A: +0.993608
+    PSNR: 40.349289
+Level 2 Layer 1 Face 0:
+    SSIM R: +0.954506, G: +0.968150, B: +0.961763, A: +0.993608
+    PSNR: 43.359592
+Level 2 Layer 1 Face 1:
+    SSIM R: +0.954506, G: +0.968150, B: +0.958726, A: +0.993608
+    PSNR: 43.359592
+Level 2 Layer 1 Face 2:
+    SSIM R: +0.933188, G: +0.942929, B: +0.951085, A: +0.993608
+    PSNR: 40.349289
+Level 2 Layer 1 Face 3:
+    SSIM R: +0.933188, G: +0.942929, B: +0.952380, A: +0.993608
+    PSNR: 40.349289
+Level 2 Layer 1 Face 4:
+    SSIM R: +0.933188, G: +0.942929, B: +0.949036, A: +0.993608
+    PSNR: 40.349289
+Level 2 Layer 1 Face 5:
+    SSIM R: +0.933188, G: +0.942929, B: +0.940991, A: +0.993608
+    PSNR: 40.929211
+Level 3 Layer 0 Face 0:
+    SSIM R: +0.419448, G: +1.000000, B: +1.000000, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 0 Face 1:
+    SSIM R: +0.948725, G: +0.619138, B: +0.913062, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 0 Face 2:
+    SSIM R: +0.948725, G: +0.619138, B: +1.000000, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 0 Face 3:
+    SSIM R: +0.948725, G: +0.619138, B: +0.948725, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 0 Face 4:
+    SSIM R: +0.948725, G: +0.619138, B: +0.849071, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 0 Face 5:
+    SSIM R: +0.419448, G: +1.000000, B: +0.985186, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 1 Face 0:
+    SSIM R: +0.948725, G: +0.913062, B: +0.619138, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 1 Face 1:
+    SSIM R: +0.948725, G: +0.913062, B: +0.913062, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 1 Face 2:
+    SSIM R: +0.948725, G: +0.913062, B: +1.000000, A: +1.000000
+    PSNR: 48.130802
+Level 3 Layer 1 Face 3:
+    SSIM R: +0.948725, G: +0.913062, B: +0.948725, A: +1.000000
+    PSNR: 100.000000
+Level 3 Layer 1 Face 4:
+    SSIM R: +0.948725, G: +0.913062, B: +0.849071, A: +1.000000
+    PSNR: 100.000000
+Level 3 Layer 1 Face 5:
+    SSIM R: +0.419448, G: +0.866711, B: +0.985186, A: +1.000000
+    PSNR: 42.110203
+
+Overall:
+    SSIM Avg R: +0.924350, G: +0.929603, B: +0.952544, A: +0.980513
+    PSNR Max: 100.000000

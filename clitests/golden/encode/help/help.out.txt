@@ -6,6 +6,10 @@ Usage:
       --codec <target>  Target codec. With each encoding option the encoder specific options become 
                         valid, otherwise they are ignored. Case-insensitive.
                         Possible options are: basis-lz | uastc
+      --compare-ssim    Calculate encoding structural similarity index measure (SSIM) and print it 
+                        to stdout. Requires Basis-LZ or UASTC encoding.
+      --compare-psnr    Calculate encoding peak signal-to-noise ratio (PSNR) and print it to 
+                        stdout. Requires Basis-LZ or UASTC encoding.
       --zstd <level>    Supercompress the data with Zstandard. Cannot be used with ETC1S / BasisLZ 
                         format. Level range is [1,22].
       --zlib <level>    Supercompress the data with ZLIB. Cannot be used with ETC1S / BasisLZ 

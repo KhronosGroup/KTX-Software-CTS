@@ -1,0 +1,3 @@
+Overall:
+    SSIM Avg R: +0.976309, G: +0.974037
+    PSNR Max: 35.939545

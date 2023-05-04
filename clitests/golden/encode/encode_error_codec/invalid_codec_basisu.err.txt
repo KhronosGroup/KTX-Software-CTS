@@ -1,1 +1,1 @@
-ktx encode fatal: Invalid codec: "basisu".
+ktx encode fatal: Invalid encode codec: "basisu". See 'ktx encode --help'.

@@ -251,6 +251,7 @@ set(CASELIST
     tests/create/encode_error_codec.json
     tests/create/encode_error_format.json
     tests/create/encode_error_blze_zstd_zlib.json
+    tests/create/compare.json
     tests/create/colorspaces_png.json
     tests/create/colorspaces_png_hdr.json
     tests/create/colorspaces_exr.json
@@ -284,6 +285,7 @@ set(CASELIST
     tests/encode/encode_error_blze_input.json
     tests/encode/encode_error_blze_zstd_zlib.json
     tests/encode/encode_error_normal_mode.json
+    tests/encode/compare.json
 
     tests/transcode/help.json
     tests/transcode/transcode_blze.json

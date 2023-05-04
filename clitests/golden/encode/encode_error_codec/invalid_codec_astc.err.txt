@@ -1,1 +1,1 @@
-ktx encode fatal: Invalid codec: "astc".
+ktx encode fatal: Invalid encode codec: "astc". See 'ktx encode --help'.

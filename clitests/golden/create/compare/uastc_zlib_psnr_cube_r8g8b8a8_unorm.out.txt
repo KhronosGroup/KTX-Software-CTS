@@ -1,0 +1,15 @@
+Level 0 Face 0:
+    PSNR: 41.363869
+Level 0 Face 1:
+    PSNR: 41.363869
+Level 0 Face 2:
+    PSNR: 41.363869
+Level 0 Face 3:
+    PSNR: 41.363869
+Level 0 Face 4:
+    PSNR: 41.363869
+Level 0 Face 5:
+    PSNR: 41.363869
+
+Overall:
+    PSNR Max: 41.363869

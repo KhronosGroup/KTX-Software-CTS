@@ -1,0 +1,99 @@
+Level 0 Layer 0 Face 0:
+    PSNR: 41.363869
+Level 0 Layer 0 Face 1:
+    PSNR: 41.363869
+Level 0 Layer 0 Face 2:
+    PSNR: 41.363869
+Level 0 Layer 0 Face 3:
+    PSNR: 41.363869
+Level 0 Layer 0 Face 4:
+    PSNR: 41.363869
+Level 0 Layer 0 Face 5:
+    PSNR: 41.674740
+Level 0 Layer 1 Face 0:
+    PSNR: 41.349606
+Level 0 Layer 1 Face 1:
+    PSNR: 41.349606
+Level 0 Layer 1 Face 2:
+    PSNR: 41.349606
+Level 0 Layer 1 Face 3:
+    PSNR: 41.349606
+Level 0 Layer 1 Face 4:
+    PSNR: 41.349606
+Level 0 Layer 1 Face 5:
+    PSNR: 41.659420
+Level 1 Layer 0 Face 0:
+    PSNR: 42.690125
+Level 1 Layer 0 Face 1:
+    PSNR: 42.690125
+Level 1 Layer 0 Face 2:
+    PSNR: 42.690125
+Level 1 Layer 0 Face 3:
+    PSNR: 42.690125
+Level 1 Layer 0 Face 4:
+    PSNR: 42.613255
+Level 1 Layer 0 Face 5:
+    PSNR: 42.613255
+Level 1 Layer 1 Face 0:
+    PSNR: 42.613255
+Level 1 Layer 1 Face 1:
+    PSNR: 42.613255
+Level 1 Layer 1 Face 2:
+    PSNR: 42.613255
+Level 1 Layer 1 Face 3:
+    PSNR: 42.613255
+Level 1 Layer 1 Face 4:
+    PSNR: 42.613255
+Level 1 Layer 1 Face 5:
+    PSNR: 42.613255
+Level 2 Layer 0 Face 0:
+    PSNR: 100.000000
+Level 2 Layer 0 Face 1:
+    PSNR: 100.000000
+Level 2 Layer 0 Face 2:
+    PSNR: 54.151405
+Level 2 Layer 0 Face 3:
+    PSNR: 54.151405
+Level 2 Layer 0 Face 4:
+    PSNR: 54.151405
+Level 2 Layer 0 Face 5:
+    PSNR: 100.000000
+Level 2 Layer 1 Face 0:
+    PSNR: 54.151405
+Level 2 Layer 1 Face 1:
+    PSNR: 54.151405
+Level 2 Layer 1 Face 2:
+    PSNR: 100.000000
+Level 2 Layer 1 Face 3:
+    PSNR: 100.000000
+Level 2 Layer 1 Face 4:
+    PSNR: 100.000000
+Level 2 Layer 1 Face 5:
+    PSNR: 54.151405
+Level 3 Layer 0 Face 0:
+    PSNR: 100.000000
+Level 3 Layer 0 Face 1:
+    PSNR: 100.000000
+Level 3 Layer 0 Face 2:
+    PSNR: 100.000000
+Level 3 Layer 0 Face 3:
+    PSNR: 100.000000
+Level 3 Layer 0 Face 4:
+    PSNR: 100.000000
+Level 3 Layer 0 Face 5:
+    PSNR: 100.000000
+Level 3 Layer 1 Face 0:
+    PSNR: 100.000000
+Level 3 Layer 1 Face 1:
+    PSNR: 100.000000
+Level 3 Layer 1 Face 2:
+    PSNR: 100.000000
+Level 3 Layer 1 Face 3:
+    PSNR: 100.000000
+Level 3 Layer 1 Face 4:
+    PSNR: 100.000000
+Level 3 Layer 1 Face 5:
+    PSNR: 100.000000
+
+Overall:
+    PSNR Max: 100.000000

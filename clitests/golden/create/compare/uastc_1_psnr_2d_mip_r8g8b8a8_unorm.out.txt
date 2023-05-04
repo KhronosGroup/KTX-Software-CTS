@@ -1,0 +1,7 @@
+Level 0:
+    PSNR: 35.612141
+Level 1:
+    PSNR: 40.727177
+
+Overall:
+    PSNR Max: 40.727177

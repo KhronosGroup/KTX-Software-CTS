@@ -94,7 +94,9 @@
             { "rc": 1, "id": "astc_1d", "flags": "--1d --format VK_FORMAT_ASTC_4x4_UNORM_BLOCK input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "encode_invalid", "flags": "--encode astc --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "blze_disallowed_format", "flags": "--encode basis-lz --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
-            { "rc": 1, "id": "uastc_disallowed_format", "flags": "--encode uastc --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" }
+            { "rc": 1, "id": "uastc_disallowed_format", "flags": "--encode uastc --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
+            { "rc": 1, "id": "non_encode_compare_ssim", "flags": "--compare-ssim --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
+            { "rc": 1, "id": "non_encode_compare_psnr", "flags": "--compare-psnr --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" }
         ]
     }
 }

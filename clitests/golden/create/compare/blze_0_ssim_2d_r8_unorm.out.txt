@@ -1,0 +1,2 @@
+Overall:
+    SSIM Avg R: +0.966139

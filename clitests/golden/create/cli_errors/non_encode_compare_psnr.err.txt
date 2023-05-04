@@ -1,0 +1,1 @@
+ktx create fatal: --compare-psnr can only be used with BasisLZ or UASTC encoding. See 'ktx create --help'.

@@ -1,0 +1,34 @@
+{
+    "description": "Test --compare-ssim and --compare-psnr.",
+    "command": "ktx create --testrun --threads 1 ${encode[flag]} ${compare[flag]} ${create[flag]} output/create/compare/output_${encode[id]}_${compare[id]}_${create[id]}.ktx2",
+    "status": 0,
+    "allowMismatchOnMSVC": "${encode[allowMismatchOnMSVC]}",
+    "stdout": "golden/create/compare/${encode[id]}_${compare[id]}_${create[id]}.out.txt",
+    "stderr": "golden/create/compare/empty.err.txt",
+    "args": {
+        "encode": [
+            { "allowMismatchOnMSVC": 0, "id": "uastc_0", "flag": "--encode uastc"},
+            { "allowMismatchOnMSVC": 0, "id": "uastc_1", "flag": "--encode uastc --uastc-rdo --uastc-rdo-m --uastc-quality 0 --uastc-rdo-f --uastc-rdo-d 3000 --zlib 8 --uastc-rdo-s 0.01"},
+            { "allowMismatchOnMSVC": 0, "id": "uastc_zlib", "flag": "--encode uastc --zlib 5"},
+            { "allowMismatchOnMSVC": 1, "id": "blze_0", "flag": "--encode basis-lz"},
+            { "allowMismatchOnMSVC": 1, "id": "blze_1", "flag": "--encode basis-lz --clevel 2 --qlevel 16 --no-sse"},
+            { "allowMismatchOnMSVC": 1, "id": "blze_2", "flag": "--encode basis-lz --clevel 1 --qlevel 200"}
+        ],
+        "compare": [
+            { "id": "ssim", "flag": "--compare-ssim" },
+            { "id": "psnr", "flag": "--compare-psnr" },
+            { "id": "psnr_ssim", "flag": "--compare-psnr --compare-ssim" }
+        ],
+        "create": [
+            { "id": "2d_r8_unorm", "flag": "--format r8_unorm --raw --width 8 --height 8 input/raw/raw_R8_UNORM_2D_8x8.raw" },
+            { "id": "2d_r8g8_unorm", "flag": "--format r8g8_unorm --raw --width 8 --height 8 input/raw/raw_R8G8_UNORM_2D_8x8.raw" },
+            { "id": "2d_r8g8b8_unorm", "flag": "--format r8g8b8_unorm --raw --width 8 --height 8 input/raw/raw_R8G8B8_UNORM_2D_8x8.raw" },
+            { "id": "2d_r8g8b8a8_unorm", "flag": "--format r8g8b8a8_unorm --raw --width 8 --height 8 input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" },
+            { "id": "2d_r8g8b8a8_srgb", "flag": "--format r8g8b8a8_srgb --raw --width 8 --height 8 input/raw/raw_R8G8B8A8_SRGB_2D_8x8.raw" },
+            { "id": "2d_array_r8g8b8a8_unorm", "flag": "--format r8g8b8a8_unorm --raw --width 8 --height 8 --layers 2 input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" },
+            { "id": "2d_mip_r8g8b8a8_unorm", "flag": "--format r8g8b8a8_unorm --raw --width 8 --height 8 --levels 2 input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_4x4.raw" },
+            { "id": "3d_r8g8b8a8_unorm", "flag": "--format r8g8b8a8_unorm --raw --width 8 --height 8 --depth 2 input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" },
+            { "id": "cube_r8g8b8a8_unorm", "flag": "--format r8g8b8a8_unorm --raw --width 8 --height 8 --cubemap input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" }
+        ]
+    }
+}

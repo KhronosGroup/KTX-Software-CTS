@@ -1,0 +1,7 @@
+Level 0 Depth 0:
+    PSNR: 31.368156
+Level 0 Depth 1:
+    PSNR: 31.368156
+
+Overall:
+    PSNR Max: 31.368156
