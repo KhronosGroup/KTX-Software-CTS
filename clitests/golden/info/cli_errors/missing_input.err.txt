@@ -1,0 +1,1 @@
+ktx info fatal: Missing input file. Either <input-file> or --stdin must be specified. See 'ktx info --help'.

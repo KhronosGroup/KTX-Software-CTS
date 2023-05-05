@@ -1,0 +1,1 @@
+ktx validate fatal: Unsupported format: "invalid". See 'ktx validate --help'.

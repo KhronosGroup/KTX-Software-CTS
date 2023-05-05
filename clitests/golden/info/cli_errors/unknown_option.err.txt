@@ -1,0 +1,1 @@
+ktx info fatal: Option 'unknown' does not exist. See 'ktx info --help'.

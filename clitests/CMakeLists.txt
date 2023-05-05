@@ -7,15 +7,19 @@ find_package(PythonInterp 3 REQUIRED)
 enable_testing()
 
 set(CASELIST
+    tests/tools/help.json
+    tests/tools/cli_errors.json
+
     tests/info/help.json
     tests/info/sample_text.json
     tests/info/sample_json.json
     tests/info/sample_mini.json
     tests/info/missing_file.json
     tests/info/invalid_file.json
+    tests/info/cli_errors.json
 
     tests/validate/help.json
-    #tests/validate/valid.json
+    tests/validate/cli_errors.json
 
     tests/validate/fatal_1001_FileOpen.json
     tests/validate/fatal_1003_UnexpectedEOF.json

@@ -1,0 +1,13 @@
+{
+    "description": "Test cli argument combinations and usage.",
+    "command": "ktx --testrun ${subcase[flags]}",
+    "status": 0,
+    "stdout": "golden/tools/help/${subcase[out]}.out.txt",
+    "stderr": "golden/tools/help/empty.err.txt",
+    "args": {
+        "subcase": [
+            { "out": "help", "flags": "--help" },
+            { "out": "version", "flags": "--version" }
+        ]
+    }
+}

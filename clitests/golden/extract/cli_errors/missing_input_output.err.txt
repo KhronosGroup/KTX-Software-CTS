@@ -1,1 +1,1 @@
-ktx extract fatal: Missing input file. Either <input-file> or <stdin> must be specified. See 'ktx extract --help'.
+ktx extract fatal: Missing input file. Either <input-file> or --stdin must be specified. See 'ktx extract --help'.

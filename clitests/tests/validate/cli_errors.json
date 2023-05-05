@@ -1,0 +1,14 @@
+{
+    "description": "Test cli argument combinations and incorrect usages.",
+    "command": "ktx validate --testrun ${subcase[flags]}",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/validate/cli_errors/empty.out.txt",
+    "stderr": "golden/validate/cli_errors/${subcase[id]}.err.txt",
+    "args": {
+        "subcase": [
+            { "rc": 1, "id": "missing_input", "flags": "" },
+            { "rc": 1, "id": "invalid_format", "flags": "--format invalid input/valid/valid_R8G8B8A8_UNORM_2D.ktx2" },
+            { "rc": 1, "id": "unknown_option", "flags": "--unknown input/valid/valid_R8G8B8A8_UNORM_2D.ktx2" }
+        ]
+    }
+}

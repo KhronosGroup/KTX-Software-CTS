@@ -1,0 +1,21 @@
+ktx: Unrecognized command: "--unknown"
+
+Usage:
+  ktx [--version] [--help] <command> <command-args>
+
+  -h, --help     Print this usage message and exit
+  -v, --version  Print the version number of this program and exit
+      --testrun  Indicates test run. If enabled ktx tools will only include the default version 
+                 information in any output
+
+Available commands:
+  create     Create a KTX2 file from various input files
+  extract    Export selected images from a KTX2 file
+  encode     Encode a KTX2 file
+  transcode  Transcode a KTX2 file
+  info       Prints information about a KTX2 file
+  validate   Validate a KTX2 file
+  help       Display help information about the ktx tools
+
+For detailed usage and description of each subcommand use 'ktx help <command>'
+or 'ktx <command> --help'
