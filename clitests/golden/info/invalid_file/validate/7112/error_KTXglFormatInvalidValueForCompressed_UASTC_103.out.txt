@@ -54,7 +54,7 @@ Sample 0:
 Key/Value Data
 
 KTXglFormat:
-    glInternalformat: 1
-    glFormat: 0
-    glType: 3
+    glInternalformat: 0x00000001
+    glFormat: 0x00000000
+    glType: 0x00000003
 KTXwriter: Unidentified app / libktx 
