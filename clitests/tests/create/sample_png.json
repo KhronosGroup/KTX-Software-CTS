@@ -1,6 +1,6 @@
 {
     "description": "Test create with the sample PNG input files.",
-    "command": "ktx create --testrun --format ${subcase[format]} ../../srcimages/${subcase[file]}${subcase[ext]} output/create/sample_png/${subcase[file]}_${subcase[format]}.ktx2",
+    "command": "ktx create --testrun --format ${subcase[format]} input/png_sample/${subcase[file]}${subcase[ext]} output/create/sample_png/${subcase[file]}_${subcase[format]}.ktx2",
     "status": 0,
     "outputs": {
         "output/create/sample_png/${subcase[file]}_${subcase[format]}.ktx2": "golden/create/sample_png/${subcase[file]}_${subcase[format]}.ktx2"

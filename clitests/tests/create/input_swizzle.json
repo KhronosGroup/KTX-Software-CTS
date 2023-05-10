@@ -1,9 +1,9 @@
 {
     "description": "Test texture creation with --input-swizzle.",
-    "command": "ktx create --testrun ${swizzle[flag]} --format ${subcase[format]} ../../srcimages/${subcase[file]}${subcase[ext]} output/create/input_swizzle/${subcase[file]}_${subcase[format]}${swizzle[name]}.ktx2",
+    "command": "ktx create --testrun ${swizzle[flag]} --format ${subcase[format]} ${subcase[file]}${subcase[ext]} output/create/input_swizzle/${subcase[id]}_${subcase[format]}${swizzle[name]}.ktx2",
     "status": 0,
     "outputs": {
-        "output/create/input_swizzle/${subcase[file]}_${subcase[format]}${swizzle[name]}.ktx2": "golden/create/input_swizzle/${subcase[file]}_${subcase[format]}${swizzle[name]}.ktx2"
+        "output/create/input_swizzle/${subcase[id]}_${subcase[format]}${swizzle[name]}.ktx2": "golden/create/input_swizzle/${subcase[id]}_${subcase[format]}${swizzle[name]}.ktx2"
     },
     "args": {
         "swizzle": [
@@ -17,13 +17,15 @@
             { "flag": "--input-swizzle aaaa", "name": "_aaaa" }
         ],
         "subcase": [
-            { "format": "R8_UNORM", "file": "red16", "ext": ".png" },
-            { "format": "R8G8_UNORM", "file": "red16", "ext": ".png" },
-            { "format": "R8G8B8_UNORM", "file": "red16", "ext": ".png" },
-            { "format": "R8G8B8A8_UNORM", "file": "red16", "ext": ".png" },
-            { "format": "R8G8B8A8_UNORM", "file": "green16", "ext": ".png" },
-            { "format": "R8G8B8A8_UNORM", "file": "blue16", "ext": ".png" },
-            { "format": "R8G8B8A8_UNORM", "file": "alpha_simple", "ext": ".png" }
+            { "id": "red16", "format": "R8_UNORM", "file": "input/png_sample/red16", "ext": ".png" },
+            { "id": "red16", "format": "R8G8_UNORM", "file": "input/png_sample/red16", "ext": ".png" },
+            { "id": "red16", "format": "R8G8B8_UNORM", "file": "input/png_sample/red16", "ext": ".png" },
+            { "id": "red16", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/red16", "ext": ".png" },
+            { "id": "green16", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/green16", "ext": ".png" },
+            { "id": "blue16", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/blue16", "ext": ".png" },
+            { "id": "alpha_simple", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/alpha_simple", "ext": ".png" },
+            { "id": "basic_RGBA8_16x16", "format": "R8G8B8A8_UNORM", "file": "input/png/basic_RGBA8_16x16", "ext": ".png" },
+            { "id": "basic_RGBA16_16x16", "format": "R16G16B16A16_UNORM", "file": "input/png/basic_RGBA16_16x16", "ext": ".png" }
         ]
     }
 }
