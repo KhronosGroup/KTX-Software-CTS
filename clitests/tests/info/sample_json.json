@@ -1,6 +1,6 @@
 {
     "description": "Sample ktx info positive tests",
-    "command": "ktx info --format json ../../testimages/${file}.ktx2",
+    "command": "ktx info --format json input/ktx2_sample/${file}.ktx2",
     "status": 0,
     "stdout": "golden/info/${file}.out.json",
     "args": {
