@@ -5,8 +5,8 @@ Usage:
 
   -h, --help     Print this usage message and exit
   -v, --version  Print the version number of this program and exit
-      --testrun  Indicates test run. If enabled ktx tools will only include the default version 
-                 information in any output
+      --testrun  Indicates test run. If enabled the tool will produce deterministic output whenever 
+                 possible
 
 Available commands:
   create     Create a KTX2 file from various input files

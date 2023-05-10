@@ -6,7 +6,8 @@ Usage:
       --format <enum>           KTX format enum. The enum names are matching the VkFormats without 
                                 the VK_FORMAT_ prefix. If the format is an ASTC formats the ASTC 
                                 encoder specific options become valid, otherwise they are ignored. 
-                                Required. Case insensitive.
+                                Required. The VK_FORMAT_ prefix is ignored if present. Case 
+                                insensitive.
       --1d                      Create a 1D texture. If not set the texture will be a 2D or 3D 
                                 texture.
       --cubemap                 Create a cubemap texture. If not set the texture will be a 2D or 3D 
@@ -68,8 +69,8 @@ Usage:
                                 BasisLZ format. Level range is [1,9].
   -h, --help                    Print this usage message and exit
   -v, --version                 Print the version number of this program and exit
-      --testrun                 Indicates test run. If enabled ktx tools will only include the 
-                                default version information in any output
+      --testrun                 Indicates test run. If enabled the tool will produce deterministic 
+                                output whenever possible
 
  Encode ASTC options:
       --astc-mode ldr | hdr   Specify which encoding mode to use. LDR is the default unless the 
