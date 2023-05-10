@@ -2,7 +2,7 @@
     "description": "Missing files must be handled with grace.",
     "command": "ktx info ${format[args]} input/info/${subcase}.ktx2",
     "status": 2,
-    "stdout": "golden/info/empty.txt",
+    "stdout": "golden/info/missing_file/empty.txt",
     "stderr": "golden/info/missing_file/${subcase}.err",
     "args": {
         "format": [

@@ -11,9 +11,7 @@ set(CASELIST
     tests/tools/cli_errors.json
 
     tests/info/help.json
-    tests/info/sample_text.json
-    tests/info/sample_json.json
-    tests/info/sample_mini.json
+    tests/info/sample.json
     tests/info/missing_file.json
     tests/info/invalid_file.json
     tests/info/cli_errors.json
