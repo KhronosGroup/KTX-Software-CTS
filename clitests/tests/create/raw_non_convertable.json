@@ -1,0 +1,15 @@
+{
+    "description": "Test creation of textures with raw input files with formats that are non-convertable.",
+    "command": "ktx create --testrun --raw --format ${subcase} --width 8 --height 8 --depth 1 --levels 1 --layers 1 input/raw/raw_ASTC_4x4_UNORM_BLOCK_2D_8x8.raw output/create/raw_non_convertable/output_${subcase}_2D.ktx2",
+    "comment": "The raw input files are used as dummy data and they don't match the target formats only their size.",
+    "status": 0,
+    "outputs": {
+        "output/create/raw_non_convertable/output_${subcase}_2D.ktx2": "golden/create/raw_non_convertable/output_${subcase}_2D.ktx2"
+    },
+    "args": {
+        "subcase": [
+            "BC5_UNORM_BLOCK",
+            "BC5_SNORM_BLOCK"
+        ]
+    }
+}
