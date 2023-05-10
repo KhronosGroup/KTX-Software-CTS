@@ -1,1 +1,1 @@
-ktx extract fatal: Could not open input file "input/valid/missing_file.ktx2": `.+`
+ktx extract fatal: Could not open input file "input/ktx2/missing_file.ktx2": `.+`

@@ -1,6 +1,6 @@
 {
     "description": "Test UASTC transcoding.",
-    "command": "ktx transcode --testrun ${transcode[flag]} input/valid/valid_${subcase}_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.ktx2",
+    "command": "ktx transcode --testrun ${transcode[flag]} input/ktx2/valid_${subcase}_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.ktx2",
     "status": 0,
     "outputs": {
         "output/transcode/transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.ktx2": "golden/transcode/transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.ktx2"

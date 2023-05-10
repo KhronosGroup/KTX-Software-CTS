@@ -1,6 +1,6 @@
 {
     "description": "Test that --normal-mode fails if non-linear input is provided.",
-    "command": "ktx encode --codec ${codec} --normal-mode input/valid/valid_${subcase}.ktx2 output/encode/encode_error_normal_mode/output_${subcase}.ktx2",
+    "command": "ktx encode --codec ${codec} --normal-mode input/ktx2/valid_${subcase}.ktx2 output/encode/encode_error_normal_mode/output_${subcase}.ktx2",
     "status": 3,
     "stderr": "golden/encode/encode_error_normal_mode/common.err.txt",
     "args": {

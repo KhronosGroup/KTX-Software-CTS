@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from 1D Array Mip textures to raw output files with fully specifying the images with --level, --layer, --face and --depth.",
-    "command": "ktx extract --raw ${select[flags]} input/valid/valid_${subcase}.ktx2 output/extract/raw_select_1d_array_mip/output_${subcase}/output${select[id]}.raw",
+    "command": "ktx extract --raw ${select[flags]} input/ktx2/valid_${subcase}.ktx2 output/extract/raw_select_1d_array_mip/output_${subcase}/output${select[id]}.raw",
     "status": 0,
     "outputs": {
         "output/extract/raw_select_1d_array_mip/output_${subcase}/output${select[id]}.raw": "golden/extract/raw_select_1d_array_mip/output_${subcase}/output${select[id]}.raw"

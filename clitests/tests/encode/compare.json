@@ -1,6 +1,6 @@
 {
     "description": "Test --compare-ssim and --compare-psnr.",
-    "command": "ktx encode --testrun --threads 1 ${encode[flag]} ${compare[flag]} input/valid/valid_${subcase}.ktx2 output/encode/compare/output_${encode[id]}_${compare[id]}_${subcase}.ktx2",
+    "command": "ktx encode --testrun --threads 1 ${encode[flag]} ${compare[flag]} input/ktx2/valid_${subcase}.ktx2 output/encode/compare/output_${encode[id]}_${compare[id]}_${subcase}.ktx2",
     "status": 0,
     "allowMismatchOnMSVC": "${encode[allowMismatchOnMSVC]}",
     "comment": "BasisLZ compression relies on undefined order of std::unordered_map containers.",

@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from 3D Mip textures to raw output files with --all to export every image.",
-    "command": "ktx extract --raw --all input/valid/valid_${subcase}.ktx2 output/extract/raw_all_3d/output_${subcase}",
+    "command": "ktx extract --raw --all input/ktx2/valid_${subcase}.ktx2 output/extract/raw_all_3d/output_${subcase}",
     "status": 0,
     "outputs": {
         "output/extract/raw_all_3d/output_${subcase}/output_depth0.raw": "golden/extract/raw_all_3d/output_${subcase}/output_depth0.raw",

@@ -1,6 +1,6 @@
 {
     "description": "Test BasisLZ transcoding.",
-    "command": "ktx transcode --testrun ${transcode[flag]} input/valid/valid_${subcase}_2D_BLZE.ktx2 output/transcode/transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.ktx2",
+    "command": "ktx transcode --testrun ${transcode[flag]} input/ktx2/valid_${subcase}_2D_BLZE.ktx2 output/transcode/transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.ktx2",
     "status": 0,
     "outputs": {
         "output/transcode/transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.ktx2": "golden/transcode/transcode_blze/output_${subcase}_2D_BLZE_to_${transcode[id]}.ktx2"

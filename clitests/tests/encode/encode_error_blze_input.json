@@ -1,6 +1,6 @@
 {
     "description": "Test that BasisLZ compressed input is not accepted.",
-    "command": "ktx encode --codec ${codec} input/valid/valid_${subcase}.ktx2 output/encode/encode_error_blze_input/output_${subcase}.ktx2",
+    "command": "ktx encode --codec ${codec} input/ktx2/valid_${subcase}.ktx2 output/encode/encode_error_blze_input/output_${subcase}.ktx2",
     "status": 3,
     "stderr": "golden/encode/encode_error_blze_input/common.err.txt",
     "args": {

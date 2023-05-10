@@ -1,6 +1,6 @@
 {
     "description": "Test transcode with some inputs that are not transcodable.",
-    "command": "ktx transcode ${args} input/valid/valid_${subcase}.ktx2 output/transcode/transcode_error_not_transcodable/output_${subcase}.ktx2",
+    "command": "ktx transcode ${args} input/ktx2/valid_${subcase}.ktx2 output/transcode/transcode_error_not_transcodable/output_${subcase}.ktx2",
     "status": 3,
     "stderr": "golden/transcode/transcode_error_not_transcodable/common.err.txt",
     "args": {

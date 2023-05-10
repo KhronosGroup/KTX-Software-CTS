@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from ZSTD compressed texture.",
-    "command": "ktx extract --raw input/valid/valid_${subcase}_2D_ZSTD${level}.ktx2 output/extract/raw_zstd/output_${subcase}_2D_ZSTD${level}.raw",
+    "command": "ktx extract --raw input/ktx2/valid_${subcase}_2D_ZSTD${level}.ktx2 output/extract/raw_zstd/output_${subcase}_2D_ZSTD${level}.raw",
     "status": 0,
     "outputs": {
         "output/extract/raw_zstd/output_${subcase}_2D_ZSTD${level}.raw": "golden/extract/raw_zstd/output_${subcase}_2D_ZSTD${level}.raw"

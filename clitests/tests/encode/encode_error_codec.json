@@ -1,6 +1,6 @@
 {
     "description": "Test invalid codec argument.",
-    "command": "ktx encode ${select[args]} input/valid/valid_R8G8B8A8_UNORM_2D.ktx2 output/encode/encode_error_codec/output_${select[id]}.ktx2",
+    "command": "ktx encode ${select[args]} input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2 output/encode/encode_error_codec/output_${select[id]}.ktx2",
     "status": 1,
     "stderr": "golden/encode/encode_error_codec/${select[id]}.err.txt",
     "args": {

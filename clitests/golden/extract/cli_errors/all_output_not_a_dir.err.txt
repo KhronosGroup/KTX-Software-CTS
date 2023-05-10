@@ -1,1 +1,1 @@
-ktx extract fatal: Specified output path must be a directory for multi-output extract: "input/valid/valid_R8_UNORM_2D.ktx2". See 'ktx extract --help'.
+ktx extract fatal: Specified output path must be a directory for multi-output extract: "input/ktx2/valid_R8_UNORM_2D.ktx2". See 'ktx extract --help'.

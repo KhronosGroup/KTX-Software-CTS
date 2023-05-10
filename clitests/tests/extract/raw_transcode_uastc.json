@@ -1,6 +1,6 @@
 {
     "description": "Test extraction with --transcode from UASTC textures.",
-    "command": "ktx extract --raw ${transcode[flag]} input/valid/valid_${subcase}_2D_UASTC.ktx2 output/extract/raw_transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.raw",
+    "command": "ktx extract --raw ${transcode[flag]} input/ktx2/valid_${subcase}_2D_UASTC.ktx2 output/extract/raw_transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.raw",
     "status": 0,
     "outputs": {
         "output/extract/raw_transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.raw": "golden/extract/raw_transcode_uastc/output_${subcase}_2D_UASTC_to_${transcode[id]}.raw"
