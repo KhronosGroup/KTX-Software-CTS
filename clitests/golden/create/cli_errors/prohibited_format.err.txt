@@ -1,1 +1,1 @@
-ktx create fatal: The requested format is invalid or unsupported: "R16G16B16A16_SSCALED". See 'ktx create --help'.
+ktx create fatal: The requested VK_FORMAT_R16G16B16A16_SSCALED format is prohibited in KTX files. See 'ktx create --help'.

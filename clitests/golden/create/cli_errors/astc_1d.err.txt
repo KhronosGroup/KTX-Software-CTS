@@ -1,1 +1,1 @@
-ktx create fatal: The requested format is invalid or unsupported: "VK_FORMAT_ASTC_4X4_UNORM_BLOCK". See 'ktx create --help'.
+ktx create fatal: ASTC format VK_FORMAT_ASTC_4x4_UNORM_BLOCK cannot be used for 1 dimensional textures (indicated by --1d). See 'ktx create --help'.
