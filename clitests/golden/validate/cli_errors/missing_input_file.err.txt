@@ -1,0 +1,1 @@
+ktx validate fatal: Could not open input file "input/ktx2/missing_file.ktx2": `.+`

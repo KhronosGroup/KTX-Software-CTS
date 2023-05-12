@@ -1,0 +1,26 @@
+{
+    "description": "Test stdin input for the extract command",
+    "command": "ktx extract --testrun --raw - output/extract/stdin/${file[name]}.raw",
+    "status": 0,
+    "stdin": "${file[dir]}/${file[name]}.ktx2",
+    "stdout": "golden/extract/stdin/empty.txt",
+    "stderr": "golden/extract/stdin/empty.txt",
+    "outputs": {
+        "output/extract/stdin/${file[name]}.raw": "golden/extract/stdin/${file[name]}.raw"
+    },
+    "args": {
+        "file": [
+            { "dir": "input/ktx2_sample", "name": "arraytex_1_reference_u" },
+            { "dir": "input/ktx2_sample", "name": "arraytex_7_mipmap_reference_u" },
+            { "dir": "input/ktx2_sample", "name": "orient-down-metadata-u" },
+            { "dir": "input/ktx2_sample", "name": "skybox" },
+            { "dir": "input/ktx2_sample", "name": "skybox_zstd" },
+
+            { "dir": "input/ktx2", "name": "valid_R8G8B8_SRGB_2D_BLZE" },
+            { "dir": "input/ktx2", "name": "valid_R4G4_UNORM_PACK8_1D_ARRAY_MIP" },
+            { "dir": "input/ktx2", "name": "valid_R32G32B32_UINT_3D_MIP" },
+            { "dir": "input/ktx2", "name": "valid_R32G32B32A32_UINT_CUBE_MIP" },
+            { "dir": "input/ktx2", "name": "valid_X8_D24_UNORM_PACK32_2D_ZSTD_9" }
+        ]
+    }
+}

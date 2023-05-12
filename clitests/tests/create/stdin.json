@@ -1,0 +1,20 @@
+{
+    "description": "Test stdin input for the create command",
+    "command": "ktx create --testrun ${subcase[flag]} output/create/stdin/${subcase[id]}.ktx2",
+    "status": 0,
+    "stdin": "${subcase[stdin]}",
+    "outputs": {
+        "output/create/stdin/${subcase[id]}.ktx2": "golden/create/stdin/${subcase[id]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "id": "png_stdin", "flag": "--format R8G8B8A8_UNORM -", "stdin": "input/png/basic_RGBA16_16x16.png" },
+            { "id": "png_stdin_file", "flag": "--format R8G8B8A8_UNORM --layers 2 - input/png/basic_RGBA16_16x16.png", "stdin": "input/png/basic_RGBA16_16x16.png" },
+            { "id": "png_file_stdin", "flag": "--format R8G8B8A8_UNORM --layers 2 input/png/basic_RGBA16_16x16.png -", "stdin": "input/png/basic_RGBA16_16x16.png" },
+
+            { "id": "raw_stdin", "flag": "--format R8G8B8A8_UNORM --raw --width 8 --height 8 -", "stdin": "input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" },
+            { "id": "raw_stdin_file", "flag": "--format R8G8B8A8_UNORM --raw --width 8 --height 8 --layers 2 - input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw", "stdin": "input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" },
+            { "id": "raw_file_stdin", "flag": "--format R8G8B8A8_UNORM --raw --width 8 --height 8 --layers 2 input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw -", "stdin": "input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" }
+        ]
+    }
+}

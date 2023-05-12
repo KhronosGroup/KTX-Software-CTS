@@ -13,13 +13,13 @@ set(CASELIST
     tests/info/cli_errors.json
     tests/info/help.json
     tests/info/invalid_file.json
-    tests/info/missing_file.json
     tests/info/sample.json
+    tests/info/stdin.json
 
-    tests/validate/help.json
     tests/validate/cli_errors.json
+    tests/validate/help.json
+    tests/validate/stdin.json
 
-    tests/validate/fatal_1001_FileOpen.json
     tests/validate/fatal_1003_UnexpectedEOF.json
     tests/validate/fatal_2001_NotKTX2.json
 
@@ -221,6 +221,7 @@ set(CASELIST
     tests/extract/raw_uastc_zstd.json
     tests/extract/raw_zlib.json
     tests/extract/raw_zstd.json
+    tests/extract/stdin.json
 
     tests/create/3d_with_1_depth.json
     tests/create/array_with_1_layer.json
@@ -278,6 +279,7 @@ set(CASELIST
     tests/create/sample_png.json
     tests/create/sample_zlib.json
     tests/create/sample_zstd.json
+    tests/create/stdin.json
 
     tests/encode/compare.json
     tests/encode/encode_blze.json
@@ -291,8 +293,10 @@ set(CASELIST
     tests/encode/encode_uastc.json
     tests/encode/encode_uastc_params.json
     tests/encode/help.json
+    tests/encode/stdin.json
 
     tests/transcode/help.json
+    tests/transcode/stdin.json
     tests/transcode/transcode_blze.json
     tests/transcode/transcode_error_invalid.json
     tests/transcode/transcode_error_not_transcodable.json

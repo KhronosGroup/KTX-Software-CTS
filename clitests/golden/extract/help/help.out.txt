@@ -21,7 +21,8 @@ Usage:
                             Defaults to 0.
       --all                 Extract every image slice from the texture.
       --raw                 Extract the raw image data without any conversion.
-  -s, --stdin               Use stdin as the input file
+  -s, --stdin               Use stdin as the input file. (Using a single dash '-' as the input file 
+                            has the same effect)
   -h, --help                Print this usage message and exit
   -v, --version             Print the version number of this program and exit
       --testrun             Indicates test run. If enabled the tool will produce deterministic 

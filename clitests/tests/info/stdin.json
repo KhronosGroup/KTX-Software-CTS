@@ -1,0 +1,44 @@
+{
+    "description": "Test stdin input for the info command",
+    "command": "ktx info --testrun ${format[args]} -",
+    "status": 0,
+    "stdin": "${file[dir]}/${file[name]}.ktx2",
+    "stdout": "golden/info/stdin/${file[name]}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "file": [
+            { "dir": "input/ktx2_sample", "name": "arraytex_1_reference_u" },
+            { "dir": "input/ktx2_sample", "name": "arraytex_7_mipmap_reference_u" },
+            { "dir": "input/ktx2_sample", "name": "orient-down-metadata-u" },
+            { "dir": "input/ktx2_sample", "name": "skybox" },
+            { "dir": "input/ktx2_sample", "name": "skybox_zstd" },
+
+            { "dir": "input/ktx2", "name": "valid_R8G8B8_SRGB_2D_BLZE" },
+            { "dir": "input/ktx2", "name": "valid_R4G4_UNORM_PACK8_1D_ARRAY_MIP" },
+            { "dir": "input/ktx2", "name": "valid_R32G32B32_UINT_3D_MIP" },
+            { "dir": "input/ktx2", "name": "valid_R32G32B32A32_UINT_CUBE_MIP" },
+            { "dir": "input/ktx2", "name": "valid_X8_D24_UNORM_PACK32_2D_ZSTD_9" },
+
+            { "dir": "input/validate/3016", "name": "error_TooManyMipLevels_3x5x7" },
+            { "dir": "input/validate/4003", "name": "error_IncorrectByteOffsetUnaligned_RGBA8_L1_minus1" },
+            { "dir": "input/validate/6015", "name": "error_IncorrectModelForRGB_PVRTC" }
+        ]
+    }
+}

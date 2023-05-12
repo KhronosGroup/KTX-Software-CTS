@@ -45,7 +45,9 @@ Optional: If the property is missing then the stdout of the command is not check
 - `stderr (eval-string)`: Filepath for golden stderr file. 
 If there is a mismatch between the golden file and the stderr the test fails.
 Optional: If the property is missing then the stderr of the command is not checked.
-- `outputs (dictionary)`: Key-Value dictionary of every expected output. 
+- `stdin (eval-string)`: Filepath for a file that will be redirected to stdin.
+Optional: If the property is missing then the stdin of the command is not supplied.
+- `outputs (dictionary)`: Key-Value dictionary of every expected output.
 If there is a mismatch between any of the golden and output files the test fails.
 Optional: If the property is missing the output files of the command are not checks.
     - `<key> (eval-string)`: Filepath for a generated output file.
