@@ -32,7 +32,15 @@
             "R8_SINT_2D",
             "R8_SRGB_2D",
             "R8_UINT_2D",
-            "R8_UNORM_2D"
+            "R8_UNORM_2D",
+
+            "D16_UNORM_2D",
+            "D32_SFLOAT_2D",
+            "S8_UINT_2D",
+            "X8_D24_UNORM_PACK32_2D",
+            "D16_UNORM_S8_UINT_2D",
+            "D24_UNORM_S8_UINT_2D",
+            "D32_SFLOAT_S8_UINT_2D"
         ]
     }
 }
