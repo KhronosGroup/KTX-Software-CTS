@@ -1,0 +1,1 @@
+ktx create fatal: '-' or --stdin as input file was specified more than once. See 'ktx create --help'.

@@ -1,0 +1,1 @@
+ktx info fatal: Conflicting options: Only one can be specified from <input-file> and --stdin. See 'ktx info --help'.

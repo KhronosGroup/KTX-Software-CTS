@@ -13,6 +13,8 @@
             { "rc": 1, "id": "prohibited_format", "flags": "--format R16G16B16A16_SSCALED input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "unknown_option", "flags": "--unknown --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 4, "id": "missing_input_file", "flags": "--format R8_UNORM input/png/missing_file.png output.ktx2" },
+            { "rc": 1, "id": "stdin_more_than_once_1", "flags": "--format R8_UNORM --layers 2 --stdin - output.ktx2" },
+            { "rc": 1, "id": "stdin_more_than_once_2", "flags": "--format R8_UNORM --layers 2 - - output.ktx2" },
 
             { "rc": 1, "id": "width0", "flags": "--raw --width 0 --height 8 --format R8_UNORM raw_R8_UNORM_2D_8x8.raw output.ktx2" },
             { "rc": 1, "id": "height0", "flags": "--raw --width 8 --height 0 --format R8_UNORM raw_R8_UNORM_2D_8x8.raw output.ktx2" },

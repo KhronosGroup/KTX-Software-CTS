@@ -12,6 +12,7 @@
             { "rc": 3, "id": "invalid_input", "flags": "input/validate/4002/error_IncorrectLevelOrder_102.ktx2 output" },
             { "rc": 3, "id": "unsupported_format", "flags": "input/ktx2/valid_R32G32B32_SINT_2D.ktx2 output" },
             { "rc": 2, "id": "missing_input_file", "flags": "input/ktx2/missing_file.ktx2 output" },
+            { "rc": 1, "id": "stdin_and_input_file", "flags": "--stdin input/ktx2/valid_R8_UNORM_2D.ktx2 output" },
 
             { "rc": 1, "id": "transcode_invalid_xyz", "flags": "--transcode xyz input/ktx2/valid_R8_UNORM_2D.ktx2 output" },
             { "rc": 1, "id": "transcode_nonrgba_nonraw", "flags": "--transcode bc7 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output" },
