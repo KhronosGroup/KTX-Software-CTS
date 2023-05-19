@@ -1,0 +1,28 @@
+{
+    "description": "Test create with the sample PNG input files with unknown ICC profiles.",
+    "command": "ktx create --testrun --format ${subcase[format]} input/png_sample/${subcase[file]}${subcase[ext]} output/create/sample_png/${subcase[file]}_${subcase[format]}.ktx2",
+    "status": 3,
+    "stderr": "golden/create/colorspaces_error_unknown_icc/${subcase[file]}.err.txt",
+    "args": {
+        "subcase": [
+            { "format": "R16G16B16_UNORM", "file": "test_gimp_AdobeRGB16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_gimp_AdobeRGB8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_gimp_AppleRGB16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_gimp_AppleRGB8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_gimp_ProPhotoRGB16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_gimp_ProPhotoRGB8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_gimp_gimp_BuiltsRGB16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_gimp_gimp_BuiltsRGB8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_gimp_sRGB_IEC61966-2_1_16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_gimp_sRGB_IEC61966-2_1_8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_ps_AdobeRGB16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_ps_AdobeRGB8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_ps_AppleRGB16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_ps_AppleRGB8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_ps_ProPhotoRGB16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_ps_ProPhotoRGB8_100x100", "ext": ".png" },
+            { "format": "R16G16B16_UNORM", "file": "test_ps_sRGB_IEC61966-2_1_16_100x100", "ext": ".png" },
+            { "format": "R8G8B8_UNORM", "file": "test_ps_sRGB_IEC61966-2_1_8_100x100", "ext": ".png" }
+        ]
+    }
+}

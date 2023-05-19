@@ -1,0 +1,22 @@
+{
+    "description": "Test create with the sample EXR input files.",
+    "command": "ktx create --testrun --format ${subcase[format]} input/exr_sample/${subcase[file]}${subcase[ext]} output/create/sample_exr/${subcase[file]}_${subcase[format]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/sample_exr/${subcase[file]}_${subcase[format]}.ktx2": "golden/create/sample_exr/${subcase[file]}_${subcase[format]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "format": "R16G16B16_SFLOAT", "file": "test_gimp_AdobeRGB_HALF_100x100", "ext": ".exr" },
+            { "format": "R32G32B32_SFLOAT", "file": "test_gimp_AdobeRGB_FLOAT_100x100", "ext": ".exr" },
+            { "format": "R16G16B16_SFLOAT", "file": "test_gimp_AppleRGB_HALF_100x100", "ext": ".exr" },
+            { "format": "R32G32B32_SFLOAT", "file": "test_gimp_AppleRGB_1_FLOAT_100x100", "ext": ".exr" },
+            { "format": "R16G16B16_SFLOAT", "file": "test_gimp_ProPhotoRGB_HALF_100x100", "ext": ".exr" },
+            { "format": "R32G32B32_SFLOAT", "file": "test_gimp_ProPhotoRGB_FLOAT_100x100", "ext": ".exr" },
+            { "format": "R16G16B16_SFLOAT", "file": "test_gimp_gimp_BuiltsRGB_HALF_100x100", "ext": ".exr" },
+            { "format": "R32G32B32_SFLOAT", "file": "test_gimp_gimp_BuiltsRGB_FLOAT_100x100", "ext": ".exr" },
+            { "format": "R16G16B16_SFLOAT", "file": "test_gimp_sRGB_IEC61966-2_1_HALF_100x100", "ext": ".exr" },
+            { "format": "R32G32B32_SFLOAT", "file": "test_gimp_sRGB_IEC61966-2_1_FLOAT_100x100", "ext": ".exr" }
+        ]
+    }
+}
