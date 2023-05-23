@@ -1,4 +1,4 @@
-ktx help: Displays the man page of the specified ktx command in html or man format.
+ktx help: Displays the man page of a specific ktx command specified as the command argument.
 
 Usage:
   ktx help [OPTION...] <command>

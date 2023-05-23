@@ -1,4 +1,5 @@
-ktx encode: Encode a KTX2 file.
+ktx encode: Encode the KTX file specified as the input-file argument,
+    optionally supercompress the result, and save it as the output-file.
 
 Usage:
   ktx encode [OPTION...] <input-file> <output-file>
@@ -11,9 +12,12 @@ Usage:
       --compare-psnr    Calculate encoding peak signal-to-noise ratio (PSNR) and print it to 
                         stdout. Requires Basis-LZ or UASTC encoding.
       --zstd <level>    Supercompress the data with Zstandard. Cannot be used with ETC1S / BasisLZ 
-                        format. Level range is [1,22].
+                        format. Level range is [1,22]. Lower levels give faster but worse 
+                        compression. Values above 20 should be used with caution as they require 
+                        more memory.
       --zlib <level>    Supercompress the data with ZLIB. Cannot be used with ETC1S / BasisLZ 
-                        format. Level range is [1,9].
+                        format. Level range is [1,9]. Lower levels give faster but worse 
+                        compression.
   -s, --stdin           Use stdin as the input file
   -h, --help            Print this usage message and exit
   -v, --version         Print the version number of this program and exit
@@ -30,8 +34,8 @@ Usage:
                                 determines values for --max_endpoints, --max-selectors, 
                                 --endpoint_rdo_threshold and --selector_rdo_threshold for the 
                                 target quality level. Setting these options overrides the values 
-                                determined by --qlevel which defaults to 128 if neither it nor both 
-                                of --max_endpoints and --max_selectors have been set.
+                                determined by --qlevel which defaults to 128 if neither it nor 
+                                --max_endpoints and --max_selectors have been set.
       --max-endpoints <arg>     Manually set the maximum number of color endpoint clusters. Range 
                                 is [1,16128]. Default is 0, unset.
       --endpoint-rdo-threshold <arg>
@@ -92,5 +96,5 @@ Usage:
       --threads <count>  Sets the number of threads to use during encoding. By default, encoding 
                          will use the number of threads reported by thread::hardware_concurrency or 
                          1 if value returned is 0.
-      --no-sse           Forbit use of the SSE instruction set. Ignored if CPU does not support 
-                         SSE.
+      --no-sse           Forbid use of the SSE instruction set. Ignored if CPU does not support 
+                         SSE. SSE can only be disabled on the basis-lz and uastc compressors.

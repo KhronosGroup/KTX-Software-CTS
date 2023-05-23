@@ -1,4 +1,5 @@
-ktx create: Creates a KTX2 file from the given input file(s).
+ktx create: Create, encode and supercompress a KTX2 file from the input images specified as the
+    input-file... arguments and save it as the output-file.
 
 Usage:
   ktx create [OPTION...] <input-file...> <output-file>
@@ -64,9 +65,12 @@ Usage:
       --compare-psnr            Calculate encoding peak signal-to-noise ratio (PSNR) and print it 
                                 to stdout. Requires Basis-LZ or UASTC encoding.
       --zstd <level>            Supercompress the data with Zstandard. Cannot be used with ETC1S / 
-                                BasisLZ format. Level range is [1,22].
+                                BasisLZ format. Level range is [1,22]. Lower levels give faster but 
+                                worse compression. Values above 20 should be used with caution as 
+                                they require more memory.
       --zlib <level>            Supercompress the data with ZLIB. Cannot be used with ETC1S / 
-                                BasisLZ format. Level range is [1,9].
+                                BasisLZ format. Level range is [1,9]. Lower levels give faster but 
+                                worse compression.
   -h, --help                    Print this usage message and exit
   -v, --version                 Print the version number of this program and exit
       --testrun                 Indicates test run. If enabled the tool will produce deterministic 
@@ -103,8 +107,8 @@ Usage:
                                 determines values for --max_endpoints, --max-selectors, 
                                 --endpoint_rdo_threshold and --selector_rdo_threshold for the 
                                 target quality level. Setting these options overrides the values 
-                                determined by --qlevel which defaults to 128 if neither it nor both 
-                                of --max_endpoints and --max_selectors have been set.
+                                determined by --qlevel which defaults to 128 if neither it nor 
+                                --max_endpoints and --max_selectors have been set.
       --max-endpoints <arg>     Manually set the maximum number of color endpoint clusters. Range 
                                 is [1,16128]. Default is 0, unset.
       --endpoint-rdo-threshold <arg>
@@ -165,15 +169,15 @@ Usage:
       --threads <count>  Sets the number of threads to use during encoding. By default, encoding 
                          will use the number of threads reported by thread::hardware_concurrency or 
                          1 if value returned is 0.
-      --no-sse           Forbit use of the SSE instruction set. Ignored if CPU does not support 
-                         SSE.
+      --no-sse           Forbid use of the SSE instruction set. Ignored if CPU does not support 
+                         SSE. SSE can only be disabled on the basis-lz and uastc compressors.
 
  Generate Mipmap options:
       --mipmap-filter <filter>  Specifies the filter to use when generating the mipmaps. Case 
                                 insensitive.
                                 Possible options are: box | tent | bell | b-spline | mitchell | 
                                 blackman | lanczos3 | lanczos4 | lanczos6 | lanczos12 | kaiser | 
-                                gaussian | catmullrom | quadratic_interp | quadratic_approx | 
+                                gaussian | catmullrom | quadratic_interp | quadratic_approx |  
                                 quadratic_mix. Defaults to lanczos4.
       --mipmap-filter-scale <float>
                                 The filter scale to use. Defaults to 1.0.

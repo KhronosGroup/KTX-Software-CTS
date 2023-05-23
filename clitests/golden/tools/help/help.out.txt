@@ -10,12 +10,12 @@ Usage:
 
 Available commands:
   create     Create a KTX2 file from various input files
-  extract    Export selected images from a KTX2 file
+  extract    Extract selected images from a KTX2 file
   encode     Encode a KTX2 file
   transcode  Transcode a KTX2 file
-  info       Prints information about a KTX2 file
+  info       Print information about a KTX2 file
   validate   Validate a KTX2 file
-  help       Display help information about the ktx tools
+  help       Display help information about the ktx tool
 
 For detailed usage and description of each subcommand use 'ktx help <command>'
 or 'ktx <command> --help'

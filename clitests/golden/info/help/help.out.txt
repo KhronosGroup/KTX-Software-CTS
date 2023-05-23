@@ -1,10 +1,12 @@
-ktx info: Prints information about the KTX2 file provided as argument to the stdout.
+ktx info: Prints information about the KTX2 file specified as the input-file argument.
+    The command implicitly calls validate and prints any found errors
+    and warnings to stdout.
 
 Usage:
   ktx info [OPTION...] <input-file>
 
   -f, --format text|json|mini-json
-                                Specifies the output format. Possible options are:
+                                Specifies the report output format. Possible options are:
                                   text: Human readable text based format
                                   json: Formatted JSON
                                   mini-json: Minified JSON

@@ -1,15 +1,20 @@
-ktx transcode: Transcode a KTX2 file.
+ktx transcode: Transcode the KTX file specified as the input-file argument,
+    optionally supercompress the result, and save it as the output-file.
 
 Usage:
   ktx transcode [OPTION...] <input-file> <output-file>
 
-      --target <target>  Target transcode format. Case-insensitive.
+      --target <target>  Target transcode format. Block compressed transcode targets can only be 
+                         saved in raw format. Case-insensitive.
                          Possible options are: etc-rgb | etc-rgba | eac-r11 | eac-rg11 | bc1 | bc3 
                          | bc4 | bc5 | bc7 | astc | r8 | rg8 | rgb8 | rgba8
       --zstd <level>     Supercompress the data with Zstandard. Cannot be used with ETC1S / BasisLZ 
-                         format. Level range is [1,22].
+                         format. Level range is [1,22]. Lower levels give faster but worse 
+                         compression. Values above 20 should be used with caution as they require 
+                         more memory.
       --zlib <level>     Supercompress the data with ZLIB. Cannot be used with ETC1S / BasisLZ 
-                         format. Level range is [1,9].
+                         format. Level range is [1,9]. Lower levels give faster but worse 
+                         compression.
   -s, --stdin            Use stdin as the input file
   -h, --help             Print this usage message and exit
   -v, --version          Print the version number of this program and exit
