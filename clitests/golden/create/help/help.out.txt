@@ -51,7 +51,10 @@ Usage:
       --convert-primaries <primaries>
                                 Convert the image image(s) to the specified color primaries, if 
                                 different from the color primaries of the input file(s) or the one 
-                                specified by --assign-primaries. Case insensitive.
+                                specified by --assign-primaries. If both this and 
+                                --assign-primaries are specified, conversion will be performed from 
+                                 the assigned primaries to the primaries specified by this option, 
+                                if different. Case insensitive.
                                 Possible options are: bt709 | srgb | bt601-ebu | bt601-smpte | 
                                 bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
                                 adobergb.

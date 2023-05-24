@@ -7,7 +7,8 @@ Usage:
       --target <target>  Target transcode format. Block compressed transcode targets can only be 
                          saved in raw format. Case-insensitive.
                          Possible options are: etc-rgb | etc-rgba | eac-r11 | eac-rg11 | bc1 | bc3 
-                         | bc4 | bc5 | bc7 | astc | r8 | rg8 | rgb8 | rgba8
+                         | bc4 | bc5 | bc7 | astc | r8 | rg8 | rgb8 | rgba8.
+                         etc-rgb is ETC1; etc-rgba, eac-r11 and eac-rg11 are ETC2.
       --zstd <level>     Supercompress the data with Zstandard. Cannot be used with ETC1S / BasisLZ 
                          format. Level range is [1,22]. Lower levels give faster but worse 
                          compression. Values above 20 should be used with caution as they require 
