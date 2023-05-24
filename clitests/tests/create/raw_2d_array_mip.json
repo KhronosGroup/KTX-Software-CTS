@@ -1,6 +1,6 @@
 {
     "description": "Test creation of 2D Array Mip textures with raw input files.",
-    "command": "ktx create --testrun --raw --format ${subcase} --width 8 --height 8 --depth 1 --levels 2 --layers 2 input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_4x4.raw input/raw/raw_${subcase}_2D_4x4.raw output/create/raw_2d_array_mip/output_${subcase}_2D_ARRAY_MIP.ktx2",
+    "command": "ktx create --testrun --raw --format ${subcase} --width 8 --height 8 --levels 2 --layers 2 input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_4x4.raw input/raw/raw_${subcase}_2D_4x4.raw output/create/raw_2d_array_mip/output_${subcase}_2D_ARRAY_MIP.ktx2",
     "status": 0,
     "outputs": {
         "output/create/raw_2d_array_mip/output_${subcase}_2D_ARRAY_MIP.ktx2": "golden/create/raw_2d_array_mip/output_${subcase}_2D_ARRAY_MIP.ktx2"

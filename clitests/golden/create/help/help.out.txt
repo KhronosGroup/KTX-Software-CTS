@@ -16,10 +16,9 @@ Usage:
       --raw                     Create from raw image data.
       --width [0-9]+            Base level width in pixels.
       --height [0-9]+           Base level height in pixels.
-      --depth [0-9]+            Base level depth in pixels. If it is greater than 1 the texture 
-                                will be a 3D texture. Defaults to 1.
-      --layers [0-9]+           Number of layers. If it is greater than 1 the texture will be an 
-                                Array texture. Defaults to 1.
+      --depth [0-9]+            Base level depth in pixels. If set the texture will be a 3D 
+                                texture.
+      --layers [0-9]+           Number of layers. If set the texture will be an array texture.
       --levels [0-9]+           Number of mip levels.
       --mipmap-runtime          Runtime mipmap generation mode.
       --mipmap-generate         Causes mipmaps to be generated during texture creation. It enables 

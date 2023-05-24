@@ -1,0 +1,1 @@
+ktx create fatal: 3D array texture creation is unsupported. --layers is 1 and --depth is 1. See 'ktx create --help'.

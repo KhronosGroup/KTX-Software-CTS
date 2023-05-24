@@ -1,6 +1,6 @@
 {
     "description": "Test creation of Cube Array textures with raw input files.",
-    "command": "ktx create --testrun --cubemap --raw --format ${subcase} --width 8 --height 8 --depth 1 --levels 1 --layers 2 input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw output/create/raw_cube_array/output_${subcase}_CUBE_ARRAY.ktx2",
+    "command": "ktx create --testrun --cubemap --raw --format ${subcase} --width 8 --height 8 --levels 1 --layers 2 input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw input/raw/raw_${subcase}_2D_8x8.raw output/create/raw_cube_array/output_${subcase}_CUBE_ARRAY.ktx2",
     "status": 0,
     "outputs": {
         "output/create/raw_cube_array/output_${subcase}_CUBE_ARRAY.ktx2": "golden/create/raw_cube_array/output_${subcase}_CUBE_ARRAY.ktx2"

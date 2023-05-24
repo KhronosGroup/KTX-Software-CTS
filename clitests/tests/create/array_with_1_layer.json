@@ -1,0 +1,14 @@
+{
+    "description": "Test creation of array textures with a single layer.",
+    "command": "ktx create --testrun --raw --width 8 --height 8 --layers 1 --format R8_UNORM ${subcase[flag]} output/create/array_with_1_layer/output_${subcase[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/array_with_1_layer/output_${subcase[id]}.ktx2": "golden/create/array_with_1_layer/output_${subcase[id]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "id": "array", "flag": "input/raw/raw_R8_UNORM_2D_8x8.raw" },
+            { "id": "array_mip", "flag": "--levels 2 input/raw/raw_R8_UNORM_2D_8x8.raw  input/raw/raw_R8_UNORM_2D_4x4.raw" }
+        ]
+    }
+}

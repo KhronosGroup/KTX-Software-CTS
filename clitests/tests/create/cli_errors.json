@@ -22,6 +22,7 @@
             { "rc": 1, "id": "1d_but_raw_height_not_1", "flags": "--1d --raw --width 2 --height 2 --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 3, "id": "1d_but_img_height_not_1", "flags": "--1d --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "3d_array", "flags": "--layers 2 --depth 2 --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
+            { "rc": 1, "id": "3d_array_with_1s", "flags": "--layers 1 --depth 1 --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "3d_cube", "flags": "--cubemap --depth 2 --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "raw_without_width", "flags": "--raw --height 16 --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "raw_without_height", "flags": "--raw --width 16 --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },

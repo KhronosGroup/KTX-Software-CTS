@@ -7,14 +7,14 @@ find_package(PythonInterp 3 REQUIRED)
 enable_testing()
 
 set(CASELIST
-    tests/tools/help.json
     tests/tools/cli_errors.json
+    tests/tools/help.json
 
-    tests/info/help.json
-    tests/info/sample.json
-    tests/info/missing_file.json
-    tests/info/invalid_file.json
     tests/info/cli_errors.json
+    tests/info/help.json
+    tests/info/invalid_file.json
+    tests/info/missing_file.json
+    tests/info/sample.json
 
     tests/validate/help.json
     tests/validate/cli_errors.json
@@ -181,49 +181,83 @@ set(CASELIST
     tests/validate/error_8109_BLZEDFDMismatchAlpha.json
     tests/validate/error_8110_BLZEDFDMismatchNoAlpha.json
 
-    tests/extract/help.json
     tests/extract/cli_errors.json
+    tests/extract/exr_2d.json
+    tests/extract/help.json
+    tests/extract/png_2d.json
     tests/extract/raw_all_1d.json
-    tests/extract/raw_all_1d_mip.json
     tests/extract/raw_all_1d_array.json
     tests/extract/raw_all_1d_array_mip.json
+    tests/extract/raw_all_1d_mip.json
     tests/extract/raw_all_2d.json
-    tests/extract/raw_all_2d_mip.json
     tests/extract/raw_all_2d_array.json
     tests/extract/raw_all_2d_array_mip.json
+    tests/extract/raw_all_2d_mip.json
     tests/extract/raw_all_3d.json
     tests/extract/raw_all_3d_mip.json
     tests/extract/raw_all_cube.json
-    tests/extract/raw_all_cube_mip.json
     tests/extract/raw_all_cube_array.json
     tests/extract/raw_all_cube_array_mip.json
+    tests/extract/raw_all_cube_mip.json
     tests/extract/raw_select_1d.json
-    tests/extract/raw_select_1d_mip.json
     tests/extract/raw_select_1d_array.json
     tests/extract/raw_select_1d_array_mip.json
+    tests/extract/raw_select_1d_mip.json
     tests/extract/raw_select_2d.json
-    tests/extract/raw_select_2d_mip.json
     tests/extract/raw_select_2d_array.json
     tests/extract/raw_select_2d_array_mip.json
-    tests/extract/raw_select_cube.json
-    tests/extract/raw_select_cube_mip.json
-    tests/extract/raw_select_cube_array.json
-    tests/extract/raw_select_cube_array_mip.json
+    tests/extract/raw_select_2d_mip.json
     tests/extract/raw_select_3d.json
     tests/extract/raw_select_3d_depthall.json
     tests/extract/raw_select_3d_mip.json
     tests/extract/raw_select_3d_mip_depthall.json
+    tests/extract/raw_select_cube.json
+    tests/extract/raw_select_cube_array.json
+    tests/extract/raw_select_cube_array_mip.json
+    tests/extract/raw_select_cube_mip.json
     tests/extract/raw_transcode_blze.json
     tests/extract/raw_transcode_uastc.json
     tests/extract/raw_uastc_zlib.json
     tests/extract/raw_uastc_zstd.json
     tests/extract/raw_zlib.json
     tests/extract/raw_zstd.json
-    tests/extract/png_2d.json
-    tests/extract/exr_2d.json
 
-    tests/create/help.json
+    tests/create/3d_with_1_depth.json
+    tests/create/array_with_1_layer.json
+    tests/create/basic_exr.json
+    tests/create/basic_png.json
     tests/create/cli_errors.json
+    tests/create/colorspaces_assign_and_convert_oetf_linear.json
+    tests/create/colorspaces_assign_and_convert_oetf_srgb.json
+    tests/create/colorspaces_assign_oetf_linear.json
+    tests/create/colorspaces_assign_oetf_srgb.json
+    tests/create/colorspaces_assign_primaries_exr.json
+    tests/create/colorspaces_assign_primaries_png.json
+    tests/create/colorspaces_combinations.json
+    tests/create/colorspaces_convert_oetf_linear.json
+    tests/create/colorspaces_convert_oetf_srgb.json
+    tests/create/colorspaces_convert_primaries_exr.json
+    tests/create/colorspaces_convert_primaries_png.json
+    tests/create/colorspaces_error_exr_primaries_mismatch.json
+    tests/create/colorspaces_error_png_primaries_mismatch.json
+    tests/create/colorspaces_error_png_transfer_mismatch.json
+    tests/create/colorspaces_error_png_unknown_icc.json
+    tests/create/colorspaces_error_srgb_oetf.json
+    tests/create/colorspaces_exr.json
+    tests/create/colorspaces_png.json
+    tests/create/colorspaces_png_hdr.json
+    tests/create/compare.json
+    tests/create/encode_blze.json
+    tests/create/encode_blze_params.json
+    tests/create/encode_error_blze_zstd_zlib.json
+    tests/create/encode_error_codec.json
+    tests/create/encode_error_format.json
+    tests/create/encode_uastc.json
+    tests/create/encode_uastc_params.json
+    tests/create/help.json
+    tests/create/input_swizzle.json
+    tests/create/mipmap_generate.json
+    tests/create/mipmap_runtime.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
     tests/create/raw_1d_array_mip.json
@@ -232,75 +266,43 @@ set(CASELIST
     tests/create/raw_2d_array.json
     tests/create/raw_2d_array_mip.json
     tests/create/raw_2d_mip.json
+    tests/create/raw_3d.json
+    tests/create/raw_3d_mip.json
     tests/create/raw_cube.json
     tests/create/raw_cube_array.json
     tests/create/raw_cube_array_mip.json
     tests/create/raw_cube_mip.json
-    tests/create/raw_3d.json
-    tests/create/raw_3d_mip.json
     tests/create/raw_non_convertable.json
     tests/create/raw_zlib.json
     tests/create/raw_zstd.json
+    tests/create/sample_png.json
     tests/create/sample_zlib.json
     tests/create/sample_zstd.json
-    tests/create/sample_png.json
-    tests/create/basic_png.json
-    tests/create/basic_exr.json
-    tests/create/input_swizzle.json
-    tests/create/encode_blze.json
-    tests/create/encode_blze_params.json
-    tests/create/encode_uastc.json
-    tests/create/encode_uastc_params.json
-    tests/create/encode_error_codec.json
-    tests/create/encode_error_format.json
-    tests/create/encode_error_blze_zstd_zlib.json
-    tests/create/compare.json
-    tests/create/colorspaces_png.json
-    tests/create/colorspaces_png_hdr.json
-    tests/create/colorspaces_exr.json
-    tests/create/colorspaces_assign_oetf_linear.json
-    tests/create/colorspaces_assign_oetf_srgb.json
-    tests/create/colorspaces_convert_oetf_linear.json
-    tests/create/colorspaces_convert_oetf_srgb.json
-    tests/create/colorspaces_assign_and_convert_oetf_linear.json
-    tests/create/colorspaces_assign_and_convert_oetf_srgb.json
-    tests/create/colorspaces_assign_primaries_png.json
-    tests/create/colorspaces_assign_primaries_exr.json
-    tests/create/colorspaces_convert_primaries_png.json
-    tests/create/colorspaces_convert_primaries_exr.json
-    tests/create/colorspaces_combinations.json
-    tests/create/colorspaces_error_png_unknown_icc.json
-    tests/create/colorspaces_error_png_primaries_mismatch.json
-    tests/create/colorspaces_error_exr_primaries_mismatch.json
-    tests/create/colorspaces_error_png_transfer_mismatch.json
-    tests/create/colorspaces_error_srgb_oetf.json
-    tests/create/mipmap_generate.json
-    tests/create/mipmap_runtime.json
 
-    tests/encode/help.json
+    tests/encode/compare.json
     tests/encode/encode_blze.json
     tests/encode/encode_blze_params.json
-    tests/encode/encode_uastc.json
-    tests/encode/encode_uastc_params.json
-    tests/encode/encode_error_invalid.json
-    tests/encode/encode_error_codec.json
-    tests/encode/encode_error_format.json
     tests/encode/encode_error_blze_input.json
     tests/encode/encode_error_blze_zstd_zlib.json
+    tests/encode/encode_error_codec.json
+    tests/encode/encode_error_format.json
+    tests/encode/encode_error_invalid.json
     tests/encode/encode_error_normal_mode.json
-    tests/encode/compare.json
+    tests/encode/encode_uastc.json
+    tests/encode/encode_uastc_params.json
+    tests/encode/help.json
 
     tests/transcode/help.json
     tests/transcode/transcode_blze.json
-    tests/transcode/transcode_uastc.json
-    tests/transcode/transcode_zstd.json
-    tests/transcode/transcode_zlib.json
     tests/transcode/transcode_error_invalid.json
-    tests/transcode/transcode_error_target.json
     tests/transcode/transcode_error_not_transcodable.json
+    tests/transcode/transcode_error_target.json
+    tests/transcode/transcode_uastc.json
+    tests/transcode/transcode_zlib.json
+    tests/transcode/transcode_zstd.json
 
-    tests/help/help.json
     tests/help/cli_errors.json
+    tests/help/help.json
 )
 
 set(CASE_REGEN_GOLDEN_OUTPUTS)
