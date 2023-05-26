@@ -78,6 +78,11 @@
             { "format": "R32G32B32A32_SFLOAT", "file": "RGBA_FLOAT_HDR_16x16", "ext": ".exr" },
             { "format": "R32G32B32A32_SFLOAT", "file": "RGBA_FLOAT_LDR_16x16", "ext": ".exr" },
 
+            { "format": "B10G11R11_UFLOAT_PACK32", "file": "RGBA_FLOAT_LDR_16x16", "ext": ".exr" },
+            { "format": "B10G11R11_UFLOAT_PACK32", "file": "RGBA_FLOAT_HDR_16x16", "ext": ".exr" },
+            { "format": "E5B9G9R9_UFLOAT_PACK32", "file": "RGBA_FLOAT_LDR_16x16", "ext": ".exr" },
+            { "format": "E5B9G9R9_UFLOAT_PACK32", "file": "RGBA_FLOAT_HDR_16x16", "ext": ".exr" },
+
             { "format": "R16_SFLOAT", "file": "RGBA_HALF_HDR_16x16", "ext": ".exr" },
             { "format": "R16_SFLOAT", "file": "RGBA_HALF_LDR_16x16", "ext": ".exr" },
             { "format": "R16G16_SFLOAT", "file": "RGBA_HALF_HDR_16x16", "ext": ".exr" },
