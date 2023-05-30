@@ -1,4 +1,5 @@
 ktx help: Displays the man page of a specific ktx command specified as the command argument.
+If the command option is missing the main ktx tool man page will be displayed.
 
 Usage:
   ktx help [OPTION...] <command>

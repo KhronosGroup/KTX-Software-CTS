@@ -1,0 +1,13 @@
+{
+    "description": "Test creation of ZSTD compressed textures.",
+    "command": "ktx create --testrun --runtime-mipmap --format ${subcase[format]} ${subcase[file]} output/create/runtime_mipmap/output_${subcase[format]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/runtime_mipmap/output_${subcase[format]}.ktx2": "golden/create/runtime_mipmap/output_${subcase[format]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "format": "R8G8B8A8_UNORM", "file": "input/png/basic_RGBA8_16x16.png" }
+        ]
+    }
+}

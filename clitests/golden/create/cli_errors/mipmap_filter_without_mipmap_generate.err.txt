@@ -1,1 +1,0 @@
-ktx create fatal: Option --mipmap-filter can only be used if --mipmap-generate is set. See 'ktx create --help'.

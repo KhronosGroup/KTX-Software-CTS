@@ -1,1 +1,0 @@
-ktx create fatal: Conflicting options: --mipmap-runtime cannot be used with more than 1 --levels. See 'ktx create --help'.

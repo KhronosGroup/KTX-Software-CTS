@@ -1,1 +1,0 @@
-ktx create fatal: Conflicting options: --mipmap-generate and --mipmap-runtime cannot be used together. See 'ktx create --help'.

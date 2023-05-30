@@ -1,1 +1,0 @@
-ktx create fatal: Mipmap generation for 3D textures is not supported: --mipmap-generate cannot be used with --depth. See 'ktx create --help'.

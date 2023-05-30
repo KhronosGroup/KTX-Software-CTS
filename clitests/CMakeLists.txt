@@ -254,10 +254,9 @@ set(CASELIST
     tests/create/encode_error_format.json
     tests/create/encode_uastc.json
     tests/create/encode_uastc_params.json
+    tests/create/generate_mipmap.json
     tests/create/help.json
     tests/create/input_swizzle.json
-    tests/create/mipmap_generate.json
-    tests/create/mipmap_runtime.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
     tests/create/raw_1d_array_mip.json
@@ -275,6 +274,7 @@ set(CASELIST
     tests/create/raw_non_convertable.json
     tests/create/raw_zlib.json
     tests/create/raw_zstd.json
+    tests/create/runtime_mipmap.json
     tests/create/sample_png.json
     tests/create/sample_zlib.json
     tests/create/sample_zstd.json

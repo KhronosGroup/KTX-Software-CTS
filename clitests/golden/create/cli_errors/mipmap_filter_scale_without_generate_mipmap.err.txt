@@ -1,0 +1,1 @@
+ktx create fatal: Option --mipmap-filter-scale can only be used if --generate-mipmap is set. See 'ktx create --help'.

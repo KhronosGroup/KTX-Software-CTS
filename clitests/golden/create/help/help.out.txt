@@ -20,11 +20,11 @@ Usage:
                                 texture.
       --layers [0-9]+           Number of layers. If set the texture will be an array texture.
       --levels [0-9]+           Number of mip levels.
-      --mipmap-runtime          Runtime mipmap generation mode.
-      --mipmap-generate         Causes mipmaps to be generated during texture creation. It enables 
+      --runtime-mipmap          Runtime mipmap generation mode.
+      --generate-mipmap         Causes mipmaps to be generated during texture creation. It enables 
                                 the use of 'Generate Mipmap' options. If the --levels is not 
                                 specified the maximum possible mip level will be generated. This 
-                                option is mutually exclusive with --mipmap-runtime and cannot be 
+                                option is mutually exclusive with --runtime-mipmap and cannot be 
                                 used with UINT or 3D textures.
       --encode <codec>          Encode the created KTX file. Case insensitive.
                                 Possible options are: basis-lz | uastc
