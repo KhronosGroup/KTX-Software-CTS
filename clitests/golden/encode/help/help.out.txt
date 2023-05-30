@@ -31,11 +31,11 @@ Usage:
       --qlevel <level>          BasisLZ quality level. Range is [1,255]. Lower gives better 
                                 compression/lower quality/faster. Higher gives less 
                                 compression/higher quality/slower. --qlevel automatically 
-                                determines values for --max_endpoints, --max-selectors, 
-                                --endpoint_rdo_threshold and --selector_rdo_threshold for the 
+                                determines values for --max-endpoints, --max-selectors, 
+                                --endpoint-rdo-threshold and --selector-rdo-threshold for the 
                                 target quality level. Setting these options overrides the values 
                                 determined by --qlevel which defaults to 128 if neither it nor 
-                                --max_endpoints and --max_selectors have been set.
+                                --max-endpoints and --max-selectors have been set.
       --max-endpoints <arg>     Manually set the maximum number of color endpoint clusters. Range 
                                 is [1,16128]. Default is 0, unset.
       --endpoint-rdo-threshold <arg>
@@ -91,8 +91,8 @@ Usage:
                              nml.xy = texture(...).ga;              // Load in [0,1]
                              nml.xy = nml.xy * 2.0 - 1.0;           // Unpack to [-1,1]
                              nml.z = sqrt(1 - dot(nml.xy, nml.xy)); // Compute Z
-                         ETC1S encoding, RDO is disabled (no selector RDO, no endpoint RDO) to 
-                         provide better quality.
+                         ETC1S / BasisLZ encoding, RDO is disabled (no selector RDO, no endpoint 
+                         RDO) to provide better quality.
       --threads <count>  Sets the number of threads to use during encoding. By default, encoding 
                          will use the number of threads reported by thread::hardware_concurrency or 
                          1 if value returned is 0.
