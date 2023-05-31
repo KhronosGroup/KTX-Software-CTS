@@ -95,7 +95,13 @@
             "S8_UINT",
             "D16_UNORM_S8_UINT",
             "D24_UNORM_S8_UINT",
-            "D32_SFLOAT_S8_UINT"
+            "D32_SFLOAT_S8_UINT",
+            "R10X6_UNORM_PACK16",
+            "R10X6G10X6_UNORM_2PACK16",
+            "R10X6G10X6B10X6A10X6_UNORM_4PACK16",
+            "R12X4_UNORM_PACK16",
+            "R12X4G12X4_UNORM_2PACK16",
+            "R12X4G12X4B12X4A12X4_UNORM_4PACK16"
         ]
     }
 }

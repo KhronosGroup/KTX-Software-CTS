@@ -31,6 +31,13 @@
             "R8_UINT_2D",
             "R8_UNORM_2D",
 
+            "R10X6_UNORM_PACK16_2D",
+            "R10X6G10X6_UNORM_2PACK16_2D",
+            "R10X6G10X6B10X6A10X6_UNORM_4PACK16_2D",
+            "R12X4_UNORM_PACK16_2D",
+            "R12X4G12X4_UNORM_2PACK16_2D",
+            "R12X4G12X4B12X4A12X4_UNORM_4PACK16_2D",
+
             "D16_UNORM_2D",
             "D32_SFLOAT_2D",
             "S8_UINT_2D",

@@ -300,6 +300,8 @@ if __name__ == '__main__':
         # Handle subcase failure
 
         if subcase_failed:
+            if cli_args.regen_golden:
+                messages.append(f"  {ctx.eval(testcase['command'])}")
             messages.append(f"    Subcase #{subcase_index + 1} FAILED:")
             messages.extend(["      " + msg for msg in subcase_messages])
             messages.append(f"      Run subcase with:")
