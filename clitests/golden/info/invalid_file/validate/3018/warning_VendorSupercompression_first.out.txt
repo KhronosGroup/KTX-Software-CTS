@@ -1,7 +1,7 @@
 Validation successful
 
 warning-3018: Using vendor supercompressionScheme. Cannot validate.
-    supercompressionScheme is Vendor (0x00010000) which falls into the reserved vendor range. Cannot validate.
+    supercompressionScheme is Vendor or reserved scheme (0x00010000) which falls into the reserved vendor range. Cannot validate.
 
 Header
 
@@ -14,7 +14,7 @@ pixelDepth: 0
 layerCount: 0
 faceCount: 1
 levelCount: 1
-supercompressionScheme: Vendor scheme (0x10000)
+supercompressionScheme: Vendor or reserved scheme (0x10000)
 dataFormatDescriptor.byteOffset: 0x68
 dataFormatDescriptor.byteLength: 92
 keyValueData.byteOffset: 0xc4
