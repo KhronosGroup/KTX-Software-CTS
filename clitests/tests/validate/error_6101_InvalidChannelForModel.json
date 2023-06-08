@@ -141,7 +141,17 @@
             "ETC1S_Sample1_ChannelType11",
             "ETC1S_Sample1_ChannelType12",
             "ETC1S_Sample1_ChannelType13",
-            "ETC1S_Sample1_ChannelType14"
+            "ETC1S_Sample1_ChannelType14",
+            "YUVSDA_Sample0_ChannelType04",
+            "YUVSDA_Sample0_ChannelType08",
+            "YUVSDA_Sample0_ChannelType12",
+            "YUVSDA_Sample1_ChannelType05",
+            "YUVSDA_Sample1_ChannelType09",
+            "YUVSDA_Sample2_ChannelType06",
+            "YUVSDA_Sample2_ChannelType10",
+            "YUVSDA_Sample3_ChannelType03",
+            "YUVSDA_Sample3_ChannelType07",
+            "YUVSDA_Sample3_ChannelType11"
         ]
     }
 }

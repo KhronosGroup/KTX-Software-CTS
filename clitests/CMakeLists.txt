@@ -86,7 +86,7 @@ set(CASELIST
     tests/validate/error_6014_BasicNotSRGBMismatch.json
     tests/validate/error_6015_IncorrectModelForRGB.json
     tests/validate/error_6016_IncorrectModelForBlock.json
-    #tests/validate/error_6017_IncorrectModelFor422.json
+    tests/validate/error_6017_IncorrectModelFor422.json
     tests/validate/error_6018_IncorrectModelForBLZE.json
     tests/validate/error_6019_InvalidColorPrimaries.json
     tests/validate/error_6020_InvalidTexelBlockDimension.json

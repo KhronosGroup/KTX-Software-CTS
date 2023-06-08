@@ -1,0 +1,8 @@
+Validation failed
+
+error-6017: Invalid colorModel in basic DFD block for *_422_* VkFormat.
+    DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_BC1A but for VkFormat VK_FORMAT_G8B8G8R8_422_UNORM it must be KHR_DF_MODEL_YUVSDA.
+error-6101: Invalid sample channelType for colorModel in the basic DFD block.
+    DFD block #1 sample #4 channelType in basic DFD block is (0x2) which is not valid for colorModel KHR_DF_MODEL_BC1A.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

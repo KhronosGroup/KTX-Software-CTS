@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 6017,
+            "type": "error",
+            "message": "Invalid colorModel in basic DFD block for *_422_* VkFormat.",
+            "details": "DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_YCCBCCRC but for VkFormat VK_FORMAT_G8B8G8R8_422_UNORM it must be KHR_DF_MODEL_YUVSDA."
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "description": "422 formats must have a matching colorModel",
+    "command": "ktx validate ${format[args]} input/validate/6017/error_IncorrectModelFor422_${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6017/error_IncorrectModelFor422_${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "ASTC",
+            "BC1A",
+            "BC2",
+            "BC3",
+            "BC4",
+            "BC5",
+            "BC6H",
+            "BC7",
+            "CIEXYY",
+            "CIEXYZ",
+            "CMYKA",
+            "ETC1",
+            "ETC1S",
+            "ETC2",
+            "HSLA_ANG",
+            "HSLA_HEX",
+            "HSVA_ANG",
+            "HSVA_HEX",
+            "ICTCP",
+            "LABSDA",
+            "PVRTC",
+            "PVRTC2",
+            "RGBSDA_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16",
+            "RGBSDA_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16",
+            "RGBSDA_B16G16R16G16_422_UNORM",
+            "RGBSDA_B8G8R8G8_422_UNORM",
+            "RGBSDA_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16",
+            "RGBSDA_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16",
+            "RGBSDA_G16B16G16R16_422_UNORM",
+            "RGBSDA_G8B8G8R8_422_UNORM",
+            "UASTC",
+            "UNSPECIFIED",
+            "XYZW",
+            "YCCBCCRC",
+            "YCGCOA",
+            "YIQSDA"
+        ]
+    }
+}

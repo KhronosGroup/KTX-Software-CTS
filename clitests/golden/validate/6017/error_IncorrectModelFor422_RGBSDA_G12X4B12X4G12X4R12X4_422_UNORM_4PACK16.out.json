@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 6017,
+            "type": "error",
+            "message": "Invalid colorModel in basic DFD block for *_422_* VkFormat.",
+            "details": "DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_RGBSDA but for VkFormat VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16 it must be KHR_DF_MODEL_YUVSDA."
+        },
+        {
+            "id": 6204,
+            "type": "error",
+            "message": "Unsupported multiple-sample format. Every sample position must be zero.",
+            "details": "DFD block #1 indicates multiple sample locations but multisample formats are not supported."
+        }
+    ]
+}
