@@ -21,7 +21,10 @@ class SubcaseContext:
     def eval(self, value):
         return self.pattern.sub(lambda m: m.group(1), value.replace('{', '{{').replace('}', '}}')).format(**self.args)
 
-    def match(self, expected, actual):
+    def match(self, expected, actual, disable_regex_match):
+        if disable_regex_match:
+            return expected == actual
+
         expected = self.eval(expected)
         inside_regex = False
         pos = expected.find('`')
@@ -149,6 +152,9 @@ if __name__ == '__main__':
             'stderr': ''
         }
 
+        allowMismatchOnMSVC = False
+        stdoutBinary = False
+
         try:
             cmd_args = [ arg for arg in ctx.eval(testcase['command']).split(' ') if arg ]
             cmd_args[0] = cli_args.executable_path
@@ -182,15 +188,20 @@ if __name__ == '__main__':
                 subcase_messages.append(f"Expected return code '{expected_status}' but got '{status}'")
                 subcase_failed = True
 
-            allowMismatchOnMSVC = False
             if 'allowMismatchOnMSVC' in testcase:
                 if isinstance(testcase['allowMismatchOnMSVC'], str):
                     allowMismatchOnMSVC = ctx.eval(testcase['allowMismatchOnMSVC'])
                 else:
                     allowMismatchOnMSVC = testcase['allowMismatchOnMSVC']
 
+            if 'stdoutBinary' in testcase:
+                if isinstance(testcase['stdoutBinary'], str):
+                    stdoutBinary = ctx.eval(testcase['stdoutBinary'])
+                else:
+                    stdoutBinary = testcase['stdoutBinary']
+
             output = {
-                'stdout': stdout.decode('utf-8', 'replace').replace("\r\n", "\n"),
+                'stdout': stdout if stdoutBinary else stdout.decode('utf-8', 'replace').replace("\r\n", "\n"),
                 'stderr': stderr.decode('utf-8', 'replace').replace("\r\n", "\n")
             }
 
@@ -206,12 +217,12 @@ if __name__ == '__main__':
             cmd_failed = True
             subcase_failed = True
 
-
         # Check stdout/stderr
 
         for stdfile in [ 'stdout', 'stderr' ]:
             output_ref = ''
             output_ref_filename = None
+            stdfileBinary = stdfile == 'stdout' and stdoutBinary
 
             if stdfile in testcase:
                 output_ref_filename = ctx.eval(testcase[stdfile])
@@ -219,10 +230,13 @@ if __name__ == '__main__':
                 if not cmd_failed and cli_args.regen_golden:
                     old_output_ref_contains_regex = False
                     if os.path.isfile(output_ref_filename):
-                        old_output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
+                        if stdfileBinary:
+                            old_output_ref_file = open(output_ref_filename, 'rb')
+                        else:
+                            old_output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
                         old_output_ref = old_output_ref_file.read()
                         old_output_ref_file.close()
-                        old_output_ref_contains_regex = bool(re.findall(r'`.*`', old_output_ref))
+                        old_output_ref_contains_regex = not stdfileBinary and bool(re.findall(r'`.*`', old_output_ref))
 
                     if old_output_ref_contains_regex:
                         ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated as it contains a regex"
@@ -230,7 +244,10 @@ if __name__ == '__main__':
                         ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated on MSVC build as it has MSVC output mismatches allowed"
                     else:
                         os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
-                        output_ref_file = open(output_ref_filename, 'w+', newline='\n', encoding='utf-8')
+                        if stdfileBinary:
+                            output_ref_file = open(output_ref_filename, 'wb')
+                        else:
+                            output_ref_file = open(output_ref_filename, 'w', newline='\n', encoding='utf-8')
                         output_ref_file.write(output[stdfile])
                         output_ref_file.close()
 
@@ -239,16 +256,22 @@ if __name__ == '__main__':
                     subcase_failed = True
                     continue
 
-                output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
+                if stdfileBinary:
+                    output_ref_file = open(output_ref_filename, 'rb')
+                else:
+                    output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
                 output_ref = output_ref_file.read()
                 output_ref_file.close()
 
-            if not ctx.match(output_ref, output[stdfile]):
+            if not ctx.match(output_ref, output[stdfile], stdfileBinary):
                 if cli_args.msvc and allowMismatchOnMSVC:
                     messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{stdfile}' and reference file '{output_ref_filename}'")
                 else:
                     output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
-                    output_file = open(output_filename, 'w+', newline='\n', encoding='utf-8')
+                    if stdfileBinary:
+                        output_file = open(output_filename, 'wb+')
+                    else:
+                        output_file = open(output_filename, 'w+', newline='\n', encoding='utf-8')
                     output_file.write(output[stdfile])
                     output_file.close()
                     if output_ref_filename:

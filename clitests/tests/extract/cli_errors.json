@@ -13,6 +13,11 @@
             { "rc": 3, "id": "unsupported_format", "flags": "input/ktx2/valid_R32G32B32_SINT_2D.ktx2 output" },
             { "rc": 2, "id": "missing_input_file", "flags": "input/ktx2/missing_file.ktx2 output" },
             { "rc": 1, "id": "stdin_and_input_file", "flags": "--stdin input/ktx2/valid_R8_UNORM_2D.ktx2 output" },
+            { "rc": 1, "id": "stdout_for_multioutput0", "flags": "--all input/ktx2/valid_R8_UNORM_2D.ktx2 -" },
+            { "rc": 1, "id": "stdout_for_multioutput1", "flags": "--depth all input/ktx2/valid_R8_UNORM_2D.ktx2 -" },
+            { "rc": 1, "id": "stdout_for_multioutput2", "flags": "--layer all input/ktx2/valid_R8_UNORM_2D.ktx2 -" },
+            { "rc": 1, "id": "stdout_for_multioutput3", "flags": "--face all input/ktx2/valid_R8_UNORM_2D.ktx2 -" },
+            { "rc": 1, "id": "stdout_for_multioutput4", "flags": "--level all input/ktx2/valid_R8_UNORM_2D.ktx2 -" },
 
             { "rc": 1, "id": "transcode_invalid_xyz", "flags": "--transcode xyz input/ktx2/valid_R8_UNORM_2D.ktx2 output" },
             { "rc": 1, "id": "transcode_nonrgba_nonraw", "flags": "--transcode bc7 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output" },

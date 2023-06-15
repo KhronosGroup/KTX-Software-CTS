@@ -4,6 +4,8 @@ ktx extract: Extract one or multiple images from the KTX2 file specified as the 
 Usage:
   ktx extract [OPTION...] <input-file> <output>
 
+      --stdout              Use stdout as the output file. (Using a single dash '-' as the output 
+                            file has the same effect)
       --transcode <target>  Transcode the texture to the target format before executing the extract 
                             steps. Requires the input file to be transcodable. Block compressed 
                             transcode targets can only be saved in raw format. Case-insensitive.
@@ -21,7 +23,7 @@ Usage:
                             Defaults to 0.
       --all                 Extract every image slice from the texture.
       --raw                 Extract the raw image data without any conversion.
-  -s, --stdin               Use stdin as the input file. (Using a single dash '-' as the input file 
+      --stdin               Use stdin as the input file. (Using a single dash '-' as the input file 
                             has the same effect)
   -h, --help                Print this usage message and exit
   -v, --version             Print the version number of this program and exit

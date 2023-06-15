@@ -73,8 +73,10 @@ Usage:
       --zlib <level>            Supercompress the data with ZLIB. Cannot be used with ETC1S / 
                                 BasisLZ format. Level range is [1,9]. Lower levels give faster but 
                                 worse compression.
-  -s, --stdin                   Use stdin as the input file. (Using a single dash '-' as the input 
+      --stdin                   Use stdin as the input file. (Using a single dash '-' as the input 
                                 file has the same effect)
+      --stdout                  Use stdout as the output file. (Using a single dash '-' as the 
+                                output file has the same effect)
   -h, --help                    Print this usage message and exit
   -v, --version                 Print the version number of this program and exit
       --testrun                 Indicates test run. If enabled the tool will produce deterministic 

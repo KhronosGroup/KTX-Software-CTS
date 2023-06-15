@@ -1,0 +1,35 @@
+{
+    "description": "Test stdout input for the extract command",
+    "command": "ktx extract --testrun ${subcase[flag]} -",
+    "status": 0,
+    "stdout": "golden/extract/stdout/${subcase[id]}",
+    "stdoutBinary": true,
+    "stderr": "golden/extract/stdout/empty.txt",
+    "args": {
+        "subcase": [
+            { "flag": "--raw input/ktx2_sample/arraytex_1_reference_u.ktx2", "id": "arraytex_1_reference_u.raw" },
+            { "flag": "--raw input/ktx2_sample/arraytex_7_mipmap_reference_u.ktx2", "id": "arraytex_7_mipmap_reference_u.raw" },
+            { "flag": "--raw input/ktx2_sample/orient-down-metadata-u.ktx2", "id": "orient-down-metadata-u.raw" },
+            { "flag": "--raw input/ktx2_sample/skybox.ktx2", "id": "skybox.raw" },
+            { "flag": "--raw input/ktx2_sample/skybox_zstd.ktx2", "id": "skybox_zstd.raw" },
+
+            { "flag": "--raw input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2", "id": "valid_R8G8B8_SRGB_2D_BLZE.raw" },
+            { "flag": "--raw input/ktx2/valid_R4G4_UNORM_PACK8_1D_ARRAY_MIP.ktx2", "id": "valid_R4G4_UNORM_PACK8_1D_ARRAY_MIP.raw" },
+            { "flag": "--raw input/ktx2/valid_R32G32B32_UINT_3D_MIP.ktx2", "id": "valid_R32G32B32_UINT_3D_MIP.raw" },
+            { "flag": "--raw input/ktx2/valid_R32G32B32A32_UINT_CUBE_MIP.ktx2", "id": "valid_R32G32B32A32_UINT_CUBE_MIP.raw" },
+            { "flag": "--raw input/ktx2/valid_X8_D24_UNORM_PACK32_2D_ZSTD_9.ktx2", "id": "valid_X8_D24_UNORM_PACK32_2D_ZSTD_9.raw" },
+
+            { "flag": "input/ktx2_sample/arraytex_1_reference_u.ktx2", "id": "arraytex_1_reference_u.png" },
+            { "flag": "input/ktx2_sample/arraytex_7_mipmap_reference_u.ktx2", "id": "arraytex_7_mipmap_reference_u.png" },
+            { "flag": "input/ktx2_sample/orient-down-metadata-u.ktx2", "id": "orient-down-metadata-u.png" },
+            { "flag": "input/ktx2_sample/skybox.ktx2", "id": "skybox.exr" },
+            { "flag": "input/ktx2_sample/skybox_zstd.ktx2", "id": "skybox_zstd.exr" },
+
+            { "flag": "input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2", "id": "valid_R8G8B8_SRGB_2D_BLZE.png" },
+            { "flag": "input/ktx2/valid_R4G4_UNORM_PACK8_1D_ARRAY_MIP.ktx2", "id": "valid_R4G4_UNORM_PACK8_1D_ARRAY_MIP.png" },
+            { "flag": "input/ktx2/valid_R32G32B32_UINT_3D_MIP.ktx2", "id": "valid_R32G32B32_UINT_3D_MIP.exr" },
+            { "flag": "input/ktx2/valid_R32G32B32A32_UINT_CUBE_MIP.ktx2", "id": "valid_R32G32B32A32_UINT_CUBE_MIP.exr" },
+            { "flag": "input/ktx2/valid_X8_D24_UNORM_PACK32_2D_ZSTD_9.ktx2", "id": "valid_X8_D24_UNORM_PACK32_2D_ZSTD_9.exr" }
+        ]
+    }
+}

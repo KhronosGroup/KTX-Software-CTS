@@ -1,0 +1,14 @@
+{
+    "description": "Test stdout output for the encode command",
+    "command": "ktx encode --testrun --codec uastc ${subcase[flag]} -",
+    "status": 0,
+    "stdout": "golden/encode/stdout/${subcase[id]}.ktx2",
+    "stdoutBinary": true,
+    "args": {
+        "subcase": [
+            { "id": "orient-down-metadata-u", "flag": "input/ktx2_sample/orient-down-metadata-u.ktx2" },
+            { "id": "valid_R8G8B8_UNORM_1D_ARRAY", "flag": "input/ktx2/valid_R8G8B8_UNORM_1D_ARRAY.ktx2" },
+            { "id": "valid_R8G8B8A8_UNORM_3D_MIP", "flag": "input/ktx2/valid_R8G8B8A8_UNORM_3D_MIP.ktx2" }
+        ]
+    }
+}

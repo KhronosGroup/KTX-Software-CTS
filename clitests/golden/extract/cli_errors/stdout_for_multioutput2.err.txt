@@ -1,0 +1,1 @@
+ktx extract fatal: stdout cannot be used with multi-output '--layer all' extract. See 'ktx extract --help'.

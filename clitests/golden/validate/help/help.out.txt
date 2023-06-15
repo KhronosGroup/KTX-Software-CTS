@@ -12,7 +12,7 @@ Usage:
                                   json: Formatted JSON
                                   mini-json: Minified JSON
                                  (default: text)
-  -s, --stdin                   Use stdin as the input file. (Using a single dash '-' as the input 
+      --stdin                   Use stdin as the input file. (Using a single dash '-' as the input 
                                 file has the same effect)
   -h, --help                    Print this usage message and exit
   -v, --version                 Print the version number of this program and exit

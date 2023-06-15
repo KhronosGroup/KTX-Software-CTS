@@ -1,1 +1,0 @@
-ktx create fatal: Raw input file "input/raw/raw_R8G8B8A8_UNORM_2D_8x8.raw" with 0 bytes for level 0 does not match the expected size of 256 bytes.

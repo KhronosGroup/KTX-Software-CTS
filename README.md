@@ -42,6 +42,9 @@ cases the outputs are not deterministic. Optional: defaults to false.
 - `stdout (eval-string)`: Filepath for golden stdout file. 
 If there is a mismatch between the golden file and the stdout the test fails.
 Optional: If the property is missing then the stdout of the command is not checked.
+- `stdoutBinary (bool | eval-string)`: Marks if the stdout should be interpreted as binary data.
+Binary stdout golden files are not checked for regex matching. Used for testing file outputs onto stdout.
+Optional: If the property is missing then the stdout will be treated as text.
 - `stderr (eval-string)`: Filepath for golden stderr file. 
 If there is a mismatch between the golden file and the stderr the test fails.
 Optional: If the property is missing then the stderr of the command is not checked.

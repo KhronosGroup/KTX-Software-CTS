@@ -222,6 +222,7 @@ set(CASELIST
     tests/extract/raw_zlib.json
     tests/extract/raw_zstd.json
     tests/extract/stdin.json
+    tests/extract/stdout.json
 
     tests/create/3d_with_1_depth.json
     tests/create/array_with_1_layer.json
@@ -282,6 +283,7 @@ set(CASELIST
     tests/create/sample_zlib.json
     tests/create/sample_zstd.json
     tests/create/stdin.json
+    tests/create/stdout.json
 
     tests/encode/compare.json
     tests/encode/encode_blze.json
@@ -296,9 +298,11 @@ set(CASELIST
     tests/encode/encode_uastc_params.json
     tests/encode/help.json
     tests/encode/stdin.json
+    tests/encode/stdout.json
 
     tests/transcode/help.json
     tests/transcode/stdin.json
+    tests/transcode/stdout.json
     tests/transcode/transcode_blze.json
     tests/transcode/transcode_error_invalid.json
     tests/transcode/transcode_error_not_transcodable.json

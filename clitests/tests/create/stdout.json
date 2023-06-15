@@ -1,0 +1,12 @@
+{
+    "description": "Test stdout output for the create command",
+    "command": "ktx create --testrun ${subcase[flag]} -",
+    "status": 0,
+    "stdout": "golden/create/stdout/${subcase[id]}.ktx2",
+    "stdoutBinary": true,
+    "args": {
+        "subcase": [
+            { "id": "stdout", "flag": "--format R8G8B8A8_UNORM input/png/basic_RGBA8_16x16.png" }
+        ]
+    }
+}

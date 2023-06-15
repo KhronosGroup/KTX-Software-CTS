@@ -1,0 +1,1 @@
+ktx extract fatal: stdout cannot be used with multi-output '--level all' extract. See 'ktx extract --help'.
