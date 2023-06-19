@@ -1,1 +1,1 @@
-ktx extract fatal: Requested all depths from a non-3D texture.
+ktx extract fatal: Requested all depth slices from a non-3D texture.

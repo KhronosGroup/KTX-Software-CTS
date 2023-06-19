@@ -1,1 +1,1 @@
-ktx extract fatal: Requested depth index 10 is missing. The input file only has 4 depth(s) in level 0.
+ktx extract fatal: Requested depth slice index 10 is missing. The input file only has 4 depth slice(s) in level 0.

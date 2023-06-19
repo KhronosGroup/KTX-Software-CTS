@@ -1,0 +1,16 @@
+{
+    "description": "Test creation of 3D textures block compressed format with raw input files.",
+    "command": "ktx create --testrun --raw --format ${subcase[name]} --width 8 --height 8 --depth 4 --levels 1 ${subcase[flag]} output/create/raw_3d_bc/output_${subcase[name]}_3D.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/raw_3d_bc/output_${subcase[name]}_3D.ktx2": "golden/create/raw_3d_bc/output_${subcase[name]}_3D.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "name": "ASTC_3x3x3_UNORM_BLOCK_EXT", "flag": "input/raw/raw_ASTC_3x3x3_UNORM_BLOCK_EXT_3D_8x8x3.raw input/raw/raw_ASTC_3x3x3_UNORM_BLOCK_EXT_3D_8x8x3.raw" },
+            { "name": "ASTC_4x4x3_SFLOAT_BLOCK_EXT", "flag": "input/raw/raw_ASTC_4x4x3_SFLOAT_BLOCK_EXT_3D_8x8x3.raw input/raw/raw_ASTC_4x4x3_SFLOAT_BLOCK_EXT_3D_8x8x3.raw" },
+            { "name": "ASTC_5x4x4_SRGB_BLOCK_EXT", "flag": "input/raw/raw_ASTC_5x4x4_SRGB_BLOCK_EXT_3D_8x8x4.raw" },
+            { "name": "ASTC_6x6x5_UNORM_BLOCK_EXT", "flag": "input/raw/raw_ASTC_6x6x5_UNORM_BLOCK_EXT_3D_8x8x5.raw" }
+        ]
+    }
+}

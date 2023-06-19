@@ -208,6 +208,7 @@ set(CASELIST
     tests/extract/raw_select_2d_array_mip.json
     tests/extract/raw_select_2d_mip.json
     tests/extract/raw_select_3d.json
+    tests/extract/raw_select_3d_bc.json
     tests/extract/raw_select_3d_depthall.json
     tests/extract/raw_select_3d_mip.json
     tests/extract/raw_select_3d_mip_depthall.json
@@ -269,6 +270,7 @@ set(CASELIST
     tests/create/raw_2d_array_mip.json
     tests/create/raw_2d_mip.json
     tests/create/raw_3d.json
+    tests/create/raw_3d_bc.json
     tests/create/raw_3d_mip.json
     tests/create/raw_cube.json
     tests/create/raw_cube_array.json

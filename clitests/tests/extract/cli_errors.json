@@ -34,6 +34,7 @@
             { "rc": 3, "id": "over_index_layer", "flags": "--layer 10 input/ktx2/valid_R8_UNORM_2D_ARRAY.ktx2 output" },
             { "rc": 3, "id": "over_index_face", "flags": "--face 10 input/ktx2/valid_R8_UNORM_CUBE.ktx2 output" },
             { "rc": 3, "id": "over_index_depth", "flags": "--depth 10 input/ktx2/valid_R8_UNORM_3D.ktx2 output" },
+            { "rc": 3, "id": "over_index_depth_3dbc", "flags": "--depth 3 input/ktx2/valid_ASTC_3x3x3_UNORM_BLOCK_EXT_3D.ktx2 output" },
 
             { "rc": 3, "id": "layer_from_nonarray_0", "flags": "--layer 0 input/ktx2/valid_R8_UNORM_2D.ktx2 output" },
             { "rc": 3, "id": "layer_from_nonarray_a", "flags": "--layer all input/ktx2/valid_R8_UNORM_2D.ktx2 output" },
