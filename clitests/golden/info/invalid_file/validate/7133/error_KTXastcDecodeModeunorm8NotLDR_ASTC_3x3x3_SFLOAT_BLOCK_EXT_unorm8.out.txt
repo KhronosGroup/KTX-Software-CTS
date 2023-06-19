@@ -27,8 +27,8 @@ supercompressionGlobalData.byteLength: 0
 Level Index
 
 Level0.byteOffset: 0xe0
-Level0.byteLength: 2880
-Level0.uncompressedByteLength: 2880
+Level0.byteLength: 3456
+Level0.uncompressedByteLength: 3456
 
 Data Format Descriptor
 

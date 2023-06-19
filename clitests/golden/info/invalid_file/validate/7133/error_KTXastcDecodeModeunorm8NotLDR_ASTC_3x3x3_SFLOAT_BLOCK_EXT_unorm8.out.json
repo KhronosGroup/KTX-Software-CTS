@@ -43,8 +43,8 @@
         "levels": [
             {
                 "byteOffset": 224,
-                "byteLength": 2880,
-                "uncompressedByteLength": 2880
+                "byteLength": 3456,
+                "uncompressedByteLength": 3456
             }
         ]
     },
