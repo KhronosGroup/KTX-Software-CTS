@@ -1,0 +1,31 @@
+{
+    "description": "Test extraction from 2D Array Mip textures to raw output files with --uri.",
+    "command": "ktx extract --raw ${select[flags]} input/ktx2/valid_${subcase}.ktx2 output/extract/raw_select_uri_2d_array_mip/output_${subcase}/output${select[id]}.raw",
+    "status": 0,
+    "outputs": {
+        "output/extract/raw_select_uri_2d_array_mip/output_${subcase}/output${select[id]}.raw": "golden/extract/raw_select_uri_2d_array_mip/output_${subcase}/output${select[id]}.raw"
+    },
+    "args": {
+        "select": [
+            { "id": "_level0_layer0", "flags": "--uri m=0,0&a=0,0" },
+            { "id": "_level0_layer1", "flags": "--uri m=0,0&a=1,1" },
+            { "id": "_level0_layer2", "flags": "--uri m=0,0&a=2,2" },
+            { "id": "_level0_layer3", "flags": "--uri m=0,0&a=3,3" },
+            { "id": "_level1_layer0", "flags": "--uri m=1,1&a=0,0" },
+            { "id": "_level1_layer1", "flags": "--uri m=1,1&a=1,1" },
+            { "id": "_level1_layer2", "flags": "--uri m=1,1&a=2,2" },
+            { "id": "_level1_layer3", "flags": "--uri m=1,1&a=3,3" },
+            { "id": "_level2_layer0", "flags": "--uri m=2,2&a=0,0" },
+            { "id": "_level2_layer1", "flags": "--uri m=2,2&a=1,1" },
+            { "id": "_level2_layer2", "flags": "--uri m=2,2&a=2,2" },
+            { "id": "_level2_layer3", "flags": "--uri m=2,2&a=3,3" },
+            { "id": "_level3_layer0", "flags": "--uri m=3,3&a=0,0" },
+            { "id": "_level3_layer1", "flags": "--uri m=3,3&a=1,1" },
+            { "id": "_level3_layer2", "flags": "--uri m=3,3&a=2,2" },
+            { "id": "_level3_layer3", "flags": "--uri m=3,3&a=3,3" }
+        ],
+        "subcase": [
+            "R8G8B8A8_UNORM_2D_ARRAY_MIP"
+        ]
+    }
+}

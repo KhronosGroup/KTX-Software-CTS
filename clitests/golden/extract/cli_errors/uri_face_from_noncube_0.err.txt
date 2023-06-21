@@ -1,0 +1,1 @@
+ktx extract fatal: Requested face index 0 from a non-cubemap texture.
