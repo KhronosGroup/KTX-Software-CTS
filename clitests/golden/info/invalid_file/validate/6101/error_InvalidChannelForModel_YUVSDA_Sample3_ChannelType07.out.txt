@@ -4,8 +4,6 @@ error-6101: Invalid sample channelType for colorModel in the basic DFD block.
     DFD block #1 sample #4 channelType in basic DFD block is (0x7) which is not valid for colorModel KHR_DF_MODEL_YUVSDA.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #4 channelType in basic DFD block is (0x7) but the expected value is KHR_DF_CHANNEL_YUVSDA_Y for VK_FORMAT_B8G8R8G8_422_UNORM.
-warning-5004: Non-conformant texture file accepted by libktx.
-    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
 
 Header
 
