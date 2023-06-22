@@ -29,6 +29,7 @@ permutations of the specified arguments.
 Each test case file must be added to the CASELIST of the [CMakeLists.txt](clitests/CMakeLists.txt)
 where it will be registered to ctest.
 The test cases can be run with the python [runner script](clitests/clitest.py) or with ctest.
+By default, matching output files will be deleted unless the `--keep-matching-outputs` flag is passed to the runner script.
 
 Each JSON test case file shall contain a root object with the following properties:
 - `description (string)`: Human readable description of the given test case.
