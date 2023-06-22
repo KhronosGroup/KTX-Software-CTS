@@ -4,6 +4,8 @@ error-4004: Invalid byteOffset in Level Index. byteOffset must match the expecte
     Level 0 byteOffset is 346 but based on the vkFormat, DFD and image sizes the expected value is 247.
 error-8102: Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consistent with image count and BasisLzGlobalHeader.
     sgdByteLength is 39 but based on image count of 1 and the BasisLzGlobalHeader the expected value is 138 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength).
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 1 before image level 0 at offset 248 but it must be 0.
 warning-5004: Non-conformant texture file accepted by libktx.
     KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
 

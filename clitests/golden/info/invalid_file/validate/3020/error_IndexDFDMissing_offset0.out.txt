@@ -4,6 +4,8 @@ error-3020: Missing Data Format Descriptor.
     Data Format Descriptor is mandatory but dfdByteOffset is 0 and dfdByteLength is 92.
 error-3021: Invalid dfdByteOffset.
     dfdByteOffset is 0 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 92 before KVD at offset 104 but it must be 0.
 
 Header
 

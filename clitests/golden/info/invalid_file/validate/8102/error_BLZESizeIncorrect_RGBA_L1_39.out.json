@@ -15,6 +15,12 @@
             "details": "sgdByteLength is 39 but based on image count of 1 and the BasisLzGlobalHeader the expected value is 138 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength)."
         },
         {
+            "id": 7011,
+            "type": "error",
+            "message": "Invalid padding byte value. Every padding byte's value must be 0.",
+            "details": "A padding byte value is 1 before image level 0 at offset 248 but it must be 0."
+        },
+        {
             "id": 5004,
             "type": "warning",
             "message": "Non-conformant texture file accepted by libktx.",

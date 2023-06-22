@@ -15,6 +15,12 @@
             "details": "sgdByteLength is 19 but for BasisLZ/ETC1S textures it must be at least 20 bytes (sizeof ktxBasisLzGlobalHeader)."
         },
         {
+            "id": 7011,
+            "type": "error",
+            "message": "Invalid padding byte value. Every padding byte's value must be 0.",
+            "details": "A padding byte value is 2 before image level 0 at offset 236 but it must be 0."
+        },
+        {
             "id": 5004,
             "type": "warning",
             "message": "Non-conformant texture file accepted by libktx.",

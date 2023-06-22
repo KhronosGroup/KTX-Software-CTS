@@ -19,6 +19,12 @@
             "type": "error",
             "message": "Invalid byteOffset in Level Index. byteOffset must match the expected value.",
             "details": "Level 0 byteOffset is 612 but based on the vkFormat, DFD and image sizes the expected value is 608."
+        },
+        {
+            "id": 7011,
+            "type": "error",
+            "message": "Invalid padding byte value. Every padding byte's value must be 0.",
+            "details": "A padding byte value is 1 before image level 2 at offset 289 but it must be 0."
         }
     ],
     "header": {

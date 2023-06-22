@@ -21,6 +21,12 @@
             "details": "Level 0 byteOffset is 264 but based on the vkFormat, DFD and image sizes the expected value is 520."
         },
         {
+            "id": 7011,
+            "type": "error",
+            "message": "Invalid padding byte value. Every padding byte's value must be 0.",
+            "details": "A padding byte value is 1 before image level 1 at offset 265 but it must be 0."
+        },
+        {
             "id": 5004,
             "type": "warning",
             "message": "Non-conformant texture file accepted by libktx.",

@@ -13,6 +13,12 @@
             "type": "error",
             "message": "Invalid dfdByteOffset.",
             "details": "dfdByteOffset is 0 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 104."
+        },
+        {
+            "id": 7011,
+            "type": "error",
+            "message": "Invalid padding byte value. Every padding byte's value must be 0.",
+            "details": "A padding byte value is 92 before KVD at offset 104 but it must be 0."
         }
     ]
 }

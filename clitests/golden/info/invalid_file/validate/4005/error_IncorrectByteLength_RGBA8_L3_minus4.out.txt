@@ -6,6 +6,10 @@ error-4005: Invalid byteLength in Level Index. byteLength must match the expecte
     Level 1 byteLength is 252 but based on the vkFormat, DFD and image sizes the expected value is 256.
 error-4005: Invalid byteLength in Level Index. byteLength must match the expected value.
     Level 0 byteLength is 1020 but based on the vkFormat, DFD and image sizes the expected value is 1024.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 60 before image level 1 at offset 348 but it must be 0.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 252 before image level 0 at offset 604 but it must be 0.
 
 Header
 

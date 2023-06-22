@@ -6,5 +6,7 @@ error-4004: Invalid byteOffset in Level Index. byteOffset must match the expecte
     Level 1 byteOffset is 1288 but based on the vkFormat, DFD and image sizes the expected value is 264.
 error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
     Level 0 byteOffset is 264 but based on the vkFormat, DFD and image sizes the expected value is 520.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 1 before image level 1 at offset 265 but it must be 0.
 warning-5004: Non-conformant texture file accepted by libktx.
     KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

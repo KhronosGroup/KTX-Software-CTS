@@ -6,3 +6,5 @@ error-3026: sgdByteLength must not be 0 for supercompression schemes with global
     sgdByteLength is 0 but for supercompression scheme KTX_SS_BASIS_LZ (which has global data) it must not be 0.
 error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
     Level 0 byteOffset is 346 but based on the vkFormat, DFD and image sizes the expected value is 208.
+error-7011: Invalid padding byte value. Every padding byte's value must be 0.
+    A padding byte value is 6 before image level 0 at offset 208 but it must be 0.
