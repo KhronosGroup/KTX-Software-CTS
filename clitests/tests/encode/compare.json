@@ -6,6 +6,9 @@
     "comment": "BasisLZ compression relies on undefined order of std::unordered_map containers.",
     "stdout": "golden/encode/compare/${encode[id]}_${compare[id]}_${subcase}.out.txt",
     "stderr": "golden/encode/compare/empty.err.txt",
+    "outputs": {
+        "output/encode/compare/output_${encode[id]}_${compare[id]}_${subcase}.ktx2": "golden/encode/compare/output_${encode[id]}_${compare[id]}_${subcase}.ktx2"
+    },
     "args": {
         "encode": [
             { "allowMismatchOnMSVC": 0, "id": "uastc_0", "flag": "--codec uastc"},

@@ -5,6 +5,9 @@
     "allowMismatchOnMSVC": "${encode[allowMismatchOnMSVC]}",
     "stdout": "golden/create/compare/${encode[id]}_${compare[id]}_${create[id]}.out.txt",
     "stderr": "golden/create/compare/empty.err.txt",
+    "outputs": {
+        "output/create/compare/output_${encode[id]}_${compare[id]}_${create[id]}.ktx2": "golden/create/compare/output_${encode[id]}_${compare[id]}_${create[id]}.ktx2"
+    },
     "args": {
         "encode": [
             { "allowMismatchOnMSVC": 0, "id": "uastc_0", "flag": "--encode uastc"},

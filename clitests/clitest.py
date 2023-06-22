@@ -60,6 +60,8 @@ if __name__ == '__main__':
                         help='Path to use for the executed command')
     parser.add_argument('--msvc', action='store_true',
                         help='Indicates that test runs against MSVC build')
+    parser.add_argument('--keep-matching-outputs', action='store_true',
+                        help='Indicates that test run should keep and not delete the matching output files')
 
     cli_args, unknown_args = parser.parse_known_args()
 
@@ -263,17 +265,21 @@ if __name__ == '__main__':
                 output_ref = output_ref_file.read()
                 output_ref_file.close()
 
-            if not ctx.match(output_ref, output[stdfile], stdfileBinary):
-                if cli_args.msvc and allowMismatchOnMSVC:
-                    messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{stdfile}' and reference file '{output_ref_filename}'")
-                else:
-                    output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
+            output_matching = ctx.match(output_ref, output[stdfile], stdfileBinary)
+            if not output_matching and cli_args.msvc and allowMismatchOnMSVC:
+                messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{stdfile}' and reference file '{output_ref_filename}'")
+            else:
+                output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
+
+                if not output_matching or cli_args.keep_matching_outputs:
                     if stdfileBinary:
                         output_file = open(output_filename, 'wb+')
                     else:
                         output_file = open(output_filename, 'w+', newline='\n', encoding='utf-8')
                     output_file.write(output[stdfile])
                     output_file.close()
+
+                if not output_matching:
                     if output_ref_filename:
                         subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")
                     else:
@@ -312,12 +318,17 @@ if __name__ == '__main__':
                     subcase_failed = True
                     files_found = False
 
-                if files_found and not filecmp.cmp(output_cur, output_ref, shallow=False):
-                    if cli_args.msvc and allowMismatchOnMSVC:
-                        messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{output_cur}' and reference file '{output_ref}'")
+                if files_found:
+                    output_matching = filecmp.cmp(output_cur, output_ref, shallow=False)
+                    if output_matching:
+                        if not cli_args.keep_matching_outputs:
+                            os.remove(output_cur)
                     else:
-                        subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
-                        subcase_failed = True
+                        if cli_args.msvc and allowMismatchOnMSVC:
+                            messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{output_cur}' and reference file '{output_ref}'")
+                        else:
+                            subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
+                            subcase_failed = True
 
 
         # Handle subcase failure
