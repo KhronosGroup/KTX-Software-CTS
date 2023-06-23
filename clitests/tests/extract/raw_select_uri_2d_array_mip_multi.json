@@ -1,18 +1,19 @@
 {
     "description": "Test extraction from 2D Array Mip textures to raw output files with --uri.",
-    "command": "ktx extract --raw --uri m=1,&a=1,2 input/ktx2/valid_${subcase}.ktx2 output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/",
+    "command": "ktx extract --raw ${subcase[flag]} input/ktx2/valid_${subcase[format]}.ktx2 output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/",
     "status": 0,
     "outputs": {
-        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level1_layer1.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level1_layer1.raw",
-        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level1_layer2.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level1_layer2.raw",
-        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level2_layer1.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level2_layer1.raw",
-        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level2_layer2.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level2_layer2.raw",
-        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level3_layer1.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level3_layer1.raw",
-        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level3_layer2.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase}/output_level3_layer2.raw"
+        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level1_layer1.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level1_layer1.raw",
+        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level1_layer2.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level1_layer2.raw",
+        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level2_layer1.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level2_layer1.raw",
+        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level2_layer2.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level2_layer2.raw",
+        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level3_layer1.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level3_layer1.raw",
+        "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level3_layer2.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level3_layer2.raw"
     },
     "args": {
         "subcase": [
-            "R8G8B8A8_UNORM_2D_ARRAY_MIP"
+            {"id": "_0", "flag": "--uri m=1,&a=1,2", "format": "R8G8B8A8_UNORM_2D_ARRAY_MIP"},
+            {"id": "_1", "flag": "--uri m=1,&a=1,1&a=2,2", "format": "R8G8B8A8_UNORM_2D_ARRAY_MIP"}
         ]
     }
 }
