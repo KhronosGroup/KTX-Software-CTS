@@ -273,13 +273,13 @@ if __name__ == '__main__':
 
                 if not output_matching or cli_args.keep_matching_outputs:
                     if stdfileBinary:
-                        output_file = open(output_filename, 'wb+')
+                        output_file = open(output_filename, 'wb')
                     else:
-                        output_file = open(output_filename, 'w+', newline='\n', encoding='utf-8')
+                        output_file = open(output_filename, 'w', newline='\n', encoding='utf-8')
                     output_file.write(output[stdfile])
                     output_file.close()
 
-                if not output_matching:
+                if not output_matching and not cli_args.regen_golden:
                     if output_ref_filename:
                         subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")
                     else:
@@ -320,8 +320,8 @@ if __name__ == '__main__':
 
                 if files_found:
                     output_matching = filecmp.cmp(output_cur, output_ref, shallow=False)
-                    if output_matching:
-                        if not cli_args.keep_matching_outputs:
+                    if output_matching or cli_args.regen_golden:
+                        if not cli_args.keep_matching_outputs and not cli_args.regen_golden:
                             os.remove(output_cur)
                     else:
                         if cli_args.msvc and allowMismatchOnMSVC:
