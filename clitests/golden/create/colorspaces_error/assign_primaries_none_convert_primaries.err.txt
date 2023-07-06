@@ -1,0 +1,1 @@
+ktx create fatal: Option --convert-primaries cannot be used when --assign-primaries is set to 'none'. See 'ktx create --help'.

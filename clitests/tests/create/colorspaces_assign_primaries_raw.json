@@ -1,0 +1,28 @@
+{
+    "description": "Test RAW input images with --assign-primaries option.",
+    "command": "ktx create --raw --format ${format} --width 8 --height 8 --levels 1 --assign-primaries ${primaries} input/raw/raw_${format}_2D_8x8.raw output/create/colorspaces_assign_primaries_raw/output_${format}_${primaries}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/colorspaces_assign_primaries_raw/output_${format}_${primaries}.ktx2": "golden/create/colorspaces_assign_primaries_raw/output_${format}_${primaries}.ktx2"
+    },
+    "args": {
+        "primaries": [
+            "none",
+            "bt709",
+            "bt601-ebu",
+            "bt601-smpte",
+            "bt2020",
+            "ciexyz",
+            "ACES",
+            "ACEScc",
+            "ntsc1953",
+            "pal525",
+            "DisplayP3",
+            "AdobeRGB"
+        ],
+        "format": [
+            "R8G8B8A8_UNORM",
+            "ASTC_4x4_UNORM_BLOCK"
+        ]
+    }
+}

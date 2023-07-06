@@ -1,0 +1,3 @@
+ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/colorspace_cHRM_BT709.png", defaulting to KHR_DF_TRANSFER_SRGB. Use --assign-oetf to override.
+ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/colorspace_`[A-Za-z0-9_]+`.png", defaulting to KHR_DF_TRANSFER_SRGB. Use --assign-oetf to override.
+ktx create warning: Input image "input/png/colorspace_`[A-Za-z0-9_]+`.png" has different primaries (`[A-Z0-9_]+`) than the first image (KHR_DF_PRIMARIES_BT709) and thus will go through different primaries conversion to the target primaries specified by the --convert-primaries option.

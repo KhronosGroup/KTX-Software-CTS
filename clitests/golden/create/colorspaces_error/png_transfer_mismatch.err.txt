@@ -1,1 +1,2 @@
-ktx create fatal: Input image "input/png/colorspace_`[A-Za-z0-9_]+`.png" has different transfer function (`[A-Za-z0-9_]+`) than preceding image(s) (KHR_DF_TRANSFER_SRGB).
+ktx create warning: Input image "input/png/colorspace_gamma_1_0.png" has different transfer function (KHR_DF_TRANSFER_UNSPECIFIED) than the first image (KHR_DF_TRANSFER_SRGB) and thus will go through different transfer function conversion to the target transfer function specified by the --convert-oetf option.
+ktx create warning: Input image "input/png/colorspace_gamma_1_0.png" has different gamma (1f) than the first image (-1f) and thus will go through different transfer function conversion to the target transfer function specified by the --convert-oetf option.

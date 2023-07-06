@@ -1,0 +1,19 @@
+{
+    "description": "Test that create issues warnings with multiple EXRs if primaries mismatch and assign/convert-primaries is used.",
+    "command": "ktx create --format R32G32B32A32_SFLOAT --${mode}-primaries bt709 --layers 2 input/exr/chromaticities_BT709.exr input/exr/chromaticities_${subcase}.exr output/create/colorspaces_warning/exr_primaries_mismatch_${subcase}_${mode}.ktx2",
+    "status": 0,
+    "stderr": "golden/create/colorspaces_warning/exr_primaries_mismatch_${mode}.err.txt",
+    "outputs": {
+        "output/create/colorspaces_warning/exr_primaries_mismatch_${subcase}_${mode}.ktx2": "golden/create/colorspaces_warning/exr_primaries_mismatch_${subcase}_${mode}.ktx2"
+    },
+    "args": {
+        "mode": [
+            "assign",
+            "convert"
+        ],
+        "subcase": [
+            "BT2020",
+            "DisplayP3"
+        ]
+    }
+}

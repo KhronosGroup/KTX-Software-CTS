@@ -38,8 +38,8 @@ Usage:
       --assign-primaries <primaries>
                                 Force the created texture to have the specified color primaries, 
                                 ignoring the color primaries of the input file(s). Case insensitive.
-                                Possible options are: bt709 | srgb | bt601-ebu | bt601-smpte | 
-                                bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
+                                Possible options are: none | bt709 | srgb | bt601-ebu | bt601-smpte 
+                                | bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
                                 adobergb.
       --convert-oetf <oetf>     Convert the input image(s) to the specified transfer function, if 
                                 different from the transfer function of the input file(s). If both 
@@ -53,7 +53,8 @@ Usage:
                                 specified by --assign-primaries. If both this and 
                                 --assign-primaries are specified, conversion will be performed from 
                                  the assigned primaries to the primaries specified by this option, 
-                                if different. Case insensitive.
+                                if different. This option is not allowed to be specified when 
+                                --assign-primaries is set to 'none'. Case insensitive.
                                 Possible options are: bt709 | srgb | bt601-ebu | bt601-smpte | 
                                 bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
                                 adobergb.

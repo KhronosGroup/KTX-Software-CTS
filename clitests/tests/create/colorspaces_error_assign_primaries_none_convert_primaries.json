@@ -1,0 +1,22 @@
+{
+    "description": "Test that using --convert-primaries when --assign-primaries is set to NONE is not allowed.",
+    "command": "ktx create --assign-primaries none --convert-primaries ${primaries} --format R8G8B8A8_SRGB input/png/colorspace_cHRM_BT709.png output/create/colorspaces_error/assign_primaries_none_convert_primaries_${primaries}.ktx2",
+    "status": 1,
+    "stderr": "golden/create/colorspaces_error/assign_primaries_none_convert_primaries.err.txt",
+    "args": {
+        "primaries": [
+            "bt709",
+            "srgb",
+            "bt601-ebu",
+            "bt601-smpte",
+            "bt2020",
+            "ciexyz",
+            "ACES",
+            "ACEScc",
+            "ntsc1953",
+            "pal525",
+            "DisplayP3",
+            "AdobeRGB"
+        ]
+    }
+}
