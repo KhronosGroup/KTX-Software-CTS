@@ -4,11 +4,13 @@ ktx create: Create, encode and supercompress a KTX2 file from the input images s
 Usage:
   ktx create [OPTION...] <input-file...> <output-file>
 
-      --format <enum>           KTX format enum. The enum names are matching the VkFormats without 
-                                the VK_FORMAT_ prefix. If the format is an ASTC formats the ASTC 
+      --format <enum>           KTX format enum that specifies the image data format. The enum 
+                                names are matching the VkFormats without the VK_FORMAT_ prefix. The 
+                                VK_FORMAT_ prefix is ignored if present. If the --encode option is 
+                                used it specifies the format created from the the input files 
+                                before the encoding step. If the format is an ASTC format the ASTC 
                                 encoder specific options become valid, otherwise they are ignored. 
-                                Required. The VK_FORMAT_ prefix is ignored if present. Case 
-                                insensitive.
+                                Case insensitive. Required.
       --1d                      Create a 1D texture. If not set the texture will be a 2D or 3D 
                                 texture.
       --cubemap                 Create a cubemap texture. If not set the texture will be a 2D or 3D 
