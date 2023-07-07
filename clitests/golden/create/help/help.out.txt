@@ -6,11 +6,21 @@ Usage:
 
       --format <enum>           KTX format enum that specifies the image data format. The enum 
                                 names are matching the VkFormats without the VK_FORMAT_ prefix. The 
-                                VK_FORMAT_ prefix is ignored if present. If the --encode option is 
-                                used it specifies the format created from the the input files 
-                                before the encoding step. If the format is an ASTC format the ASTC 
-                                encoder specific options become valid, otherwise they are ignored. 
-                                Case insensitive. Required.
+                                VK_FORMAT_ prefix is ignored if present.
+                                When used with --encode it specifies the format of the input files 
+                                before the encoding step. In this case it must be one of:
+                                    R8_UNORM
+                                    R8_SRGB
+                                    R8G8_UNORM
+                                    R8G8_SRGB
+                                    R8G8B8_UNORM
+                                    R8G8B8_SRGB
+                                    R8G8B8A8_UNORM
+                                    R8G8B8A8_SRGB
+                                If the format is an ASTC format the ASTC encoder specific options 
+                                become valid, otherwise they are ignored.
+                                The format will be used to verify and load all input files into a 
+                                texture before encoding. Case insensitive. Required.
       --1d                      Create a 1D texture. If not set the texture will be a 2D or 3D 
                                 texture.
       --cubemap                 Create a cubemap texture. If not set the texture will be a 2D or 3D 
