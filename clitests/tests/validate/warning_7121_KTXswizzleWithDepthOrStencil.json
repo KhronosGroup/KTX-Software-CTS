@@ -1,6 +1,6 @@
 {
     "description": "KTXswizzle has no effect on depth or stencil texture formats.",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7121/error_KTXswizzleWithDepthOrStencil_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/7121/error_KTXswizzleWithDepthOrStencil_${subcase}.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/7121/${warnAsErr[outPrefix]}_KTXswizzleWithDepthOrStencil_${subcase}.out.${format[ext]}",
     "args": {

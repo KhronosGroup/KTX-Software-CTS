@@ -1,6 +1,6 @@
 {
     "description": "Test invalid transcode target argument.",
-    "command": "ktx transcode --target ${target} input/transcode/transcode_error_target/large_${subcase}.ktx2 output/transcode/transcode_error_target/output_${subcase}_${target}.ktx2",
+    "command": "ktx transcode --testrun --target ${target} input/transcode/transcode_error_target/large_${subcase}.ktx2 output/transcode/transcode_error_target/output_${subcase}_${target}.ktx2",
     "status": 1,
     "stderr": "golden/transcode/transcode_error_target/error_target_${target}.err.txt",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "File identifier mismatch",
-    "command": "ktx validate ${format[args]} input/validate/2001/fatal_NotKTX2.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/2001/fatal_NotKTX2.ktx2",
     "status": 3,
     "stdout": "golden/validate/2001/fatal_NotKTX2.out.${format[ext]}",
     "args": {

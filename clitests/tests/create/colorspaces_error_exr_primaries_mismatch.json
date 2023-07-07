@@ -1,6 +1,6 @@
 {
     "description": "Test that create fails with multiple EXRs if primaries mismatch.",
-    "command": "ktx create --format R32G32B32A32_SFLOAT --layers 2 input/exr/chromaticities_BT709.exr input/exr/chromaticities_${subcase}.exr output/create/colorspaces_error/exr_primaries_mismatch_${subcase}.ktx2",
+    "command": "ktx create --testrun --format R32G32B32A32_SFLOAT --layers 2 input/exr/chromaticities_BT709.exr input/exr/chromaticities_${subcase}.exr output/create/colorspaces_error/exr_primaries_mismatch_${subcase}.ktx2",
     "status": 3,
     "stderr": "golden/create/colorspaces_error/exr_primaries_mismatch.err.txt",
     "args": {

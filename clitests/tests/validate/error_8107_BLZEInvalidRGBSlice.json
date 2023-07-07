@@ -1,6 +1,6 @@
 {
     "description": "The defined byte region must be within the corresponding mip level.",
-    "command": "ktx validate ${format[args]} input/validate/8107/error_BLZEInvalidRGBSlice_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/8107/error_BLZEInvalidRGBSlice_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/8107/error_BLZEInvalidRGBSlice_${subcase}.out.${format[ext]}",
     "args": {

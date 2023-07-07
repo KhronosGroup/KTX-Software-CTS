@@ -1,6 +1,6 @@
 {
     "description": "Test extraction to PNG output files.",
-    "command": "ktx extract input/ktx2/valid_${subcase}_2D.ktx2 output/extract/png_2d/output_${subcase}_2D.png",
+    "command": "ktx extract --testrun input/ktx2/valid_${subcase}_2D.ktx2 output/extract/png_2d/output_${subcase}_2D.png",
     "status": 0,
     "outputs": {
         "output/extract/png_2d/output_${subcase}_2D.png": "golden/extract/png_2d/output_${subcase}_2D.png"

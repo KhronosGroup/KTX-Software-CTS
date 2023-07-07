@@ -1,6 +1,6 @@
 {
     "description": "KHR_texture_basisu requires 2D texture type",
-    "command": "ktx validate ${GLTFBasisU[flag]} ${format[args]} input/validate/3103/error_InvalidPixelWidthHeightGLTFBU_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${GLTFBasisU[flag]} ${format[args]} input/validate/3103/error_InvalidPixelWidthHeightGLTFBU_${subcase}.ktx2",
     "status": "${GLTFBasisU[status]}",
     "stdout": "golden/validate/3103/error_${GLTFBasisU[outPrefix]}_InvalidPixelWidthHeightGLTFBU_${subcase}.out.${format[ext]}",
     "args": {

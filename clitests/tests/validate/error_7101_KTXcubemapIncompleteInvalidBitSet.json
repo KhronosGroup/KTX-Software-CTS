@@ -1,6 +1,6 @@
 {
     "description": "KTXcubemapIncomplete value's two MSB must be 0 (00XXXXXX)",
-    "command": "ktx validate ${format[args]} input/validate/7101/error_KTXcubemapIncompleteInvalidBitSet_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7101/error_KTXcubemapIncompleteInvalidBitSet_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7101/error_KTXcubemapIncompleteInvalidBitSet_${subcase}.out.${format[ext]}",
     "args": {

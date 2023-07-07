@@ -1,6 +1,6 @@
 {
     "description": "pixelWidth must not be 0",
-    "command": "ktx validate ${format[args]} input/validate/3006/error_WidthZero.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3006/error_WidthZero.ktx2",
     "status": 3,
     "stdout": "golden/validate/3006/error_WidthZero.out.${format[ext]}",
     "args": {

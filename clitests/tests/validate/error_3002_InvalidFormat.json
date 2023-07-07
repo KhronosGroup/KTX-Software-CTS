@@ -1,6 +1,6 @@
 {
     "description": "VkFormat outside of valid ranges",
-    "command": "ktx validate ${format[args]} input/validate/3002/error_InvalidFormat_${vkformat}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3002/error_InvalidFormat_${vkformat}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3002/error_InvalidFormat_${vkformat}.out.${format[ext]}",
     "args": {

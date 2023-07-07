@@ -1,6 +1,6 @@
 {
     "description": "422 formats must have a matching colorModel",
-    "command": "ktx validate ${format[args]} input/validate/6017/error_IncorrectModelFor422_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6017/error_IncorrectModelFor422_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6017/error_IncorrectModelFor422_${subcase}.out.${format[ext]}",
     "args": {

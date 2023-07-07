@@ -1,6 +1,6 @@
 {
     "description": "For UASTC and ETC1S the sample lower must be 0.",
-    "command": "ktx validate ${format[args]} input/validate/6106/error_InvalidLower_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6106/error_InvalidLower_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6106/error_InvalidLower_${subcase}.out.${format[ext]}",
     "args": {

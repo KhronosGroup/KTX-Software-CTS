@@ -1,6 +1,6 @@
 {
     "description": "For UASTC and ETC1S the sample upper must be UINT32_MAX.",
-    "command": "ktx validate ${format[args]} input/validate/6107/error_InvalidUpper_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6107/error_InvalidUpper_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6107/error_InvalidUpper_${subcase}.out.${format[ext]}",
     "args": {

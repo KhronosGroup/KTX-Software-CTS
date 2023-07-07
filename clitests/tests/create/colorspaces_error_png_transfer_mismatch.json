@@ -1,6 +1,6 @@
 {
     "description": "Test that create fails with multiple PNGs if there is a transfer function mismatch.",
-    "command": "ktx create --format R8G8B8A8_SRGB --layers 2 input/png/colorspace_sRGB.png input/png/colorspace_${subcase}.png output/create/colorspaces_error/png_transfer_mismatch_${subcase}.ktx2",
+    "command": "ktx create --testrun --format R8G8B8A8_SRGB --layers 2 input/png/colorspace_sRGB.png input/png/colorspace_${subcase}.png output/create/colorspaces_error/png_transfer_mismatch_${subcase}.ktx2",
     "status": 3,
     "stderr": "golden/create/colorspaces_error/png_transfer_mismatch_${subcase}.err.txt",
     "args": {

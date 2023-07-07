@@ -1,6 +1,6 @@
 {
     "description": "Test encode command with unsupported formats.",
-    "command": "ktx encode --codec ${codec} input/ktx2/valid_${format}_2D.ktx2 output/encode/encode_error_format/output_${format}_2D.ktx",
+    "command": "ktx encode --testrun --codec ${codec} input/ktx2/valid_${format}_2D.ktx2 output/encode/encode_error_format/output_${format}_2D.ktx",
     "status": 1,
     "stderr": "golden/encode/encode_error_format/common.err.txt",
     "args": {

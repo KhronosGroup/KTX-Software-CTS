@@ -1,6 +1,6 @@
 {
     "description": "The BDFD block should not be specified twice",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/6005/warning_MultipleBDFD_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/6005/warning_MultipleBDFD_${subcase}.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/6005/${warnAsErr[outPrefix]}_MultipleBDFD_${subcase}.out.${format[ext]}",
     "args": {

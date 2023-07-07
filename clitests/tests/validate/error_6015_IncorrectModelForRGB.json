@@ -1,6 +1,6 @@
 {
     "description": "Unless otherwise stated (e.g. for block compressed, BasisLZ, and 422 formats) color model must be RGBSDA",
-    "command": "ktx validate ${format[args]} input/validate/6015/error_IncorrectModelForRGB_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6015/error_IncorrectModelForRGB_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6015/error_IncorrectModelForRGB_${subcase}.out.${format[ext]}",
     "args": {

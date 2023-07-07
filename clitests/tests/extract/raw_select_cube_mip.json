@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from Cube Mip textures to raw output files with fully specifying the images with --level, --layer, --face and --depth.",
-    "command": "ktx extract --raw ${select[flags]} input/ktx2/valid_${subcase}.ktx2 output/extract/raw_select_cube_mip/output_${subcase}/output${select[id]}.raw",
+    "command": "ktx extract --testrun --raw ${select[flags]} input/ktx2/valid_${subcase}.ktx2 output/extract/raw_select_cube_mip/output_${subcase}/output${select[id]}.raw",
     "status": 0,
     "outputs": {
         "output/extract/raw_select_cube_mip/output_${subcase}/output${select[id]}.raw": "golden/extract/raw_select_cube_mip/output_${subcase}/output${select[id]}.raw"

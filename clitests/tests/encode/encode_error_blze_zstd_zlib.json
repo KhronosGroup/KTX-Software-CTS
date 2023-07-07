@@ -1,6 +1,6 @@
 {
     "description": "Test that BasisLZ cannot be supercompressed with Zstd or ZLIB.",
-    "command": "ktx encode --codec basis-lz --${supercompression} 1 input/ktx2/valid_${subcase}.ktx2 output/encode/encode_error_blze_zstd_zlib/output_${subcase}.ktx2",
+    "command": "ktx encode --testrun --codec basis-lz --${supercompression} 1 input/ktx2/valid_${subcase}.ktx2 output/encode/encode_error_blze_zstd_zlib/output_${subcase}.ktx2",
     "status": 1,
     "stderr": "golden/encode/encode_error_blze_zstd_zlib/${supercompression}.err.txt",
     "args": {

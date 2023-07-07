@@ -1,6 +1,6 @@
 {
     "description": "At least 6 bytes are required for each entry in the KVD region (4 byte size + 1 byte key + null terminator)",
-    "command": "ktx validate ${format[args]} input/validate/7002/error_NotEnoughDataForAnEntry.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7002/error_NotEnoughDataForAnEntry.ktx2",
     "status": 3,
     "stdout": "golden/validate/7002/error_NotEnoughDataForAnEntry.out.${format[ext]}",
     "args": {

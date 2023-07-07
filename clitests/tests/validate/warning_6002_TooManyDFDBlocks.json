@@ -1,6 +1,6 @@
 {
     "description": "Too many DFD blocks (limit is 10)",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/6002/warning_TooManyDFDBlocks.ktx2",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/6002/warning_TooManyDFDBlocks.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/6002/${warnAsErr[outPrefix]}_TooManyDFDBlocks.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "For non-SS, not VK_FORMAT_UNDEFINED files: The Basic DFD block must not describe a non little-endian or a not supported format.",
-    "command": "ktx validate ${format[args]} input/validate/6205/error_InterpretDFDNonTrivialEndianness_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6205/error_InterpretDFDNonTrivialEndianness_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6205/error_InterpretDFDNonTrivialEndianness_${subcase}.out.${format[ext]}",
     "args": {

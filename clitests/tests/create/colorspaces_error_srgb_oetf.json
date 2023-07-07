@@ -1,6 +1,6 @@
 {
     "description": "Test OETF parameters which should result in error if used with an sRGB format.",
-    "command": "ktx create --format ${format} --${subcase}-oetf linear input/png/colorspace_default.png output/create/colorspaces_error/${format}_${subcase}_oetf_linear.ktx2",
+    "command": "ktx create --testrun --format ${format} --${subcase}-oetf linear input/png/colorspace_default.png output/create/colorspaces_error/${format}_${subcase}_oetf_linear.ktx2",
     "status": 1,
     "stderr": "golden/create/colorspaces_error/${subcase}_oetf_linear.err.txt",
     "args": {

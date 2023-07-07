@@ -1,6 +1,6 @@
 {
     "description": "uncompressedByteLength must match actually decompressed bytes.",
-    "command": "ktx validate ${format[args]} input/validate/4008/error_UncompressedByteLengthMismatch_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/4008/error_UncompressedByteLengthMismatch_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/4008/error_UncompressedByteLengthMismatch_${subcase}.out.${format[ext]}",
     "args": {

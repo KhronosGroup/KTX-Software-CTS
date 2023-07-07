@@ -1,6 +1,6 @@
 {
     "description": "If vkFormat is one of the sRGB formats, transferFunction must be KHR_DF_TRANSFER_SRGB.",
-    "command": "ktx validate ${format[args]} input/validate/6013/error_BasicSRGBMismatch_${vkformat}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6013/error_BasicSRGBMismatch_${vkformat}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6013/error_BasicSRGBMismatch_${vkformat}.out.${format[ext]}",
     "args": {

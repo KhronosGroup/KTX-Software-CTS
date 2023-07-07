@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from cube textures to raw output files with --uri.",
-    "command": "ktx extract --raw --uri f=1,2 input/ktx2/valid_${subcase}.ktx2 output/extract/raw_select_uri_cube/output_${subcase}/",
+    "command": "ktx extract --testrun --raw --uri f=1,2 input/ktx2/valid_${subcase}.ktx2 output/extract/raw_select_uri_cube/output_${subcase}/",
     "status": 0,
     "outputs": {
         "output/extract/raw_select_uri_cube/output_${subcase}/output_face1.raw": "golden/extract/raw_select_uri_cube/output_${subcase}/output_face1.raw",

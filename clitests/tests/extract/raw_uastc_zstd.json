@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from UASTC and ZSTD supercompressed texture.",
-    "command": "ktx extract --raw input/ktx2/valid_${subcase}_2D_UASTC_ZSTD${level}.ktx2 output/extract/raw_uastc_zstd/output_${subcase}_2D_UASTC_ZSTD${level}.raw",
+    "command": "ktx extract --testrun --raw input/ktx2/valid_${subcase}_2D_UASTC_ZSTD${level}.ktx2 output/extract/raw_uastc_zstd/output_${subcase}_2D_UASTC_ZSTD${level}.raw",
     "status": 0,
     "outputs": {
         "output/extract/raw_uastc_zstd/output_${subcase}_2D_UASTC_ZSTD${level}.raw": "golden/extract/raw_uastc_zstd/output_${subcase}_2D_UASTC_ZSTD${level}.raw"

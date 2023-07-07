@@ -1,6 +1,6 @@
 {
     "description": "The value of KTXswizzle must be NULL terminated.",
-    "command": "ktx validate ${format[args]} input/validate/7117/error_KTXswizzleMissingNull.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7117/error_KTXswizzleMissingNull.ktx2",
     "status": 3,
     "stdout": "golden/validate/7117/error_KTXswizzleMissingNull.ktx2.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "VkFormat is an unknown extension format",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/3003/warning_UnknownFormat.ktx2",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/3003/warning_UnknownFormat.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/3003/${warnAsErr[outPrefix]}_UnknownFormat.out.${format[ext]}",
     "args": {

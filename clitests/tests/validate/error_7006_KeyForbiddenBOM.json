@@ -1,6 +1,6 @@
 {
     "description": "Key must be a UTF-8 string without BOM",
-    "command": "ktx validate ${format[args]} input/validate/7006/error_KeyForbiddenBOM.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7006/error_KeyForbiddenBOM.ktx2",
     "status": 3,
     "stdout": "golden/validate/7006/error_KeyForbiddenBOM.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "KVD keys must be null terminated.",
-    "command": "ktx validate ${format[args]} input/validate/7005/error_KeyMissingNullTerminator.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7005/error_KeyMissingNullTerminator.ktx2",
     "status": 3,
     "stdout": "golden/validate/7005/error_KeyMissingNullTerminator.out.${format[ext]}",
     "args": {

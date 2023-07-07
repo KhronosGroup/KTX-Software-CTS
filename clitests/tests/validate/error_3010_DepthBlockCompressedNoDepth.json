@@ -1,6 +1,6 @@
 {
     "description": "pixelDepth must not be 0 for block-compressed formats that have block depth greater than 1.",
-    "command": "ktx validate ${format[args]} input/validate/3010/error_DepthBlockCompressedNoDepth_${vkformat}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3010/error_DepthBlockCompressedNoDepth_${vkformat}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3010/error_DepthBlockCompressedNoDepth_${vkformat}.out.${format[ext]}",
     "args": {

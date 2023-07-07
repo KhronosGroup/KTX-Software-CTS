@@ -1,6 +1,6 @@
 {
     "description": "DFD is mandatory, i.e. header.dfdByteOffset and header.dfdByteLength must not be 0",
-    "command": "ktx validate ${format[args]} input/validate/3020/error_IndexDFDMissing_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3020/error_IndexDFDMissing_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3020/error_IndexDFDMissing_${subcase}.out.${format[ext]}",
     "args": {

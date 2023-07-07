@@ -1,6 +1,6 @@
 {
     "description": "KHR_texture_basisu only allows NONE and ZSTD supercompression for UASTC",
-    "command": "ktx validate ${GLTFBasisU[flag]} ${format[args]} input/validate/6302/error_IncompatibleModelGLTFBU_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${GLTFBasisU[flag]} ${format[args]} input/validate/6302/error_IncompatibleModelGLTFBU_${subcase}.ktx2",
     "status": "${GLTFBasisU[status]}",
     "stdout": "golden/validate/6302/error_${GLTFBasisU[outPrefix]}_IncompatibleModelGLTFBU_${subcase}.out.${format[ext]}",
     "args": {

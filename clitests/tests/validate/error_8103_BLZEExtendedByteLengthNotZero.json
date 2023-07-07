@@ -1,6 +1,6 @@
 {
     "description": "For BasisLZ/ETC1S the extendedByteLength must be 0.",
-    "command": "ktx validate ${format[args]} input/validate/8103/error_BLZEExtendedByteLengthNotZero_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/8103/error_BLZEExtendedByteLengthNotZero_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/8103/error_BLZEExtendedByteLengthNotZero_${subcase}.out.${format[ext]}",
     "args": {

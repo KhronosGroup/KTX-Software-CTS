@@ -1,6 +1,6 @@
 {
     "description": "The sample count must match the expected sample count of the VkFormat.",
-    "command": "ktx validate ${format[args]} input/validate/6025/error_SampleCountMismatch_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6025/error_SampleCountMismatch_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6025/error_SampleCountMismatch_${subcase}.out.${format[ext]}",
     "args": {

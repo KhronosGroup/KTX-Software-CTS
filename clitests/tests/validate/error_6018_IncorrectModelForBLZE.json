@@ -1,6 +1,6 @@
 {
     "description": "For BasisLZ color model must be ETC1S",
-    "command": "ktx validate ${format[args]} input/validate/6018/error_IncorrectModelForBLZE_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6018/error_IncorrectModelForBLZE_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6018/error_IncorrectModelForBLZE_${subcase}.out.${format[ext]}",
     "args": {

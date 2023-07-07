@@ -1,6 +1,6 @@
 {
     "description": "A DFD block size is at least sizeof(DFDHeader)",
-    "command": "ktx validate ${format[args]} input/validate/6004/error_NotEnoughDataForBlockHeader.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6004/error_NotEnoughDataForBlockHeader.ktx2",
     "status": 3,
     "stdout": "golden/validate/6004/error_NotEnoughDataForBlockHeader.out.${format[ext]}",
     "args": {

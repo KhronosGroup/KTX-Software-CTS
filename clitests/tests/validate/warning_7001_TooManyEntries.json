@@ -1,6 +1,6 @@
 {
     "description": "KVD entry count is limited to 100 in the tooling",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/7001/warning_TooManyEntries.ktx2",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/7001/warning_TooManyEntries.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/7001/${warnAsErr[outPrefix]}_TooManyEntries.out.${format[ext]}",
     "args": {

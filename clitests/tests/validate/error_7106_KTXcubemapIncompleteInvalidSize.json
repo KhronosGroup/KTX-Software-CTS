@@ -1,6 +1,6 @@
 {
     "description": "The size of the KTXcubemapIncomplete value must be 1 byte",
-    "command": "ktx validate ${format[args]} input/validate/7106/error_KTXcubemapIncompleteInvalidSize_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7106/error_KTXcubemapIncompleteInvalidSize_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7106/error_KTXcubemapIncompleteInvalidSize_${subcase}.out.${format[ext]}",
     "args": {

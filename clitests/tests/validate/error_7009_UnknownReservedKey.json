@@ -1,6 +1,6 @@
 {
     "description": "Keys that begin with KTX or ktx are reserved and must not be used",
-    "command": "ktx validate ${format[args]} input/validate/7009/error_UnknownReservedKey_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7009/error_UnknownReservedKey_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7009/error_UnknownReservedKey_${subcase}.out.${format[ext]}",
     "args": {

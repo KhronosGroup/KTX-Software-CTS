@@ -1,6 +1,6 @@
 {
     "description": "When KTXwriterScParams is present KTXwriter must also be present.",
-    "command": "ktx validate ${format[args]} input/validate/7124/error_KTXwriterRequiredButMissing.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7124/error_KTXwriterRequiredButMissing.ktx2",
     "status": 3,
     "stdout": "golden/validate/7124/error_KTXwriterRequiredButMissing.out.${format[ext]}",
     "args": {

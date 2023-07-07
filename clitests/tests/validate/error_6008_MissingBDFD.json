@@ -1,6 +1,6 @@
 {
     "description": "Missing basic DFD",
-    "command": "ktx validate ${format[args]} input/validate/6008/error_MissingBDFD${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6008/error_MissingBDFD${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6008/error_MissingBDFD${subcase}.out.${format[ext]}",
     "args": {

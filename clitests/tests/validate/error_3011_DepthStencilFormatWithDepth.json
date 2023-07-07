@@ -1,6 +1,6 @@
 {
     "description": "pixelDepth must be 0 for depth or stencil formats",
-    "command": "ktx validate ${format[args]} input/validate/3011/error_DepthStencilFormatWithDepth_${vkformat}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3011/error_DepthStencilFormatWithDepth_${vkformat}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3011/error_DepthStencilFormatWithDepth_${vkformat}.out.${format[ext]}",
     "args": {

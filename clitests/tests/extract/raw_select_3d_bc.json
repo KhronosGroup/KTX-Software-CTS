@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from 3D textures with 3D block compressed formats to raw output files with fully specifying the images with --level, --layer, --face and --depth.",
-    "command": "ktx extract --raw --level 0 ${subcase[flag]} output/extract/raw_select_3d_bc/output_${subcase[id]}.raw",
+    "command": "ktx extract --testrun --raw --level 0 ${subcase[flag]} output/extract/raw_select_3d_bc/output_${subcase[id]}.raw",
     "status": 0,
     "outputs": {
         "output/extract/raw_select_3d_bc/output_${subcase[id]}.raw": "golden/extract/raw_select_3d_bc/output_${subcase[id]}.raw"

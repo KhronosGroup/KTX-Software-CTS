@@ -1,6 +1,6 @@
 {
     "description": "Checksum mismatch during decompression.",
-    "command": "ktx validate ${format[args]} input/validate/5006/error_DecompressChecksumError.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/5006/error_DecompressChecksumError.ktx2",
     "status": 3,
     "stdout": "golden/validate/5006/error_DecompressChecksumError.out.${format[ext]}",
     "args": {

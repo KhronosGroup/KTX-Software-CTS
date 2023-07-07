@@ -1,6 +1,6 @@
 {
     "description": "If supercompressionScheme == 0 uncompressedByteLength must match byteLength",
-    "command": "ktx validate ${format[args]} input/validate/4006/error_IncorrectUncompressedByteLength_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/4006/error_IncorrectUncompressedByteLength_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/4006/error_IncorrectUncompressedByteLength_${subcase}.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "For BasicDFDBlock (descriptorBlockSize - 24) % 16 == 0 must be true",
-    "command": "ktx validate ${format[args]} input/validate/6009/error_BasicDescriptorBlockSizeInvalid_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6009/error_BasicDescriptorBlockSizeInvalid_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6009/error_BasicDescriptorBlockSizeInvalid_${subcase}.out.${format[ext]}",
     "args": {

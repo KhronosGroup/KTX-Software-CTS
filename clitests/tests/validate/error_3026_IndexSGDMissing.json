@@ -1,6 +1,6 @@
 {
     "description": "SGD is mandatory for BasisLZ",
-    "command": "ktx validate ${format[args]} input/validate/3026/error_IndexSGDMissing_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3026/error_IndexSGDMissing_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3026/error_IndexSGDMissing_${subcase}.out.${format[ext]}",
     "args": {

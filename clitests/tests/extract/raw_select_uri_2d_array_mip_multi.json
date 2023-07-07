@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from 2D Array Mip textures to raw output files with --uri.",
-    "command": "ktx extract --raw ${subcase[flag]} input/ktx2/valid_${subcase[format]}.ktx2 output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/",
+    "command": "ktx extract --testrun --raw ${subcase[flag]} input/ktx2/valid_${subcase[format]}.ktx2 output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/",
     "status": 0,
     "outputs": {
         "output/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level1_layer1.raw": "golden/extract/raw_select_uri_2d_array_mip_multi/output_${subcase[format]}${subcase[id]}/output_level1_layer1.raw",

@@ -1,6 +1,6 @@
 {
     "description": "The size of the KTXanimData value must be 12 bytes.",
-    "command": "ktx validate ${format[args]} input/validate/7128/error_KTXanimDataInvalidSize_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7128/error_KTXanimDataInvalidSize_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7128/error_KTXanimDataInvalidSize_${subcase}.out.${format[ext]}",
     "args": {

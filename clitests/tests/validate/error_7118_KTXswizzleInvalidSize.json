@@ -1,6 +1,6 @@
 {
     "description": "The size of the KTXswizzle value must be 5 bytes.",
-    "command": "ktx validate ${format[args]} input/validate/7118/error_KTXswizzleInvalidSize_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7118/error_KTXswizzleInvalidSize_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7118/error_KTXswizzleInvalidSize_${subcase}.out.${format[ext]}",
     "args": {

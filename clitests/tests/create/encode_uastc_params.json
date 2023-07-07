@@ -1,6 +1,6 @@
 {
     "description": "Test create with UASTC encoding with various parameter combinations.",
-    "command": "ktx create --raw --format ${subcase} --width 8 --height 8 --testrun --threads 1 --encode uastc ${select[args]} input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_uastc_params/output_${subcase}_${select[id]}.ktx2",
+    "command": "ktx create --testrun --raw --format ${subcase} --width 8 --height 8 --threads 1 --encode uastc ${select[args]} input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_uastc_params/output_${subcase}_${select[id]}.ktx2",
     "status": 0,
     "outputs": {
         "output/create/encode_uastc_params/output_${subcase}_${select[id]}.ktx2": "golden/create/encode_uastc_params/output_${subcase}_${select[id]}.ktx2"

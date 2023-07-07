@@ -1,6 +1,6 @@
 {
     "description": "Test encode with some randomly selected invalid files.",
-    "command": "ktx encode --codec ${codec} input/${subcase}.ktx2 output/encode/encode_error_invalid/output_${subcase}.ktx2",
+    "command": "ktx encode --testrun --codec ${codec} input/${subcase}.ktx2 output/encode/encode_error_invalid/output_${subcase}.ktx2",
     "status": 3,
     "stderr": "golden/encode/encode_error_invalid/${subcase}.err.txt",
     "args": {

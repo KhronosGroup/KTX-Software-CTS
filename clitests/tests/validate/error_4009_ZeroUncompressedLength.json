@@ -1,6 +1,6 @@
 {
     "description": "For VK_FORMAT_UNDEFINED and not KTX_SS_BASIS_LZ: uncompressedByteLength must be non-zero.",
-    "command": "ktx validate ${format[args]} input/validate/4009/error_ZeroUncompressedLength_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/4009/error_ZeroUncompressedLength_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/4009/error_ZeroUncompressedLength_${subcase}.out.${format[ext]}",
     "args": {

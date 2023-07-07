@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from 1D Array textures to raw output files with --all to export every image.",
-    "command": "ktx extract --raw --all input/ktx2/valid_${subcase}.ktx2 output/extract/raw_all_1d_array/output_${subcase}",
+    "command": "ktx extract --testrun --raw --all input/ktx2/valid_${subcase}.ktx2 output/extract/raw_all_1d_array/output_${subcase}",
     "status": 0,
     "outputs": {
         "output/extract/raw_all_1d_array/output_${subcase}/output_layer0.raw": "golden/extract/raw_all_1d_array/output_${subcase}/output_layer0.raw",

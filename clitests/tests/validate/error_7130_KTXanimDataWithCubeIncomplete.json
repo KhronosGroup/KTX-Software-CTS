@@ -1,6 +1,6 @@
 {
     "description": "KTXanimData and KTXcubemapIncomplete cannot be present at the same time.",
-    "command": "ktx validate ${format[args]} input/validate/7130/error_KTXanimDataWithCubeIncomplete.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7130/error_KTXanimDataWithCubeIncomplete.ktx2",
     "status": 3,
     "stdout": "golden/validate/7130/error_KTXanimDataWithCubeIncomplete.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "Too many BDFD samples (limit is 16)",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/6029/warning_TooManySamples.ktx2",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/6029/warning_TooManySamples.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/6029/${warnAsErr[outPrefix]}_TooManySamples.out.${format[ext]}",
     "args": {

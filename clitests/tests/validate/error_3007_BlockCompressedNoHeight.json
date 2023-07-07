@@ -1,6 +1,6 @@
 {
     "description": "pixelHeight must not be 0 for block-compressed formats",
-    "command": "ktx validate ${format[args]} input/validate/3007/error_BlockCompressedNoHeight_${vkformat}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3007/error_BlockCompressedNoHeight_${vkformat}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3007/error_BlockCompressedNoHeight_${vkformat}.out.${format[ext]}",
     "args": {

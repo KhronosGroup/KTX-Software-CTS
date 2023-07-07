@@ -1,6 +1,6 @@
 {
     "description": "Index must be ordered from largest to smallest entry (uncompressedByteLength).",
-    "command": "ktx validate ${format[args]} input/validate/4001/error_IncorrectIndexOrder_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/4001/error_IncorrectIndexOrder_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/4001/error_IncorrectIndexOrder_${subcase}.out.${format[ext]}",
     "args": {

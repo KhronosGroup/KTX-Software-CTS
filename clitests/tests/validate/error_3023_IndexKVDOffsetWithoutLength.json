@@ -1,6 +1,6 @@
 {
     "description": "kvdByteOffset must be 0 when kvdByteLength = 0.",
-    "command": "ktx validate ${format[args]} input/validate/3023/error_IndexKVDOffsetWithoutLength.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3023/error_IndexKVDOffsetWithoutLength.ktx2",
     "status": 3,
     "stdout": "golden/validate/3023/error_IndexKVDOffsetWithoutLength.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "Channel Type must be valid for the given colorModel.",
-    "command": "ktx validate ${format[args]} input/validate/6101/error_InvalidChannelForModel_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6101/error_InvalidChannelForModel_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6101/error_InvalidChannelForModel_${subcase}.out.${format[ext]}",
     "args": {

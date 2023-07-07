@@ -1,6 +1,6 @@
 {
     "description": "If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.",
-    "command": "ktx validate ${format[args]} input/validate/3028/error_IndexDFDInvalidLength_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3028/error_IndexDFDInvalidLength_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3028/error_IndexDFDInvalidLength_${subcase}.out.${format[ext]}",
     "args": {

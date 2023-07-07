@@ -1,6 +1,6 @@
 {
     "description": "Warn on 3D Array texture",
-    "command": "ktx validate ${warnAsErr[flag]} ${format[args]} input/validate/3014/warning_ThreeDArray.ktx2",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/3014/warning_ThreeDArray.ktx2",
     "status": "${warnAsErr[status]}",
     "stdout": "golden/validate/3014/${warnAsErr[outPrefix]}_ThreeDArray.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "The size of the KTXglFormat value must be 12 bytes.",
-    "command": "ktx validate ${format[args]} input/validate/7110/error_KTXglFormatInvalidSize_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7110/error_KTXglFormatInvalidSize_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7110/error_KTXglFormatInvalidSize_${subcase}.out.${format[ext]}",
     "args": {

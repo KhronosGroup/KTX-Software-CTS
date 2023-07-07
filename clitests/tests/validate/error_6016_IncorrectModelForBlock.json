@@ -1,6 +1,6 @@
 {
     "description": "Block compressed formats must have a matching colorModel",
-    "command": "ktx validate ${format[args]} input/validate/6016/error_IncorrectModelForBlock_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6016/error_IncorrectModelForBlock_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6016/error_IncorrectModelForBlock_${subcase}.out.${format[ext]}",
     "args": {

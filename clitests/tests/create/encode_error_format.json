@@ -1,6 +1,6 @@
 {
     "description": "Test create command with encode and unsupported formats.",
-    "command": "ktx create --raw --format ${format} --width 8 --height 8 --encode ${codec} input/raw/raw_${format}_2D_8x8.ktx2 output/create/encode_error_format/output_${format}_2D.ktx",
+    "command": "ktx create --testrun --raw --format ${format} --width 8 --height 8 --encode ${codec} input/raw/raw_${format}_2D_8x8.ktx2 output/create/encode_error_format/output_${format}_2D.ktx",
     "status": 1,
     "stderr": "golden/create/encode_error_format/common.err.txt",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "Key/value data must be sorted by key",
-    "command": "ktx validate ${format[args]} input/validate/7012/error_OutOfOrder.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7012/error_OutOfOrder.ktx2",
     "status": 3,
     "stdout": "golden/validate/7012/error_OutOfOrder.out.${format[ext]}",
     "args": {

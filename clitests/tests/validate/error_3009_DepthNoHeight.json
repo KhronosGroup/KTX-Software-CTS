@@ -1,6 +1,6 @@
 {
     "description": "3D textures must have height",
-    "command": "ktx validate ${format[args]} input/validate/3009/error_DepthNoHeight.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3009/error_DepthNoHeight.ktx2",
     "status": 3,
     "stdout": "golden/validate/3009/error_DepthNoHeight.out.${format[ext]}",
     "args": {

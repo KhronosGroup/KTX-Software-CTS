@@ -1,6 +1,6 @@
 {
     "description": "The value of KTXswizzle must match /^[rgba01]{4}$/.",
-    "command": "ktx validate ${format[args]} input/validate/7119/error_KTXswizzleInvalidValue_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7119/error_KTXswizzleInvalidValue_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7119/error_KTXswizzleInvalidValue_${subcase}.out.${format[ext]}",
     "args": {

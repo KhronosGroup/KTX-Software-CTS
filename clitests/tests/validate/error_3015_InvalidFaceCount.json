@@ -1,6 +1,6 @@
 {
     "description": "faceCount can only be 1 or 6",
-    "command": "ktx validate ${format[args]} input/validate/3015/error_InvalidFaceCount_${faceCount}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3015/error_InvalidFaceCount_${faceCount}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3015/error_InvalidFaceCount_${faceCount}.out.${format[ext]}",
     "args": {

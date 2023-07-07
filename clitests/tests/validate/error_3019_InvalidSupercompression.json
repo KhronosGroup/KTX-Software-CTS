@@ -1,6 +1,6 @@
 {
     "description": "Invalid supercompression scheme",
-    "command": "ktx validate ${format[args]} input/validate/3019/error_InvalidSupercompression_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3019/error_InvalidSupercompression_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3019/error_InvalidSupercompression_${subcase}.out.${format[ext]}",
     "args": {

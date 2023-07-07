@@ -1,6 +1,6 @@
 {
     "description": "KTXastcDecodeMode \"unorm8\" is only valid for LDR formats.",
-    "command": "ktx validate ${format[args]} input/validate/7133/error_KTXastcDecodeModeunorm8NotLDR_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7133/error_KTXastcDecodeModeunorm8NotLDR_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7133/error_KTXastcDecodeModeunorm8NotLDR_${subcase}.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "For non-SS, not VK_FORMAT_UNDEFINED files: Every sample position of the Basic DFD samples must be zero.",
-    "command": "ktx validate ${format[args]} input/validate/6204/error_InterpretDFDMultisample_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6204/error_InterpretDFDMultisample_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6204/error_InterpretDFDMultisample_${subcase}.out.${format[ext]}",
     "args": {

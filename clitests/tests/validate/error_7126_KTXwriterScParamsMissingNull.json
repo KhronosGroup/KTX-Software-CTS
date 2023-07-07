@@ -1,6 +1,6 @@
 {
     "description": "The value of KTXwriterScParams must be NULL terminated.",
-    "command": "ktx validate ${format[args]} input/validate/7126/error_KTXwriterScParamsMissingNull.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7126/error_KTXwriterScParamsMissingNull.ktx2",
     "status": 3,
     "stdout": "golden/validate/7126/error_KTXwriterScParamsMissingNull.out.${format[ext]}",
     "args": {

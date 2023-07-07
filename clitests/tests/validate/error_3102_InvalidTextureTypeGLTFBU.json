@@ -1,6 +1,6 @@
 {
     "description": "KHR_texture_basisu requires 2D texture type",
-    "command": "ktx validate ${GLTFBasisU[flag]} ${format[args]} input/validate/3102/error_InvalidTextureTypeGLTFBU_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${GLTFBasisU[flag]} ${format[args]} input/validate/3102/error_InvalidTextureTypeGLTFBU_${subcase}.ktx2",
     "status": "${GLTFBasisU[status]}",
     "stdout": "golden/validate/3102/error_${GLTFBasisU[outPrefix]}_InvalidTextureTypeGLTFBU_${subcase}.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "The value of descriptorBlockSize member of the header must be at least sizeof(DFDHeader)",
-    "command": "ktx validate ${format[args]} input/validate/6006/error_DescriptorBlockSizeTooSmall_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6006/error_DescriptorBlockSizeTooSmall_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6006/error_DescriptorBlockSizeTooSmall_${subcase}.out.${format[ext]}",
     "args": {

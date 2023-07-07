@@ -1,6 +1,6 @@
 {
     "description": "For UASTC the bitoffset must be 0.",
-    "command": "ktx validate ${format[args]} input/validate/6102/error_InvalidBitOffsetForUASTC_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6102/error_InvalidBitOffsetForUASTC_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6102/error_InvalidBitOffsetForUASTC_${subcase}.out.${format[ext]}",
     "args": {

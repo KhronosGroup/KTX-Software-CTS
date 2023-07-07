@@ -1,6 +1,6 @@
 {
     "description": "Images are ordered from smallest to largest entry.",
-    "command": "ktx validate ${format[args]} input/validate/4002/error_IncorrectLevelOrder_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/4002/error_IncorrectLevelOrder_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/4002/error_IncorrectLevelOrder_${subcase}.out.${format[ext]}",
     "args": {

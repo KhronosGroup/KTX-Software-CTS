@@ -1,6 +1,6 @@
 {
     "description": "ktx info tests on invalid files",
-    "command": "ktx info ${format[args]} input/${subcase}.ktx2",
+    "command": "ktx info --testrun ${format[args]} input/${subcase}.ktx2",
     "status": 0,
     "stdout": "golden/info/invalid_file/${subcase}.out.${format[ext]}",
     "args": {

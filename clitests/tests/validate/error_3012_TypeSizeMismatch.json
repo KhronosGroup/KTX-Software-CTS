@@ -1,6 +1,6 @@
 {
     "description": "The typeSize must match the expected typeSize of the VkFormat.",
-    "command": "ktx validate ${format[args]} input/validate/3012/error_TypeSizeMismatch_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3012/error_TypeSizeMismatch_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3012/error_TypeSizeMismatch_${subcase}.out.${format[ext]}",
     "args": {

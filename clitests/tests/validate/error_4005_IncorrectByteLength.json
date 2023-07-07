@@ -1,6 +1,6 @@
 {
     "description": "If the level size can be calculated byteLength must match expected byte length.",
-    "command": "ktx validate ${format[args]} input/validate/4005/error_IncorrectByteLength_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/4005/error_IncorrectByteLength_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/4005/error_IncorrectByteLength_${subcase}.out.${format[ext]}",
     "args": {

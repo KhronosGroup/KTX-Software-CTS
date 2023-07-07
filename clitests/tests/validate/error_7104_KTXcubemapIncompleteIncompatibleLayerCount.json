@@ -1,6 +1,6 @@
 {
     "description": "layerCount must be the multiple of the number of faces present in KTXcubemapIncompleteIncompatible",
-    "command": "ktx validate ${format[args]} input/validate/7104/error_KTXcubemapIncompleteIncompatibleLayerCount_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7104/error_KTXcubemapIncompleteIncompatibleLayerCount_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7104/error_KTXcubemapIncompleteIncompatibleLayerCount_${subcase}.out.${format[ext]}",
     "args": {

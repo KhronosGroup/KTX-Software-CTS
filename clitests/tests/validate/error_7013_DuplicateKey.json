@@ -1,6 +1,6 @@
 {
     "description": "Key/value data must have unique keys",
-    "command": "ktx validate ${format[args]} input/validate/7013/error_DuplicateKey.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7013/error_DuplicateKey.ktx2",
     "status": 3,
     "stdout": "golden/validate/7013/error_DuplicateKey.out.${format[ext]}",
     "args": {

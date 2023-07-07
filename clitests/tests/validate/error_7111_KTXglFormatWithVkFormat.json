@@ -1,6 +1,6 @@
 {
     "description": "If KTXglFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
-    "command": "ktx validate ${format[args]} input/validate/7111/error_KTXglFormatWithVkFormat_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7111/error_KTXglFormatWithVkFormat_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7111/error_KTXglFormatWithVkFormat_${subcase}.out.${format[ext]}",
     "args": {

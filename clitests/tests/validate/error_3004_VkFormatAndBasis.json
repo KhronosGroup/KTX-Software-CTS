@@ -1,6 +1,6 @@
 {
     "description": "VkFormat must be VK_FORMAT_UNDEFINED if using Basis Universal supercompression",
-    "command": "ktx validate ${format[args]} input/validate/3004/error_VkFormatAndBasis.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3004/error_VkFormatAndBasis.ktx2",
     "status": 3,
     "stdout": "golden/validate/3004/error_VkFormatAndBasis.out.${format[ext]}",
     "args": {

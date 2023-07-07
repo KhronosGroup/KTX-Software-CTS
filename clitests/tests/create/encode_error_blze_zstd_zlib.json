@@ -1,6 +1,6 @@
 {
     "description": "Test that encoding with BasisLZ cannot be supercompressed with Zstd or ZLIB.",
-    "command": "ktx create --raw --format ${subcase} --width 8 --height 8 --encode basis-lz --${supercompression} 1 input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_error_blze_zstd_zlib/output_${subcase}.ktx2",
+    "command": "ktx create --testrun --raw --format ${subcase} --width 8 --height 8 --encode basis-lz --${supercompression} 1 input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_error_blze_zstd_zlib/output_${subcase}.ktx2",
     "status": 1,
     "stderr": "golden/create/encode_error_blze_zstd_zlib/${supercompression}.err.txt",
     "args": {

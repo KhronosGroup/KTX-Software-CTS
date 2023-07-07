@@ -1,6 +1,6 @@
 {
     "description": "Test transcode with some randomly selected invalid files.",
-    "command": "ktx transcode input/${subcase}.ktx2 output/transcode/transcode_error_invalid/output_${subcase}.ktx2",
+    "command": "ktx transcode --testrun input/${subcase}.ktx2 output/transcode/transcode_error_invalid/output_${subcase}.ktx2",
     "status": 3,
     "stderr": "golden/transcode/transcode_error_invalid/${subcase}.err.txt",
     "args": {

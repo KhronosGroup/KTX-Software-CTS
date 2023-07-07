@@ -1,6 +1,6 @@
 {
     "description": "File must be bigger than the size of the header",
-    "command": "ktx validate ${format[args]} input/validate/1003/fatal_UnexpectedEOF_${size}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/1003/fatal_UnexpectedEOF_${size}.ktx2",
     "status": 3,
     "stdout": "golden/validate/1003/fatal_UnexpectedEOF_${size}.out.${format[ext]}",
     "args": {

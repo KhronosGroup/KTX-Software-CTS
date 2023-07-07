@@ -1,6 +1,6 @@
 {
     "description": "If faceCount is equal to 6, pixelHeight must be equal to pixelWidth",
-    "command": "ktx validate ${format[args]} input/validate/3008/error_CubeHeightWidthMismatch_${size}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3008/error_CubeHeightWidthMismatch_${size}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3008/error_CubeHeightWidthMismatch_${size}.out.${format[ext]}",
     "args": {

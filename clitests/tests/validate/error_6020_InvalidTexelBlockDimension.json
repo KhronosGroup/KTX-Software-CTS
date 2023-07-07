@@ -1,6 +1,6 @@
 {
     "description": "Invalid texel block dimensions in basic DFD block",
-    "command": "ktx validate ${format[args]} input/validate/6020/error_InvalidTexelBlockDimension_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6020/error_InvalidTexelBlockDimension_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6020/error_InvalidTexelBlockDimension_${subcase}.out.${format[ext]}",
     "args": {

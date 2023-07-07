@@ -1,6 +1,6 @@
 {
     "description": "For KTX_SS_NONE, not VK_FORMAT_UNDEFINED bytesPlanes must match the expected value based on VkFormat. For UASTC with KTX_SS_NONE bytesPlane0 must be 16 while the rest must be 0.",
-    "command": "ktx validate ${format[args]} input/validate/6021/error_BytesPlanesMismatch_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6021/error_BytesPlanesMismatch_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6021/error_BytesPlanesMismatch_${subcase}.out.${format[ext]}",
     "args": {

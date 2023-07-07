@@ -1,6 +1,6 @@
 {
     "description": "Test PNG with unknown ICC profile.",
-    "command": "ktx create --format R16G16B16A16_SFLOAT input/png/colorspace_ICC_unknown.png output/create/colorspaces_error/png_unknown_icc.ktx2",
+    "command": "ktx create --testrun --format R16G16B16A16_SFLOAT input/png/colorspace_ICC_unknown.png output/create/colorspaces_error/png_unknown_icc.ktx2",
     "status": 3,
     "stderr": "golden/create/colorspaces_error/png_unknown_icc.err.txt",
     "args": {

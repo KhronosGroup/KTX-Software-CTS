@@ -1,6 +1,6 @@
 {
     "description": "If the level size can be calculated byteOffset must match expected byte offset.",
-    "command": "ktx validate ${format[args]} input/validate/4004/error_IncorrectByteOffset_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/4004/error_IncorrectByteOffset_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/4004/error_IncorrectByteOffset_${subcase}.out.${format[ext]}",
     "args": {

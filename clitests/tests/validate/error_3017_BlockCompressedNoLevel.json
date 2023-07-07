@@ -1,6 +1,6 @@
 {
     "description": "levelCount must not be 0 for block-compressed formats",
-    "command": "ktx validate ${format[args]} input/validate/3017/error_BlockCompressedNoLevel_${vkformat}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3017/error_BlockCompressedNoLevel_${vkformat}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3017/error_BlockCompressedNoLevel_${vkformat}.out.${format[ext]}",
     "args": {

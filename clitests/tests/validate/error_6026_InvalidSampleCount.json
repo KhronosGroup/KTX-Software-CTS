@@ -1,6 +1,6 @@
 {
     "description": "The sample count must match the expected sample count of the texture: 1 for UASTC, 1 or 2 for BLZE.",
-    "command": "ktx validate ${format[args]} input/validate/6026/error_InvalidSampleCount_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6026/error_InvalidSampleCount_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6026/error_InvalidSampleCount_${subcase}.out.${format[ext]}",
     "args": {

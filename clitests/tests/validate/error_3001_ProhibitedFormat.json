@@ -1,6 +1,6 @@
 {
     "description": "Prohibited VkFormat",
-    "command": "ktx validate ${format[args]} input/validate/3001/error_ProhibitedFormat_${vkformat}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/3001/error_ProhibitedFormat_${vkformat}.ktx2",
     "status": 3,
     "stdout": "golden/validate/3001/error_ProhibitedFormat_${vkformat}.out.${format[ext]}",
     "args": {

@@ -1,6 +1,6 @@
 {
     "description": "Test extraction from ZLIB compressed texture.",
-    "command": "ktx extract --raw input/ktx2/valid_${subcase}_2D_ZLIB${level}.ktx2 output/extract/raw_zlib/output_${subcase}_2D_ZLIB${level}.raw",
+    "command": "ktx extract --testrun --raw input/ktx2/valid_${subcase}_2D_ZLIB${level}.ktx2 output/extract/raw_zlib/output_${subcase}_2D_ZLIB${level}.raw",
     "status": 0,
     "outputs": {
         "output/extract/raw_zlib/output_${subcase}_2D_ZLIB${level}.raw": "golden/extract/raw_zlib/output_${subcase}_2D_ZLIB${level}.raw"

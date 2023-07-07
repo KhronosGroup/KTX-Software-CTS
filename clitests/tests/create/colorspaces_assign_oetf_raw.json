@@ -1,6 +1,6 @@
 {
     "description": "Test RAW input images with --assign-oetf option.",
-    "command": "ktx create --raw --format ${format} --width 8 --height 8 --levels 1 --assign-oetf ${oetf} input/raw/raw_${format}_2D_8x8.raw output/create/colorspaces_assign_oetf_raw/output_${format}_${oetf}.ktx2",
+    "command": "ktx create --testrun --raw --format ${format} --width 8 --height 8 --levels 1 --assign-oetf ${oetf} input/raw/raw_${format}_2D_8x8.raw output/create/colorspaces_assign_oetf_raw/output_${format}_${oetf}.ktx2",
     "status": 0,
     "outputs": {
         "output/create/colorspaces_assign_oetf_raw/output_${format}_${oetf}.ktx2": "golden/create/colorspaces_assign_oetf_raw/output_${format}_${oetf}.ktx2"

@@ -1,6 +1,6 @@
 {
     "description": "If KTXmetalPixelFormat is present vkFormat must be VK_FORMAT_UNDEFINED.",
-    "command": "ktx validate ${format[args]} input/validate/7116/error_KTXmetalPixelFormatWithVkFormat_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/7116/error_KTXmetalPixelFormatWithVkFormat_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/7116/error_KTXmetalPixelFormatWithVkFormat_${subcase}.out.${format[ext]}",
     "args": {

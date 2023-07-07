@@ -1,6 +1,6 @@
 {
     "description": "sgdByteLength must be at least 20 bytes (sizeof ktxBasisLzGlobalHeader).",
-    "command": "ktx validate ${format[args]} input/validate/8101/error_BLZESizeTooSmallHeader_${subcase}.ktx2",
+    "command": "ktx validate --testrun ${format[args]} input/validate/8101/error_BLZESizeTooSmallHeader_${subcase}.ktx2",
     "status": 3,
     "stdout": "golden/validate/8101/error_BLZESizeTooSmallHeader_${subcase}.out.${format[ext]}",
     "args": {
