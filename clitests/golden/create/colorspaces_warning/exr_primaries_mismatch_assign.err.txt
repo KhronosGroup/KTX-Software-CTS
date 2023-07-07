@@ -1,1 +1,1 @@
-ktx create warning: Input image "input/exr/chromaticities_`[A-Za-z0-9_]+`.exr" has different primaries (`[A-Z0-9_]+`) than the first image (KHR_DF_PRIMARIES_BT709) but will be threaded identically as specified by the --assign-primaries option.
+ktx create warning: Input image "input/exr/chromaticities_`[A-Za-z0-9_]+`.exr" has different primaries (`[A-Z0-9_]+`) than the first image (KHR_DF_PRIMARIES_BT709) but will be treated identically as specified by the --assign-primaries option.

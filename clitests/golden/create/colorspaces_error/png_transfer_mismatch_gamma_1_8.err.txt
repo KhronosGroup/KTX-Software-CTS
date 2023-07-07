@@ -1,1 +1,1 @@
-ktx create fatal: Input image "input/png/colorspace_gamma_1_8.png" has different transfer function (KHR_DF_TRANSFER_UNSPECIFIED) than the first image (KHR_DF_TRANSFER_SRGB).
+ktx create fatal: Input image "input/png/colorspace_gamma_1_8.png" has different transfer function (KHR_DF_TRANSFER_UNSPECIFIED) than the first image (KHR_DF_TRANSFER_SRGB). Use --assign-oetf or --convert-oetf to specify handling and stop this error.
