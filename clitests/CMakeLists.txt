@@ -331,9 +331,12 @@ set(CASE_REGEN_GOLDEN_OUTPUTS)
 if(NOT DEFINED KTX_TOOLS_PATH)
     message(FATAL_ERROR "KTX_TOOLS_PATH not defined")
 endif()
+if(NOT DEFINED KTX_DIFF_PATH)
+    message(FATAL_ERROR "KTX_DIFF_PATH not defined")
+endif()
 
-if(MSVC)
-    set(CLITEST_ARGS "--msvc")
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    set(CLITEST_ARGS "--primary")
 else()
     set(CLITEST_ARGS "")
 endif()
@@ -349,10 +352,9 @@ foreach(CASE_FILE ${CASELIST})
     add_custom_command(
         OUTPUT ${CASE_FILE}
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path ${KTX_TOOLS_PATH} --regen-golden)
-
+        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}" --regen-golden)
     add_test(NAME ${FULL_CASE_NAME}
-        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path ${KTX_TOOLS_PATH}
+        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}"
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endforeach()
 

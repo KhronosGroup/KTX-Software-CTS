@@ -2,20 +2,20 @@
     "description": "Test --compare-ssim and --compare-psnr.",
     "command": "ktx create --testrun --threads 1 ${encode[flag]} ${compare[flag]} ${create[flag]} output/create/compare/output_${encode[id]}_${compare[id]}_${create[id]}.ktx2",
     "status": 0,
-    "allowMismatchOnMSVC": "${encode[allowMismatchOnMSVC]}",
     "stdout": "golden/create/compare/${encode[id]}_${compare[id]}_${create[id]}.out.txt",
     "stderr": "golden/create/compare/empty.err.txt",
+    "outputTolerance": "${encode[outputTolerance]}",
     "outputs": {
         "output/create/compare/output_${encode[id]}_${compare[id]}_${create[id]}.ktx2": "golden/create/compare/output_${encode[id]}_${compare[id]}_${create[id]}.ktx2"
     },
     "args": {
         "encode": [
-            { "allowMismatchOnMSVC": 0, "id": "uastc_0", "flag": "--encode uastc"},
-            { "allowMismatchOnMSVC": 0, "id": "uastc_1", "flag": "--encode uastc --uastc-rdo --uastc-rdo-m --uastc-quality 0 --uastc-rdo-f --uastc-rdo-d 3000 --zlib 8 --uastc-rdo-s 0.01"},
-            { "allowMismatchOnMSVC": 0, "id": "uastc_zlib", "flag": "--encode uastc --zlib 5"},
-            { "allowMismatchOnMSVC": 1, "id": "blze_0", "flag": "--encode basis-lz"},
-            { "allowMismatchOnMSVC": 1, "id": "blze_1", "flag": "--encode basis-lz --clevel 2 --qlevel 16 --no-sse"},
-            { "allowMismatchOnMSVC": 1, "id": "blze_2", "flag": "--encode basis-lz --clevel 1 --qlevel 200"}
+            { "outputTolerance": false, "id": "uastc_0", "flag": "--encode uastc"},
+            { "outputTolerance": false, "id": "uastc_1", "flag": "--encode uastc --uastc-rdo --uastc-rdo-m --uastc-quality 0 --uastc-rdo-f --uastc-rdo-d 3000 --zlib 8 --uastc-rdo-s 0.01"},
+            { "outputTolerance": false, "id": "uastc_zlib", "flag": "--encode uastc --zlib 5"},
+            { "outputTolerance": 0.08, "id": "blze_0", "flag": "--encode basis-lz"},
+            { "outputTolerance": 0.08, "id": "blze_1", "flag": "--encode basis-lz --clevel 2 --qlevel 16 --no-sse"},
+            { "outputTolerance": 0.08, "id": "blze_2", "flag": "--encode basis-lz --clevel 1 --qlevel 200"}
         ],
         "compare": [
             { "id": "ssim", "flag": "--compare-ssim" },

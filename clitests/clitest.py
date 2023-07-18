@@ -58,8 +58,13 @@ if __name__ == '__main__':
                         help='Regenerate reference files')
     parser.add_argument('-e', '--executable-path', action='store', required=True,
                         help='Path to use for the executed command')
-    parser.add_argument('--msvc', action='store_true',
-                        help='Indicates that test runs against MSVC build')
+    parser.add_argument('-d', '--ktxdiff-path', action='store', required=True,
+                        help='Path to use for the diff tool')
+    parser.add_argument('--primary', action='store_true',
+                        help='Indicates that the test runs on a primary platform. '
+                             'Depending on the platform, tests with \'outputTolerance\' will behave differently: '
+                             'On primary platforms the outputs must match exactly and the golden files are generated, '
+                             'while on non-primary platforms the outputs are compared with ktxdiff and the golden files are not generated.')
     parser.add_argument('--keep-matching-outputs', action='store_true',
                         help='Indicates that test run should keep and not delete the matching output files')
 
@@ -112,6 +117,14 @@ if __name__ == '__main__':
             subcase[arg] = combination[index]
         subcases.append(subcase)
 
+    def compare_with_ktxdiff(filepath_expected, filepath_actual, tolerance):
+        with subprocess.Popen(
+                [cli_args.ktxdiff_path, filepath_expected, filepath_actual, str(tolerance)],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE) as diff_proc:
+            diff_stdout, diff_stderr = diff_proc.communicate()
+            diff_status = diff_proc.returncode
+            return diff_status, diff_stdout.decode('utf-8', 'replace'), diff_stderr.decode('utf-8', 'replace')
 
     # Execute subcases
 
@@ -154,8 +167,8 @@ if __name__ == '__main__':
             'stderr': ''
         }
 
-        allowMismatchOnMSVC = False
         stdoutBinary = False
+        outputTolerance = None
 
         try:
             cmd_args = [ arg for arg in ctx.eval(testcase['command']).split(' ') if arg ]
@@ -167,14 +180,13 @@ if __name__ == '__main__':
             else:
                 stdin_pipe = subprocess.DEVNULL
 
-            proc = subprocess.Popen(
-                cmd_args,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                stdin=stdin_pipe)
-
-            stdout, stderr = proc.communicate()
-            status = proc.returncode
+            with subprocess.Popen(
+                    cmd_args,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    stdin=stdin_pipe) as proc:
+                stdout, stderr = proc.communicate()
+                status = proc.returncode
 
             any_status = False
             if isinstance(testcase['status'], str):
@@ -190,11 +202,11 @@ if __name__ == '__main__':
                 subcase_messages.append(f"Expected return code '{expected_status}' but got '{status}'")
                 subcase_failed = True
 
-            if 'allowMismatchOnMSVC' in testcase:
-                if isinstance(testcase['allowMismatchOnMSVC'], str):
-                    allowMismatchOnMSVC = ctx.eval(testcase['allowMismatchOnMSVC'])
+            if 'outputTolerance' in testcase:
+                if isinstance(testcase['outputTolerance'], str):
+                    outputTolerance = ctx.eval(testcase['outputTolerance'])
                 else:
-                    allowMismatchOnMSVC = testcase['allowMismatchOnMSVC']
+                    outputTolerance = testcase['outputTolerance']
 
             if 'stdoutBinary' in testcase:
                 if isinstance(testcase['stdoutBinary'], str):
@@ -220,7 +232,6 @@ if __name__ == '__main__':
             subcase_failed = True
 
         # Check stdout/stderr
-
         for stdfile in [ 'stdout', 'stderr' ]:
             output_ref = ''
             output_ref_filename = None
@@ -242,8 +253,8 @@ if __name__ == '__main__':
 
                     if old_output_ref_contains_regex:
                         ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated as it contains a regex"
-                    elif cli_args.msvc and allowMismatchOnMSVC:
-                        ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated on MSVC build as it has MSVC output mismatches allowed"
+                    elif outputTolerance and not cli_args.primary:
+                        ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated on non-primary platform as it has output tolerance enabled"
                     else:
                         os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
                         if stdfileBinary:
@@ -266,27 +277,27 @@ if __name__ == '__main__':
                 output_ref_file.close()
 
             output_matching = ctx.match(output_ref, output[stdfile], stdfileBinary)
-            if not output_matching and cli_args.msvc and allowMismatchOnMSVC:
-                messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{stdfile}' and reference file '{output_ref_filename}'")
-            else:
-                output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
+            output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
 
-                if not output_matching or cli_args.keep_matching_outputs:
-                    if stdfileBinary:
-                        output_file = open(output_filename, 'wb')
-                    else:
-                        output_file = open(output_filename, 'w', newline='\n', encoding='utf-8')
-                    output_file.write(output[stdfile])
-                    output_file.close()
+            if not output_matching or cli_args.keep_matching_outputs:
+                if stdfileBinary:
+                    output_file = open(output_filename, 'wb')
+                else:
+                    output_file = open(output_filename, 'w', newline='\n', encoding='utf-8')
+                output_file.write(output[stdfile])
+                output_file.close()
 
-                if not output_matching and not cli_args.regen_golden:
+            if not output_matching and not cli_args.regen_golden:
+                if outputTolerance and not cli_args.primary:
+                    # For stdin/stdout we do not use ktxdiff as in the relevant tests these are never ktx2 files
+                    messages.append(f"    WARNING: Allowed mismatch on non-primary platform between output file '{stdfile}' and reference file '{output_ref_filename}'")
+                else:
                     if output_ref_filename:
                         subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")
                     else:
                         subcase_messages.append(f"Expected no {stdfile} but {stdfile} is not empty")
                     subcase_messages.append(f"  {stdfile} for subcase is written to '{output_filename}'")
                     subcase_failed = True
-
 
         # Check output files
         if 'outputs' in testcase:
@@ -299,8 +310,8 @@ if __name__ == '__main__':
                 if not cmd_failed and cli_args.regen_golden:
                     os.makedirs(os.path.dirname(output_ref), exist_ok=True)
                     if os.path.isfile(output_cur):
-                        if cli_args.msvc and allowMismatchOnMSVC:
-                            ref_not_updated[output_ref] = f"NOTE: reference file '{output_ref}' was not updated on MSVC build as it has MSVC output mismatches allowed"
+                        if outputTolerance and not cli_args.primary:
+                            ref_not_updated[output_ref] = f"NOTE: reference file '{output_ref}' was not updated on non-primary platform as it has output tolerance enabled"
                         else:
                             shutil.copyfile(output_cur, output_ref)
                     else:
@@ -324,8 +335,15 @@ if __name__ == '__main__':
                         if not cli_args.keep_matching_outputs and not cli_args.regen_golden:
                             os.remove(output_cur)
                     else:
-                        if cli_args.msvc and allowMismatchOnMSVC:
-                            messages.append(f"    WARNING: allowed mismatch on MSVC build between output file '{output_cur}' and reference file '{output_ref}'")
+                        if outputTolerance and not cli_args.primary:
+                            ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_cur, output_ref, outputTolerance)
+                            if ktxdiff_status != 0:
+                                if ktxdiff_stdout:
+                                    subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
+                                if ktxdiff_stderr:
+                                    subcase_messages.append(ktxdiff_stderr.rstrip('\n'))
+                                subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}' exceeded the output tolerance '{outputTolerance}' on a non-primary platform")
+                                subcase_failed = True
                         else:
                             subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
                             subcase_failed = True
@@ -339,7 +357,7 @@ if __name__ == '__main__':
             messages.append(f"    Subcase #{subcase_index + 1} FAILED:")
             messages.extend(["      " + msg for msg in subcase_messages])
             messages.append(f"      Run subcase with:")
-            messages.append(f"        clitest.py -e {cli_args.executable_path} {cli_args.json_test_file} {ctx.cmdArgs()}")
+            messages.append(f"        clitest.py -e \"{cli_args.executable_path}\" -d \"{cli_args.ktxdiff_path}\" {cli_args.json_test_file} {ctx.cmdArgs()}")
             subcases_failed += 1
             failed = True
 
