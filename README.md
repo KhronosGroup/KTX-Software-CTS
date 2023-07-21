@@ -36,9 +36,6 @@ Each JSON test case file shall contain a root object with the following properti
 - `command (eval-string)`: Command that will be executed. (For `ktx` tests use the --testrun flag to run the CLI tools
 in a mode where they produce deterministic output whenever possible.)
 - `status (int | eval-string)`: Expected status code returned by the command. If the status code does not match the value the test fails.
-- `allowMismatchOnMSVC (bool | eval-string)`: Allow mismatch of golden and output files with MSVC.
-BasisLZ compression relies on undefined order of std::unordered_map containers so for certain test
-cases the outputs are not deterministic. Optional: defaults to false.
 - `comment (string)`: Unevaluated and unused. Useful to leave comments in the test case file.
 - `stdout (eval-string)`: Filepath for golden stdout file. 
 If there is a mismatch between the golden file and the stdout the test fails.
@@ -51,6 +48,12 @@ If there is a mismatch between the golden file and the stderr the test fails.
 Optional: If the property is missing then the stderr of the command is not checked.
 - `stdin (eval-string)`: Filepath for a file that will be redirected to stdin.
 Optional: If the property is missing then the stdin of the command is not supplied.
+- `outputTolerance (false | float | eval-string)`: Allow mismatch of golden and output files on non-primary
+platforms (platforms that are not marked with --primary for the clitest.py) with the given tolerance. On non-primary
+platforms, it also disables golden file generation.
+Falsy values require exact match while float values allow differences on non-primary platforms.
+(For example BasisLZ compression relies on undefined order of std::unordered_map containers
+so for certain test cases the outputs are not deterministic). Optional: defaults to false.
 - `outputs (dictionary)`: Key-Value dictionary of every expected output.
 If there is a mismatch between any of the golden and output files the test fails.
 Optional: If the property is missing the output files of the command are not checks.
