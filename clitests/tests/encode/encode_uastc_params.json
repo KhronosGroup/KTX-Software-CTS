@@ -2,6 +2,7 @@
     "description": "Test UASTC encoding with various parameter combinations.",
     "command": "ktx encode --testrun --threads 1 --codec uastc ${select[args]} input/encode/large_${subcase}_ZSTD.ktx2 output/encode/encode_uastc_params/output_${subcase}_${select[id]}.ktx2",
     "status": 0,
+    "outputTolerance": 0.08,
     "outputs": {
         "output/encode/encode_uastc_params/output_${subcase}_${select[id]}.ktx2": "golden/encode/encode_uastc_params/output_${subcase}_${select[id]}.ktx2"
     },

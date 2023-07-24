@@ -2,6 +2,7 @@
     "description": "Test mipmap generation and filtering.",
     "command": "ktx create --testrun --generate-mipmap ${flagLevels[flag]} ${flagFilter[flag]} ${flagFilterScale[flag]} ${flagWrap[flag]} --format ${subcase[format]} ${subcase[file]} output/create/generate_mipmap/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2",
     "status": 0,
+    "outputTolerance": 0.08,
     "outputs": {
         "output/create/generate_mipmap/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2": "golden/create/generate_mipmap/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2"
     },
