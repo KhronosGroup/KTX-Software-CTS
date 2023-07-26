@@ -2,7 +2,7 @@
 # Copyright 2022-2023 RasterGrid Kft.
 # SPDX-License-Identifier: Apache-2.0
 
-find_package(PythonInterp 3 REQUIRED)
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
 enable_testing()
 
@@ -352,9 +352,9 @@ foreach(CASE_FILE ${CASELIST})
     add_custom_command(
         OUTPUT ${CASE_FILE}
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}" --regen-golden)
+        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}" --regen-golden)
     add_test(NAME ${FULL_CASE_NAME}
-        COMMAND ${PYTHON_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}"
+        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}"
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endforeach()
 
