@@ -2,7 +2,8 @@
     "description": "Test mipmap generation and filtering.",
     "command": "ktx create --testrun --generate-mipmap ${flagLevels[flag]} ${flagFilter[flag]} ${flagFilterScale[flag]} ${flagWrap[flag]} --format ${subcase[format]} ${subcase[file]} output/create/generate_mipmap/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2",
     "status": 0,
-    "outputTolerance": 0.08,
+    "comment": "On apple silicon certain floating point operation causes the lanczos4 filter to sometime be off-by a single unit",
+    "outputTolerance": "${flagFilter[outputTolerance]}",
     "outputs": {
         "output/create/generate_mipmap/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2": "golden/create/generate_mipmap/${subcase[format]}_${flagLevels[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2"
     },
@@ -12,8 +13,8 @@
             { "id": "levels5", "flag": "--levels 5" }
         ],
         "flagFilter": [
-            { "id": "lanczos4", "flag": "--mipmap-filter lanczos4" },
-            { "id": "box", "flag": "--mipmap-filter box" }
+            { "id": "lanczos4", "outputTolerance": 1.0, "flag": "--mipmap-filter lanczos4" },
+            { "id": "box", "outputTolerance": 0.08, "flag": "--mipmap-filter box" }
         ],
         "flagFilterScale": [
             { "id": "scale10", "flag": "--mipmap-filter-scale 1.0" },
