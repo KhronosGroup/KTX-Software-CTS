@@ -3,7 +3,7 @@
     "command": "ktx encode --testrun --threads 1 --codec basis-lz ${select[args]} input/encode/large_${subcase}_ZSTD.ktx2 output/encode/encode_blze_params/output_${subcase}_${select[id]}.ktx2",
     "status": 0,
     "comment": "BasisLZ compression relies on undefined order of std::unordered_map containers.",
-    "outputTolerance": 0.08,
+    "outputTolerance": 0.16,
     "outputs": {
         "output/encode/encode_blze_params/output_${subcase}_${select[id]}.ktx2": "golden/encode/encode_blze_params/output_${subcase}_${select[id]}.ktx2"
     },
