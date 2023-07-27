@@ -117,9 +117,9 @@ if __name__ == '__main__':
             subcase[arg] = combination[index]
         subcases.append(subcase)
 
-    def compare_with_ktxdiff(filepath_expected, filepath_actual, tolerance):
+    def compare_with_ktxdiff(filepath_expected, filepath_received, tolerance):
         with subprocess.Popen(
-                [cli_args.ktxdiff_path, filepath_expected, filepath_actual, str(tolerance)],
+                [cli_args.ktxdiff_path, filepath_expected, filepath_received, str(tolerance)],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE) as diff_proc:
             diff_stdout, diff_stderr = diff_proc.communicate()
@@ -336,7 +336,7 @@ if __name__ == '__main__':
                             os.remove(output_cur)
                     else:
                         if outputTolerance and not cli_args.primary:
-                            ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_cur, output_ref, outputTolerance)
+                            ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, outputTolerance)
                             if ktxdiff_status != 0:
                                 if ktxdiff_stdout:
                                     subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
