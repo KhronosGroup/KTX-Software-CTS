@@ -267,6 +267,8 @@ set(CASELIST
     tests/create/encode_error_format.json
     tests/create/encode_uastc.json
     tests/create/encode_uastc_params.json
+    tests/create/fewer_components_exr.json
+    tests/create/fewer_components_png.json
     tests/create/generate_mipmap.json
     tests/create/help.json
     tests/create/input_swizzle.json
