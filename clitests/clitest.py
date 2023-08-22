@@ -58,7 +58,7 @@ if __name__ == '__main__':
                         help='Regenerate reference files')
     parser.add_argument('-e', '--executable-path', action='store', required=True,
                         help='Path to use for the executed command')
-    parser.add_argument('-d', '--ktxdiff-path', action='store', required=True,
+    parser.add_argument('-d', '--ktxdiff-path', action='store',
                         help='Path to use for the diff tool')
     parser.add_argument('--primary', action='store_true',
                         help='Indicates that the test runs on a primary platform. '
@@ -336,14 +336,18 @@ if __name__ == '__main__':
                             os.remove(output_cur)
                     else:
                         if outputTolerance and not cli_args.primary:
-                            ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, outputTolerance)
-                            if ktxdiff_status != 0:
-                                if ktxdiff_stdout:
-                                    subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
-                                if ktxdiff_stderr:
-                                    subcase_messages.append(ktxdiff_stderr.rstrip('\n'))
-                                subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}' exceeded the output tolerance '{outputTolerance}' on a non-primary platform")
+                            if not cli_args.ktxdiff_path:
+                                subcase_messages.append("Test case requires diff tool. Please specify path using the -d command line argument.")
                                 subcase_failed = True
+                            else:
+                                ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, outputTolerance)
+                                if ktxdiff_status != 0:
+                                    if ktxdiff_stdout:
+                                        subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
+                                    if ktxdiff_stderr:
+                                        subcase_messages.append(ktxdiff_stderr.rstrip('\n'))
+                                    subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}' exceeded the output tolerance '{outputTolerance}' on a non-primary platform")
+                                    subcase_failed = True
                         else:
                             subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
                             subcase_failed = True
@@ -357,7 +361,8 @@ if __name__ == '__main__':
             messages.append(f"    Subcase #{subcase_index + 1} FAILED:")
             messages.extend(["      " + msg for msg in subcase_messages])
             messages.append(f"      Run subcase with:")
-            messages.append(f"        clitest.py -e \"{cli_args.executable_path}\" -d \"{cli_args.ktxdiff_path}\" {cli_args.json_test_file} {ctx.cmdArgs()}")
+            ktxdiff_arg = f" -d \"{cli_args.ktxdiff_path}\"" if cli_args.ktxdiff_path else ""
+            messages.append(f"        clitest.py -e \"{cli_args.executable_path}\"{ktxdiff_arg} {cli_args.json_test_file} {ctx.cmdArgs()}")
             subcases_failed += 1
             failed = True
 
