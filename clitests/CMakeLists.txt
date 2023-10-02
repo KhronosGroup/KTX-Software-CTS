@@ -228,6 +228,7 @@ set(CASELIST
     tests/extract/stdin.json
     tests/extract/stdout.json
 
+    tests/create/astc_params.json
     tests/create/3d_with_1_depth.json
     tests/create/array_with_1_layer.json
     tests/create/basic_exr.json

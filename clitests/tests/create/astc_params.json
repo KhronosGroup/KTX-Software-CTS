@@ -1,0 +1,16 @@
+{
+    "description": "Test create with various ASTC encoding parameter combinations.",
+    "command": "ktx create --testrun ${select[args]} output/create/astc_params/output_${select[id]}.ktx2",
+    "status": 0,
+    "outputTolerance": 0.08,
+    "outputs": {
+        "output/create/astc_params/output_${select[id]}.ktx2": "golden/create/astc_params/output_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "combination_1", "args": "--format ASTC_4x4_UNORM_BLOCK input/png/basic_RGBA8_16x16.png --astc-quality fastest --zstd 5" },
+            { "id": "combination_2", "args": "--format ASTC_8x8_UNORM_BLOCK input/png/basic_RGBA8_16x16.png --astc-quality medium --astc-perceptual" },
+            { "id": "combination_3", "args": "--format ASTC_4x4_UNORM_BLOCK input/png/basic_RGBA8_16x16.png --astc-perceptual --zlib 5" }
+        ]
+    }
+}
