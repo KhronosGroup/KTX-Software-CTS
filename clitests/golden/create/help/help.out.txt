@@ -96,8 +96,6 @@ Usage:
                                 output whenever possible
 
  Encode ASTC options:
-      --astc-mode ldr | hdr   Specify which encoding mode to use. LDR is the default unless the 
-                              input image is 16-bit in which case the default is HDR.
       --astc-quality <level>  The quality level configures the quality-performance tradeoff for the 
                               compressor; more complete searches of the search space improve image 
                               quality at the expense of compression time. Default is 'medium'. The 
