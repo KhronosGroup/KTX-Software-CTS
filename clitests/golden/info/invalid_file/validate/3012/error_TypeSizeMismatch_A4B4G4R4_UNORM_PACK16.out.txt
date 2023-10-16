@@ -1,14 +1,14 @@
 Validation failed
 
 error-3012: Invalid typeSize. The value must match the expected typeSize of the VkFormat.
-    typeSize is 3 but for VkFormat VK_FORMAT_A4R4G4B4_UNORM_PACK16 it must be 2.
+    typeSize is 3 but for VkFormat VK_FORMAT_A4B4G4R4_UNORM_PACK16 it must be 2.
 warning-5004: Non-conformant texture file accepted by libktx.
     KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
 
 Header
 
 identifier: «KTX 20»\r\n\x1A\n
-vkFormat: VK_FORMAT_A4R4G4B4_UNORM_PACK16
+vkFormat: VK_FORMAT_A4B4G4R4_UNORM_PACK16
 typeSize: 3
 pixelWidth: 16
 pixelHeight: 16
@@ -45,7 +45,7 @@ Dimensions: 1, 1, 1, 1
 Plane bytes: 2, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
-    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
     Length: 4 bits Offset: 0
     Position: 0, 0, 0, 0
     Lower: 0x00000000
@@ -59,7 +59,7 @@ Sample 1:
     Upper: 0x0000000f
 Sample 2:
     Qualifiers: 0x0 ()
-    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
     Length: 4 bits Offset: 8
     Position: 0, 0, 0, 0
     Lower: 0x00000000
