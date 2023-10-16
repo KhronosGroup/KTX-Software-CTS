@@ -231,126 +231,140 @@ if __name__ == '__main__':
             cmd_failed = True
             subcase_failed = True
 
-        # Check stdout/stderr
-        for stdfile in [ 'stdout', 'stderr' ]:
-            output_ref = ''
-            output_ref_filename = None
-            stdfileBinary = stdfile == 'stdout' and stdoutBinary
+        try:
+            # Check stdout/stderr
+            for stdfile in [ 'stdout', 'stderr' ]:
+                output_ref = ''
+                output_ref_filename = None
+                stdfileBinary = stdfile == 'stdout' and stdoutBinary
 
-            if stdfile in testcase:
-                output_ref_filename = ctx.eval(testcase[stdfile])
+                if stdfile in testcase:
+                    output_ref_filename = ctx.eval(testcase[stdfile])
 
-                if not cmd_failed and cli_args.regen_golden:
-                    old_output_ref_contains_regex = False
-                    if os.path.isfile(output_ref_filename):
-                        if stdfileBinary:
-                            old_output_ref_file = open(output_ref_filename, 'rb')
-                        else:
-                            old_output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
-                        old_output_ref = old_output_ref_file.read()
-                        old_output_ref_file.close()
-                        old_output_ref_contains_regex = not stdfileBinary and bool(re.findall(r'`.*`', old_output_ref))
-
-                    if old_output_ref_contains_regex:
-                        ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated as it contains a regex"
-                    elif outputTolerance and not cli_args.primary:
-                        ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated on non-primary platform as it has output tolerance enabled"
-                    else:
-                        os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
-                        if stdfileBinary:
-                            output_ref_file = open(output_ref_filename, 'wb')
-                        else:
-                            output_ref_file = open(output_ref_filename, 'w', newline='\n', encoding='utf-8')
-                        output_ref_file.write(output[stdfile])
-                        output_ref_file.close()
-
-                if not os.path.isfile(output_ref_filename):
-                    subcase_messages.append(f"Cannot find reference {stdfile} file '{output_ref_filename}'")
-                    subcase_failed = True
-                    continue
-
-                if stdfileBinary:
-                    output_ref_file = open(output_ref_filename, 'rb')
-                else:
-                    output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
-                output_ref = output_ref_file.read()
-                output_ref_file.close()
-
-            output_matching = ctx.match(output_ref, output[stdfile], stdfileBinary)
-            output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
-
-            if not output_matching or cli_args.keep_matching_outputs:
-                if stdfileBinary:
-                    output_file = open(output_filename, 'wb')
-                else:
-                    output_file = open(output_filename, 'w', newline='\n', encoding='utf-8')
-                output_file.write(output[stdfile])
-                output_file.close()
-
-            if not output_matching and not cli_args.regen_golden:
-                if outputTolerance and not cli_args.primary:
-                    # For stdin/stdout we do not use ktxdiff as in the relevant tests these are never ktx2 files
-                    messages.append(f"    WARNING: Allowed mismatch on non-primary platform between output file '{stdfile}' and reference file '{output_ref_filename}'")
-                else:
-                    if output_ref_filename:
-                        subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")
-                    else:
-                        subcase_messages.append(f"Expected no {stdfile} but {stdfile} is not empty")
-                    subcase_messages.append(f"  {stdfile} for subcase is written to '{output_filename}'")
-                    subcase_failed = True
-
-        # Check output files
-        if 'outputs' in testcase:
-            for output_cur, output_ref in testcase['outputs'].items():
-                files_found = True
-
-                output_cur = ctx.eval(output_cur)
-                output_ref = ctx.eval(output_ref)
-
-                if not cmd_failed and cli_args.regen_golden:
-                    os.makedirs(os.path.dirname(output_ref), exist_ok=True)
-                    if os.path.isfile(output_cur):
-                        if outputTolerance and not cli_args.primary:
-                            ref_not_updated[output_ref] = f"NOTE: reference file '{output_ref}' was not updated on non-primary platform as it has output tolerance enabled"
-                        else:
-                            shutil.copyfile(output_cur, output_ref)
-                    else:
-                        subcase_failed = True
-                        subcase_messages.append(f"stdout:\n{output['stdout']}")
-                        subcase_messages.append(f"stderr:\n{output['stderr']}")
-
-                if not os.path.isfile(output_cur):
-                    subcase_messages.append(f"Cannot find output file '{output_cur}'")
-                    subcase_failed = True
-                    files_found = False
-
-                if not os.path.isfile(output_ref):
-                    subcase_messages.append(f"Cannot find reference file '{output_ref}' for output file '{output_cur}'")
-                    subcase_failed = True
-                    files_found = False
-
-                if files_found:
-                    output_matching = filecmp.cmp(output_cur, output_ref, shallow=False)
-                    if output_matching or cli_args.regen_golden:
-                        if not cli_args.keep_matching_outputs and not cli_args.regen_golden:
-                            os.remove(output_cur)
-                    else:
-                        if outputTolerance and not cli_args.primary:
-                            if not cli_args.ktxdiff_path:
-                                subcase_messages.append("Test case requires diff tool. Please specify path using the -d command line argument.")
-                                subcase_failed = True
+                    if not cmd_failed and cli_args.regen_golden:
+                        old_output_ref_contains_regex = False
+                        if os.path.isfile(output_ref_filename):
+                            if stdfileBinary:
+                                old_output_ref_file = open(output_ref_filename, 'rb')
                             else:
-                                ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, outputTolerance)
-                                if ktxdiff_status != 0:
-                                    if ktxdiff_stdout:
-                                        subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
-                                    if ktxdiff_stderr:
-                                        subcase_messages.append(ktxdiff_stderr.rstrip('\n'))
-                                    subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}' exceeded the output tolerance '{outputTolerance}' on a non-primary platform")
-                                    subcase_failed = True
+                                old_output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
+                            old_output_ref = old_output_ref_file.read()
+                            old_output_ref_file.close()
+                            old_output_ref_contains_regex = not stdfileBinary and bool(re.findall(r'`.*`', old_output_ref))
+
+                        if old_output_ref_contains_regex:
+                            ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated as it contains a regex"
+                        elif outputTolerance and not cli_args.primary:
+                            ref_not_updated[output_ref_filename] = f"NOTE: reference file '{output_ref_filename}' was not updated on non-primary platform as it has output tolerance enabled"
                         else:
-                            subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
+                            os.makedirs(os.path.dirname(output_ref_filename), exist_ok=True)
+                            if stdfileBinary:
+                                output_ref_file = open(output_ref_filename, 'wb')
+                            else:
+                                output_ref_file = open(output_ref_filename, 'w', newline='\n', encoding='utf-8')
+                            output_ref_file.write(output[stdfile])
+                            output_ref_file.close()
+
+                    if not os.path.isfile(output_ref_filename):
+                        subcase_messages.append(f"Cannot find reference {stdfile} file '{output_ref_filename}'")
+                        subcase_failed = True
+                        continue
+
+                    if stdfileBinary:
+                        output_ref_file = open(output_ref_filename, 'rb')
+                    else:
+                        output_ref_file = open(output_ref_filename, 'r', encoding='utf-8')
+                    output_ref = output_ref_file.read()
+                    output_ref_file.close()
+
+                output_matching = ctx.match(output_ref, output[stdfile], stdfileBinary)
+                output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
+
+                if not output_matching or cli_args.keep_matching_outputs:
+                    os.makedirs(os.path.dirname(output_filename), exist_ok=True)
+                    if stdfileBinary:
+                        output_file = open(output_filename, 'wb')
+                    else:
+                        output_file = open(output_filename, 'w', newline='\n', encoding='utf-8')
+                    output_file.write(output[stdfile])
+                    output_file.close()
+
+                if not output_matching and not cli_args.regen_golden:
+                    if outputTolerance and not cli_args.primary:
+                        # For stdin/stdout we do not use ktxdiff as in the relevant tests these are never ktx2 files
+                        messages.append(f"    WARNING: Allowed mismatch on non-primary platform between output file '{stdfile}' and reference file '{output_ref_filename}'")
+                    else:
+                        if output_ref_filename:
+                            subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")
+                        else:
+                            subcase_messages.append(f"Expected no {stdfile} but {stdfile} is not empty")
+                        subcase_messages.append(f"  {stdfile} for subcase is written to '{output_filename}'")
+                        subcase_failed = True
+
+            # Check output files
+            if 'outputs' in testcase:
+                for output_cur, output_ref in testcase['outputs'].items():
+                    files_found = True
+
+                    output_cur = ctx.eval(output_cur)
+                    output_ref = ctx.eval(output_ref)
+
+                    if not cmd_failed and cli_args.regen_golden:
+                        os.makedirs(os.path.dirname(output_ref), exist_ok=True)
+                        if os.path.isfile(output_cur):
+                            if outputTolerance and not cli_args.primary:
+                                ref_not_updated[output_ref] = f"NOTE: reference file '{output_ref}' was not updated on non-primary platform as it has output tolerance enabled"
+                            else:
+                                shutil.copyfile(output_cur, output_ref)
+                        else:
                             subcase_failed = True
+                            subcase_messages.append(f"stdout:\n{output['stdout']}")
+                            subcase_messages.append(f"stderr:\n{output['stderr']}")
+
+                    if not os.path.isfile(output_cur):
+                        subcase_messages.append(f"Cannot find output file '{output_cur}'")
+                        subcase_failed = True
+                        files_found = False
+
+                    if not os.path.isfile(output_ref):
+                        subcase_messages.append(f"Cannot find reference file '{output_ref}' for output file '{output_cur}'")
+                        subcase_failed = True
+                        files_found = False
+
+                    if files_found:
+                        output_matching = filecmp.cmp(output_cur, output_ref, shallow=False)
+                        if output_matching or cli_args.regen_golden:
+                            if not cli_args.keep_matching_outputs and not cli_args.regen_golden:
+                                os.remove(output_cur)
+                        else:
+                            if outputTolerance and not cli_args.primary:
+                                if not cli_args.ktxdiff_path:
+                                    subcase_messages.append("Test case requires diff tool. Please specify path using the -d command line argument.")
+                                    subcase_failed = True
+                                else:
+                                    ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, outputTolerance)
+                                    if ktxdiff_status != 0:
+                                        if ktxdiff_stdout:
+                                            subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
+                                        if ktxdiff_stderr:
+                                            subcase_messages.append(ktxdiff_stderr.rstrip('\n'))
+                                        subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}' exceeded the output tolerance '{outputTolerance}' on a non-primary platform")
+                                        subcase_failed = True
+                            else:
+                                subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
+                                subcase_failed = True
+
+        except Exception as excp:
+            subcase_messages.append("Failed to check results of command:")
+            subcase_messages.append(f"  {ctx.eval(testcase['command'])}")
+            subcase_messages.append(f"  Exception:")
+            subcase_messages.append(str(excp))
+            output = {
+                'stdout': output['stdout'],
+                'stderr': output['stderr'] + str(excp)
+            }
+            cmd_failed = True
+            subcase_failed = True
 
 
         # Handle subcase failure
