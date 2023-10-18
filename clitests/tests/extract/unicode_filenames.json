@@ -1,0 +1,17 @@
+{
+    "description": "Test the use of unicode characters in input and output filenames.",
+    "command": "ktx extract --testrun input/unicode/${name}.ktx2 output/extract/unicode/${name}/${name}.png",
+    "status": 0,
+    "outputs": {
+        "output/extract/unicode/${name}/${name}.png": "golden/extract/unicode/${name}.png"
+    },
+    "args": {
+        "name": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ]
+    }
+}
