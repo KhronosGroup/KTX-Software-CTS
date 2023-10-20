@@ -58,9 +58,9 @@
             "ASTC_12x12_SRGB_BLOCK",
             "PVRTC1_2BPP_UNORM_BLOCK_IMG",
             "PVRTC2_4BPP_SRGB_BLOCK_IMG",
-            "ASTC_5x4_SFLOAT_BLOCK_EXT",
-            "ASTC_8x6_SFLOAT_BLOCK_EXT",
-            "ASTC_12x10_SFLOAT_BLOCK_EXT"
+            "ASTC_5x4_SFLOAT_BLOCK",
+            "ASTC_8x6_SFLOAT_BLOCK",
+            "ASTC_12x10_SFLOAT_BLOCK"
         ]
     }
 }
