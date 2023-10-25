@@ -18,6 +18,8 @@
             "A2R10G10B10_UNORM_PACK32",
             "A4B4G4R4_UNORM_PACK16",
             "A4R4G4B4_UNORM_PACK16",
+            "A4B4G4R4_UNORM_PACK16_EXT",
+            "A4R4G4B4_UNORM_PACK16_EXT",
             "ASTC_10x10_SRGB_BLOCK",
             "ASTC_10x10_UNORM_BLOCK",
             "ASTC_10x5_SRGB_BLOCK",
