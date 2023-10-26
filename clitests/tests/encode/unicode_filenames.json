@@ -1,0 +1,19 @@
+{
+    "description": "Test the use of unicode characters in input and output filenames.",
+    "command": "ktx encode --testrun --threads 1 --codec basis-lz input/unicode/${name}.ktx2 output/encode/unicode/${name}/${name}.ktx2",
+    "status": 0,
+    "comment": "BasisLZ compression relies on undefined order of std::unordered_map containers.",
+    "outputTolerance": 0.08,
+    "outputs": {
+        "output/encode/unicode/${name}/${name}.ktx2": "golden/encode/unicode/${name}.ktx2"
+    },
+    "args": {
+        "name": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ]
+    }
+}

@@ -5,6 +5,7 @@
 
 import argparse
 import os
+import sys
 import subprocess
 import re
 import json
@@ -71,13 +72,17 @@ if __name__ == '__main__':
     cli_args, unknown_args = parser.parse_known_args()
 
 
+    # Use UTF-8 output
+    sys.stdout.reconfigure(encoding='utf-8')
+
+
     # Load JSON test case description and check basic contents
 
     if not os.path.isfile(cli_args.json_test_file):
         print(f"ERROR: Cannot find JSON test file '{cli_args.json_test_file}'")
         exit(1)
 
-    f = open(cli_args.json_test_file)
+    f = open(cli_args.json_test_file, encoding='utf-8')
     testcase = json.load(f)
     f.close()
 

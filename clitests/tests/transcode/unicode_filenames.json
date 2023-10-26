@@ -1,0 +1,17 @@
+{
+    "description": "Test the use of unicode characters in input and output filenames.",
+    "command": "ktx transcode --testrun input/unicode/${name}_BLZE.ktx2 output/transcode/unicode/${name}/${name}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/transcode/unicode/${name}/${name}.ktx2": "golden/transcode/unicode/${name}.ktx2"
+    },
+    "args": {
+        "name": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ]
+    }
+}
