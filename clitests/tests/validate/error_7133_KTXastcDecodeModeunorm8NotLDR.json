@@ -23,12 +23,12 @@
             }
         ],
         "subcase": [
-            "ASTC_4x4_SFLOAT_BLOCK_EXT_unorm8",
-            "ASTC_10x6_SFLOAT_BLOCK_EXT_unorm8",
-            "ASTC_10x8_SFLOAT_BLOCK_EXT_unorm8",
-            "ASTC_10x10_SFLOAT_BLOCK_EXT_unorm8",
-            "ASTC_12x10_SFLOAT_BLOCK_EXT_unorm8",
-            "ASTC_12x12_SFLOAT_BLOCK_EXT_unorm8",
+            "ASTC_4x4_SFLOAT_BLOCK_unorm8",
+            "ASTC_10x6_SFLOAT_BLOCK_unorm8",
+            "ASTC_10x8_SFLOAT_BLOCK_unorm8",
+            "ASTC_10x10_SFLOAT_BLOCK_unorm8",
+            "ASTC_12x10_SFLOAT_BLOCK_unorm8",
+            "ASTC_12x12_SFLOAT_BLOCK_unorm8",
             "ASTC_3x3x3_SFLOAT_BLOCK_EXT_unorm8",
             "ASTC_6x6x6_SFLOAT_BLOCK_EXT_unorm8"
         ]

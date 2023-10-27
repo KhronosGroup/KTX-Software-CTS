@@ -28,6 +28,8 @@
             { "format": "B5G5R5A1_UNORM_PACK16", "file": "RGB8_16x16", "ext": ".png" },
             { "format": "A1R5G5B5_UNORM_PACK16", "file": "RGB8_16x16", "ext": ".png" },
             { "format": "A1B5G5R5_UNORM_PACK16_KHR", "file": "RGB8_16x16", "ext": ".png" },
+            { "format": "A4R4G4B4_UNORM_PACK16", "file": "RGB8_16x16", "ext": ".png" },
+            { "format": "A4B4G4R4_UNORM_PACK16", "file": "RGB8_16x16", "ext": ".png" },
             { "format": "A4R4G4B4_UNORM_PACK16_EXT", "file": "RGB8_16x16", "ext": ".png" },
             { "format": "A4B4G4R4_UNORM_PACK16_EXT", "file": "RGB8_16x16", "ext": ".png" },
 

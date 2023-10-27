@@ -1,6 +1,0 @@
-Validation failed
-
-error-7133: Invalid KTXastcDecodeMode value. "unorm8" is only valid for LDR formats.
-    The value is "unorm8" but it is invalid for non-LDR VkFormat VK_FORMAT_ASTC_10x10_SFLOAT_BLOCK_EXT.
-warning-5004: Non-conformant texture file accepted by libktx.
-    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
