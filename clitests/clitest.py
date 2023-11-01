@@ -177,7 +177,12 @@ if __name__ == '__main__':
 
         try:
             cmd_args = [ arg for arg in ctx.eval(testcase['command']).split(' ') if arg ]
-            cmd_args[0] = cli_args.executable_path
+            if cli_args.executable_path[-1] == "/":
+              # Use the executable name given in the test command.
+              cmd_args[0] = cli_args.executable_path + cmd_args[0]
+            else:
+              # Override executable given in test command.
+              cmd_args[0] = cli_args.executable_path
 
             # Use a file as stdin if specified
             if 'stdin' in testcase:

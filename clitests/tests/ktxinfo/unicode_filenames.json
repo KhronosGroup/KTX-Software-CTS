@@ -1,0 +1,14 @@
+{
+    "description": "Test the use of unicode characters in input filenames.",
+    "command": "ktxinfo --test input/unicode/${name}.ktx2",
+    "status": 0,
+    "args": {
+        "name": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ]
+    }
+}
