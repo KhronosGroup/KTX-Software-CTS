@@ -336,7 +336,10 @@ set(CASELIST
 )
 
 set(LEGACY_CASELIST
-    tests/ktxinfo/unicode_filenames.json
+    legacy_tests/ktx2check/unicode_filenames.json
+    legacy_tests/ktxinfo/unicode_filenames.json
+    legacy_tests/ktxsc/unicode_filenames.json
+    legacy_tests/toktx/unicode_filenames.json
 )
 
 set(CASE_REGEN_GOLDEN_OUTPUTS)
@@ -354,46 +357,28 @@ else()
     set(CLITEST_ARGS "")
 endif()
 
-#foreach(CASE_FILE ${CASELIST})
-#    get_filename_component(CASE_DIR ${CASE_FILE} DIRECTORY)
-#    get_filename_component(CASE_NAME ${CASE_FILE} NAME_WE)
-#    string(REGEX REPLACE "^tests/" "ktxToolTests/" CASE_TRIMMED_DIR "${CASE_DIR}/")
-#    string(REPLACE "/" "." CASE_GROUP "${CASE_TRIMMED_DIR}")
-#    set(FULL_CASE_NAME "${CASE_GROUP}${CASE_NAME}")
-#
-#    list(APPEND CASE_REGEN_GOLDEN_OUTPUTS ${CASE_FILE})
-#    add_custom_command(
-#        OUTPUT ${CASE_FILE}
-#        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-#        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}" --regen-golden)
-#    add_test(NAME ${FULL_CASE_NAME}
-#        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${KTX_TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}"
-#        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-#endforeach()
-
-function(add_test_case CASE_FILE suite_name tools_path)
+function(add_test_case CASE_FILE PREFIX SUITE_NAME TOOLS_PATH)
     get_filename_component(CASE_DIR ${CASE_FILE} DIRECTORY)
     get_filename_component(CASE_NAME ${CASE_FILE} NAME_WE)
-    string(REGEX REPLACE "^tests/" "${suite_name}/" CASE_TRIMMED_DIR "${CASE_DIR}/")
+    string(REGEX REPLACE "^${PREFIX}/" "${SUITE_NAME}/" CASE_TRIMMED_DIR "${CASE_DIR}/")
     string(REPLACE "/" "." CASE_GROUP "${CASE_TRIMMED_DIR}")
     set(FULL_CASE_NAME "${CASE_GROUP}${CASE_NAME}")
-
     list(APPEND CASE_REGEN_GOLDEN_OUTPUTS ${CASE_FILE})
     add_custom_command(
         OUTPUT ${CASE_FILE}
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${tools_path}" --ktxdiff-path "${KTX_DIFF_PATH}" --regen-golden)
+        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}" --regen-golden)
     add_test(NAME ${FULL_CASE_NAME}
-        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${tools_path}" --ktxdiff-path "${KTX_DIFF_PATH}"
+        COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}"
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endfunction()
 
 foreach(CASE_FILE ${CASELIST})
-    add_test_case(${CASE_FILE} ktxToolsTest ${KTX_TOOLS_PATH})
+    add_test_case(${CASE_FILE} tests ktxToolsTest ${KTX_TOOLS_PATH})
 endforeach()
 
 foreach(CASE_FILE ${LEGACY_CASELIST})
-    add_test_case(${CASE_FILE} LegacyToolsTest ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/)
+    add_test_case(${CASE_FILE} legacy_tests LegacyToolsTest ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/)
 endforeach()
 
 add_custom_target(clitests_regen_golden
