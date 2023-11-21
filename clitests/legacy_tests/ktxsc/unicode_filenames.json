@@ -1,0 +1,19 @@
+{
+    "description": "Test the use of unicode characters in input and output filenames.",
+    "command": "ktxsc --test --threads 1 --encode etc1s -f -o output/ktxsc/unicode/${name}/${name}.ktx2 input/unicode/${name}.ktx2",
+    "status": 0,
+    "comment": "BasisLZ compression relies on undefined order of std::unordered_map containers.",
+    "outputTolerance": 0.08,
+    "outputs": {
+        "output/ktxsc/unicode/${name}/${name}.ktx2": "golden/ktxsc/unicode/${name}.ktx2"
+    },
+    "args": {
+        "name": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ]
+    }
+}
