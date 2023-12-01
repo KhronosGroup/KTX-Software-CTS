@@ -357,7 +357,10 @@ else()
     set(CLITEST_ARGS "")
 endif()
 
-function(add_test_case CASE_FILE PREFIX SUITE_NAME TOOLS_PATH)
+# If this is a function, for reasons I have yet to understand,
+# add_custom_command() does nothing. All variables have the expected
+# values in each case.
+macro(add_test_case CASE_FILE PREFIX SUITE_NAME TOOLS_PATH)
     get_filename_component(CASE_DIR ${CASE_FILE} DIRECTORY)
     get_filename_component(CASE_NAME ${CASE_FILE} NAME_WE)
     string(REGEX REPLACE "^${PREFIX}/" "${SUITE_NAME}/" CASE_TRIMMED_DIR "${CASE_DIR}/")
@@ -371,7 +374,7 @@ function(add_test_case CASE_FILE PREFIX SUITE_NAME TOOLS_PATH)
     add_test(NAME ${FULL_CASE_NAME}
         COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}"
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-endfunction()
+endmacro()
 
 foreach(CASE_FILE ${CASELIST})
     add_test_case(${CASE_FILE} tests ktxToolsTest ${KTX_TOOLS_PATH})
