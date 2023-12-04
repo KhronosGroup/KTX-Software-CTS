@@ -99,7 +99,11 @@
             { "rc": 1, "id": "blze_disallowed_format", "flags": "--encode basis-lz --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "uastc_disallowed_format", "flags": "--encode uastc --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 1, "id": "non_encode_compare_ssim", "flags": "--compare-ssim --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
-            { "rc": 1, "id": "non_encode_compare_psnr", "flags": "--compare-psnr --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" }
+            { "rc": 1, "id": "non_encode_compare_psnr", "flags": "--compare-psnr --format R16_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
+
+            { "rc": 1, "id": "non_astc_fmt_astc_opts1", "flags": "--format R8G8B8A8_UNORM --astc-quality thorough input/png/basic_RGBA8_16x16.png output.ktx2" },
+            { "rc": 1, "id": "non_astc_fmt_astc_opts2", "flags": "--format R8G8B8A8_UNORM --astc-perceptual input/png/basic_RGBA8_16x16.png output.ktx2" },
+            { "rc": 1, "id": "non_astc_fmt_astc_opts3", "flags": "--format R8G8B8A8_UNORM --astc-quality fast --astc-perceptual input/png/basic_RGBA8_16x16.png output.ktx2" }
         ]
     }
 }
