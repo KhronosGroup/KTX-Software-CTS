@@ -1,0 +1,55 @@
+ktx compare: Compares the two KTX files specified as the input-file1 and input-file2 arguments.
+    The command implicitly calls validate and prints any found errors
+    and warnings to stdout.
+
+Usage:
+  ktx compare [OPTION...] <input-file1> <input-file2>
+
+  -f, --format text|json|mini-json
+                                Specifies the report output format. Possible options are:
+                                  text: Human readable text based format
+                                  json: Formatted JSON
+                                  mini-json: Minified JSON
+                                 (default: text)
+      --content raw|image|ignore
+                                Controls how image content is compared. Possible values are:
+                                  raw: Encoded image data is compared verbatim, as it appears in 
+                                the file
+                                  image: Effective image data is compared per texel block
+                                  ignore: Ignore image contents
+                                 (default: raw)
+      --allow-invalid-input     Perform best effort comparison even if any of the input files are 
+                                invalid.
+      --ignore-index all|level|none
+                                Controls the comparison of index entries in the file headers. 
+                                Possible options are:
+                                  all: Ignore all index entries
+                                  level: Ignore level index entries only
+                                  none: Do not ignore any index entries
+                                 (default: none)
+      --ignore-dfd all|unknown|extended|none
+                                Controls the comparison of DFD blocks. Possible options are:
+                                  all: Ignore all DFD blocks
+                                  unknown: Ignore any unrecognized DFD blocks
+                                  extended: Ignore all DFD blocks except the basic DFD block
+                                  none: Do not ignore any DFD blocks
+                                 (default: none)
+      --ignore-metadata all|<keys>|none
+                                Controls the comparison of metadata (KVD) entries. Possible options 
+                                are:
+                                  all: Ignore all metadata entries
+                                  <keys>: Ignore the specified comma separated list of metadata keys
+                                  none: Do not ignore any metadata entries
+                                 (default: none)
+      --ignore-sgd all|unknown|payload|none
+                                Controls the comparison of the SGD section. Possible options are:
+                                  all: Ignore the SGD section
+                                  unknown: Ignore any unrecognized SGD section
+                                  payload: Ignore any unrecognized SGD section and the payload of 
+                                any known SGD section
+                                  none: Do not ignore the SGD section
+                                 (default: none)
+  -h, --help                    Print this usage message and exit
+  -v, --version                 Print the version number of this program and exit
+      --testrun                 Indicates test run. If enabled the tool will produce deterministic 
+                                output whenever possible

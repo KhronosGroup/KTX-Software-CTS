@@ -1,0 +1,71 @@
+Validation failed for 'input/validate/3005/error_TypeSizeNotOne_UASTC.ktx2'
+
+error-3005: Invalid typeSize. typeSize must be 1 for block-compressed or supercompressed formats.
+    typeSize is 4 but for block-compressed or supercompressed format VK_FORMAT_UNDEFINED it must be 1.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+-vkFormat: VK_FORMAT_R8G8B8A8_UNORM
++vkFormat: VK_FORMAT_UNDEFINED
+-typeSize: 1
++typeSize: 4
+-pixelWidth: 8
++pixelWidth: 16
+-pixelHeight: 8
++pixelHeight: 16
+-dataFormatDescriptor.byteLength: 92
++dataFormatDescriptor.byteLength: 44
+-keyValueData.byteOffset: 0xc4
++keyValueData.byteOffset: 0x94
+
+Level Index
+
+-Level0.byteOffset: 0xf0
++Level0.byteOffset: 0xc0
+
+Data Format Descriptor
+
+-DFD total bytes: 92
++DFD total bytes: 44
+-Descriptor block size: 88
++Descriptor block size: 40
+-Model: KHR_DF_MODEL_RGBSDA
++Model: KHR_DF_MODEL_UASTC
+-Dimensions: 0, 0, 0, 0
++Dimensions: 3, 3, 0, 0
+-Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
+
+Sample 0:
+-    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
++    Channel Type: 0x3 (KHR_DF_CHANNEL_UASTC_RGBA)
+-    Length: 7 bits Offset: 0
++    Length: 127 bits Offset: 0
+-    Upper: 0x000000ff
++    Upper: 0xffffffff
+
+Sample 1:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+-    Length: 7 bits Offset: 8
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 2:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Length: 7 bits Offset: 16
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 3:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+-    Length: 7 bits Offset: 24
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff

@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/compare_v0.json","valid":[true,false],"messages":[[],[{"id":4008,"type":"error","message":"Mismatch between uncompresedByteLength in Level Index and actually decompressed bytes.","details":"Decompressing supercompression KTX_SS_ZSTD resulted in a different number of bytes than expected according to uncompressedByteLength."}]]}

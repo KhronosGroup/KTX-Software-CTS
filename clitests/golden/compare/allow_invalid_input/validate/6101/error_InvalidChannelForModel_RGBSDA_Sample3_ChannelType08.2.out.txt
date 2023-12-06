@@ -1,0 +1,26 @@
+Validation failed for 'input/validate/6101/error_InvalidChannelForModel_RGBSDA_Sample3_ChannelType08.ktx2'
+
+error-6101: Invalid sample channelType for colorModel in the basic DFD block.
+    DFD block #1 sample #4 channelType in basic DFD block is (0x8) which is not valid for colorModel KHR_DF_MODEL_RGBSDA.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #4 channelType in basic DFD block is (0x8) but the expected value is KHR_DF_CHANNEL_RGBSDA_ALPHA for VK_FORMAT_R8G8B8A8_UNORM.
+
+Header
+
+-pixelWidth: 8
++pixelWidth: 16
+-pixelHeight: 8
++pixelHeight: 16
+
+Level Index
+
+-Level0.byteLength: 256
++Level0.byteLength: 1024
+-Level0.uncompressedByteLength: 256
++Level0.uncompressedByteLength: 1024
+
+Data Format Descriptor
+
+Sample 3:
+-    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
++    Channel Type: 0x8

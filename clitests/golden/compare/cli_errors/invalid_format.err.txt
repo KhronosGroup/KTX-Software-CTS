@@ -1,0 +1,1 @@
+ktx compare fatal: Unsupported format: "invalid". See 'ktx compare --help'.

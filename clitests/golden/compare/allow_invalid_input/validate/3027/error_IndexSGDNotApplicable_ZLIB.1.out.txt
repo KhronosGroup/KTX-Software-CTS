@@ -1,0 +1,32 @@
+Validation failed for 'input/validate/3027/error_IndexSGDNotApplicable_ZLIB.ktx2'
+
+error-3027: sgdByteLength must be 0 for supercompression schemes with no global data.
+    sgdByteLength is 8 but for supercompression scheme KTX_SS_ZLIB (which does not have global data) it must be 0.
+
+Header
+
+-pixelWidth: 16
++pixelWidth: 8
+-pixelHeight: 16
++pixelHeight: 8
+-supercompressionScheme: KTX_SS_ZLIB
++supercompressionScheme: KTX_SS_NONE
+-supercompressionGlobalData.byteOffset: 0xf0
++supercompressionGlobalData.byteOffset: 0x0
+-supercompressionGlobalData.byteLength: 8
++supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+-Level0.byteOffset: 0xf8
++Level0.byteOffset: 0xf0
+-Level0.byteLength: 302
++Level0.byteLength: 256
+-Level0.uncompressedByteLength: 1024
++Level0.uncompressedByteLength: 256
+
+Data Format Descriptor
+
+-Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
++SGD mismatch

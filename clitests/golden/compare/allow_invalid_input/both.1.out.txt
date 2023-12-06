@@ -1,0 +1,70 @@
+Validation failed for 'input/validate/3001/error_ProhibitedFormat_A8B8G8R8_UNORM_PACK32.ktx2'
+
+error-3001: Prohibited VkFormat.
+    VkFormat VK_FORMAT_A8B8G8R8_UNORM_PACK32 is prohibited in a KTX2 file.
+
+Validation failed for 'input/validate/3012/error_TypeSizeMismatch_R16G16_SINT.ktx2'
+
+error-3012: Invalid typeSize. The value must match the expected typeSize of the VkFormat.
+    typeSize is 3 but for VkFormat VK_FORMAT_R16G16_SINT it must be 2.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+-vkFormat: VK_FORMAT_A8B8G8R8_UNORM_PACK32
++vkFormat: VK_FORMAT_R16G16_SINT
+-typeSize: 1
++typeSize: 3
+-dataFormatDescriptor.byteLength: 92
++dataFormatDescriptor.byteLength: 60
+-keyValueData.byteOffset: 0xc4
++keyValueData.byteOffset: 0xa4
+
+Level Index
+
+-Level0.byteOffset: 0xf0
++Level0.byteOffset: 0xd0
+
+Data Format Descriptor
+
+-DFD total bytes: 92
++DFD total bytes: 60
+-Descriptor block size: 88
++Descriptor block size: 56
+
+Sample 0:
+-    Qualifiers: 0x0 ()
++    Qualifiers: 0x40 (KHR_DF_SAMPLE_DATATYPE_SIGNED)
+-    Length: 7 bits Offset: 0
++    Length: 15 bits Offset: 0
+-    Lower: 0x00000000
++    Lower: 0xffffffff
+-    Upper: 0x000000ff
++    Upper: 0x00000001
+
+Sample 1:
+-    Qualifiers: 0x0 ()
++    Qualifiers: 0x40 (KHR_DF_SAMPLE_DATATYPE_SIGNED)
+-    Length: 7 bits Offset: 8
++    Length: 15 bits Offset: 16
+-    Lower: 0x00000000
++    Lower: 0xffffffff
+-    Upper: 0x000000ff
++    Upper: 0x00000001
+
+Sample 2:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Length: 7 bits Offset: 16
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 3:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+-    Length: 7 bits Offset: 24
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff

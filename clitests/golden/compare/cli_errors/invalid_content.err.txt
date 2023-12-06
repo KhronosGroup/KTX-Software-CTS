@@ -1,0 +1,1 @@
+ktx compare fatal: Invalid --content argument: "invalid". See 'ktx compare --help'.

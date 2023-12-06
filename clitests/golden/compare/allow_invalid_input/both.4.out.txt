@@ -1,0 +1,171 @@
+Validation failed for 'input/validate/6024/error_MultiplaneFormatsNotSupported_R8G8B8A8_UNORM_41000000.ktx2'
+
+error-6021: Invalid bytesPlanes in basic DFD block. The values do not match the expected values.
+    DFD block #1 bytesPlanes in basic DFD block are 4 1 0 0 0 0 0 0 but for VK_FORMAT_R8G8B8A8_UNORM textures these must be 4 0 0 0 0 0 0 0.
+error-6024: Invalid bytesPlanes in basic DFD block. Multiplane formats are not supported.
+    DFD block #1 bytesPlanes in basic DFD block are 4 1 0 0 0 0 0 0 but bytesPlane[1-7] must be 0 as multiplane formats are not supported.
+
+Validation failed for 'input/validate/8104/error_BLZEInvalidImageFlagBit_L3.ktx2'
+
+error-3024: Invalid sgdByteOffset.
+    sgdByteOffset is 280 but the Supercompression Global Data must immediately follow (with 8 byte alignment) the preceding block so it must be 272.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 0 Layer 0 Face 0 zSlice 0 the imageFlags is 0x00000001 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 0 Layer 1 Face 0 zSlice 0 the imageFlags is 0x00000003 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 0 Layer 2 Face 0 zSlice 0 the imageFlags is 0x00000007 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 1 Layer 0 Face 0 zSlice 0 the imageFlags is 0x0000000F which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 1 Layer 1 Face 0 zSlice 0 the imageFlags is 0x00000010 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 1 Layer 2 Face 0 zSlice 0 the imageFlags is 0x00000030 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 2 Layer 0 Face 0 zSlice 0 the imageFlags is 0x00000070 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 2 Layer 1 Face 0 zSlice 0 the imageFlags is 0x80000000 which has an invalid bit set.
+error-8104: Invalid imageFlags in BasisLzEtc1sImageDesc.
+    For Level 2 Layer 2 Face 0 zSlice 0 the imageFlags is 0xFFFFFFFF which has an invalid bit set.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+-vkFormat: VK_FORMAT_R8G8B8A8_UNORM
++vkFormat: VK_FORMAT_UNDEFINED
+-layerCount: 0
++layerCount: 3
+-levelCount: 1
++levelCount: 3
+-supercompressionScheme: KTX_SS_NONE
++supercompressionScheme: KTX_SS_BASIS_LZ
+-dataFormatDescriptor.byteOffset: 0x68
++dataFormatDescriptor.byteOffset: 0x98
+-dataFormatDescriptor.byteLength: 92
++dataFormatDescriptor.byteLength: 44
+-keyValueData.byteLength: 44
++keyValueData.byteLength: 72
+-supercompressionGlobalData.byteOffset: 0x0
++supercompressionGlobalData.byteOffset: 0x118
+-supercompressionGlobalData.byteLength: 0
++supercompressionGlobalData.byteLength: 358
+
+Level Index
+
+-Level0.byteOffset: 0xf0
++Level0.byteOffset: 0x28a
+-Level0.byteLength: 1024
++Level0.byteLength: 33
+-Level0.uncompressedByteLength: 1024
++Level0.uncompressedByteLength: 0
++Level1.byteOffset: 0x281
++Level1.byteLength: 9
++Level1.uncompressedByteLength: 0
++Level2.byteOffset: 0x27e
++Level2.byteLength: 3
++Level2.uncompressedByteLength: 0
+
+Data Format Descriptor
+
+-DFD total bytes: 92
++DFD total bytes: 44
+-Descriptor block size: 88
++Descriptor block size: 40
+-Model: KHR_DF_MODEL_RGBSDA
++Model: KHR_DF_MODEL_ETC1S
+-Dimensions: 0, 0, 0, 0
++Dimensions: 3, 3, 0, 0
+-Plane bytes: 4, 1, 0, 0, 0, 0, 0, 0
++Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
+-    Length: 7 bits Offset: 0
++    Length: 63 bits Offset: 0
+
+Sample 0:
+-    Upper: 0x000000ff
++    Upper: 0xffffffff
+
+Sample 1:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+-    Length: 7 bits Offset: 8
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 2:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Length: 7 bits Offset: 16
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 3:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+-    Length: 7 bits Offset: 24
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Key/Value Data
+
++KTXanimData:
++    duration: 0x00000001
++    timescale: 0x00000002
++    loopCount: 0x00000003
+
+Basis Supercompression Global Data
+
++endpointCount: 19
++selectorCount: 9
++endpointsByteLength: 73
++selectorsByteLength: 34
++tablesByteLength: 51
++extendedByteLength: 0
++Image0.imageFlags: 0x1 (1)
++Image0.rgbSliceByteLength: 11
++Image0.rgbSliceByteOffset: 0
++Image0.alphaSliceByteLength: 0
++Image0.alphaSliceByteOffset: 0
++Image1.imageFlags: 0x3 (1, ETC1S_P_FRAME)
++Image1.rgbSliceByteLength: 11
++Image1.rgbSliceByteOffset: 11
++Image1.alphaSliceByteLength: 0
++Image1.alphaSliceByteOffset: 0
++Image2.imageFlags: 0x7 (1, ETC1S_P_FRAME, 4)
++Image2.rgbSliceByteLength: 11
++Image2.rgbSliceByteOffset: 22
++Image2.alphaSliceByteLength: 0
++Image2.alphaSliceByteOffset: 0
++Image3.imageFlags: 0xf (1, ETC1S_P_FRAME, 4, 8)
++Image3.rgbSliceByteLength: 3
++Image3.rgbSliceByteOffset: 0
++Image3.alphaSliceByteLength: 0
++Image3.alphaSliceByteOffset: 0
++Image4.imageFlags: 0x10 (16)
++Image4.rgbSliceByteLength: 3
++Image4.rgbSliceByteOffset: 3
++Image4.alphaSliceByteLength: 0
++Image4.alphaSliceByteOffset: 0
++Image5.imageFlags: 0x30 (16, 32)
++Image5.rgbSliceByteLength: 3
++Image5.rgbSliceByteOffset: 6
++Image5.alphaSliceByteLength: 0
++Image5.alphaSliceByteOffset: 0
++Image6.imageFlags: 0x70 (16, 32, 64)
++Image6.rgbSliceByteLength: 1
++Image6.rgbSliceByteOffset: 0
++Image6.alphaSliceByteLength: 0
++Image6.alphaSliceByteOffset: 0
++Image7.imageFlags: 0x80000000 (2147483648)
++Image7.rgbSliceByteLength: 1
++Image7.rgbSliceByteOffset: 1
++Image7.alphaSliceByteLength: 0
++Image7.alphaSliceByteOffset: 0
++Image8.imageFlags: 0xffffffff (1, ETC1S_P_FRAME, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824, 2147483648)
++Image8.rgbSliceByteLength: 1
++Image8.rgbSliceByteOffset: 2
++Image8.alphaSliceByteLength: 0
++Image8.alphaSliceByteOffset: 0
