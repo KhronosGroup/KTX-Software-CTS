@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        false,
+        true
+    ],
+    "messages": [
+        [
+            {
+                "id": 7006,
+                "type": "error",
+                "message": "Invalid key in Key/Value Data. Key must not contain BOM.",
+                "details": "The beginning of the key \"UTF8WithBOM\" has forbidden BOM."
+            },
+            {
+                "id": 7010,
+                "type": "warning",
+                "message": "Custom key in Key/Value Data.",
+                "details": "Custom key \"UTF8WithBOM\" found in Key/Value Data."
+            }
+        ],
+        []
+    ]
+}

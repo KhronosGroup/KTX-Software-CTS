@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        false,
+        true
+    ],
+    "messages": [
+        [
+            {
+                "id": 3028,
+                "type": "error",
+                "message": "Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.",
+                "details": "dfdByteLength is 96 but it must be equal to kvdByteOffset - dfdByteOffset which is 92."
+            },
+            {
+                "id": 3022,
+                "type": "error",
+                "message": "Invalid kvdByteOffset.",
+                "details": "kvdByteOffset is 196 but the Key/Value Data must immediately follow (with 4 byte alignment) the Data Format Descriptor so it must be 200."
+            },
+            {
+                "id": 6001,
+                "type": "error",
+                "message": "Mismatching dfdTotalSize and dfdByteLength. dfdTotalSize must match dfdByteLength.",
+                "details": "dfdTotalSize is 96 but dfdByteLength is 92 and they must match."
+            },
+            {
+                "id": 6004,
+                "type": "error",
+                "message": "Invalid DFD data. Not enough data left to process another DFD block header.",
+                "details": "DFD has 4 byte(s) unprocessed but for a valid DFD at least 8 bytes are required."
+            }
+        ],
+        []
+    ],
+    "/header/pixelWidth": [
+        16,
+        8
+    ],
+    "/header/pixelHeight": [
+        16,
+        8
+    ],
+    "/index/dataFormatDescriptor/byteLength": [
+        96,
+        92
+    ],
+    "/index/levels/0/byteLength": [
+        1024,
+        256
+    ],
+    "/index/levels/0/uncompressedByteLength": [
+        1024,
+        256
+    ]
+}

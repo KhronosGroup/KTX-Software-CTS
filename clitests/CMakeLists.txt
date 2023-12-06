@@ -334,6 +334,16 @@ set(CASELIST
     tests/transcode/transcode_zlib.json
     tests/transcode/transcode_zstd.json
 
+    tests/compare/help.json
+    tests/compare/cli_errors.json
+    tests/compare/invalid_file1.json
+    tests/compare/invalid_file2.json
+    tests/compare/invalid_file_both.json
+    tests/compare/unicode_filenames.json
+    tests/compare/allow_invalid_input1.json
+    tests/compare/allow_invalid_input2.json
+    tests/compare/allow_invalid_input_both.json
+
     tests/help/cli_errors.json
     tests/help/help.json
 )

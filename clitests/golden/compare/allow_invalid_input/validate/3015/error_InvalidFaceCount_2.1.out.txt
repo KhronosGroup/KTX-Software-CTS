@@ -1,0 +1,22 @@
+Validation failed for 'input/validate/3015/error_InvalidFaceCount_2.ktx2'
+
+error-3015: Invalid faceCount. faceCount must be either 6 for Cubemaps and Cubemap Arrays or 1 otherwise.
+    faceCount is 2 but it must be either 6 for Cubemaps and Cubemap Arrays or 1 otherwise.
+
+Header
+
+-pixelWidth: 16
++pixelWidth: 8
+-pixelHeight: 16
++pixelHeight: 8
+-layerCount: 1
++layerCount: 0
+-faceCount: 2
++faceCount: 1
+
+Level Index
+
+-Level0.byteLength: 2048
++Level0.byteLength: 256
+-Level0.uncompressedByteLength: 2048
++Level0.uncompressedByteLength: 256

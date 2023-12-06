@@ -1,0 +1,17 @@
+Validation failed for 'input/validate/4009/error_ZeroUncompressedLength_RGBA8_UASTC_L3.ktx2'
+
+error-4009: Invalid uncompressedByteLength in Level Index. For non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+    Level 2 uncompressedByteLength is 0 but for non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+error-4009: Invalid uncompressedByteLength in Level Index. For non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+    Level 1 uncompressedByteLength is 0 but for non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+error-4009: Invalid uncompressedByteLength in Level Index. For non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+    Level 0 uncompressedByteLength is 0 but for non-BasisLZ files with VK_FORMAT_UNDEFINED uncompressedByteLength must not be 0.
+
+Validation failed for 'input/validate/3022/error_IndexKVDInvalidOffset_minus1.ktx2'
+
+error-3028: Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.
+    dfdByteLength is 92 but it must be equal to kvdByteOffset - dfdByteOffset which is 91.
+error-3022: Invalid kvdByteOffset.
+    kvdByteOffset is 195 but the Key/Value Data must immediately follow (with 4 byte alignment) the Data Format Descriptor so it must be 196.
+error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
+    DFD block #1 sample #4 sampleUpper in basic DFD block is 620757247 but the expected value is 255 for VK_FORMAT_R8G8B8A8_UNORM.

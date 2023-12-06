@@ -1,0 +1,85 @@
+Validation failed for 'input/validate/4010/error_InvalidUncompressedLength_RGBA8_UASTC_L3_Array7.ktx2'
+
+error-4010: Invalid uncompressedByteLength in Level Index. uncompressedByteLength must be equally divisible between every face and layer.
+    Level 2 uncompressedByteLength is 1 but it must be divisible with faceCount * max(1, layerCount).
+error-4010: Invalid uncompressedByteLength in Level Index. uncompressedByteLength must be equally divisible between every face and layer.
+    Level 1 uncompressedByteLength is 1 but it must be divisible with faceCount * max(1, layerCount).
+error-4010: Invalid uncompressedByteLength in Level Index. uncompressedByteLength must be equally divisible between every face and layer.
+    Level 0 uncompressedByteLength is 1 but it must be divisible with faceCount * max(1, layerCount).
+
+Header
+
+-vkFormat: VK_FORMAT_UNDEFINED
++vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+-pixelWidth: 16
++pixelWidth: 8
+-pixelHeight: 16
++pixelHeight: 8
+-layerCount: 7
++layerCount: 0
+-levelCount: 3
++levelCount: 1
+-dataFormatDescriptor.byteOffset: 0x98
++dataFormatDescriptor.byteOffset: 0x68
+-dataFormatDescriptor.byteLength: 44
++dataFormatDescriptor.byteLength: 92
+
+Level Index
+
+-Level0.byteOffset: 0x230
++Level0.byteOffset: 0xf0
+-Level0.byteLength: 1024
++Level0.byteLength: 256
+-Level0.uncompressedByteLength: 1
++Level0.uncompressedByteLength: 256
+-Level1.byteOffset: 0x130
+-Level1.byteLength: 256
+-Level1.uncompressedByteLength: 1
+-Level2.byteOffset: 0xf0
+-Level2.byteLength: 64
+-Level2.uncompressedByteLength: 1
+
+Data Format Descriptor
+
+-DFD total bytes: 44
++DFD total bytes: 92
+-Descriptor block size: 40
++Descriptor block size: 88
+-Model: KHR_DF_MODEL_UASTC
++Model: KHR_DF_MODEL_RGBSDA
+-Dimensions: 3, 3, 0, 0
++Dimensions: 0, 0, 0, 0
+-Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
+
+Sample 0:
+-    Channel Type: 0x3 (KHR_DF_CHANNEL_UASTC_RGBA)
++    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+-    Length: 127 bits Offset: 0
++    Length: 7 bits Offset: 0
+-    Upper: 0xffffffff
++    Upper: 0x000000ff
+
+Sample 1:
++    Qualifiers: 0x0 ()
++    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
++    Length: 7 bits Offset: 8
++    Position: 0, 0, 0, 0
++    Lower: 0x00000000
++    Upper: 0x000000ff
+
+Sample 2:
++    Qualifiers: 0x0 ()
++    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
++    Length: 7 bits Offset: 16
++    Position: 0, 0, 0, 0
++    Lower: 0x00000000
++    Upper: 0x000000ff
+
+Sample 3:
++    Qualifiers: 0x0 ()
++    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
++    Length: 7 bits Offset: 24
++    Position: 0, 0, 0, 0
++    Lower: 0x00000000
++    Upper: 0x000000ff

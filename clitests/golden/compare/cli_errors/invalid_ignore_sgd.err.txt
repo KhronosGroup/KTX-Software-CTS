@@ -1,0 +1,1 @@
+ktx compare fatal: Invalid --ignore-sgd argument: "invalid". See 'ktx compare --help'.
