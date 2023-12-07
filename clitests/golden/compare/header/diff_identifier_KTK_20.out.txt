@@ -1,0 +1,9 @@
+Validation failed for 'input/compare/header/diff_identifier_KTK_20.ktx2'
+
+fatal-2001: Not a KTX2 file.
+    Not a KTX2 file. The beginning of the file does not match the expected file identifier "«KTX 20»\r\n\x1A\n".
+
+Header
+
+-identifier: «KTX 20»\r\n\x1A\n
++identifier: «KTK 20»\r\n\x1A\n

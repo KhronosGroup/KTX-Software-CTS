@@ -1,0 +1,38 @@
+{
+    "description": "ktx compare test with mismatching dimensions",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} input/compare/header/reference.ktx2 input/compare/header/diff_dimensions_${subcase}.ktx2",
+    "status": 7,
+    "stdout": "golden/compare/header/diff_dimensions_${subcase}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore --ignore-dfd all --ignore-index all --ignore-metadata all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "width12",
+            "width20",
+            "height12",
+            "height20",
+            "depth1",
+            "depth4",
+            "layer1",
+            "layer4",
+            "face6",
+            "face6",
+            "level_gen",
+            "level2",
+            "level4"
+        ]
+    }
+}
