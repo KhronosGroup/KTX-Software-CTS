@@ -1,0 +1,11 @@
+Header
+
+-keyValueData.byteOffset: 0x0
++keyValueData.byteOffset: 0xc4
+-keyValueData.byteLength: 0
++keyValueData.byteLength: 88
+
+Level Index
+
+-Level0.byteOffset: 0xc4
++Level0.byteOffset: 0x11c

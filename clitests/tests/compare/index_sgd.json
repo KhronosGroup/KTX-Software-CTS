@@ -1,0 +1,31 @@
+{
+    "description": "ktx compare test with mismatching SGD section offsets and sizes",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} input/compare/index/sgd_mip1.ktx2 input/compare/index/sgd_${subcase}.ktx2",
+    "status": 7,
+    "stdout": "golden/compare/index/sgd_${subcase}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore --ignore-index level --ignore-dfd all --ignore-metadata all --ignore-sgd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "mip1_with_kvd",
+            "mip1_selep1",
+            "mip1_selep4",
+            "mip3",
+            "mip5"
+        ]
+    }
+}
+

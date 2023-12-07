@@ -1,0 +1,8 @@
+Header
+
+-layerCount: 4
++layerCount: 6
+-levelCount: 3
++levelCount: 4
+-dataFormatDescriptor.byteOffset: 0x98
++dataFormatDescriptor.byteOffset: 0xb0

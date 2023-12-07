@@ -1,0 +1,29 @@
+{
+    "description": "ktx compare test with mismatching KVD section offsets and sizes",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} input/compare/index/level_mip1_layer1.ktx2 input/compare/index/dfd_${subcase}.ktx2",
+    "status": 7,
+    "stdout": "golden/compare/index/dfd_${subcase}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore --ignore-index level --ignore-dfd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "sample1_mip3",
+            "sample2_mip4",
+            "sample3_mip1",
+            "sample4_mip2"
+        ]
+    }
+}
