@@ -1,0 +1,36 @@
+{
+    "description": "ktx compare test with mismatching DFD section offsets and sizes",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-index level input/compare/index/${subcase[file1]}.ktx2 input/compare/index/${subcase[file2]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/compare/index/ignore_level_${subcase[id]}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore --ignore-supercomp --ignore-dfd all --ignore-metadata all --ignore-sgd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            { "rc": 0, "id": "kvd_value_diff", "file1": "kvd_swizzle_rgba", "file2": "kvd_swizzle_bgra" },
+            { "rc": 7, "id": "kvd_diff1", "file1": "level_mip1_layer1", "file2": "kvd_key1_mip1" },
+            { "rc": 7, "id": "kvd_diff2", "file1": "level_mip1_layer1", "file2": "kvd_key3_mip1" },
+            { "rc": 7, "id": "sgd_diff1", "file1": "sgd_mip1", "file2": "sgd_mip1_selep1" },
+            { "rc": 7, "id": "sgd_diff2", "file1": "sgd_mip1", "file2": "sgd_mip1_selep4" },
+            { "rc": 7, "id": "level_diff1", "file1": "level_mip1_layer1", "file2": "level_mip2_face6" },
+            { "rc": 7, "id": "level_diff2", "file1": "level_mip3_layer4", "file2": "level_mip4_layer6" },
+            { "rc": 7, "id": "dfd_diff1", "file1": "dfd_sample1_mip3", "file2": "dfd_sample2_mip4" },
+            { "rc": 7, "id": "dfd_diff2", "file1": "dfd_sample3_mip1", "file2": "dfd_sample4_mip2" },
+            { "rc": 0, "id": "supercomp_diff1", "file1": "level_mip1_layer1", "file2": "level_mip1_layer1_ZSTD" },
+            { "rc": 7, "id": "supercomp_diff2", "file1": "level_mip1_layer1", "file2": "sgd_mip1" }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+Header
+
+-levelCount: 1
++levelCount: 5
+-dataFormatDescriptor.byteOffset: 0x68
++dataFormatDescriptor.byteOffset: 0xc8
+-supercompressionGlobalData.byteOffset: 0xa8
++supercompressionGlobalData.byteOffset: 0x108
+-supercompressionGlobalData.byteLength: 138
++supercompressionGlobalData.byteLength: 268

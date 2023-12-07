@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "/index/keyValueData/byteOffset": [
+        0,
+        196
+    ],
+    "/index/keyValueData/byteLength": [
+        0,
+        44
+    ],
+    "/index/levels/0/byteOffset": [
+        196,
+        240
+    ]
+}

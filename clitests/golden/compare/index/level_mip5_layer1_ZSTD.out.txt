@@ -1,0 +1,37 @@
+Header
+
+-layerCount: 4
++layerCount: 0
+-levelCount: 3
++levelCount: 5
+-supercompressionScheme: KTX_SS_NONE
++supercompressionScheme: KTX_SS_ZSTD
+-dataFormatDescriptor.byteOffset: 0x98
++dataFormatDescriptor.byteOffset: 0xc8
+
+Level Index
+
+-Level0.byteOffset: 0x5f4
++Level0.byteOffset: 0x29d
+-Level0.byteLength: 4096
++Level0.byteLength: 276
+-Level0.uncompressedByteLength: 4096
++Level0.uncompressedByteLength: 1024
+-Level1.byteOffset: 0x1f4
++Level1.byteOffset: 0x193
+-Level1.byteLength: 1024
++Level1.byteLength: 266
+-Level1.uncompressedByteLength: 1024
++Level1.uncompressedByteLength: 256
+-Level2.byteOffset: 0xf4
++Level2.byteOffset: 0x14a
+-Level2.byteLength: 256
++Level2.byteLength: 73
+-Level2.uncompressedByteLength: 256
++Level2.uncompressedByteLength: 64
++Level3.byteOffset: 0x131
++Level3.byteLength: 25
++Level3.uncompressedByteLength: 16
++Level4.byteOffset: 0x124
++Level4.byteLength: 13
++Level4.uncompressedByteLength: 4

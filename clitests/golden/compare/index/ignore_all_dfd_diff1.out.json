@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "/header/vkFormat": [
+        "VK_FORMAT_R8_SRGB",
+        "VK_FORMAT_R16G16_SFLOAT"
+    ],
+    "/header/typeSize": [
+        1,
+        2
+    ],
+    "/header/levelCount": [
+        3,
+        4
+    ]
+}

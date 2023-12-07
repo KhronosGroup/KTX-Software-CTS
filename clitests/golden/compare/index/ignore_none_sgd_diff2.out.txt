@@ -1,0 +1,9 @@
+Header
+
+-supercompressionGlobalData.byteLength: 138
++supercompressionGlobalData.byteLength: 136
+
+Level Index
+
+-Level0.byteOffset: 0x132
++Level0.byteOffset: 0x130

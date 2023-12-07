@@ -1,0 +1,12 @@
+Header
+
+-vkFormat: VK_FORMAT_R8_SRGB
++vkFormat: VK_FORMAT_R16G16_SFLOAT
+-typeSize: 1
++typeSize: 2
+-levelCount: 3
++levelCount: 4
+-dataFormatDescriptor.byteOffset: 0x98
++dataFormatDescriptor.byteOffset: 0xb0
+-dataFormatDescriptor.byteLength: 44
++dataFormatDescriptor.byteLength: 60

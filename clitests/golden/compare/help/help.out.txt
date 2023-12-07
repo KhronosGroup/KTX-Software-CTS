@@ -20,6 +20,9 @@ Usage:
                                  (default: raw)
       --allow-invalid-input     Perform best effort comparison even if any of the input files are 
                                 invalid.
+      --ignore-supercomp        Ignore supercompression scheme in the file header.
+                                Note: use the --ignore-sgd option to also ignore the SGD section, 
+                                if needed.
       --ignore-index all|level|none
                                 Controls the comparison of index entries in the file headers. 
                                 Possible options are:

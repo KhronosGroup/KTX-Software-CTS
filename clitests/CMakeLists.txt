@@ -348,6 +348,13 @@ set(CASELIST
     tests/compare/header_format.json
     tests/compare/header_dimensions.json
     tests/compare/header_supercompression.json
+    tests/compare/index_dfd.json
+    tests/compare/index_kvd.json
+    tests/compare/index_sgd.json
+    tests/compare/level_index.json
+    tests/compare/ignore_index_all.json
+    tests/compare/ignore_index_level.json
+    tests/compare/ignore_index_none.json
 
     tests/help/cli_errors.json
     tests/help/help.json

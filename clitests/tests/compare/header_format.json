@@ -4,7 +4,7 @@
     "status": 7,
     "stdout": "golden/compare/header/diff_format_${subcase}.out.${format[ext]}",
     "args": {
-        "ignore": [ "--content ignore --ignore-dfd all --ignore-index all --ignore-metadata all" ],
+        "ignore": [ "--content ignore --ignore-index all --ignore-dfd all --ignore-metadata all" ],
         "format": [
             {
                 "args": "--format text",
