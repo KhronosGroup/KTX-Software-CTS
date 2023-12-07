@@ -1,0 +1,27 @@
+{
+    "description": "ktx compare test with mismatching header identifiers",
+    "command": "ktx compare --testrun ${format[args]} --allow-invalid-input ${ignore} input/compare/header/reference.ktx2 input/compare/header/diff_identifier_${subcase}.ktx2",
+    "status": 7,
+    "stdout": "golden/compare/header/diff_identifier_${subcase}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "KTX_19",
+            "KTK_20"
+        ]
+    }
+}

@@ -1,9 +1,10 @@
 {
     "description": "ktx compare tests on invalid files when allowing them",
-    "command": "ktx compare --testrun ${format[args]} --allow-invalid-input --content ignore input/${subcase[file1]}.ktx2 input/${subcase[file2]}.ktx2",
+    "command": "ktx compare --testrun ${format[args]} --allow-invalid-input ${ignore} input/${subcase[file1]}.ktx2 input/${subcase[file2]}.ktx2",
     "status": 7,
     "stdout": "golden/compare/allow_invalid_input/both.${subcase[id]}.out.${format[ext]}",
     "args": {
+        "ignore": [ "--content ignore" ],
         "format": [
             {
                 "args": "--format text",

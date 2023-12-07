@@ -343,6 +343,11 @@ set(CASELIST
     tests/compare/allow_invalid_input1.json
     tests/compare/allow_invalid_input2.json
     tests/compare/allow_invalid_input_both.json
+    tests/compare/allow_invalid_input_positive.json
+    tests/compare/header_identifier.json
+    tests/compare/header_format.json
+    tests/compare/header_dimensions.json
+    tests/compare/header_supercompression.json
 
     tests/help/cli_errors.json
     tests/help/help.json
