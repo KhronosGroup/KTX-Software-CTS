@@ -359,6 +359,9 @@ set(CASELIST
     tests/compare/ignore_dfd_unknown.json
     tests/compare/ignore_dfd_extended.json
     tests/compare/ignore_dfd_none.json
+    tests/compare/ignore_metadata_all.json
+    tests/compare/ignore_metadata_none.json
+    tests/compare/ignore_metadata_keys.json
 
     tests/help/cli_errors.json
     tests/help/help.json

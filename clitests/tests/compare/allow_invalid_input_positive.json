@@ -31,7 +31,6 @@
             "validate/6028/error_FormatMismatch_E5B9G9R9_UFLOAT_PACK32",
             "validate/6101/error_InvalidChannelForModel_RGBSDA_Sample3_ChannelType08",
             "validate/6107/error_InvalidUpper_UASTC_Sample0_42",
-            "validate/7013/error_DuplicateKey",
             "validate/7129/error_KTXanimDataNotArray_3D",
             "validate/7132/error_KTXastcDecodeModeInvalidValue_unorm",
             "validate/8102/error_BLZESizeIncorrect_RGB_L1_181",

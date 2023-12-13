@@ -1,0 +1,7 @@
+Key/Value Data
+
+-KTXglFormat:
+-    glInternalformat: 0x00008C43
+-    glFormat: 0x00000000
+-    glType: 0x00000000
+-KTXmetalPixelFormat: 71

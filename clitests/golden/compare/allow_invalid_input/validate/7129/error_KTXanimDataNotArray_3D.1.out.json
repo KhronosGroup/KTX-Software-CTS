@@ -42,5 +42,13 @@
     "/index/levels/0/uncompressedByteLength": [
         16384,
         256
+    ],
+    "/keyValueData/KTXanimData": [
+        {
+            "duration": 1,
+            "timescale": 2,
+            "loopCount": 3
+        },
+        null
     ]
 }

@@ -160,5 +160,9 @@
     "/dataFormatDescriptor/blocks/0/samples/3/sampleUpper": [
         null,
         255
+    ],
+    "/keyValueData/KTXastcDecodeMode": [
+        "unorm",
+        null
     ]
 }

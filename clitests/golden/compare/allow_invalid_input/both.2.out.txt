@@ -44,3 +44,7 @@ Sample 1:
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
 -    Upper: 0xffffffff
+
+Key/Value Data
+
+-KTXmetalPixelFormat: 42

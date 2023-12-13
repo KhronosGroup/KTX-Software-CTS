@@ -68,5 +68,9 @@
     "/index/levels/0/uncompressedByteLength": [
         1024,
         256
+    ],
+    "/keyValueData/X": [
+        null,
+        null
     ]
 }

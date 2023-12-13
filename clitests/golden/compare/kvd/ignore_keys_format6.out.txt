@@ -1,0 +1,6 @@
+Key/Value Data
+
++KTXglFormat:
++    glInternalformat: 0x00008058
++    glFormat: 0x00000000
++    glType: 0x00000000

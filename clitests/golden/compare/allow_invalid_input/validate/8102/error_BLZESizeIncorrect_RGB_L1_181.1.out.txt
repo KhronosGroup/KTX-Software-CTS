@@ -78,8 +78,6 @@ Sample 3:
 +    Lower: 0x00000000
 +    Upper: 0x000000ff
 
-Key/Value Data
-
 Basis Supercompression Global Data
 
 -endpointCount: 14

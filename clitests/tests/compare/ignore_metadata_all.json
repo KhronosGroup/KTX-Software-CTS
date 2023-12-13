@@ -1,0 +1,57 @@
+{
+    "description": "ktx compare test with --ignore-metadata all",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-metadata all input/compare/kvd/${subcase[file1]}.ktx2 input/compare/kvd/${subcase[file2]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/compare/kvd/ignore_all.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--allow-invalid-input --content ignore --ignore-supercomp --ignore-index all --ignore-dfd all --ignore-sgd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            { "rc": 0, "id": "writer", "file1": "reference", "file2": "custom_KTXwriter" },
+            { "rc": 0, "id": "anim1", "file1": "anim_mode1", "file2": "anim_mode2" },
+            { "rc": 0, "id": "anim2", "file1": "anim_mode2", "file2": "anim_mode3" },
+            { "rc": 0, "id": "format1", "file1": "gl_format", "file2": "gl_format_alt" },
+            { "rc": 0, "id": "format2", "file1": "gl_format", "file2": "dxgi_format" },
+            { "rc": 0, "id": "format3", "file1": "dxgi_format", "file2": "dxgi_format_alt" },
+            { "rc": 0, "id": "format4", "file1": "dxgi_format", "file2": "metal_format" },
+            { "rc": 0, "id": "format5", "file1": "metal_format", "file2": "metal_format_alt" },
+            { "rc": 0, "id": "format6", "file1": "metal_format", "file2": "gl_format" },
+            { "rc": 0, "id": "format_comb1", "file1": "gl_dxgi_metal_format", "file2": "gl_dxgi_metal_format_alt1" },
+            { "rc": 0, "id": "format_comb2", "file1": "gl_dxgi_metal_format_alt1", "file2": "gl_dxgi_metal_format_alt2" },
+            { "rc": 0, "id": "format_comb3", "file1": "gl_dxgi_metal_format_alt2", "file2": "gl_format" },
+            { "rc": 0, "id": "format_comb4", "file1": "gl_format", "file2": "gl_dxgi_metal_format" },
+            { "rc": 0, "id": "format_comb5", "file1": "gl_dxgi_metal_format_alt1", "file2": "dxgi_format" },
+            { "rc": 0, "id": "format_comb6", "file1": "metal_format_alt", "file2": "gl_dxgi_metal_format_alt2" },
+            { "rc": 0, "id": "format_comb7", "file1": "gl_dxgi_metal_format", "file2": "gl_format_alt" },
+            { "rc": 0, "id": "format_comb8", "file1": "gl_dxgi_metal_format_alt2", "file2": "metal_format_alt" },
+            { "rc": 0, "id": "swizzle1", "file1": "reference", "file2": "swizzle_rgba" },
+            { "rc": 0, "id": "swizzle2", "file1": "swizzle_rgba", "file2": "swizzle_bgra" },
+            { "rc": 0, "id": "swizzle3", "file1": "swizzle_bgra", "file2": "reference" },
+            { "rc": 0, "id": "orientation1", "file1": "reference", "file2": "orientation_lu" },
+            { "rc": 0, "id": "orientation2", "file1": "orientation_lu", "file2": "orientation_rd" },
+            { "rc": 0, "id": "orientation3", "file1": "orientation_rd", "file2": "reference" },
+            { "rc": 0, "id": "swizzle_orientation1", "file1": "reference", "file2": "swizzle_rgba_orientation_lu" },
+            { "rc": 0, "id": "swizzle_orientation2", "file1": "swizzle_rgba_orientation_lu", "file2": "swizzle_rgba_orientation_rd" },
+            { "rc": 0, "id": "swizzle_orientation3", "file1": "swizzle_rgba_orientation_rd", "file2": "swizzle_bgra_orientation_rd" },
+            { "rc": 0, "id": "swizzle_orientation4", "file1": "swizzle_bgra_orientation_rd", "file2": "reference" },
+            { "rc": 0, "id": "swizzle_orientation5", "file1": "swizzle_bgra_orientation_rd", "file2": "swizzle_rgba_orientation_lu" },
+            { "rc": 0, "id": "swizzle_orientation6", "file1": "swizzle_bgra_orientation_rd", "file2": "orientation_rd" },
+            { "rc": 0, "id": "swizzle_orientation7", "file1": "orientation_lu", "file2": "swizzle_rgba_orientation_lu" },
+            { "rc": 0, "id": "swizzle_orientation8", "file1": "swizzle_rgba_orientation_lu", "file2": "swizzle_rgba" },
+            { "rc": 0, "id": "swizzle_orientation9", "file1": "swizzle_rgba", "file2": "swizzle_bgra_orientation_rd" }
+        ]
+    }
+}
