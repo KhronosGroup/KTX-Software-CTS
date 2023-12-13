@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [
+            {
+                "id": 6003,
+                "type": "warning",
+                "message": "Unrecognized DFD block.",
+                "details": "DFD block #2 vendorId (0x0002A) and descriptorType (0x0001) is not recognized and thus ignored."
+            },
+            {
+                "id": 6003,
+                "type": "warning",
+                "message": "Unrecognized DFD block.",
+                "details": "DFD block #3 vendorId (0x0002A) and descriptorType (0x0002) is not recognized and thus ignored."
+            }
+        ],
+        [
+            {
+                "id": 6003,
+                "type": "warning",
+                "message": "Unrecognized DFD block.",
+                "details": "DFD block #2 vendorId (0x0002A) and descriptorType (0x0002) is not recognized and thus ignored."
+            },
+            {
+                "id": 6003,
+                "type": "warning",
+                "message": "Unrecognized DFD block.",
+                "details": "DFD block #3 vendorId (0x0002A) and descriptorType (0x0001) is not recognized and thus ignored."
+            }
+        ]
+    ],
+    "/dataFormatDescriptor/blocks/1/descriptorType": [
+        1,
+        2
+    ],
+    "/dataFormatDescriptor/blocks/1/rawPayload": [
+        [ 42, 0, 2, 0, 0, 0, 16, 0 ],
+        null
+    ],
+    "/dataFormatDescriptor/blocks/1/rawPayload": [
+        [ 42, 0, 2, 0, 0, 0, 16, 0 ],
+        [ 42, 0, 4, 0, 0, 0, 16, 0 ]
+    ],
+    "/dataFormatDescriptor/blocks/2/descriptorType": [
+        2,
+        1
+    ],
+    "/dataFormatDescriptor/blocks/2/rawPayload": [
+        [ 42, 0, 4, 0, 0, 0, 16, 0 ],
+        null
+    ],
+    "/dataFormatDescriptor/blocks/2/rawPayload": [
+        [ 42, 0, 4, 0, 0, 0, 16, 0 ],
+        [ 42, 0, 2, 0, 0, 0, 16, 0 ]
+    ]
+}

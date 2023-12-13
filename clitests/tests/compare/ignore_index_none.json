@@ -1,9 +1,13 @@
 {
-    "description": "ktx compare test with mismatching DFD section offsets and sizes",
-    "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-index none input/compare/index/${subcase[file1]}.ktx2 input/compare/index/${subcase[file2]}.ktx2",
+    "description": "ktx compare test with --ignore-index none",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} ${default} input/compare/index/${subcase[file1]}.ktx2 input/compare/index/${subcase[file2]}.ktx2",
     "status": "${subcase[rc]}",
     "stdout": "golden/compare/index/ignore_none_${subcase[id]}.out.${format[ext]}",
     "args": {
+        "default": [
+            "--ignore-index none",
+            ""
+        ],
         "ignore": [ "--content ignore --ignore-supercomp --ignore-dfd all --ignore-metadata all --ignore-sgd all" ],
         "format": [
             {
