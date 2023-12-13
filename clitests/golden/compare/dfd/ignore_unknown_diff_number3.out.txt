@@ -14,8 +14,6 @@ warning-6003: Unrecognized DFD block.
 warning-6005: Multiple basic DFD blocks.
     DFD block #4 is a basic DFD block but one was already processed before. It will be ignored.
 
-Header
-
 Data Format Descriptor
 
 -DFD total bytes: 172

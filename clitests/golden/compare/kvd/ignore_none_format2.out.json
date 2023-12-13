@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "/keyValueData/KTXdxgiFormat__": [
+        null,
+        28
+    ],
+    "/keyValueData/KTXglFormat": [
+        {
+            "glInternalformat": 32856,
+            "glFormat": 0,
+            "glType": 0
+        },
+        null
+    ]
+}

@@ -12,8 +12,6 @@ warning-6003: Unrecognized DFD block.
 warning-6003: Unrecognized DFD block.
     DFD block #3 vendorId (0x0002A) and descriptorType (0x0001) is not recognized and thus ignored.
 
-Header
-
 Data Format Descriptor
 
 Sample 3:

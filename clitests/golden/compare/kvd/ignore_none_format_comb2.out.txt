@@ -1,0 +1,14 @@
+Key/Value Data
+
+-KTXdxgiFormat__: 28
++KTXdxgiFormat__: 27
+-KTXglFormat:
+-    glInternalformat: 0x00008C43
+-    glFormat: 0x00000000
+-    glType: 0x00000000
++KTXglFormat:
++    glInternalformat: 0x00008058
++    glFormat: 0x00000000
++    glType: 0x00000000
+-KTXmetalPixelFormat: 71
++KTXmetalPixelFormat: 70

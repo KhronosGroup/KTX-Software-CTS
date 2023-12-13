@@ -1,0 +1,4 @@
+Key/Value Data
+
+-KTXorientation: rd
+-KTXswizzle: bgra

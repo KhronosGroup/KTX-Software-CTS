@@ -112,9 +112,9 @@ Sample 3:
 Key/Value Data
 
 +KTXanimData:
-+    duration: 0x00000001
-+    timescale: 0x00000002
-+    loopCount: 0x00000003
++    duration: 1
++    timescale: 2
++    loopCount: 3
 
 Basis Supercompression Global Data
 

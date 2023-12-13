@@ -93,5 +93,9 @@
     "/dataFormatDescriptor/blocks/0/samples/1/sampleUpper": [
         4294967295,
         null
+    ],
+    "/keyValueData/KTXmetalPixelFormat": [
+        42,
+        null
     ]
 }

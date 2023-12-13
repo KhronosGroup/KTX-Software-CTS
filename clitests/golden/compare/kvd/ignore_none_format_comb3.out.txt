@@ -1,0 +1,4 @@
+Key/Value Data
+
+-KTXdxgiFormat__: 27
+-KTXmetalPixelFormat: 70

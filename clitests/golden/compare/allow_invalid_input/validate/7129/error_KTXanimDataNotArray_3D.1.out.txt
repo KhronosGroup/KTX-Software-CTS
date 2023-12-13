@@ -22,3 +22,10 @@ Level Index
 +Level0.byteLength: 256
 -Level0.uncompressedByteLength: 16384
 +Level0.uncompressedByteLength: 256
+
+Key/Value Data
+
+-KTXanimData:
+-    duration: 1
+-    timescale: 2
+-    loopCount: 3

@@ -12,8 +12,6 @@ Validation successful for 'input/compare/dfd/custom_block_2.ktx2'
 warning-6003: Unrecognized DFD block.
     DFD block #2 vendorId (0x0002A) and descriptorType (0x0002) is not recognized and thus ignored.
 
-Header
-
 Data Format Descriptor
 
 -DFD total bytes: 164

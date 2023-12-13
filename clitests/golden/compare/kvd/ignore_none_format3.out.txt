@@ -1,0 +1,4 @@
+Key/Value Data
+
+-KTXdxgiFormat__: 28
++KTXdxgiFormat__: 27

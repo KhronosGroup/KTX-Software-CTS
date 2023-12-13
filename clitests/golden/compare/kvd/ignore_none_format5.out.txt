@@ -1,0 +1,4 @@
+Key/Value Data
+
+-KTXmetalPixelFormat: 70
++KTXmetalPixelFormat: 71
