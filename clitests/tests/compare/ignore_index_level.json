@@ -1,5 +1,5 @@
 {
-    "description": "ktx compare test with mismatching DFD section offsets and sizes",
+    "description": "ktx compare test with --ignore-index level",
     "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-index level input/compare/index/${subcase[file1]}.ktx2 input/compare/index/${subcase[file2]}.ktx2",
     "status": "${subcase[rc]}",
     "stdout": "golden/compare/index/ignore_level_${subcase[id]}.out.${format[ext]}",

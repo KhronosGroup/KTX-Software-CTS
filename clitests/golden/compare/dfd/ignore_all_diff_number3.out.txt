@@ -1,0 +1,16 @@
+Validation successful for 'input/compare/dfd/additional_bdfd_x2.ktx2'
+
+warning-6005: Multiple basic DFD blocks.
+    DFD block #2 is a basic DFD block but one was already processed before. It will be ignored.
+warning-6005: Multiple basic DFD blocks.
+    DFD block #3 is a basic DFD block but one was already processed before. It will be ignored.
+
+Validation successful for 'input/compare/dfd/custom_block_1_2_plus_bdfd.ktx2'
+
+warning-6003: Unrecognized DFD block.
+    DFD block #2 vendorId (0x0002A) and descriptorType (0x0001) is not recognized and thus ignored.
+warning-6003: Unrecognized DFD block.
+    DFD block #3 vendorId (0x0002A) and descriptorType (0x0002) is not recognized and thus ignored.
+warning-6005: Multiple basic DFD blocks.
+    DFD block #4 is a basic DFD block but one was already processed before. It will be ignored.
+
