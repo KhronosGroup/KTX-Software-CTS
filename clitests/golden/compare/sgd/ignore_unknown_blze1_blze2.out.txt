@@ -1,0 +1,8 @@
+Basis Supercompression Global Data
+
+-endpointCount: 1
++endpointCount: 4
+-endpointsByteLength: 40
++endpointsByteLength: 46
++endpointsData mismatch
++tablesData mismatch

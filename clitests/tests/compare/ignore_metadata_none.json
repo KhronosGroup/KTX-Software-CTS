@@ -1,9 +1,13 @@
 {
     "description": "ktx compare test with --ignore-metadata none",
-    "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-metadata none input/compare/kvd/${subcase[file1]}.ktx2 input/compare/kvd/${subcase[file2]}.ktx2",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} ${default} input/compare/kvd/${subcase[file1]}.ktx2 input/compare/kvd/${subcase[file2]}.ktx2",
     "status": "${subcase[rc]}",
     "stdout": "golden/compare/kvd/ignore_none_${subcase[id]}.out.${format[ext]}",
     "args": {
+        "default": [
+            "--ignore-metadata none",
+            ""
+        ],
         "ignore": [ "--allow-invalid-input --content ignore --ignore-supercomp --ignore-index all --ignore-dfd all --ignore-sgd all" ],
         "format": [
             {

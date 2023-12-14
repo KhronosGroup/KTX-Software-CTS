@@ -284,5 +284,9 @@
     "/supercompressionGlobalData/images/2/alphaSliceByteOffset": [
         1,
         null
-    ]
+    ],
+    "/supercompressionGlobalData/endpointsData": [],
+    "/supercompressionGlobalData/selectorsData": [],
+    "/supercompressionGlobalData/tablesData": [],
+    "/supercompressionGlobalData/extendedData": []
 }

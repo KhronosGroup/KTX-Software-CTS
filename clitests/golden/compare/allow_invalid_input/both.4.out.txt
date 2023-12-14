@@ -169,3 +169,7 @@ Basis Supercompression Global Data
 +Image8.rgbSliceByteOffset: 2
 +Image8.alphaSliceByteLength: 0
 +Image8.alphaSliceByteOffset: 0
++endpointsData mismatch
++selectorsData mismatch
++tablesData mismatch
++extendedData mismatch

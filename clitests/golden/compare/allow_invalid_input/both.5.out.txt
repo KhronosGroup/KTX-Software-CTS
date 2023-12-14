@@ -100,3 +100,7 @@ Basis Supercompression Global Data
 -Image2.rgbSliceByteOffset: 0
 -Image2.alphaSliceByteLength: 1
 -Image2.alphaSliceByteOffset: 1
++endpointsData mismatch
++selectorsData mismatch
++tablesData mismatch
++extendedData mismatch

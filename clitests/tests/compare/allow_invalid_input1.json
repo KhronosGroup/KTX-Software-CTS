@@ -36,7 +36,6 @@
             "validate/7013/error_DuplicateKey",
             "validate/7129/error_KTXanimDataNotArray_3D",
             "validate/7132/error_KTXastcDecodeModeInvalidValue_unorm",
-            "validate/8102/error_BLZESizeIncorrect_RGB_L1_181",
             "validate/8108/error_BLZEInvalidAlphaSlice_RGBA_L3_0"
         ]
     }
