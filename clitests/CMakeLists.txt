@@ -345,6 +345,7 @@ set(CASELIST
     tests/compare/header_format.json
     tests/compare/header_dimensions.json
     tests/compare/header_supercompression.json
+    tests/compare/ignore_supercompression.json
     tests/compare/index_dfd.json
     tests/compare/index_kvd.json
     tests/compare/index_sgd.json
@@ -359,6 +360,10 @@ set(CASELIST
     tests/compare/ignore_metadata_all.json
     tests/compare/ignore_metadata_none.json
     tests/compare/ignore_metadata_keys.json
+    tests/compare/ignore_sgd_all.json
+    tests/compare/ignore_sgd_unknown.json
+    tests/compare/ignore_sgd_payload.json
+    tests/compare/ignore_sgd_none.json
 
     tests/help/cli_errors.json
     tests/help/help.json

@@ -1,0 +1,23 @@
+Validation successful for 'input/compare/sgd/vendor43_payload1.ktx2'
+
+warning-3018: Using vendor supercompressionScheme. Cannot validate.
+    supercompressionScheme is Vendor or reserved scheme (0x0001002B) which falls into the reserved vendor range. Cannot validate.
+
+Header
+
+-vkFormat: VK_FORMAT_R8G8B8A8_UNORM
++vkFormat: VK_FORMAT_UNDEFINED
+
+Basis Supercompression Global Data
+
++endpointCount: 1
++selectorCount: 1
++endpointsByteLength: 40
++selectorsByteLength: 5
++tablesByteLength: 45
++extendedByteLength: 0
++Image0.imageFlags: 0x0 ()
++Image0.rgbSliceByteLength: 2
++Image0.rgbSliceByteOffset: 0
++Image0.alphaSliceByteLength: 2
++Image0.alphaSliceByteOffset: 2
