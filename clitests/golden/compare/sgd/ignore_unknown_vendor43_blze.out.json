@@ -20,7 +20,7 @@
         "VK_FORMAT_UNDEFINED"
     ],
     "/supercompressionGlobalData/type": [
-        "Vendor or reserved scheme",
+        65579,
         "KTX_SS_BASIS_LZ"
     ],
     "/supercompressionGlobalData/endpointCount": [

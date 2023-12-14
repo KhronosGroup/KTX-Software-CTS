@@ -44,7 +44,7 @@
     ],
     "/dataFormatDescriptor/blocks/1/flags": [
         null,
-        [ , "KHR_DF_FLAG_ALPHA_STRAIGHT" ]
+        [ "KHR_DF_FLAG_ALPHA_STRAIGHT" ]
     ],
     "/dataFormatDescriptor/blocks/1/transferFunction": [
         null,
