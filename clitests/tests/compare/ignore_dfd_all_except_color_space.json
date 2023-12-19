@@ -1,0 +1,34 @@
+{
+    "description": "ktx compare test with --ignore-dfd all",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-dfd all-except-color-space input/compare/dfd/${subcase[file1]}.ktx2 input/compare/dfd/${subcase[file2]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/compare/dfd/ignore_all_except_color_space_${subcase[id]}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--allow-invalid-input --content ignore --ignore-format-header --ignore-supercomp --ignore-index all --ignore-metadata all --ignore-sgd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            { "rc": 0, "id": "ref_vs_BLZE", "file1": "reference", "file2": "reference_BLZE" },
+            { "rc": 0, "id": "ref_vs_UASTC", "file1": "reference", "file2": "reference_UASTC" },
+            { "rc": 0, "id": "UASTC_vs_BLZE", "file1": "reference_UASTC", "file2": "reference_BLZE" },
+            { "rc": 7, "id": "diff_primaries", "file1": "diff_primaries", "file2": "reference" },
+            { "rc": 7, "id": "diff_primaries_BLZE", "file1": "reference_BLZE", "file2": "diff_primaries" },
+            { "rc": 7, "id": "diff_primaries_UASTC", "file1": "diff_primaries", "file2": "reference_UASTC" },
+            { "rc": 7, "id": "diff_transfer", "file1": "reference", "file2": "diff_transfer" },
+            { "rc": 7, "id": "diff_transfer_BLZE", "file1": "diff_transfer", "file2": "reference_BLZE" },
+            { "rc": 7, "id": "diff_transfer_UASTC", "file1": "reference_UASTC", "file2": "diff_transfer" }
+        ]
+    }
+}

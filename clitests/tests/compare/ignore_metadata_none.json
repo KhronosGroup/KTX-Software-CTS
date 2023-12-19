@@ -8,7 +8,7 @@
             "--ignore-metadata none",
             ""
         ],
-        "ignore": [ "--allow-invalid-input --content ignore --ignore-supercomp --ignore-index all --ignore-dfd all --ignore-sgd all" ],
+        "ignore": [ "--allow-invalid-input --content ignore --ignore-format-header --ignore-supercomp --ignore-index all --ignore-dfd all --ignore-sgd all" ],
         "format": [
             {
                 "args": "--format text",

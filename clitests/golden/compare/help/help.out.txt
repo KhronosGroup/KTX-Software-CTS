@@ -20,6 +20,9 @@ Usage:
                                  (default: raw)
       --allow-invalid-input     Perform best effort comparison even if any of the input files are 
                                 invalid.
+      --ignore-format-header    Ignore the vkFormat and typeSize fields in the file header.
+                                Note: useful when comparing textures with and without BasisLZ 
+                                encoding, respectively.
       --ignore-supercomp        Ignore supercompression scheme in the file header.
                                 Note: use the --ignore-sgd option to also ignore the SGD section, 
                                 if needed.
@@ -30,9 +33,11 @@ Usage:
                                   level: Ignore level index entries only
                                   none: Do not ignore any index entries
                                  (default: none)
-      --ignore-dfd all|unknown|extended|none
+      --ignore-dfd all|all-except-color-space|unknown|extended|none
                                 Controls the comparison of DFD blocks. Possible options are:
                                   all: Ignore all DFD blocks
+                                  all-except-color-space: Ignore all DFD blocks except the color 
+                                space information in the basic DFD block
                                   unknown: Ignore any unrecognized DFD blocks
                                   extended: Ignore all DFD blocks except the basic DFD block
                                   none: Do not ignore any DFD blocks
