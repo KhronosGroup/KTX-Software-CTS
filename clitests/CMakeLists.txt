@@ -345,6 +345,7 @@ set(CASELIST
     tests/compare/header_format.json
     tests/compare/header_dimensions.json
     tests/compare/header_supercompression.json
+    tests/compare/ignore_format_header.json
     tests/compare/ignore_supercompression.json
     tests/compare/index_dfd.json
     tests/compare/index_kvd.json
@@ -354,6 +355,7 @@ set(CASELIST
     tests/compare/ignore_index_level.json
     tests/compare/ignore_index_none.json
     tests/compare/ignore_dfd_all.json
+    tests/compare/ignore_dfd_all_except_color_space.json
     tests/compare/ignore_dfd_unknown.json
     tests/compare/ignore_dfd_extended.json
     tests/compare/ignore_dfd_none.json

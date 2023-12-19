@@ -8,7 +8,7 @@
             "--ignore-index none",
             ""
         ],
-        "ignore": [ "--content ignore --ignore-supercomp --ignore-dfd all --ignore-metadata all --ignore-sgd all" ],
+        "ignore": [ "--content ignore --ignore-format-header --ignore-supercomp --ignore-dfd all --ignore-metadata all --ignore-sgd all" ],
         "format": [
             {
                 "args": "--format text",

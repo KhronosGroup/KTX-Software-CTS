@@ -4,7 +4,7 @@
     "status": "${subcase[rc]}",
     "stdout": "golden/compare/sgd/ignore_payload_${subcase[id]}.out.${format[ext]}",
     "args": {
-        "ignore": [ "--content ignore --ignore-supercomp --ignore-index all --ignore-dfd all --ignore-metadata all" ],
+        "ignore": [ "--content ignore --ignore-format-header --ignore-supercomp --ignore-index all --ignore-dfd all --ignore-metadata all" ],
         "format": [
             {
                 "args": "--format text",

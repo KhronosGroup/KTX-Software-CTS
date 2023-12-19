@@ -4,7 +4,7 @@
     "status": "${subcase[rc]}",
     "stdout": "golden/compare/index/ignore_level_${subcase[id]}.out.${format[ext]}",
     "args": {
-        "ignore": [ "--content ignore --ignore-supercomp --ignore-dfd all --ignore-metadata all --ignore-sgd all" ],
+        "ignore": [ "--content ignore --ignore-format-header --ignore-supercomp --ignore-dfd all --ignore-metadata all --ignore-sgd all" ],
         "format": [
             {
                 "args": "--format text",
