@@ -275,6 +275,7 @@ set(CASELIST
     tests/create/fewer_components_png.json
     tests/create/generate_mipmap.json
     tests/create/help.json
+    tests/create/image_slices.json
     tests/create/input_swizzle.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
