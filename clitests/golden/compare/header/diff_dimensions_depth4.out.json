@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/header/pixelDepth": [
-        0,
-        4
-    ]
+    "info": {
+        "/header/pixelDepth": [
+            0,
+            4
+        ]
+    }
 }

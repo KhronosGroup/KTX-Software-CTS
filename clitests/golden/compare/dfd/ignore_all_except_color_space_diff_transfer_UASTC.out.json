@@ -15,8 +15,10 @@
             }
         ]
     ],
-    "/dataFormatDescriptor/blocks/0/transferFunction": [
-        "KHR_DF_TRANSFER_LINEAR",
-        "KHR_DF_TRANSFER_DCIP3"
-    ]
+    "info": {
+        "/dataFormatDescriptor/blocks/0/transferFunction": [
+            "KHR_DF_TRANSFER_LINEAR",
+            "KHR_DF_TRANSFER_DCIP3"
+        ]
+    }
 }

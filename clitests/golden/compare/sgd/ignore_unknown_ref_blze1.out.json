@@ -8,56 +8,58 @@
         [],
         []
     ],
-    "/supercompressionGlobalData/type": [
-        "KTX_SS_NONE",
-        "KTX_SS_BASIS_LZ"
-    ],
-    "/supercompressionGlobalData/endpointCount": [
-        null,
-        1
-    ],
-    "/supercompressionGlobalData/selectorCount": [
-        null,
-        1
-    ],
-    "/supercompressionGlobalData/endpointsByteLength": [
-        null,
-        40
-    ],
-    "/supercompressionGlobalData/selectorsByteLength": [
-        null,
-        5
-    ],
-    "/supercompressionGlobalData/tablesByteLength": [
-        null,
-        45
-    ],
-    "/supercompressionGlobalData/extendedByteLength": [
-        null,
-        0
-    ],
-    "/supercompressionGlobalData/images/0/imageFlags": [
-        null,
-        []
-    ],
-    "/supercompressionGlobalData/images/0/rgbSliceByteLength": [
-        null,
-        2
-    ],
-    "/supercompressionGlobalData/images/0/rgbSliceByteOffset": [
-        null,
-        0
-    ],
-    "/supercompressionGlobalData/images/0/alphaSliceByteLength": [
-        null,
-        2
-    ],
-    "/supercompressionGlobalData/images/0/alphaSliceByteOffset": [
-        null,
-        2
-    ],
-    "/supercompressionGlobalData/endpointsData": [],
-    "/supercompressionGlobalData/selectorsData": [],
-    "/supercompressionGlobalData/tablesData": [],
-    "/supercompressionGlobalData/extendedData": []
+    "info": {
+        "/supercompressionGlobalData/type": [
+            "KTX_SS_NONE",
+            "KTX_SS_BASIS_LZ"
+        ],
+        "/supercompressionGlobalData/endpointCount": [
+            null,
+            1
+        ],
+        "/supercompressionGlobalData/selectorCount": [
+            null,
+            1
+        ],
+        "/supercompressionGlobalData/endpointsByteLength": [
+            null,
+            40
+        ],
+        "/supercompressionGlobalData/selectorsByteLength": [
+            null,
+            5
+        ],
+        "/supercompressionGlobalData/tablesByteLength": [
+            null,
+            45
+        ],
+        "/supercompressionGlobalData/extendedByteLength": [
+            null,
+            0
+        ],
+        "/supercompressionGlobalData/images/0/imageFlags": [
+            null,
+            []
+        ],
+        "/supercompressionGlobalData/images/0/rgbSliceByteLength": [
+            null,
+            2
+        ],
+        "/supercompressionGlobalData/images/0/rgbSliceByteOffset": [
+            null,
+            0
+        ],
+        "/supercompressionGlobalData/images/0/alphaSliceByteLength": [
+            null,
+            2
+        ],
+        "/supercompressionGlobalData/images/0/alphaSliceByteOffset": [
+            null,
+            2
+        ],
+        "/supercompressionGlobalData/endpointsData": [],
+        "/supercompressionGlobalData/selectorsData": [],
+        "/supercompressionGlobalData/tablesData": [],
+        "/supercompressionGlobalData/extendedData": []
+    }
 }

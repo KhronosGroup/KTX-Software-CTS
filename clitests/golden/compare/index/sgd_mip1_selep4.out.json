@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/index/supercompressionGlobalData/byteLength": [
-        138,
-        136
-    ]
+    "info": {
+        "/index/supercompressionGlobalData/byteLength": [
+            138,
+            136
+        ]
+    }
 }

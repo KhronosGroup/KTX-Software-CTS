@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/keyValueData/KTXswizzle": [
-        "bgra",
-        null
-    ]
+    "info": {
+        "/keyValueData/KTXswizzle": [
+            "bgra",
+            null
+        ]
+    }
 }

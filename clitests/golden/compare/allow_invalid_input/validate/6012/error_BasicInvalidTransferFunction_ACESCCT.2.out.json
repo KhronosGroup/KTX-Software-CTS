@@ -15,24 +15,26 @@
             }
         ]
     ],
-    "/header/pixelWidth": [
-        8,
-        16
-    ],
-    "/header/pixelHeight": [
-        8,
-        16
-    ],
-    "/index/levels/0/byteLength": [
-        256,
-        1024
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        256,
-        1024
-    ],
-    "/dataFormatDescriptor/blocks/0/transferFunction": [
-        "KHR_DF_TRANSFER_LINEAR",
-        "KHR_DF_TRANSFER_ACESCCT"
-    ]
+    "info": {
+        "/header/pixelWidth": [
+            8,
+            16
+        ],
+        "/header/pixelHeight": [
+            8,
+            16
+        ],
+        "/index/levels/0/byteLength": [
+            256,
+            1024
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            256,
+            1024
+        ],
+        "/dataFormatDescriptor/blocks/0/transferFunction": [
+            "KHR_DF_TRANSFER_LINEAR",
+            "KHR_DF_TRANSFER_ACESCCT"
+        ]
+    }
 }

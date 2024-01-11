@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/index/levels/0/byteLength": [
-        1024,
-        276
-    ]
+    "info": {
+        "/index/levels/0/byteLength": [
+            1024,
+            276
+        ]
+    }
 }

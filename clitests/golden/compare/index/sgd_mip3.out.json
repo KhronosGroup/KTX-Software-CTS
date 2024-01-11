@@ -8,20 +8,22 @@
         [],
         []
     ],
-    "/header/levelCount": [
-        1,
-        3
-    ],
-    "/index/dataFormatDescriptor/byteOffset": [
-        104,
-        152
-    ],
-    "/index/supercompressionGlobalData/byteOffset": [
-        168,
-        216
-    ],
-    "/index/supercompressionGlobalData/byteLength": [
-        138,
-        202
-    ]
+    "info": {
+        "/header/levelCount": [
+            1,
+            3
+        ],
+        "/index/dataFormatDescriptor/byteOffset": [
+            104,
+            152
+        ],
+        "/index/supercompressionGlobalData/byteOffset": [
+            168,
+            216
+        ],
+        "/index/supercompressionGlobalData/byteLength": [
+            138,
+            202
+        ]
+    }
 }

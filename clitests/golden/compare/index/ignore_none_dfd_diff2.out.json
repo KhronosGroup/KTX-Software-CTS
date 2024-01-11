@@ -8,32 +8,34 @@
         [],
         []
     ],
-    "/header/levelCount": [
-        1,
-        2
-    ],
-    "/index/dataFormatDescriptor/byteOffset": [
-        104,
-        128
-    ],
-    "/index/dataFormatDescriptor/byteLength": [
-        76,
-        92
-    ],
-    "/index/levels/0/byteOffset": [
-        180,
-        476
-    ],
-    "/index/levels/1/byteOffset": [
-        null,
-        220
-    ],
-    "/index/levels/1/byteLength": [
-        null,
-        256
-    ],
-    "/index/levels/1/uncompressedByteLength": [
-        null,
-        256
-    ]
+    "info": {
+        "/header/levelCount": [
+            1,
+            2
+        ],
+        "/index/dataFormatDescriptor/byteOffset": [
+            104,
+            128
+        ],
+        "/index/dataFormatDescriptor/byteLength": [
+            76,
+            92
+        ],
+        "/index/levels/0/byteOffset": [
+            180,
+            476
+        ],
+        "/index/levels/1/byteOffset": [
+            null,
+            220
+        ],
+        "/index/levels/1/byteLength": [
+            null,
+            256
+        ],
+        "/index/levels/1/uncompressedByteLength": [
+            null,
+            256
+        ]
+    }
 }

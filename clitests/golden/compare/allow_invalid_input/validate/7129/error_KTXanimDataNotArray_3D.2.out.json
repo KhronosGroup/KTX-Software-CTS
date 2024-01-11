@@ -15,40 +15,42 @@
             }
         ]
     ],
-    "/header/pixelWidth": [
-        8,
-        16
-    ],
-    "/header/pixelHeight": [
-        8,
-        16
-    ],
-    "/header/pixelDepth": [
-        0,
-        16
-    ],
-    "/index/keyValueData/byteLength": [
-        44,
-        72
-    ],
-    "/index/levels/0/byteOffset": [
-        240,
-        268
-    ],
-    "/index/levels/0/byteLength": [
-        256,
-        16384
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        256,
-        16384
-    ],
-    "/keyValueData/KTXanimData": [
-        null,
-        {
-            "duration": 1,
-            "timescale": 2,
-            "loopCount": 3
-        }
-    ]
+    "info": {
+        "/header/pixelWidth": [
+            8,
+            16
+        ],
+        "/header/pixelHeight": [
+            8,
+            16
+        ],
+        "/header/pixelDepth": [
+            0,
+            16
+        ],
+        "/index/keyValueData/byteLength": [
+            44,
+            72
+        ],
+        "/index/levels/0/byteOffset": [
+            240,
+            268
+        ],
+        "/index/levels/0/byteLength": [
+            256,
+            16384
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            256,
+            16384
+        ],
+        "/keyValueData/KTXanimData": [
+            null,
+            {
+                "duration": 1,
+                "timescale": 2,
+                "loopCount": 3
+            }
+        ]
+    }
 }

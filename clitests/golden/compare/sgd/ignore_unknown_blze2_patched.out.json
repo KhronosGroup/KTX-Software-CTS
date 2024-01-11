@@ -15,5 +15,7 @@
             }
         ]
     ],
-    "/supercompressionGlobalData/endpointsData": []
+    "info": {
+        "/supercompressionGlobalData/endpointsData": []
+    }
 }

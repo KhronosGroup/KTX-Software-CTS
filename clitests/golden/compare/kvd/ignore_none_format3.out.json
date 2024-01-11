@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/keyValueData/KTXdxgiFormat__": [
-        28,
-        27
-    ]
+    "info": {
+        "/keyValueData/KTXdxgiFormat__": [
+            28,
+            27
+        ]
+    }
 }

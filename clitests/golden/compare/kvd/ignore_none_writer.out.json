@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/keyValueData/KTXwriter": [
-        "Unidentified app / libktx ",
-        "Unidentified APP / libktx "
-    ]
+    "info": {
+        "/keyValueData/KTXwriter": [
+            "Unidentified app / libktx ",
+            "Unidentified APP / libktx "
+        ]
+    }
 }

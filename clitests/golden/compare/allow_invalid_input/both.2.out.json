@@ -34,68 +34,70 @@
             }
         ]
     ],
-    "/header/vkFormat": [
-        "VK_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK",
-        "VK_FORMAT_ETC2_R8G8B8_SRGB_BLOCK"
-    ],
-    "/index/dataFormatDescriptor/byteLength": [
-        60,
-        44
-    ],
-    "/index/keyValueData/byteOffset": [
-        164,
-        148
-    ],
-    "/index/keyValueData/byteLength": [
-        72,
-        44
-    ],
-    "/index/levels/0/byteOffset": [
-        240,
-        192
-    ],
-    "/dataFormatDescriptor/totalSize": [
-        60,
-        44
-    ],
-    "/dataFormatDescriptor/blocks/0/descriptorBlockSize": [
-        56,
-        40
-    ],
-    "/dataFormatDescriptor/blocks/0/transferFunction": [
-        "KHR_DF_TRANSFER_SRGB",
-        "KHR_DF_TRANSFER_LINEAR"
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/1/qualifiers": [
-        [ "KHR_DF_SAMPLE_DATATYPE_LINEAR" ],
-        null
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/1/channelType": [
-        "KHR_DF_CHANNEL_ETC2_ALPHA",
-        null
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
-        63,
-        null
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [
-        0,
-        null
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/1/samplePosition": [
-        [ 0, 0, 0, 0 ],
-        null
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/1/sampleLower": [
-        0,
-        null
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/1/sampleUpper": [
-        4294967295,
-        null
-    ],
-    "/keyValueData/KTXmetalPixelFormat": [
-        42,
-        null
-    ]
+    "info": {
+        "/header/vkFormat": [
+            "VK_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK",
+            "VK_FORMAT_ETC2_R8G8B8_SRGB_BLOCK"
+        ],
+        "/index/dataFormatDescriptor/byteLength": [
+            60,
+            44
+        ],
+        "/index/keyValueData/byteOffset": [
+            164,
+            148
+        ],
+        "/index/keyValueData/byteLength": [
+            72,
+            44
+        ],
+        "/index/levels/0/byteOffset": [
+            240,
+            192
+        ],
+        "/dataFormatDescriptor/totalSize": [
+            60,
+            44
+        ],
+        "/dataFormatDescriptor/blocks/0/descriptorBlockSize": [
+            56,
+            40
+        ],
+        "/dataFormatDescriptor/blocks/0/transferFunction": [
+            "KHR_DF_TRANSFER_SRGB",
+            "KHR_DF_TRANSFER_LINEAR"
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/qualifiers": [
+            [ "KHR_DF_SAMPLE_DATATYPE_LINEAR" ],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/channelType": [
+            "KHR_DF_CHANNEL_ETC2_ALPHA",
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
+            63,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [
+            0,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/samplePosition": [
+            [ 0, 0, 0, 0 ],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/sampleLower": [
+            0,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/sampleUpper": [
+            4294967295,
+            null
+        ],
+        "/keyValueData/KTXmetalPixelFormat": [
+            42,
+            null
+        ]
+    }
 }

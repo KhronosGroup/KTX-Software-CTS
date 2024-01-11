@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/header/layerCount": [
-        0,
-        4
-    ]
+    "info": {
+        "/header/layerCount": [
+            0,
+            4
+        ]
+    }
 }

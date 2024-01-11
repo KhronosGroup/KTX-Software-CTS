@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/header/levelCount": [
-        3,
-        4
-    ]
+    "info": {
+        "/header/levelCount": [
+            3,
+            4
+        ]
+    }
 }

@@ -8,12 +8,14 @@
         [],
         []
     ],
-    "/index/supercompressionGlobalData/byteLength": [
-        138,
-        136
-    ],
-    "/index/levels/0/byteOffset": [
-        306,
-        304
-    ]
+    "info": {
+        "/index/supercompressionGlobalData/byteLength": [
+            138,
+            136
+        ],
+        "/index/levels/0/byteOffset": [
+            306,
+            304
+        ]
+    }
 }

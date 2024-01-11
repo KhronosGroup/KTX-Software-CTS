@@ -15,28 +15,30 @@
         ],
         []
     ],
-    "/header/pixelWidth": [
-        16,
-        8
-    ],
-    "/header/pixelHeight": [
-        16,
-        8
-    ],
-    "/header/layerCount": [
-        1,
-        0
-    ],
-    "/header/faceCount": [
-        2,
-        1
-    ],
-    "/index/levels/0/byteLength": [
-        2048,
-        256
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        2048,
-        256
-    ]
+    "info": {
+        "/header/pixelWidth": [
+            16,
+            8
+        ],
+        "/header/pixelHeight": [
+            16,
+            8
+        ],
+        "/header/layerCount": [
+            1,
+            0
+        ],
+        "/header/faceCount": [
+            2,
+            1
+        ],
+        "/index/levels/0/byteLength": [
+            2048,
+            256
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            2048,
+            256
+        ]
+    }
 }

@@ -8,16 +8,18 @@
         [],
         []
     ],
-    "/keyValueData/KTXanimData": [
-        {
-            "duration": 5,
-            "timescale": 30,
-            "loopCount": 0
-        },
-        {
-            "duration": 1,
-            "timescale": 30,
-            "loopCount": 1
-        }
-    ]
+    "info": {
+        "/keyValueData/KTXanimData": [
+            {
+                "duration": 5,
+                "timescale": 30,
+                "loopCount": 0
+            },
+            {
+                "duration": 1,
+                "timescale": 30,
+                "loopCount": 1
+            }
+        ]
+    }
 }

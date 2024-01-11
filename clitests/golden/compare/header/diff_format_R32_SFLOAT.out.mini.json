@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/compare_v0.json","valid":[true,true],"messages":[[],[]],"/header/vkFormat":["VK_FORMAT_R8G8B8A8_UNORM","VK_FORMAT_R32_SFLOAT"],"/header/typeSize":[1,4]}
+{"$schema":"https://schema.khronos.org/ktx/compare_v0.json","valid":[true,true],"messages":[[],[]],"info":{"/header/vkFormat":["VK_FORMAT_R8G8B8A8_UNORM","VK_FORMAT_R32_SFLOAT"],"/header/typeSize":[1,4]}}

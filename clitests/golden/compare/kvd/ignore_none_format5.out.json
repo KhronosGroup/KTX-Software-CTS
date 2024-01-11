@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/keyValueData/KTXmetalPixelFormat": [
-        70,
-        71
-    ]
+    "info": {
+        "/keyValueData/KTXmetalPixelFormat": [
+            70,
+            71
+        ]
+    }
 }

@@ -8,16 +8,18 @@
         [],
         []
     ],
-    "/index/keyValueData/byteOffset": [
-        0,
-        164
-    ],
-    "/index/keyValueData/byteLength": [
-        0,
-        44
-    ],
-    "/index/supercompressionGlobalData/byteOffset": [
-        168,
-        208
-    ]
+    "info": {
+        "/index/keyValueData/byteOffset": [
+            0,
+            164
+        ],
+        "/index/keyValueData/byteLength": [
+            0,
+            44
+        ],
+        "/index/supercompressionGlobalData/byteOffset": [
+            168,
+            208
+        ]
+    }
 }

@@ -8,16 +8,18 @@
         [],
         []
     ],
-    "/header/faceCount": [
-        1,
-        6
-    ],
-    "/header/levelCount": [
-        1,
-        2
-    ],
-    "/index/dataFormatDescriptor/byteOffset": [
-        104,
-        128
-    ]
+    "info": {
+        "/header/faceCount": [
+            1,
+            6
+        ],
+        "/header/levelCount": [
+            1,
+            2
+        ],
+        "/index/dataFormatDescriptor/byteOffset": [
+            104,
+            128
+        ]
+    }
 }

@@ -8,80 +8,82 @@
         [],
         []
     ],
-    "/header/layerCount": [
-        4,
-        0
-    ],
-    "/header/levelCount": [
-        3,
-        5
-    ],
-    "/header/supercompressionScheme": [
-        "KTX_SS_NONE",
-        "KTX_SS_ZSTD"
-    ],
-    "/index/dataFormatDescriptor/byteOffset": [
-        152,
-        200
-    ],
-    "/index/levels/0/byteOffset": [
-        1524,
-        669
-    ],
-    "/index/levels/0/byteLength": [
-        4096,
-        276
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        4096,
-        1024
-    ],
-    "/index/levels/1/byteOffset": [
-        500,
-        403
-    ],
-    "/index/levels/1/byteLength": [
-        1024,
-        266
-    ],
-    "/index/levels/1/uncompressedByteLength": [
-        1024,
-        256
-    ],
-    "/index/levels/2/byteOffset": [
-        244,
-        330
-    ],
-    "/index/levels/2/byteLength": [
-        256,
-        73
-    ],
-    "/index/levels/2/uncompressedByteLength": [
-        256,
-        64
-    ],
-    "/index/levels/3/byteOffset": [
-        null,
-        305
-    ],
-    "/index/levels/3/byteLength": [
-        null,
-        25
-    ],
-    "/index/levels/3/uncompressedByteLength": [
-        null,
-        16
-    ],
-    "/index/levels/4/byteOffset": [
-        null,
-        292
-    ],
-    "/index/levels/4/byteLength": [
-        null,
-        13
-    ],
-    "/index/levels/4/uncompressedByteLength": [
-        null,
-        4
-    ]
+    "info": {
+        "/header/layerCount": [
+            4,
+            0
+        ],
+        "/header/levelCount": [
+            3,
+            5
+        ],
+        "/header/supercompressionScheme": [
+            "KTX_SS_NONE",
+            "KTX_SS_ZSTD"
+        ],
+        "/index/dataFormatDescriptor/byteOffset": [
+            152,
+            200
+        ],
+        "/index/levels/0/byteOffset": [
+            1524,
+            669
+        ],
+        "/index/levels/0/byteLength": [
+            4096,
+            276
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            4096,
+            1024
+        ],
+        "/index/levels/1/byteOffset": [
+            500,
+            403
+        ],
+        "/index/levels/1/byteLength": [
+            1024,
+            266
+        ],
+        "/index/levels/1/uncompressedByteLength": [
+            1024,
+            256
+        ],
+        "/index/levels/2/byteOffset": [
+            244,
+            330
+        ],
+        "/index/levels/2/byteLength": [
+            256,
+            73
+        ],
+        "/index/levels/2/uncompressedByteLength": [
+            256,
+            64
+        ],
+        "/index/levels/3/byteOffset": [
+            null,
+            305
+        ],
+        "/index/levels/3/byteLength": [
+            null,
+            25
+        ],
+        "/index/levels/3/uncompressedByteLength": [
+            null,
+            16
+        ],
+        "/index/levels/4/byteOffset": [
+            null,
+            292
+        ],
+        "/index/levels/4/byteLength": [
+            null,
+            13
+        ],
+        "/index/levels/4/uncompressedByteLength": [
+            null,
+            4
+        ]
+    }
 }
