@@ -1,0 +1,1 @@
+ktx compare fatal: Invalid --per-pixel-output arugment: "3.14". See 'ktx compare --help'.
