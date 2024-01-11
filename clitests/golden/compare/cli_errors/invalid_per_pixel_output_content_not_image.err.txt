@@ -1,0 +1,1 @@
+ktx compare fatal: --per-pixel-output is specified but --content was not set to "image". See 'ktx compare --help'.
