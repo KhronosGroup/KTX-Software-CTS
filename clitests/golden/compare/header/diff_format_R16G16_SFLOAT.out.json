@@ -8,12 +8,14 @@
         [],
         []
     ],
-    "/header/vkFormat": [
-        "VK_FORMAT_R8G8B8A8_UNORM",
-        "VK_FORMAT_R16G16_SFLOAT"
-    ],
-    "/header/typeSize": [
-        1,
-        2
-    ]
+    "info": {
+        "/header/vkFormat": [
+            "VK_FORMAT_R8G8B8A8_UNORM",
+            "VK_FORMAT_R16G16_SFLOAT"
+        ],
+        "/header/typeSize": [
+            1,
+            2
+        ]
+    }
 }

@@ -8,12 +8,14 @@
         [],
         []
     ],
-    "/header/faceCount": [
-        1,
-        6
-    ],
-    "/header/levelCount": [
-        1,
-        2
-    ]
+    "info": {
+        "/header/faceCount": [
+            1,
+            6
+        ],
+        "/header/levelCount": [
+            1,
+            2
+        ]
+    }
 }

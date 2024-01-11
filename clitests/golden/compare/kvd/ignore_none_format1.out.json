@@ -8,16 +8,18 @@
         [],
         []
     ],
-    "/keyValueData/KTXglFormat": [
-        {
-            "glInternalformat": 32856,
-            "glFormat": 0,
-            "glType": 0
-        },
-        {
-            "glInternalformat": 35907,
-            "glFormat": 0,
-            "glType": 0
-        }
-    ]
+    "info": {
+        "/keyValueData/KTXglFormat": [
+            {
+                "glInternalformat": 32856,
+                "glFormat": 0,
+                "glType": 0
+            },
+            {
+                "glInternalformat": 35907,
+                "glFormat": 0,
+                "glType": 0
+            }
+        ]
+    }
 }

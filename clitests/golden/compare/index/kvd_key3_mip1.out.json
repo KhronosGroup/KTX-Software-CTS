@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/index/keyValueData/byteLength": [
-        44,
-        88
-    ]
+    "info": {
+        "/index/keyValueData/byteLength": [
+            44,
+            88
+        ]
+    }
 }

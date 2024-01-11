@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/keyValueData/KTXorientation": [
-        "lu",
-        "rd"
-    ]
+    "info": {
+        "/keyValueData/KTXorientation": [
+            "lu",
+            "rd"
+        ]
+    }
 }

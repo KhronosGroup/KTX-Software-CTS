@@ -8,14 +8,16 @@
         [],
         []
     ],
-    "/supercompressionGlobalData/endpointCount": [
-        1,
-        4
-    ],
-    "/supercompressionGlobalData/endpointsByteLength": [
-        40,
-        46
-    ],
-    "/supercompressionGlobalData/endpointsData": [],
-    "/supercompressionGlobalData/tablesData": []
+    "info": {
+        "/supercompressionGlobalData/endpointCount": [
+            1,
+            4
+        ],
+        "/supercompressionGlobalData/endpointsByteLength": [
+            40,
+            46
+        ],
+        "/supercompressionGlobalData/endpointsData": [],
+        "/supercompressionGlobalData/tablesData": []
+    }
 }

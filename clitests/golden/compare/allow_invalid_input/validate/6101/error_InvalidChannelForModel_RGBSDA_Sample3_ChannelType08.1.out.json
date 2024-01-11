@@ -21,24 +21,26 @@
         ],
         []
     ],
-    "/header/pixelWidth": [
-        16,
-        8
-    ],
-    "/header/pixelHeight": [
-        16,
-        8
-    ],
-    "/index/levels/0/byteLength": [
-        1024,
-        256
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        1024,
-        256
-    ],
-    "/dataFormatDescriptor/blocks/0/samples/3/channelType": [
-        8,
-        "KHR_DF_CHANNEL_RGBSDA_ALPHA"
-    ]
+    "info": {
+        "/header/pixelWidth": [
+            16,
+            8
+        ],
+        "/header/pixelHeight": [
+            16,
+            8
+        ],
+        "/index/levels/0/byteLength": [
+            1024,
+            256
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            1024,
+            256
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/channelType": [
+            8,
+            "KHR_DF_CHANNEL_RGBSDA_ALPHA"
+        ]
+    }
 }

@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/header/supercompressionScheme": [
-        "KTX_SS_NONE",
-        "KTX_SS_ZSTD"
-    ]
+    "info": {
+        "/header/supercompressionScheme": [
+            "KTX_SS_NONE",
+            "KTX_SS_ZSTD"
+        ]
+    }
 }

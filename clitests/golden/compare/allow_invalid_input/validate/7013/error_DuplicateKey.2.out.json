@@ -45,32 +45,34 @@
             }
         ]
     ],
-    "/header/pixelWidth": [
-        8,
-        16
-    ],
-    "/header/pixelHeight": [
-        8,
-        16
-    ],
-    "/index/keyValueData/byteLength": [
-        44,
-        76
-    ],
-    "/index/levels/0/byteOffset": [
-        240,
-        272
-    ],
-    "/index/levels/0/byteLength": [
-        256,
-        1024
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        256,
-        1024
-    ],
-    "/keyValueData/X": [
-        null,
-        null
-    ]
+    "info": {
+        "/header/pixelWidth": [
+            8,
+            16
+        ],
+        "/header/pixelHeight": [
+            8,
+            16
+        ],
+        "/index/keyValueData/byteLength": [
+            44,
+            76
+        ],
+        "/index/levels/0/byteOffset": [
+            240,
+            272
+        ],
+        "/index/levels/0/byteLength": [
+            256,
+            1024
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            256,
+            1024
+        ],
+        "/keyValueData/X": [
+            null,
+            null
+        ]
+    }
 }

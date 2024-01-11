@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/header/faceCount": [
-        1,
-        6
-    ]
+    "info": {
+        "/header/faceCount": [
+            1,
+            6
+        ]
+    }
 }

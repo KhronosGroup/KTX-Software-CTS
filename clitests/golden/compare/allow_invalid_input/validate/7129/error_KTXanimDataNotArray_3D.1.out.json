@@ -15,40 +15,42 @@
         ],
         []
     ],
-    "/header/pixelWidth": [
-        16,
-        8
-    ],
-    "/header/pixelHeight": [
-        16,
-        8
-    ],
-    "/header/pixelDepth": [
-        16,
-        0
-    ],
-    "/index/keyValueData/byteLength": [
-        72,
-        44
-    ],
-    "/index/levels/0/byteOffset": [
-        268,
-        240
-    ],
-    "/index/levels/0/byteLength": [
-        16384,
-        256
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        16384,
-        256
-    ],
-    "/keyValueData/KTXanimData": [
-        {
-            "duration": 1,
-            "timescale": 2,
-            "loopCount": 3
-        },
-        null
-    ]
+    "info": {
+        "/header/pixelWidth": [
+            16,
+            8
+        ],
+        "/header/pixelHeight": [
+            16,
+            8
+        ],
+        "/header/pixelDepth": [
+            16,
+            0
+        ],
+        "/index/keyValueData/byteLength": [
+            72,
+            44
+        ],
+        "/index/levels/0/byteOffset": [
+            268,
+            240
+        ],
+        "/index/levels/0/byteLength": [
+            16384,
+            256
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            16384,
+            256
+        ],
+        "/keyValueData/KTXanimData": [
+            {
+                "duration": 1,
+                "timescale": 2,
+                "loopCount": 3
+            },
+            null
+        ]
+    }
 }

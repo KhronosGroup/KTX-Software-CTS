@@ -8,20 +8,22 @@
         [],
         []
     ],
-    "/keyValueData/KTXdxgiFormat__": [
-        null,
-        27
-    ],
-    "/keyValueData/KTXglFormat": [
-        null,
-        {
-            "glInternalformat": 32856,
-            "glFormat": 0,
-            "glType": 0
-        }
-    ],
-    "/keyValueData/KTXmetalPixelFormat": [
-        71,
-        70
-    ]
+    "info": {
+        "/keyValueData/KTXdxgiFormat__": [
+            null,
+            27
+        ],
+        "/keyValueData/KTXglFormat": [
+            null,
+            {
+                "glInternalformat": 32856,
+                "glFormat": 0,
+                "glType": 0
+            }
+        ],
+        "/keyValueData/KTXmetalPixelFormat": [
+            71,
+            70
+        ]
+    }
 }

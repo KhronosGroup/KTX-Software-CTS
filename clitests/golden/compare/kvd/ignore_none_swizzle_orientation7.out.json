@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/keyValueData/KTXswizzle": [
-        null,
-        "rgba"
-    ]
+    "info": {
+        "/keyValueData/KTXswizzle": [
+            null,
+            "rgba"
+        ]
+    }
 }

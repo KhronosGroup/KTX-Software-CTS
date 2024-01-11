@@ -8,16 +8,18 @@
         [],
         []
     ],
-    "/header/layerCount": [
-        4,
-        6
-    ],
-    "/header/levelCount": [
-        3,
-        4
-    ],
-    "/index/dataFormatDescriptor/byteOffset": [
-        152,
-        176
-    ]
+    "info": {
+        "/header/layerCount": [
+            4,
+            6
+        ],
+        "/header/levelCount": [
+            3,
+            4
+        ],
+        "/index/dataFormatDescriptor/byteOffset": [
+            152,
+            176
+        ]
+    }
 }

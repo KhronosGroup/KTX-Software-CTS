@@ -8,12 +8,14 @@
         [],
         []
     ],
-    "/keyValueData/KTXorientation": [
-        null,
-        "lu"
-    ],
-    "/keyValueData/KTXswizzle": [
-        null,
-        "rgba"
-    ]
+    "info": {
+        "/keyValueData/KTXorientation": [
+            null,
+            "lu"
+        ],
+        "/keyValueData/KTXswizzle": [
+            null,
+            "rgba"
+        ]
+    }
 }

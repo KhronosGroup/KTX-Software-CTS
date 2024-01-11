@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/keyValueData/KTXastcDecodeMode": [
-        null,
-        "unorm8"
-    ]
+    "info": {
+        "/keyValueData/KTXastcDecodeMode": [
+            null,
+            "unorm8"
+        ]
+    }
 }

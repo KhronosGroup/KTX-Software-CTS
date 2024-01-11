@@ -8,16 +8,18 @@
         [],
         []
     ],
-    "/index/keyValueData/byteOffset": [
-        0,
-        196
-    ],
-    "/index/keyValueData/byteLength": [
-        0,
-        44
-    ],
-    "/index/levels/0/byteOffset": [
-        196,
-        240
-    ]
+    "info": {
+        "/index/keyValueData/byteOffset": [
+            0,
+            196
+        ],
+        "/index/keyValueData/byteLength": [
+            0,
+            44
+        ],
+        "/index/levels/0/byteOffset": [
+            196,
+            240
+        ]
+    }
 }

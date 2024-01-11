@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/dataFormatDescriptor/blocks/0/colorPrimaries": [
-        "KHR_DF_PRIMARIES_BT709",
-        "KHR_DF_PRIMARIES_DISPLAYP3"
-    ]
+    "info": {
+        "/dataFormatDescriptor/blocks/0/colorPrimaries": [
+            "KHR_DF_PRIMARIES_BT709",
+            "KHR_DF_PRIMARIES_DISPLAYP3"
+        ]
+    }
 }

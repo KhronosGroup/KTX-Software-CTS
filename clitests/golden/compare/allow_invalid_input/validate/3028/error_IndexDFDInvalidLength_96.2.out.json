@@ -33,24 +33,26 @@
             }
         ]
     ],
-    "/header/pixelWidth": [
-        8,
-        16
-    ],
-    "/header/pixelHeight": [
-        8,
-        16
-    ],
-    "/index/dataFormatDescriptor/byteLength": [
-        92,
-        96
-    ],
-    "/index/levels/0/byteLength": [
-        256,
-        1024
-    ],
-    "/index/levels/0/uncompressedByteLength": [
-        256,
-        1024
-    ]
+    "info": {
+        "/header/pixelWidth": [
+            8,
+            16
+        ],
+        "/header/pixelHeight": [
+            8,
+            16
+        ],
+        "/index/dataFormatDescriptor/byteLength": [
+            92,
+            96
+        ],
+        "/index/levels/0/byteLength": [
+            256,
+            1024
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            256,
+            1024
+        ]
+    }
 }

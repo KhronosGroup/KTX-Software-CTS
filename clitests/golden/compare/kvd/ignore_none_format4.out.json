@@ -8,12 +8,14 @@
         [],
         []
     ],
-    "/keyValueData/KTXdxgiFormat__": [
-        28,
-        null
-    ],
-    "/keyValueData/KTXmetalPixelFormat": [
-        null,
-        70
-    ]
+    "info": {
+        "/keyValueData/KTXdxgiFormat__": [
+            28,
+            null
+        ],
+        "/keyValueData/KTXmetalPixelFormat": [
+            null,
+            70
+        ]
+    }
 }

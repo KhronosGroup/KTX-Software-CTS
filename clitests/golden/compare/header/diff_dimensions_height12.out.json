@@ -8,8 +8,10 @@
         [],
         []
     ],
-    "/header/pixelHeight": [
-        16,
-        12
-    ]
+    "info": {
+        "/header/pixelHeight": [
+            16,
+            12
+        ]
+    }
 }

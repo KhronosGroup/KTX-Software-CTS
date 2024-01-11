@@ -22,16 +22,18 @@
             }
         ]
     ],
-    "/dataFormatDescriptor/blocks/1/descriptorType": [
-        1,
-        2
-    ],
-    "/dataFormatDescriptor/blocks/1/rawPayload": [
-        [ 42, 0, 2, 0, 0, 0, 16, 0 ],
-        null
-    ],
-    "/dataFormatDescriptor/blocks/1/rawPayload": [
-        [ 42, 0, 2, 0, 0, 0, 16, 0 ],
-        [ 42, 0, 4, 0, 0, 0, 16, 0 ]
-    ]
+    "info": {
+        "/dataFormatDescriptor/blocks/1/descriptorType": [
+            1,
+            2
+        ],
+        "/dataFormatDescriptor/blocks/1/rawPayload": [
+            [ 42, 0, 2, 0, 0, 0, 16, 0 ],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/1/rawPayload": [
+            [ 42, 0, 2, 0, 0, 0, 16, 0 ],
+            [ 42, 0, 4, 0, 0, 0, 16, 0 ]
+        ]
+    }
 }

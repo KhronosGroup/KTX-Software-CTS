@@ -8,16 +8,18 @@
         [],
         []
     ],
-    "/index/dataFormatDescriptor/byteLength": [
-        92,
-        60
-    ],
-    "/index/supercompressionGlobalData/byteOffset": [
-        0,
-        168
-    ],
-    "/index/supercompressionGlobalData/byteLength": [
-        0,
-        138
-    ]
+    "info": {
+        "/index/dataFormatDescriptor/byteLength": [
+            92,
+            60
+        ],
+        "/index/supercompressionGlobalData/byteOffset": [
+            0,
+            168
+        ],
+        "/index/supercompressionGlobalData/byteLength": [
+            0,
+            138
+        ]
+    }
 }
