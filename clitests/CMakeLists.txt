@@ -313,6 +313,7 @@ set(CASELIST
     tests/encode/encode_error_format.json
     tests/encode/encode_error_invalid.json
     tests/encode/encode_error_normal_mode.json
+    tests/encode/encode_error_too_many_filenames.json
     tests/encode/encode_uastc.json
     tests/encode/encode_uastc_params.json
     tests/encode/help.json
@@ -328,6 +329,7 @@ set(CASELIST
     tests/transcode/transcode_error_invalid.json
     tests/transcode/transcode_error_not_transcodable.json
     tests/transcode/transcode_error_target.json
+    tests/transcode/transcode_error_too_many_filenames.json
     tests/transcode/transcode_uastc.json
     tests/transcode/transcode_zlib.json
     tests/transcode/transcode_zstd.json

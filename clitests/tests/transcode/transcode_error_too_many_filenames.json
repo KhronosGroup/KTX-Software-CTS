@@ -1,0 +1,16 @@
+{
+    "description": "Test transcode with too many filename arguments.",
+    "command": "ktx transcode --testrun ${input[value]} ${output[value]} excess_filename.ktx2",
+    "status": 1,
+    "stderr": "golden/transcode/transcode_error_too_many_filenames/${input[id]}_to_${output[id]}.err.txt",
+    "args": {
+        "input": [
+            { "id": "file", "value": "input/transcode/large_UASTC.ktx2" },
+            { "id": "stdin", "value": "-" }
+        ],
+        "output": [
+            { "id": "file", "value": "output/transcode/transcode_error_too_many_filenames/output.ktx2" },
+            { "id": "stdout", "value" : "-" }
+        ]
+    }
+}

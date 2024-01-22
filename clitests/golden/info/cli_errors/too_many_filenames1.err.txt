@@ -1,0 +1,1 @@
+ktx info fatal: Too many filenames specified. See 'ktx info --help'.

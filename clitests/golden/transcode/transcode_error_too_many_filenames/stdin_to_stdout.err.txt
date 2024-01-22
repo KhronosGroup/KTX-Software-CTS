@@ -1,0 +1,1 @@
+ktx transcode fatal: Too many filenames specified. See 'ktx transcode --help'.
