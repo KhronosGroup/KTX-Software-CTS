@@ -1,0 +1,1 @@
+ktx deflate fatal: Too many filenames specified. See 'ktx deflate --help'.

@@ -1,0 +1,1 @@
+ktx deflate fatal: Cannot further deflate a KTX2 file supercompressed with KTX_SS_BASIS_LZ.
