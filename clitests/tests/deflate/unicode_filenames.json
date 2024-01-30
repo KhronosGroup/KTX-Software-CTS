@@ -1,0 +1,17 @@
+{
+    "description": "Test the use of unicode characters in input and output filenames.",
+    "command": "ktx deflate --testrun --zstd 5 input/unicode/${name}.ktx2 output/deflate/unicode/${name}/${name}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/deflate/unicode/${name}/${name}.ktx2": "golden/deflate/unicode/${name}.ktx2"
+    },
+    "args": {
+        "name": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ]
+    }
+}

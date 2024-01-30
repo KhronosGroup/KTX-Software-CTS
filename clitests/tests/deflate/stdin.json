@@ -1,0 +1,18 @@
+{
+    "description": "Test stdin input for the deflate command",
+    "command": "ktx deflate --testrun --zstd 5 - output/deflate/stdin/${file[name]}.ktx2",
+    "status": 0,
+    "stdin": "${file[dir]}/${file[name]}.ktx2",
+    "stdout": "golden/deflate/stdin/empty.txt",
+    "stderr": "golden/deflate/stdin/empty.txt",
+    "outputs": {
+        "output/deflate/stdin/${file[name]}.ktx2": "golden/deflate/stdin/${file[name]}.ktx2"
+    },
+    "args": {
+        "file": [
+            { "dir": "input/ktx2", "name": "valid_R8G8B8_UNORM_1D_ARRAY" },
+            { "dir": "input/ktx2", "name": "valid_R8G8B8A8_UNORM_3D_MIP" },
+            { "dir": "input/ktx2", "name": "valid_R32G32B32_SFLOAT_2D" }
+        ]
+    }
+}

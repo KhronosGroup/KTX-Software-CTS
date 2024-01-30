@@ -1,0 +1,21 @@
+{
+    "description": "Test cli argument combinations and incorrect usages.",
+    "command": "ktx deflate --testrun ${subcase[flags]}",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/deflate/cli_errors/empty.out.txt",
+    "stderr": "golden/deflate/cli_errors/${subcase[id]}.err.txt",
+    "args": {
+        "subcase": [
+            { "rc": 1, "id": "multiple_schemes", "flags": "--zlib 4 --zstd input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2 output/deflate/placeholder.ktx2" },
+            { "rc": 1, "id": "no_zlib_level", "flags": "--zlib input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2 output/deflate/placeholder.ktx2" },
+            { "rc": 1, "id": "no_zstd_level", "flags": "--zstd input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2 output/deflate/placeholder.ktx2" },
+            { "rc": 1, "id": "no_scheme_specified", "flags": "input/ktx2/missing_file.ktx2 output/deflate/missing_file.ktx2"},
+            { "rc": 1, "id": "quiet_warnaserrors_conflict", "flags": "--quiet --warnings-as-errors --zstd 15 input/ktx2/missing_file.ktx2 output/deflate/missing_file.ktx2"},
+            { "rc": 1, "id": "unknown_option", "flags": "--unknown input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2 output/deflate/placeholder.ktx2" },
+            { "rc": 1, "id": "too_many_filenames1", "flags": "input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2 excess_input.ktx2 output/deflate/placeholder.ktx2" },
+            { "rc": 1, "id": "too_many_filenames2", "flags": "- excess_input.ktx2 output/deflate/placeholder.ktx2" },
+            { "rc": 1, "id": "no_output_filename", "flags": "input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2" },
+            { "rc": 2, "id": "missing_input_file", "flags": "--zstd 15 input/ktx2/missing_file.ktx2 output/deflate/placeholder.ktx2"}
+        ]
+    }
+}

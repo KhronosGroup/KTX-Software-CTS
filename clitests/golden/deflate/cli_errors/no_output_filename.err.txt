@@ -1,0 +1,1 @@
+ktx deflate fatal: Missing output file. Either <output-file> or --stdout must be specified. See 'ktx deflate --help'.
