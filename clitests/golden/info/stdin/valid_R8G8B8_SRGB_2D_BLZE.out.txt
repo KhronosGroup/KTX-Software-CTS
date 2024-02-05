@@ -15,13 +15,13 @@ supercompressionScheme: KTX_SS_BASIS_LZ
 dataFormatDescriptor.byteOffset: 0x68
 dataFormatDescriptor.byteLength: 44
 keyValueData.byteOffset: 0x94
-keyValueData.byteLength: 44
-supercompressionGlobalData.byteOffset: 0xc0
+keyValueData.byteLength: 80
+supercompressionGlobalData.byteOffset: 0xe8
 supercompressionGlobalData.byteLength: 149
 
 Level Index
 
-Level0.byteOffset: 0x155
+Level0.byteOffset: 0x17d
 Level0.byteLength: 2
 Level0.uncompressedByteLength: 0
 
@@ -49,6 +49,7 @@ Sample 0:
 Key/Value Data
 
 KTXwriter: Unidentified app / libktx 
+KTXwriterScParams: --qlevel 0
 
 Basis Supercompression Global Data
 
