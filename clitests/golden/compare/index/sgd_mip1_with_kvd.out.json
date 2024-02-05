@@ -15,11 +15,11 @@
         ],
         "/index/keyValueData/byteLength": [
             0,
-            44
+            80
         ],
         "/index/supercompressionGlobalData/byteOffset": [
             168,
-            208
+            248
         ]
     }
 }
