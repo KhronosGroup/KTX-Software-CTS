@@ -1,6 +1,9 @@
 {
     "description": "Test metadata handling.",
-    "command": "ktx deflate --testrun --${subcase[scheme]} 5 input/deflate/metadata/${subcase[tool]}_${subcase[name]}${subcase[modifier]}.ktx2 output/deflate/metadata/output_${subcase[name]}_${subcase[scheme]}_5.ktx2",
+    "command": "ktx deflate --testrun --${subcase[scheme]} 5 input/deflate/metadata/${subcase[tool]}_${subcase[name]}${subcase[modifier]}.ktx2 output/deflate/metadata/output_${subcase[tool]}_${subcase[name]}_${subcase[scheme]}_5.ktx2",
+    "outputs": {
+        "output/deflate/metadata/output_${subcase[tool]}_${subcase[name]}_${subcase[scheme]}_5.ktx2": "golden/deflate/metadata/output_${subcase[tool]}_${subcase[name]}_${subcase[scheme]}_5.ktx2"
+    },
     "status": 0,
     "args": {
         "subcase": [
