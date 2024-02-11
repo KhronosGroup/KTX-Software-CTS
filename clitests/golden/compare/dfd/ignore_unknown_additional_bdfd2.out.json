@@ -71,7 +71,7 @@
         ],
         "/dataFormatDescriptor/blocks/2/bytesPlane": [
             null,
-            [ 32, 0, 0, 0, 0, 0, 0, 0 ]
+            [ 31, 0, 0, 0, 0, 0, 0, 0 ]
         ],
         "/dataFormatDescriptor/blocks/2/samples/0/qualifiers": [
             null,
@@ -103,7 +103,7 @@
         ],
         "/dataFormatDescriptor/blocks/2/rawPayload": [
             null,
-            [ 0, 0, 0, 0, 2, 0, 40, 0, 1, 1, 1, 0, 1, 1, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0 ]
+            [ 0, 0, 0, 0, 2, 0, 40, 0, 1, 1, 1, 0, 1, 1, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0 ]
         ]
     }
 }

@@ -55,15 +55,15 @@ Data Format Descriptor
 Sample 0:
 -    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
 +    Channel Type: 0x3 (KHR_DF_CHANNEL_UASTC_RGBA)
--    Length: 7 bits Offset: 0
-+    Length: 127 bits Offset: 0
+-    Length: 8 bits Offset: 0
++    Length: 128 bits Offset: 0
 -    Upper: 0x000000ff
 +    Upper: 0xffffffff
 
 Sample 1:
 -    Qualifiers: 0x0 ()
 -    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
--    Length: 7 bits Offset: 8
+-    Length: 8 bits Offset: 8
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
 -    Upper: 0x000000ff
@@ -71,7 +71,7 @@ Sample 1:
 Sample 2:
 -    Qualifiers: 0x0 ()
 -    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
--    Length: 7 bits Offset: 16
+-    Length: 8 bits Offset: 16
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
 -    Upper: 0x000000ff
@@ -79,7 +79,7 @@ Sample 2:
 Sample 3:
 -    Qualifiers: 0x0 ()
 -    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
--    Length: 7 bits Offset: 24
+-    Length: 8 bits Offset: 24
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
 -    Upper: 0x000000ff

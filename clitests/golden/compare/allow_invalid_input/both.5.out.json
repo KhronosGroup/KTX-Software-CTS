@@ -142,8 +142,8 @@
             [ 16, 0, 0, 0, 0, 0, 0, 0 ]
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
-            63,
-            127
+            64,
+            128
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/qualifiers": [
             [],
@@ -154,7 +154,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
-            63,
+            64,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [

@@ -40,7 +40,7 @@ Data Format Descriptor
 Sample 1:
 -    Qualifiers: 0x10 (KHR_DF_SAMPLE_DATATYPE_LINEAR)
 -    Channel Type: 0xf (KHR_DF_CHANNEL_ETC2_ALPHA)
--    Length: 63 bits Offset: 0
+-    Length: 64 bits Offset: 0
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
 -    Upper: 0xffffffff

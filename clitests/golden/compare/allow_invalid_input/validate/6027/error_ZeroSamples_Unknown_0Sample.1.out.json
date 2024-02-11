@@ -66,7 +66,7 @@
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
             null,
-            7
+            8
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitOffset": [
             null,
@@ -94,7 +94,7 @@
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
             null,
-            7
+            8
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [
             null,
@@ -122,7 +122,7 @@
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitLength": [
             null,
-            7
+            8
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitOffset": [
             null,
@@ -150,7 +150,7 @@
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitLength": [
             null,
-            7
+            8
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitOffset": [
             null,

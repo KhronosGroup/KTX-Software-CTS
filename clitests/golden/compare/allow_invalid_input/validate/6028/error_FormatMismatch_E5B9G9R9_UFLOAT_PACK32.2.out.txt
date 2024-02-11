@@ -55,8 +55,8 @@ Data Format Descriptor
 +DFD total bytes: 124
 -Descriptor block size: 88
 +Descriptor block size: 120
--    Length: 7 bits Offset: 0
-+    Length: 8 bits Offset: 0
+-    Length: 8 bits Offset: 0
++    Length: 9 bits Offset: 0
 
 Sample 0:
 -    Upper: 0x000000ff
@@ -67,8 +67,8 @@ Sample 1:
 +    Qualifiers: 0x20 (KHR_DF_SAMPLE_DATATYPE_EXPONENT)
 -    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
 +    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
--    Length: 7 bits Offset: 8
-+    Length: 4 bits Offset: 27
+-    Length: 8 bits Offset: 8
++    Length: 5 bits Offset: 27
 -    Lower: 0x00000000
 +    Lower: 0x0000000f
 -    Upper: 0x000000ff
@@ -77,8 +77,8 @@ Sample 1:
 Sample 2:
 -    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
 +    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
--    Length: 7 bits Offset: 16
-+    Length: 8 bits Offset: 9
+-    Length: 8 bits Offset: 16
++    Length: 9 bits Offset: 9
 -    Upper: 0x000000ff
 +    Upper: 0x00002100
 
@@ -87,8 +87,8 @@ Sample 3:
 +    Qualifiers: 0x20 (KHR_DF_SAMPLE_DATATYPE_EXPONENT)
 -    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
 +    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
--    Length: 7 bits Offset: 24
-+    Length: 4 bits Offset: 27
+-    Length: 8 bits Offset: 24
++    Length: 5 bits Offset: 27
 -    Lower: 0x00000000
 +    Lower: 0x0000000f
 -    Upper: 0x000000ff
@@ -97,7 +97,7 @@ Sample 3:
 Sample 4:
 +    Qualifiers: 0x0 ()
 +    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
-+    Length: 8 bits Offset: 18
++    Length: 9 bits Offset: 18
 +    Position: 0, 0, 0, 0
 +    Lower: 0x00000000
 +    Upper: 0x00002100
@@ -105,7 +105,7 @@ Sample 4:
 Sample 5:
 +    Qualifiers: 0x70 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED)
 +    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
-+    Length: 8 bits Offset: 8
++    Length: 9 bits Offset: 8
 +    Position: 1, 1, 1, 1
 +    Lower: 0x00000001
 +    Upper: 0x00000001
