@@ -66,13 +66,13 @@ Data Format Descriptor
 +Dimensions: 2, 2, 2, 0
 -Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
 +Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
--    Length: 63 bits Offset: 0
-+    Length: 127 bits Offset: 0
+-    Length: 64 bits Offset: 0
++    Length: 128 bits Offset: 0
 
 Sample 1:
 -    Qualifiers: 0x0 ()
 -    Channel Type: 0xf (KHR_DF_CHANNEL_ETC1S_AAA)
--    Length: 63 bits Offset: 64
+-    Length: 64 bits Offset: 64
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
 -    Upper: 0xffffffff

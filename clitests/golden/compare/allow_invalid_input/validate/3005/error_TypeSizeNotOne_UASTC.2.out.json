@@ -75,8 +75,8 @@
             "KHR_DF_CHANNEL_UASTC_RGBA"
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
-            7,
-            127
+            8,
+            128
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/sampleUpper": [
             255,
@@ -91,7 +91,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
-            7,
+            8,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [
@@ -119,7 +119,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitLength": [
-            7,
+            8,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitOffset": [
@@ -147,7 +147,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitLength": [
-            7,
+            8,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitOffset": [
