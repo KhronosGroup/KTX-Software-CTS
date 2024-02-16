@@ -69,7 +69,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 11,
-                        "bitOffset": 0,
+                        "bitOffset": 4,
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 4095

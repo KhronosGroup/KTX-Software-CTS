@@ -1,0 +1,1 @@
+ktx encode fatal: Too many filenames specified. See 'ktx encode --help'.
