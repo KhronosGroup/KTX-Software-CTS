@@ -7,5 +7,11 @@
     "messages": [
         [],
         []
-    ]
+    ],
+    "info": {
+        "/dataFormatDescriptor/blocks/0/bytesPlane": [
+            [ 4, 0, 0, 0, 0, 0, 0, 0 ],
+            [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+        ]
+    }
 }
