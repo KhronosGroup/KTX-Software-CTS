@@ -21,7 +21,7 @@
         },
         "keyValueData": {
             "byteOffset": 148,
-            "byteLength": 44
+            "byteLength": 76
         },
         "supercompressionGlobalData": {
             "byteOffset": 0,
@@ -29,7 +29,7 @@
         },
         "levels": [
             {
-                "byteOffset": 192,
+                "byteOffset": 224,
                 "byteLength": 266,
                 "uncompressedByteLength": 256
             }
@@ -66,6 +66,7 @@
         ]
     },
     "keyValueData": {
-        "KTXwriter": "Unidentified app / libktx "
+        "KTXwriter": "Unidentified app / libktx ",
+        "KTXwriterScParams": "--zstd 9"
     }
 }

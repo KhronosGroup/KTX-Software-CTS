@@ -1,7 +1,7 @@
 Validation failed
 
 error-3012: Invalid typeSize. The value must match the expected typeSize of the VkFormat.
-    typeSize is 3 but for VkFormat VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16 it must be 8.
+    typeSize is 3 but for VkFormat VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16 it must be 2.
 warning-5004: Non-conformant texture file accepted by libktx.
     KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
 
@@ -46,28 +46,28 @@ Plane bytes: 8, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
     Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
-    Length: 10 bits Offset: 0
+    Length: 10 bits Offset: 6
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff
 Sample 1:
     Qualifiers: 0x0 ()
     Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
-    Length: 10 bits Offset: 16
+    Length: 10 bits Offset: 22
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff
 Sample 2:
     Qualifiers: 0x0 ()
     Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
-    Length: 10 bits Offset: 32
+    Length: 10 bits Offset: 38
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff
 Sample 3:
     Qualifiers: 0x0 ()
     Channel Type: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
-    Length: 10 bits Offset: 48
+    Length: 10 bits Offset: 54
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff

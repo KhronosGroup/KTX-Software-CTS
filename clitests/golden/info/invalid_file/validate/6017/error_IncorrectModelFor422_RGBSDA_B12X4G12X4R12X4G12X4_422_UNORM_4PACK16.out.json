@@ -18,7 +18,7 @@
     "header": {
         "identifier": "«KTX 20»\r\n\u001A\n",
         "vkFormat": "VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16",
-        "typeSize": 8,
+        "typeSize": 2,
         "pixelWidth": 16,
         "pixelHeight": 16,
         "pixelDepth": 0,
@@ -69,7 +69,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
                         "bitLength": 11,
-                        "bitOffset": 0,
+                        "bitOffset": 4,
                         "samplePosition": [64, 128, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 4095
@@ -78,7 +78,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 11,
-                        "bitOffset": 16,
+                        "bitOffset": 20,
                         "samplePosition": [64, 128, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 4095
@@ -87,7 +87,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
                         "bitLength": 11,
-                        "bitOffset": 32,
+                        "bitOffset": 36,
                         "samplePosition": [64, 128, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 4095
@@ -96,7 +96,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 11,
-                        "bitOffset": 48,
+                        "bitOffset": 52,
                         "samplePosition": [192, 128, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 4095

@@ -6,7 +6,7 @@
             "id": 3012,
             "type": "error",
             "message": "Invalid typeSize. The value must match the expected typeSize of the VkFormat.",
-            "details": "typeSize is 3 but for VkFormat VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16 it must be 8."
+            "details": "typeSize is 3 but for VkFormat VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16 it must be 2."
         },
         {
             "id": 5004,
@@ -69,7 +69,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 9,
-                        "bitOffset": 0,
+                        "bitOffset": 6,
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 1023
@@ -78,7 +78,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
                         "bitLength": 9,
-                        "bitOffset": 16,
+                        "bitOffset": 22,
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 1023
@@ -87,7 +87,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
                         "bitLength": 9,
-                        "bitOffset": 32,
+                        "bitOffset": 38,
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 1023
@@ -96,7 +96,7 @@
                         "qualifiers": [],
                         "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 9,
-                        "bitOffset": 48,
+                        "bitOffset": 54,
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
                         "sampleUpper": 1023

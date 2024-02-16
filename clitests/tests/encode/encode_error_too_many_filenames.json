@@ -1,0 +1,16 @@
+{
+    "description": "Test encode with too many filename arguments.",
+    "command": "ktx encode --testrun --codec uastc ${input[value]} ${output[value]} excess_filename.ktx2",
+    "status": 1,
+    "stderr": "golden/encode/encode_error_too_many_filenames/${input[id]}_to_${output[id]}.err.txt",
+    "args": {
+        "input": [
+            { "id": "file", "value": "input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2" },
+            { "id": "stdin", "value": "-" }
+        ],
+        "output": [
+            { "id": "file", "value": "output/encode/encode_error_too_many_filenames/output.ktx2" },
+            { "id": "stdout", "value" : "-" }
+        ]
+    }
+}

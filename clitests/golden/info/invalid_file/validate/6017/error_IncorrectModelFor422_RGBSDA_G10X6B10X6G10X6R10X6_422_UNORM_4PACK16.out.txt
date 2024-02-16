@@ -9,7 +9,7 @@ Header
 
 identifier: «KTX 20»\r\n\x1A\n
 vkFormat: VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16
-typeSize: 8
+typeSize: 2
 pixelWidth: 16
 pixelHeight: 16
 pixelDepth: 0
@@ -46,28 +46,28 @@ Plane bytes: 8, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
     Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
-    Length: 10 bits Offset: 0
+    Length: 10 bits Offset: 6
     Position: 64, 128, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff
 Sample 1:
     Qualifiers: 0x0 ()
     Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
-    Length: 10 bits Offset: 16
+    Length: 10 bits Offset: 22
     Position: 64, 128, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff
 Sample 2:
     Qualifiers: 0x0 ()
     Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
-    Length: 10 bits Offset: 32
+    Length: 10 bits Offset: 38
     Position: 192, 128, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff
 Sample 3:
     Qualifiers: 0x0 ()
     Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
-    Length: 10 bits Offset: 48
+    Length: 10 bits Offset: 54
     Position: 64, 128, 0, 0
     Lower: 0x00000000
     Upper: 0x000003ff
