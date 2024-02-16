@@ -20,7 +20,9 @@
             }
         ],
         "subcase": [
-            { "rc": 0, "id": "ref_vs_ref_ZSTD", "file1": "reference", "file2": "reference_ZSTD" },
+            { "rc": 7, "id": "ref_vs_ref_ZSTD", "file1": "reference", "file2": "reference_ZSTD" },
+            { "rc": 7, "id": "ref_vs_ref_ZLIB", "file1": "reference", "file2": "reference_ZLIB" },
+            { "rc": 0, "id": "ref_ZSTD_vs_ref_ZLIB", "file1": "reference_ZSTD", "file2": "reference_ZLIB" },
             { "rc": 7, "id": "additional_bdfd1", "file1": "reference", "file2": "additional_bdfd" },
             { "rc": 7, "id": "additional_bdfd2", "file1": "additional_bdfd", "file2": "additional_bdfd_x2" },
             { "rc": 7, "id": "diff_type_bdfd_1", "file1": "additional_bdfd", "file2": "custom_block_1" },

@@ -362,6 +362,7 @@ set(CASELIST
     tests/compare/ignore_dfd_unknown.json
     tests/compare/ignore_dfd_extended.json
     tests/compare/ignore_dfd_none.json
+    tests/compare/ignore_bdfd_bytesplane.json
     tests/compare/ignore_metadata_all.json
     tests/compare/ignore_metadata_none.json
     tests/compare/ignore_metadata_keys.json
