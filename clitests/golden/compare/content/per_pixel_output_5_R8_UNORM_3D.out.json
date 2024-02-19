@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=0": [
+            {
+                "coordinates": [ 2, 0, 0 ],
+                "imageByteOffset": [ 2, 2 ],
+                "fileByteOffset": [ 254, 254 ],
+                "packed": [
+                    [ "0x02" ],
+                    [ "0xff" ]
+                ],
+                "channels": [
+                    [ 2 ],
+                    [ 255 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 3, 0, 0 ],
+                "imageByteOffset": [ 3, 3 ],
+                "fileByteOffset": [ 255, 255 ],
+                "packed": [
+                    [ "0x03" ],
+                    [ "0xff" ]
+                ],
+                "channels": [
+                    [ 3 ],
+                    [ 255 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 0, 1 ],
+                "imageByteOffset": [ 17, 17 ],
+                "fileByteOffset": [ 269, 269 ],
+                "packed": [
+                    [ "0x01" ],
+                    [ "0xc0" ]
+                ],
+                "channels": [
+                    [ 1 ],
+                    [ 192 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 0, 1 ],
+                "imageByteOffset": [ 18, 18 ],
+                "fileByteOffset": [ 270, 270 ],
+                "packed": [
+                    [ "0x14" ],
+                    [ "0x02" ]
+                ],
+                "channels": [
+                    [ 20 ],
+                    [ 2 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 1 ],
+                "imageByteOffset": [ 20, 20 ],
+                "fileByteOffset": [ 272, 272 ],
+                "packed": [
+                    [ "0x00" ],
+                    [ "0x04" ]
+                ],
+                "channels": [
+                    [ 0 ],
+                    [ 4 ]
+                ]
+            }
+        ],
+        "m=1,a=0,f=0": []
+    }
+}

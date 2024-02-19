@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=0": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 276, 276 ],
+                "packed": [
+                    [ "0x03020100" ],
+                    [ "0xffff0100" ]
+                ],
+                "channels": [
+                    [ 50462976 ],
+                    [ 4294902016 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 0 ],
+                "imageByteOffset": [ 16, 16 ],
+                "fileByteOffset": [ 292, 292 ],
+                "packed": [
+                    [ "0x13121110" ],
+                    [ "0x1312c000" ]
+                ],
+                "channels": [
+                    [ 319951120 ],
+                    [ 319995904 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 1, 0 ],
+                "imageByteOffset": [ 20, 20 ],
+                "fileByteOffset": [ 296, 296 ],
+                "packed": [
+                    [ "0x17164000" ],
+                    [ "0x17161514" ]
+                ],
+                "channels": [
+                    [ 387334144 ],
+                    [ 387323156 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 1, 0 ],
+                "imageByteOffset": [ 24, 24 ],
+                "fileByteOffset": [ 300, 300 ],
+                "packed": [
+                    [ "0x1b1ac000" ],
+                    [ "0x1b1a1918" ]
+                ],
+                "channels": [
+                    [ 454737920 ],
+                    [ 454695192 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 2, 0 ],
+                "imageByteOffset": [ 40, 40 ],
+                "fileByteOffset": [ 316, 316 ],
+                "packed": [
+                    [ "0x2b2a2928" ],
+                    [ "0x2b2a8420" ]
+                ],
+                "channels": [
+                    [ 724183336 ],
+                    [ 724206624 ]
+                ]
+            }
+        ],
+        "m=1,a=0,f=0": []
+    }
+}

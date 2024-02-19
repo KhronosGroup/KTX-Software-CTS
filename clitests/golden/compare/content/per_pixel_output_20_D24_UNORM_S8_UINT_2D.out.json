@@ -1,0 +1,131 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=0": [
+            {
+                "coordinates": [ 2, 0, 0 ],
+                "imageByteOffset": [ 8, 8 ],
+                "fileByteOffset": [ 4320, 4320 ],
+                "packed": [
+                    [ "0x03140908" ],
+                    [ "0x0b0a0908" ]
+                ],
+                "channels": [
+                    [ 201737, 8 ],
+                    [ 723465, 8 ]
+                ]
+            }
+        ],
+        "m=0,a=0,f=3": [
+            {
+                "coordinates": [ 2, 0, 0 ],
+                "imageByteOffset": [ 8, 8 ],
+                "fileByteOffset": [ 7392, 7392 ],
+                "packed": [
+                    [ "0x0b0a0908" ],
+                    [ "0x84200908" ]
+                ],
+                "channels": [
+                    [ 723465, 8 ],
+                    [ 8658953, 8 ]
+                ]
+            }
+        ],
+        "m=0,a=0,f=4": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 8408, 8408 ],
+                "packed": [
+                    [ "0x03020100" ],
+                    [ "0xffff0100" ]
+                ],
+                "channels": [
+                    [ 197121, 0 ],
+                    [ 16776961, 0 ]
+                ]
+            }
+        ],
+        "m=0,a=1,f=0": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 10456, 10456 ],
+                "packed": [
+                    [ "0x03020100" ],
+                    [ "0x0302c000" ]
+                ],
+                "channels": [
+                    [ 197121, 0 ],
+                    [ 197312, 0 ]
+                ]
+            }
+        ],
+        "m=0,a=1,f=3": [
+            {
+                "coordinates": [ 5, 0, 0 ],
+                "imageByteOffset": [ 20, 20 ],
+                "fileByteOffset": [ 13548, 13548 ],
+                "packed": [
+                    [ "0x17164000" ],
+                    [ "0x17161514" ]
+                ],
+                "channels": [
+                    [ 1513024, 0 ],
+                    [ 1512981, 20 ]
+                ]
+            }
+        ],
+        "m=1,a=1,f=5": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 4056, 4056 ],
+                "packed": [
+                    [ "0x0302c000" ],
+                    [ "0x03140100" ]
+                ],
+                "channels": [
+                    [ 197312, 0 ],
+                    [ 201729, 0 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 0, 0 ],
+                "imageByteOffset": [ 4, 4 ],
+                "fileByteOffset": [ 4060, 4060 ],
+                "packed": [
+                    [ "0x0706ffff" ],
+                    [ "0x07060504" ]
+                ],
+                "channels": [
+                    [ 460543, 255 ],
+                    [ 460293, 4 ]
+                ]
+            }
+        ],
+        "m=2,a=0,f=4": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 728, 728 ],
+                "packed": [
+                    [ "0x84200100" ],
+                    [ "0x03024000" ]
+                ],
+                "channels": [
+                    [ 8658945, 0 ],
+                    [ 197184, 0 ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+Image Data
+
++Mismatch in level 0 layer 0 face 0
+  Coordinates: 1, 0, 0
+    Image byte offset: 0x4
+    File byte offset: 0x138
+-    Packed: 0x07060504
++    Packed: 0xffffffff
+-    Channels: 34, 0.00024414062, 5.722046e-05
++    Channels: nan, nan, nan
+  Coordinates: 0, 2, 0
+    Image byte offset: 0x20
+    File byte offset: 0x154
+-    Packed: 0x23222120
++    Packed: 0xf83e07c0
+-    Channels: 0.0007324219, 4.25, 0.0006713867
++    Channels: +inf, +inf, +inf
+  Coordinates: 2, 2, 0
+    Image byte offset: 0x28
+    File byte offset: 0x15c
+-    Packed: 0xf83e07c0
++    Packed: 0x2b2a2928
+-    Channels: +inf, +inf, +inf
++    Channels: 0.00079345703, 69, 0.0013427734
+  Coordinates: 0, 3, 0
+    Image byte offset: 0x30
+    File byte offset: 0x164
+-    Packed: 0xf83e07c0
++    Packed: 0x33323130
+-    Channels: +inf, +inf, +inf
++    Channels: 0.0008544922, 1120, 0.0026855469
+  Coordinates: 0, 1, 1
+    Image byte offset: 0x50
+    File byte offset: 0x184
+-    Packed: 0x13121110
++    Packed: 0x88621c43
+-    Channels: 0.00061035156, 0.016113281, 0.00016784668
++    Channels: 4.1875, 4.1875, 4.125
+  Coordinates: 0, 2, 2
+    Image byte offset: 0xa0
+    File byte offset: 0x1d4
+-    Packed: 0x84a12424
++    Packed: 0x23222120
+-    Channels: 3.125, 3.125, 3.125
++    Channels: 0.0007324219, 4.25, 0.0006713867
++Mismatch in level 1 layer 0 face 0
+  Coordinates: 0, 0, 0
+    Image byte offset: 0x0
+    File byte offset: 0x114
+-    Packed: 0x03020100
++    Packed: 0xf83e07c0
+-    Channels: 0.00048828125, 6.1035156e-05, 4.196167e-05
++    Channels: +inf, +inf, +inf
+  Coordinates: 1, 0, 0
+    Image byte offset: 0x4
+    File byte offset: 0x118
+-    Packed: 0x88621c43
++    Packed: 0x07060504
+-    Channels: 4.1875, 4.1875, 4.125
++    Channels: 34, 0.00024414062, 5.722046e-05
+  Coordinates: 0, 1, 0
+    Image byte offset: 0x8
+    File byte offset: 0x11c
+-    Packed: 0xffffffff
++    Packed: 0x0b0a0908
+-    Channels: nan, nan, nan
++    Channels: 0.0005493164, 0.0009918213, 8.392334e-05
+  Coordinates: 1, 1, 0
+    Image byte offset: 0xc
+    File byte offset: 0x120
+-    Packed: 0x0f0e0d0c
++    Packed: 0x84a12424
+-    Channels: 38, 0.003967285, 0.00011444092
++    Channels: 3.125, 3.125, 3.125

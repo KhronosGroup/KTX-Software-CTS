@@ -1,0 +1,95 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=0": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 328, 328 ],
+                "packed": [
+                    [ "0x0100", "0x0302", "0x0504", "0x0706" ],
+                    [ "0x0100", "0xffff", "0x0504", "0x0706" ]
+                ],
+                "channels": [
+                    [ 256, 770, 1284, 1798 ],
+                    [ 256, 65535, 1284, 1798 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 0 ],
+                "imageByteOffset": [ 16, 16 ],
+                "fileByteOffset": [ 344, 344 ],
+                "packed": [
+                    [ "0x1110", "0x1312", "0x4000", "0x1716" ],
+                    [ "0xc000", "0x1312", "0x1514", "0x1716" ]
+                ],
+                "channels": [
+                    [ 4368, 4882, 16384, 5910 ],
+                    [ 49152, 4882, 5396, 5910 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 1, 0 ],
+                "imageByteOffset": [ 24, 24 ],
+                "fileByteOffset": [ 352, 352 ],
+                "packed": [
+                    [ "0xc000", "0x1b1a", "0x1d1c", "0x1f1e" ],
+                    [ "0x1918", "0x1b1a", "0x1d1c", "0x1f1e" ]
+                ],
+                "channels": [
+                    [ 49152, 6938, 7452, 7966 ],
+                    [ 6424, 6938, 7452, 7966 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 2, 0 ],
+                "imageByteOffset": [ 40, 40 ],
+                "fileByteOffset": [ 368, 368 ],
+                "packed": [
+                    [ "0x2928", "0x2b2a", "0x2d2c", "0x2f2e" ],
+                    [ "0x8420", "0x2b2a", "0x2d2c", "0x2f2e" ]
+                ],
+                "channels": [
+                    [ 10536, 11050, 11564, 12078 ],
+                    [ 33824, 11050, 11564, 12078 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 1 ],
+                "imageByteOffset": [ 80, 80 ],
+                "fileByteOffset": [ 408, 408 ],
+                "packed": [
+                    [ "0x0314", "0x1312", "0x1514", "0x1716" ],
+                    [ "0x1110", "0x1312", "0x1514", "0x1716" ]
+                ],
+                "channels": [
+                    [ 788, 4882, 5396, 5910 ],
+                    [ 4368, 4882, 5396, 5910 ]
+                ]
+            }
+        ],
+        "m=1,a=0,f=0": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 296, 296 ],
+                "packed": [
+                    [ "0x0100", "0x8420", "0xffff", "0x0706" ],
+                    [ "0x4000", "0x0302", "0x0504", "0x0314" ]
+                ],
+                "channels": [
+                    [ 256, 33824, 65535, 1798 ],
+                    [ 16384, 770, 1284, 788 ]
+                ]
+            }
+        ]
+    }
+}

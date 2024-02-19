@@ -371,6 +371,18 @@ set(CASELIST
     tests/compare/ignore_sgd_payload.json
     tests/compare/ignore_sgd_none.json
 
+    tests/compare/content_match_2d.json
+    tests/compare/content_match_3d.json
+    tests/compare/content_ignore_2d.json
+    tests/compare/content_ignore_3d.json
+    tests/compare/content_raw_2d.json
+    tests/compare/content_raw_3d.json
+    tests/compare/content_image_2d.json
+    tests/compare/content_image_3d.json
+    tests/compare/content_per_pixel_output_2d.json
+    tests/compare/content_per_pixel_output_3d.json
+    tests/compare/content_supercomp.json
+
     tests/help/cli_errors.json
     tests/help/help.json
 )

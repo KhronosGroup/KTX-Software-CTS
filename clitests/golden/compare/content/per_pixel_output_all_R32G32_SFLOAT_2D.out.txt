@@ -1,0 +1,65 @@
+Image Data
+
++Mismatch in level 0 layer 0 face 0
+  Coordinates: 2, 0, 0
+    Image byte offset: 0x10
+    File byte offset: 0x20a8
+-    Packed: 0x13121110, 0x4048f5c3
++    Packed: 0x13121110, 0x17161514
+-    Channels: 1.8436203e-27, 3.14
++    Channels: 1.8436203e-27, 4.849422e-25
++Mismatch in level 0 layer 0 face 3
+  Coordinates: 2, 0, 0
+    Image byte offset: 0x10
+    File byte offset: 0x38a8
+-    Packed: 0x13121110, 0x17161514
++    Packed: 0x13121110, 0xc0866666
+-    Channels: 1.8436203e-27, 4.849422e-25
++    Channels: 1.8436203e-27, -4.2
++Mismatch in level 0 layer 0 face 4
+  Coordinates: 0, 0, 0
+    Image byte offset: 0x0
+    File byte offset: 0x4098
+-    Packed: 0x03020100, 0x07060504
++    Packed: 0x03020100, 0x7fc00000
+-    Channels: 3.8204714e-37, 1.0082514e-34
++    Channels: 3.8204714e-37, nan
++Mismatch in level 0 layer 1 face 0
+  Coordinates: 0, 0, 0
+    Image byte offset: 0x0
+    File byte offset: 0x5098
+-    Packed: 0x03020100, 0x07060504
++    Packed: 0xff800000, 0x07060504
+-    Channels: 3.8204714e-37, 1.0082514e-34
++    Channels: -inf, 1.0082514e-34
++Mismatch in level 0 layer 1 face 3
+  Coordinates: 5, 0, 0
+    Image byte offset: 0x28
+    File byte offset: 0x68c0
+-    Packed: 0x7f800000, 0x2f2e2d2c
++    Packed: 0x2b2a2928, 0x2f2e2d2c
+-    Channels: +inf, 1.5841256e-10
++    Channels: 6.045325e-13, 1.5841256e-10
++Mismatch in level 1 layer 1 face 5
+  Coordinates: 0, 0, 0
+    Image byte offset: 0x0
+    File byte offset: 0x1e98
+-    Packed: 0xff800000, 0x07060504
++    Packed: 0x03020100, 0x4048f5c3
+-    Channels: -inf, 1.0082514e-34
++    Channels: 3.8204714e-37, 3.14
+  Coordinates: 1, 0, 0
+    Image byte offset: 0x8
+    File byte offset: 0x1ea0
+-    Packed: 0x7fc00000, 0x0f0e0d0c
++    Packed: 0x0b0a0908, 0x0f0e0d0c
+-    Channels: nan, 7.003653e-30
++    Channels: 2.6584628e-32, 7.003653e-30
++Mismatch in level 2 layer 0 face 4
+  Coordinates: 0, 0, 0
+    Image byte offset: 0x0
+    File byte offset: 0x498
+-    Packed: 0x03020100, 0xc0866666
++    Packed: 0x7f800000, 0x07060504
+-    Channels: 3.8204714e-37, -4.2
++    Channels: +inf, 1.0082514e-34
