@@ -1,0 +1,39 @@
+Image Data
+
++Mismatch in level 0 layer 0 face 0
+  Coordinates: 0, 0, 0
+    Image byte offset: 0x0
+    File byte offset: 0x148
+-    Packed: 0x0100, 0x0302, 0x0504, 0x0706
++    Packed: 0x0100, 0xffff, 0x0504, 0x0706
+-    Channels: 16, 48, 80, 112
++    Channels: 16, 4095, 80, 112
+  Coordinates: 0, 1, 0
+    Image byte offset: 0x10
+    File byte offset: 0x158
+-    Packed: 0x1110, 0x1312, 0x4000, 0x1716
++    Packed: 0xc000, 0x1312, 0x1514, 0x1716
+-    Channels: 273, 305, 1024, 369
++    Channels: 3072, 305, 337, 369
+  Coordinates: 2, 1, 0
+    Image byte offset: 0x18
+    File byte offset: 0x160
+-    Packed: 0xc000, 0x1b1a, 0x1d1c, 0x1f1e
++    Packed: 0x1918, 0x1b1a, 0x1d1c, 0x1f1e
+-    Channels: 3072, 433, 465, 497
++    Channels: 401, 433, 465, 497
+  Coordinates: 2, 2, 0
+    Image byte offset: 0x28
+    File byte offset: 0x170
+-    Packed: 0x2928, 0x2b2a, 0x2d2c, 0x2f2e
++    Packed: 0x8420, 0x2b2a, 0x2d2c, 0x2f2e
+-    Channels: 658, 690, 722, 754
++    Channels: 2114, 690, 722, 754
+  Coordinates: 0, 1, 1
+    Image byte offset: 0x50
+    File byte offset: 0x198
+-    Packed: 0x0314, 0x1312, 0x1514, 0x1716
++    Packed: 0x1110, 0x1312, 0x1514, 0x1716
+-    Channels: 49, 305, 337, 369
++    Channels: 273, 305, 337, 369
++Mismatch in level 1 layer 0 face 0

@@ -1,0 +1,101 @@
+Image Data
+
++Mismatch in level 0 layer 0 face 3
+  Coordinates: 2, 0, 0
+    Image byte offset: 0x8
+    File byte offset: N/A
+-    Packed: 0x00, 0x00, 0x00, 0x00
++    Packed: 0x00, 0x00, 0x00, 0x84
+-    Channels: 0, 0, 0, 0
++    Channels: 0, 0, 0, 132
++Mismatch in level 0 layer 0 face 4
+  Coordinates: 0, 0, 0
+    Image byte offset: 0x0
+    File byte offset: N/A
+-    Packed: 0x00, 0x00, 0x00, 0x00
++    Packed: 0x39, 0x42, 0x52, 0xcd
+-    Channels: 0, 0, 0, 0
++    Channels: 57, 66, 82, 205
+  Coordinates: 1, 0, 0
+    Image byte offset: 0x4
+    File byte offset: N/A
+-    Packed: 0x00, 0x00, 0x00, 0x00
++    Packed: 0x00, 0x00, 0x09, 0x00
+-    Channels: 0, 0, 0, 0
++    Channels: 0, 0, 9, 0
+  Coordinates: 2, 0, 0
+    Image byte offset: 0x8
+    File byte offset: N/A
+-    Packed: 0x00, 0x00, 0x00, 0x00
++    Packed: 0x00, 0x00, 0x09, 0x00
+-    Channels: 0, 0, 0, 0
++    Channels: 0, 0, 9, 0
+  Coordinates: 3, 0, 0
+    Image byte offset: 0xc
+    File byte offset: N/A
+-    Packed: 0x00, 0x00, 0x00, 0x00
++    Packed: 0x00, 0x00, 0x09, 0x00
+-    Channels: 0, 0, 0, 0
++    Channels: 0, 0, 9, 0
+  Coordinates: 0, 1, 0
+    Image byte offset: 0x40
+    File byte offset: N/A
+-    Packed: 0x42, 0x42, 0x42, 0x42
++    Packed: 0x39, 0x42, 0x52, 0x42
+-    Channels: 66, 66, 66, 66
++    Channels: 57, 66, 82, 66
+  Coordinates: 1, 1, 0
+    Image byte offset: 0x44
+    File byte offset: N/A
+-    Packed: 0x42, 0x42, 0x42, 0x42
++    Packed: 0x39, 0x42, 0x52, 0x42
+-    Channels: 66, 66, 66, 66
++    Channels: 57, 66, 82, 66
+  Coordinates: 2, 1, 0
+    Image byte offset: 0x48
+    File byte offset: N/A
+-    Packed: 0x42, 0x42, 0x42, 0x42
++    Packed: 0x39, 0x42, 0x52, 0x42
+-    Channels: 66, 66, 66, 66
++    Channels: 57, 66, 82, 66
+  Coordinates: 3, 1, 0
+    Image byte offset: 0x4c
+    File byte offset: N/A
+-    Packed: 0x42, 0x42, 0x42, 0x42
++    Packed: 0x39, 0x42, 0x52, 0x42
+-    Channels: 66, 66, 66, 66
++    Channels: 57, 66, 82, 66
+  Coordinates: 0, 2, 0
+    Image byte offset: 0x80
+    File byte offset: N/A
+-    Packed: 0x84, 0x84, 0x84, 0x84
++    Packed: 0x7b, 0x84, 0x94, 0x84
+-    Channels: 132, 132, 132, 132
++    Channels: 123, 132, 148, 132
++Mismatch in level 0 layer 1 face 0
++Mismatch in level 0 layer 1 face 3
++Mismatch in level 1 layer 1 face 5
++Mismatch in level 2 layer 0 face 0
++Mismatch in level 2 layer 0 face 1
++Mismatch in level 2 layer 0 face 2
++Mismatch in level 2 layer 0 face 3
++Mismatch in level 2 layer 0 face 4
++Mismatch in level 2 layer 0 face 5
++Mismatch in level 2 layer 1 face 0
++Mismatch in level 2 layer 1 face 1
++Mismatch in level 2 layer 1 face 2
++Mismatch in level 2 layer 1 face 3
++Mismatch in level 2 layer 1 face 4
++Mismatch in level 2 layer 1 face 5
++Mismatch in level 4 layer 0 face 0
++Mismatch in level 4 layer 0 face 1
++Mismatch in level 4 layer 0 face 2
++Mismatch in level 4 layer 0 face 3
++Mismatch in level 4 layer 0 face 4
++Mismatch in level 4 layer 0 face 5
++Mismatch in level 4 layer 1 face 0
++Mismatch in level 4 layer 1 face 1
++Mismatch in level 4 layer 1 face 2
++Mismatch in level 4 layer 1 face 3
++Mismatch in level 4 layer 1 face 4
++Mismatch in level 4 layer 1 face 5

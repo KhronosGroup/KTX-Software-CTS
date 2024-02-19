@@ -1,0 +1,147 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=0": [
+            {
+                "coordinates": [ 1, 0, 0 ],
+                "imageByteOffset": [ 2, 2 ],
+                "fileByteOffset": [ 278, 278 ],
+                "packed": [
+                    [ "0x02", "0x03" ],
+                    [ "0xff", "0xff" ]
+                ],
+                "channels": [
+                    [ 2, 3 ],
+                    [ -1, -1 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 2, 0 ],
+                "imageByteOffset": [ 16, 16 ],
+                "fileByteOffset": [ 292, 292 ],
+                "packed": [
+                    [ "0x10", "0x11" ],
+                    [ "0x00", "0xc0" ]
+                ],
+                "channels": [
+                    [ 16, 17 ],
+                    [ 0, -64 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 2, 0 ],
+                "imageByteOffset": [ 20, 20 ],
+                "fileByteOffset": [ 296, 296 ],
+                "packed": [
+                    [ "0x00", "0x40" ],
+                    [ "0x14", "0x15" ]
+                ],
+                "channels": [
+                    [ 0, 64 ],
+                    [ 20, 21 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 3, 0 ],
+                "imageByteOffset": [ 24, 24 ],
+                "fileByteOffset": [ 300, 300 ],
+                "packed": [
+                    [ "0x00", "0xc0" ],
+                    [ "0x18", "0x19" ]
+                ],
+                "channels": [
+                    [ 0, -64 ],
+                    [ 24, 25 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 1 ],
+                "imageByteOffset": [ 40, 40 ],
+                "fileByteOffset": [ 316, 316 ],
+                "packed": [
+                    [ "0x08", "0x09" ],
+                    [ "0x20", "0x84" ]
+                ],
+                "channels": [
+                    [ 8, 9 ],
+                    [ 32, -124 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 2, 2 ],
+                "imageByteOffset": [ 80, 80 ],
+                "fileByteOffset": [ 356, 356 ],
+                "packed": [
+                    [ "0x14", "0x03" ],
+                    [ "0x10", "0x11" ]
+                ],
+                "channels": [
+                    [ 20, 3 ],
+                    [ 16, 17 ]
+                ]
+            }
+        ],
+        "m=1,a=0,f=0": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 260, 260 ],
+                "packed": [
+                    [ "0x00", "0x01" ],
+                    [ "0x00", "0x40" ]
+                ],
+                "channels": [
+                    [ 0, 1 ],
+                    [ 0, 64 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 0, 0 ],
+                "imageByteOffset": [ 2, 2 ],
+                "fileByteOffset": [ 262, 262 ],
+                "packed": [
+                    [ "0x20", "0x84" ],
+                    [ "0x02", "0x03" ]
+                ],
+                "channels": [
+                    [ 32, -124 ],
+                    [ 2, 3 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 0 ],
+                "imageByteOffset": [ 4, 4 ],
+                "fileByteOffset": [ 264, 264 ],
+                "packed": [
+                    [ "0xff", "0xff" ],
+                    [ "0x04", "0x05" ]
+                ],
+                "channels": [
+                    [ -1, -1 ],
+                    [ 4, 5 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 1, 0 ],
+                "imageByteOffset": [ 6, 6 ],
+                "fileByteOffset": [ 266, 266 ],
+                "packed": [
+                    [ "0x06", "0x07" ],
+                    [ "0x14", "0x03" ]
+                ],
+                "channels": [
+                    [ 6, 7 ],
+                    [ 20, 3 ]
+                ]
+            }
+        ]
+    }
+}
