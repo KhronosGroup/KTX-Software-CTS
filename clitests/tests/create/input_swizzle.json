@@ -21,10 +21,15 @@
             { "id": "red16", "format": "R8G8_UNORM", "file": "input/png_sample/red16", "ext": ".png" },
             { "id": "red16", "format": "R8G8B8_UNORM", "file": "input/png_sample/red16", "ext": ".png" },
             { "id": "red16", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/red16", "ext": ".png" },
+            { "id": "red16", "format": "A8B8G8R8_UNORM_PACK32", "file": "input/png_sample/red16", "ext": ".png" },
             { "id": "green16", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/green16", "ext": ".png" },
+            { "id": "green16", "format": "A8B8G8R8_UNORM_PACK32", "file": "input/png_sample/green16", "ext": ".png" },
             { "id": "blue16", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/blue16", "ext": ".png" },
+            { "id": "blue16", "format": "A8B8G8R8_UNORM_PACK32", "file": "input/png_sample/blue16", "ext": ".png" },
             { "id": "alpha_simple", "format": "R8G8B8A8_UNORM", "file": "input/png_sample/alpha_simple", "ext": ".png" },
+            { "id": "alpha_simple", "format": "A8B8G8R8_UNORM_PACK32", "file": "input/png_sample/alpha_simple", "ext": ".png" },
             { "id": "basic_RGBA8_16x16", "format": "R8G8B8A8_UNORM", "file": "input/png/basic_RGBA8_16x16", "ext": ".png" },
+            { "id": "basic_RGBA8_16x16", "format": "A8B8G8R8_UNORM_PACK32", "file": "input/png/basic_RGBA8_16x16", "ext": ".png" },
             { "id": "basic_RGBA16_16x16", "format": "R16G16B16A16_UNORM", "file": "input/png/basic_RGBA16_16x16", "ext": ".png" },
             { "id": "alpha_only", "format": "A8_UNORM_KHR", "file": "input/png/basic_RGBA8_16x16", "ext": ".png" }
         ]
