@@ -25,6 +25,9 @@
             { "format": "R8G8B8A8_UNORM", "file": "LA8_16x16", "ext": ".png" },
             { "format": "R8G8B8A8_UNORM", "file": "LA16_16x16", "ext": ".png" },
             { "format": "R8G8B8A8_UNORM", "file": "RGBA16_16x16", "ext": ".png" },
+            { "format": "A8B8G8R8_UNORM_PACK32", "file": "LA8_16x16", "ext": ".png" },
+            { "format": "A8B8G8R8_UNORM_PACK32", "file": "LA16_16x16", "ext": ".png" },
+            { "format": "A8B8G8R8_UNORM_PACK32", "file": "RGBA16_16x16", "ext": ".png" },
 
             { "format": "R16G16B16_UNORM", "file": "L16_16x16", "ext": ".png" },
             { "format": "R16G16B16_UNORM", "file": "LA16_16x16", "ext": ".png" },
@@ -47,6 +50,8 @@
             { "format": "R8G8B8A8_SRGB", "file": "RGBA8_16x16", "ext": ".png" },
             { "format": "B8G8R8A8_UNORM", "file": "RGBA8_16x16", "ext": ".png" },
             { "format": "B8G8R8A8_SRGB", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "A8B8G8R8_UNORM_PACK32", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "A8B8G8R8_SRGB_PACK32", "file": "RGBA8_16x16", "ext": ".png" },
 
             { "format": "A8_UNORM_KHR", "file": "L8_16x16", "ext": ".png" },
             { "format": "A8_UNORM_KHR", "file": "LA8_16x16", "ext": ".png" },
@@ -115,6 +120,8 @@
             { "format": "R8G8B8_UNORM", "file": "RGB8_50x1000", "ext": ".png" },
             { "format": "R8G8B8A8_UNORM", "file": "RGBA8_1000x50", "ext": ".png" },
             { "format": "R8G8B8A8_UNORM", "file": "RGBA8_50x1000", "ext": ".png" },
+            { "format": "A8B8G8R8_UNORM_PACK32", "file": "RGBA8_1000x50", "ext": ".png" },
+            { "format": "A8B8G8R8_UNORM_PACK32", "file": "RGBA8_50x1000", "ext": ".png" },
             { "format": "R5G6B5_UNORM_PACK16", "file": "RGB8_1000x50", "ext": ".png" },
             { "format": "R5G6B5_UNORM_PACK16", "file": "RGB8_1000x50", "ext": ".png" },
             { "format": "R5G5B5A1_UNORM_PACK16", "file": "RGBA8_1000x50", "ext": ".png" },

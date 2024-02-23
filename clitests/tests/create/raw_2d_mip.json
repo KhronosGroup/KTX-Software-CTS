@@ -17,6 +17,9 @@
             "B8G8R8_SRGB",
             "R8G8B8A8_UNORM",
             "R8G8B8A8_SRGB",
+            "A8B8G8R8_UNORM_PACK32",
+            "A8B8G8R8_SRGB_PACK32",
+            "A8B8G8R8_SNORM_PACK32",
             "B8G8R8A8_UNORM",
             "B8G8R8A8_SRGB",
 
@@ -99,6 +102,8 @@
             "R32G32B32_UINT",
             "R8G8B8A8_UINT",
             "R8G8B8A8_SINT",
+            "A8B8G8R8_UINT_PACK32",
+            "A8B8G8R8_SINT_PACK32",
             "B8G8R8A8_UINT",
             "B8G8R8A8_SINT",
             "R16G16B16A16_UINT",

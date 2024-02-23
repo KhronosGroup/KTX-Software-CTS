@@ -1,4 +1,0 @@
-Validation failed
-
-error-3001: Prohibited VkFormat.
-    VkFormat VK_FORMAT_A8B8G8R8_SNORM_PACK32 is prohibited in a KTX2 file.
