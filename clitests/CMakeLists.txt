@@ -254,6 +254,7 @@ set(CASELIST
     tests/create/colorspaces_error_png_primaries_mismatch.json
     tests/create/colorspaces_error_png_transfer_mismatch.json
     tests/create/colorspaces_error_png_unknown_icc.json
+    tests/create/colorspaces_error_linear_oetf.json
     tests/create/colorspaces_error_srgb_oetf.json
     tests/create/colorspaces_error_unknown_icc.json
     tests/create/colorspaces_error_assign_primaries_none_convert_primaries.json
