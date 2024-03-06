@@ -86,7 +86,9 @@
             "R32G32B32A32_SFLOAT",
 
             "B10G11R11_UFLOAT_PACK32",
-            "E5B9G9R9_UFLOAT_PACK32"
+            "E5B9G9R9_UFLOAT_PACK32",
+
+            "R16G16_S10_5_NV"
         ]
     }
 }
