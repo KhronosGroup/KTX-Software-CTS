@@ -21,7 +21,7 @@
         "subcase": [
             {
                 "id": "1",
-                "file1": "validate/3001/error_ProhibitedFormat_A8B8G8R8_UNORM_PACK32",
+                "file1": "validate/3001/error_ProhibitedFormat_R8_SSCALED",
                 "file2": "validate/3012/error_TypeSizeMismatch_R16G16_SINT"
             },
             {

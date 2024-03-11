@@ -10,7 +10,7 @@
                 "id": 3001,
                 "type": "error",
                 "message": "Prohibited VkFormat.",
-                "details": "VkFormat VK_FORMAT_A8B8G8R8_UNORM_PACK32 is prohibited in a KTX2 file."
+                "details": "VkFormat VK_FORMAT_R8_SSCALED is prohibited in a KTX2 file."
             }
         ],
         [
