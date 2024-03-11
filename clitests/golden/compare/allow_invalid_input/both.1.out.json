@@ -62,8 +62,8 @@
             [ "KHR_DF_SAMPLE_DATATYPE_SIGNED" ]
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
-            8,
-            16
+            7,
+            15
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/sampleLower": [
             0,
@@ -78,8 +78,8 @@
             [ "KHR_DF_SAMPLE_DATATYPE_SIGNED" ]
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
-            8,
-            16
+            7,
+            15
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [
             8,
@@ -102,7 +102,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitLength": [
-            8,
+            7,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitOffset": [
@@ -130,7 +130,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitLength": [
-            8,
+            7,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitOffset": [

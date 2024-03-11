@@ -127,8 +127,8 @@
             88
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
-            9,
-            8
+            8,
+            7
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/sampleUpper": [
             8448,
@@ -143,8 +143,8 @@
             "KHR_DF_CHANNEL_RGBSDA_GREEN"
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
-            5,
-            8
+            4,
+            7
         ],
         "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [
             27,
@@ -163,8 +163,8 @@
             "KHR_DF_CHANNEL_RGBSDA_BLUE"
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitLength": [
-            9,
-            8
+            8,
+            7
         ],
         "/dataFormatDescriptor/blocks/0/samples/2/bitOffset": [
             9,
@@ -183,8 +183,8 @@
             "KHR_DF_CHANNEL_RGBSDA_ALPHA"
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitLength": [
-            5,
-            8
+            4,
+            7
         ],
         "/dataFormatDescriptor/blocks/0/samples/3/bitOffset": [
             27,
@@ -207,7 +207,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/4/bitLength": [
-            9,
+            8,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/4/bitOffset": [
@@ -235,7 +235,7 @@
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/5/bitLength": [
-            9,
+            8,
             null
         ],
         "/dataFormatDescriptor/blocks/0/samples/5/bitOffset": [
