@@ -22,6 +22,7 @@
             "R16G16B16A16_UNORM_CUBE",
             "R16G16B16_UNORM_CUBE",
             "R16G16_UNORM_CUBE",
+            "R16G16_S10_5_NV_CUBE",
             "R16_UNORM_CUBE",
             "R32G32B32A32_UINT_CUBE",
             "R32G32B32_UINT_CUBE",
