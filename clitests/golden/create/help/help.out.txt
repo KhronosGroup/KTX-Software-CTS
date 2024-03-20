@@ -7,8 +7,8 @@ Usage:
       --format <enum>           KTX format enum that specifies the image data format. The enum 
                                 names are matching the VkFormats without the VK_FORMAT_ prefix. The 
                                 VK_FORMAT_ prefix is ignored if present.
-                                When used with --encode it specifies the format of the input files 
-                                before the encoding step. In this case it must be one of:
+                                When used with --encode it specifies the target format before the 
+                                encoding step. In this case it must be one of:
                                     R8_UNORM
                                     R8_SRGB
                                     R8G8_UNORM
