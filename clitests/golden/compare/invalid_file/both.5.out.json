@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        false,
+        false
+    ],
+    "messages": [
+        [
+            {
+                "id": 4004,
+                "type": "error",
+                "message": "Invalid byteOffset in Level Index. byteOffset must match the expected value.",
+                "details": "Level 2 byteOffset is 458 but based on the vkFormat, DFD and image sizes the expected value is 459."
+            },
+            {
+                "id": 8102,
+                "type": "error",
+                "message": "Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consistent with image count and BasisLzGlobalHeader.",
+                "details": "sgdByteLength is 203 but based on image count of 3 and the BasisLzGlobalHeader the expected value is 202 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength)."
+            },
+            {
+                "id": 5004,
+                "type": "warning",
+                "message": "Non-conformant texture file accepted by libktx.",
+                "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
+            }
+        ],
+        [
+            {
+                "id": 3007,
+                "type": "error",
+                "message": "Invalid pixelHeight. pixelHeight must not be 0 for a block compressed formats.",
+                "details": "pixelHeight is 0 but for block-compressed VK_FORMAT_ASTC_3x3x3_UNORM_BLOCK_EXT it must not be 0."
+            },
+            {
+                "id": 3009,
+                "type": "error",
+                "message": "Invalid pixelHeight. pixelHeight must not be 0 if pixelDepth is not also 0.",
+                "details": "pixelHeight is 0 and pixelDepth is 4 but pixelHeight must not be 0 if pixelDepth is not 0 as well."
+            }
+        ]
+    ]
+}

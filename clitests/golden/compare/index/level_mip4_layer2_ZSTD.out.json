@@ -1,0 +1,77 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "info": {
+        "/header/layerCount": [
+            4,
+            2
+        ],
+        "/header/levelCount": [
+            3,
+            4
+        ],
+        "/header/supercompressionScheme": [
+            "KTX_SS_NONE",
+            "KTX_SS_ZSTD"
+        ],
+        "/index/dataFormatDescriptor/byteOffset": [
+            152,
+            176
+        ],
+        "/index/levels/0/byteOffset": [
+            1524,
+            657
+        ],
+        "/index/levels/0/byteLength": [
+            4096,
+            276
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            4096,
+            2048
+        ],
+        "/index/levels/1/byteOffset": [
+            500,
+            381
+        ],
+        "/index/levels/1/byteLength": [
+            1024,
+            276
+        ],
+        "/index/levels/1/uncompressedByteLength": [
+            1024,
+            512
+        ],
+        "/index/levels/2/byteOffset": [
+            244,
+            299
+        ],
+        "/index/levels/2/byteLength": [
+            256,
+            82
+        ],
+        "/index/levels/2/uncompressedByteLength": [
+            256,
+            128
+        ],
+        "/index/levels/3/byteOffset": [
+            null,
+            268
+        ],
+        "/index/levels/3/byteLength": [
+            null,
+            31
+        ],
+        "/index/levels/3/uncompressedByteLength": [
+            null,
+            32
+        ]
+    }
+}

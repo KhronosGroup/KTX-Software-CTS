@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        false
+    ],
+    "messages": [
+        [],
+        [
+            {
+                "id": 3027,
+                "type": "error",
+                "message": "sgdByteLength must be 0 for supercompression schemes with no global data.",
+                "details": "sgdByteLength is 8 but for supercompression scheme KTX_SS_ZLIB (which does not have global data) it must be 0."
+            }
+        ]
+    ],
+    "info": {
+        "/header/pixelWidth": [
+            8,
+            16
+        ],
+        "/header/pixelHeight": [
+            8,
+            16
+        ],
+        "/header/supercompressionScheme": [
+            "KTX_SS_NONE",
+            "KTX_SS_ZLIB"
+        ],
+        "/index/supercompressionGlobalData/byteOffset": [
+            0,
+            240
+        ],
+        "/index/supercompressionGlobalData/byteLength": [
+            0,
+            8
+        ],
+        "/index/levels/0/byteOffset": [
+            240,
+            248
+        ],
+        "/index/levels/0/byteLength": [
+            256,
+            302
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            256,
+            1024
+        ],
+        "/dataFormatDescriptor/blocks/0/bytesPlane": [
+            [ 4, 0, 0, 0, 0, 0, 0, 0 ],
+            [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+        ],
+        "/supercompressionGlobalData/rawPayload": []
+    }
+}

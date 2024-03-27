@@ -1,0 +1,4 @@
+Data Format Descriptor
+
+-Primaries: KHR_DF_PRIMARIES_DISPLAYP3
++Primaries: KHR_DF_PRIMARIES_BT709

@@ -1,0 +1,106 @@
+Validation failed for 'input/validate/8102/error_BLZESizeIncorrect_RGBA_L3_203.ktx2'
+
+error-4004: Invalid byteOffset in Level Index. byteOffset must match the expected value.
+    Level 2 byteOffset is 458 but based on the vkFormat, DFD and image sizes the expected value is 459.
+error-8102: Invalid sgdByteLength for BasisLZ/ETC1S. sgdByteLength must be consistent with image count and BasisLzGlobalHeader.
+    sgdByteLength is 203 but based on image count of 3 and the BasisLzGlobalHeader the expected value is 202 (20 + 20 * imageCount + endpointsByteLength + selectorsByteLength + tablesByteLength + extendedByteLength).
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Validation failed for 'input/validate/3007/error_BlockCompressedNoHeight_ASTC_3x3x3_UNORM_BLOCK_EXT.ktx2'
+
+error-3007: Invalid pixelHeight. pixelHeight must not be 0 for a block compressed formats.
+    pixelHeight is 0 but for block-compressed VK_FORMAT_ASTC_3x3x3_UNORM_BLOCK_EXT it must not be 0.
+error-3009: Invalid pixelHeight. pixelHeight must not be 0 if pixelDepth is not also 0.
+    pixelHeight is 0 and pixelDepth is 4 but pixelHeight must not be 0 if pixelDepth is not 0 as well.
+
+Header
+
+-vkFormat: VK_FORMAT_UNDEFINED
++vkFormat: VK_FORMAT_ASTC_3x3x3_UNORM_BLOCK_EXT
+-pixelWidth: 16
++pixelWidth: 4
+-pixelHeight: 16
++pixelHeight: 0
+-pixelDepth: 0
++pixelDepth: 4
+-levelCount: 3
++levelCount: 1
+-supercompressionScheme: KTX_SS_BASIS_LZ
++supercompressionScheme: KTX_SS_NONE
+-dataFormatDescriptor.byteOffset: 0x98
++dataFormatDescriptor.byteOffset: 0x68
+-dataFormatDescriptor.byteLength: 60
++dataFormatDescriptor.byteLength: 44
+-keyValueData.byteOffset: 0xd4
++keyValueData.byteOffset: 0x94
+-supercompressionGlobalData.byteOffset: 0x100
++supercompressionGlobalData.byteOffset: 0x0
+-supercompressionGlobalData.byteLength: 203
++supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+-Level0.byteOffset: 0x1d0
++Level0.byteOffset: 0xc0
+-Level0.byteLength: 6
++Level0.byteLength: 128
+-Level0.uncompressedByteLength: 0
++Level0.uncompressedByteLength: 128
+-Level1.byteOffset: 0x1cc
+-Level1.byteLength: 4
+-Level1.uncompressedByteLength: 0
+-Level2.byteOffset: 0x1ca
+-Level2.byteLength: 2
+-Level2.uncompressedByteLength: 0
+
+Data Format Descriptor
+
+-DFD total bytes: 60
++DFD total bytes: 44
+-Descriptor block size: 56
++Descriptor block size: 40
+-Model: KHR_DF_MODEL_ETC1S
++Model: KHR_DF_MODEL_ASTC
+-Dimensions: 3, 3, 0, 0
++Dimensions: 2, 2, 2, 0
+-Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
+-    Length: 64 bits Offset: 0
++    Length: 128 bits Offset: 0
+
+Sample 1:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0xf (KHR_DF_CHANNEL_ETC1S_AAA)
+-    Length: 64 bits Offset: 64
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0xffffffff
+
+Basis Supercompression Global Data
+
+-endpointCount: 12
+-selectorCount: 3
+-endpointsByteLength: 58
+-selectorsByteLength: 13
+-tablesByteLength: 51
+-extendedByteLength: 0
+-Image0.imageFlags: 0x0 ()
+-Image0.rgbSliceByteLength: 3
+-Image0.rgbSliceByteOffset: 0
+-Image0.alphaSliceByteLength: 3
+-Image0.alphaSliceByteOffset: 3
+-Image1.imageFlags: 0x0 ()
+-Image1.rgbSliceByteLength: 2
+-Image1.rgbSliceByteOffset: 0
+-Image1.alphaSliceByteLength: 2
+-Image1.alphaSliceByteOffset: 2
+-Image2.imageFlags: 0x0 ()
+-Image2.rgbSliceByteLength: 1
+-Image2.rgbSliceByteOffset: 0
+-Image2.alphaSliceByteLength: 1
+-Image2.alphaSliceByteOffset: 1
++endpointsData mismatch
++selectorsData mismatch
++tablesData mismatch
++extendedData mismatch

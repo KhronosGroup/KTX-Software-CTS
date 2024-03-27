@@ -67,21 +67,21 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_DEPTH",
-                        "bitLength": 23,
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_STENCIL",
+                        "bitLength": 7,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
-                        "sampleUpper": 16777215
+                        "sampleUpper": 1
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_STENCIL",
-                        "bitLength": 7,
-                        "bitOffset": 24,
+                        "channelType": "KHR_DF_CHANNEL_RGBSDA_DEPTH",
+                        "bitLength": 23,
+                        "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
                         "sampleLower": 0,
-                        "sampleUpper": 1
+                        "sampleUpper": 16777215
                     }
                 ]
             }

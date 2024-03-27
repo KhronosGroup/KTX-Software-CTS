@@ -1,0 +1,49 @@
+{
+    "description": "ktx compare tests on invalid files",
+    "command": "ktx compare --testrun ${format[args]} input/${subcase[file1]}.ktx2 input/${subcase[file2]}.ktx2",
+    "status": 3,
+    "stdout": "golden/compare/invalid_file/both.${subcase[id]}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            {
+                "id": "1",
+                "file1": "validate/3001/error_ProhibitedFormat_R8_SSCALED",
+                "file2": "validate/3012/error_TypeSizeMismatch_R16G16_SINT"
+            },
+            {
+                "id": "2",
+                "file1": "validate/7116/error_KTXmetalPixelFormatWithVkFormat_ETC2_R8G8B8A1_SRGB_BLOCK",
+                "file2": "validate/6013/error_BasicSRGBMismatch_ETC2_R8G8B8_SRGB_BLOCK"
+            },
+            {
+                "id": "3",
+                "file1": "validate/4009/error_ZeroUncompressedLength_RGBA8_UASTC_L3",
+                "file2": "validate/3022/error_IndexKVDInvalidOffset_minus1"
+            },
+            {
+                "id": "4",
+                "file1": "validate/6024/error_MultiplaneFormatsNotSupported_R8G8B8A8_UNORM_41000000",
+                "file2": "validate/8104/error_BLZEInvalidImageFlagBit_L3"
+            },
+            {
+                "id": "5",
+                "file1": "validate/8102/error_BLZESizeIncorrect_RGBA_L3_203",
+                "file2": "validate/3007/error_BlockCompressedNoHeight_ASTC_3x3x3_UNORM_BLOCK_EXT"
+            }
+        ]
+    }
+}

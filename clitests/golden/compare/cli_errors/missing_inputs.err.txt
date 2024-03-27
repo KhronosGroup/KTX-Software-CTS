@@ -1,0 +1,1 @@
+ktx compare fatal: Missing input files. See 'ktx compare --help'.

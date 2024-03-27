@@ -1,0 +1,16 @@
+Header
+
+-levelCount: 1
++levelCount: 2
+-dataFormatDescriptor.byteOffset: 0x68
++dataFormatDescriptor.byteOffset: 0x80
+-dataFormatDescriptor.byteLength: 76
++dataFormatDescriptor.byteLength: 92
+
+Level Index
+
+-Level0.byteOffset: 0xb4
++Level0.byteOffset: 0x1dc
++Level1.byteOffset: 0xdc
++Level1.byteLength: 256
++Level1.uncompressedByteLength: 256

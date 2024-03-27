@@ -6,13 +6,13 @@
             "id": 4001,
             "type": "error",
             "message": "Invalid Level Index. Indices must be sorted from the largest level to the smallest level.",
-            "details": "Indexes for level 0 with byteLength 64 and level 1 with byteLength 256 are incorrectly ordered."
+            "details": "Indexes for level 0 with uncompressedByteLength 64 and level 1 with uncompressedByteLength 256 are incorrectly ordered."
         },
         {
             "id": 4001,
             "type": "error",
             "message": "Invalid Level Index. Indices must be sorted from the largest level to the smallest level.",
-            "details": "Indexes for level 1 with byteLength 256 and level 2 with byteLength 1024 are incorrectly ordered."
+            "details": "Indexes for level 1 with uncompressedByteLength 256 and level 2 with uncompressedByteLength 1024 are incorrectly ordered."
         },
         {
             "id": 4005,

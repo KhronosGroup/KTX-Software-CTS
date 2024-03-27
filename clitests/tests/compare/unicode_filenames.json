@@ -1,0 +1,21 @@
+{
+    "description": "Test the use of unicode characters in input filenames.",
+    "command": "ktx compare --testrun input/unicode/${name1}.ktx2 input/unicode/${name2}.ktx2",
+    "status": 0,
+    "args": {
+        "name1": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ],
+        "name2": [
+            "hűtő",
+            "テクスチャ",
+            "نَسِيج",
+            "조직",
+            "质地"
+        ]
+    }
+}

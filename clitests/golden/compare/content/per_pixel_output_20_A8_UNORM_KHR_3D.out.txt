@@ -1,0 +1,116 @@
+Image Data
+
++Mismatch in level 0 layer 0 face 0
+  Coordinates: 2, 0, 0
+    Image byte offset: 0x2
+    File byte offset: 0xfe
+-    Packed: 0x02
++    Packed: 0xff
+-    Channels: 2
++    Channels: 255
+  Coordinates: 3, 0, 0
+    Image byte offset: 0x3
+    File byte offset: 0xff
+-    Packed: 0x03
++    Packed: 0xff
+-    Channels: 3
++    Channels: 255
+  Coordinates: 1, 0, 1
+    Image byte offset: 0x11
+    File byte offset: 0x10d
+-    Packed: 0x01
++    Packed: 0xc0
+-    Channels: 1
++    Channels: 192
+  Coordinates: 2, 0, 1
+    Image byte offset: 0x12
+    File byte offset: 0x10e
+-    Packed: 0x14
++    Packed: 0x02
+-    Channels: 20
++    Channels: 2
+  Coordinates: 0, 1, 1
+    Image byte offset: 0x14
+    File byte offset: 0x110
+-    Packed: 0x00
++    Packed: 0x04
+-    Channels: 0
++    Channels: 4
+  Coordinates: 1, 1, 1
+    Image byte offset: 0x15
+    File byte offset: 0x111
+-    Packed: 0x40
++    Packed: 0x05
+-    Channels: 64
++    Channels: 5
+  Coordinates: 0, 2, 1
+    Image byte offset: 0x18
+    File byte offset: 0x114
+-    Packed: 0x00
++    Packed: 0x08
+-    Channels: 0
++    Channels: 8
+  Coordinates: 1, 2, 1
+    Image byte offset: 0x19
+    File byte offset: 0x115
+-    Packed: 0xc0
++    Packed: 0x09
+-    Channels: 192
++    Channels: 9
+  Coordinates: 0, 2, 2
+    Image byte offset: 0x28
+    File byte offset: 0x124
+-    Packed: 0x08
++    Packed: 0x20
+-    Channels: 8
++    Channels: 32
+  Coordinates: 1, 2, 2
+    Image byte offset: 0x29
+    File byte offset: 0x125
+-    Packed: 0x09
++    Packed: 0x84
+-    Channels: 9
++    Channels: 132
++Mismatch in level 1 layer 0 face 0
+  Coordinates: 1, 0, 0
+    Image byte offset: 0x1
+    File byte offset: 0xf5
+-    Packed: 0x01
++    Packed: 0x40
+-    Channels: 1
++    Channels: 64
+  Coordinates: 0, 1, 0
+    Image byte offset: 0x2
+    File byte offset: 0xf6
+-    Packed: 0x20
++    Packed: 0x02
+-    Channels: 32
++    Channels: 2
+  Coordinates: 1, 1, 0
+    Image byte offset: 0x3
+    File byte offset: 0xf7
+-    Packed: 0x84
++    Packed: 0x03
+-    Channels: 132
++    Channels: 3
+  Coordinates: 0, 0, 1
+    Image byte offset: 0x4
+    File byte offset: 0xf8
+-    Packed: 0xff
++    Packed: 0x00
+-    Channels: 255
++    Channels: 0
+  Coordinates: 1, 0, 1
+    Image byte offset: 0x5
+    File byte offset: 0xf9
+-    Packed: 0xff
++    Packed: 0x01
+-    Channels: 255
++    Channels: 1
+  Coordinates: 0, 1, 1
+    Image byte offset: 0x6
+    File byte offset: 0xfa
+-    Packed: 0x02
++    Packed: 0x14
+-    Channels: 2
++    Channels: 20

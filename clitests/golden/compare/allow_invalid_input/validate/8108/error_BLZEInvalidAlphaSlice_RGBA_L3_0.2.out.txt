@@ -1,0 +1,115 @@
+Validation failed for 'input/validate/8108/error_BLZEInvalidAlphaSlice_RGBA_L3_0.ktx2'
+
+error-8108: Invalid alphaSliceByteOffset or alphaSliceByteLength. The defined byte region must be within the corresponding mip level.
+    For Level 0 Layer 0 Face 0 zSlice 0 the alphaSliceByteOffset is 0 and the alphaSliceByteLength is 7 but the defined region must fit in the level's byteLength of 6.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+-vkFormat: VK_FORMAT_R8G8B8A8_UNORM
++vkFormat: VK_FORMAT_UNDEFINED
+-pixelWidth: 8
++pixelWidth: 16
+-pixelHeight: 8
++pixelHeight: 16
+-levelCount: 1
++levelCount: 3
+-supercompressionScheme: KTX_SS_NONE
++supercompressionScheme: KTX_SS_BASIS_LZ
+-dataFormatDescriptor.byteOffset: 0x68
++dataFormatDescriptor.byteOffset: 0x98
+-dataFormatDescriptor.byteLength: 92
++dataFormatDescriptor.byteLength: 60
+-keyValueData.byteOffset: 0xc4
++keyValueData.byteOffset: 0xd4
+-supercompressionGlobalData.byteOffset: 0x0
++supercompressionGlobalData.byteOffset: 0x100
+-supercompressionGlobalData.byteLength: 0
++supercompressionGlobalData.byteLength: 202
+
+Level Index
+
+-Level0.byteOffset: 0xf0
++Level0.byteOffset: 0x1d0
+-Level0.byteLength: 256
++Level0.byteLength: 6
+-Level0.uncompressedByteLength: 256
++Level0.uncompressedByteLength: 0
++Level1.byteOffset: 0x1cc
++Level1.byteLength: 4
++Level1.uncompressedByteLength: 0
++Level2.byteOffset: 0x1ca
++Level2.byteLength: 2
++Level2.uncompressedByteLength: 0
+
+Data Format Descriptor
+
+-DFD total bytes: 92
++DFD total bytes: 60
+-Descriptor block size: 88
++Descriptor block size: 56
+-Model: KHR_DF_MODEL_RGBSDA
++Model: KHR_DF_MODEL_ETC1S
+-Dimensions: 0, 0, 0, 0
++Dimensions: 3, 3, 0, 0
+-Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
+-    Length: 8 bits Offset: 0
++    Length: 64 bits Offset: 0
+
+Sample 0:
+-    Upper: 0x000000ff
++    Upper: 0xffffffff
+
+Sample 1:
+-    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
++    Channel Type: 0xf (KHR_DF_CHANNEL_ETC1S_AAA)
+-    Length: 8 bits Offset: 8
++    Length: 64 bits Offset: 64
+-    Upper: 0x000000ff
++    Upper: 0xffffffff
+
+Sample 2:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Length: 8 bits Offset: 16
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 3:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+-    Length: 8 bits Offset: 24
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Basis Supercompression Global Data
+
++endpointCount: 12
++selectorCount: 3
++endpointsByteLength: 58
++selectorsByteLength: 13
++tablesByteLength: 51
++extendedByteLength: 0
++Image0.imageFlags: 0x0 ()
++Image0.rgbSliceByteLength: 3
++Image0.rgbSliceByteOffset: 0
++Image0.alphaSliceByteLength: 7
++Image0.alphaSliceByteOffset: 0
++Image1.imageFlags: 0x0 ()
++Image1.rgbSliceByteLength: 2
++Image1.rgbSliceByteOffset: 0
++Image1.alphaSliceByteLength: 2
++Image1.alphaSliceByteOffset: 2
++Image2.imageFlags: 0x0 ()
++Image2.rgbSliceByteLength: 1
++Image2.rgbSliceByteOffset: 0
++Image2.alphaSliceByteLength: 1
++Image2.alphaSliceByteOffset: 1
++endpointsData mismatch
++selectorsData mismatch
++tablesData mismatch
++extendedData mismatch

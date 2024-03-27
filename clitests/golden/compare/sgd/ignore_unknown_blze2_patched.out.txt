@@ -1,0 +1,6 @@
+Validation failed for 'input/compare/sgd/BLZE2_patched.ktx2'
+
+error-5007: Failed to transcode texture.
+    Transcoding of texture with color model KHR_DF_MODEL_ETC1S failed with the error: Transcoding of block compressed texture failed.
+
++endpointsData mismatch

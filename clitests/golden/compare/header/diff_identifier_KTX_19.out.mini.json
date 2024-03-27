@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/compare_v0.json","valid":[true,false],"messages":[[],[{"id":2001,"type":"fatal","message":"Not a KTX2 file.","details":"Not a KTX2 file. The beginning of the file does not match the expected file identifier \"«KTX 20»\\r\\n\\x1A\\n\"."}]],"info":{"/header/identifier":["«KTX 20»\r\n\u001A\n","«KTX 19»\r\n\u001A\n"]}}

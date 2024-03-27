@@ -1,0 +1,4 @@
+Key/Value Data
+
+-KTXswizzle: rgba
++KTXswizzle: bgra

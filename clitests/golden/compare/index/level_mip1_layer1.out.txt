@@ -1,0 +1,23 @@
+Header
+
+-layerCount: 4
++layerCount: 0
+-levelCount: 3
++levelCount: 1
+-dataFormatDescriptor.byteOffset: 0x98
++dataFormatDescriptor.byteOffset: 0x68
+
+Level Index
+
+-Level0.byteOffset: 0x5f4
++Level0.byteOffset: 0xc4
+-Level0.byteLength: 4096
++Level0.byteLength: 1024
+-Level0.uncompressedByteLength: 4096
++Level0.uncompressedByteLength: 1024
+-Level1.byteOffset: 0x1f4
+-Level1.byteLength: 1024
+-Level1.uncompressedByteLength: 1024
+-Level2.byteOffset: 0xf4
+-Level2.byteLength: 256
+-Level2.uncompressedByteLength: 256

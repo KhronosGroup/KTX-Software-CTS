@@ -1,0 +1,192 @@
+{
+    "description": "ktx compare with different supercompression combinations",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} ${subcase[args]} input/compare/content/supercomp_${subcase[input1]}.ktx2 input/compare/content/supercomp_${subcase[input2]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/compare/content/supercomp_${subcase[name]}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "ignore": [
+            "--ignore-format-header --ignore-supercomp --ignore-index all --ignore-dfd all-except-color-space --ignore-metadata all --ignore-sgd all"
+        ],
+        "subcase": [
+            {
+                "name": "uncompressed_ZLIB_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "uncompressed", "input2": "ZLIB"
+            },
+            {
+                "name": "uncompressed_ZLIB_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "uncompressed", "input2": "ZLIB"
+            },
+            {
+                "name": "uncompressed_ZLIB_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 0, "input1": "uncompressed", "input2": "ZLIB"
+            },
+            {
+                "name": "uncompressed_ZSTD_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "uncompressed", "input2": "ZSTD"
+            },
+            {
+                "name": "uncompressed_ZSTD_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "uncompressed", "input2": "ZSTD"
+            },
+            {
+                "name": "uncompressed_ZSTD_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 0, "input1": "uncompressed", "input2": "ZSTD"
+            },
+            {
+                "name": "uncompressed_alt_ZLIB_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "uncompressed_alt", "input2": "ZLIB"
+            },
+            {
+                "name": "uncompressed_alt_ZLIB_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "uncompressed_alt", "input2": "ZLIB"
+            },
+            {
+                "name": "uncompressed_alt_ZLIB_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 7, "input1": "uncompressed_alt", "input2": "ZLIB"
+            },
+            {
+                "name": "uncompressed_alt_ZSTD_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "uncompressed_alt", "input2": "ZSTD"
+            },
+            {
+                "name": "uncompressed_alt_ZSTD_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "uncompressed_alt", "input2": "ZSTD"
+            },
+            {
+                "name": "uncompressed_alt_ZSTD_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 7, "input1": "uncompressed_alt", "input2": "ZSTD"
+            },
+            {
+                "name": "ZLIB_ZSTD_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "ZLIB", "input2": "ZSTD"
+            },
+            {
+                "name": "ZLIB_ZSTD_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "ZLIB", "input2": "ZSTD"
+            },
+            {
+                "name": "ZLIB_ZSTD_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 0, "input1": "ZLIB", "input2": "ZSTD"
+            },
+            {
+                "name": "UASTC_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "UASTC", "input2": "UASTC_alt"
+            },
+            {
+                "name": "UASTC_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "UASTC", "input2": "UASTC_alt"
+            },
+            {
+                "name": "UASTC_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 7, "input1": "UASTC", "input2": "UASTC_alt"
+            },
+            {
+                "name": "UASTC_ZLIB_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "UASTC", "input2": "UASTC_ZLIB"
+            },
+            {
+                "name": "UASTC_ZLIB_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "UASTC", "input2": "UASTC_ZLIB"
+            },
+            {
+                "name": "UASTC_ZLIB_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 0, "input1": "UASTC", "input2": "UASTC_ZLIB"
+            },
+            {
+                "name": "UASTC_ZSTD_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "UASTC", "input2": "UASTC_ZSTD"
+            },
+            {
+                "name": "UASTC_ZSTD_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "UASTC", "input2": "UASTC_ZSTD"
+            },
+            {
+                "name": "UASTC_ZSTD_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 0, "input1": "UASTC", "input2": "UASTC_ZSTD"
+            },
+            {
+                "name": "BLZE_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "BLZE", "input2": "BLZE_alt"
+            },
+            {
+                "name": "BLZE_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "BLZE", "input2": "BLZE_alt"
+            },
+            {
+                "name": "BLZE_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 7, "input1": "BLZE", "input2": "BLZE_alt"
+            },
+            {
+                "name": "BLZE_uncompressed_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "BLZE", "input2": "uncompressed"
+            },
+            {
+                "name": "BLZE_uncompressed_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "BLZE", "input2": "uncompressed"
+            },
+            {
+                "name": "BLZE_uncompressed_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 7, "input1": "BLZE", "input2": "uncompressed"
+            },
+            {
+                "name": "BLZE_transcoded_ignore",
+                "args": "--content ignore",
+                "rc": 0, "input1": "BLZE", "input2": "BLZE_transcoded"
+            },
+            {
+                "name": "BLZE_transcoded_raw",
+                "args": "--content raw",
+                "rc": 7, "input1": "BLZE", "input2": "BLZE_transcoded"
+            },
+            {
+                "name": "BLZE_transcoded_image",
+                "args": "--content image --per-pixel-output 10",
+                "rc": 0, "input1": "BLZE", "input2": "BLZE_transcoded"
+            }
+        ]
+    }
+}

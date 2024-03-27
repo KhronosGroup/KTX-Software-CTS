@@ -1,0 +1,4 @@
+Validation failed for 'input/validate/3027/error_IndexSGDNotApplicable_ZLIB.ktx2'
+
+error-3027: sgdByteLength must be 0 for supercompression schemes with no global data.
+    sgdByteLength is 8 but for supercompression scheme KTX_SS_ZLIB (which does not have global data) it must be 0.

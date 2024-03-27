@@ -1,0 +1,1 @@
+ktx compare fatal: Option 'unknown' does not exist. See 'ktx compare --help'.

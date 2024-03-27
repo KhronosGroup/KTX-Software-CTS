@@ -1,0 +1,90 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=0": [
+            {
+                "coordinates": [ 2, 0, 0 ],
+                "imageByteOffset": [ 8, 8 ],
+                "fileByteOffset": [ 4352, 4352 ],
+                "packed": [
+                    [ "0x03140908" ],
+                    [ "0x0b0a0908" ]
+                ],
+                "channels": [
+                    [ 264, 258, 49, 0 ],
+                    [ 264, 642, 176, 0 ]
+                ]
+            }
+        ],
+        "m=0,a=0,f=3": [
+            {
+                "coordinates": [ 2, 0, 0 ],
+                "imageByteOffset": [ 8, 8 ],
+                "fileByteOffset": [ 7424, 7424 ],
+                "packed": [
+                    [ "0x0b0a0908" ],
+                    [ "0x84200908" ]
+                ],
+                "channels": [
+                    [ 264, 642, 176, 0 ],
+                    [ 264, 2, 66, 2 ]
+                ]
+            }
+        ],
+        "m=0,a=0,f=4": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 8440, 8440 ],
+                "packed": [
+                    [ "0x03020100" ],
+                    [ "0xffff0100" ]
+                ],
+                "channels": [
+                    [ 256, 128, 48, 0 ],
+                    [ 256, 960, 1023, 3 ]
+                ]
+            }
+        ],
+        "m=0,a=1,f=0": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 10488, 10488 ],
+                "packed": [
+                    [ "0x03020100" ],
+                    [ "0x0302c000" ]
+                ],
+                "channels": [
+                    [ 256, 128, 48, 0 ],
+                    [ 0, 176, 48, 0 ]
+                ]
+            }
+        ],
+        "m=0,a=1,f=3": [
+            {
+                "coordinates": [ 5, 0, 0 ],
+                "imageByteOffset": [ 20, 20 ],
+                "fileByteOffset": [ 13580, 13580 ],
+                "packed": [
+                    [ "0x17164000" ],
+                    [ "0x17161514" ]
+                ],
+                "channels": [
+                    [ 0, 400, 369, 0 ],
+                    [ 276, 389, 369, 0 ]
+                ]
+            }
+        ],
+        "m=1,a=1,f=5": [],
+        "m=2,a=0,f=4": []
+    }
+}

@@ -1,0 +1,174 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        false
+    ],
+    "messages": [
+        [],
+        [
+            {
+                "id": 6016,
+                "type": "error",
+                "message": "Invalid colorModel in basic DFD block for block compressed VkFormat.",
+                "details": "DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_RGBSDA but for VkFormat VK_FORMAT_ASTC_8x6_SFLOAT_BLOCK it must be KHR_DF_MODEL_ASTC."
+            },
+            {
+                "id": 5004,
+                "type": "warning",
+                "message": "Non-conformant texture file accepted by libktx.",
+                "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
+            }
+        ]
+    ],
+    "info": {
+        "/header/vkFormat": [
+            "VK_FORMAT_R8G8B8A8_UNORM",
+            "VK_FORMAT_ASTC_8x6_SFLOAT_BLOCK"
+        ],
+        "/header/pixelWidth": [
+            8,
+            16
+        ],
+        "/header/pixelHeight": [
+            8,
+            16
+        ],
+        "/index/dataFormatDescriptor/byteLength": [
+            92,
+            44
+        ],
+        "/index/keyValueData/byteOffset": [
+            196,
+            148
+        ],
+        "/index/levels/0/byteOffset": [
+            240,
+            192
+        ],
+        "/index/levels/0/byteLength": [
+            256,
+            96
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            256,
+            96
+        ],
+        "/dataFormatDescriptor/totalSize": [
+            92,
+            44
+        ],
+        "/dataFormatDescriptor/blocks/0/descriptorBlockSize": [
+            88,
+            40
+        ],
+        "/dataFormatDescriptor/blocks/0/texelBlockDimension": [
+            [ 0, 0, 0, 0 ],
+            [ 7, 5, 0, 0 ]
+        ],
+        "/dataFormatDescriptor/blocks/0/bytesPlane": [
+            [ 4, 0, 0, 0, 0, 0, 0, 0 ],
+            [ 16, 0, 0, 0, 0, 0, 0, 0 ]
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/0/qualifiers": [
+            [],
+            [ "KHR_DF_SAMPLE_DATATYPE_SIGNED", "KHR_DF_SAMPLE_DATATYPE_FLOAT" ]
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
+            7,
+            127
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/0/sampleLower": [
+            0,
+            3212836864
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/0/sampleUpper": [
+            255,
+            1065353216
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/qualifiers": [
+            [],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/channelType": [
+            "KHR_DF_CHANNEL_RGBSDA_GREEN",
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/bitLength": [
+            7,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/bitOffset": [
+            8,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/samplePosition": [
+            [ 0, 0, 0, 0 ],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/sampleLower": [
+            0,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/1/sampleUpper": [
+            255,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/2/qualifiers": [
+            [],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/2/channelType": [
+            "KHR_DF_CHANNEL_RGBSDA_BLUE",
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/2/bitLength": [
+            7,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/2/bitOffset": [
+            16,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/2/samplePosition": [
+            [ 0, 0, 0, 0 ],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/2/sampleLower": [
+            0,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/2/sampleUpper": [
+            255,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/qualifiers": [
+            [],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/channelType": [
+            "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/bitLength": [
+            7,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/bitOffset": [
+            24,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/samplePosition": [
+            [ 0, 0, 0, 0 ],
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/sampleLower": [
+            0,
+            null
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/sampleUpper": [
+            255,
+            null
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "description": "ktx compare test with --ignore-sgd all",
+    "command": "ktx compare --testrun ${format[args]} --allow-invalid-input ${ignore} --ignore-sgd all input/compare/sgd/${subcase[file1]}.ktx2 input/compare/sgd/${subcase[file2]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/compare/sgd/ignore_all_${subcase[id]}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore --ignore-supercomp --ignore-format-header --ignore-index all --ignore-dfd all --ignore-metadata all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            { "rc": 0, "id": "ref_blze1", "file1": "reference", "file2": "BLZE1" },
+            { "rc": 0, "id": "blze1_patched", "file1": "BLZE1", "file2": "BLZE1_patched" },
+            { "rc": 0, "id": "blze1_blze2", "file1": "BLZE1", "file2": "BLZE2" },
+            { "rc": 0, "id": "blze2_patched", "file1": "BLZE2", "file2": "BLZE2_patched" },
+            { "rc": 0, "id": "blze2_ref", "file1": "BLZE2", "file2": "reference" },
+            { "rc": 0, "id": "vendor42_payloads", "file1": "vendor42_payload1", "file2": "vendor42_payload2" },
+            { "rc": 0, "id": "vendor43_payloads", "file1": "vendor43_payload1", "file2": "vendor43_payload2" },
+            { "rc": 0, "id": "ref_vendor42", "file1": "reference", "file2": "vendor42_payload1" },
+            { "rc": 0, "id": "vendor42_vendor43", "file1": "vendor42_payload1", "file2": "vendor43_payload1" },
+            { "rc": 0, "id": "vendor43_blze", "file1": "vendor43_payload1", "file2": "BLZE1" }
+        ]
+    }
+}

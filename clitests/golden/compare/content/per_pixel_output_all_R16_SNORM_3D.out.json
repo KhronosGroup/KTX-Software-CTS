@@ -1,0 +1,147 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=0": [
+            {
+                "coordinates": [ 1, 0, 0 ],
+                "imageByteOffset": [ 2, 2 ],
+                "fileByteOffset": [ 262, 262 ],
+                "packed": [
+                    [ "0x0302" ],
+                    [ "0xffff" ]
+                ],
+                "channels": [
+                    [ 770 ],
+                    [ -1 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 2, 0 ],
+                "imageByteOffset": [ 16, 16 ],
+                "fileByteOffset": [ 276, 276 ],
+                "packed": [
+                    [ "0x1110" ],
+                    [ "0xc000" ]
+                ],
+                "channels": [
+                    [ 4368 ],
+                    [ -16384 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 2, 0 ],
+                "imageByteOffset": [ 20, 20 ],
+                "fileByteOffset": [ 280, 280 ],
+                "packed": [
+                    [ "0x4000" ],
+                    [ "0x1514" ]
+                ],
+                "channels": [
+                    [ 16384 ],
+                    [ 5396 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 3, 0 ],
+                "imageByteOffset": [ 24, 24 ],
+                "fileByteOffset": [ 284, 284 ],
+                "packed": [
+                    [ "0xc000" ],
+                    [ "0x1918" ]
+                ],
+                "channels": [
+                    [ -16384 ],
+                    [ 6424 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 1 ],
+                "imageByteOffset": [ 40, 40 ],
+                "fileByteOffset": [ 300, 300 ],
+                "packed": [
+                    [ "0x0908" ],
+                    [ "0x8420" ]
+                ],
+                "channels": [
+                    [ 2312 ],
+                    [ -31712 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 2, 2 ],
+                "imageByteOffset": [ 80, 80 ],
+                "fileByteOffset": [ 340, 340 ],
+                "packed": [
+                    [ "0x0314" ],
+                    [ "0x1110" ]
+                ],
+                "channels": [
+                    [ 788 ],
+                    [ 4368 ]
+                ]
+            }
+        ],
+        "m=1,a=0,f=0": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ 244, 244 ],
+                "packed": [
+                    [ "0x0100" ],
+                    [ "0x4000" ]
+                ],
+                "channels": [
+                    [ 256 ],
+                    [ 16384 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 0, 0 ],
+                "imageByteOffset": [ 2, 2 ],
+                "fileByteOffset": [ 246, 246 ],
+                "packed": [
+                    [ "0x8420" ],
+                    [ "0x0302" ]
+                ],
+                "channels": [
+                    [ -31712 ],
+                    [ 770 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 0 ],
+                "imageByteOffset": [ 4, 4 ],
+                "fileByteOffset": [ 248, 248 ],
+                "packed": [
+                    [ "0xffff" ],
+                    [ "0x0504" ]
+                ],
+                "channels": [
+                    [ -1 ],
+                    [ 1284 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 1, 0 ],
+                "imageByteOffset": [ 6, 6 ],
+                "fileByteOffset": [ 250, 250 ],
+                "packed": [
+                    [ "0x0706" ],
+                    [ "0x0314" ]
+                ],
+                "channels": [
+                    [ 1798 ],
+                    [ 788 ]
+                ]
+            }
+        ]
+    }
+}

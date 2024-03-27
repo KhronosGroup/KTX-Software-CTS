@@ -1,0 +1,89 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "info": {
+        "/header/layerCount": [
+            4,
+            0
+        ],
+        "/header/faceCount": [
+            1,
+            6
+        ],
+        "/header/levelCount": [
+            3,
+            5
+        ],
+        "/index/dataFormatDescriptor/byteOffset": [
+            152,
+            200
+        ],
+        "/index/levels/0/byteOffset": [
+            1524,
+            2332
+        ],
+        "/index/levels/0/byteLength": [
+            4096,
+            6144
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            4096,
+            6144
+        ],
+        "/index/levels/1/byteOffset": [
+            500,
+            796
+        ],
+        "/index/levels/1/byteLength": [
+            1024,
+            1536
+        ],
+        "/index/levels/1/uncompressedByteLength": [
+            1024,
+            1536
+        ],
+        "/index/levels/2/byteOffset": [
+            244,
+            412
+        ],
+        "/index/levels/2/byteLength": [
+            256,
+            384
+        ],
+        "/index/levels/2/uncompressedByteLength": [
+            256,
+            384
+        ],
+        "/index/levels/3/byteOffset": [
+            null,
+            316
+        ],
+        "/index/levels/3/byteLength": [
+            null,
+            96
+        ],
+        "/index/levels/3/uncompressedByteLength": [
+            null,
+            96
+        ],
+        "/index/levels/4/byteOffset": [
+            null,
+            292
+        ],
+        "/index/levels/4/byteLength": [
+            null,
+            24
+        ],
+        "/index/levels/4/uncompressedByteLength": [
+            null,
+            24
+        ]
+    }
+}

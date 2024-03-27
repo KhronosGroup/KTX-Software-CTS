@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "info": {
+        "/header/pixelWidth": [
+            16,
+            20
+        ]
+    }
+}

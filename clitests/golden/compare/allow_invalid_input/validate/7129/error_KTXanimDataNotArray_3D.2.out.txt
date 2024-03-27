@@ -1,0 +1,31 @@
+Validation failed for 'input/validate/7129/error_KTXanimDataNotArray_3D.ktx2'
+
+error-7129: Invalid KTXanimData metadata. KTXanimData can only be used with array textures.
+    KTXanimData is present but with layerCount 0 the texture is not an array texture.
+
+Header
+
+-pixelWidth: 8
++pixelWidth: 16
+-pixelHeight: 8
++pixelHeight: 16
+-pixelDepth: 0
++pixelDepth: 16
+-keyValueData.byteLength: 44
++keyValueData.byteLength: 72
+
+Level Index
+
+-Level0.byteOffset: 0xf0
++Level0.byteOffset: 0x10c
+-Level0.byteLength: 256
++Level0.byteLength: 16384
+-Level0.uncompressedByteLength: 256
++Level0.uncompressedByteLength: 16384
+
+Key/Value Data
+
++KTXanimData:
++    duration: 1
++    timescale: 2
++    loopCount: 3

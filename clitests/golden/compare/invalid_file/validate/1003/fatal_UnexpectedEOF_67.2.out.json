@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        false
+    ],
+    "messages": [
+        [],
+        [
+            {
+                "id": 1003,
+                "type": "fatal",
+                "message": "Unexpected end of file.",
+                "details": "Unexpected end of file. Failed to read 80 byte(s) at offset 0 to access the header. Only able to read 67 byte(s)."
+            }
+        ]
+    ]
+}

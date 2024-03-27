@@ -1,0 +1,10 @@
+Validation failed for 'input/validate/3028/error_IndexDFDInvalidLength_96.ktx2'
+
+error-3028: Invalid dfdByteLength. If there is Key/Value Data the dfdByteLength/dfdTotalSize must be equal to kvdByteOffset - dfdByteOffset.
+    dfdByteLength is 96 but it must be equal to kvdByteOffset - dfdByteOffset which is 92.
+error-3022: Invalid kvdByteOffset.
+    kvdByteOffset is 196 but the Key/Value Data must immediately follow (with 4 byte alignment) the Data Format Descriptor so it must be 200.
+error-6001: Mismatching dfdTotalSize and dfdByteLength. dfdTotalSize must match dfdByteLength.
+    dfdTotalSize is 96 but dfdByteLength is 92 and they must match.
+error-6004: Invalid DFD data. Not enough data left to process another DFD block header.
+    DFD has 4 byte(s) unprocessed but for a valid DFD at least 8 bytes are required.

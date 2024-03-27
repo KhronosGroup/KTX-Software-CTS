@@ -1,0 +1,30 @@
+Validation successful for 'input/compare/dfd/additional_bdfd.ktx2'
+
+warning-6005: Multiple basic DFD blocks.
+    DFD block #2 is a basic DFD block but one was already processed before. It will be ignored.
+
+Data Format Descriptor
+
+-DFD total bytes: 92
++DFD total bytes: 132
+
+Sample 3:
++Vendor ID: KHR_DF_VENDORID_KHRONOS
++Descriptor type: KHR_DF_KHR_DESCRIPTORTYPE_BASICFORMAT
++Version: KHR_DF_VERSIONNUMBER_1_3
++Descriptor block size: 40
++Flags: 0x0 (KHR_DF_FLAG_ALPHA_STRAIGHT)
++Transfer: KHR_DF_TRANSFER_LINEAR
++Primaries: KHR_DF_PRIMARIES_BT709
++Model: KHR_DF_MODEL_RGBSDA
++Dimensions: 1, 1, 0, 0
++Plane bytes: 31, 0, 0, 0, 0, 0, 0, 0
+
+Sample 0:
++    Qualifiers: 0x0 ()
++    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
++    Length: 32 bits Offset: 0
++    Position: 0, 0, 0, 0
++    Lower: 0x00000000
++    Upper: 0xffffffff
++Raw payload: [0x0, 0x0, 0x0, 0x0, 0x2, 0x0, 0x28, 0x0, 0x1, 0x1, 0x1, 0x0, 0x1, 0x1, 0x0, 0x0, 0x1f, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1f, 0x0, 0x0, 0x0, 0x0, 0x0]

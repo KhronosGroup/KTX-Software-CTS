@@ -1,0 +1,8 @@
+Header
+
+-keyValueData.byteOffset: 0x0
++keyValueData.byteOffset: 0xa4
+-keyValueData.byteLength: 0
++keyValueData.byteLength: 80
+-supercompressionGlobalData.byteOffset: 0xa8
++supercompressionGlobalData.byteOffset: 0xf8

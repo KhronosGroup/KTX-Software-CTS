@@ -1,0 +1,60 @@
+{
+    "description": "ktx compare test with explicit keys provided to --ignore-metadata",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-metadata ${subcase[keys]} input/compare/kvd/${subcase[file1]}.ktx2 input/compare/kvd/${subcase[file2]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/compare/kvd/ignore_keys_${subcase[id]}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--allow-invalid-input --content ignore --ignore-format-header --ignore-supercomp --ignore-index all --ignore-dfd all --ignore-sgd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            { "rc": 0, "id": "writer1", "file1": "reference", "file2": "custom_KTXwriter", "keys": "KTXwriter" },
+            { "rc": 7, "id": "writer2", "file1": "reference", "file2": "custom_KTXwriter", "keys": "KTXscWriterParams" },
+            { "rc": 0, "id": "anim1", "file1": "anim_mode1", "file2": "anim_mode2", "keys": "KTXanimData,KTXwriter" },
+            { "rc": 7, "id": "anim2", "file1": "anim_mode2", "file2": "anim_mode3", "keys": "KTXwriter,random" },
+            { "rc": 0, "id": "astc1", "file1": "reference", "file2": "astc_decode_mode", "keys": "KTXwriter,KTXastcDecodeMode" },
+            { "rc": 7, "id": "astc2", "file1": "astc_decode_mode", "file2": "reference", "keys": "KTXdecodeMode" },
+            { "rc": 0, "id": "format1", "file1": "gl_format", "file2": "gl_format_alt", "keys": "KTXdxgiFormat__,KTXglFormat" },
+            { "rc": 7, "id": "format2", "file1": "gl_format", "file2": "dxgi_format", "keys": "KTXglFormat,random" },
+            { "rc": 0, "id": "format3", "file1": "dxgi_format", "file2": "dxgi_format_alt", "keys": "KTXdxgiFormat__" },
+            { "rc": 7, "id": "format4", "file1": "dxgi_format", "file2": "metal_format", "keys": "KTXdgxiFormat__" },
+            { "rc": 0, "id": "format5", "file1": "metal_format", "file2": "metal_format_alt", "keys": "KTXmetalPixelFormat,KTXwriter" },
+            { "rc": 7, "id": "format6", "file1": "metal_format", "file2": "gl_format", "keys": "KTXmetalPixelFormat" },
+            { "rc": 0, "id": "format_comb1", "file1": "gl_dxgi_metal_format", "file2": "gl_dxgi_metal_format_alt1", "keys": "KTXglFormat,KTXmetalPixelFormat" },
+            { "rc": 7, "id": "format_comb2", "file1": "gl_dxgi_metal_format_alt1", "file2": "gl_dxgi_metal_format_alt2", "keys": "KTXdgxiFormat__,KTXglFormat" },
+            { "rc": 0, "id": "format_comb3", "file1": "gl_dxgi_metal_format_alt2", "file2": "gl_format", "keys": "KTXmetalPixelFormat,KTXdxgiFormat__,KTXwriter" },
+            { "rc": 7, "id": "format_comb4", "file1": "gl_format", "file2": "gl_dxgi_metal_format", "keys": "KTXglFormat,KTXmetalPixelFormat" },
+            { "rc": 0, "id": "format_comb5", "file1": "gl_dxgi_metal_format_alt1", "file2": "dxgi_format", "keys": "KTXglFormat,KTXmetalPixelFormat" },
+            { "rc": 7, "id": "format_comb6", "file1": "metal_format_alt", "file2": "gl_dxgi_metal_format_alt2", "keys": "KTXmetalPixelFormat" },
+            { "rc": 0, "id": "format_comb7", "file1": "gl_dxgi_metal_format", "file2": "gl_format_alt", "keys": "KTXglFormat,KTXdxgiFormat__,KTXmetalPixelFormat" },
+            { "rc": 7, "id": "format_comb8", "file1": "gl_dxgi_metal_format_alt2", "file2": "metal_format_alt", "keys": "KTXglFormat,KTXdxgiFormat__" },
+            { "rc": 0, "id": "swizzle1", "file1": "reference", "file2": "swizzle_rgba", "keys": "KTXwriter,KTXswizzle,KTXastcDecodeMode" },
+            { "rc": 7, "id": "swizzle2", "file1": "swizzle_rgba", "file2": "swizzle_bgra", "keys": "KTXorientation,random" },
+            { "rc": 0, "id": "swizzle3", "file1": "swizzle_bgra", "file2": "reference", "keys": "KTXswizzle,KTXorientation" },
+            { "rc": 7, "id": "orientation1", "file1": "reference", "file2": "orientation_lu", "keys": "KTXswizzle,KTXglFormat" },
+            { "rc": 0, "id": "orientation2", "file1": "orientation_lu", "file2": "orientation_rd", "keys": "KTXswizzle,KTXorientation" },
+            { "rc": 7, "id": "orientation3", "file1": "orientation_rd", "file2": "reference", "keys": "KTXwriter,KTXswizzle" },
+            { "rc": 0, "id": "swizzle_orientation1", "file1": "reference", "file2": "swizzle_rgba_orientation_lu", "keys": "KTXorientation,KTXswizzle" },
+            { "rc": 7, "id": "swizzle_orientation2", "file1": "swizzle_rgba_orientation_lu", "file2": "swizzle_rgba_orientation_rd", "keys": "KTXswizzle" },
+            { "rc": 0, "id": "swizzle_orientation3", "file1": "swizzle_rgba_orientation_rd", "file2": "swizzle_bgra_orientation_rd", "keys": "KTXswizzle" },
+            { "rc": 7, "id": "swizzle_orientation4", "file1": "swizzle_bgra_orientation_rd", "file2": "reference", "keys": "KTXorientation,KTXwriter" },
+            { "rc": 0, "id": "swizzle_orientation5", "file1": "swizzle_bgra_orientation_rd", "file2": "swizzle_rgba_orientation_lu", "keys": "KTXorientation,KTXswizzle" },
+            { "rc": 7, "id": "swizzle_orientation6", "file1": "swizzle_bgra_orientation_rd", "file2": "orientation_rd", "keys": "KTXorientation" },
+            { "rc": 0, "id": "swizzle_orientation7", "file1": "orientation_lu", "file2": "swizzle_rgba_orientation_lu", "keys": "random,KTXswizzle" },
+            { "rc": 7, "id": "swizzle_orientation8", "file1": "swizzle_rgba_orientation_lu", "file2": "swizzle_rgba", "keys": "KTXswizzle,random" },
+            { "rc": 0, "id": "swizzle_orientation9", "file1": "swizzle_rgba", "file2": "swizzle_bgra_orientation_rd", "keys": "KTXswizzle,random,KTXorientation" }
+        ]
+    }
+}

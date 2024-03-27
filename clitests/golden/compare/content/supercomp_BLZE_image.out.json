@@ -1,0 +1,174 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        true
+    ],
+    "messages": [
+        [],
+        []
+    ],
+    "image": {
+        "m=0,a=0,f=3": [
+            {
+                "coordinates": [ 2, 0, 0 ],
+                "imageByteOffset": [ 8, 8 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x00", "0x00", "0x00", "0x00" ],
+                    [ "0x00", "0x00", "0x00", "0x84" ]
+                ],
+                "channels": [
+                    [ 0, 0, 0, 0 ],
+                    [ 0, 0, 0, 132 ]
+                ]
+            }
+        ],
+        "m=0,a=0,f=4": [
+            {
+                "coordinates": [ 0, 0, 0 ],
+                "imageByteOffset": [ 0, 0 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x00", "0x00", "0x00", "0x00" ],
+                    [ "0x39", "0x42", "0x52", "0xcd" ]
+                ],
+                "channels": [
+                    [ 0, 0, 0, 0 ],
+                    [ 57, 66, 82, 205 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 0, 0 ],
+                "imageByteOffset": [ 4, 4 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x00", "0x00", "0x00", "0x00" ],
+                    [ "0x00", "0x00", "0x09", "0x00" ]
+                ],
+                "channels": [
+                    [ 0, 0, 0, 0 ],
+                    [ 0, 0, 9, 0 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 0, 0 ],
+                "imageByteOffset": [ 8, 8 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x00", "0x00", "0x00", "0x00" ],
+                    [ "0x00", "0x00", "0x09", "0x00" ]
+                ],
+                "channels": [
+                    [ 0, 0, 0, 0 ],
+                    [ 0, 0, 9, 0 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 3, 0, 0 ],
+                "imageByteOffset": [ 12, 12 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x00", "0x00", "0x00", "0x00" ],
+                    [ "0x00", "0x00", "0x09", "0x00" ]
+                ],
+                "channels": [
+                    [ 0, 0, 0, 0 ],
+                    [ 0, 0, 9, 0 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 1, 0 ],
+                "imageByteOffset": [ 64, 64 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x42", "0x42", "0x42", "0x42" ],
+                    [ "0x39", "0x42", "0x52", "0x42" ]
+                ],
+                "channels": [
+                    [ 66, 66, 66, 66 ],
+                    [ 57, 66, 82, 66 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 1, 1, 0 ],
+                "imageByteOffset": [ 68, 68 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x42", "0x42", "0x42", "0x42" ],
+                    [ "0x39", "0x42", "0x52", "0x42" ]
+                ],
+                "channels": [
+                    [ 66, 66, 66, 66 ],
+                    [ 57, 66, 82, 66 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 2, 1, 0 ],
+                "imageByteOffset": [ 72, 72 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x42", "0x42", "0x42", "0x42" ],
+                    [ "0x39", "0x42", "0x52", "0x42" ]
+                ],
+                "channels": [
+                    [ 66, 66, 66, 66 ],
+                    [ 57, 66, 82, 66 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 3, 1, 0 ],
+                "imageByteOffset": [ 76, 76 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x42", "0x42", "0x42", "0x42" ],
+                    [ "0x39", "0x42", "0x52", "0x42" ]
+                ],
+                "channels": [
+                    [ 66, 66, 66, 66 ],
+                    [ 57, 66, 82, 66 ]
+                ]
+            }, 
+            {
+                "coordinates": [ 0, 2, 0 ],
+                "imageByteOffset": [ 128, 128 ],
+                "fileByteOffset": [ null, null ],
+                "packed": [
+                    [ "0x84", "0x84", "0x84", "0x84" ],
+                    [ "0x7b", "0x84", "0x94", "0x84" ]
+                ],
+                "channels": [
+                    [ 132, 132, 132, 132 ],
+                    [ 123, 132, 148, 132 ]
+                ]
+            }
+        ],
+        "m=0,a=1,f=0": [],
+        "m=0,a=1,f=3": [],
+        "m=1,a=1,f=5": [],
+        "m=2,a=0,f=0": [],
+        "m=2,a=0,f=1": [],
+        "m=2,a=0,f=2": [],
+        "m=2,a=0,f=3": [],
+        "m=2,a=0,f=4": [],
+        "m=2,a=0,f=5": [],
+        "m=2,a=1,f=0": [],
+        "m=2,a=1,f=1": [],
+        "m=2,a=1,f=2": [],
+        "m=2,a=1,f=3": [],
+        "m=2,a=1,f=4": [],
+        "m=2,a=1,f=5": [],
+        "m=4,a=0,f=0": [],
+        "m=4,a=0,f=1": [],
+        "m=4,a=0,f=2": [],
+        "m=4,a=0,f=3": [],
+        "m=4,a=0,f=4": [],
+        "m=4,a=0,f=5": [],
+        "m=4,a=1,f=0": [],
+        "m=4,a=1,f=1": [],
+        "m=4,a=1,f=2": [],
+        "m=4,a=1,f=3": [],
+        "m=4,a=1,f=4": [],
+        "m=4,a=1,f=5": []
+    }
+}

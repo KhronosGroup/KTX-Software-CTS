@@ -1,0 +1,34 @@
+{
+    "description": "ktx compare test with mismatching level index entries",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} input/compare/index/level_mip3_layer4.ktx2 input/compare/index/level_${subcase}.ktx2",
+    "status": 7,
+    "stdout": "golden/compare/index/level_${subcase}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore --ignore-dfd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "mip1_layer1",
+            "mip2_face6",
+            "mip4_layer6",
+            "mip5_face6",
+            "mip1_layer1_ZSTD",
+            "mip2_layer3_ZSTD",
+            "mip3_face6_ZSTD",
+            "mip4_layer2_ZSTD",
+            "mip5_layer1_ZSTD"
+        ]
+    }
+}

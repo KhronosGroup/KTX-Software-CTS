@@ -1,0 +1,38 @@
+{
+    "description": "ktx compare test with --ignore-dfd unknown",
+    "command": "ktx compare --testrun ${format[args]} ${ignore} --ignore-dfd unknown input/compare/dfd/${subcase[file1]}.ktx2 input/compare/dfd/${subcase[file2]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/compare/dfd/ignore_unknown_${subcase[id]}.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore --ignore-format-header --ignore-supercomp --ignore-index all --ignore-metadata all --ignore-sgd all" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            { "rc": 7, "id": "ref_vs_ref_ZSTD", "file1": "reference", "file2": "reference_ZSTD" },
+            { "rc": 7, "id": "ref_vs_ref_ZLIB", "file1": "reference", "file2": "reference_ZLIB" },
+            { "rc": 0, "id": "ref_ZSTD_vs_ref_ZLIB", "file1": "reference_ZSTD", "file2": "reference_ZLIB" },
+            { "rc": 7, "id": "additional_bdfd1", "file1": "reference", "file2": "additional_bdfd" },
+            { "rc": 7, "id": "additional_bdfd2", "file1": "additional_bdfd", "file2": "additional_bdfd_x2" },
+            { "rc": 7, "id": "diff_type_bdfd_1", "file1": "additional_bdfd", "file2": "custom_block_1" },
+            { "rc": 0, "id": "diff_type_1_2", "file1": "custom_block_1", "file2": "custom_block_2" },
+            { "rc": 7, "id": "diff_type_2_bdfd", "file1": "custom_block_2", "file2": "additional_bdfd" },
+            { "rc": 7, "id": "diff_type_partial", "file1": "custom_block_1_plus_bdfd", "file2": "custom_block_1_2" },
+            { "rc": 7, "id": "diff_number1", "file1": "additional_bdfd", "file2": "custom_block_1_2" },
+            { "rc": 7, "id": "diff_number2", "file1": "custom_block_1_2_plus_bdfd", "file2": "custom_block_2" },
+            { "rc": 7, "id": "diff_number3", "file1": "additional_bdfd_x2", "file2": "custom_block_1_2_plus_bdfd" },
+            { "rc": 0, "id": "diff_order", "file1": "custom_block_1_2", "file2": "custom_block_2_1" }
+        ]
+    }
+}

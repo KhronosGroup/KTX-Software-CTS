@@ -1,0 +1,69 @@
+Validation failed for 'input/validate/6107/error_InvalidUpper_UASTC_Sample0_42.ktx2'
+
+error-6107: Invalid sample upper for UASTC or BasisLZ/ETC1S texture in the basic DFD block.
+    DFD block #1 sample #1 upper in basic DFD block is 42 but for UASTC textures it must be UINT32_MAX (0xFFFFFFFF).
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
+Header
+
+-vkFormat: VK_FORMAT_R8G8B8A8_UNORM
++vkFormat: VK_FORMAT_UNDEFINED
+-pixelWidth: 8
++pixelWidth: 16
+-pixelHeight: 8
++pixelHeight: 16
+-dataFormatDescriptor.byteLength: 92
++dataFormatDescriptor.byteLength: 44
+-keyValueData.byteOffset: 0xc4
++keyValueData.byteOffset: 0x94
+
+Level Index
+
+-Level0.byteOffset: 0xf0
++Level0.byteOffset: 0xc0
+
+Data Format Descriptor
+
+-DFD total bytes: 92
++DFD total bytes: 44
+-Descriptor block size: 88
++Descriptor block size: 40
+-Model: KHR_DF_MODEL_RGBSDA
++Model: KHR_DF_MODEL_UASTC
+-Dimensions: 0, 0, 0, 0
++Dimensions: 3, 3, 0, 0
+-Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
+
+Sample 0:
+-    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
++    Channel Type: 0x3 (KHR_DF_CHANNEL_UASTC_RGBA)
+-    Length: 8 bits Offset: 0
++    Length: 128 bits Offset: 0
+-    Upper: 0x000000ff
++    Upper: 0x0000002a
+
+Sample 1:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+-    Length: 8 bits Offset: 8
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 2:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Length: 8 bits Offset: 16
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff
+
+Sample 3:
+-    Qualifiers: 0x0 ()
+-    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+-    Length: 8 bits Offset: 24
+-    Position: 0, 0, 0, 0
+-    Lower: 0x00000000
+-    Upper: 0x000000ff

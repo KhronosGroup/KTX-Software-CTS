@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "valid": [
+        true,
+        false
+    ],
+    "messages": [
+        [],
+        [
+            {
+                "id": 6101,
+                "type": "error",
+                "message": "Invalid sample channelType for colorModel in the basic DFD block.",
+                "details": "DFD block #1 sample #4 channelType in basic DFD block is (0x8) which is not valid for colorModel KHR_DF_MODEL_RGBSDA."
+            },
+            {
+                "id": 6028,
+                "type": "error",
+                "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
+                "details": "DFD block #1 sample #4 channelType in basic DFD block is (0x8) but the expected value is KHR_DF_CHANNEL_RGBSDA_ALPHA for VK_FORMAT_R8G8B8A8_UNORM."
+            }
+        ]
+    ],
+    "info": {
+        "/header/pixelWidth": [
+            8,
+            16
+        ],
+        "/header/pixelHeight": [
+            8,
+            16
+        ],
+        "/index/levels/0/byteLength": [
+            256,
+            1024
+        ],
+        "/index/levels/0/uncompressedByteLength": [
+            256,
+            1024
+        ],
+        "/dataFormatDescriptor/blocks/0/samples/3/channelType": [
+            "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+            8
+        ]
+    }
+}

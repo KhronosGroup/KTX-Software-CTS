@@ -15,6 +15,7 @@ Available commands:
   transcode  Transcode a KTX2 file
   info       Print information about a KTX2 file
   validate   Validate a KTX2 file
+  compare    Compare two KTX2 files
   help       Display help information about the ktx tool
 
 For detailed usage and description of each subcommand use 'ktx help <command>'

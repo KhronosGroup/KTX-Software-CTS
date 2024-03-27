@@ -1,0 +1,10 @@
+Key/Value Data
+
+-KTXanimData:
+-    duration: 5
+-    timescale: 30
+-    loopCount: 0
++KTXanimData:
++    duration: 1
++    timescale: 30
++    loopCount: 1

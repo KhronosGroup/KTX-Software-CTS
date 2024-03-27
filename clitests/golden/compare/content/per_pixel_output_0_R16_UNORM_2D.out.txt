@@ -1,0 +1,9 @@
+Image Data
+
++Mismatch in level 0 layer 0 face 0
++Mismatch in level 0 layer 0 face 3
++Mismatch in level 0 layer 0 face 4
++Mismatch in level 0 layer 1 face 0
++Mismatch in level 0 layer 1 face 3
++Mismatch in level 1 layer 1 face 5
++Mismatch in level 2 layer 0 face 4

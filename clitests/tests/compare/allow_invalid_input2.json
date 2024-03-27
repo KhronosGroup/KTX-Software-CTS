@@ -1,0 +1,42 @@
+{
+    "description": "ktx compare tests on invalid files when allowing them",
+    "command": "ktx compare --testrun ${format[args]} --allow-invalid-input ${ignore} input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2 input/${subcase}.ktx2",
+    "status": 7,
+    "stdout": "golden/compare/allow_invalid_input/${subcase}.2.out.${format[ext]}",
+    "args": {
+        "ignore": [ "--content ignore" ],
+        "format": [
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "validate/3005/error_TypeSizeNotOne_UASTC",
+            "validate/3015/error_InvalidFaceCount_2",
+            "validate/3027/error_IndexSGDNotApplicable_ZLIB",
+            "validate/3028/error_IndexDFDInvalidLength_96",
+            "validate/4008/error_UncompressedByteLengthMismatch_larger",
+            "validate/4010/error_InvalidUncompressedLength_RGBA8_UASTC_L3_Array7",
+            "validate/5006/error_DecompressChecksumError",
+            "validate/6012/error_BasicInvalidTransferFunction_ACESCCT",
+            "validate/6016/error_IncorrectModelForBlock_ASTC_8x6_SFLOAT_BLOCK",
+            "validate/6027/error_ZeroSamples_Unknown_0Sample",
+            "validate/6028/error_FormatMismatch_E5B9G9R9_UFLOAT_PACK32",
+            "validate/6101/error_InvalidChannelForModel_RGBSDA_Sample3_ChannelType08",
+            "validate/6107/error_InvalidUpper_UASTC_Sample0_42",
+            "validate/7013/error_DuplicateKey",
+            "validate/7129/error_KTXanimDataNotArray_3D",
+            "validate/7132/error_KTXastcDecodeModeInvalidValue_unorm",
+            "validate/8108/error_BLZEInvalidAlphaSlice_RGBA_L3_0"
+        ]
+    }
+}

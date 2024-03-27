@@ -254,6 +254,7 @@ set(CASELIST
     tests/create/colorspaces_error_png_primaries_mismatch.json
     tests/create/colorspaces_error_png_transfer_mismatch.json
     tests/create/colorspaces_error_png_unknown_icc.json
+    tests/create/colorspaces_error_linear_oetf.json
     tests/create/colorspaces_error_srgb_oetf.json
     tests/create/colorspaces_error_unknown_icc.json
     tests/create/colorspaces_error_assign_primaries_none_convert_primaries.json
@@ -333,6 +334,55 @@ set(CASELIST
     tests/transcode/transcode_uastc.json
     tests/transcode/transcode_zlib.json
     tests/transcode/transcode_zstd.json
+
+    tests/compare/help.json
+    tests/compare/cli_errors.json
+    tests/compare/invalid_file1.json
+    tests/compare/invalid_file2.json
+    tests/compare/invalid_file_both.json
+    tests/compare/unicode_filenames.json
+    tests/compare/allow_invalid_input1.json
+    tests/compare/allow_invalid_input2.json
+    tests/compare/allow_invalid_input_both.json
+    tests/compare/allow_invalid_input_positive.json
+    tests/compare/header_identifier.json
+    tests/compare/header_format.json
+    tests/compare/header_dimensions.json
+    tests/compare/header_supercompression.json
+    tests/compare/ignore_format_header.json
+    tests/compare/ignore_supercompression.json
+    tests/compare/index_dfd.json
+    tests/compare/index_kvd.json
+    tests/compare/index_sgd.json
+    tests/compare/level_index.json
+    tests/compare/ignore_index_all.json
+    tests/compare/ignore_index_level.json
+    tests/compare/ignore_index_none.json
+    tests/compare/ignore_dfd_all.json
+    tests/compare/ignore_dfd_all_except_color_space.json
+    tests/compare/ignore_dfd_unknown.json
+    tests/compare/ignore_dfd_extended.json
+    tests/compare/ignore_dfd_none.json
+    tests/compare/ignore_bdfd_bytesplane.json
+    tests/compare/ignore_metadata_all.json
+    tests/compare/ignore_metadata_none.json
+    tests/compare/ignore_metadata_keys.json
+    tests/compare/ignore_sgd_all.json
+    tests/compare/ignore_sgd_unknown.json
+    tests/compare/ignore_sgd_payload.json
+    tests/compare/ignore_sgd_none.json
+
+    tests/compare/content_match_2d.json
+    tests/compare/content_match_3d.json
+    tests/compare/content_ignore_2d.json
+    tests/compare/content_ignore_3d.json
+    tests/compare/content_raw_2d.json
+    tests/compare/content_raw_3d.json
+    tests/compare/content_image_2d.json
+    tests/compare/content_image_3d.json
+    tests/compare/content_per_pixel_output_2d.json
+    tests/compare/content_per_pixel_output_3d.json
+    tests/compare/content_supercomp.json
 
     tests/help/cli_errors.json
     tests/help/help.json

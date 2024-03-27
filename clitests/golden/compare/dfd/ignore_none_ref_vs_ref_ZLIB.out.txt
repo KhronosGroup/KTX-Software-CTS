@@ -1,0 +1,4 @@
+Data Format Descriptor
+
+-Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0

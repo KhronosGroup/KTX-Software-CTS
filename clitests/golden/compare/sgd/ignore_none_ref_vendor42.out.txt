@@ -1,0 +1,6 @@
+Validation successful for 'input/compare/sgd/vendor42_payload1.ktx2'
+
+warning-3018: Using vendor supercompressionScheme. Cannot validate.
+    supercompressionScheme is Vendor or reserved scheme (0x0001002A) which falls into the reserved vendor range. Cannot validate.
+
++SGD mismatch

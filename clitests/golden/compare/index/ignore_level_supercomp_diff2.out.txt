@@ -1,0 +1,8 @@
+Header
+
+-dataFormatDescriptor.byteLength: 92
++dataFormatDescriptor.byteLength: 60
+-supercompressionGlobalData.byteOffset: 0x0
++supercompressionGlobalData.byteOffset: 0xa8
+-supercompressionGlobalData.byteLength: 0
++supercompressionGlobalData.byteLength: 138
