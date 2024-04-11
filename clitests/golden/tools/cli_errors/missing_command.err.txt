@@ -1,7 +1,7 @@
 ktx: Missing command.
 
 Usage:
-  ktx [--version] [--help] <command> <command-args>
+  ktx [<command>] [OPTION...]
 
   -h, --help     Print this usage message and exit
   -v, --version  Print the version number of this program and exit
