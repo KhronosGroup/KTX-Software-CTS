@@ -1,1 +1,1 @@
-ktx deflate fatal: Must specify --zlib or --zstd See 'ktx deflate --help'.
+ktx deflate fatal: Must specify --zstd  or --zlib. See 'ktx deflate --help'.

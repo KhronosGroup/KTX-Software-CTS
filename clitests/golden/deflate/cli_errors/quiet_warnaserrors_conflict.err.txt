@@ -1,1 +1,1 @@
-ktx deflate fatal: Cannot specify both --quiet and --warnings-as-errors See 'ktx deflate --help'.
+ktx deflate fatal: Cannot specify both --quiet and --warnings-as-errors. See 'ktx deflate --help'.
