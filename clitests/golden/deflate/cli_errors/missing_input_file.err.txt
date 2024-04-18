@@ -1,1 +1,1 @@
-ktx deflate fatal: Could not open input file "input/ktx2/missing_file.ktx2": No such file or directory.
+ktx deflate fatal: Could not open input file "input/ktx2/missing_file.ktx2": `.+`
