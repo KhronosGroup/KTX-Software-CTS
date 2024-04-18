@@ -1,0 +1,12 @@
+{
+    "description": "Test for error when attempting to supercompress a BasisLZ encoded file.",
+    "command": "ktx deflate --testrun --${supercompression} 8 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/deflate/placeholder.ktx2",
+    "status": 3,
+    "stderr": "golden/deflate/error_blze_not_deflatable.txt",
+    "args": {
+        "supercompression": [
+            "zstd",
+            "zlib"
+        ]
+    }
+}

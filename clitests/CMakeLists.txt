@@ -384,6 +384,13 @@ set(CASELIST
     tests/compare/content_per_pixel_output_3d.json
     tests/compare/content_supercomp.json
 
+    tests/deflate/cli_errors.json
+    tests/deflate/deflate_error_blze_not_deflatable.json
+    tests/deflate/help.json
+    tests/deflate/stdin.json
+    tests/deflate/stdout.json
+    tests/deflate/unicode_filenames.json
+
     tests/help/cli_errors.json
     tests/help/help.json
 )

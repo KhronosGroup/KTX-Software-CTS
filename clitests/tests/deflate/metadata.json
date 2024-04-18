@@ -1,0 +1,45 @@
+{
+    "description": "Test metadata handling.",
+    "command": "ktx deflate --testrun --${subcase[scheme]} 5 input/deflate/metadata/${subcase[tool]}_${subcase[name]}${subcase[modifier]}.ktx2 output/deflate/metadata/output_${subcase[tool]}_${subcase[name]}_${subcase[scheme]}_5.ktx2",
+    "outputs": {
+        "output/deflate/metadata/output_${subcase[tool]}_${subcase[name]}_${subcase[scheme]}_5.ktx2": "golden/deflate/metadata/output_${subcase[tool]}_${subcase[name]}_${subcase[scheme]}_5.ktx2"
+    },
+    "status": 0,
+    "args": {
+        "subcase": [
+            { "tool": "no_writer_or_scparams", "name": "R8G8B8A8_SRGB_2D", "modifier": "", "scheme": "zlib" },
+            { "tool": "other_no_scparams", "name": "R8G8B8A8_SRGB_2D", "modifier": "", "scheme": "zlib" },
+            { "tool": "other", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZLIB_8", "scheme": "zlib" },
+            { "tool": "other", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "other", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "other", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZSTD_8", "scheme": "zlib" },
+            { "tool": "other", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "other", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZSTD_8", "scheme": "zlib" },
+            { "tool": "create", "name": "no_scparams_R8G8B8A8_SRGB_2D", "modifier": "", "scheme": "zstd" },
+            { "tool": "create", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "create", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "create", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZSTD_8", "scheme": "zlib" },
+            { "tool": "create", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "create", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZSTD_8", "scheme": "zstd" },
+            { "tool": "deflate", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "deflate", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZSTD_8", "scheme": "zlib" },
+            { "tool": "encode", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "", "scheme": "zstd" },
+            { "tool": "encode", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "encode", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZSTD_8", "scheme": "zlib" },
+            { "tool": "transcode", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "", "scheme": "zstd" },
+            { "tool": "transcode", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZLIB_8", "scheme": "zstd" },
+            { "tool": "transcode", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZSTD_8", "scheme": "zlib" },
+            { "tool": "toktx", "name": "no_scparams_R8G8B8A8_SRGB_2D", "modifier": "", "scheme": "zstd" },
+            { "tool": "toktx", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZCMP", "scheme": "zstd" },
+            { "tool": "toktx", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZCMP_8", "scheme": "zstd" },
+            { "tool": "toktx", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZCMP", "scheme": "zstd" },
+            { "tool": "toktx", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZCMP_8", "scheme": "zstd" },
+            { "tool": "toktx", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZCMP_8", "scheme": "zstd" },
+            { "tool": "ktxsc", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZCMP", "scheme": "zstd" },
+            { "tool": "ktxsc", "name": "R8G8B8A8_SRGB_2D", "modifier": "_ZCMP_8", "scheme": "zstd" },
+            { "tool": "ktxsc", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZCMP", "scheme": "zstd" },
+            { "tool": "ktxsc", "name": "R8G8B8A8_SRGB_2D_UASTC_2_RDO", "modifier": "_ZCMP_8", "scheme": "zstd" },
+            { "tool": "ktxsc", "name": "ASTC_4x4_SRGB_BLOCK_2D", "modifier": "_ZCMP_8", "scheme": "zstd"  }
+        ]
+    }
+}
