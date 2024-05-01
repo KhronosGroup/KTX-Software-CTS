@@ -111,8 +111,8 @@ The general CTS workflow should be:
 
 #### Golden Regex in Text Output References
 
-Golden text output references (reference `stdout` and `stderr` files) support regular expressions which can be specified between `` markers.
-Portions of the text output between `` marks will be matched as regular expressions against the actual outputs. This can be useful for system specific error messages,  multi-use golden files, or for accepting some non-deterministic value.
+Golden text output references (reference `stdout` and `stderr` files) support regular expressions which can be specified between \`\` markers.
+Portions of the text output between \`\` marks will be matched as regular expressions against the actual outputs. This can be useful for system specific error messages,  multi-use golden files, or for accepting some non-deterministic value.
 For example the following stderr file could be used as golden file for every platform and system language:
 ```
 Could not open input file "input/file/path": `.+`
