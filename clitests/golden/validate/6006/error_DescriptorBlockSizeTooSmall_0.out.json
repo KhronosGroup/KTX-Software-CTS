@@ -7,12 +7,6 @@
             "type": "error",
             "message": "DFD block descriptorBlockSize is too small.",
             "details": "DFD block #2 descriptorBlockSize is 0 but has to be at least 8 bytes."
-        },
-        {
-            "id": 5004,
-            "type": "warning",
-            "message": "Non-conformant texture file accepted by libktx.",
-            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ]
 }

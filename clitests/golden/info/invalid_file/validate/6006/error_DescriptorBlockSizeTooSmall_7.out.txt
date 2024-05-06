@@ -2,8 +2,6 @@ Validation failed
 
 error-6006: DFD block descriptorBlockSize is too small.
     DFD block #2 descriptorBlockSize is 7 but has to be at least 8 bytes.
-warning-5004: Non-conformant texture file accepted by libktx.
-    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
 
 Header
 
