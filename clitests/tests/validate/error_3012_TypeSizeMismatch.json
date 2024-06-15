@@ -117,7 +117,7 @@
             "B12X4G12X4R12X4G12X4_422_UNORM_4PACK16",
             "G16B16G16R16_422_UNORM",
             "B16G16R16G16_422_UNORM",
-            "R16G16_S10_NV"
+            "R16G16_SFIXED5_NV"
         ]
     }
 }
