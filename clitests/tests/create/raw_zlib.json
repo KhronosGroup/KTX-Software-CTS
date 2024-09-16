@@ -2,7 +2,7 @@
     "description": "Test creation of ZLIB compressed textures.",
     "command": "ktx create --testrun ${level[flag]} --raw --format ${subcase} --width 8 --height 8 --levels 1 input/raw/raw_${subcase}_2D_8x8.raw output/create/raw_zlib/output_${subcase}_2D_ZLIB${level[name]}.ktx2",
     "status": 0,
-    "comment": "On MacOS zlib yields a slightly different compression result, but color values should not differ",
+    "comment": "On arm64 zlib yields a slightly different compression result, but color values should not differ",
     "outputTolerance": 0.001,
     "outputs": {
         "output/create/raw_zlib/output_${subcase}_2D_ZLIB${level[name]}.ktx2": "golden/create/raw_zlib/output_${subcase}_2D_ZLIB${level[name]}.ktx2"

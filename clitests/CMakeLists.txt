@@ -411,7 +411,9 @@ if(NOT DEFINED KTX_DIFF_PATH)
     message(FATAL_ERROR "KTX_DIFF_PATH not defined")
 endif()
 
-if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+# Even with gcc, zlib yields a slightly different compression
+# result on arm64. Yet to be investigated.
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CPU_ARCHITECTURE STREQUAL x86_64)
     set(CLITEST_ARGS "--primary")
 else()
     set(CLITEST_ARGS "")

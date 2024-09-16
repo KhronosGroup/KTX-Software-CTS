@@ -386,7 +386,8 @@ if __name__ == '__main__':
             messages.extend(["      " + msg for msg in subcase_messages])
             messages.append(f"      Run subcase with:")
             ktxdiff_arg = f" -d \"{cli_args.ktxdiff_path}\"" if cli_args.ktxdiff_path else ""
-            messages.append(f"        clitest.py -e \"{cli_args.executable_path}\"{ktxdiff_arg} {cli_args.json_test_file} {ctx.cmdArgs()}")
+            primary_arg = f" --primary" if cli_args.primary else ""
+            messages.append(f"        clitest.py{primary_arg} -e \"{cli_args.executable_path}\"{ktxdiff_arg} {cli_args.json_test_file} {ctx.cmdArgs()}")
             subcases_failed += 1
             failed = True
 
