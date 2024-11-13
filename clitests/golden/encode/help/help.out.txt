@@ -4,6 +4,12 @@ ktx encode: Encode the KTX file specified as the input-file argument,
 Usage:
   ktx encode [OPTION...] <input-file> <output-file>
 
+      --format <enum>   KTX format enum that specifies the KTX file output format. The enum names 
+                        are matching the VkFormats without the VK_FORMAT_ prefix. The VK_FORMAT_ 
+                        prefix is ignored if present.
+                        It can't be used with --codec and is only valid for ASTC encoding.
+                        The format must be an ASTC format. When specified the ASTC encoder specific 
+                        options becomes valid. Case insensitive.
       --codec <target>  Target codec. With each encoding option the encoder specific options become 
                         valid, otherwise they are ignored. Case-insensitive.
                         Possible options are: basis-lz | uastc
@@ -26,6 +32,25 @@ Usage:
   -v, --version         Print the version number of this program and exit
       --testrun         Indicates test run. If enabled the tool will produce deterministic output 
                         whenever possible
+
+ Encode ASTC options:
+      --astc-quality <level>  The quality level configures the quality-performance tradeoff for the 
+                              compressor; more complete searches of the search space improve image 
+                              quality at the expense of compression time. Default is 'medium'. The 
+                              quality level can be set between fastest (0) and exhaustive (100) via 
+                              the following fixed quality presets:
+
+                                  Level      |  Quality
+                                  ---------- | -----------------------------
+                                  fastest    | (equivalent to quality =   0)
+                                  fast       | (equivalent to quality =  10)
+                                  medium     | (equivalent to quality =  60)
+                                  thorough   | (equivalent to quality =  98)
+                                  exhaustive | (equivalent to quality = 100)
+      --astc-perceptual       The codec should optimize for perceptual error, instead of direct RMS 
+                              error. This aims to improve perceived image quality, but typically 
+                              lowers the measured PSNR score. Perceptual methods are currently only 
+                              available for normal maps and RGB color data.
 
  Encode BasisLZ options:
       --clevel <level>          BasisLZ compression level, an encoding speed vs. quality level 
