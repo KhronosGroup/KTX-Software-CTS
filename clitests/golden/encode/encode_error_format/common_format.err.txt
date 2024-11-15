@@ -1,0 +1,1 @@
+ktx encode fatal: Optional option 'format' is not an ASTC format. See 'ktx encode --help'.
