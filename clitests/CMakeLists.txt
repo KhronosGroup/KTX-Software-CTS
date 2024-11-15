@@ -315,6 +315,7 @@ set(CASELIST
     tests/encode/encode_error_invalid.json
     tests/encode/encode_error_normal_mode.json
     tests/encode/encode_error_too_many_filenames.json
+    tests/encode/encode_astc.json
     tests/encode/encode_uastc.json
     tests/encode/encode_uastc_params.json
     tests/encode/help.json
