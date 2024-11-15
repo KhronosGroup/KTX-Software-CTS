@@ -10,6 +10,7 @@
             { "id": "invalid_codec_astc", "args": "--codec astc" },
             { "id": "invalid_codec_zstd", "args": "--codec zstd" },
             { "id": "invalid_codec_zlib", "args": "--codec zlib" },
+            { "id": "codec_format", "args": "--codec uastc --format ASTC_4x4_UNORM_BLOCK" },
             { "id": "invalid_codec_basisu", "args": "--codec basisu" }
         ]
     }
