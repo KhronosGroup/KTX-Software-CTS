@@ -1,0 +1,24 @@
+{
+    "description": "Test encode with various ASTC encoding parameter combinations.",
+    "command": "ktx encode --testrun ${select[args]} output/encode/astc_params/output_${select[id]}.ktx2",
+    "status": 0,
+    "outputTolerance": 0.08,
+    "outputs": {
+        "output/encode/astc_params/output_${select[id]}.ktx2": "golden/encode/astc_params/output_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "fastest_only",           "args": "--format ASTC_4x4_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality fastest" },
+            { "id": "fast_only",              "args": "--format ASTC_4x4_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality fast" },
+            { "id": "medium_only",            "args": "--format ASTC_4x4_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality medium" },
+            { "id": "thorough_only",          "args": "--format ASTC_4x4_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality thorough" },
+            { "id": "exhaustive_only",        "args": "--format ASTC_4x4_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality exhaustive" },
+            { "id": "fastest_perceptual",     "args": "--format ASTC_8x8_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality fastest    --astc-perceptual" },
+            { "id": "fast_perceptual",        "args": "--format ASTC_8x8_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality fast       --astc-perceptual" },
+            { "id": "medium_perceptual",      "args": "--format ASTC_8x8_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality medium     --astc-perceptual" },
+            { "id": "thorough_perceptual",    "args": "--format ASTC_8x8_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality thorough   --astc-perceptual" },
+            { "id": "exhaustive_perceptual",  "args": "--format ASTC_8x8_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-quality exhaustive --astc-perceptual" },
+            { "id": "perceptual_only",        "args": "--format ASTC_4x4_UNORM_BLOCK input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 --astc-perceptual" }
+        ]
+    }
+}
