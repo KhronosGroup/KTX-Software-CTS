@@ -1,6 +1,6 @@
 {
     "description": "Test default behavior of ASTC encoding.",
-    "command": "ktx encode --testrun --threads 1 --format ${subcase} input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 output/encode/encode_astc/output_${subcase}.ktx2",
+    "command": "ktx encode --testrun --threads 1 --format ${subcase} input/ktx2/valid_known_R8G8B8_UNORM_2D.ktx2 output/encode/encode_astc/output_${subcase}.ktx2",
     "status": 0,
     "outputs": {
         "output/encode/encode_astc/output_${subcase}.ktx2": "golden/encode/encode_astc/output_${subcase}.ktx2"

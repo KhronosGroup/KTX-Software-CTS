@@ -1,6 +1,6 @@
 {
     "description": "Test encode command with unsupported formats.",
-    "command": "ktx encode --testrun --threads 1 --format ${format} input/ktx2/valid_R8G8B8_UNORM_PACK32_2D.ktx2 output/encode/encode_error_format/output_${format}.ktx2",
+    "command": "ktx encode --testrun --threads 1 --format ${format} input/ktx2/valid_known_R8G8B8_UNORM_2D.ktx2 output/encode/encode_error_format/output_${format}.ktx2",
     "status": 1,
     "stderr": "golden/encode/encode_error_format/common_format.err.txt",
     "args": {
