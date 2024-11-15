@@ -1,0 +1,1 @@
+ktx encode fatal: Format and codec can't be both specified together. See 'ktx encode --help'.
