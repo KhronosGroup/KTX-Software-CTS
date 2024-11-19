@@ -8,15 +8,15 @@ Usage:
                         are matching the VkFormats without the VK_FORMAT_ prefix. The VK_FORMAT_ 
                         prefix is ignored if present.
                         It can't be used with --codec.
-                        The format must be an ASTC format. When specified the ASTC encoder specific 
+                        The value must be an ASTC format. When specified the ASTC encoder specific 
                         options becomes valid. Case insensitive.
       --codec <target>  Target codec. With each encoding option the encoder specific options become 
                         valid, otherwise they are ignored. Case-insensitive.
                         Possible options are: basis-lz | uastc
       --compare-ssim    Calculate encoding structural similarity index measure (SSIM) and print it 
-                        to stdout. Requires Basis-LZ or UASTC encoding.
+                        to stdout. Requires Basis-LZ, UASTC or ASTC encoding.
       --compare-psnr    Calculate encoding peak signal-to-noise ratio (PSNR) and print it to 
-                        stdout. Requires Basis-LZ or UASTC encoding.
+                        stdout. Requires Basis-LZ, UASTC or ASTC encoding.
       --zstd <level>    Supercompress the data with Zstandard. Cannot be used with ETC1S / BasisLZ 
                         format. Level range is [1,22]. Lower levels give faster but worse 
                         compression. Values above 20 should be used with caution as they require 
