@@ -1,0 +1,1 @@
+ktx encode fatal: Encoding from ASTC format VK_FORMAT`(_\w+)+` to another ASTC format VK_FORMAT`(_\w+)+` is not supported. See 'ktx encode --help'.
