@@ -16,7 +16,8 @@
             { "outputTolerance": false, "id": "uastc_zlib", "flag": "--codec uastc --zlib 5"},
             { "outputTolerance": 0.08, "id": "blze_0", "flag": "--codec basis-lz"},
             { "outputTolerance": 0.08, "id": "blze_1", "flag": "--codec basis-lz --clevel 2 --qlevel 16 --no-sse"},
-            { "outputTolerance": 0.08, "id": "blze_2", "flag": "--codec basis-lz --clevel 1 --qlevel 200"}
+            { "outputTolerance": 0.08, "id": "blze_2", "flag": "--codec basis-lz --clevel 1 --qlevel 200"},
+            { "outputTolerance": false, "id": "astc_0", "flag": "--format ASTC_4x4_UNORM_BLOCK"}
         ],
         "compare": [
             { "id": "ssim", "flag": "--compare-ssim" },

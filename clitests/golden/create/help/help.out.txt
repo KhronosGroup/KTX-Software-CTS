@@ -76,9 +76,9 @@ Usage:
       --warn-on-color-conversions
                                 Generates a warning if any of the input images are color converted.
       --compare-ssim            Calculate encoding structural similarity index measure (SSIM) and 
-                                print it to stdout. Requires Basis-LZ or UASTC encoding.
+                                print it to stdout. Requires Basis-LZ, UASTC or ASTC encoding.
       --compare-psnr            Calculate encoding peak signal-to-noise ratio (PSNR) and print it 
-                                to stdout. Requires Basis-LZ or UASTC encoding.
+                                to stdout. Requires Basis-LZ, UASTC or ASTC encoding.
       --zstd <level>            Supercompress the data with Zstandard. Cannot be used with ETC1S / 
                                 BasisLZ format. Level range is [1,22]. Lower levels give faster but 
                                 worse compression. Values above 20 should be used with caution as 

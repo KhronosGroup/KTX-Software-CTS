@@ -318,6 +318,7 @@ set(CASELIST
     tests/encode/encode_astc.json
     tests/encode/encode_astc_params.json
     tests/encode/encode_astc_bad_format.json
+    tests/encode/encode_astc_bad_astc_format.json
     tests/encode/encode_uastc.json
     tests/encode/encode_uastc_params.json
     tests/encode/help.json
