@@ -1,2 +1,2 @@
 Overall:
-    SSIM Avg R: +0.999568, G: +0.999290
+    SSIM Avg R: +0.999653, G: +0.999112
