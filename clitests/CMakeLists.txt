@@ -278,6 +278,7 @@ set(CASELIST
     tests/create/help.json
     tests/create/image_slices.json
     tests/create/input_swizzle.json
+    tests/create/line_order_exr.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
     tests/create/raw_1d_array_mip.json

@@ -1,0 +1,15 @@
+{
+    "description": "Test create handles EXR line order correctly.",
+    "command": "ktx create --testrun --format ${subcase[format]} input/exr/line_order_${subcase[file]}${subcase[ext]} output/create/line_order_exr/${subcase[file]}.ktx2",
+    "status": 0,
+    "comment": "This minimal test is really testing the EXR loader not create.",
+    "outputs": {
+        "output/create/line_order_exr/${subcase[file]}.ktx2": "golden/create/line_order_exr/${subcase[file]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "format": "R16_SFLOAT", "file": "decreasing", "ext": ".exr" },
+            { "format": "R16_SFLOAT", "file": "increasing", "ext": ".exr" }
+        ]
+    }
+}
