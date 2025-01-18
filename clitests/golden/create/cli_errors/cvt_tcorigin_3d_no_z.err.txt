@@ -1,0 +1,1 @@
+ktx create fatal: Z origin must be specified in --convert-texcoord-origin argument for a 3D texture. See 'ktx create --help'.

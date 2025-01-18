@@ -1,0 +1,1 @@
+ktx create fatal: Option convert-texcoord-origin cannot be used with --raw. See 'ktx create --help'.

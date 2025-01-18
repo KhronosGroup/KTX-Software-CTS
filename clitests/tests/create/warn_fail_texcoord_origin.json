@@ -1,0 +1,19 @@
+{
+    "description": "Test --{fail,warn}-on-origin-change.",
+    "command": "ktx create --testrun --zstd 8 --format ${subcase[format]} ${type[args]} input/${subcase[dir]}/${subcase[file]}${subcase[ext]} output/create/warn_fail_texcoord_origin/output_${subcase[format]}.ktx2",
+    "status": "${type[rc]}",
+    "stderr": "${type[stderr]}",
+    "args": {
+        "type": [
+          { "rc": 3, "id": "fail_conversion", "args": "--fail-on-origin-changes --convert-texcoord-origin bottom-left", "stderr": "golden/create/warn-fail-texcoord-origin/conversion.err.txt" },
+          { "rc": 0, "id": "warn_conversion", "args": "--warn-on-origin-changes --convert-texcoord-origin bottom-left", "stderr": "golden/create/warn-fail-texcoord-origin/conversion.warn.txt" },
+          { "rc": 0, "id": "pass_conversion_1", "args": "--fail-on-origin-changes --convert-texcoord-origin top-left", "stderr": "golden/create/warn-fail-texcoord-origin/empty.err.txt" },
+          { "rc": 0, "id": "pass_conversion_2", "args": "--fail-on-origin-changes --assign-texcoord-origin top-left", "stderr": "golden/create/warn-fail-texcoord-origin/empty.err.txt" },
+          { "rc": 0, "id": "pass_conversion_3", "args": "--fail-on-origin-changes --assign-texcoord-origin bottom-left", "stderr": "golden/create/warn-fail-texcoord-origin/empty.err.txt" }
+        ],
+        "subcase": [
+            { "format": "R8G8B8A8_SRGB", "file": "test_this_way_up_sRGB_128x128", "dir": "png_sample", "ext": ".png" },
+            { "format": "R16G16B16A16_SFLOAT", "file": "test_this_way_up_RGB_HALF_128x128", "dir": "exr_sample", "ext": ".exr" }
+        ]
+    }
+}

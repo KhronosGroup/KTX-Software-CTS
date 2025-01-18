@@ -278,6 +278,7 @@ set(CASELIST
     tests/create/help.json
     tests/create/image_slices.json
     tests/create/input_swizzle.json
+    tests/create/line_order_exr.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
     tests/create/raw_1d_array_mip.json
@@ -303,7 +304,9 @@ set(CASELIST
     tests/create/sample_zstd.json
     tests/create/stdin.json
     tests/create/stdout.json
+    tests/create/texcoord_origin.json
     tests/create/unicode_filenames.json
+    tests/create/warn_fail_texcoord_origin.json
 
     tests/encode/compare.json
     tests/encode/encode_blze.json

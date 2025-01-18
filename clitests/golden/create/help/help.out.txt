@@ -53,6 +53,16 @@ Usage:
                                 Possible options are: none | bt709 | srgb | bt601-ebu | bt601-smpte 
                                 | bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
                                 adobergb.
+      --assign-texcoord-origin <origin>
+                                Force the created texture to indicate that the texture coordinate 
+                                origin s=0, t=0 is at the specified corner of the image. Case 
+                                insensitive.
+                                Possible options are top-left | bottom-left. -front | -back can be 
+                                appended and one of these is required when --depth is specified. 
+                                Must be top-left if --cubemap is specified.
+                                Absent --convert-texcoord-origin, the effect of this option is to 
+                                cause KTXorientation metadata indicating the specified origin to be 
+                                written to the output file.
       --convert-oetf <oetf>     Convert the input image(s) to the specified transfer function, if 
                                 different from the transfer function of the input file(s). If both 
                                 this and --assign-oetf are specified, conversion will be performed 
@@ -70,11 +80,27 @@ Usage:
                                 Possible options are: bt709 | srgb | bt601-ebu | bt601-smpte | 
                                 bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
                                 adobergb.
+      --convert-texcoord-origin <origin>
+                                Convert the input image(s) so the texture coordinate origin s=0, 
+                                t=0, is at the specified corner of the image. If both this and 
+                                --assign-texcoord-origin are specified, conversion will be 
+                                performed from the assigned origin to the origin specified by this 
+                                option, if different. Case insensitive.
+                                Possible options are top-left | bottom-left. -front | -back can be 
+                                appended and one of these is required when --depth is specified. 
+                                Must be top-left if --cubemap is specified.
+                                Input images whose origin does not match corner will be flipped 
+                                vertically. KTXorientation metadata indicating the specified origin 
+                                is written to the output file.
       --fail-on-color-conversions
                                 Generates an error if any of the input images would need to be 
                                 color converted.
       --warn-on-color-conversions
                                 Generates a warning if any of the input images are color converted.
+      --fail-on-origin-changes  Generates an error if any of the input images would need to have 
+                                their origin changed.
+      --warn-on-origin-changes  Generates a warning if any of the input images have their origin 
+                                changed.
       --compare-ssim            Calculate encoding structural similarity index measure (SSIM) and 
                                 print it to stdout. Requires Basis-LZ, UASTC or ASTC encoding.
       --compare-psnr            Calculate encoding peak signal-to-noise ratio (PSNR) and print it 

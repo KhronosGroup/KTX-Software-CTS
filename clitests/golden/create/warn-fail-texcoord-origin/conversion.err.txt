@@ -1,0 +1,1 @@
+ktx create fatal: Input file "`.+`" would need to be y-flipped as input and output origins are different. Use --assign-texcoord-origin and do not use --convert-texcoord-origin to avoid unwanted color conversions.

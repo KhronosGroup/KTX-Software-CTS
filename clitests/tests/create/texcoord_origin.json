@@ -1,0 +1,23 @@
+{
+    "description": "Test --{assign,convert}-texcoord-origin with sample having very obvious top.",
+    "command": "ktx create --testrun --zstd 8 --format ${subcase[format]} ${origin[args]} input/${subcase[dir]}/${subcase[file]}${subcase[ext]} output/create/texcoord_origin/output_${subcase[format]}_${origin[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/texcoord_origin/output_${subcase[format]}_${origin[id]}.ktx2": "golden/create/texcoord_origin/output_${subcase[format]}_${origin[id]}.ktx2"
+    },
+    "args": {
+        "origin": [
+          { "id": "assign_top_left", "args": "--assign-texcoord-origin top-left" },
+          { "id": "assign_bottom_left", "args": "--assign-texcoord-origin bottom-left" },
+          { "id": "convert_top_left", "args": "--convert-texcoord-origin top-left" },
+          { "id": "convert_bottom_left", "args": "--convert-texcoord-origin bottom-left" }
+        ],
+        "subcase": [
+            { "format": "R8G8B8A8_SRGB", "file": "test_this_way_up_sRGB_128x128", "dir": "png_sample", "ext": ".png" },
+            { "format": "R8G8B8_SRGB", "file": "test_this_way_up_sRGB_128x128", "dir": "png_sample", "ext": ".png" },
+            { "format": "R8G8_UNORM", "file": "test_this_way_up_sRGB_128x128", "dir": "png_sample", "ext": ".png" },
+            { "format": "R8_UNORM", "file": "test_this_way_up_sRGB_128x128", "dir": "png_sample", "ext": ".png" },
+            { "format": "R16G16B16A16_SFLOAT", "file": "test_this_way_up_RGB_HALF_128x128", "dir": "exr_sample", "ext": ".exr" }
+        ]
+    }
+}
