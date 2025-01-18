@@ -1,0 +1,1 @@
+ktx create fatal: Invalid or unsupported origin specified as --assign-texcoord-origin argument: "front-top-left". See 'ktx create --help'.
