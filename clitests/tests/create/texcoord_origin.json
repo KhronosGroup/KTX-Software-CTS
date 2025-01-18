@@ -1,5 +1,5 @@
 {
-    "description": "Test --texcoord-origin with sample having very obvious top.",
+    "description": "Test --{assign,convert}-texcoord-origin with sample having very obvious top.",
     "command": "ktx create --testrun --zstd 8 --format ${subcase[format]} ${origin[args]} input/${subcase[dir]}/${subcase[file]}${subcase[ext]} output/create/texcoord_origin/output_${subcase[format]}_${origin[id]}.ktx2",
     "status": 0,
     "outputs": {

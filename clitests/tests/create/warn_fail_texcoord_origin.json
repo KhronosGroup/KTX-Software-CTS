@@ -1,5 +1,5 @@
 {
-    "description": "Test --fail-on-origin-change.",
+    "description": "Test --{fail,warn}-on-origin-change.",
     "command": "ktx create --testrun --zstd 8 --format ${subcase[format]} ${type[args]} input/${subcase[dir]}/${subcase[file]}${subcase[ext]} output/create/warn_fail_texcoord_origin/output_${subcase[format]}.ktx2",
     "status": "${type[rc]}",
     "stderr": "${type[stderr]}",
