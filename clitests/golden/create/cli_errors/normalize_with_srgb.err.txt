@@ -1,0 +1,1 @@
+ktx create fatal: Input file "input/png/colorspace_sRGB.png" transfer function is not linear. Normalize is only available for linear images. Use --assign-oetf=linear or --convert-oetf=linear to convert to linear if required.
