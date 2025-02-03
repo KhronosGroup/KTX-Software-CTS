@@ -9,7 +9,6 @@
     },
     "args": {
         "linearize": [
-            { "flag": "", "return" : 3},
             { "flag": "--assign-oetf linear", "return" : 0}
         ],
         "subcase": [
