@@ -40,6 +40,12 @@ Usage:
                                 used with UINT or 3D textures.
       --encode <codec>          Encode the created KTX file. Case insensitive.
                                 Possible options are: basis-lz | uastc
+      --normalize               Normalize input normals to have a unit length. Only valid for
+                                linear normal textures with 2 or more components. For 2-component
+                                inputs 2D unit normals are calculated. Do not use these 2D unit
+                                normals to generate X+Y normals with --normal-mode. For 4-component
+                                inputs a 3D unit normal is calculated. 1.0 is used for the value of
+                                the 4th component. Cannot be used with --raw.
       --swizzle [rgba01]{4}     KTX swizzle metadata.
       --input-swizzle [rgba01]{4}
                                 Pre-swizzle input channels.
