@@ -1,9 +1,9 @@
 {
-    "description": "Test --convert-oetf parameter set to linear.",
-    "command": "ktx create --testrun --format R8G8B8A8_UNORM --convert-oetf linear input/png/colorspace_${subcase}.png output/create/colorspaces_convert_oetf_linear/output_${subcase}.ktx2",
+    "description": "Test --convert-tf parameter set to linear.",
+    "command": "ktx create --testrun --format R8G8B8A8_UNORM --convert-tf linear input/png/colorspace_${subcase}.png output/create/colorspaces_convert_tf_linear/output_${subcase}.ktx2",
     "status": 0,
     "outputs": {
-        "output/create/colorspaces_convert_oetf_linear/output_${subcase}.ktx2": "golden/create/colorspaces_convert_oetf_linear/output_${subcase}.ktx2"
+        "output/create/colorspaces_convert_tf_linear/output_${subcase}.ktx2": "golden/create/colorspaces_convert_tf_linear/output_${subcase}.ktx2"
     },
     "args": {
         "subcase": [

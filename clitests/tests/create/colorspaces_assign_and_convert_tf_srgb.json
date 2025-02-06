@@ -1,12 +1,12 @@
 {
-    "description": "Test --assign-oetf parameter with --convert-oetf parameter set to srgb.",
-    "command": "ktx create --testrun --format ${format} --assign-oetf ${oetf} --convert-oetf srgb input/png/colorspace_${subcase}.png output/create/colorspaces_assign_and_convert_oetf_srgb/output_${oetf}_${format}_${subcase}.ktx2",
+    "description": "Test --assign-tf parameter with --convert-tf parameter set to srgb.",
+    "command": "ktx create --testrun --format ${format} --assign-tf ${tf} --convert-tf srgb input/png/colorspace_${subcase}.png output/create/colorspaces_assign_and_convert_tf_srgb/output_${tf}_${format}_${subcase}.ktx2",
     "status": 0,
     "outputs": {
-        "output/create/colorspaces_assign_and_convert_oetf_srgb/output_${oetf}_${format}_${subcase}.ktx2": "golden/create/colorspaces_assign_and_convert_oetf_srgb/output_${oetf}_${format}.ktx2"
+        "output/create/colorspaces_assign_and_convert_tf_srgb/output_${tf}_${format}_${subcase}.ktx2": "golden/create/colorspaces_assign_and_convert_tf_srgb/output_${tf}_${format}.ktx2"
     },
     "args": {
-        "oetf": [
+        "tf": [
             "linear",
             "srgb"
         ],
