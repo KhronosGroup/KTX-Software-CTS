@@ -1,0 +1,22 @@
+{
+    "description": "Test --assign-tf parameter set to non-linear.",
+    "command": "ktx create --testrun --format ${subcase[format]} --assign-tf ${subcase[transfer]} input/${subcase[file]} output/create/colorspaces_assign_tf_nonlinear/output_${subcase[format]}_${subcase[transfer]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/colorspaces_assign_tf_nonlinear/output_${subcase[format]}_${subcase[transfer]}.ktx2": "golden/create/colorspaces_assign_tf_nonlinear/output_${subcase[format]}_${subcase[transfer]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "file": "png/colorspace_cHRM_ACEScc.png", "format": "R8G8B8A8_UNORM", "transfer": "acescc" },
+            { "file": "png/colorspace_cHRM_AdobeRGB.png", "format": "R8G8B8A8_UNORM", "transfer": "adobergb" },
+            { "file": "png/colorspace_cHRM_DisplayP3.png", "format": "R8G8B8A8_UNORM", "transfer": "dcip3" },
+            { "file": "png/colorspace_cHRM_NTSC1953.png", "format": "R8G8B8A8_UNORM", "transfer": "ntsc" },
+            { "file": "png/colorspace_cHRM_PAL525.png", "format": "R8G8B8A8_UNORM", "transfer": "pal_oetf" },
+            { "file": "exr/chromaticities_ACEScc.exr", "format": "R16G16B16A16_SFLOAT", "transfer": "acescc" },
+            { "file": "exr/chromaticities_AdobeRGB.exr", "format": "R16G16B16A16_SFLOAT", "transfer": "adobergb" },
+            { "file": "exr/chromaticities_DisplayP3.exr", "format": "R16G16B16A16_SFLOAT", "transfer": "dcip3" },
+            { "file": "exr/chromaticities_NTSC1953.exr", "format": "R16G16B16A16_SFLOAT", "transfer": "ntsc" },
+            { "file": "exr/chromaticities_PAL525.exr", "format": "R16G16B16A16_SFLOAT", "transfer": "pal_oetf" }
+        ]
+    }
+}
