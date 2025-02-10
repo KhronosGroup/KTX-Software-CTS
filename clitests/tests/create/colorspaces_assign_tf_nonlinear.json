@@ -7,6 +7,7 @@
     },
     "args": {
         "subcase": [
+            { "file": "png/colorspace_gamma_1_0.png", "format": "R8G8B8_UNORM", "transfer": "none" },
             { "file": "png/colorspace_cHRM_ACEScc.png", "format": "R8G8B8A8_UNORM", "transfer": "acescc" },
             { "file": "png/colorspace_cHRM_AdobeRGB.png", "format": "R8G8B8A8_UNORM", "transfer": "adobergb" },
             { "file": "png/colorspace_cHRM_DisplayP3.png", "format": "R8G8B8A8_UNORM", "transfer": "dcip3" },
