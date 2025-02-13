@@ -1,4 +1,4 @@
 ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/basic_RGB8_16x16.png", defaulting to KHR_DF_TRANSFER_SRGB. Use --assign-tf to override.
-ktx create warning: Input file "input/png/basic_RGB8_16x16.png" is undergoing a visual lossy color conversion from sRGB to linear. Specify an _SRGB format with --format to prevent this warning.
+ktx create warning: Input file "input/png/basic_RGB8_16x16.png" is undergoing a visual lossy color conversion from KHR_DF_TRANSFER_SRGB to KHR_DF_TRANSFER_LINEAR. Specify an _SRGB format with --format to prevent this warning.
 ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/basic_RGB8_8x8.png", defaulting to KHR_DF_TRANSFER_SRGB. Use --assign-tf to override.
 ktx create fatal: Input image "input/png/basic_RGB8_8x8.png" with size 8x8 does not match expected size 16x16 for level 0.

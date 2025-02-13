@@ -95,9 +95,8 @@ Usage:
                                 khr_df_transfer_e enumerators without the KHR_DF_TRANSFER_ prefix. 
                                 The KHR_DF_PRIMARIES_ prefix is ignored if present. Case 
                                 insensitive.
-                                Possible options are: bt709 | srgb | bt601_ebu | bt601_smpte | 
-                                bt2020 | ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | 
-                                adobergb.
+                                The options are: bt709 | srgb | bt601_ebu | bt601_smpte | bt2020 | 
+                                ciexyz | aces | acescc | ntsc1953 | pal525 | displayp3 | adobergb.
       --convert-texcoord-origin <origin>
                                 Convert the input image(s) so the texture coordinate origin s=0, 
                                 t=0, is at the specified corner of the image. If both this and 
@@ -115,6 +114,10 @@ Usage:
                                 color converted.
       --warn-on-color-conversions
                                 Generates a warning if any of the input images are color converted.
+      --no-warn-on-color-conversions
+                                Disable all warnings about color conversions including that for 
+                                visually lossy conversions. Overrides --warn-on-color-conversions 
+                                should both be specified.
       --fail-on-origin-changes  Generates an error if any of the input images would need to have 
                                 their origin changed.
       --warn-on-origin-changes  Generates a warning if any of the input images have their origin 
