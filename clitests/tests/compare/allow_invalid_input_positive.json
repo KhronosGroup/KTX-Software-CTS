@@ -25,7 +25,6 @@
             "validate/4008/error_UncompressedByteLengthMismatch_larger",
             "validate/4010/error_InvalidUncompressedLength_RGBA8_UASTC_L3_Array7",
             "validate/5006/error_DecompressChecksumError",
-            "validate/6012/error_BasicInvalidTransferFunction_ACESCCT",
             "validate/6016/error_IncorrectModelForBlock_ASTC_8x6_SFLOAT_BLOCK",
             "validate/6027/error_ZeroSamples_Unknown_0Sample",
             "validate/6028/error_FormatMismatch_E5B9G9R9_UFLOAT_PACK32",

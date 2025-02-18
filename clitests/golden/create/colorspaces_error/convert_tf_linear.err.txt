@@ -1,0 +1,2 @@
+ktx create fatal: Invalid value "linear" to --convert-tf for format "`[A-Z0-9]+`_SRGB". Transfer function must be sRGB for sRGB formats. See 'ktx create --help'.
+

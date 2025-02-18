@@ -7,8 +7,8 @@
         "primaries": [
             "bt709",
             "srgb",
-            "bt601-ebu",
-            "bt601-smpte",
+            "bt601_ebu",
+            "bt601_smpte",
             "bt2020",
             "ciexyz",
             "ACES",

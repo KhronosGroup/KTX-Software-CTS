@@ -7,12 +7,6 @@
             "type": "error",
             "message": "Invalid transferFunction in basic DFD block. For an sRGB VkFormat it must be KHR_DF_TRANSFER_SRGB.",
             "details": "DFD block #1 transferFunction in basic DFD block is KHR_DF_TRANSFER_LINEAR but for VkFormat VK_FORMAT_BC7_SRGB_BLOCK it must be KHR_DF_TRANSFER_SRGB."
-        },
-        {
-            "id": 5004,
-            "type": "warning",
-            "message": "Non-conformant texture file accepted by libktx.",
-            "details": "KTX 2.0 file does not conform to the specification but it is currently accepted by libktx."
         }
     ],
     "header": {

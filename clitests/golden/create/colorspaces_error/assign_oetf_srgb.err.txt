@@ -1,1 +1,0 @@
-ktx create fatal: Invalid value to --assign-oetf "srgb" for format "`[A-Z0-9]+`_UNORM". Transfer function must not be sRGB for a non-sRGB VkFormat with sRGB variant. See 'ktx create --help'.

@@ -1,5 +1,5 @@
 {
-    "description": "transferFunction must be KHR_DF_TRANSFER_SRGB or KHR_DF_TRANSFER_LINEAR",
+    "description": "transferFunction must be UNSPECIFIED(0) and ADOBERGB(18)",
     "command": "ktx validate --testrun ${format[args]} input/validate/6012/error_BasicInvalidTransferFunction_${transferFunction}.ktx2",
     "status": 3,
     "stdout": "golden/validate/6012/error_BasicInvalidTransferFunction_${transferFunction}.out.${format[ext]}",
@@ -23,23 +23,7 @@
             }
         ],
         "transferFunction": [
-            "UNSPECIFIED",
-            "ITU",
-            "NTSC",
-            "SLOG",
-            "SLOG2",
-            "BT1886",
-            "HLG_OETF",
-            "HLG_EOTF",
-            "PQ_EOTF",
-            "PQ_OETF",
-            "DCIP3",
-            "PAL_OETF",
-            "PAL625_EOTF",
-            "ST240",
-            "ACESCC",
-            "ACESCCT",
-            "ADOBERGB",
+            "0x14",
             "0xFF"
         ]
     }

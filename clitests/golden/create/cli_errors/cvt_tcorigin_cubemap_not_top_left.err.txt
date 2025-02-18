@@ -1,1 +1,1 @@
-ktx create fatal: --convert-texcoord-origin argument must be --top-left for a cubemap. See 'ktx create --help'.
+ktx create fatal: --convert-texcoord-origin argument must be top-left for a cubemap. See 'ktx create --help'.
