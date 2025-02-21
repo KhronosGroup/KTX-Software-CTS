@@ -1,0 +1,1 @@
+ktx create fatal: Invalid value "`[A-Za-z0-9_]+`" to --assign-tf for format "`[A-Z0-9]+`_UNORM". Transfer function must not be sRGB for a non-sRGB VkFormat with sRGB variant. See 'ktx create --help'.

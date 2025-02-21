@@ -7,10 +7,10 @@
     },
     "args": {
         "select": [
-            { "id": "combination_1", "args": "--format R8G8B8A8_UNORM --assign-oetf srgb --convert-oetf linear --assign-primaries bt2020 --convert-primaries adobergb" },
-            { "id": "combination_2", "args": "--format R8G8B8A8_UNORM --assign-oetf linear --convert-oetf linear --assign-primaries pal525 --convert-primaries bt709" },
-            { "id": "combination_3", "args": "--format R8G8B8A8_SRGB --assign-oetf linear --convert-oetf srgb --assign-primaries aces --convert-primaries ntsc1953" },
-            { "id": "combination_4", "args": "--format R8G8B8A8_UNORM --assign-oetf srgb --convert-oetf linear --assign-primaries bt601-ebu --convert-primaries bt601-smpte" }
+            { "id": "combination_1", "args": "--format R8G8B8A8_UNORM --assign-tf srgb --convert-tf linear --assign-primaries bt2020 --convert-primaries adobergb" },
+            { "id": "combination_2", "args": "--format R8G8B8A8_UNORM --assign-tf linear --convert-tf linear --assign-primaries pal525 --convert-primaries bt709" },
+            { "id": "combination_3", "args": "--format R8G8B8A8_SRGB --assign-tf linear --convert-tf srgb --assign-primaries aces --convert-primaries ntsc1953" },
+            { "id": "combination_4", "args": "--format R8G8B8A8_UNORM --assign-tf srgb --convert-tf linear --assign-primaries bt601_ebu --convert-primaries bt601_smpte" }
         ],
         "subcase": [
             "default",
