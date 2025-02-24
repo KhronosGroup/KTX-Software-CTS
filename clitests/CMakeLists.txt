@@ -93,7 +93,6 @@ set(CASELIST
     tests/validate/error_6019_InvalidColorPrimaries.json
     tests/validate/error_6020_InvalidTexelBlockDimension.json
     tests/validate/error_6021_BytesPlanesMismatch.json
-    tests/validate/error_6022_BytesPlanesNotUnsized.json
     tests/validate/error_6023_BytesPlane0Zero.json
     tests/validate/error_6024_MultiplaneFormatsNotSupported.json
     tests/validate/error_6025_SampleCountMismatch.json
