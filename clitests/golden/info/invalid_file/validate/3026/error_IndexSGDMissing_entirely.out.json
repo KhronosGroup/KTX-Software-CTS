@@ -57,7 +57,7 @@
                 "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
                 "colorModel": "KHR_DF_MODEL_ETC1S",
                 "texelBlockDimension": [4, 4, 1, 1],
-                "bytesPlane": [0, 0, 0, 0, 0, 0, 0, 0],
+                "bytesPlane": [8, 8, 0, 0, 0, 0, 0, 0],
                 "samples": [
                     {
                         "qualifiers": [],

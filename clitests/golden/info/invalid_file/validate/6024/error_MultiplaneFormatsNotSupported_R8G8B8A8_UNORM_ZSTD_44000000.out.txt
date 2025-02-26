@@ -1,5 +1,7 @@
 Validation failed
 
+error-6021: Invalid bytesPlanes in basic DFD block. The values do not match the expected values.
+    DFD block #1 bytesPlanes in basic DFD block are 4 4 0 0 0 0 0 0 but for VK_FORMAT_R8G8B8A8_UNORM textures these must be 4 0 0 0 0 0 0 0.
 error-6024: Invalid bytesPlanes in basic DFD block. Multiplane formats are not supported.
     DFD block #1 bytesPlanes in basic DFD block are 4 4 0 0 0 0 0 0 but bytesPlane[1-7] must be 0 as multiplane formats are not supported.
 
