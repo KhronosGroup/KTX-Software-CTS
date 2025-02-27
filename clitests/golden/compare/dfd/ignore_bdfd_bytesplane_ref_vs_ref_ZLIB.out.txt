@@ -1,0 +1,5 @@
+Validation successful for 'input/compare/dfd/reference_ZLIB.ktx2'
+
+warning-6030: Deprecated unsized bytesPlanes in basic DFD block. Since specification 2.0.4 bytesPlanes must be sized (non-zero) for supercompressed textures.
+    DFD block #1 bytesPlanes0 in basic DFD block is 0 but for KTX_SS_ZLIB supercompressed textures, since specification 2.0.4, it must be non-zero.
+
