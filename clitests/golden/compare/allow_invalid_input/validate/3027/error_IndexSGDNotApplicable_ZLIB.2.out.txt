@@ -24,9 +24,4 @@ Level Index
 +Level0.byteLength: 302
 -Level0.uncompressedByteLength: 256
 +Level0.uncompressedByteLength: 1024
-
-Data Format Descriptor
-
--Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
-+Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
 +SGD mismatch
