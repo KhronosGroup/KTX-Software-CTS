@@ -138,7 +138,7 @@
             [ 2, 2, 2, 0 ]
         ],
         "/dataFormatDescriptor/blocks/0/bytesPlane": [
-            [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+            [ 8, 8, 0, 0, 0, 0, 0, 0 ],
             [ 16, 0, 0, 0, 0, 0, 0, 0 ]
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
