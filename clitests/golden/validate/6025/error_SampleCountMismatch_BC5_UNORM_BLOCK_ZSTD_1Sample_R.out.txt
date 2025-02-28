@@ -2,5 +2,7 @@ Validation failed
 
 error-6025: Invalid sample count in basic DFD block. The sample count must match the expected sample count of the VkFormat.
     DFD block #1 sample count in basic DFD block is 1 but for VkFormat VK_FORMAT_BC5_UNORM_BLOCK it must be 2.
+error-6021: Invalid bytesPlanes in basic DFD block. The values do not match the expected values.
+    DFD block #1 bytesPlanes in basic DFD block are 8 0 0 0 0 0 0 0 but for VK_FORMAT_BC5_UNORM_BLOCK textures these must be 16 0 0 0 0 0 0 0.
 warning-5004: Non-conformant texture file accepted by libktx.
     KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
