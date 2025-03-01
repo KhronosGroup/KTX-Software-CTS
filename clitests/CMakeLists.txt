@@ -100,6 +100,7 @@ set(CASELIST
     tests/validate/error_6027_ZeroSamples.json
     tests/validate/error_6028_FormatMismatch.json
     tests/validate/warning_6029_TooManySamples.json
+    tests/validate/warning_6030_BytesPlanesUnsized.json
 
     tests/validate/error_6101_InvalidChannelForModel.json
     tests/validate/error_6102_InvalidBitOffsetForUASTC.json
