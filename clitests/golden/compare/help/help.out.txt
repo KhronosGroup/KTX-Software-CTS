@@ -72,9 +72,10 @@ Usage:
                                   extended: Ignore all DFD blocks except the basic DFD block
                                   none: Do not ignore any DFD blocks
                                  (default: none)
-      --ignore-bdfd-bytesplane  Ignore BDFD bytesPlane values. Useful when comparing 
-                                supercompressed files with non-supercompressed ones, as bytesPlane 
-                                is set to zero for supercompressed files.
+      --ignore-bdfd-bytesplane  Ignore BDFD bytesPlane values. Useful when comparing pre-spec-2.0.4 
+                                supercompressed files with 2.0.4+ supercompressed or 
+                                non-supercompressed ones, as bytesPlane is set to zero in older 
+                                supercompressed files.
       --ignore-metadata all|<key>[,...]|none
                                 Controls the comparison of metadata (KVD) entries. Possible options 
                                 are:

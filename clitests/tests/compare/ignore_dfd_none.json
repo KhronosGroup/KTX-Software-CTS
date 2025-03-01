@@ -3,6 +3,7 @@
     "command": "ktx compare --testrun ${format[args]} ${ignore} ${default} input/compare/dfd/${subcase[file1]}.ktx2 input/compare/dfd/${subcase[file2]}.ktx2",
     "status": "${subcase[rc]}",
     "stdout": "golden/compare/dfd/ignore_none_${subcase[id]}.out.${format[ext]}",
+    "comment": "reference_Z{LIB,STD} intentionally have unsized bytesPlanes to provide a difference in the DFD.",
     "args": {
         "default": [
             "--ignore-dfd none",

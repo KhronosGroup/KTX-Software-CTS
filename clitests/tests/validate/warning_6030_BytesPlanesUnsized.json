@@ -1,0 +1,51 @@
+{
+    "description": "Is warning being issued for unsized (zero) bytesPlanes fields in the DFD?",
+    "command": "ktx validate --testrun ${warnAsErr[flag]} ${format[args]} input/validate/6030/warning_BytesPlanesUnsized_${subcase}.ktx2",
+    "status": "${warnAsErr[status]}",
+    "stdout": "golden/validate/6030/${warnAsErr[outPrefix]}_BytesPlanesUnsized.out.${format[ext]}",
+    "args": {
+        "warnAsErr": [
+            {
+                "flag": "",
+                "status": 0,
+                "outPrefix": "warning"
+            },
+            {
+                "flag": "--warnings-as-errors",
+                "status": 3,
+                "outPrefix": "error"
+            }
+        ],
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "SRGB_UASTC_ZLIB",
+            "SRGB_UASTC_ZSTD",
+            "UNORM_ASTC_4x4_ZLIB",
+            "UNORM_ASTC_4x4_ZSTD",
+            "UNORM_BLZE",
+            "UNORM_UASTC_ZLIB",
+            "UNORM_UASTC_ZSTD",
+            "UNORM_ZLIB",
+            "UNORM_ZSTD"
+        ]
+    }
+}
+
+

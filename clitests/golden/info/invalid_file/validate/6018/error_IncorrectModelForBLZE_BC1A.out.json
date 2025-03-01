@@ -13,6 +13,12 @@
             "type": "error",
             "message": "Invalid sample channelType for colorModel in the basic DFD block.",
             "details": "DFD block #1 sample #2 channelType in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_BC1A."
+        },
+        {
+            "id": 6021,
+            "type": "error",
+            "message": "Invalid bytesPlanes in basic DFD block. The values do not match the expected values.",
+            "details": "DFD block #1 bytesPlanes in basic DFD block are 16 0 0 0 0 0 0 0 but for BasisLZ_ETC1S with 2 slices textures these must be 8 8 0 0 0 0 0 0."
         }
     ],
     "header": {
@@ -63,7 +69,7 @@
                 "colorPrimaries": "KHR_DF_PRIMARIES_BT709",
                 "colorModel": "KHR_DF_MODEL_BC1A",
                 "texelBlockDimension": [4, 4, 1, 1],
-                "bytesPlane": [0, 0, 0, 0, 0, 0, 0, 0],
+                "bytesPlane": [16, 0, 0, 0, 0, 0, 0, 0],
                 "samples": [
                     {
                         "qualifiers": [],
