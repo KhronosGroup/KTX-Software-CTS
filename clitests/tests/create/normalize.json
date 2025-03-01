@@ -1,0 +1,21 @@
+{
+    "description": "Test image normalize.",
+    "command": "ktx create --testrun --normalize ${linearize[flag]} --format ${subcase[format]} ${subcase[flags]} output/create/normalize/${subcase[format]}.ktx2",
+    "status": "${linearize[return]}",
+    "comment": "Tests normalize option to ktx create",
+    "outputTolerance": 1.0,
+    "outputs": {
+        "output/create/normalize/${subcase[format]}.ktx2": "golden/create/normalize/${subcase[format]}.ktx2"
+    },
+    "args": {
+        "linearize": [
+            { "flag": "--assign-oetf linear", "return" : 0}
+        ],
+        "subcase": [
+            { "format": "R8_UNORM", "flags": "input/png/basic_RGB8_16x16.png" },
+            { "format": "R8G8_UNORM", "flags": "input/png/basic_RGB8_16x16.png" },
+            { "format": "R8G8B8_UNORM", "flags": "input/png/basic_RGBA8_16x16.png" },
+            { "format": "ASTC_4x4_UNORM_BLOCK", "flags": "input/png/basic_RGBA8_16x16.png" }
+        ]
+    }
+}

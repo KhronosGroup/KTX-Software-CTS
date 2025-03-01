@@ -278,6 +278,7 @@ set(CASELIST
     tests/create/fewer_components_exr.json
     tests/create/fewer_components_png.json
     tests/create/generate_mipmap.json
+    tests/create/normalize.json
     tests/create/help.json
     tests/create/image_slices.json
     tests/create/input_swizzle.json

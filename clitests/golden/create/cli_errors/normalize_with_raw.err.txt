@@ -1,0 +1,1 @@
+ktx create fatal: Conflicting options: Option --normalize can't be used with --raw. See 'ktx create --help'.
