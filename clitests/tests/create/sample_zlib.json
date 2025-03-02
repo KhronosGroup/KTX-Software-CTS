@@ -3,7 +3,7 @@
     "command": "ktx create --testrun ${level[flag]} --format ${subcase[format]} input/png_sample/${subcase[file]}${subcase[ext]} output/create/sample_zlib/${subcase[file]}_ZLIB${level[name]}.ktx2",
     "status": 0,
     "comment": "On arm64 zlib yields a slightly different compression result, but color values should not differ",
-    "outputTolerance": 0.002,
+    "outputTolerance": 0.001,
     "outputs": {
         "output/create/sample_zlib/${subcase[file]}_ZLIB${level[name]}.ktx2": "golden/create/sample_zlib/${subcase[file]}_ZLIB${level[name]}.ktx2"
     },

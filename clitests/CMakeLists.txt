@@ -424,7 +424,7 @@ endif()
 
 # Even with gcc, zlib yields a slightly different compression
 # result on arm64. Yet to be investigated.
-if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CPU_ARCHITECTURE STREQUAL x86_64)
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CPU_ARCHITECTURE STREQUAL arm64)
     set(CLITEST_ARGS "--primary")
 else()
     set(CLITEST_ARGS "")
