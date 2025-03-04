@@ -9,6 +9,12 @@
             "details": "DFD block #1 sample count in basic DFD block is 1 but for VkFormat VK_FORMAT_R8G8B8A8_UNORM it must be 4."
         },
         {
+            "id": 6021,
+            "type": "error",
+            "message": "Invalid bytesPlanes in basic DFD block. The values do not match the expected values.",
+            "details": "DFD block #1 bytesPlanes in basic DFD block are 1 0 0 0 0 0 0 0 but for VK_FORMAT_R8G8B8A8_UNORM textures these must be 4 0 0 0 0 0 0 0."
+        },
+        {
             "id": 5004,
             "type": "warning",
             "message": "Non-conformant texture file accepted by libktx.",

@@ -6,6 +6,13 @@
     ],
     "messages": [
         [],
-        []
+        [
+            {
+                "id": 6030,
+                "type": "warning",
+                "message": "Deprecated unsized bytesPlanes in basic DFD block. Since specification 2.0.4 bytesPlanes must be sized (non-zero) for supercompressed textures.",
+                "details": "DFD block #1 bytesPlanes0 in basic DFD block is 0 but for KTX_SS_ZSTD supercompressed textures, since specification 2.0.4, it must be non-zero."
+            }
+        ]
     ]
 }

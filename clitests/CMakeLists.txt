@@ -93,7 +93,6 @@ set(CASELIST
     tests/validate/error_6019_InvalidColorPrimaries.json
     tests/validate/error_6020_InvalidTexelBlockDimension.json
     tests/validate/error_6021_BytesPlanesMismatch.json
-    tests/validate/error_6022_BytesPlanesNotUnsized.json
     tests/validate/error_6023_BytesPlane0Zero.json
     tests/validate/error_6024_MultiplaneFormatsNotSupported.json
     tests/validate/error_6025_SampleCountMismatch.json
@@ -101,6 +100,7 @@ set(CASELIST
     tests/validate/error_6027_ZeroSamples.json
     tests/validate/error_6028_FormatMismatch.json
     tests/validate/warning_6029_TooManySamples.json
+    tests/validate/warning_6030_BytesPlanesUnsized.json
 
     tests/validate/error_6101_InvalidChannelForModel.json
     tests/validate/error_6102_InvalidBitOffsetForUASTC.json
@@ -424,7 +424,7 @@ endif()
 
 # Even with gcc, zlib yields a slightly different compression
 # result on arm64. Yet to be investigated.
-if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CPU_ARCHITECTURE STREQUAL x86_64)
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CPU_ARCHITECTURE STREQUAL arm64)
     set(CLITEST_ARGS "--primary")
 else()
     set(CLITEST_ARGS "")
