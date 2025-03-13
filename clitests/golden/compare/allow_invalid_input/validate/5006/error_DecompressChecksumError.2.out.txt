@@ -36,7 +36,7 @@ Data Format Descriptor
 -Dimensions: 0, 0, 0, 0
 +Dimensions: 3, 3, 0, 0
 -Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
-+Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
 
 Sample 0:
 -    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)

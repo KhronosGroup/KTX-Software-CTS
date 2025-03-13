@@ -179,7 +179,7 @@
         ],
         "/dataFormatDescriptor/blocks/0/bytesPlane": [
             [ 4, 1, 0, 0, 0, 0, 0, 0 ],
-            [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+            [ 8, 0, 0, 0, 0, 0, 0, 0 ]
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/bitLength": [
             7,

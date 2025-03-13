@@ -35,7 +35,7 @@ Data Format Descriptor
 +Model: KHR_DF_MODEL_RGBSDA
 -Dimensions: 3, 3, 0, 0
 +Dimensions: 0, 0, 0, 0
--Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
+-Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
 +Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
 
 Sample 0:

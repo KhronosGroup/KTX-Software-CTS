@@ -2,3 +2,5 @@ Validation failed
 
 error-6018: Invalid colorModel in basic DFD block for BasisLZ supercompression.
     DFD block #1 colorModel in basic DFD block is KHR_DF_MODEL_ICTCP but for BasisLZ supercompression it must be KHR_DF_MODEL_ETC1S.
+error-6021: Invalid bytesPlanes in basic DFD block. The values do not match the expected values.
+    DFD block #1 bytesPlanes in basic DFD block are 16 0 0 0 0 0 0 0 but for BasisLZ_ETC1S with 2 slices textures these must be 8 8 0 0 0 0 0 0.

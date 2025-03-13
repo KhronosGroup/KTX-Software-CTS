@@ -77,7 +77,7 @@ Data Format Descriptor
 -Dimensions: 0, 0, 0, 0
 +Dimensions: 3, 3, 0, 0
 -Plane bytes: 4, 1, 0, 0, 0, 0, 0, 0
-+Plane bytes: 0, 0, 0, 0, 0, 0, 0, 0
++Plane bytes: 8, 0, 0, 0, 0, 0, 0, 0
 -    Length: 8 bits Offset: 0
 +    Length: 64 bits Offset: 0
 

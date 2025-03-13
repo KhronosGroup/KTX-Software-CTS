@@ -66,7 +66,7 @@
         ],
         "/dataFormatDescriptor/blocks/0/bytesPlane": [
             [ 4, 0, 0, 0, 0, 0, 0, 0 ],
-            [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+            [ 16, 0, 0, 0, 0, 0, 0, 0 ]
         ],
         "/dataFormatDescriptor/blocks/0/samples/0/channelType": [
             "KHR_DF_CHANNEL_RGBSDA_RED",
