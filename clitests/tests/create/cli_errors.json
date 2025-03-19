@@ -47,7 +47,7 @@
             { "rc": 5, "id": "generate_mipmap_uint_from_uint", "flags": "--generate-mipmap --format R32_UINT input/exr/basic_R_UINT_16x16.exr output.ktx2" },
             { "rc": 1, "id": "generate_mipmap_3d", "flags": "--generate-mipmap --depth 2 --format R8_UNORM input/png/basic_RGB8_16x16.png input/png/basic_RGB8_16x16.png output.ktx2" },
             { "rc": 0, "id": "normalize_with_srgb", "flags": "--normalize --format R8_UNORM input/png/colorspace_sRGB.png output.ktx2" },
-            { "rc": 0, "id": "normalize_with_oetf", "flags": "--normalize --assign-oetf=linear --format R8_UNORM input/png/colorspace_sRGB.png output.ktx2" },
+            { "rc": 0, "id": "normalize_with_tf", "flags": "--normalize --assign-tf=linear --format R8_UNORM input/png/colorspace_sRGB.png output.ktx2" },
             { "rc": 1, "id": "normalize_with_raw", "flags": "--raw --normalize --format R8_UNORM input/png/basic_RGB8_16x16.png output.ktx2" },
 
             { "rc": 1, "id": "raw_too_many_in_2d", "flags": "--raw --width 8 --height 8 --format R8_UNORM input/raw/raw_R8_UNORM_2D_8x8.raw input/raw/raw_R8_UNORM_2D_8x8.raw output.ktx2" },

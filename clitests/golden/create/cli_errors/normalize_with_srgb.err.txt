@@ -1,0 +1,1 @@
+ktx create warning: Input file "input/png/colorspace_sRGB.png" is undergoing a visual lossy color conversion from KHR_DF_TRANSFER_SRGB to KHR_DF_TRANSFER_LINEAR. Specify an _SRGB format with --format to prevent this warning.
