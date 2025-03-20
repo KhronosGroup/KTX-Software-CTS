@@ -1,0 +1,1 @@
+ktx create fatal: The requested format is invalid or unsupported: "R8G8B8A8". See 'ktx create --help'.

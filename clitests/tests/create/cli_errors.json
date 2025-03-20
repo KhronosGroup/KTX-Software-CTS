@@ -114,7 +114,8 @@
             { "rc": 1, "id": "cvt_tcorigin_invalid_left_only", "flags": "--format R8G8B8A8_SRGB --convert-texcoord-origin left input/png/up_RGBA8_128x128_sRGB.png output.ktx2" },
             { "rc": 1, "id": "cvt_tcorigin_3d_no_z", "flags": "--format R8G8B8A8_SRGB --convert-texcoord-origin top-left --depth 1 input/png/up_RGBA8_128x128_sRGB.png output.ktx2" },
             { "rc": 1, "id": "cvt_tcorigin_raw", "flags": "--format R8G8B8A8_UNORM --width 4 --height 4 --convert-texcoord-origin top-left --raw input/raw/raw_R8G8B8A8_UNORM_2D_4x4.raw output.ktx2" },
-            { "rc": 1, "id": "cvt_tcorigin_cubemap_not_top_left", "flags": "--format R8G8B8A8_SRGB --cubemap --convert-texcoord-origin bottom-left input/png/up_RGBA8_128x128_sRGB.png output.ktx2" }
+            { "rc": 1, "id": "cvt_tcorigin_cubemap_not_top_left", "flags": "--format R8G8B8A8_SRGB --cubemap --convert-texcoord-origin bottom-left input/png/up_RGBA8_128x128_sRGB.png output.ktx2" },
+            { "rc": 1, "id": "convert_tf_invalid_value", "flags": "--format R8G8B8A8 --convert-tf ntsc input/png/up_RGBA8_128x128_sRGB.png output.ktx2" }
         ]
     }
 }
