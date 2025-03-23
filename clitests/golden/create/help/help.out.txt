@@ -26,8 +26,16 @@ Usage:
       --cubemap                 Create a cubemap texture. If not set the texture will be a 2D or 3D 
                                 texture.
       --raw                     Create from raw image data.
-      --width [0-9]+            Base level width in pixels.
-      --height [0-9]+           Base level height in pixels.
+      --width [0-9]+            Base level width in pixels. Required with --raw. For non-raw, if 
+                                not set, the image width is used otherwise the image is resampled 
+                                to this width and any provided mip levels are resampled 
+                                proportionately. For non-raw it enables use of the 'Generate 
+                                Mipmap' options to tune the resampler.
+      --height [0-9]+           Base level height in pixels. Required with --raw. For non-raw, if 
+                                not set, the image height is used otherwise the image is resampled 
+                                to this height and any provided mip levels are resampled 
+                                proportionately. For non-raw it enables use of the 'Generate 
+                                Mipmap' options to tune the resampler.
       --depth [0-9]+            Base level depth in pixels. If set the texture will be a 3D 
                                 texture.
       --layers [0-9]+           Number of layers. If set the texture will be an array texture.
@@ -38,6 +46,8 @@ Usage:
                                 specified the maximum possible mip level will be generated. This 
                                 option is mutually exclusive with --runtime-mipmap and cannot be 
                                 used with UINT or 3D textures.
+      --scale <float>           Scale images as they are loaded. Cannot be used with --raw. It 
+                                enables use of the 'Generate Mipmap' options to tune the resampler.
       --encode <codec>          Encode the created KTX file. Case insensitive.
                                 Possible options are: basis-lz | uastc
       --normalize               Normalize input normals to have a unit length. Only valid for
@@ -244,13 +254,17 @@ Usage:
 
  Generate Mipmap options:
       --mipmap-filter <filter>  Specifies the filter to use when generating the mipmaps. Case 
-                                insensitive.
+                                insensitive. Ignored unless --generate-mipmap, --scale, --width or 
+                                --height are specified for non-raw input.
                                 Possible options are: box | tent | bell | b-spline | mitchell | 
                                 blackman | lanczos3 | lanczos4 | lanczos6 | lanczos12 | kaiser | 
                                 gaussian | catmullrom | quadratic_interp | quadratic_approx |  
                                 quadratic_mix. Defaults to lanczos4.
       --mipmap-filter-scale <float>
-                                The filter scale to use. Defaults to 1.0.
+                                The filter scale to use. Defaults to 1.0. Ignored unless 
+                                --generate-mipmap, --scale, --width or --height are specified for 
+                                non-raw input.
       --mipmap-wrap <mode>      Specify how to sample pixels near the image boundaries. Case 
-                                insensitive.
+                                insensitive. Ignored unless --generate-mipmap, --scale, --width or 
+                                --height are specified for non-raw input.
                                 Possible options are: wrap | reflect | clamp. Defaults to clamp.
