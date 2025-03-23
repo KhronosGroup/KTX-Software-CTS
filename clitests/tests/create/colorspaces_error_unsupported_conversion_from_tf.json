@@ -1,9 +1,9 @@
 {
     "description": "Test that create raises an error when conversion from an unsupported TF is requested.",
     "comment": "Until we find files using unsupported conversions, we can only test via --assign-tf.",
-    "command": "ktx create --testrun --format ${format} --assign-tf ${transfer} --convert-tf srgb input/png/colorspace_default.png output/create/colorspaces_error/${format}_unsupported_conversion.ktx2",
-    "status": 3,
-    "stderr": "golden/create/colorspaces_error/assign_tf_unsupported_conversion.err.txt",
+    "command": "ktx create --testrun --format ${format} --assign-tf ${transfer} --convert-tf srgb input/png/colorspace_default.png output/create/colorspaces_error/${format}_unsupported_conversion_from_tf.ktx2",
+    "status": 5,
+    "stderr": "golden/create/colorspaces_error/assign_tf_unsupported_conversion_from_tf.err.txt",
     "args": {
         "format": [
             "R8_SRGB",
