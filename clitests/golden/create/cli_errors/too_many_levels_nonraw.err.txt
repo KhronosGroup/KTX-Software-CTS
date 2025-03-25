@@ -1,2 +1,1 @@
-ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/basic_RGB8_8x8.png", defaulting to KHR_DF_TRANSFER_SRGB. Use --assign-tf to override.
-ktx create fatal: Requested 5 levels is too many. With input image "input/png/basic_RGB8_8x8.png" sized 8x8 and depth 1 the texture can only have 4 levels at most. See 'ktx create --help'.
+ktx create fatal: Requested 5 levels is too many. With base input image "input/png/basic_RGB8_8x8.png" sized 8x8 and depth 1 the texture can only have 4 levels at most. See 'ktx create --help'.

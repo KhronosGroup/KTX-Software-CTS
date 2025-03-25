@@ -1,1 +1,0 @@
-ktx create fatal: Option --mipmap-wrap can only be used if --generate-mipmap is set. See 'ktx create --help'.

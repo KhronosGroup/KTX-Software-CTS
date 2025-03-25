@@ -1,0 +1,1 @@
+ktx create fatal: Colorspace conversion requires unsupported encode to `[A-Z0-9_]+` specified with --assign-tf. Decode and encode with transfer function is required to convert primaries to `[A-Z0-9_]+`.

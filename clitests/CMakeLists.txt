@@ -259,7 +259,8 @@ set(CASELIST
     tests/create/colorspaces_error_png_unknown_icc.json
     tests/create/colorspaces_error_srgb_tf.json
     tests/create/colorspaces_error_unknown_icc.json
-    tests/create/colorspaces_error_unsupported_conversion.json
+    tests/create/colorspaces_error_unsupported_conversion_from_tf.json
+    tests/create/colorspaces_error_unsupported_conversion_to_tf.json
     tests/create/colorspaces_error_assign_primaries_none_convert_primaries.json
     tests/create/colorspaces_warning_exr_primaries_mismatch.json
     tests/create/colorspaces_warning_png_primaries_mismatch.json
@@ -311,6 +312,8 @@ set(CASELIST
     tests/create/texcoord_origin.json
     tests/create/unicode_filenames.json
     tests/create/warn_fail_texcoord_origin.json
+    tests/create/resize_scale.json
+    tests/create/resize_scale_mip_levels.json
 
     tests/encode/compare.json
     tests/encode/encode_blze.json

@@ -1,2 +1,1 @@
-ktx create warning: No transfer function can be determined from 8-bit PNG input file "input/png/basic_RGB8_16x16.png", defaulting to KHR_DF_TRANSFER_SRGB. Use --assign-tf to override.
 ktx create fatal: For --1d textures the input image height must be 1, but for "input/png/basic_RGB8_16x16.png" it was 16.

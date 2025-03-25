@@ -1,1 +1,1 @@
-ktx create fatal: Too few input image for 2 level, 1 layer, 1 face and 2 depth. Provided 2 but expected 3. See 'ktx create --help'.
+ktx create fatal: Too few input images for 2 level, 1 layer, 1 face and 2 depth. Provided 2 but expected 3. See 'ktx create --help'.
