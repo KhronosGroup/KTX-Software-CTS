@@ -1,0 +1,50 @@
+{
+    "description": "Test that --width, --height resize images and that --scale scales them with and without filtering options.",
+    "command": "ktx create --testrun ${subcase1[flags]} ${flagFilter[flag]} ${flagFilterScale[flag]} ${flagWrap[flag]} --format ${subcase2[format]} ${subcase2[file]} output/create/resize_scale/${subcase2[format]}_${subcase1[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2",
+    "status": 0,
+    "comment": "On Apple Silicon certain floating point operation causes the lanczos4 filter to sometime be off-by a single unit",
+    "comment": "generate_mipmap tests the resampler on many different formats. This test focusses on size adjustments to avoid a combinatorial explosion.",
+    "outputTolerance": "${flagFilter[outputTolerance]}",
+    "outputs": {
+        "output/create/resize_scale/${subcase2[format]}_${subcase1[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2": "golden/create/resize_scale/${subcase2[format]}_${subcase1[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2"
+    },
+    "args": {
+        "subcase1": [
+            { "id": "scale025_levels1", "flags": "--scale 0.25 --levels 1" },
+            { "id": "scale025_levels3", "flags": "--scale 0.25 --levels 3 --generate-mipmap" },
+            { "id": "scale075_levels1", "flags": "--scale 0.75 --levels 1" },
+            { "id": "scale075_levelsMax", "flags": "--scale 0.75 --levels 1 --generate-mipmap" },
+            { "id": "scale075_levels3", "flags": "--scale 0.75 --levels 3 --generate-mipmap" },
+            { "id": "scale075_levels4", "flags": "--scale 0.75 --levels 4 --generate-mipmap" },
+            { "id": "wh8_levels1", "flags": "--width 8 --height 8 --levels 1" },
+            { "id": "wh8_levelsMax", "flags": "--width 8 --height 8 --levels 1 --generate-mipmap" },
+            { "id": "wh8_levels3", "flags": "--width 8 --height 8 --levels 3 --generate-mipmap" },
+            { "id": "wh8_levels4", "flags": "--width 8 --height 8 --levels 4 --generate-mipmap" }
+        ],
+        "flagFilter": [
+            { "id": "lanczos4", "outputTolerance": 1.0, "flag": "--mipmap-filter lanczos4" },
+            { "id": "box", "outputTolerance": 0.08, "flag": "--mipmap-filter box" }
+        ],
+        "flagFilterScale": [
+            { "id": "fscale10", "flag": "--mipmap-filter-scale 1.0" },
+            { "id": "fscale09", "flag": "--mipmap-filter-scale 0.9" }
+        ],
+        "flagWrap": [
+            { "id": "wrap", "flag": "--mipmap-wrap wrap" },
+            { "id": "clamp", "flag": "--mipmap-wrap clamp" }
+        ],
+        "subcase2": [
+            { "format": "R16G16B16A16_SFLOAT", "file": "input/exr/basic_RGBA_HALF_HDR_16x16.exr" },
+            { "format": "R32G32B32A32_SFLOAT", "file": "input/exr/basic_RGBA_FLOAT_HDR_16x16.exr" },
+
+            { "format": "R8G8B8A8_UNORM", "file": "input/png/basic_RGBA16_16x16.png" },
+            { "format": "R16G16B16A16_UNORM", "file": "input/png/basic_RGBA16_16x16.png" },
+            { "format": "R8G8B8A8_SRGB", "file": "input/png/colorspace_sRGB.png" },
+            { "format": "ASTC_4x4_UNORM_BLOCK", "file": "input/png/basic_RGBA8_16x16.png" },
+            { "format": "ASTC_4x4_SRGB_BLOCK", "file": "input/png/colorspace_sRGB.png" },
+            { "format": "R4G4_UNORM_PACK8", "file": "input/png/basic_RGB8_16x16.png" },
+            { "format": "B5G6R5_UNORM_PACK16", "file": "input/png/basic_RGB8_16x16.png" },
+            { "format": "A2R10G10B10_UNORM_PACK32", "file": "input/png/basic_RGBA16_16x16.png" }
+        ]
+    }
+}

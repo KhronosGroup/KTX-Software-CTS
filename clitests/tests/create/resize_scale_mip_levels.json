@@ -1,0 +1,33 @@
+{
+    "description": "Test that --width, --height resize all input images and that --scale scales them with and without filtering options.",
+    "command": "ktx create --testrun ${flagScale[flag]} ${flagFilter[flag]} ${flagFilterScale[flag]} ${flagWrap[flag]} --levels ${subcase[levels]} --format ${subcase[format]} ${subcase[files]} output/create/resize_scale_mip_levels/${subcase[format]}_${subcase[id]}_${flagScale[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2",
+    "status": 0,
+    "comment": "On Apple Silicon certain floating point operation causes the lanczos4 filter to sometime be off-by a single unit",
+    "comment": "generate_mipmap tests the resampler on many different formats. This test focusses on size adjustments to avoid a combinatorial explosion.",
+    "outputTolerance": "${flagFilter[outputTolerance]}",
+    "outputs": {
+        "output/create/resize_scale_mip_levels/${subcase[format]}_${subcase[id]}_${flagScale[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2": "golden/create/resize_scale_mip_levels/${subcase[format]}_${subcase[id]}_${flagScale[id]}_${flagFilter[id]}_${flagFilterScale[id]}_${flagWrap[id]}.ktx2"
+    },
+    "args": {
+        "flagScale": [
+            { "id": "scale075", "flag": "--scale 0.75" },
+            { "id": "wh8", "flag": "--width 8 --height 8" }
+        ],
+        "flagFilter": [
+            { "id": "lanczos4", "outputTolerance": 1.0, "flag": "--mipmap-filter lanczos4" },
+            { "id": "box", "outputTolerance": 0.08, "flag": "--mipmap-filter box" }
+        ],
+        "flagFilterScale": [
+            { "id": "fscale10", "flag": "--mipmap-filter-scale 1.0" },
+            { "id": "fscale09", "flag": "--mipmap-filter-scale 0.9" }
+        ],
+        "flagWrap": [
+            { "id": "wrap", "flag": "--mipmap-wrap wrap" },
+            { "id": "clamp", "flag": "--mipmap-wrap clamp" }
+        ],
+        "subcase": [
+            { "id": "levels3", "format": "R8G8B8_UNORM", "levels": 3, "files": "input/png/basic_RGB8_16x16.png input/png/basic_RGB8_8x8.png input/png/basic_RGB8_4x4.png" },
+            { "id": "levels4", "format": "R8G8B8_UNORM", "levels": 4, "files": "input/png/basic_RGB8_16x16.png input/png/basic_RGB8_8x8.png input/png/basic_RGB8_4x4.png input/png/basic_RGB8_2x2.png" }
+        ]
+    }
+}
