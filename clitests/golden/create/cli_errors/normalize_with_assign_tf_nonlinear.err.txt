@@ -1,0 +1,1 @@
+ktx create fatal: --assign-tf value is KHR_DF_TRANSFER_NTSC. Normalize can only be used if the transfer function is linear or none. See 'ktx create --help'.
