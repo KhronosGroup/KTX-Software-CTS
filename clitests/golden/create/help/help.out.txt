@@ -56,6 +56,9 @@ Usage:
                                 normals to generate X+Y normals with --normal-mode. For 4-component
                                 inputs a 3D unit normal is calculated. 1.0 is used for the value of
                                 the 4th component. Cannot be used with --raw.
+      --premultiply-alpha       Pre-multiplies the color components of the input pixels by the 
+                                alpha componentbefore encoding and sets the flag in the metadata. 
+                                Cannot be used with --normalize
       --swizzle [rgba01]{4}     KTX swizzle metadata.
       --input-swizzle [rgba01]{4}
                                 Pre-swizzle input channels.
