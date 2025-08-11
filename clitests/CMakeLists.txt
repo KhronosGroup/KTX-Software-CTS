@@ -315,6 +315,7 @@ set(CASELIST
     tests/create/texcoord_origin.json
     tests/create/unicode_filenames.json
     tests/create/warn_fail_texcoord_origin.json
+    tests/create/premultiply_alpha.json
 
     tests/encode/compare.json
     tests/encode/encode_blze.json
