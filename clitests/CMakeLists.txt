@@ -279,11 +279,11 @@ set(CASELIST
     tests/create/fewer_components_exr.json
     tests/create/fewer_components_png.json
     tests/create/generate_mipmap.json
-    tests/create/normalize.json
     tests/create/help.json
     tests/create/image_slices.json
     tests/create/input_swizzle.json
     tests/create/line_order_exr.json
+    tests/create/normalize.json
     tests/create/raw_1d.json
     tests/create/raw_1d_array.json
     tests/create/raw_1d_array_mip.json
@@ -302,18 +302,19 @@ set(CASELIST
     tests/create/raw_non_convertable.json
     tests/create/raw_zlib.json
     tests/create/raw_zstd.json
+    tests/create/resize_scale.json
+    tests/create/resize_scale_mip_levels.json
     tests/create/runtime_mipmap.json
     tests/create/sample_exr.json
     tests/create/sample_png.json
     tests/create/sample_zlib.json
     tests/create/sample_zstd.json
+    tests/create/sbit_png.json
     tests/create/stdin.json
     tests/create/stdout.json
     tests/create/texcoord_origin.json
     tests/create/unicode_filenames.json
     tests/create/warn_fail_texcoord_origin.json
-    tests/create/resize_scale.json
-    tests/create/resize_scale_mip_levels.json
 
     tests/encode/compare.json
     tests/encode/encode_blze.json
