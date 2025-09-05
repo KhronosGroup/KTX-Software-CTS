@@ -34,6 +34,6 @@ Image Data
     File byte offset: 0x1c8
 -    Packed: 0x4b4a4948, 0x4f4e4d4c, 0x53525150
 +    Packed: 0x4b4a4948, 0x4f4e4d4c, 0xc0866666
--    Channels: 13257032, 3461172200, 903307300000
-+    Channels: 13257032, 3461172200, -4.2
+-    Channels: 1.3257032e+07, 3.4611722e+09, 9.033073e+11
++    Channels: 1.3257032e+07, 3.4611722e+09, -4.2
 +Mismatch in level 1 layer 0 face 0
