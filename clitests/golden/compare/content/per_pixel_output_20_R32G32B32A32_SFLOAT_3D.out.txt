@@ -27,8 +27,8 @@ Image Data
     File byte offset: 0x200
 -    Packed: 0x53525150, 0x57565554, 0x5b5a5958, 0x5f5e5d5c
 +    Packed: 0xc0866666, 0x57565554, 0x5b5a5958, 0x5f5e5d5c
--    Channels: 903307300000, 235661970000000, 6.145978e+16, 1.6023064e+19
-+    Channels: -4.2, 235661970000000, 6.145978e+16, 1.6023064e+19
+-    Channels: 9.033073e+11, 2.3566197e+14, 6.145978e+16, 1.6023064e+19
++    Channels: -4.2, 2.3566197e+14, 6.145978e+16, 1.6023064e+19
   Coordinates: 2, 2, 0
     Image byte offset: 0xa0
     File byte offset: 0x250

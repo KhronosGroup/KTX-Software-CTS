@@ -42,10 +42,10 @@ Usage:
       --levels [0-9]+           Number of mip levels.
       --runtime-mipmap          Runtime mipmap generation mode.
       --generate-mipmap         Causes mipmaps to be generated during texture creation. It enables 
-                                the use of 'Generate Mipmap' options. If the --levels is not 
-                                specified the maximum possible mip level will be generated. This 
-                                option is mutually exclusive with --runtime-mipmap and cannot be 
-                                used with UINT or 3D textures.
+                                the use of 'Generate Mipmap' options. If --levels is not specified 
+                                the maximum possible mip level will be generated. This option is 
+                                mutually exclusive with --runtime-mipmap and cannot be used with 
+                                SINT, UINT or 3D textures or --raw.
       --scale <float>           Scale images as they are loaded. Cannot be used with --raw. It 
                                 enables use of the 'Generate Mipmap' options to tune the resampler.
       --encode <codec>          Encode the created KTX file. Case insensitive.
