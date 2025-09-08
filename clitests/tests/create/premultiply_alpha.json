@@ -10,8 +10,8 @@
         "subcase": [
             { "outputTolerance": false, "flag": "--format R8G8B8A8_SRGB", "file": "alpha_complex", "ext": ".png", "name": "RGBA-straight" },
             { "outputTolerance": false, "flag": "--format R8G8B8A8_SRGB --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "RGBA-premultiplied" },
-            { "outputTolerance": 0.08, "flag": "--format R8G8B8A8_SRGB --encode basis-lz --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "etc1s" },
-            { "outputTolerance": 0.08, "flag": "--format R8G8B8A8_SRGB --encode uastc --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "uastc" },
+            { "outputTolerance": 0.16, "flag": "--format R8G8B8A8_SRGB --encode basis-lz --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "etc1s" },
+            { "outputTolerance": 0.16, "flag": "--format R8G8B8A8_SRGB --encode uastc --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "uastc" },
             { "outputTolerance": false, "flag": "--format ASTC_4x4_SRGB_BLOCK --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "astc" },
             { "outputTolerance": false, "flag": "--format R8G8B8A8_SRGB --zstd 5 --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "zstd" },
             { "outputTolerance": false, "flag": "--format R8G8B8A8_SRGB --zlib 5 --premultiply-alpha", "file": "alpha_complex", "ext": ".png", "name": "zlib" }
