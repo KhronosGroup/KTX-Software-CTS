@@ -1,0 +1,26 @@
+Header
+
+identifier: «KTX 11»\r\n\x1A\n
+endianness: 0x4030201
+glType: 0 (Compressed)
+glTypeSize: 1
+glFormat: 0 (Compressed)
+glInternalformat: GL_COMPRESSED_RGBA_S3TC_DXT5_EXT
+glBaseInternalformat: GL_RGBA
+pixelWidth: 256
+pixelHeight: 256
+pixelDepth: 0
+numberOfArrayElements: 7
+numberOfFaces: 1
+numberOfMipLevels: 1
+bytesOfKeyValueData: 32
+
+Key/Value Data
+
+KTXorientation: S=r,T=d,R=i
+
+Data Sizes (bytes)
+------------------
+Level 0: 458752
+
+Total: 458752

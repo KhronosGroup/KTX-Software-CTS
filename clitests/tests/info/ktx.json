@@ -1,0 +1,46 @@
+{
+    "description": "ktx v1 ktx info positive tests",
+    "command": "ktx info --testrun ${format[args]} input/ktx/${file}.ktx",
+    "status": 0,
+    "stdout": "golden/info/ktx/${file}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            }
+        ],
+        "file": [
+            "legacy_LUMINANCE8_16x16",
+            "legacy_LUMINANCE8_ALPHA8_16x16",
+            "legacy_SLUMINANCE8_16x16",
+            "legacy_SLUMINANCE8_ALPHA8_16x16",
+            "valid_array_7_compressed_RGB_ETC2_256x256",
+            "valid_array_7_compressed_RGBA_ASTC_8x8_256x256",
+            "valid_array_7_compressed_RGBA_S3TC_DXT5_256x256",
+            "valid_compressed_R11_EAC_64x32",
+            "valid_compressed_RG11_EAC_64x32",
+            "valid_compressed_RGB8_ETC1_128x128",
+            "valid_compressed_RGB8_ETC2_128x128",
+            "valid_compressed_RGB8_PUNCHTHROUGH_ALPHA1_ETC1_128x128",
+            "valid_compressed_RGBA8_ETC2_EAC_128x128",
+            "valid_compressed_SIGNED_R11_EAC_64x32",
+            "valid_compressed_SIGNED_RG11_EAC_64x32",
+            "valid_compressed_SRGB8_ALPHA8_ETC2_EAC_128x128",
+            "valid_compressed_SRGB8_ETC2_128x128",
+            "valid_compressed_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2_128x128",
+            "valid_R8_16x16",
+            "valid_RG16_16x16",
+            "valid_RG8_16x16",
+            "valid_RGB8_16x16",
+            "valid_SR8_16x16",
+            "valid_SRG8_16x16",
+            "valid_SRGB8_16x16",
+            "valid_SRGB8_ALPHA8_16x16"
+        ]
+    }
+}
