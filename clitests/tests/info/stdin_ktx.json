@@ -1,0 +1,29 @@
+{
+    "description": "Test stdin input for the info command",
+    "command": "ktx info --testrun ${format[args]} -",
+    "status": 0,
+    "stdin": "${file[dir]}/${file[name]}.ktx",
+    "stdout": "golden/info/stdin_ktx/${file[name]}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            }
+        ],
+        "file": [
+            { "dir": "input/ktx", "name": "valid_R8_16x16" },
+            { "dir": "input/ktx", "name": "valid_RG16_16x16" },
+            { "dir": "input/ktx", "name": "valid_RG8_16x16" },
+            { "dir": "input/ktx", "name": "valid_RGB8_16x16" },
+            { "dir": "input/ktx", "name": "valid_SR8_16x16" },
+            { "dir": "input/ktx", "name": "valid_SRG8_16x16" },
+            { "dir": "input/ktx", "name": "valid_SRGB8_16x16" },
+            { "dir": "input/ktx", "name": "valid_SRGB8_ALPHA8_16x16" }
+        ]
+    }
+}

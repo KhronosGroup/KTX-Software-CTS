@@ -1,0 +1,1 @@
+ktx info fatal: JSON output formats are not supported for KTX v1 files. See 'ktx info --help'.
