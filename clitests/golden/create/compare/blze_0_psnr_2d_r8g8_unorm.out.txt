@@ -1,2 +1,2 @@
 Overall:
-    PSNR Max: 35.939545
+    PSNR Max: 35.794498
