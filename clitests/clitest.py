@@ -17,7 +17,7 @@ import shutil
 class SubcaseContext:
     def __init__(self, args):
         self.args = args
-        self.pattern = re.compile("\$\{(\{[a-zA-Z0-9_\-\[\]']+\})\}")
+        self.pattern = re.compile(r"\$\{(\{[a-zA-Z0-9_\-\[\]']+\})\}")
 
     def eval(self, value):
         return self.pattern.sub(lambda m: m.group(1), value.replace('{', '{{').replace('}', '}}')).format(**self.args)
