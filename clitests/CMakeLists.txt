@@ -275,7 +275,10 @@ set(CASELIST
     tests/create/encode_error_codec.json
     tests/create/encode_error_format.json
     tests/create/encode_uastc.json
+    tests/create/encode_uastc_hdr.json
     tests/create/encode_uastc_params.json
+    tests/create/encode_uastc_hdr4x4_params.json
+    tests/create/encode_uastc_hdr6x6i_params.json
     tests/create/fewer_components_exr.json
     tests/create/fewer_components_png.json
     tests/create/generate_mipmap.json

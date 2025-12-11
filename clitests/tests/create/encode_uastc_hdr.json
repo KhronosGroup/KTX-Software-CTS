@@ -1,0 +1,18 @@
+{
+    "description": "Test create with default behavior of UASTC HDR encoding.",
+    "command": "ktx create --testrun --raw --format ${subcase} --width 8 --height 8 --threads 1 --encode ${codec[args]} input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_uastc_hdr/output_${codec[id]}_${subcase}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/encode_uastc_hdr/output_${codec[id]}_${subcase}.ktx2": "golden/create/encode_uastc_hdr/output_${codec[id]}_${subcase}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            "R16G16B16_SFLOAT",
+            "R16G16B16A16_SFLOAT"
+        ],
+        "codec": [            
+            { "id": "uastc_hdr4x4", "args": "uastc-hdr-4x4" },
+            { "id": "uastc_hdr6x6i", "args": "uastc-hdr-6x6i" }
+        ]
+    }
+}
