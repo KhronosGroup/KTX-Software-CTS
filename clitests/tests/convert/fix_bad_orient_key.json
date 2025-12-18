@@ -1,0 +1,10 @@
+{
+    "description": "Test an incorrect orientation key is correctly rewritten.",
+    "command": "ktx convert --testrun --input-type ktx input/ktx/bad_orient_key_UP_SRGB8_128x128.ktx output/convert/fixed_orient_key_UP_SRGB8_128x128.ktx2",
+    "status": 0,
+    "stdout": "golden/convert/fix_bad_orient_key/empty.out.txt",
+    "stderr": "golden/convert/fix_bad_orient_key/empty.out.txt",
+    "outputs": {
+        "output/convert/fixed_orient_key_UP_SRGB8_128x128.ktx2": "golden/convert/fix_bad_orient_key/fixed_orient_key_UP_SRGB8_128x128.ktx2"
+    }
+}

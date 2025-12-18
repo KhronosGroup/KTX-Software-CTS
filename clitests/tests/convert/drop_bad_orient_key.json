@@ -1,0 +1,10 @@
+{
+    "description": "Test an incorrect orientation key is dropped when requested.",
+    "command": "ktx convert --testrun --input-type ktx --drop-bad-orientation input/ktx/bad_orient_key_UP_SRGB8_128x128.ktx output/convert/dropped_orient_key_UP_SRGB8_128x128.ktx2",
+    "status": 0,
+    "stdout": "golden/convert/drop_bad_orient_key/empty.out.txt",
+    "stderr": "golden/convert/drop_bad_orient_key/err.txt",
+    "outputs": {
+        "output/convert/dropped_orient_key_UP_SRGB8_128x128.ktx2": "golden/convert/drop_bad_orient_key/dropped_orient_key_UP_SRGB8_128x128.ktx2"
+    }
+}

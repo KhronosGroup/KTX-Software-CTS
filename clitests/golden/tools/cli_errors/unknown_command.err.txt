@@ -9,10 +9,11 @@ Usage:
                  possible
 
 Available commands:
+  convert    Convert another texture file type to a KTX2 file
   create     Create a KTX2 file from various input files
   deflate    Deflate (supercompress) a KTX2 file
-  extract    Extract selected images from a KTX2 file
   encode     Encode a KTX2 file
+  extract    Extract selected images from a KTX2 file
   transcode  Transcode a KTX2 file
   info       Print information about a KTX2 file
   validate   Validate a KTX2 file

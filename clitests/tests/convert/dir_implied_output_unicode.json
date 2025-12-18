@@ -1,0 +1,17 @@
+{
+    "description": "Test conversion of various files with implicitily named output file in given directory.",
+    "command": "ktx convert --testrun --input-type ${subcase[type]} input/${subcase[type]}/${subcase[name]}.${subcase[type]} output/convert/テクスチャズ/",
+    "status": 0,
+    "outputs": {
+        "output/convert/テクスチャズ/${subcase[name]}.ktx2": "golden/convert/ktx2/output_${subcase[name]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "type": "ktx", "name": "نَسِيج" },
+            { "type": "ktx", "name": "テクスチャ" },
+            { "type": "ktx", "name": "质地" },
+            { "type": "ktx", "name": "조직" },
+            { "type": "ktx", "name": "hűtő" }
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+ktx convert fatal: Invalid or unsupported type specified as --input-type argument: "dds". See 'ktx convert --help'.

@@ -1,0 +1,17 @@
+{
+    "description": "Test cli argument combinations and incorrect usage.",
+    "command": "ktx convert --testrun ${subcase[flags]}",
+    "status": "${subcase[rc]}",
+    "stdout": "golden/convert/cli_errors/empty.out.txt",
+    "stderr": "golden/convert/cli_errors/${subcase[id]}.err.txt",
+    "args": {
+        "subcase": [
+            { "rc": 1, "id": "unknown_option", "flags": "--input-type ktx --unknown input/ktx/valid_SRGB8_16x16.ktx output/convert/placeholder.ktx2" },
+            { "rc": 1, "id": "unknown_input_type", "flags": "--input-type dds input/ktx/valid_SRGB8_16x16.ktx output/convert/placeholder.ktx2" },
+            { "rc": 1, "id": "too_many_filenames1", "flags": "--input-type ktx input/ktx/valid_SRGB8_16x16.ktx excess_input.ktx2 output/convert/placeholder.ktx2" },
+            { "rc": 1, "id": "too_many_filenames2", "flags": "--input-type ktx - excess_input.ktx2 output/convert/placeholder.ktx2" },
+            { "rc": 2, "id": "missing_input_file", "flags": "--input-type ktx input/ktx2/missing_file.ktx2 output/convert/placeholder.ktx2"},
+            { "rc": 3, "id": "not_ktx_file", "flags": "--input-type ktx input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/convert/placeholder.ktx2"}
+        ]
+    }
+}

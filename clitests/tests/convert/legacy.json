@@ -1,0 +1,14 @@
+{
+    "description": "Test handling of various unsupported legacy formats.",
+    "command": "ktx convert --testrun --input-type ${subcase[type]} input/${subcase[type]}/legacy_${subcase[format]}.ktx output/convert/placeholder.${subcase[type]}",
+    "status": 5,
+    "stderr": "golden/convert/${subcase[type]}_legacy/error_${subcase[etype]}.txt",
+    "args": {
+        "subcase": [
+            { "type": "ktx", "format": "LUMINANCE8_16x16", "etype": "expanded" },
+            { "type": "ktx", "format": "LUMINANCE8_ALPHA8_16x16", "etype": "expanded" },
+            { "type": "ktx", "format": "SLUMINANCE8_16x16", "etype": "hex" },
+            { "type": "ktx", "format": "SLUMINANCE8_ALPHA8_16x16", "etype": "hex" }
+        ]
+    }
+}
