@@ -5,7 +5,7 @@
     "stdout": "golden/convert/drop_invalid_pass_custom_keys/empty.out.txt",
     "stderr": "golden/convert/drop_invalid_pass_custom_keys/err.txt",
     "outputs": {
-        "output/convert/drop_invalid_pass_custom_keys/output_SRGB8_16x16.ktx2": "golden/convert//drop_invalid_pass_custom_keys/output_SRGB8_16x16.ktx2"
+        "output/convert/drop_invalid_pass_custom_keys/output_SRGB8_16x16.ktx2": "golden/convert/drop_invalid_pass_custom_keys/output_SRGB8_16x16.ktx2"
     }
 }
 
