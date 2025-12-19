@@ -1,0 +1,19 @@
+{
+    "description": "Test stdin input for the convert command",
+    "command": "ktx convert --testrun --input-type ktx - output/convert/stdin/${subcase[id]}.ktx2",
+    "status": 0,
+    "stdin": "input/${subcase[type]}/${subcase[id]}.${subcase[type]}",
+    "stdout": "golden/convert/stdin/empty.txt",
+    "stderr": "golden/convert/stdin/empty.txt",
+    "outputs": {
+        "output/convert/stdin/${subcase[id]}.ktx2": "golden/convert/stdin/${subcase[id]}.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "id": "valid_RG16_16x16", "type": "ktx" },
+            { "id": "valid_RGB8_16x16", "type": "ktx" },
+            { "id": "valid_SRGB8_16x16", "type": "ktx" },
+            { "id": "valid_SRGB8_ALPHA8_16x16", "type": "ktx" }
+        ]
+    }
+}
