@@ -1,0 +1,1 @@
+ktx convert warning: Dropping unrecognized KTX metadata "`.+`"

@@ -1,0 +1,1 @@
+ktx convert fatal: Format of input file, 0x`[A-Ea-e0-9]+`, is unsupported or has no equivalent VkFormat.

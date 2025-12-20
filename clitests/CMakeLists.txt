@@ -407,6 +407,17 @@ set(CASELIST
     tests/deflate/stdout.json
     tests/deflate/unicode_filenames.json
 
+    tests/convert/cli_errors.json
+    tests/convert/help.json
+    tests/convert/legacy.json
+    tests/convert/named_output.json
+    tests/convert/named_output_unicode.json
+    tests/convert/dir_implied_output.json
+    tests/convert/dir_implied_output_unicode.json
+    tests/convert/drop_bad_orient_key.json
+    tests/convert/fix_bad_orient_key.json
+    tests/convert/drop_invalid_pass_custom_keys.json
+
     tests/help/cli_errors.json
     tests/help/help.json
 )

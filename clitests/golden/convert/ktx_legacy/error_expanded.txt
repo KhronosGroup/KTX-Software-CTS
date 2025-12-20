@@ -1,0 +1,1 @@
+ktx convert fatal: Format of input file, GL_`.+`, is unsupported or has no equivalent VkFormat.

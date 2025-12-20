@@ -1,0 +1,1 @@
+ktx convert fatal: Too many filenames specified. See 'ktx convert --help'.
