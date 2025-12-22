@@ -424,13 +424,6 @@ set(CASELIST
     tests/help/help.json
 )
 
-set(LEGACY_CASELIST
-    legacy_tests/ktx2check/unicode_filenames.json
-    legacy_tests/ktxinfo/unicode_filenames.json
-    legacy_tests/ktxsc/unicode_filenames.json
-    legacy_tests/toktx/unicode_filenames.json
-)
-
 set(CASE_REGEN_GOLDEN_OUTPUTS)
 
 if(NOT DEFINED KTX_TOOLS_PATH)
@@ -469,10 +462,6 @@ endmacro()
 
 foreach(CASE_FILE ${CASELIST})
     add_test_case(${CASE_FILE} tests ktxToolsTest ${KTX_TOOLS_PATH})
-endforeach()
-
-foreach(CASE_FILE ${LEGACY_CASELIST})
-    add_test_case(${CASE_FILE} legacy_tests LegacyToolsTest ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/)
 endforeach()
 
 add_custom_target(clitests_regen_golden
