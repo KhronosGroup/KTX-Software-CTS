@@ -281,6 +281,8 @@ set(CASELIST
     tests/create/generate_mipmap.json
     tests/create/help.json
     tests/create/image_slices.json
+    tests/create/image_slices_list_names.json
+    tests/create/image_slices_list_paths.json
     tests/create/input_swizzle.json
     tests/create/line_order_exr.json
     tests/create/normalize.json
