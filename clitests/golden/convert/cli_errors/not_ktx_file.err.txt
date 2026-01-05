@@ -1,0 +1,1 @@
+ktx convert fatal: Failed to create KTX texture: Not a KTX file.

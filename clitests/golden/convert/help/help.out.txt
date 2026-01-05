@@ -1,0 +1,17 @@
+ktx convert: Convert the non-KTX2 texture file specified as the input-file argument,
+    optionally supercompress the result, and save it as the output-file.
+
+Usage:
+  ktx convert [OPTION...] <input-file> <output-file>
+
+  -t, --input-type <type>     Specify the type of input file. Currently must be ktx.
+  -d, --drop-bad-orientation  Drop bad orientation metadata, such as "KTXOrientation", instead of 
+                              fixing it.
+      --stdin                 Use stdin as the input file. (Using a single dash '-' as the input 
+                              file has the same effect)
+      --stdout                Use stdout as the output file. (Using a single dash '-' as the output 
+                              file has the same effect)
+  -h, --help                  Print this usage message and exit
+  -v, --version               Print the version number of this program and exit
+      --testrun               Indicates test run. If enabled the tool will produce deterministic 
+                              output whenever possible

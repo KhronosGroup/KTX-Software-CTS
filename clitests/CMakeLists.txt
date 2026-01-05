@@ -284,6 +284,8 @@ set(CASELIST
     tests/create/generate_mipmap.json
     tests/create/help.json
     tests/create/image_slices.json
+    tests/create/image_slices_list_names.json
+    tests/create/image_slices_list_paths.json
     tests/create/input_swizzle.json
     tests/create/line_order_exr.json
     tests/create/normalize.json
@@ -409,6 +411,17 @@ set(CASELIST
     tests/deflate/stdin.json
     tests/deflate/stdout.json
     tests/deflate/unicode_filenames.json
+
+    tests/convert/cli_errors.json
+    tests/convert/help.json
+    tests/convert/legacy.json
+    tests/convert/named_output.json
+    tests/convert/named_output_unicode.json
+    tests/convert/dir_implied_output.json
+    tests/convert/dir_implied_output_unicode.json
+    tests/convert/drop_bad_orient_key.json
+    tests/convert/fix_bad_orient_key.json
+    tests/convert/drop_invalid_pass_custom_keys.json
 
     tests/help/cli_errors.json
     tests/help/help.json
