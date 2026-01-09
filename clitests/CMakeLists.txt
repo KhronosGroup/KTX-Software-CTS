@@ -354,6 +354,8 @@ set(CASELIST
     tests/transcode/transcode_error_target.json
     tests/transcode/transcode_error_too_many_filenames.json
     tests/transcode/transcode_uastc.json
+    tests/transcode/transcode_uastc_hdr_4x4.json
+    tests/transcode/transcode_uastc_hdr_6x6i.json
     tests/transcode/transcode_zlib.json
     tests/transcode/transcode_zstd.json
 
