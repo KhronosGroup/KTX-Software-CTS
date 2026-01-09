@@ -1,16 +1,34 @@
 {
     "description": "Test default behavior of UASTC HDR encoding.",
-    "command": "ktx encode --testrun --threads 1 --codec ${subcase[codec]} input/ktx2/valid_${subcase[format]}_2D.ktx2 output/encode/encode_uastc_hdr/output_${subcase[codec]}_${subcase[format]}_2D.ktx2",
+    "command": "ktx encode --testrun --threads 1 --codec ${codec} input/ktx2/valid_${subcase}_${target}.ktx2 output/encode/encode_uastc_hdr/output_${codec}_${subcase}_${target}.ktx2",
     "status": 0,
     "outputs": {
-        "output/encode/encode_uastc_hdr/output_${subcase[codec]}_${subcase[format]}_2D.ktx2": "golden/encode/encode_uastc_hdr/output_${subcase[codec]}_${subcase[format]}_2D.ktx2"
+        "output/encode/encode_uastc_hdr/output_${codec}_${subcase}_${target}.ktx2": "golden/encode/encode_uastc_hdr/output_${codec}_${subcase}_${target}.ktx2"
     },
     "args": {
         "subcase": [
-            { "format": "R16G16B16A16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-4x4" },
-            { "format": "R16G16B16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-4x4" },
-            { "format": "R16G16B16A16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-6x6i" },
-            { "format": "R16G16B16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-6x6i" }
+            "R16G16B16A16_SFLOAT",
+            "R16G16B16_SFLOAT"
+        ],
+        "codec": [
+            "uastc-hdr-4x4",
+            "uastc-hdr-6x6i"
+        ],
+        "target": [
+            "1D",
+            "1D_ARRAY",
+            "1D_ARRAY_MIP",
+            "1D_MIP",
+            "2D",
+            "2D_ARRAY",
+            "2D_ARRAY_MIP",
+            "2D_MIP",
+            "3D",
+            "3D_MIP",
+            "CUBE",
+            "CUBE_ARRAY",
+            "CUBE_ARRAY_MIP",
+            "CUBE_MIP"
         ]
     }
 }
