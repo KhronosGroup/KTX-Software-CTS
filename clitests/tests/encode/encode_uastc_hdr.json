@@ -1,0 +1,16 @@
+{
+    "description": "Test default behavior of UASTC HDR encoding.",
+    "command": "ktx encode --testrun --threads 1 --codec ${subcase[codec]} input/ktx2/valid_${subcase[format]}_2D.ktx2 output/encode/encode_uastc_hdr/output_${subcase[codec]}_${subcase[format]}_2D.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/encode/encode_uastc_hdr/output_${subcase[codec]}_${subcase[format]}_2D.ktx2": "golden/encode/encode_uastc_hdr/output_${subcase[codec]}_${subcase[format]}_2D.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "format": "R16G16B16A16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-4x4" },
+            { "format": "R16G16B16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-4x4" },
+            { "format": "R16G16B16A16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-6x6i" },
+            { "format": "R16G16B16_SFLOAT", "file": "R_HALF_HDR_16x16", "codec": "uastc-hdr-6x6i" }
+        ]
+    }
+}
