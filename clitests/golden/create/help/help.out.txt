@@ -49,7 +49,8 @@ Usage:
       --scale <float>           Scale images as they are loaded. Cannot be used with --raw. It 
                                 enables use of the 'Generate Mipmap' options to tune the resampler.
       --encode <codec>          Encode the created KTX file. Case insensitive.
-                                Possible options are: basis-lz | uastc
+                                Possible options are: basis-lz | uastc | uastc-hdr-4x4 | 
+                                uastc-hdr-6x6i
       --normalize               Normalize input normals to have a unit length. Only valid for
                                 linear normal textures with 2 or more components. For 2-component
                                 inputs 2D unit normals are calculated. Do not use these 2D unit
@@ -233,6 +234,23 @@ Usage:
       --uastc-rdo-f             Do not favor simpler UASTC modes in RDO mode.
       --uastc-rdo-m             Disable RDO multithreading (slightly higher compression, 
                                 deterministic).
+      --uastc-hdr-uber-mode     Allow the UASTC HDR 4x4 encoder to try varying the CEM 11 selectors 
+                                more for slightly higher quality (slower). This may negatively 
+                                impact BC6H quality, however.
+      --uastc-hdr-ultra-quant   Allow the UASTC HDR 4x4 encoder to try and find better quantized 
+                                CEM 7/11 endpoint values (slower).
+      --uastc-hdr-favor-astc    By default the UASTC HDR 4x4 encoder tries to strike a balance or 
+                                even slightly favor BC6H quality. If this option is specified, ASTC 
+                                HDR 4x4 quality is favored instead.
+      --rec-2020                The input image's gamut is Rec. 2020 vs. the default Rec. 709 - for 
+                                accurate colorspace error calculations.
+      --uastc-hdr-lambda <level>
+                                Enables rate distortion optimization (RDO). The higher this value, 
+                                the lower the quality, but the smaller the file size. Try 
+                                100-20000, or higher values on some images.
+      --uastc-hdr-6x6i-level <level>
+                                Controls the 6x6 HDR intermediate mode encoder performance vs. max 
+                                quality tradeoff. Range is [0,12]. Default level is 2.
 
  Encode common options:
       --normal-mode      Optimizes for encoding textures with normal data. If the input texture has 
