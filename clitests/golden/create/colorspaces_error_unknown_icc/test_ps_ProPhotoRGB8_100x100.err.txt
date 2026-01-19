@@ -1,2 +1,2 @@
 ktx create warning: No color primaries in PNG input file "input/png_sample/test_ps_ProPhotoRGB8_100x100.png", defaulting to BT.709.
-ktx create fatal: Input file "input/png_sample/test_ps_ProPhotoRGB8_100x100.png" contains unsupported ICC profile "Photoshop ICC profile". Use --assign-tf to specify a different one.
+ktx create fatal: Input file "input/png_sample/test_ps_ProPhotoRGB8_100x100.png" contains unsupported ICC profile "Photoshop ICC profile". Use --assign-tf to specify a transfer function.
