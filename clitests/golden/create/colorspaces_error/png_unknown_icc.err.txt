@@ -1,2 +1,2 @@
 ktx create warning: No color primaries in PNG input file "input/png/colorspace_ICC_unknown.png", defaulting to BT.709.
-ktx create fatal: Input file "input/png/colorspace_ICC_unknown.png" contains unsupported ICC profile "Unknown_ICC_Profile_Name". Use --assign-tf to specify a different one.
+ktx create fatal: Input file "input/png/colorspace_ICC_unknown.png" contains unsupported ICC profile "Unknown_ICC_Profile_Name". Use --assign-tf to specify a transfer function.
