@@ -1,1 +1,1 @@
-ktx create fatal: Only RGB16 or RGBA16 SFLOAT can be encoded, but format is VK_FORMAT_R16_UNORM. See 'ktx create --help'.
+ktx create fatal: Only RGB16 or RGBA16 SFLOAT can be encoded to UASTC_HDR_4x4, but format is VK_FORMAT_R16_UNORM. See 'ktx create --help'.
