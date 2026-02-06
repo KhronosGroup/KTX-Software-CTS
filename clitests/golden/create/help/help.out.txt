@@ -17,6 +17,8 @@ Usage:
                                     R8G8B8_SRGB
                                     R8G8B8A8_UNORM
                                     R8G8B8A8_SRGB
+                                    R16G16B16_SFLOAT
+                                    R16G16B16A16_SFLOAT
                                 If the format is an ASTC format the ASTC encoder specific options 
                                 become valid, otherwise they are ignored.
                                 The format will be used to verify and load all input files into a 
@@ -49,8 +51,8 @@ Usage:
       --scale <float>           Scale images as they are loaded. Cannot be used with --raw. It 
                                 enables use of the 'Generate Mipmap' options to tune the resampler.
       --encode <codec>          Encode the created KTX file. Case insensitive.
-                                Possible options are: basis-lz | uastc | uastc-hdr-4x4 | 
-                                uastc-hdr-6x6i
+                                Possible options are: basis-lz | uastc | uastc-ldr-4x4 | 
+                                uastc-hdr-4x4 | uastc-hdr-6x6i
       --normalize               Normalize input normals to have a unit length. Only valid for
                                 linear normal textures with 2 or more components. For 2-component
                                 inputs 2D unit normals are calculated. Do not use these 2D unit

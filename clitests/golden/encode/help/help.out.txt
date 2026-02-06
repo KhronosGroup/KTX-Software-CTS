@@ -12,7 +12,8 @@ Usage:
                         options becomes valid. Case insensitive.
       --codec <target>  Target codec. With each encoding option the encoder specific options become 
                         valid, otherwise they are ignored. Case-insensitive.
-                        Possible options are: basis-lz | uastc | uastc-hdr-4x4 | uastc-hdr-6x6i
+                        Possible options are: basis-lz | uastc | uastc-ldr-4x4 | uastc-hdr-4x4 | 
+                        uastc-hdr-6x6i
       --compare-ssim    Calculate encoding structural similarity index measure (SSIM) and print it 
                         to stdout. Requires Basis-LZ, UASTC or ASTC encoding.
       --compare-psnr    Calculate encoding peak signal-to-noise ratio (PSNR) and print it to 

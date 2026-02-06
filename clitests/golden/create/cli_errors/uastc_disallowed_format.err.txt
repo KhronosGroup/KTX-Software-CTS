@@ -1,1 +1,1 @@
-ktx create fatal: Only R8, RG8, RGB8, or RGBA8 UNORM and SRGB formats can be encoded to UASTC_LDR, but format is VK_FORMAT_R16_UNORM. See 'ktx create --help'.
+ktx create fatal: Only R8, RG8, RGB8, or RGBA8 UNORM and SRGB formats can be encoded to UASTC_LDR_4X4, but format is VK_FORMAT_R16_UNORM. See 'ktx create --help'.
