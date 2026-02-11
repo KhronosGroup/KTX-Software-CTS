@@ -347,7 +347,9 @@ if __name__ == '__main__':
                             if not cli_args.keep_matching_outputs and not cli_args.regen_golden:
                                 os.remove(output_cur)
                         else:
-                            if outputTolerance and not cli_args.primary:
+                            # There may be a smarter way, e.g, make SubcaseContext.eval convert "false" to
+                            # a boolean but I don't want to take the time to figure it out.
+                            if not outputTolerance == 'False' and not cli_args.primary:
                                 if not cli_args.ktxdiff_path:
                                     subcase_messages.append("Test case requires diff tool. Please specify path using the -d command line argument.")
                                     subcase_failed = True
