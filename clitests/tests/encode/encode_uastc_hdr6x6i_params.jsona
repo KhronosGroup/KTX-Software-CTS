@@ -1,0 +1,24 @@
+{
+    "description": "Test UASTC HDR 6x6i encoding with various parameter combinations.",
+    "command": "ktx encode --testrun --threads 1 --codec uastc-hdr-6x6i ${select[args]} input/ktx2/valid_${subcase}_2D.ktx2 output/encode/encode_uastc_hdr_4x4_params/output_${subcase}_${select[id]}.ktx2",
+    "status": 0,
+    "outputTolerance": 0.08,
+    "outputs": {
+        "output/encode/encode_uastc_hdr_4x4_params/output_${subcase}_${select[id]}.ktx2": "golden/encode/encode_uastc_hdr_4x4_params/output_${subcase}_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "lambda", "args": "--uastc-hdr-lambda 1000" },
+            { "id": "rec202", "args": "--rec-2020" },
+            { "id": "level_0", "args": "--uastc-hdr-6x6i-level 0" },
+            { "id": "level_4", "args": "--uastc-hdr-6x6i-level 4" },
+            { "id": "level_12", "args": "--uastc-hdr-6x6i-level 12" },
+            { "id": "combination_1", "args": "--uastc-hdr-6x6i-level 0 --uastc-hdr-lambda 2000" },
+            { "id": "combination_2", "args": "--uastc-hdr-6x6i-level 3 --uastc-hdr-lambda 5000" }
+        ],
+        "subcase": [
+            "R16G16B16_SFLOAT",
+            "R16G16B16A16_SFLOAT"
+        ]
+    }
+}

@@ -289,7 +289,8 @@ if __name__ == '__main__':
 
                 output_matching = ctx.match(output_ref, output[stdfile], stdfileBinary)
                 output_filename = f"output/{cli_args.json_test_file[len('tests/'):]}.{subcase_index + 1}.{stdfile[3:]}"
-
+                #if stdfile == 'stdout':
+                #    messages.append(f"***    AG: Test ('{stdfile}'): '{output[stdfile]}'")
                 if not output_matching or cli_args.keep_matching_outputs:
                     os.makedirs(os.path.dirname(output_filename), exist_ok=True)
                     if stdfileBinary:
@@ -303,6 +304,8 @@ if __name__ == '__main__':
                     if outputTolerance and not cli_args.primary:
                         # For stdin/stdout we do not use ktxdiff as in the relevant tests these are never ktx2 files
                         messages.append(f"    WARNING: Allowed mismatch on non-primary platform between output file '{stdfile}' and reference file '{output_ref_filename}'")
+                        messages.append(f"*** AG: Got : '{output[stdfile]}'. Error: '{output['stderr']}'")
+                        messages.append(f"*** AG: Expected : '{output_ref}'")
                     else:
                         if output_ref_filename:
                             subcase_messages.append(f"Mismatch between {stdfile} and reference file '{output_ref_filename}'")

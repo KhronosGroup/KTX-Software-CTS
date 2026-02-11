@@ -1,0 +1,455 @@
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\help.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\help.json'...
+  ktx transcode --testrun --help
+  ktx transcode --testrun --version
+Subcase summary:
+  Passed:  2
+  Skipped: 0
+  Failed:  0
+  Total:   2
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\stdin.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\stdin.json'...
+  ktx transcode --testrun --target bc7 - output/transcode/stdin/alpha_simple_basis.ktx2
+  ktx transcode --testrun --target bc7 - output/transcode/stdin/valid_R8G8B8_SRGB_2D_BLZE.ktx2
+  ktx transcode --testrun --target bc7 - output/transcode/stdin/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2
+Subcase summary:
+  Passed:  3
+  Skipped: 0
+  Failed:  0
+  Total:   3
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\stdout.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\stdout.json'...
+  ktx transcode --testrun --target bc7 input/ktx2_sample/alpha_simple_basis.ktx2 -
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 -
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 -
+Subcase summary:
+  Passed:  3
+  Skipped: 0
+  Failed:  0
+  Total:   3
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_blze.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_blze.json'...
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_etc-rgba.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_eac-rg11.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_bc1.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_bc3.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_bc4.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_bc5.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_bc7.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_astc.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_r8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_rg8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_rgb8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_rgba8.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_UNORM_2D_BLZE_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8_SRGB_2D_BLZE_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_UNORM_2D_BLZE_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8_SRGB_2D_BLZE_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_UNORM_2D_BLZE_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8_SRGB_2D_BLZE_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8A8_UNORM_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_UNORM_2D_BLZE_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8A8_SRGB_2D_BLZE.ktx2 output/transcode/transcode_blze/output_R8G8B8A8_SRGB_2D_BLZE_to_auto.ktx2
+Subcase summary:
+  Passed:  120
+  Skipped: 0
+  Failed:  0
+  Total:   120
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_invalid.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_invalid.json'...
+  ktx transcode --testrun input/validate/3005/error_TypeSizeNotOne_BasisLZ.ktx2 output/transcode/transcode_error_invalid/output_validate/3005/error_TypeSizeNotOne_BasisLZ.ktx2
+  ktx transcode --testrun input/validate/6018/error_IncorrectModelForBLZE_UASTC.ktx2 output/transcode/transcode_error_invalid/output_validate/6018/error_IncorrectModelForBLZE_UASTC.ktx2
+  ktx transcode --testrun input/validate/3005/error_TypeSizeNotOne_UASTC.ktx2 output/transcode/transcode_error_invalid/output_validate/3005/error_TypeSizeNotOne_UASTC.ktx2
+  ktx transcode --testrun input/validate/3027/error_IndexSGDNotApplicable_UASTC_ZSTD.ktx2 output/transcode/transcode_error_invalid/output_validate/3027/error_IndexSGDNotApplicable_UASTC_ZSTD.ktx2
+  ktx transcode --testrun input/validate/6026/error_InvalidSampleCount_UASTC_2Sample.ktx2 output/transcode/transcode_error_invalid/output_validate/6026/error_InvalidSampleCount_UASTC_2Sample.ktx2
+Subcase summary:
+  Passed:  5
+  Skipped: 0
+  Failed:  0
+  Total:   5
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_not_transcodable.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_not_transcodable.json'...
+  ktx transcode --testrun  input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun  input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_ASTC_4x4_SRGB_BLOCK_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_SRGB_BLOCK_2D.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2 output/transcode/transcode_error_not_transcodable/output_ASTC_4x4_UNORM_BLOCK_2D_ZLIB_9.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R16G16_SFLOAT_CUBE_ARRAY.ktx2 output/transcode/transcode_error_not_transcodable/output_R16G16_SFLOAT_CUBE_ARRAY.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8A8_SRGB_2D.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2 output/transcode/transcode_error_not_transcodable/output_R8G8B8_UNORM_CUBE_ARRAY_MIP.ktx2
+Subcase summary:
+  Passed:  75
+  Skipped: 0
+  Failed:  0
+  Total:   75
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_target.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_target.json'...
+  ktx transcode --testrun --target etc_rgb input/transcode/transcode_error_target/large_BLZE.ktx2 output/transcode/transcode_error_target/output_BLZE_etc_rgb.ktx2
+  ktx transcode --testrun --target etc_rgb input/transcode/transcode_error_target/large_UASTC.ktx2 output/transcode/transcode_error_target/output_UASTC_etc_rgb.ktx2
+  ktx transcode --testrun --target eac-rgb input/transcode/transcode_error_target/large_BLZE.ktx2 output/transcode/transcode_error_target/output_BLZE_eac-rgb.ktx2
+  ktx transcode --testrun --target eac-rgb input/transcode/transcode_error_target/large_UASTC.ktx2 output/transcode/transcode_error_target/output_UASTC_eac-rgb.ktx2
+  ktx transcode --testrun --target uastc input/transcode/transcode_error_target/large_BLZE.ktx2 output/transcode/transcode_error_target/output_BLZE_uastc.ktx2
+  ktx transcode --testrun --target uastc input/transcode/transcode_error_target/large_UASTC.ktx2 output/transcode/transcode_error_target/output_UASTC_uastc.ktx2
+  ktx transcode --testrun --target bgra8 input/transcode/transcode_error_target/large_BLZE.ktx2 output/transcode/transcode_error_target/output_BLZE_bgra8.ktx2
+  ktx transcode --testrun --target bgra8 input/transcode/transcode_error_target/large_UASTC.ktx2 output/transcode/transcode_error_target/output_UASTC_bgra8.ktx2
+Subcase summary:
+  Passed:  8
+  Skipped: 0
+  Failed:  0
+  Total:   8
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_too_many_filenames.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_error_too_many_filenames.json'...
+  ktx transcode --testrun input/transcode/large_UASTC.ktx2 output/transcode/transcode_error_too_many_filenames/output.ktx2 excess_filename.ktx2
+  ktx transcode --testrun input/transcode/large_UASTC.ktx2 - excess_filename.ktx2
+  ktx transcode --testrun - output/transcode/transcode_error_too_many_filenames/output.ktx2 excess_filename.ktx2
+  ktx transcode --testrun - - excess_filename.ktx2
+Subcase summary:
+  Passed:  4
+  Skipped: 0
+  Failed:  0
+  Total:   4
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_uastc.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_uastc.json'...
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgb input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_etc-rgb.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target etc-rgba input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_etc-rgba.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-r11 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_eac-r11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target eac-rg11 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_eac-rg11.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc1 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_bc1.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc3 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_bc3.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc4 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_bc4.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc5 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_bc5.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target bc7 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_bc7.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target astc input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_astc.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target r8 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_r8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rg8 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_rg8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgb8 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_rgb8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun --target rgba8 input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_rgba8.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_UNORM_2D_UASTC_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8_SRGB_2D_UASTC_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_UNORM_2D_UASTC_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8_SRGB_2D_UASTC_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_UNORM_2D_UASTC_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8_SRGB_2D_UASTC_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8A8_UNORM_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_UNORM_2D_UASTC_to_auto.ktx2
+  ktx transcode --testrun  input/ktx2/valid_R8G8B8A8_SRGB_2D_UASTC.ktx2 output/transcode/transcode_uastc/output_R8G8B8A8_SRGB_2D_UASTC_to_auto.ktx2
+Subcase summary:
+  Passed:  120
+  Skipped: 0
+  Failed:  0
+  Total:   120
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_uastc_hdr_4x4.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_uastc_hdr_4x4.json'...
+  ktx transcode --testrun --target astc-hdr-4x4 input/transcode/valid_uastc_hdr4x4_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_4x4/output_R16G16B16A16_SFLOAT_2D_UASTC_to_astc-hdr-4x4.ktx2
+  ktx transcode --testrun --target rgba16f input/transcode/valid_uastc_hdr4x4_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_4x4/output_R16G16B16A16_SFLOAT_2D_UASTC_to_rgba16f.ktx2
+  ktx transcode --testrun --target bc6hu input/transcode/valid_uastc_hdr4x4_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_4x4/output_R16G16B16A16_SFLOAT_2D_UASTC_to_bc6hu.ktx2
+  ktx transcode --testrun  input/transcode/valid_uastc_hdr4x4_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_4x4/output_R16G16B16A16_SFLOAT_2D_UASTC_to_auto.ktx2
+Subcase summary:
+  Passed:  4
+  Skipped: 0
+  Failed:  0
+  Total:   4
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_uastc_hdr_6x6i.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_uastc_hdr_6x6i.json'...
+  ktx transcode --testrun --target astc-hdr-6x6 input/transcode/valid_uastc_hdr6x6i_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_6x6i/output_R16G16B16A16_SFLOAT_2D_UASTC_to_astc-hdr-6x6.ktx2
+  ktx transcode --testrun --target rgba16f input/transcode/valid_uastc_hdr6x6i_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_6x6i/output_R16G16B16A16_SFLOAT_2D_UASTC_to_rgba16f.ktx2
+  ktx transcode --testrun --target bc6hu input/transcode/valid_uastc_hdr6x6i_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_6x6i/output_R16G16B16A16_SFLOAT_2D_UASTC_to_bc6hu.ktx2
+  ktx transcode --testrun  input/transcode/valid_uastc_hdr6x6i_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_uastc_hdr_6x6i/output_R16G16B16A16_SFLOAT_2D_UASTC_to_auto.ktx2
+Subcase summary:
+  Passed:  4
+  Skipped: 0
+  Failed:  0
+  Total:   4
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_zlib.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_zlib.json'...
+  ktx transcode --testrun --zlib 6 --target bc7 input/transcode/large_BLZE.ktx2 output/transcode/transcode_zlib/output_BLZE_ZLIB.ktx2
+  ktx transcode --testrun --zlib 6 --target bc7 input/transcode/large_UASTC.ktx2 output/transcode/transcode_zlib/output_UASTC_ZLIB.ktx2
+Subcase summary:
+  Passed:  2
+  Skipped: 0
+  Failed:  0
+  Total:   2
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_zstd.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\transcode_zstd.json'...
+  ktx transcode --testrun --zstd 11 --target bc7 input/transcode/large_BLZE.ktx2 output/transcode/transcode_zstd/output_BLZE_ZSTD.ktx2
+  ktx transcode --testrun --zstd 11 --target bc7 input/transcode/large_UASTC.ktx2 output/transcode/transcode_zstd/output_UASTC_ZSTD.ktx2
+Subcase summary:
+  Passed:  2
+  Skipped: 0
+  Failed:  0
+  Total:   2
+Processing C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\unicode_filenames.json
+Executing test case 'C:\Users\Anastasios\Desktop\Gitlab\Projects\KTX\KTX-Software-CTS\clitests\tests\transcode\unicode_filenames.json'...
+  ktx transcode --testrun input/unicode/hűtő_BLZE.ktx2 output/transcode/unicode/hűtő/hűtő.ktx2
+  ktx transcode --testrun input/unicode/テクスチャ_BLZE.ktx2 output/transcode/unicode/テクスチャ/テクスチャ.ktx2
+  ktx transcode --testrun input/unicode/نَسِيج_BLZE.ktx2 output/transcode/unicode/نَسِيج/نَسِيج.ktx2
+  ktx transcode --testrun input/unicode/조직_BLZE.ktx2 output/transcode/unicode/조직/조직.ktx2
+  ktx transcode --testrun input/unicode/质地_BLZE.ktx2 output/transcode/unicode/质地/质地.ktx2
+Subcase summary:
+  Passed:  5
+  Skipped: 0
+  Failed:  0
+  Total:   5
