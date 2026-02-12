@@ -275,7 +275,10 @@ set(CASELIST
     tests/create/encode_error_codec.json
     tests/create/encode_error_format.json
     tests/create/encode_uastc.json
+    tests/create/encode_uastc_hdr.json
     tests/create/encode_uastc_params.json
+    tests/create/encode_uastc_hdr4x4_params.json
+    tests/create/encode_uastc_hdr6x6i_params.json
     tests/create/fewer_components_exr.json
     tests/create/fewer_components_png.json
     tests/create/generate_mipmap.json
@@ -335,6 +338,7 @@ set(CASELIST
     tests/encode/encode_astc_bad_astc_format.json
     tests/encode/encode_uastc.json
     tests/encode/encode_uastc_params.json
+    tests/encode/encode_uastc_hdr.json
     tests/encode/help.json
     tests/encode/stdin.json
     tests/encode/stdout.json
@@ -350,6 +354,8 @@ set(CASELIST
     tests/transcode/transcode_error_target.json
     tests/transcode/transcode_error_too_many_filenames.json
     tests/transcode/transcode_uastc.json
+    tests/transcode/transcode_uastc_hdr_4x4.json
+    tests/transcode/transcode_uastc_hdr_6x6i.json
     tests/transcode/transcode_zlib.json
     tests/transcode/transcode_zstd.json
 

@@ -1,0 +1,19 @@
+{
+    "description": "Test UASTC HDR transcoding.",
+    "command": "ktx transcode --testrun ${transcode[flag]} input/transcode/valid_uastc_hdr4x4_${subcase}.ktx2 output/transcode/transcode_uastc_hdr_4x4/output_${subcase}_2D_UASTC_to_${transcode[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/transcode/transcode_uastc_hdr_4x4/output_${subcase}_2D_UASTC_to_${transcode[id]}.ktx2": "golden/transcode/transcode_uastc_hdr_4x4/output_${subcase}_2D_UASTC_to_${transcode[id]}.ktx2"
+    },
+    "args": {
+        "transcode": [
+            { "id": "astc-hdr-4x4", "flag": "--target astc-hdr-4x4" },
+            { "id": "rgba16f", "flag": "--target rgba16f" },
+            { "id": "bc6hu", "flag": "--target bc6hu" },
+            { "id": "auto", "flag": "" }
+        ],
+        "subcase": [
+            "R16G16B16A16_SFLOAT"
+        ]
+    }
+}

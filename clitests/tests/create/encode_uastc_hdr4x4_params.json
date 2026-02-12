@@ -1,0 +1,23 @@
+{
+    "description": "Test create with UASTC HDR 4x4 encoding with various parameter combinations.",
+    "command": "ktx create --testrun --raw --format ${subcase} --width 8 --height 8 --threads 1 --encode uastc-hdr-4x4 ${select[args]} input/raw/raw_${subcase}_2D_8x8.raw output/create/encode_uastc_hdr4x4_params/output_${subcase}_${select[id]}.ktx2",
+    "status": 0,
+    "outputTolerance": 0.08,
+    "outputs": {
+        "output/create/encode_uastc_hdr4x4_params/output_${subcase}_${select[id]}.ktx2": "golden/create/encode_uastc_hdr4x4_params/output_${subcase}_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "quality_0", "args": "--uastc-quality 0 --zlib 8" },
+            { "id": "quality_4", "args": "--uastc-quality 4 --zstd 3" },
+            { "id": "uber", "args": "--uastc-hdr-uber-mode" },
+            { "id": "ultra_quant", "args": "--uastc-hdr-ultra-quant" },
+            { "id": "favor_astc", "args": "--uastc-hdr-favor-astc" },
+            { "id": "combination_1", "args": "--uastc-quality 2 --no-sse --zlib 5" }
+        ],
+        "subcase": [
+            "R16G16B16_SFLOAT",
+            "R16G16B16A16_SFLOAT"
+        ]
+    }
+}
