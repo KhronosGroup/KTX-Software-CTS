@@ -1,0 +1,6 @@
+Validation failed
+
+error-8205: Invalid rgbSliceType. The rgbSliceType byte region must be 0xABCD.
+    For Level 0 Layer 0 Face 0 zSlice 0 the rgbSliceType is 31693 but the rgbSliceType must be 0xABCD.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

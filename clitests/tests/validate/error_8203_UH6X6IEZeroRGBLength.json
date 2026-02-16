@@ -1,0 +1,26 @@
+{
+    "description": "Invalid rgbSliceByteLength in UASTCHDR6X6IntermediateImageDesc. rgbSliceByteLength must not be 0.",
+    "command": "ktx validate --testrun input/validate/8203/error_UH6X6IEZeroRGBLength.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8203/error_UH6X6IEZeroRGBLength.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "description": "Invalid sgdByteLength for UASTC HDR6X6 Intermediate. sgdByteLength must be a multiple of 12 (sizeof ktxUASTCHDR6X6IntermediateImageDesc).",
+    "command": "ktx validate --testrun input/validate/8202/error_UH6X6IEByteLengthInvalidSize.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8202/error_UH6X6IEByteLengthInvalidSize.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

@@ -183,6 +183,14 @@ set(CASELIST
     tests/validate/error_8109_BLZEDFDMismatchAlpha.json
     tests/validate/error_8110_BLZEDFDMismatchNoAlpha.json
 
+    tests/validate/error_8201_UH6X6IESizeTooSmall.json
+    tests/validate/error_8202_UH6X6IEByteLengthInvalidSize.json
+    tests/validate/error_8203_UH6X6IEZeroRGBLength.json
+    tests/validate/error_8204_UH6X6IEInvalidRGBSlice.json
+    tests/validate/error_8205_UH6X6IEInvalidRGBSliceTypeProfile.json
+    tests/validate/error_8206_UH6X6IEInvalidRGBSliceTypeVersion.json
+    tests/validate/error_8209_UH6X6IEInvalidRGBSliceDimensionsInData.json
+
     tests/extract/cli_errors.json
     tests/extract/exr_2d.json
     tests/extract/help.json

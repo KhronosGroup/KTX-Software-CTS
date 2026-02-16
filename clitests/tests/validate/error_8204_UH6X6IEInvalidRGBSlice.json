@@ -1,0 +1,26 @@
+{
+    "description": "Invalid rgbSliceByteOffset or rgbSliceByteLength. The defined byte region must be within the corresponding mip level.",
+    "command": "ktx validate --testrun input/validate/8204/error_UH6X6IEInvalidRGBSlice.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8204/error_UH6X6IEInvalidRGBSlice.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

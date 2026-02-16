@@ -1,0 +1,26 @@
+{
+    "description": "Invalid rgbSliceType profile. The rgbSliceType profile byte region must be 171 (0xAB).",
+    "command": "ktx validate --testrun input/validate/8205/error_UH6X6IEInvalidRGBSliceTypeProfile.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8205/error_UH6X6IEInvalidRGBSliceTypeProfile.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}
