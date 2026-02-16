@@ -45,7 +45,9 @@
             "ASTC_5x4x4_SRGB_BLOCK_EXT",
             "ASTC_6x6x5_UNORM_BLOCK_EXT",
             "UASTC",
-            "BasisLZ"
+            "BasisLZ",
+            "UASTC_HDR_4x4",
+            "UASTC_HDR_6x6i"
         ]
     }
 }
