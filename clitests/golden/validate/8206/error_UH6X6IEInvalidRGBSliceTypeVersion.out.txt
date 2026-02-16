@@ -1,0 +1,8 @@
+Validation failed
+
+error-8206: Invalid rgbSliceType version. The rgbSliceType version byte region must be either 205 (0xCD) or 206 (0xCE).
+    For Level 0 Layer 0 Face 0 zSlice 0 the rgbSliceType version is 32 but the rgbSliceType version must be either 205 (0xCD) or 206 (0xCE).
+error-8208: Mismatched rgbSliceType version in Supercompression Global Data and Compressed Data bitstream.
+    For Level 0 Layer 0 Face 0 zSlice 0 the rgbSliceType version in the Supercompression Global Data is 32 but the rgbSliceType profile in the Compressed Data bitstream is 205.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

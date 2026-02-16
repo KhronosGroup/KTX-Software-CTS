@@ -1,0 +1,6 @@
+Validation failed
+
+error-8209: Invalid slice dimensions in the Compressed Data bitstream. The dimensions in the Compressed Data bitstream must match the level dimensions.
+    For Level 0 Layer 0 Face 0 zSlice 0 the dimensions in the Compressed Data bitstream are width: 8 and height: 8 but the dimensions must be width: 6 and height: 8.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

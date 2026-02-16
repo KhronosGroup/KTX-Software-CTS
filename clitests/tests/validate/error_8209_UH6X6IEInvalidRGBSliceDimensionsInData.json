@@ -1,0 +1,26 @@
+{
+    "description": "Invalid slice dimensions in the Compressed Data bitstream. The dimensions in the Compressed Data bitstream must match the level dimensions.",
+    "command": "ktx validate --testrun input/validate/8209/error_UH6X6IEInvalidRGBSliceDimensionsInData.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/8209/error_UH6X6IEInvalidRGBSliceDimensionsInData.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}
