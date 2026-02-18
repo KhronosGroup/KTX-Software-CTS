@@ -1,0 +1,26 @@
+{
+    "description": "Invalid metadata entry KTXmapRange. The KTXmapRange metadata entry may be used only with floating point format and any linear *_UNORM or *_SNORM format.",
+    "command": "ktx validate --testrun input/validate/7137/error_KTXmapRangeInvalidFormat.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7137/error_KTXmapRangeInvalidFormat.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

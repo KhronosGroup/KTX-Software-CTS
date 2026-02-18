@@ -1,0 +1,26 @@
+{
+    "description": "Invalid scale value in the KTXmapRange metadata entry. The scale value in the KTXmapRange metadata entry must be finite.",
+    "command": "ktx validate --testrun input/validate/7138/error_KTXmapRangeInvalidScale.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/7138/error_KTXmapRangeInvalidScale.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ]
+    }
+}

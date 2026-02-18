@@ -1,6 +1,6 @@
 Validation failed
 
-error-8201: Invalid sgdByteLength for UASTC HDR6X6 Intermediate. sgdByteLength must be at least 12 bytes (sizeof ktxUASTCHDR6X6IntermediateImageDesc).
-    sgdByteLength is 2 but for UASTC HDR6X6 Intermediate textures it must be at least 12 bytes (sizeof ktxUASTCHDR6X6IntermediateImageDesc).
+error-8201: Invalid sgdByteLength for UASTC HDR6X6 Intermediate. sgdByteLength must be at least 12 bytes (sizeof ktxUASTCHDR6x6IntermediateImageDesc).
+    sgdByteLength is 2 but for UASTC HDR6X6 Intermediate textures it must be at least 12 bytes (sizeof ktxUASTCHDR6x6IntermediateImageDesc).
 warning-5004: Non-conformant texture file accepted by libktx.
     KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.

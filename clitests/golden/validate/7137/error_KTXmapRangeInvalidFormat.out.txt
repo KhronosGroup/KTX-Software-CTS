@@ -1,0 +1,6 @@
+Validation failed
+
+error-7137: Invalid metadata entry KTXmapRange. The KTXmapRange metadata entry may be used only with floating point format and any linear *_UNORM or *_SNORM format.
+    The metadata entry KTXmapRange is present but the data format is not any floating point format or any linear *_UNORM or *_SNORM format.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
