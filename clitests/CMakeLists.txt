@@ -168,6 +168,10 @@ set(CASELIST
     tests/validate/error_7133_KTXastcDecodeModeunorm8NotLDR.json
     tests/validate/warning_7134_KTXastcDecodeModeNotASTC.json
     tests/validate/warning_7135_KTXastcDecodeModeWithsRGB.json
+    tests/validate/error_7136_KTXmapRangeInvalidSize.json
+    tests/validate/error_7137_KTXmapRangeInvalidFormat.json
+    tests/validate/error_7138_KTXmapRangeInvalidScale.json
+    tests/validate/error_7139_KTXmapRangeInvalidOffset.json
 
     tests/validate/error_7201_KTXswizzleInvalidGLTFBU.json
     tests/validate/error_7202_KTXorientationInvalidGLTFBU.json
