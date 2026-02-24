@@ -349,7 +349,7 @@ if __name__ == '__main__':
                         else:
                             # There may be a smarter way, e.g, make SubcaseContext.eval convert "false" to
                             # a boolean but I don't want to take the time to figure it out.
-                            if not outputTolerance == 'False' and not cli_args.primary:
+                            if outputTolerance is not None and outputTolerance != 'False' and not cli_args.primary:
                                 if not cli_args.ktxdiff_path:
                                     subcase_messages.append("Test case requires diff tool. Please specify path using the -d command line argument.")
                                     subcase_failed = True
