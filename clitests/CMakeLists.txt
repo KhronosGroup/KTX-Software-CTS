@@ -197,6 +197,8 @@ set(CASELIST
 
     tests/extract/cli_errors.json
     tests/extract/exr_2d.json
+    tests/extract/exr_hdr_2d.json
+    tests/extract/exr_hdr_2d_mip.json
     tests/extract/help.json
     tests/extract/png_2d.json
     tests/extract/raw_all_1d.json
