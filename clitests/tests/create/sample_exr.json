@@ -16,7 +16,9 @@
             { "format": "R16G16B16_SFLOAT", "file": "test_gimp_gimp_BuiltsRGB_HALF_100x100", "ext": ".exr" },
             { "format": "R32G32B32_SFLOAT", "file": "test_gimp_gimp_BuiltsRGB_FLOAT_100x100", "ext": ".exr" },
             { "format": "R16G16B16_SFLOAT", "file": "test_gimp_sRGB_IEC61966-2_1_HALF_100x100", "ext": ".exr" },
-            { "format": "R32G32B32_SFLOAT", "file": "test_gimp_sRGB_IEC61966-2_1_FLOAT_100x100", "ext": ".exr" }
+            { "format": "R32G32B32_SFLOAT", "file": "test_gimp_sRGB_IEC61966-2_1_FLOAT_100x100", "ext": ".exr" },
+            { "format": "R16G16B16A16_SFLOAT", "file": "tiled_RGBA_HALF_100x100", "ext": ".exr" },
+            { "format": "R32G32B32A32_SFLOAT", "file": "tiled_RGBA_FLOAT_100x100", "ext": ".exr" }
         ]
     }
 }
