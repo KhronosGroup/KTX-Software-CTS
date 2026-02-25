@@ -78,7 +78,6 @@ Usage:
                                 dcip3_eotf | pal_oetf | pal625_eotf | st240 | st240_oetf | 
                                 st240_eotf | acescc | acescc_oetf | acescct | acescct_oetf | 
                                 abobergb | adobergb_eotf
-      --assign-oetf <tf>        Same as --assign-tf. Deprecated.
       --assign-primaries <primaries>
                                 Force the created texture to have the specified color primaries, 
                                 ignoring the color primaries of the input file(s). Possible options 
@@ -105,7 +104,6 @@ Usage:
                                 specified by this option, if different. Case insensitive.
                                 Possible options are: linear | srgb. The following srgb aliases are 
                                 also supported: srgb_eotf | scrgb | scrgb_eotf
-      --convert-oetf <tf>       Same as --convert-tf. Deprecated.
       --convert-primaries <primaries>
                                 Convert the image image(s) to the specified color primaries, if 
                                 different from the color primaries of the input file(s) or the one 
