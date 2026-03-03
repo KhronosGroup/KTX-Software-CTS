@@ -1,6 +1,6 @@
 {
     "description": "Test extraction HDR files to EXR output files.",
-    "command": "ktx extract --testrun input/ktx2/valid_R16G16B16_2D_${subcase}.ktx2 output/extract/exr_hdr_2d/output_${subcase}_2D.exr",
+    "command": "ktx extract --testrun input/ktx2/valid_${subcase}_2D.ktx2 output/extract/exr_hdr_2d/output_${subcase}_2D.exr",
     "status": 0,
     "outputs": {
         "output/extract/exr_hdr_2d/output_${subcase}_2D.exr": "golden/extract/exr_hdr_2d/output_${subcase}_2D.exr"
@@ -8,7 +8,8 @@
     "args": {
         "subcase": [
             "UASTC_HDR_4x4",
-            "UASTC_HDR_6x6i"
+            "UASTC_HDR_6x6i",
+            "ASTC_6x6_SFLOAT_BLOCK"
         ]
     }
 }
