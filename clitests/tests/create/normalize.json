@@ -9,7 +9,7 @@
     },
     "args": {
         "linearize": [
-            { "flag": "--assign-oetf linear", "return" : 0}
+            { "flag": "--assign-tf linear", "return" : 0}
         ],
         "subcase": [
             { "format": "R8_UNORM", "flags": "input/png/basic_RGB8_16x16.png" },
