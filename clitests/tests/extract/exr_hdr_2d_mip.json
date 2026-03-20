@@ -1,6 +1,5 @@
 {
     "description": "Test extraction from 2D Mip textures to EXR output files with --all to export every image.",
-
     "command": "ktx extract --testrun --all input/ktx2/valid_${subcase}_2D_MIP.ktx2 output/extract/exr_hdr_2d_mip/output_${subcase}_2D_MIP",
     "status": 0,
     "outputs": {
