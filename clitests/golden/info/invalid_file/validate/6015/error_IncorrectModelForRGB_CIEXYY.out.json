@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -11,8 +11,8 @@
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
-            "details": "DFD block #1 sample #4 channelType in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_CIEXYY."
+            "message": "Invalid sample channelId for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #4 channelId in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_CIEXYY."
         }
     ],
     "header": {
@@ -67,7 +67,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_CIEXYY_X",
+                        "channelId": "KHR_DF_CHANNEL_CIEXYY_X",
                         "bitLength": 7,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],
@@ -76,7 +76,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_CIEXYY_YCHROMA",
+                        "channelId": "KHR_DF_CHANNEL_CIEXYY_YCHROMA",
                         "bitLength": 7,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -85,7 +85,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_CIEXYY_YLUMA",
+                        "channelId": "KHR_DF_CHANNEL_CIEXYY_YLUMA",
                         "bitLength": 7,
                         "bitOffset": 16,
                         "samplePosition": [0, 0, 0, 0],
@@ -94,7 +94,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": 15,
+                        "channelId": 15,
                         "bitLength": 7,
                         "bitOffset": 24,
                         "samplePosition": [0, 0, 0, 0],

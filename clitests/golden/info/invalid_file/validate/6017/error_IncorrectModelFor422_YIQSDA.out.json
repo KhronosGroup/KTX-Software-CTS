@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -61,7 +61,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_YIQSDA_Y",
+                        "channelId": "KHR_DF_CHANNEL_YIQSDA_Y",
                         "bitLength": 7,
                         "bitOffset": 0,
                         "samplePosition": [64, 128, 0, 0],
@@ -70,7 +70,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_YIQSDA_I",
+                        "channelId": "KHR_DF_CHANNEL_YIQSDA_I",
                         "bitLength": 7,
                         "bitOffset": 8,
                         "samplePosition": [64, 128, 0, 0],
@@ -79,7 +79,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_YIQSDA_Y",
+                        "channelId": "KHR_DF_CHANNEL_YIQSDA_Y",
                         "bitLength": 7,
                         "bitOffset": 16,
                         "samplePosition": [192, 128, 0, 0],
@@ -88,7 +88,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_YIQSDA_Q",
+                        "channelId": "KHR_DF_CHANNEL_YIQSDA_Q",
                         "bitLength": 7,
                         "bitOffset": 24,
                         "samplePosition": [64, 128, 0, 0],

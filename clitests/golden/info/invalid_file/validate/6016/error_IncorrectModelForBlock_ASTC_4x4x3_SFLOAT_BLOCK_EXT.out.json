@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -70,7 +70,7 @@
                             "KHR_DF_SAMPLE_DATATYPE_SIGNED",
                             "KHR_DF_SAMPLE_DATATYPE_FLOAT"
                         ],
-                        "channelType": "KHR_DF_CHANNEL_YUVSDA_Y",
+                        "channelId": "KHR_DF_CHANNEL_YUVSDA_Y",
                         "bitLength": 127,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],

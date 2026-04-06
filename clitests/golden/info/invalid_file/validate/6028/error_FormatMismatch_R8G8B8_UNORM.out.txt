@@ -5,7 +5,7 @@ error-6028: Invalid sample in basic DFD block. The samples must match the expect
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #1 bitLength in basic DFD block is 8 but the expected value is 7 for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
-    DFD block #1 sample #1 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_GREEN but the expected value is KHR_DF_CHANNEL_RGBSDA_RED for VK_FORMAT_R8G8B8_UNORM.
+    DFD block #1 sample #1 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_GREEN but the expected value is KHR_DF_CHANNEL_RGBSDA_RED for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #1 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
@@ -29,7 +29,7 @@ error-6028: Invalid sample in basic DFD block. The samples must match the expect
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #2 bitLength in basic DFD block is 8 but the expected value is 7 for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
-    DFD block #1 sample #2 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_BLUE but the expected value is KHR_DF_CHANNEL_RGBSDA_GREEN for VK_FORMAT_R8G8B8_UNORM.
+    DFD block #1 sample #2 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_BLUE but the expected value is KHR_DF_CHANNEL_RGBSDA_GREEN for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #2 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
@@ -55,7 +55,7 @@ error-6028: Invalid sample in basic DFD block. The samples must match the expect
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #3 bitLength in basic DFD block is 8 but the expected value is 7 for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
-    DFD block #1 sample #3 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8_UNORM.
+    DFD block #1 sample #3 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #3 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_R8G8B8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
@@ -119,21 +119,21 @@ Dimensions: 1, 1, 1, 1
 Plane bytes: 3, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0xF0 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED, KHR_DF_SAMPLE_DATATYPE_FLOAT)
-    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Channel Id: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
     Length: 9 bits Offset: 8
     Position: 1, 1, 1, 1
     Lower: 0x00000001
     Upper: 0x00000001
 Sample 1:
     Qualifiers: 0xF0 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED, KHR_DF_SAMPLE_DATATYPE_FLOAT)
-    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+    Channel Id: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
     Length: 9 bits Offset: 8
     Position: 1, 1, 1, 1
     Lower: 0x00000001
     Upper: 0x00000001
 Sample 2:
     Qualifiers: 0xF0 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED, KHR_DF_SAMPLE_DATATYPE_FLOAT)
-    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Channel Id: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
     Length: 9 bits Offset: 8
     Position: 1, 1, 1, 1
     Lower: 0x00000001

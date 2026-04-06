@@ -5,8 +5,8 @@
         {
             "id": 6303,
             "type": "error",
-            "message": "Invalid sample channelType for colorModel for KHR_texture_basisu compatibility.",
-            "details": "DFD block #1 colorModel is KHR_DF_MODEL_ETC1S but sample #1 channelType is KHR_DF_CHANNEL_ETC1S_GGG while KHR_texture_basisu requires KHR_DF_CHANNEL_ETC1S_RGB or KHR_DF_CHANNEL_ETC1S_RRR."
+            "message": "Invalid sample channelId for colorModel for KHR_texture_basisu compatibility.",
+            "details": "DFD block #1 colorModel is KHR_DF_MODEL_ETC1S but sample #1 channelId is KHR_DF_CHANNEL_ETC1S_GGG while KHR_texture_basisu requires KHR_DF_CHANNEL_ETC1S_RGB or KHR_DF_CHANNEL_ETC1S_RRR."
         },
         {
             "id": 5004,

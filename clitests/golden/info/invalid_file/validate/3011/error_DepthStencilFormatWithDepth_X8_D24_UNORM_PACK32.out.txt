@@ -45,7 +45,7 @@ Dimensions: 1, 1, 1, 1
 Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
-    Channel Type: 0xE (KHR_DF_CHANNEL_RGBSDA_DEPTH)
+    Channel Id: 0xE (KHR_DF_CHANNEL_RGBSDA_DEPTH)
     Length: 24 bits Offset: 0
     Position: 0, 0, 0, 0
     Lower: 0x00000000

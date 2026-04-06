@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/compare_v1.json",
     "valid": [
         false,
         false
@@ -97,7 +97,7 @@
             [],
             null
         ],
-        "/dataFormatDescriptor/blocks/0/samples/2/channelType": [
+        "/dataFormatDescriptor/blocks/0/samples/2/channelId": [
             "KHR_DF_CHANNEL_RGBSDA_BLUE",
             null
         ],
@@ -125,7 +125,7 @@
             [],
             null
         ],
-        "/dataFormatDescriptor/blocks/0/samples/3/channelType": [
+        "/dataFormatDescriptor/blocks/0/samples/3/channelId": [
             "KHR_DF_CHANNEL_RGBSDA_ALPHA",
             null
         ],

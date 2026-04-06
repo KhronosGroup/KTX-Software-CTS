@@ -43,7 +43,7 @@ Dimensions: 5, 5, 2, 2
 Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
-    Channel Type: 0x3 (KHR_DF_CHANNEL_UASTC_RGBA)
+    Channel Id: 0x3 (KHR_DF_CHANNEL_UASTC_RGBA)
     Length: 128 bits Offset: 0
     Position: 0, 0, 0, 0
     Lower: 0x00000000

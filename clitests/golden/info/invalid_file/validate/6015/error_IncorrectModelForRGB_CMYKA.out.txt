@@ -43,28 +43,28 @@ Dimensions: 1, 1, 1, 1
 Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
-    Channel Type: 0x0 (KHR_DF_CHANNEL_CMYKSDA_CYAN)
+    Channel Id: 0x0 (KHR_DF_CHANNEL_CMYKSDA_CYAN)
     Length: 8 bits Offset: 0
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 1:
     Qualifiers: 0x0 ()
-    Channel Type: 0x1 (KHR_DF_CHANNEL_CMYKSDA_MAGENTA)
+    Channel Id: 0x1 (KHR_DF_CHANNEL_CMYKSDA_MAGENTA)
     Length: 8 bits Offset: 8
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 2:
     Qualifiers: 0x0 ()
-    Channel Type: 0x2 (KHR_DF_CHANNEL_CMYKSDA_YELLOW)
+    Channel Id: 0x2 (KHR_DF_CHANNEL_CMYKSDA_YELLOW)
     Length: 8 bits Offset: 16
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 3:
     Qualifiers: 0x0 ()
-    Channel Type: 0xF (KHR_DF_CHANNEL_CMYKSDA_ALPHA)
+    Channel Id: 0xF (KHR_DF_CHANNEL_CMYKSDA_ALPHA)
     Length: 8 bits Offset: 24
     Position: 0, 0, 0, 0
     Lower: 0x00000000

@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": true,
     "messages": [
         {
@@ -64,7 +64,7 @@
                             "KHR_DF_SAMPLE_DATATYPE_SIGNED",
                             "KHR_DF_SAMPLE_DATATYPE_FLOAT"
                         ],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_DEPTH",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_DEPTH",
                         "bitLength": 31,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],
@@ -73,7 +73,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_STENCIL",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_STENCIL",
                         "bitLength": 7,
                         "bitOffset": 32,
                         "samplePosition": [0, 0, 0, 0],

@@ -5,7 +5,7 @@ error-6028: Invalid sample in basic DFD block. The samples must match the expect
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #6 bitLength in basic DFD block is 8 but the expected value is 4 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
-    DFD block #1 sample #6 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
+    DFD block #1 sample #6 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #6 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
@@ -65,8 +65,8 @@ Sample 0:
 Sample 1:
 -    Qualifiers: 0x20 (KHR_DF_SAMPLE_DATATYPE_EXPONENT)
 +    Qualifiers: 0x0 ()
--    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
-+    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+-    Channel Id: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
++    Channel Id: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
 -    Length: 5 bits Offset: 27
 +    Length: 8 bits Offset: 8
 -    Lower: 0x0000000f
@@ -75,8 +75,8 @@ Sample 1:
 +    Upper: 0x000000ff
 
 Sample 2:
--    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
-+    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Channel Id: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
++    Channel Id: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
 -    Length: 9 bits Offset: 9
 +    Length: 8 bits Offset: 16
 -    Upper: 0x00002100
@@ -85,8 +85,8 @@ Sample 2:
 Sample 3:
 -    Qualifiers: 0x20 (KHR_DF_SAMPLE_DATATYPE_EXPONENT)
 +    Qualifiers: 0x0 ()
--    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
-+    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+-    Channel Id: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
++    Channel Id: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
 -    Length: 5 bits Offset: 27
 +    Length: 8 bits Offset: 24
 -    Lower: 0x0000000f
@@ -96,7 +96,7 @@ Sample 3:
 
 Sample 4:
 -    Qualifiers: 0x0 ()
--    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Channel Id: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
 -    Length: 9 bits Offset: 18
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
@@ -104,7 +104,7 @@ Sample 4:
 
 Sample 5:
 -    Qualifiers: 0x70 (KHR_DF_SAMPLE_DATATYPE_LINEAR, KHR_DF_SAMPLE_DATATYPE_EXPONENT, KHR_DF_SAMPLE_DATATYPE_SIGNED)
--    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+-    Channel Id: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
 -    Length: 9 bits Offset: 8
 -    Position: 1, 1, 1, 1
 -    Lower: 0x00000001

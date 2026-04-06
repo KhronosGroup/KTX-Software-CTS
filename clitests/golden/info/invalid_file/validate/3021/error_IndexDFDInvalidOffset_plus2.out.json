@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -73,7 +73,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 0,
                         "bitOffset": 0,
                         "samplePosition": [7, 0, 0, 0],
@@ -82,7 +82,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 8,
                         "bitOffset": 0,
                         "samplePosition": [7, 1, 0, 0],
@@ -91,7 +91,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 16,
                         "bitOffset": 0,
                         "samplePosition": [7, 2, 0, 0],
@@ -100,7 +100,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 24,
                         "bitOffset": 0,
                         "samplePosition": [7, 15, 0, 0],
@@ -137,7 +137,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 0,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 255, 0],
@@ -146,7 +146,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 0,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 255, 0],
@@ -171,7 +171,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 16,
                         "bitOffset": 0,
                         "samplePosition": [7, 2, 0, 0],
@@ -180,7 +180,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_UNSPECIFIED_0",
+                        "channelId": "KHR_DF_CHANNEL_UNSPECIFIED_0",
                         "bitLength": 24,
                         "bitOffset": 0,
                         "samplePosition": [7, 15, 0, 0],

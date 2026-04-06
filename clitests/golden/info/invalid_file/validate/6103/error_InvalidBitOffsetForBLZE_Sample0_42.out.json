@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -67,7 +67,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_ETC1S_RGB",
+                        "channelId": "KHR_DF_CHANNEL_ETC1S_RGB",
                         "bitLength": 63,
                         "bitOffset": 42,
                         "samplePosition": [0, 0, 0, 0],
@@ -76,7 +76,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_ETC1S_AAA",
+                        "channelId": "KHR_DF_CHANNEL_ETC1S_AAA",
                         "bitLength": 63,
                         "bitOffset": 64,
                         "samplePosition": [0, 0, 0, 0],

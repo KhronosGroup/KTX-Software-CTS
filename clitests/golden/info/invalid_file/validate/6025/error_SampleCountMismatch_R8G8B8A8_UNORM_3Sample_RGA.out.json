@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -18,7 +18,7 @@
             "id": 6028,
             "type": "error",
             "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
-            "details": "DFD block #1 sample #3 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_ALPHA but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8A8_UNORM."
+            "details": "DFD block #1 sample #3 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_ALPHA but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8A8_UNORM."
         },
         {
             "id": 5004,
@@ -79,7 +79,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 7,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],
@@ -88,7 +88,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_GREEN",
                         "bitLength": 7,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -97,7 +97,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 7,
                         "bitOffset": 24,
                         "samplePosition": [0, 0, 0, 0],

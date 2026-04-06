@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -73,7 +73,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 7,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],
@@ -82,7 +82,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_GREEN",
                         "bitLength": 7,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -91,7 +91,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_BLUE",
                         "bitLength": 7,
                         "bitOffset": 16,
                         "samplePosition": [0, 0, 0, 0],
@@ -100,7 +100,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -109,7 +109,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -118,7 +118,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -127,7 +127,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -136,7 +136,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -145,7 +145,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -154,7 +154,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -163,7 +163,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -172,7 +172,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -181,7 +181,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -190,7 +190,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -199,7 +199,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -208,7 +208,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_ALPHA",
                         "bitLength": 8,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],

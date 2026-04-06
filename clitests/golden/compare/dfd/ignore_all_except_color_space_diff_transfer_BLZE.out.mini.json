@@ -1,1 +1,1 @@
-{"$schema":"https://schema.khronos.org/ktx/compare_v0.json","valid":[true,true],"messages":[[],[]],"info":{"/dataFormatDescriptor/blocks/0/transferFunction":["KHR_DF_TRANSFER_DCIP3","KHR_DF_TRANSFER_LINEAR"]}}
+{"$schema":"https://schema.khronos.org/ktx/compare_v1.json","valid":[true,true],"messages":[[],[]],"info":{"/dataFormatDescriptor/blocks/0/transferFunction":["KHR_DF_TRANSFER_DCIP3","KHR_DF_TRANSFER_LINEAR"]}}

@@ -45,28 +45,28 @@ Dimensions: 2, 1, 1, 1
 Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
-    Channel Type: 0x0 (KHR_DF_CHANNEL_ETC2_RED)
+    Channel Id: 0x0 (KHR_DF_CHANNEL_ETC2_RED)
     Length: 8 bits Offset: 0
     Position: 64, 128, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 1:
     Qualifiers: 0x0 ()
-    Channel Type: 0x1 (KHR_DF_CHANNEL_ETC2_GREEN)
+    Channel Id: 0x1 (KHR_DF_CHANNEL_ETC2_GREEN)
     Length: 8 bits Offset: 8
     Position: 64, 128, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 2:
     Qualifiers: 0x0 ()
-    Channel Type: 0x0 (KHR_DF_CHANNEL_ETC2_RED)
+    Channel Id: 0x0 (KHR_DF_CHANNEL_ETC2_RED)
     Length: 8 bits Offset: 16
     Position: 192, 128, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 3:
     Qualifiers: 0x0 ()
-    Channel Type: 0x2 (KHR_DF_CHANNEL_ETC2_COLOR)
+    Channel Id: 0x2 (KHR_DF_CHANNEL_ETC2_COLOR)
     Length: 8 bits Offset: 24
     Position: 64, 128, 0, 0
     Lower: 0x00000000

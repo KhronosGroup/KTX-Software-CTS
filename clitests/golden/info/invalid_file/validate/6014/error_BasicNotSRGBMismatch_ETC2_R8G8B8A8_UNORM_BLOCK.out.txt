@@ -43,14 +43,14 @@ Dimensions: 4, 4, 1, 1
 Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
-    Channel Type: 0xF (KHR_DF_CHANNEL_ETC2_ALPHA)
+    Channel Id: 0xF (KHR_DF_CHANNEL_ETC2_ALPHA)
     Length: 64 bits Offset: 0
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0xffffffff
 Sample 1:
     Qualifiers: 0x0 ()
-    Channel Type: 0x2 (KHR_DF_CHANNEL_ETC2_COLOR)
+    Channel Id: 0x2 (KHR_DF_CHANNEL_ETC2_COLOR)
     Length: 64 bits Offset: 64
     Position: 0, 0, 0, 0
     Lower: 0x00000000

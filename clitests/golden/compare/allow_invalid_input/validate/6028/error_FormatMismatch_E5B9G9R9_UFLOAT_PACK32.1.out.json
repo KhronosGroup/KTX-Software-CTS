@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/compare_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/compare_v1.json",
     "valid": [
         false,
         true
@@ -22,7 +22,7 @@
                 "id": 6028,
                 "type": "error",
                 "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
-                "details": "DFD block #1 sample #6 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+                "details": "DFD block #1 sample #6 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
             },
             {
                 "id": 6028,
@@ -138,7 +138,7 @@
             [ "KHR_DF_SAMPLE_DATATYPE_EXPONENT" ],
             []
         ],
-        "/dataFormatDescriptor/blocks/0/samples/1/channelType": [
+        "/dataFormatDescriptor/blocks/0/samples/1/channelId": [
             "KHR_DF_CHANNEL_RGBSDA_RED",
             "KHR_DF_CHANNEL_RGBSDA_GREEN"
         ],
@@ -158,7 +158,7 @@
             31,
             255
         ],
-        "/dataFormatDescriptor/blocks/0/samples/2/channelType": [
+        "/dataFormatDescriptor/blocks/0/samples/2/channelId": [
             "KHR_DF_CHANNEL_RGBSDA_GREEN",
             "KHR_DF_CHANNEL_RGBSDA_BLUE"
         ],
@@ -178,7 +178,7 @@
             [ "KHR_DF_SAMPLE_DATATYPE_EXPONENT" ],
             []
         ],
-        "/dataFormatDescriptor/blocks/0/samples/3/channelType": [
+        "/dataFormatDescriptor/blocks/0/samples/3/channelId": [
             "KHR_DF_CHANNEL_RGBSDA_GREEN",
             "KHR_DF_CHANNEL_RGBSDA_ALPHA"
         ],
@@ -202,7 +202,7 @@
             [],
             null
         ],
-        "/dataFormatDescriptor/blocks/0/samples/4/channelType": [
+        "/dataFormatDescriptor/blocks/0/samples/4/channelId": [
             "KHR_DF_CHANNEL_RGBSDA_BLUE",
             null
         ],
@@ -230,7 +230,7 @@
             [ "KHR_DF_SAMPLE_DATATYPE_LINEAR", "KHR_DF_SAMPLE_DATATYPE_EXPONENT", "KHR_DF_SAMPLE_DATATYPE_SIGNED" ],
             null
         ],
-        "/dataFormatDescriptor/blocks/0/samples/5/channelType": [
+        "/dataFormatDescriptor/blocks/0/samples/5/channelId": [
             "KHR_DF_CHANNEL_RGBSDA_RED",
             null
         ],

@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -11,8 +11,8 @@
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
-            "details": "DFD block #1 sample #2 channelType in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_ASTC."
+            "message": "Invalid sample channelId for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #2 channelId in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_ASTC."
         },
         {
             "id": 6021,
@@ -73,7 +73,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_ASTC_DATA",
+                        "channelId": "KHR_DF_CHANNEL_ASTC_DATA",
                         "bitLength": 63,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],
@@ -82,7 +82,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": 15,
+                        "channelId": 15,
                         "bitLength": 63,
                         "bitOffset": 64,
                         "samplePosition": [0, 0, 0, 0],

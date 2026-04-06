@@ -49,14 +49,14 @@ Dimensions: 4, 4, 1, 1
 Plane bytes: 16, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x40 (KHR_DF_SAMPLE_DATATYPE_SIGNED)
-    Channel Type: 0x0 (KHR_DF_CHANNEL_ETC2_RED)
+    Channel Id: 0x0 (KHR_DF_CHANNEL_ETC2_RED)
     Length: 64 bits Offset: 0
     Position: 0, 0, 0, 0
     Lower: 0x80000000
     Upper: 0x7fffffff
 Sample 1:
     Qualifiers: 0x40 (KHR_DF_SAMPLE_DATATYPE_SIGNED)
-    Channel Type: 0x1 (KHR_DF_CHANNEL_ETC2_GREEN)
+    Channel Id: 0x1 (KHR_DF_CHANNEL_ETC2_GREEN)
     Length: 64 bits Offset: 64
     Position: 0, 0, 0, 0
     Lower: 0x80000000

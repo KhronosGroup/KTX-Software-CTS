@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": true,
     "messages": [],
     "header": {
@@ -74,7 +74,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_ASTC_DATA",
+                        "channelId": "KHR_DF_CHANNEL_ASTC_DATA",
                         "bitLength": 127,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],

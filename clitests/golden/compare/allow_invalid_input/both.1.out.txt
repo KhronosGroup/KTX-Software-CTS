@@ -55,7 +55,7 @@ Sample 1:
 
 Sample 2:
 -    Qualifiers: 0x0 ()
--    Channel Type: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
+-    Channel Id: 0x2 (KHR_DF_CHANNEL_RGBSDA_BLUE)
 -    Length: 8 bits Offset: 16
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000
@@ -63,7 +63,7 @@ Sample 2:
 
 Sample 3:
 -    Qualifiers: 0x0 ()
--    Channel Type: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+-    Channel Id: 0xf (KHR_DF_CHANNEL_RGBSDA_ALPHA)
 -    Length: 8 bits Offset: 24
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000

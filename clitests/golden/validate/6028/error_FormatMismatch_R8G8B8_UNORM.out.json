@@ -18,7 +18,7 @@
             "id": 6028,
             "type": "error",
             "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
-            "details": "DFD block #1 sample #1 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_GREEN but the expected value is KHR_DF_CHANNEL_RGBSDA_RED for VK_FORMAT_R8G8B8_UNORM."
+            "details": "DFD block #1 sample #1 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_GREEN but the expected value is KHR_DF_CHANNEL_RGBSDA_RED for VK_FORMAT_R8G8B8_UNORM."
         },
         {
             "id": 6028,
@@ -90,7 +90,7 @@
             "id": 6028,
             "type": "error",
             "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
-            "details": "DFD block #1 sample #2 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_BLUE but the expected value is KHR_DF_CHANNEL_RGBSDA_GREEN for VK_FORMAT_R8G8B8_UNORM."
+            "details": "DFD block #1 sample #2 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_BLUE but the expected value is KHR_DF_CHANNEL_RGBSDA_GREEN for VK_FORMAT_R8G8B8_UNORM."
         },
         {
             "id": 6028,
@@ -168,7 +168,7 @@
             "id": 6028,
             "type": "error",
             "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
-            "details": "DFD block #1 sample #3 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8_UNORM."
+            "details": "DFD block #1 sample #3 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8_UNORM."
         },
         {
             "id": 6028,

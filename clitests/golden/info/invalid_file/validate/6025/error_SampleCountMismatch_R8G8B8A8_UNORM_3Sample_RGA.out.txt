@@ -5,7 +5,7 @@ error-6025: Invalid sample count in basic DFD block. The sample count must match
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
     DFD block #1 sample #3 bitOffset in basic DFD block is 24 but the expected value is 16 for VK_FORMAT_R8G8B8A8_UNORM.
 error-6028: Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.
-    DFD block #1 sample #3 channelType in basic DFD block is KHR_DF_CHANNEL_RGBSDA_ALPHA but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8A8_UNORM.
+    DFD block #1 sample #3 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_ALPHA but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_R8G8B8A8_UNORM.
 warning-5004: Non-conformant texture file accepted by libktx.
     KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
 
@@ -49,21 +49,21 @@ Dimensions: 1, 1, 1, 1
 Plane bytes: 4, 0, 0, 0, 0, 0, 0, 0
 Sample 0:
     Qualifiers: 0x0 ()
-    Channel Type: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
+    Channel Id: 0x0 (KHR_DF_CHANNEL_RGBSDA_RED)
     Length: 8 bits Offset: 0
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 1:
     Qualifiers: 0x0 ()
-    Channel Type: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
+    Channel Id: 0x1 (KHR_DF_CHANNEL_RGBSDA_GREEN)
     Length: 8 bits Offset: 8
     Position: 0, 0, 0, 0
     Lower: 0x00000000
     Upper: 0x000000ff
 Sample 2:
     Qualifiers: 0x0 ()
-    Channel Type: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
+    Channel Id: 0xF (KHR_DF_CHANNEL_RGBSDA_ALPHA)
     Length: 8 bits Offset: 24
     Position: 0, 0, 0, 0
     Lower: 0x00000000

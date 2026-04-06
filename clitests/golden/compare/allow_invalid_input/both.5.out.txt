@@ -71,7 +71,7 @@ Data Format Descriptor
 
 Sample 1:
 -    Qualifiers: 0x0 ()
--    Channel Type: 0xf (KHR_DF_CHANNEL_ETC1S_AAA)
+-    Channel Id: 0xf (KHR_DF_CHANNEL_ETC1S_AAA)
 -    Length: 64 bits Offset: 64
 -    Position: 0, 0, 0, 0
 -    Lower: 0x00000000

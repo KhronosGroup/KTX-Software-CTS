@@ -30,7 +30,7 @@
             "validate/6016/error_IncorrectModelForBlock_ASTC_8x6_SFLOAT_BLOCK",
             "validate/6027/error_ZeroSamples_Unknown_0Sample",
             "validate/6028/error_FormatMismatch_E5B9G9R9_UFLOAT_PACK32",
-            "validate/6101/error_InvalidChannelForModel_RGBSDA_Sample3_ChannelType08",
+            "validate/6101/error_InvalidChannelForModel_RGBSDA_Sample3_ChannelId08",
             "validate/6107/error_InvalidUpper_UASTC_Sample0_42",
             "validate/7013/error_DuplicateKey",
             "validate/7129/error_KTXanimDataNotArray_3D",

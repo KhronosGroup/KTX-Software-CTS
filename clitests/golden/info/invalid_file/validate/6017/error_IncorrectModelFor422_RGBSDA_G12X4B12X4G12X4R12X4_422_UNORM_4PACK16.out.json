@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -67,7 +67,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 11,
                         "bitOffset": 4,
                         "samplePosition": [64, 128, 0, 0],
@@ -76,7 +76,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_GREEN",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_GREEN",
                         "bitLength": 11,
                         "bitOffset": 20,
                         "samplePosition": [64, 128, 0, 0],
@@ -85,7 +85,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_RED",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_RED",
                         "bitLength": 11,
                         "bitOffset": 36,
                         "samplePosition": [192, 128, 0, 0],
@@ -94,7 +94,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_RGBSDA_BLUE",
+                        "channelId": "KHR_DF_CHANNEL_RGBSDA_BLUE",
                         "bitLength": 11,
                         "bitOffset": 52,
                         "samplePosition": [64, 128, 0, 0],

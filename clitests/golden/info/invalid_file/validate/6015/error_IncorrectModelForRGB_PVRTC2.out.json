@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.khronos.org/ktx/info_v0.json",
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
     "valid": false,
     "messages": [
         {
@@ -11,20 +11,20 @@
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
-            "details": "DFD block #1 sample #2 channelType in basic DFD block is (0x1) which is not valid for colorModel KHR_DF_MODEL_PVRTC2."
+            "message": "Invalid sample channelId for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #2 channelId in basic DFD block is (0x1) which is not valid for colorModel KHR_DF_MODEL_PVRTC2."
         },
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
-            "details": "DFD block #1 sample #3 channelType in basic DFD block is (0x2) which is not valid for colorModel KHR_DF_MODEL_PVRTC2."
+            "message": "Invalid sample channelId for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #3 channelId in basic DFD block is (0x2) which is not valid for colorModel KHR_DF_MODEL_PVRTC2."
         },
         {
             "id": 6101,
             "type": "error",
-            "message": "Invalid sample channelType for colorModel in the basic DFD block.",
-            "details": "DFD block #1 sample #4 channelType in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_PVRTC2."
+            "message": "Invalid sample channelId for colorModel in the basic DFD block.",
+            "details": "DFD block #1 sample #4 channelId in basic DFD block is (0xF) which is not valid for colorModel KHR_DF_MODEL_PVRTC2."
         },
         {
             "id": 5004,
@@ -85,7 +85,7 @@
                 "samples": [
                     {
                         "qualifiers": [],
-                        "channelType": "KHR_DF_CHANNEL_PVRTC2_COLOR",
+                        "channelId": "KHR_DF_CHANNEL_PVRTC2_COLOR",
                         "bitLength": 7,
                         "bitOffset": 0,
                         "samplePosition": [0, 0, 0, 0],
@@ -94,7 +94,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": 1,
+                        "channelId": 1,
                         "bitLength": 7,
                         "bitOffset": 8,
                         "samplePosition": [0, 0, 0, 0],
@@ -103,7 +103,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": 2,
+                        "channelId": 2,
                         "bitLength": 7,
                         "bitOffset": 16,
                         "samplePosition": [0, 0, 0, 0],
@@ -112,7 +112,7 @@
                     },
                     {
                         "qualifiers": [],
-                        "channelType": 15,
+                        "channelId": 15,
                         "bitLength": 7,
                         "bitOffset": 24,
                         "samplePosition": [0, 0, 0, 0],
