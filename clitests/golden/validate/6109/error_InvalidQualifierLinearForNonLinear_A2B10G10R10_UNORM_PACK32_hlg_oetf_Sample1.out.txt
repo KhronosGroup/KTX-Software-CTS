@@ -1,0 +1,6 @@
+Validation failed
+
+error-6109: Invalid sample qualifierLinear for non-linear transfer function in the basic DFD block.
+    DFD block #1 sample #2 qualifierLinear is 1 but for KHR_DF_TRANSFER_HLG_OETF and channelId 1 (non-alpha) it must be 0.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
