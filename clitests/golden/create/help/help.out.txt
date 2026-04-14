@@ -59,6 +59,17 @@ Usage:
                                 normals to generate X+Y normals with --normal-mode. For 4-component
                                 inputs a 3D unit normal is calculated. 1.0 is used for the value of
                                 the 4th component. Cannot be used with --raw.
+      --map-range-auto          If needed, map input values to the range supported by the target 
+                                --format and --encode options.
+                                Mapping excludes the alpha channel if present.
+                                If enabled, this flag overrides arguments for --map-rang-offset and 
+                                --map-range-scale.
+      --map-range-scale <scale>
+                                Scale input values before offseting by the --map-rang-offset value. 
+                                Defaults to 1.0. (default: 1.0)
+      --map-range-offset <offset>
+                                Offset input values after scaling by the --map-rang-scale value. 
+                                Defaults to 0.0. (default: 0.0)
       --premultiply-alpha       Pre-multiplies the color components of the input pixels by the 
                                 alpha component before encoding and sets the flag in the metadata. 
                                 Cannot be used with --normalize or --raw.
@@ -242,8 +253,6 @@ Usage:
       --uastc-hdr-favor-astc    By default the UASTC HDR 4x4 encoder tries to strike a balance or 
                                 even slightly favor BC6H quality. If this option is specified, ASTC 
                                 HDR 4x4 quality is favored instead.
-      --rec-2020                The input image's gamut is Rec. 2020 vs. the default Rec. 709 - for 
-                                accurate colorspace error calculations.
       --uastc-hdr-lambda <level>
                                 Enables rate distortion optimization (RDO). The higher this value, 
                                 the lower the quality, but the smaller the file size. Try 

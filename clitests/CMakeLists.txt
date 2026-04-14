@@ -199,6 +199,7 @@ set(CASELIST
     tests/extract/exr_2d.json
     tests/extract/exr_hdr_2d.json
     tests/extract/exr_hdr_2d_mip.json
+    tests/extract/exr_map_range.json
     tests/extract/help.json
     tests/extract/png_2d.json
     tests/extract/raw_all_1d.json
@@ -335,7 +336,8 @@ set(CASELIST
     tests/create/unicode_filenames.json
     tests/create/warn_fail_texcoord_origin.json
     tests/create/premultiply_alpha.json
-
+    tests/create/map_range.json
+    
     tests/encode/compare.json
     tests/encode/encode_blze.json
     tests/encode/encode_blze_params.json

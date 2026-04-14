@@ -1,0 +1,14 @@
+{
+    "description": "Test mapped range extraction to EXR output files.",
+    "command": "ktx extract --testrun input/ktx2/linear_float32-${subcase}-map-range-ZO.ktx2 output/extract/exr_map_range/linear_float32-${subcase}-map-range-NO.exr",
+    "status": 0,
+    "outputs": {
+        "output/extract/exr_map_range/linear_float32-${subcase}-map-range-NO.exr": "golden/extract/exr_map_range/linear_float32-${subcase}-map-range-NO.exr"
+    },
+    "args": {
+        "subcase": [
+            "R16G16B16_SFLOAT",
+            "R16G16B16A16_SFLOAT"
+        ]
+    }
+}

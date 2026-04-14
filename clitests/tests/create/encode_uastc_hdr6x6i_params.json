@@ -9,7 +9,6 @@
     "args": {
         "select": [
             { "id": "lambda", "tolerance": "0.08", "args": "--uastc-hdr-lambda 1000" },
-            { "id": "rec202", "tolerance": "0.08", "args": "--rec-2020" },
             { "id": "level_0", "tolerance": "0.08", "args": "--uastc-hdr-6x6i-level 0" },
             { "id": "level_2", "tolerance": "0.08", "args": "--uastc-hdr-6x6i-level 2" },
             { "id": "level_4", "tolerance": "0.08", "args": "--uastc-hdr-6x6i-level 4" },

@@ -1,0 +1,49 @@
+{
+    "description": "Test create with map range.",
+    "command": "ktx create --testrun ${subcase[flag]} input/exr_sample/${subcase[file]}${subcase[ext]} output/create/map_range/${subcase[file]}-${subcase[name]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/map_range/${subcase[file]}-${subcase[name]}.ktx2": "golden/create/map_range/${subcase[file]}-${subcase[name]}.ktx2"
+    },
+    "outputTolerance": "${subcase[outputTolerance]}",
+    "args": {
+        "subcase": [
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --map-range-scale 0.5 --map-range-offset 0.5", "file": "linear_float32", "ext": ".exr", "name": "R16G16B16_SFLOAT-map-range-ZO" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --map-range-scale 0.5 --map-range-offset 0.5", "file": "linear_float32", "ext": ".exr", "name": "R16G16B16A16_SFLOAT-map-range-ZO" },
+            
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-4x4 --map-range-scale 0.5 --map-range-offset 0.5", "file": "linear_float32", "ext": ".exr", "name": "UASTC4X4_R16G16B16_SFLOAT-map-range-ZO" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-4x4 --map-range-scale 0.5 --map-range-offset 0.5", "file": "linear_float32", "ext": ".exr", "name": "UASTC4X4_R16G16B16A16_SFLOAT-map-range-ZO" },
+
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-6x6i --map-range-scale 0.5 --map-range-offset 0.5", "file": "linear_float32", "ext": ".exr", "name": "UASTC6X6I_R16G16B16_SFLOAT-map-range-ZO" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-6x6i --map-range-scale 0.5 --map-range-offset 0.5", "file": "linear_float32", "ext": ".exr", "name": "UASTC6X6I_R16G16B16A16_SFLOAT-map-range-ZO" },
+            
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --map-range-auto", "file": "linear_float32", "ext": ".exr", "name": "R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --map-range-auto", "file": "linear_float32", "ext": ".exr", "name": "R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --map-range-auto", "file": "linear_float32_medium", "ext": ".exr", "name": "R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --map-range-auto", "file": "linear_float32_medium", "ext": ".exr", "name": "R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --map-range-auto", "file": "linear_float32_huge", "ext": ".exr", "name": "R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --map-range-auto", "file": "linear_float32_huge", "ext": ".exr", "name": "R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --map-range-auto", "file": "linear_float32_extreme", "ext": ".exr", "name": "R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --map-range-auto", "file": "linear_float32_extreme", "ext": ".exr", "name": "R16G16B16A16_SFLOAT-map-range-auto" },
+            
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32", "ext": ".exr", "name": "UASTC4X4_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32", "ext": ".exr", "name": "UASTC4X4_R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32_medium", "ext": ".exr", "name": "UASTC4X4_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32_medium", "ext": ".exr", "name": "UASTC4X4_R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32_huge", "ext": ".exr", "name": "UASTC4X4_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32_huge", "ext": ".exr", "name": "UASTC4X4_R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32_extreme", "ext": ".exr", "name": "UASTC4X4_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-4x4 --map-range-auto", "file": "linear_float32_extreme", "ext": ".exr", "name": "UASTC4X4_R16G16B16A16_SFLOAT-map-range-auto" },
+        
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32", "ext": ".exr", "name": "UASTC6X6I_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32", "ext": ".exr", "name": "UASTC6X6I_R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32_medium", "ext": ".exr", "name": "UASTC6X6I_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32_medium", "ext": ".exr", "name": "UASTC6X6I_R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32_huge", "ext": ".exr", "name": "UASTC6X6I_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32_huge", "ext": ".exr", "name": "UASTC6X6I_R16G16B16A16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32_extreme", "ext": ".exr", "name": "UASTC6X6I_R16G16B16_SFLOAT-map-range-auto" },
+            { "outputTolerance": false, "flag": "--format R16G16B16A16_SFLOAT --encode uastc-hdr-6x6i --map-range-auto", "file": "linear_float32_extreme", "ext": ".exr", "name": "UASTC6X6I_R16G16B16A16_SFLOAT-map-range-auto" }
+        
+        ]
+    }
+}
