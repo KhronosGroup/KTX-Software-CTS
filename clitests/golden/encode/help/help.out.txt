@@ -114,8 +114,6 @@ Usage:
       --uastc-hdr-favor-astc    By default the UASTC HDR 4x4 encoder tries to strike a balance or 
                                 even slightly favor BC6H quality. If this option is specified, ASTC 
                                 HDR 4x4 quality is favored instead.
-      --rec-2020                The input image's gamut is Rec. 2020 vs. the default Rec. 709 - for 
-                                accurate colorspace error calculations.
       --uastc-hdr-lambda <level>
                                 Enables rate distortion optimization (RDO). The higher this value, 
                                 the lower the quality, but the smaller the file size. Try 
