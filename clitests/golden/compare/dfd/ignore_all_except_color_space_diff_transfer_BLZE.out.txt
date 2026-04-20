@@ -1,3 +1,10 @@
+Validation failed for 'input/compare/dfd/diff_transfer.ktx2'
+
+error-6109: Invalid sample qualifierLinear for non-linear transfer function in the basic DFD block.
+    DFD block #1 sample #4 qualifierLinear is 0 but for KHR_DF_TRANSFER_DCIP3 and channelId 15 (alpha) it must be 1.
+warning-5004: Non-conformant texture file accepted by libktx.
+    KTX 2.0 file does not conform to the specification but it is currently accepted by libktx.
+
 Data Format Descriptor
 
 -Transfer: KHR_DF_TRANSFER_DCIP3
