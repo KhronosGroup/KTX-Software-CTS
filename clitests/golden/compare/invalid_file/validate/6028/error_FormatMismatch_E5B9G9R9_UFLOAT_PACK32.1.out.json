@@ -25,10 +25,10 @@
                 "details": "DFD block #1 sample #6 channelId in basic DFD block is KHR_DF_CHANNEL_RGBSDA_RED but the expected value is KHR_DF_CHANNEL_RGBSDA_BLUE for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
             },
             {
-                "id": 6028,
+                "id": 6108,
                 "type": "error",
-                "message": "Invalid sample in basic DFD block. The samples must match the expected samples of the VkFormat.",
-                "details": "DFD block #1 sample #6 qualifierLinear in basic DFD block is 1 but the expected value is 0 for VK_FORMAT_E5B9G9R9_UFLOAT_PACK32."
+                "message": "Invalid sample qualifierLinear for linear or unspecified transfer function in the basic DFD block.",
+                "details": "DFD block #1 sample #6 qualifierLinear is 1 but for KHR_DF_TRANSFER_LINEAR it must be 0."
             },
             {
                 "id": 6028,
