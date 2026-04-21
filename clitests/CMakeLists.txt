@@ -458,19 +458,19 @@ endif()
 # Even with gcc, zlib yields a slightly different compression
 # result on arm64 cf x86_64. Yet to be investigated.
 cmake_print_variables(CMAKE_CXX_COMPILER_ID CMAKE_CXX_COMPILER_FRONTEND_VARIANT CPU_ARCHITECTURE)
-if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CPU_ARCHITECTURE STREQUAL arm64)
-    set(CLITEST_ARGS "--primary")
+if((CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang") AND CPU_ARCHITECTURE STREQUAL "arm64")
+    set(primary_platform_default ON)
 else()
-    set(CLITEST_ARGS "")
+    set(primary_platform_default OFF)
 endif()
-
 # Detection of GCC via CMake is unreliable. For example when using the "default
 # compilers" on Ubuntu the compiler reports itself as cc. Provide an override
-option(CTS_PRIMARY "Treat as primary platform when regenerating tests." OFF)
-mark_as_advanced(CTS_PRIMARY)
-if(CTS_PRIMARY)
+option(KTX_TOOLS_CTS_PRIMARY_PLATFORM "Do not change this unless you *really* know what you are doing." ${primary_platform_default})
+mark_as_advanced(KTX_TOOLS_CTS_PRIMARY_PLATFORM)
+if(KTX_TOOLS_CTS_PRIMARY_PLATFORM)
     set(CLITEST_ARGS "--primary")
 endif()
+unset(primary_platform_default)
 
 # If this is a function, for reasons I have yet to understand,
 # add_custom_command() does nothing. All variables have the expected
