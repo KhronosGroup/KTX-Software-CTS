@@ -455,22 +455,42 @@ if(NOT DEFINED KTX_DIFF_PATH)
     message(FATAL_ERROR "KTX_DIFF_PATH not defined")
 endif()
 
-# Even with gcc, zlib yields a slightly different compression
-# result on arm64 cf x86_64. Yet to be investigated.
+# Detect if this is running on the designated primary platform, that is the
+# platform where golden .ktx2 files should be regenerated and where exact
+# matches are expected when running the tests.
+#
+# It has been tested that gcc on Ubuntu 24.04, gcc on macOS Sequoia and
+# AppleClang on macOS Sequoia all produce the same results. However,
+# even with gcc, zlib yields a slightly different compression
+# result on arm64 c/f x86_64. Yet to be investigated. We think that,
+# with this exception, the encoding results would be the same.
+#
+# Why is arm64 the primary platform? Because that is what the project's
+# lead developer has. Regenerating on x64_64 would be difficult.
 cmake_print_variables(CMAKE_CXX_COMPILER_ID CMAKE_CXX_COMPILER_FRONTEND_VARIANT CPU_ARCHITECTURE)
-if((CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang") AND CPU_ARCHITECTURE STREQUAL "arm64")
-    set(primary_platform_default ON)
+if((CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
+    AND CPU_ARCHITECTURE STREQUAL "arm64")
+    set(primary_platform ON)
 else()
-    set(primary_platform_default OFF)
+    set(primary_platform OFF)
 endif()
-# Detection of GCC via CMake is unreliable. For example when using the "default
-# compilers" on Ubuntu the compiler reports itself as cc. Provide an override
-option(KTX_TOOLS_CTS_PRIMARY_PLATFORM "Do not change this unless you *really* know what you are doing." ${primary_platform_default})
+# Provide an option to override the primary platform choice. To be used
+# with great care only for:
+# - testing if a platform considered non-primary is getting the same results
+#   as primary
+# - to test ktxdiff on a primary platform
+# - overriding the choice when you absolutely know the platform is primary
+#   but the detection is failing for some reason.
+# It also provides useful feedback of the value.
+option(KTX_TOOLS_CTS_PRIMARY_PLATFORM
+    "Do not change this unless you *really* know what you are doing."
+    ${primary_platform}
+)
 mark_as_advanced(KTX_TOOLS_CTS_PRIMARY_PLATFORM)
 if(KTX_TOOLS_CTS_PRIMARY_PLATFORM)
     set(CLITEST_ARGS "--primary")
 endif()
-unset(primary_platform_default)
+unset(primary_platform)
 
 # If this is a function, for reasons I have yet to understand,
 # add_custom_command() does nothing. All variables have the expected
