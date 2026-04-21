@@ -456,11 +456,20 @@ if(NOT DEFINED KTX_DIFF_PATH)
 endif()
 
 # Even with gcc, zlib yields a slightly different compression
-# result on arm64. Yet to be investigated.
+# result on arm64 cf x86_64. Yet to be investigated.
+cmake_print_variables(CMAKE_CXX_COMPILER_ID CMAKE_CXX_COMPILER_FRONTEND_VARIANT CPU_ARCHITECTURE)
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CPU_ARCHITECTURE STREQUAL arm64)
     set(CLITEST_ARGS "--primary")
 else()
     set(CLITEST_ARGS "")
+endif()
+
+# Detection of GCC via CMake is unreliable. For example when using the "default
+# compilers" on Ubuntu the compiler reports itself as cc. Provide an override
+option(CTS_PRIMARY "Treat as primary platform when regenerating tests." OFF)
+mark_as_advanced(CTS_PRIMARY)
+if(CTS_PRIMARY)
+    set(CLITEST_ARGS "--primary")
 endif()
 
 # If this is a function, for reasons I have yet to understand,
