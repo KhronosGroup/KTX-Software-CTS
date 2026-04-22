@@ -496,7 +496,7 @@ endif()
 # To be used with great care only for:
 # - testing if a platform considered non-primary is getting the same results
 #   as primary
-# - to test ktxdiff on a primary platform
+# - testing ktxdiff on a primary platform
 # - overriding the choice when you absolutely know the platform is primary
 #   but the detection is failing for some reason.
 # In the CMake GUI, it also provides useful feedback of the current value.
