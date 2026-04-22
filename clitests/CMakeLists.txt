@@ -460,13 +460,14 @@ endif()
 # matches are expected when running the tests.
 #
 # It has been tested that gcc on Ubuntu 24.04, gcc on macOS Sequoia and
-# AppleClang on macOS Sequoia all produce the same results. However,
-# even with gcc, zlib yields a slightly different compression
-# result on arm64 c/f x86_64. Yet to be investigated. We think that,
-# with this exception, the encoding results would be the same.
+# AppleClang on macOS Sequoia all produce the same results.
 #
-# Why is arm64 the primary platform? Because that is what the project's
-# lead developer has. Regenerating on x64_64 would be difficult.
+# It was intended that this should be dependent only on the compiler. However,
+# even with gcc, zlib yields a slightly different compression
+# result on arm64 c/f x86_64. Yet to be investigated. Therefore primary is
+# limited to arm64. Why arm64? Because that is what the project's lead
+# developer has. Regenerating on x64_64 would be difficult. We think that,
+# with the exception of zlib, the encoding results would be the same.
 cmake_print_variables(CMAKE_CXX_COMPILER_ID CMAKE_CXX_COMPILER_FRONTEND_VARIANT CPU_ARCHITECTURE)
 if((CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
     AND CPU_ARCHITECTURE STREQUAL "arm64")
@@ -474,8 +475,8 @@ if((CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "Appl
 else()
     set(primary_platform OFF)
 endif()
-# Provide an option to override the primary platform choice. To be used
-# with great care only for:
+# Provide an option to override the automatic primary platform choice. To
+# be used with great care only for:
 # - testing if a platform considered non-primary is getting the same results
 #   as primary
 # - to test ktxdiff on a primary platform
