@@ -455,34 +455,51 @@ if(NOT DEFINED KTX_DIFF_PATH)
     message(FATAL_ERROR "KTX_DIFF_PATH not defined")
 endif()
 
-# Detect if this is running on the designated primary platform, that is the
-# platform where golden .ktx2 files should be regenerated and where exact
-# matches are expected when running the tests.
+# Detect if this is running on the designated primary platform.
 #
-# It has been tested that gcc on Ubuntu 24.04, gcc on macOS Sequoia and
-# AppleClang on macOS Sequoia all produce the same results.
+# A primary platform is designated in order to prevent "drifting" of image
+# data in the golden reference files. It should always be used for
+# regenerating golden .ktx2 files for tests with outputTolerance. When
+# running the tests on this platform, any outputTolerance is ignored; exact
+# matches are expected.
 #
-# It was intended that this should be dependent only on the compiler. However,
-# even with gcc, zlib yields a slightly different compression
-# result on arm64 c/f x86_64. Yet to be investigated. Therefore primary is
-# limited to arm64. Why arm64? Because that is what the project's lead
-# developer has. Regenerating on x64_64 would be difficult. We think that,
-# with the exception of zlib, the encoding results would be the same.
-cmake_print_variables(CMAKE_CXX_COMPILER_ID CMAKE_CXX_COMPILER_FRONTEND_VARIANT CPU_ARCHITECTURE)
+# The chosen primary platform is gcc. However, even with gcc, it has been
+# observed that zlib yields a slightly different compression result on
+# arm64 c/f x86_64, a problem yet to be investigated. Therefore the
+# platform must be gcc on arm64. Why arm64? Because that is what the
+# project's lead developer has. Regenerating on x64_64 would be difficult.
+# With the exception of this zlib issue, the encoding results with gcc are
+# expected to be the same across CPU architectures.
+#
+# By setting the float-point compiler options to request identical FP
+# handling across compilers, KTX-Software endeavours to make the results
+# deterministic. Testing has shown that gcc on Ubuntu 24.04, gcc on macOS
+# Sequoia and AppleClang on macOS Sequoia produce identical results.
+# Therefore AppleClang is also allowed as primary.
+#
+# For both ClangCL and MSVC on Windows, only a single subcase's result
+# differs from that of the primary platform. That subcase can be run with
+# the following:
+#   tests/create/encode_uastc_hdr6x6i_params.json --select "{'id': 'level_12', 'tolerance': '1.00', 'args': '--uastc-hdr-6x6i-level 12'}" --subcase "R16G16B16_SFLOAT"
+# This is yet to be investigated.
+#
+#cmake_print_variables(CMAKE_CXX_COMPILER_ID CMAKE_CXX_COMPILER_FRONTEND_VARIANT CPU_ARCHITECTURE)
 if((CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
     AND CPU_ARCHITECTURE STREQUAL "arm64")
     set(primary_platform ON)
 else()
     set(primary_platform OFF)
 endif()
-# Provide an option to override the automatic primary platform choice. To
-# be used with great care only for:
+
+# Provide an option to override the automatic primary platform choice.
+#
+# To be used with great care only for:
 # - testing if a platform considered non-primary is getting the same results
 #   as primary
 # - to test ktxdiff on a primary platform
 # - overriding the choice when you absolutely know the platform is primary
 #   but the detection is failing for some reason.
-# It also provides useful feedback of the value.
+# In the CMake GUI, it also provides useful feedback of the current value.
 option(KTX_TOOLS_CTS_PRIMARY_PLATFORM
     "Do not change this unless you *really* know what you are doing."
     ${primary_platform}
