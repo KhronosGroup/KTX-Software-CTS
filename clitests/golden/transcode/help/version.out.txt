@@ -1,1 +1,1 @@
-ktx transcode version: v4.0.__default__
+ktx transcode version: v5.0.__default__
