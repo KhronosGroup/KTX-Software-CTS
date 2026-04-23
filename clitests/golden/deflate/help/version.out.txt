@@ -1,1 +1,1 @@
-ktx deflate version: v4.0.__default__
+ktx deflate version: v5.0.__default__

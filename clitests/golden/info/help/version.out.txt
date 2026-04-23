@@ -1,1 +1,1 @@
-ktx info version: v4.0.__default__
+ktx info version: v5.0.__default__

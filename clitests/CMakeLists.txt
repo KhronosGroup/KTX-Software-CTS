@@ -427,6 +427,7 @@ set(CASELIST
     tests/deflate/cli_errors.json
     tests/deflate/deflate_error_blze_not_deflatable.json
     tests/deflate/help.json
+    tests/deflate/metadata.json
     tests/deflate/stdin.json
     tests/deflate/stdout.json
     tests/deflate/unicode_filenames.json
@@ -441,6 +442,8 @@ set(CASELIST
     tests/convert/drop_bad_orient_key.json
     tests/convert/fix_bad_orient_key.json
     tests/convert/drop_invalid_pass_custom_keys.json
+    tests/convert/stdin.json
+    tests/convert/stdout.json
 
     tests/help/cli_errors.json
     tests/help/help.json
