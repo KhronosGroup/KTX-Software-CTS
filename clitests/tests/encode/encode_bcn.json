@@ -1,5 +1,5 @@
 {
-    "description": "Test default behavior of BCn encoding.",
+    "description": "Test default behavior of BCn encoding with default parameters (no RDO).",
     "command": "ktx encode --testrun --threads 1 --format ${subcase[format]} input/ktx2/valid_${subcase[file]}.ktx2 output/encode/encode_bcn/output_${subcase[file]}_${subcase[format]}.ktx2",
     "status": 0,
     "outputs": {
@@ -7,16 +7,79 @@
     },
     "args": {
         "subcase": [
-            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
-            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" },
-            { "format": "BC1_RGBA_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
-            { "format": "BC1_RGBA_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_2D" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_2D_MIP" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_2D_ARRAY" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_2D_ARRAY_MIP" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_CUBE" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_CUBE_MIP" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_CUBE_ARRAY" },
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "R8G8B8_UNORM_CUBE_ARRAY_MIP" },
+
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_2D" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_2D_MIP" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_2D_ARRAY" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_2D_ARRAY_MIP" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_CUBE" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_CUBE_MIP" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_CUBE_ARRAY" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "R8G8B8_SRGB_CUBE_ARRAY_MIP" },
+
             { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
+            { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_MIP" },
+            { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_ARRAY" },
+            { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_ARRAY_MIP" },
+            { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE" },
+            { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_MIP" },
+            { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_ARRAY" },
+            { "format": "BC3_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_ARRAY_MIP" },
+
             { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" },
+            { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_MIP" },
+            { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_ARRAY" },
+            { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_ARRAY_MIP" },
+            { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE" },
+            { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE_MIP" },
+            { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE_ARRAY" },
+            { "format": "BC3_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE_ARRAY_MIP" },
+
             { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_2D" },
+            { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_2D_MIP" },
+            { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_2D_ARRAY" },
+            { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_2D_ARRAY_MIP" },
+            { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_CUBE" },
+            { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_CUBE_MIP" },
+            { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_CUBE_ARRAY" },
+            { "format": "BC4_UNORM_BLOCK", "file": "R8_UNORM_CUBE_ARRAY_MIP" },
+
             { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_2D" },
+            { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_2D_MIP" },
+            { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_2D_ARRAY" },
+            { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_2D_ARRAY_MIP" },
+            { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_CUBE" },
+            { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_CUBE_MIP" },
+            { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_CUBE_ARRAY" },
+            { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_CUBE_ARRAY_MIP" },
+
             { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
-            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" }
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_MIP" },
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_ARRAY" },
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_ARRAY_MIP" },
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE" },
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_MIP" },
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_ARRAY" },
+            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_ARRAY_MIP" },
+
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_MIP" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_ARRAY" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_ARRAY_MIP" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE_MIP" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE_ARRAY" },
+            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_CUBE_ARRAY_MIP" }
         ]
     }
 }

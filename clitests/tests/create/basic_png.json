@@ -89,8 +89,6 @@
 
             { "format": "BC1_RGB_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
             { "format": "BC1_RGB_SRGB_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
-            { "format": "BC1_RGBA_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
-            { "format": "BC1_RGBA_SRGB_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
             { "format": "BC3_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
             { "format": "BC3_SRGB_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
             { "format": "BC4_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
