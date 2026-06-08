@@ -61,7 +61,15 @@
             { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_CUBE_ARRAY" },
             { "format": "BC5_UNORM_BLOCK", "file": "R8G8_UNORM_CUBE_ARRAY_MIP" },
 
-            { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_2D" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_2D_MIP" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_2D_ARRAY" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_2D_ARRAY_MIP" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_CUBE" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_CUBE_MIP" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_CUBE_ARRAY" },
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "R16G16B16_SFLOAT_CUBE_ARRAY_MIP" },
+
             { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
             { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_MIP" },
             { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D_ARRAY" },
@@ -71,7 +79,6 @@
             { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_ARRAY" },
             { "format": "BC7_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_CUBE_ARRAY_MIP" },
 
-            { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" },
             { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D" },
             { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_MIP" },
             { "format": "BC7_SRGB_BLOCK", "file": "R8G8B8A8_SRGB_2D_ARRAY" },
