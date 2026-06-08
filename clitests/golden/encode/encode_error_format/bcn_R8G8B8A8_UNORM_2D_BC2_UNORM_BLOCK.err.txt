@@ -1,0 +1,1 @@
+ktx encode fatal: Failed to encode KTX2 file to BCn. KTX Error: Invalid parameter value.
