@@ -1,1 +1,0 @@
-ktx encode fatal: Could not open input file "input/ktx2/valid_R8_SNORM_2D.ktx2": No such file or directory.
