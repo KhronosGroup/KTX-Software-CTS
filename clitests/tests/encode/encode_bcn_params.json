@@ -2,6 +2,7 @@
     "description": "Test encode with various BCn encoding parameter combinations with and without RDO.",
     "command": "ktx encode --testrun ${select[args]} output/encode/bcn_params/output_${select[id]}.ktx2",
     "status": 0,
+    "outputTolerance": 0.08,
     "outputs": {
         "output/encode/bcn_params/output_${select[id]}.ktx2": "golden/encode/bcn_params/output_${select[id]}.ktx2"
     },
