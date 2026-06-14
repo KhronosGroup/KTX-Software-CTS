@@ -1,9 +1,9 @@
 {
     "description": "Test encode with various BCn encoding parameter combinations with and without RDO.",
-    "command": "ktx encode --testrun ${select[args]} output/encode/bcn_params/output_${select[id]}.ktx2",
+    "command": "ktx encode --testrun --threads 1 ${select[args]} output/encode/bcn_params/output_${select[id]}.ktx2",
     "status": 0,
-    "comment": "RDO are non-deterministic on certain platforms.",
-    "outputTolerance": 0.32,
+    "comment": "Rate distortion optimization is unlikely to be non-deterministic. Keep this until we figure out why BCn + RDO still don't pass on Github Action runners.",
+    "outputTolerance": 0.08,
     "outputs": {
         "output/encode/bcn_params/output_${select[id]}.ktx2": "golden/encode/bcn_params/output_${select[id]}.ktx2"
     },
