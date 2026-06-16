@@ -1,0 +1,33 @@
+{
+    "description": "Test create with various BCn encoding parameter combinations.",
+    "command": "ktx create --testrun --threads 1 ${select[args]} output/create/bcn_params/output_${select[id]}.ktx2",
+    "status": 0,
+    "comment": "Rate distortion optimization is unlikely to be non-deterministic. Keep this until we figure out why BCn + RDO still don't pass on Github Action runners.",
+    "outputTolerance": 0.08,
+    "outputs": {
+        "output/create/bcn_params/output_${select[id]}.ktx2": "golden/create/bcn_params/output_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "bc1_thorough_rdo",         "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgb8_srgb_bc1.png" },
+            { "id": "bc1_thorough_rdo_zstd",    "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgb8_srgb_bc1.png --zstd 5" },
+            { "id": "bc1_thorough_rdo_zlib",    "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgb8_srgb_bc1.png --zlib 5" },
+
+            { "id": "bc3_thorough_rdo",         "args": "--format BC3_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgba8_srgb_bc3.png" },
+            { "id": "bc3_thorough_rdo_zstd",    "args": "--format BC3_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgba8_srgb_bc3.png --zstd 5" },
+            { "id": "bc3_thorough_rdo_zlib",    "args": "--format BC3_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgba8_srgb_bc3.png --zlib 5" },
+
+            { "id": "bc4_rdo",                  "args": "--format BC4_UNORM_BLOCK --bcn-rdo input/png/r8_unorm_bc4.png" },
+            { "id": "bc4_rdo_zstd",             "args": "--format BC4_UNORM_BLOCK --bcn-rdo input/png/r8_unorm_bc4.png --zstd 5" },
+            { "id": "bc4_rdo_zlib",             "args": "--format BC4_UNORM_BLOCK --bcn-rdo input/png/r8_unorm_bc4.png --zlib 5" },
+
+            { "id": "bc5_rdo",                  "args": "--format BC5_UNORM_BLOCK --bcn-rdo input/png/rg8_unorm_bc5.png" },
+            { "id": "bc5_rdo_zstd",             "args": "--format BC5_UNORM_BLOCK --bcn-rdo input/png/rg8_unorm_bc5.png --zstd 5" },
+            { "id": "bc5_rdo_zlib",             "args": "--format BC5_UNORM_BLOCK --bcn-rdo input/png/rg8_unorm_bc5.png --zlib 5" },
+
+            { "id": "bc7_thorough_rdo",         "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo input/png/rgba8_srgb_bc7.png" },
+            { "id": "bc7_thorough_rdo_zstd",    "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo input/png/rgba8_srgb_bc7.png --zstd 5" },
+            { "id": "bc7_thorough_rdo_zlib",    "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo input/png/rgba8_srgb_bc7.png --zlib 5" }
+        ]
+    }
+}
