@@ -1,9 +1,7 @@
 {
-    "description": "Test encode with various BCn encoding parameter combinations with and without RDO.",
+    "description": "Test single-threaded encode with various BCn encoding parameter combinations (no RDO).",
     "command": "ktx encode --testrun --threads 1 ${select[args]} output/encode/bcn_params/output_${select[id]}.ktx2",
     "status": 0,
-    "comment": "Rate distortion optimization is unlikely to be non-deterministic. Keep this until we figure out why BCn + RDO still don't pass on Github Action runners.",
-    "outputTolerance": 0.08,
     "outputs": {
         "output/encode/bcn_params/output_${select[id]}.ktx2": "golden/encode/bcn_params/output_${select[id]}.ktx2"
     },
@@ -14,24 +12,17 @@
             { "id": "bc1_medium",          "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality medium input/ktx2/valid_R8G8B8_SRGB_2D.ktx2" },
             { "id": "bc1_thorough",        "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality thorough input/ktx2/valid_R8G8B8_SRGB_2D.ktx2" },
             { "id": "bc1_exhaustive",      "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality exhaustive input/ktx2/valid_R8G8B8_SRGB_2D.ktx2" },
-
             { "id": "bc1_thorough_linear", "args": "--format BC1_RGB_UNORM_BLOCK --bc1-quality thorough input/ktx2/valid_R8G8B8_UNORM_2D.ktx2" },
-            { "id": "bc1_thorough_rdo",    "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/ktx2/valid_R8G8B8_SRGB_2D.ktx2" },
 
             { "id": "bc3_fastest",         "args": "--format BC3_SRGB_BLOCK --bc1-quality fastest input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
             { "id": "bc3_fast",            "args": "--format BC3_SRGB_BLOCK --bc1-quality fast input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
             { "id": "bc3_medium",          "args": "--format BC3_SRGB_BLOCK --bc1-quality medium input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
             { "id": "bc3_thorough",        "args": "--format BC3_SRGB_BLOCK --bc1-quality thorough input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
             { "id": "bc3_exhaustive",      "args": "--format BC3_SRGB_BLOCK --bc1-quality exhaustive input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-
             { "id": "bc3_thorough_linear", "args": "--format BC3_UNORM_BLOCK --bc1-quality thorough input/ktx2/valid_R8G8B8A8_UNORM_2D.ktx2" },
-            { "id": "bc3_thorough_rdo",    "args": "--format BC3_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
 
             { "id": "bc4",                 "args": "--format BC4_UNORM_BLOCK input/ktx2/valid_R8_UNORM_2D.ktx2" },
-            { "id": "bc4_rdo",             "args": "--format BC4_UNORM_BLOCK --bcn-rdo input/ktx2/valid_R8_UNORM_2D.ktx2" },
-
             { "id": "bc5",                 "args": "--format BC5_UNORM_BLOCK input/ktx2/valid_R8G8_UNORM_2D.ktx2" },
-            { "id": "bc5_rdo",             "args": "--format BC5_UNORM_BLOCK --bcn-rdo input/ktx2/valid_R8G8_UNORM_2D.ktx2" },
 
             { "id": "bc6hu",               "args": "--format BC6H_UFLOAT_BLOCK input/ktx2/valid_R16G16B16_SFLOAT_2D.ktx2" },
 
@@ -40,18 +31,7 @@
             { "id": "bc7_fast",            "args": "--format BC7_SRGB_BLOCK --bc7-quality fast input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
             { "id": "bc7_medium",          "args": "--format BC7_SRGB_BLOCK --bc7-quality medium input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
             { "id": "bc7_thorough",        "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_exhaustive",      "args": "--format BC7_SRGB_BLOCK --bc7-quality exhaustive input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-
-            { "id": "bc7_thorough_rdo",                           "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_lambda_0_1",                "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-l 0.1 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_lambda_4_0",                "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-l 4.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_no_ultrasmooth",            "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-no-ultrasmooth input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_window_8192",               "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-d 8192 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_no_smoothblocks_handling",  "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-b 1.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_stddev_10",                 "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-s 10.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_rms_20",                    "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-r 20.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_one_match",                 "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-try-one-match input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
-            { "id": "bc7_thorough_rdo_skip_zero_mse_blocks",      "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-skip-zero-mse input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" }
+            { "id": "bc7_exhaustive",      "args": "--format BC7_SRGB_BLOCK --bc7-quality exhaustive input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" }
         ]
     }
 }

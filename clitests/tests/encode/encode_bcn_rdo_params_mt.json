@@ -1,0 +1,32 @@
+{
+    "description": "Test multi-threaded encode with various BCn RDO encoding parameter combinations with multithreading enabled (default).",
+    "command": "ktx encode --testrun ${threads} ${select[args]} output/encode/bcn_rdo_params_mt/output_${select[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/encode/bcn_rdo_params_mt/output_${select[id]}.ktx2": "golden/encode/bcn_rdo_params/output_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "bc1_thorough_rdo",    "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/ktx2/valid_R8G8B8_SRGB_2D.ktx2" },
+            { "id": "bc3_thorough_rdo",    "args": "--format BC3_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc4_rdo",             "args": "--format BC4_UNORM_BLOCK --bcn-rdo input/ktx2/valid_R8_UNORM_2D.ktx2" },
+            { "id": "bc5_rdo",             "args": "--format BC5_UNORM_BLOCK --bcn-rdo input/ktx2/valid_R8G8_UNORM_2D.ktx2" },
+
+            { "id": "bc7_thorough_rdo",                           "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_lambda_0_1",                "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-l 0.1 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_lambda_4_0",                "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-l 4.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_no_ultrasmooth",            "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-no-ultrasmooth input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_window_8192",               "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-d 8192 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_no_smoothblocks_handling",  "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-b 1.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_stddev_10",                 "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-s 10.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_rms_20",                    "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-r 20.0 input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_one_match",                 "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-try-one-match input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" },
+            { "id": "bc7_thorough_rdo_skip_zero_mse_blocks",      "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo --bcn-rdo-skip-zero-mse input/ktx2/valid_R8G8B8A8_SRGB_2D.ktx2" }
+        ],
+        "threads": [
+          "--threads 3",
+          "--threads 4",
+          ""
+        ]
+    }
+}

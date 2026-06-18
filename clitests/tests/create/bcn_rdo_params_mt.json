@@ -1,0 +1,27 @@
+{
+    "description": "Test multi-threaded create with various BCn ROD encoding parameter combinations with supercompression.",
+    "command": "ktx create --testrun ${threads} ${select[args]} ${supercompression[args]} output/create/bcn_rdo_params_mt/output_${select[id]}_${supercompression[id]}.ktx2",
+    "comment": "BCn RDO encoding with mutlithreading is expected to result in exact same output as single-threaded encoding. The empty string in threads is to test on maximal number of physical threads (i.e., matched max number of physical threads on the system/runner)",
+    "status": 0,
+    "outputs": {
+        "output/create/bcn_rdo_params_mt/output_${select[id]}_${supercompression[id]}.ktx2": "golden/create/bcn_rdo_params/output_${select[id]}_${supercompression[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "bc1_thorough_rdo",    "args": "--format BC1_RGB_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgb8_srgb_bc1.png" },
+            { "id": "bc3_thorough_rdo",    "args": "--format BC3_SRGB_BLOCK --bc1-quality thorough --bcn-rdo input/png/rgba8_srgb_bc3.png" },
+            { "id": "bc4_rdo",             "args": "--format BC4_UNORM_BLOCK --bcn-rdo input/png/r8_unorm_bc4.png" },
+            { "id": "bc5_rdo",             "args": "--format BC5_UNORM_BLOCK --bcn-rdo input/png/rg8_unorm_bc5.png" },
+            { "id": "bc7_thorough_rdo",    "args": "--format BC7_SRGB_BLOCK --bc7-quality thorough --bcn-rdo input/png/rgba8_srgb_bc7.png" }
+        ],
+        "supercompression": [
+            { "id": "zstd", "args": "--zstd 9"},
+            { "id": "zlib", "args": "--zlib 5"}
+        ],
+        "threads": [
+          "--threads 3",
+          "--threads 4",
+          ""
+        ]
+    }
+}

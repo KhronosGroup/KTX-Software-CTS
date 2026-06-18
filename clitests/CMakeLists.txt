@@ -248,6 +248,9 @@ set(CASELIST
 
     tests/create/astc_params.json
     tests/create/bcn_params.json
+    tests/create/bcn_params_mt.json
+    tests/create/bcn_rdo_params_mt.json
+    tests/create/bcn_rdo_params.json
     tests/create/3d_with_1_depth.json
     tests/create/array_with_1_layer.json
     tests/create/basic_exr.json
@@ -354,8 +357,11 @@ set(CASELIST
     tests/encode/encode_astc_bad_format.json
     tests/encode/encode_astc_bad_astc_format.json
     tests/encode/encode_bcn.json
-    tests/encode/encode_bcn_params.json
     tests/encode/encode_bcn_bad_format.json
+    tests/encode/encode_bcn_params.json
+    tests/encode/encode_bcn_params_mt.json
+    tests/encode/encode_bcn_rdo_params.json
+    tests/encode/encode_bcn_rdo_params_mt.json
     tests/encode/encode_uastc.json
     tests/encode/encode_uastc_params.json
     tests/encode/encode_uastc_hdr.json
