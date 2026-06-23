@@ -274,6 +274,8 @@ Usage:
                                 Results in slightly faster, but lower compression.
       --bcn-rdo-skip-zero-mse   Skip blocks that have zero mean-squared error (MSE). Might result 
                                 in faster but potentially lower compression.
+      --bcn-rdo-m               Disable RDO multithreading (results are always deterministic with 
+                                or without multithreading).
 
  Encode BasisLZ options:
       --clevel <level>          BasisLZ compression level, an encoding speed vs. quality level 
