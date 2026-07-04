@@ -16,9 +16,9 @@ Usage:
                         Possible options are: basis-lz | uastc | uastc-ldr-4x4 | uastc-hdr-4x4 | 
                         uastc-hdr-6x6i
       --compare-ssim    Calculate encoding structural similarity index measure (SSIM) and print it 
-                        to stdout. Requires Basis-LZ, UASTC or ASTC encoding.
+                        to stdout. Requires Basis-LZ, UASTC, ASTC or BCn encoding.
       --compare-psnr    Calculate encoding peak signal-to-noise ratio (PSNR) and print it to 
-                        stdout. Requires Basis-LZ, UASTC or ASTC encoding.
+                        stdout. Requires Basis-LZ, UASTC, ASTC or BCn encoding.
       --zstd <level>    Supercompress the data with Zstandard. Cannot be used with ETC1S / BasisLZ 
                         format. Level range is [1,22]. Lower levels give faster but worse 
                         compression. Values above 20 should be used with caution as they require 
