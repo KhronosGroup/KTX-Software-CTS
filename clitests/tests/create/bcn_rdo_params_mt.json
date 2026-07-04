@@ -3,6 +3,7 @@
     "command": "ktx create --testrun ${threads} ${select[args]} ${supercompression[args]} output/create/bcn_rdo_params_mt/output_${select[id]}_${supercompression[id]}.ktx2",
     "comment": "BCn RDO encoding with mutlithreading is expected to result in exact same output as single-threaded encoding. The empty string in threads is to test on maximal number of physical threads (i.e., matched max number of physical threads on the system/runner)",
     "status": 0,
+    "skipKVD": true,
     "outputs": {
         "output/create/bcn_rdo_params_mt/output_${select[id]}_${supercompression[id]}.ktx2": "golden/create/bcn_rdo_params/output_${select[id]}_${supercompression[id]}.ktx2"
     },

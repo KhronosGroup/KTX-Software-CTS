@@ -1,5 +1,5 @@
 {
-    "description": "Test encode command with unsupported BCn formats.",
+    "description": "Test encode command with unsupported BCn and non-BCn formats.",
     "command": "ktx encode --testrun --threads 1 --format ${subcase[format]} input/ktx2/valid_${subcase[file]}.ktx2 output/encode/encode_error_format/output_${subcase[file]}_${subcase[format]}.ktx2",
     "status": 2,
     "stderr": "golden/encode/encode_error_format/bcn_${subcase[file]}_${subcase[format]}.err.txt",

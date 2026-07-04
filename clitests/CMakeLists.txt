@@ -358,6 +358,7 @@ set(CASELIST
     tests/encode/encode_astc_bad_astc_format.json
     tests/encode/encode_bcn.json
     tests/encode/encode_bcn_bad_format.json
+    tests/encode/encode_bcn_bad_bcn_or_astc_format.json
     tests/encode/encode_bcn_params.json
     tests/encode/encode_bcn_params_mt.json
     tests/encode/encode_bcn_rdo_params.json

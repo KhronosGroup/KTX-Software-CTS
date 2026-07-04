@@ -193,27 +193,6 @@ Usage:
                               available for normal maps and RGB color data.
 
  Encode BCn options:
-      --bc1-mode <mode>         BC1 (subsequently BC3) approximation mode (for both: encoding and 
-                                decoding). Default is 'ideal'. If you encode textures for a 
-                                specific vendor's GPU, beware that using that texture data on other 
-                                GPUs may result in ugly artifacts. Set to 'ideal' unless you know 
-                                the texture data will only be deployed or used on a specific 
-                                vendor's GPU. Can be set to one of the following:
-
-                                    Mode       |  Description                                   
-                                    ---------- | -----------------------------------------------
-                                    ideal      | The default mode. No rounding for 4-color      
-                                               | colors 2,3. This matches the D3D10 docs on BC1.
-                                    - - - - -  | - - - - - - - - - - - - - - - - - - - - - - - -
-                                    nvidia     | NVidia GPU mode. May produce artifacts on      
-                                               | non-NVidia GPUs.                               
-                                    - - - - -  | - - - - - - - - - - - - - - - - - - - - - - - -
-                                    amd        | AMD GPU mode. May produce artifacts on non-AMD 
-                                               | GPUs.                                          
-                                    - - - - -  | - - - - - - - - - - - - - - - - - - - - - - - -
-                                    ideal4     | Matches AMD Compressonator's output. Rounds    
-                                               | 4-color colors 2,3 (not 3-color color 2). This 
-                                               | matches the D3D9 docs on DXT1.                 
       --bc1-quality <level>     The quality level configures the quality-performance tradeoff for 
                                 BC1/BC3 encoders. The quality level can be set in the range [0, 19] 
                                 with (0) being the 'fastest' and (19) the slowest but most 
@@ -223,6 +202,7 @@ Usage:
                                     Level      |  Quality
                                     ---------- | ---------------------------- 
                                     fastest    | (equivalent to quality =  0) 
+                                    faster     | (equivalent to quality =  2) 
                                     fast       | (equivalent to quality =  5) 
                                     medium     | (equivalent to quality = 10) 
                                     thorough   | (equivalent to quality = 15) 
@@ -270,8 +250,8 @@ Usage:
                                 regions containing very smooth blocks (e.g., gradients, skies, 
                                 etc.). This does improve rate-distortion performance, though. BC4 
                                 and BC5 formats do not support ultrasmooth block handling.
-      --bcn-rdo-try-one-match   Inject up to 1 match into each block instead of up-to-two matches. 
-                                Results in slightly faster, but lower compression.
+      --bcn-rdo-try-one-match   Inject up to 1 match into each block instead of up to two matches. 
+                                Results in slightly faster, but noticeably lower compression.
       --bcn-rdo-skip-zero-mse   Skip blocks that have zero mean-squared error (MSE). Might result 
                                 in faster but potentially lower compression.
       --bcn-rdo-m               Disable RDO multithreading (results are always deterministic with 

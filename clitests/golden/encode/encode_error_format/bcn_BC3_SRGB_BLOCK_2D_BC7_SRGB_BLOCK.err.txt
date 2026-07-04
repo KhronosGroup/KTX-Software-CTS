@@ -1,0 +1,1 @@
+ktx encode fatal: Encoding from BCn format VK_FORMAT_BC3_SRGB_BLOCK to another BCn format VK_FORMAT_BC7_SRGB_BLOCK is not supported. See 'ktx encode --help'.

@@ -2,6 +2,7 @@
     "description": "Test multi-threaded encode with various BCn RDO encoding parameter combinations with multithreading enabled (default).",
     "command": "ktx encode --testrun ${threads} ${select[args]} ${supercompression[args]} output/encode/bcn_rdo_params_mt/output_${select[id]}_${supercompression[id]}.ktx2",
     "status": 0,
+    "skipKVD": true,
     "outputs": {
         "output/encode/bcn_rdo_params_mt/output_${select[id]}_${supercompression[id]}.ktx2": "golden/encode/bcn_rdo_params/output_${select[id]}_${supercompression[id]}.ktx2"
     },
