@@ -534,6 +534,10 @@ endmacro()
 
 foreach(CASE_FILE ${CASELIST})
     add_test_case(${CASE_FILE} tests ktxToolsTest ${KTX_TOOLS_PATH})
+    set_tests_properties(${FULL_CASE_NAME} PROPERTIES
+      ENVIRONMENT
+          "ASAN_OPTIONS=allocator_may_return_null=1"
+    )
 endforeach()
 
 add_custom_target(clitests_regen_golden
