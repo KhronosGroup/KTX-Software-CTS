@@ -530,6 +530,18 @@ macro(add_test_case CASE_FILE PREFIX SUITE_NAME TOOLS_PATH)
     add_test(NAME ${FULL_CASE_NAME}
         COMMAND ${Python3_EXECUTABLE} clitest.py ${CASE_FILE} ${CLITEST_ARGS} --executable-path "${TOOLS_PATH}" --ktxdiff-path "${KTX_DIFF_PATH}"
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+    #
+    # Some tests that provide erroneous input to cause excessive memory
+    # allocations will cause ASAN to error out. On such tests, ASan errors about
+    # very large memory allocations using malloc (or the like) should be
+    # disabled via setting the ENV variable:
+    # ASAN_OPTIONS=allocator_may_return_null=1
+    #
+    if (${CASE_FILE} STREQUAL "tests/info/invalid_file.json" OR
+        ${CASE_FILE} STREQUAL "tests/validate/error_4002_IncorrectLevelOrder.json")
+        set_tests_properties(${FULL_CASE_NAME} PROPERTIES
+          ENVIRONMENT "ASAN_OPTIONS=allocator_may_return_null=1")
+    endif()
 endmacro()
 
 foreach(CASE_FILE ${CASELIST})
