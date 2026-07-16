@@ -1,9 +1,9 @@
 {
     "description": "Test creation of multi-slice (3D, layered, cube) textures with image input files provided in a file of paths.",
-    "command": "ktx create --testrun --format R8G8B8A8_UNORM ${subcase[options]} --levels 1 --zstd 20 @input/png/slicelist_paths output/create/image_slices/output_${subcase[id]}.ktx2",
+    "command": "ktx create --testrun --format R8G8B8A8_UNORM ${subcase[options]} --levels 1 --zstd 20 @input/png/slicelist_paths output/create/image_slices_list_paths/output_${subcase[id]}.ktx2",
     "status": 0,
     "outputs": {
-        "output/create/image_slices/output_${subcase[id]}.ktx2": "golden/create/image_slices/output_${subcase[id]}.ktx2"
+        "output/create/image_slices_list_paths/output_${subcase[id]}.ktx2": "golden/create/image_slices/output_${subcase[id]}.ktx2"
     },
     "args": {
         "subcase": [
