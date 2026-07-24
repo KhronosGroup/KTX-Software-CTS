@@ -37,10 +37,10 @@ function Get-Max-Miplevels {
 }
 
 # DDS uncompressed 2D textures
-texconv -nologo -y -m 1 -f R8_UNORM -ft dds ${INPUT_DIR}\png\r8_unorm_bc4.png -o .; Move-Item -Force -Path r8_unorm_bc4.dds -Destination valid_compressed_R8_UNORM_40x40.dds
-texconv -nologo -y -m 1 -f R8G8_UNORM -ft dds ${INPUT_DIR}\png\rg8_unorm_bc5.png -o .; Move-Item -Force -Path rg8_unorm_bc5.dds -Destination valid_compressed_R8G8_UNORM_40x40.dds
-texconv -nologo -y -m 1 -f R8G8B8A8_UNORM -ft dds ${INPUT_DIR}\png\rgba8_unorm_bc7.png -o .; Move-Item -Force -Path rgba8_unorm_bc7.dds -Destination valid_compressed_R8G8B8A8_UNORM_40x40.dds
-texconv -nologo -y -m 1 -f R8G8B8A8_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgba8_srgb_bc7.png -o .; Move-Item -Force -Path rgba8_srgb_bc7.dds -Destination valid_compressed_R8G8B8A8_SRGB_40x40.dds
+texconv -nologo -y -m 1 -f R8_UNORM -ft dds ${INPUT_DIR}\png\r8_unorm_bc4.png -o .; Move-Item -Force -Path r8_unorm_bc4.dds -Destination valid_R8_UNORM_40x40.dds
+texconv -nologo -y -m 1 -f R8G8_UNORM -ft dds ${INPUT_DIR}\png\rg8_unorm_bc5.png -o .; Move-Item -Force -Path rg8_unorm_bc5.dds -Destination valid_R8G8_UNORM_40x40.dds
+texconv -nologo -y -m 1 -f R8G8B8A8_UNORM -ft dds ${INPUT_DIR}\png\rgba8_unorm_bc7.png -o .; Move-Item -Force -Path rgba8_unorm_bc7.dds -Destination valid_R8G8B8A8_UNORM_40x40.dds
+texconv -nologo -y -m 1 -f R8G8B8A8_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgba8_srgb_bc7.png -o .; Move-Item -Force -Path rgba8_srgb_bc7.dds -Destination valid_R8G8B8A8_SRGB_40x40.dds
 
 # DDS BC1-BC7 compressed 2D textures
 texconv -nologo -y -m 1 -f BC1_UNORM -ft dds ${INPUT_DIR}\png\rgb8_unorm_bc1.png -o .; Move-Item -Force -Path rgb8_unorm_bc1.dds -Destination valid_compressed_BC1_UNORM_40x40.dds
@@ -57,16 +57,16 @@ texconv -nologo -y -m 1 -f BC7_UNORM -ft dds ${INPUT_DIR}\png\rgba8_unorm_bc7.pn
 texconv -nologo -y -m 1 -f BC7_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgba8_srgb_bc7.png -o .; Move-Item -Force -Path rgba8_srgb_bc7.dds -Destination valid_compressed_BC7_SRGB_40x40.dds
 
 # DDS volume textures
-texassemble volume -nologo -y -f R8G8B8A8_UNORM_SRGB -o valid_compressed_R8G8B8A8_SRGB_slices_6_128x128.dds `
+texassemble volume -nologo -y -f R8G8B8A8_UNORM_SRGB -o valid_R8G8B8A8_SRGB_slices_6_128x128.dds `
   ${INPUT_DIR}\png\slice0.png ${INPUT_DIR}\png\slice1.png ${INPUT_DIR}\png\slice2.png `
   ${INPUT_DIR}\png\slice3.png ${INPUT_DIR}\png\slice4.png ${INPUT_DIR}\png\slice5.png
 
 # DDS cubemap textures
-texassemble cube -nologo -y -f R8G8B8A8_UNORM_SRGB -o valid_compressed_R8G8B8A8_SRGB_faces_6_128x128.dds `
+texassemble cube -nologo -y -f R8G8B8A8_UNORM_SRGB -o valid_R8G8B8A8_SRGB_faces_6_128x128.dds `
   ${INPUT_DIR}\png\slice0.png ${INPUT_DIR}\png\slice1.png ${INPUT_DIR}\png\slice2.png `
   ${INPUT_DIR}\png\slice3.png ${INPUT_DIR}\png\slice4.png ${INPUT_DIR}\png\slice5.png
 
 # DDS array textures
-texassemble array -nologo -y -f R8G8B8A8_UNORM_SRGB -o valid_compressed_R8G8B8A8_SRGB_layers_6_128x128.dds `
+texassemble array -nologo -y -f R8G8B8A8_UNORM_SRGB -o valid_R8G8B8A8_SRGB_layers_6_128x128.dds `
   ${INPUT_DIR}\png\slice0.png ${INPUT_DIR}\png\slice1.png ${INPUT_DIR}\png\slice2.png `
   ${INPUT_DIR}\png\slice3.png ${INPUT_DIR}\png\slice4.png ${INPUT_DIR}\png\slice5.png
