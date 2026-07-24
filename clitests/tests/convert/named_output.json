@@ -28,7 +28,13 @@
             { "type": "ktx", "format": "SR8_16x16" },
             { "type": "ktx", "format": "SRG8_16x16" },
             { "type": "ktx", "format": "SRGB8_16x16" },
-            { "type": "ktx", "format": "SRGB8_ALPHA8_16x16" }
+            { "type": "ktx", "format": "SRGB8_ALPHA8_16x16" },
+
+            { "type": "dds", "format": "compressed_R8G8B8A8_UNORM_levels_11_1024x1024" },
+            { "type": "dds", "format": "compressed_R8G8B8A8_SRGB_levels_11_1024x1024" },
+            { "type": "dds", "format": "compressed_R16G16B16A16_SFLOAT_faces_6_256x256" },
+            { "type": "dds", "format": "compressed_BC3_UNORM_64x64" },
+            { "type": "dds", "format": "compressed_BC6H_UFLOAT_levels_9_faces_6_1024x1024" }
         ]
     }
 }
