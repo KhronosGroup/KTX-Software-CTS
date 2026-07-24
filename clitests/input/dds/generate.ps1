@@ -22,7 +22,7 @@
 $ErrorActionPreference="Stop"
 
 # Path to CTS inputs from KTX-Software
-$INPUT_DIR="C:\Users\walid\KTX-Software\tests\cts\clitests\input"
+$INPUT_DIR="KTX-Software\tests\cts\clitests\input"
 
 # Compute max number of mip levels for given dimensions
 # [Math]::Log2 doesn't work hence why the division below
