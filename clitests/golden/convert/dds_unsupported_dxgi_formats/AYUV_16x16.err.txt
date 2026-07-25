@@ -1,0 +1,1 @@
+ktx convert fatal: Failed to retrieve Vulkan format from DDS format 100

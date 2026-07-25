@@ -1,0 +1,16 @@
+{
+    "description": "Test conversion of various DDS files with unsupported (no Vulkan equivalent) DXGI formats.",
+    "command": "ktx convert --testrun --input-type dds input/dds/unsupported_${subcase[file]}.dds output/convert/dds_unsupported_dxgi_formats/${subcase[file]}.ktx2",
+    "status": "${subcase[rc]}",
+    "stderr": "golden/convert/dds_unsupported_dxgi_formats/${subcase[file]}.err.txt",
+    "args": {
+        "subcase": [
+            { "rc": 4, "file": "A4B4G4R4_UNORM_16x16" },
+            { "rc": 4, "file": "AYUV_16x16" },
+            { "rc": 4, "file": "Y210_16x16" },
+            { "rc": 4, "file": "Y416_16x16" },
+            { "rc": 3, "file": "YUY2_16x16" }
+        ]
+    }
+}
+

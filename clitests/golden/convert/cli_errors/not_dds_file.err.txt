@@ -1,0 +1,2 @@
+ktx convert warning: Could not decode DDS format
+ktx convert fatal: Failed to read DDS header
