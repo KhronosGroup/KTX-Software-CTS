@@ -42,6 +42,14 @@ texconv -nologo -y -m 1 -f R8G8_UNORM -ft dds ${INPUT_DIR}\png\rg8_unorm_bc5.png
 texconv -nologo -y -m 1 -f R8G8B8A8_UNORM -ft dds ${INPUT_DIR}\png\rgba8_unorm_bc7.png -o .; Move-Item -Force -Path rgba8_unorm_bc7.dds -Destination valid_R8G8B8A8_UNORM_40x40.dds
 texconv -nologo -y -m 1 -f R8G8B8A8_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgba8_srgb_bc7.png -o .; Move-Item -Force -Path rgba8_srgb_bc7.dds -Destination valid_R8G8B8A8_SRGB_40x40.dds
 
+# DDS uncompressed HDR 2D textures
+texconv -nologo -y -m 1 -f R16_UNORM -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination valid_R16_UNORM_16x16.dds
+texconv -nologo -y -m 1 -f R16G16_UNORM -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination valid_R16G16_UNORM_16x16.dds
+texconv -nologo -y -m 1 -f R16G16B16A16_UNORM -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination valid_R16G16B16A16_UNORM_16x16.dds
+texconv -nologo -y -m 1 -f R32_FLOAT -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination valid_R32_FLOAT_16x16.dds
+texconv -nologo -y -m 1 -f R32G32_FLOAT -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination valid_R32G32_FLOAT_16x16.dds
+texconv -nologo -y -m 1 -f R32G32B32A32_FLOAT -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination valid_R32G32B32A32_FLOAT_16x16.dds
+
 # DDS BC1-BC7 compressed 2D textures
 texconv -nologo -y -m 1 -f BC1_UNORM -ft dds ${INPUT_DIR}\png\rgb8_unorm_bc1.png -o .; Move-Item -Force -Path rgb8_unorm_bc1.dds -Destination valid_compressed_BC1_UNORM_40x40.dds
 texconv -nologo -y -m 1 -f BC1_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgb8_srgb_bc1.png -o .; Move-Item -Force -Path rgb8_srgb_bc1.dds -Destination valid_compressed_BC1_SRGB_40x40.dds
@@ -51,10 +59,22 @@ texconv -nologo -y -m 1 -f BC3_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgba8_srgb_bc
 texconv -nologo -y -m 1 -f BC4_UNORM -ft dds ${INPUT_DIR}\png\r8_unorm_bc4.png -o .; Move-Item -Force -Path r8_unorm_bc4.dds -Destination valid_compressed_BC4_UNORM_40x40.dds
 texconv -nologo -y -m 1 -f BC4_SNORM -ft dds ${INPUT_DIR}\png\r8_unorm_bc4.png -o .; Move-Item -Force -Path r8_unorm_bc4.dds -Destination valid_compressed_BC4_SNORM_40x40.dds
 texconv -nologo -y -m 1 -f BC5_UNORM -ft dds ${INPUT_DIR}\png\rg8_unorm_bc5.png -o .; Move-Item -Force -Path rg8_unorm_bc5.dds -Destination valid_compressed_BC5_UNORM_40x40.dds
+texconv -nologo -y -m 1 -f BC5_SNORM -ft dds ${INPUT_DIR}\png\rg8_unorm_bc5.png -o .; Move-Item -Force -Path rg8_unorm_bc5.dds -Destination valid_compressed_BC5_SNORM_40x40.dds
 texconv -nologo -y -m 1 -f BC6H_UF16 -ft dds ${INPUT_DIR}\png\basic_RGB16_16x16.png -o .; Move-Item -Force -Path basic_RGB16_16x16.dds -Destination valid_compressed_BC6H_UFLOAT_16x16.dds
 texconv -nologo -y -m 1 -f BC6H_SF16 -ft dds ${INPUT_DIR}\png\sbit16_RGB16_16x16.png -o .; Move-Item -Force -Path sbit16_RGB16_16x16.dds -Destination valid_compressed_BC6H_SFLOAT_16x16.dds
 texconv -nologo -y -m 1 -f BC7_UNORM -ft dds ${INPUT_DIR}\png\rgba8_unorm_bc7.png -o .; Move-Item -Force -Path rgba8_unorm_bc7.dds -Destination valid_compressed_BC7_UNORM_40x40.dds
 texconv -nologo -y -m 1 -f BC7_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgba8_srgb_bc7.png -o .; Move-Item -Force -Path rgba8_srgb_bc7.dds -Destination valid_compressed_BC7_SRGB_40x40.dds
+
+# DDS BC7 with mip levels for slice0..5
+$num_miplevels=$(Get-Max-Miplevels -w 128 -h 128)
+texconv -nologo -y -m $num_miplevels -f BC7_UNORM_SRGB -ft dds ${INPUT_DIR}\png\slice0.png -o .; Move-Item -Force -Path slice0.dds -Destination valid_compressed_levels_${num_miplevels}_BC7_SRGB_128x128.dds
+
+# DDS formats with no equivalent in Vulkan (at least Vulkan core)
+texconv -nologo -y -m 1 -f AYUV -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination unsupported_AYUV_16x16.dds
+texconv -nologo -y -m 1 -f Y210 -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination unsupported_Y210_16x16.dds
+texconv -nologo -y -m 1 -f Y416 -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination unsupported_Y416_16x16.dds
+texconv -nologo -y -m 1 -f YUY2 -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination unsupported_YUY2_16x16.dds
+texconv -nologo -y -m 1 -f A4B4G4R4_UNORM -ft dds ${INPUT_DIR}\png\basic_RGBA16_16x16.png -o .; Move-Item -Force -Path basic_RGBA16_16x16.dds -Destination unsupported_A4B4G4R4_UNORM_16x16.dds
 
 # DDS volume textures
 texassemble volume -nologo -y -f R8G8B8A8_UNORM_SRGB -o valid_R8G8B8A8_SRGB_slices_6_128x128.dds `
