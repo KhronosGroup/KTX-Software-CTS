@@ -53,6 +53,7 @@ texconv -nologo -y -m 1 -f R32G32B32A32_FLOAT -ft dds ${INPUT_DIR}\png\basic_RGB
 # DDS BC1-BC7 compressed 2D textures
 texconv -nologo -y -m 1 -f BC1_UNORM -ft dds ${INPUT_DIR}\png\rgb8_unorm_bc1.png -o .; Move-Item -Force -Path rgb8_unorm_bc1.dds -Destination valid_compressed_BC1_UNORM_40x40.dds
 texconv -nologo -y -m 1 -f BC1_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgb8_srgb_bc1.png -o .; Move-Item -Force -Path rgb8_srgb_bc1.dds -Destination valid_compressed_BC1_SRGB_40x40.dds
+# BC2 encoders produce a higher error rate and are vastly different from one program to another (e.g., GIMP vs. OpenImageIO)
 texconv -nologo -y -m 1 -f BC2_UNORM_SRGB -ft dds ${INPUT_DIR}\png\basic_RGBA8_16x16.png -o .; Move-Item -Force -Path basic_RGBA8_16x16.dds -Destination valid_compressed_BC2_SRGB_16x16.dds
 texconv -nologo -y -m 1 -f BC3_UNORM -ft dds ${INPUT_DIR}\png\rgba8_unorm_bc3.png -o .; Move-Item -Force -Path rgba8_unorm_bc3.dds -Destination valid_compressed_BC3_UNORM_40x40.dds
 texconv -nologo -y -m 1 -f BC3_UNORM_SRGB -ft dds ${INPUT_DIR}\png\rgba8_srgb_bc3.png -o .; Move-Item -Force -Path rgba8_srgb_bc3.dds -Destination valid_compressed_BC3_SRGB_40x40.dds
