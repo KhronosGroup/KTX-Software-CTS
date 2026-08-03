@@ -366,6 +366,8 @@ set(CASELIST
     tests/transcode/unicode_filenames.json
     tests/transcode/transcode_blze.json
     tests/transcode/transcode_error_invalid.json
+    tests/transcode/transcode_error_hdr_to_ldr_transcode.json
+    tests/transcode/transcode_error_ldr_to_hdr_transcode.json
     tests/transcode/transcode_error_not_transcodable.json
     tests/transcode/transcode_error_target.json
     tests/transcode/transcode_error_too_many_filenames.json
