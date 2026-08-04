@@ -1,0 +1,1 @@
+ktx transcode fatal: BasisLZ and UASTC LDR textures can only be transcoded to LDR formats. See 'ktx transcode --help'.

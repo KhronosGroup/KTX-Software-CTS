@@ -1,0 +1,1 @@
+ktx transcode fatal: UASTC HDR textures can only be transcoded to HDR formats. See 'ktx transcode --help'.

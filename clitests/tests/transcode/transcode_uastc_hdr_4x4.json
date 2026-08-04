@@ -8,7 +8,9 @@
     "args": {
         "transcode": [
             { "id": "astc-hdr-4x4", "flag": "--target astc-hdr-4x4" },
+            { "id": "rgb16f", "flag": "--target rgb16f" },
             { "id": "rgba16f", "flag": "--target rgba16f" },
+            { "id": "rgb9e5", "flag": "--target rgb9e5" },
             { "id": "bc6hu", "flag": "--target bc6hu" },
             { "id": "auto", "flag": "" }
         ],

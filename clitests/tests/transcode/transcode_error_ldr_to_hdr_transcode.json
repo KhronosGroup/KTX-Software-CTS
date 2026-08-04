@@ -1,0 +1,20 @@
+{
+    "description": "Test unsupported ldr to hdr target transcode.",
+    "command": "ktx transcode --testrun --target ${target} input/transcode/large_${subcase}.ktx2 output/transcode/transcode_error_ldr_to_hdr_transcode/output_${subcase}_${target}.ktx2",
+    "status": 1,
+    "stderr": "golden/transcode/transcode_error_ldr_to_hdr_transcode/error_common.err.txt",
+    "args": {
+        "target": [
+            "astc-hdr-4x4",
+            "astc-hdr-6x6",
+            "bc6hu",
+            "rgb16f",
+            "rgba16f",
+            "rgb9e5"
+        ],
+        "subcase": [
+            "BLZE",
+            "UASTC"
+        ]
+    }
+}

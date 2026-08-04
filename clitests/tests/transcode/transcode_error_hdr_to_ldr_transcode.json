@@ -1,0 +1,20 @@
+{
+    "description": "Test unsupported hdr to ldr target transcode.",
+    "command": "ktx transcode --testrun --target ${target} input/transcode/valid_uastc_${subcase}_R16G16B16A16_SFLOAT.ktx2 output/transcode/transcode_error_hdr_to_ldr_transcode/output_${subcase}_${target}.ktx2",
+    "status": 1,
+    "stderr": "golden/transcode/transcode_error_hdr_to_ldr_transcode/error_common.err.txt",
+    "args": {
+        "target": [
+            "etc-rgba",
+            "eac-rg11",
+            "bc3",
+            "bc7",
+            "astc",
+            "rgba8"
+        ],
+        "subcase": [
+            "hdr4x4",
+            "hdr6x6i"
+        ]
+    }
+}
