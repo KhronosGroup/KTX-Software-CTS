@@ -1,1 +1,0 @@
-ktx encode fatal: Encoding to signed BC6H HDR format (BC6HS) is not supported.

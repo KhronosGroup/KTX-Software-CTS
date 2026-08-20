@@ -1,1 +1,1 @@
-ktx create fatal: --bc1-quality can only be used with BCn formats. See 'ktx create --help'.
+ktx create fatal: --bcn-quality can only be used with BCn formats. See 'ktx create --help'.

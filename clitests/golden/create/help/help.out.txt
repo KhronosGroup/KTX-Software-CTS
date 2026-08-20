@@ -193,39 +193,15 @@ Usage:
                               available for normal maps and RGB color data.
 
  Encode BCn options:
-      --bc1-quality <level>     The quality level configures the quality-performance tradeoff for 
-                                BC1/BC3 encoders. The quality level can be set in the range [0, 19] 
-                                with (0) being the 'fastest' and (19) the slowest but most 
-                                'exhaustive'. Default is (15) 'thorough'. Can also be set via the 
-                                following aliases:
-
-                                    Level      |  Quality
-                                    ---------- | ---------------------------- 
-                                    fastest    | (equivalent to quality =  0) 
-                                    faster     | (equivalent to quality =  2) 
-                                    fast       | (equivalent to quality =  5) 
-                                    medium     | (equivalent to quality = 10) 
-                                    thorough   | (equivalent to quality = 15) 
-                                    exhaustive | (equivalent to quality = 19) 
-
-                                Note on BC1 vs. BC3 vs. BC7: apart from lower VRAM consumption 
-                                (4bpp vs. 8bpp) and better GPU texture cache efficiency, there's 
-                                little need to use BC1 now. BC3 still has an advantage vs. BC7, 
-                                because it very strongly separates how RGB is encoded from the 
-                                alpha channel, in a predictable way.
-      --bc7-quality <level>     The quality level configures the quality-performance tradeoff for 
-                                BC7 encoder. Default is 'medium'. The quality level can be set 
-                                between fastest and exhaustive via the following fixed quality 
-                                presets where each preset is an OR'ed set of flags:
-
-                                    Level      |  OR'ed flags                 
-                                    ---------- | ---------------------------- 
-                                    fastest    | (equivalent to flags =  128) 
-                                    faster     | (equivalent to flags =  176) 
-                                    fast       | (equivalent to flags =  179) 
-                                    medium     | (equivalent to flags =  255) 
-                                    thorough   | (equivalent to flags = 1023) 
-                                    exhaustive | (equivalent to flags = 3967)
+      --bcn-quality <level>     The quality level configures the quality-performance tradeoff for 
+                                BC1, BC3, and BC7 encoders. Can also be set via the following 
+                                presets: fastest, faster, fast, medium, thorough, 
+                                exhaustive.Default is 'thorough'. Note on BC1 vs. BC3 vs. BC7: 
+                                apart from lower VRAM consumption (4bpp vs. 8bpp) and better GPU 
+                                texture cache efficiency, there's little need to use BC1 now. BC7 
+                                offers significantly better quality than BC1 and BC3. BC3 still has 
+                                an advantage vs. BC7, because it very strongly separates how RGB is 
+                                encoded from the alpha channel, in a predictable way.
       --bcn-rdo                 Enable BCn LDR RDO post-processing. HDR formats (BC6HU/BC6HS) are 
                                 currently not supported.
       --bcn-rdo-l <lambda>      Set BCn RDO quality scalar to the specified value. Lower values 
@@ -254,8 +230,8 @@ Usage:
                                 Results in slightly faster, but noticeably lower compression.
       --bcn-rdo-skip-zero-mse   Skip blocks that have zero mean-squared error (MSE). Might result 
                                 in faster but potentially lower compression.
-      --bcn-rdo-m               Disable RDO multithreading (results are always deterministic with 
-                                or without multithreading).
+      --bcn-rdo-m               Disable RDO multithreading (potentially slightly higher 
+                                compression).
 
  Encode BasisLZ options:
       --clevel <level>          BasisLZ compression level, an encoding speed vs. quality level 
