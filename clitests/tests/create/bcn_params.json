@@ -1,0 +1,38 @@
+{
+    "description": "Test single-threaded create with various BCn encoding parameter combinations (no RDO).",
+    "command": "ktx create --testrun --threads 1 ${select[args]} output/create/bcn_params/output_${select[id]}.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/create/bcn_params/output_${select[id]}.ktx2": "golden/create/bcn_params/output_${select[id]}.ktx2"
+    },
+    "args": {
+        "select": [
+            { "id": "bc1_fastest",         "args": "--format BC1_RGB_SRGB_BLOCK --bcn-quality fastest input/png/rgb8_srgb_bc1.png" },
+            { "id": "bc1_fast",            "args": "--format BC1_RGB_SRGB_BLOCK --bcn-quality fast input/png/rgb8_srgb_bc1.png" },
+            { "id": "bc1_medium",          "args": "--format BC1_RGB_SRGB_BLOCK --bcn-quality medium input/png/rgb8_srgb_bc1.png" },
+            { "id": "bc1_thorough",        "args": "--format BC1_RGB_SRGB_BLOCK --bcn-quality thorough input/png/rgb8_srgb_bc1.png" },
+            { "id": "bc1_exhaustive",      "args": "--format BC1_RGB_SRGB_BLOCK --bcn-quality exhaustive input/png/rgb8_srgb_bc1.png" },
+            { "id": "bc1_thorough_linear", "args": "--format BC1_RGB_UNORM_BLOCK --bcn-quality thorough input/png/rgb8_unorm_bc1.png" },
+
+            { "id": "bc3_fastest",         "args": "--format BC3_SRGB_BLOCK --bcn-quality fastest input/png/rgba8_srgb_bc3.png" },
+            { "id": "bc3_fast",            "args": "--format BC3_SRGB_BLOCK --bcn-quality fast input/png/rgba8_srgb_bc3.png" },
+            { "id": "bc3_medium",          "args": "--format BC3_SRGB_BLOCK --bcn-quality medium input/png/rgba8_srgb_bc3.png" },
+            { "id": "bc3_thorough",        "args": "--format BC3_SRGB_BLOCK --bcn-quality thorough input/png/rgba8_srgb_bc3.png" },
+            { "id": "bc3_exhaustive",      "args": "--format BC3_SRGB_BLOCK --bcn-quality exhaustive input/png/rgba8_srgb_bc3.png" },
+            { "id": "bc3_thorough_linear", "args": "--format BC3_UNORM_BLOCK --bcn-quality thorough input/png/rgba8_unorm_bc3.png" },
+
+            { "id": "bc4",                 "args": "--format BC4_UNORM_BLOCK input/png/r8_unorm_bc4.png" },
+            { "id": "bc5",                 "args": "--format BC5_UNORM_BLOCK input/png/rg8_unorm_bc5.png" },
+
+            { "id": "bc6hu",               "args": "--format BC6H_UFLOAT_BLOCK input/exr/basic_RGB_HALF_HDR_16x16.exr" },
+
+            { "id": "bc7_fastest",         "args": "--format BC7_SRGB_BLOCK --bcn-quality fastest input/png/rgba8_srgb_bc7.png" },
+            { "id": "bc7_faster",          "args": "--format BC7_SRGB_BLOCK --bcn-quality faster input/png/rgba8_srgb_bc7.png" },
+            { "id": "bc7_fast",            "args": "--format BC7_SRGB_BLOCK --bcn-quality fast input/png/rgba8_srgb_bc7.png" },
+            { "id": "bc7_medium",          "args": "--format BC7_SRGB_BLOCK --bcn-quality medium input/png/rgba8_srgb_bc7.png" },
+            { "id": "bc7_thorough",        "args": "--format BC7_SRGB_BLOCK --bcn-quality thorough input/png/rgba8_srgb_bc7.png" },
+            { "id": "bc7_exhaustive",      "args": "--format BC7_SRGB_BLOCK --bcn-quality exhaustive input/png/rgba8_srgb_bc7.png" },
+            { "id": "bc7_thorough_linear", "args": "--format BC7_SRGB_BLOCK --bcn-quality thorough input/png/rgba8_unorm_bc7.png" }
+        ]
+    }
+}

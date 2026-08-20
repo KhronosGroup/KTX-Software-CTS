@@ -122,9 +122,14 @@ if __name__ == '__main__':
             subcase[arg] = combination[index]
         subcases.append(subcase)
 
-    def compare_with_ktxdiff(filepath_expected, filepath_received, tolerance):
+    def compare_with_ktxdiff(filepath_expected, filepath_received, tolerance, skipKVD = False):
+        popen_args = [cli_args.ktxdiff_path, filepath_expected, filepath_received]
+        if tolerance is not None:
+            popen_args.append(str(tolerance))
+        if skipKVD:
+            popen_args.append("--skip-kvd")
         with subprocess.Popen(
-                [cli_args.ktxdiff_path, filepath_expected, filepath_received, str(tolerance)],
+                popen_args,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE) as diff_proc:
             diff_stdout, diff_stderr = diff_proc.communicate()
@@ -174,6 +179,7 @@ if __name__ == '__main__':
 
         stdoutBinary = False
         outputTolerance = None
+        skipKVD = False
 
         try:
             cmd_args = [ arg for arg in ctx.eval(testcase['command']).split(' ') if arg ]
@@ -217,6 +223,9 @@ if __name__ == '__main__':
                     outputTolerance = ctx.eval(testcase['outputTolerance'])
                 else:
                     outputTolerance = testcase['outputTolerance']
+
+            if 'skipKVD' in testcase:
+                skipKVD = bool(testcase['skipKVD'])
 
             if 'stdoutBinary' in testcase:
                 if isinstance(testcase['stdoutBinary'], str):
@@ -354,7 +363,7 @@ if __name__ == '__main__':
                                     subcase_messages.append("Test case requires diff tool. Please specify path using the -d command line argument.")
                                     subcase_failed = True
                                 else:
-                                    ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, outputTolerance)
+                                    ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, outputTolerance, skipKVD)
                                     if ktxdiff_status != 0:
                                         if ktxdiff_stdout:
                                             subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
@@ -362,6 +371,21 @@ if __name__ == '__main__':
                                             subcase_messages.append(ktxdiff_stderr.rstrip('\n'))
                                         subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}' exceeded the output tolerance '{outputTolerance}' on a non-primary platform")
                                         subcase_failed = True
+                            # A comparison with ktxdiff with ignored metadata may also be required
+                            elif skipKVD:
+                                if not cli_args.ktxdiff_path:
+                                    subcase_messages.append("Test case requires diff tool. Please specify path using the -d command line argument.")
+                                    subcase_failed = True
+                                else:
+                                    ktxdiff_status, ktxdiff_stdout, ktxdiff_stderr = compare_with_ktxdiff(output_ref, output_cur, None, skipKVD)
+                                    if ktxdiff_status != 0:
+                                        if ktxdiff_stdout:
+                                            subcase_messages.append(ktxdiff_stdout.rstrip('\n'))
+                                        if ktxdiff_stderr:
+                                            subcase_messages.append(ktxdiff_stderr.rstrip('\n'))
+                                        subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}' without comparing KVD entries")
+                                        subcase_failed = True
+                                
                             else:
                                 subcase_messages.append(f"Mismatch between output file '{output_cur}' and reference file '{output_ref}'")
                                 subcase_failed = True

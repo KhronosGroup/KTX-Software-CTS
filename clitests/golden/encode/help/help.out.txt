@@ -8,8 +8,9 @@ Usage:
                         are matching the VkFormats without the VK_FORMAT_ prefix. The VK_FORMAT_ 
                         prefix is ignored if present.
                         It can't be used with --codec.
-                        The value must be an ASTC format. When specified the ASTC encoder specific 
-                        options becomes valid. Case insensitive.
+                        The value must be an ASTC or a BCn format. If an ASTC format is specified, 
+                        the ASTC encoder specific options becomes valid. Likewise for BCn formats. 
+                        Case insensitive.
       --codec <target>  Target codec. With each encoding option the encoder specific options become 
                         valid, otherwise they are ignored. Case-insensitive.
                         Possible options are: basis-lz | uastc | uastc-ldr-4x4 | uastc-hdr-4x4 | 
@@ -54,6 +55,47 @@ Usage:
                               error. This aims to improve perceived image quality, but typically 
                               lowers the measured PSNR score. Perceptual methods are currently only 
                               available for normal maps and RGB color data.
+
+ Encode BCn options:
+      --bcn-quality <level>     The quality level configures the quality-performance tradeoff for 
+                                BC1, BC3, and BC7 encoders. Can also be set via the following 
+                                presets: fastest, faster, fast, medium, thorough, 
+                                exhaustive.Default is 'thorough'. Note on BC1 vs. BC3 vs. BC7: 
+                                apart from lower VRAM consumption (4bpp vs. 8bpp) and better GPU 
+                                texture cache efficiency, there's little need to use BC1 now. BC7 
+                                offers significantly better quality than BC1 and BC3. BC3 still has 
+                                an advantage vs. BC7, because it very strongly separates how RGB is 
+                                encoded from the alpha channel, in a predictable way.
+      --bcn-rdo                 Enable BCn LDR RDO post-processing. HDR formats (BC6HU/BC6HS) are 
+                                currently not supported.
+      --bcn-rdo-l <lambda>      Set BCn RDO quality scalar to the specified value. Lower values 
+                                yield higher quality/larger supercompressed files, higher values 
+                                yield lower quality/smaller supercompressed files. A good range to 
+                                try is [.25,10]. For normal maps a good range is [.25,.75]. The 
+                                full range is [.001,10.0]. Default is 1.0.
+      --bcn-rdo-d <dictsize>    Set BCn RDO dictsize size in bytes. Default is 4096. Lower 
+                                values=faster, but give less compression. Range is [64,65536].
+      --bcn-rdo-b <scale>       Set BCn RDO max smooth block error scale. Range is [1.0,300.0]. 
+                                Default is to automatically compute this. 1.0 is disabled. Larger 
+                                values suppress more artifacts (and allocate more bits) on smooth 
+                                blocks.
+      --bcn-rdo-s <deviation>   Set BCn RDO max smooth block standard deviation. Range is 
+                                [.01,65536.0]. Default is 18.0. Larger values expand the range of 
+                                blocks considered smooth.
+      --bcn-rdo-r <ratio>       How much the RMS error of a block is allowed to increase before a 
+                                trial is rejected. 1.0=no increase allowed, 1.05=5% increase 
+                                allowed, etc. Range is [1.001, 100.0]. Default is 10.0.
+      --bcn-rdo-no-ultrasmooth  Disable encoding of extremely smooth blocks with a significantly 
+                                higher MSE scale factor. Results in significantly more artifacts on 
+                                regions containing very smooth blocks (e.g., gradients, skies, 
+                                etc.). This does improve rate-distortion performance, though. BC4 
+                                and BC5 formats do not support ultrasmooth block handling.
+      --bcn-rdo-try-one-match   Inject up to 1 match into each block instead of up to two matches. 
+                                Results in slightly faster, but noticeably lower compression.
+      --bcn-rdo-skip-zero-mse   Skip blocks that have zero mean-squared error (MSE). Might result 
+                                in faster but potentially lower compression.
+      --bcn-rdo-m               Disable RDO multithreading (potentially slightly higher 
+                                compression).
 
  Encode BasisLZ options:
       --clevel <level>          BasisLZ compression level, an encoding speed vs. quality level 

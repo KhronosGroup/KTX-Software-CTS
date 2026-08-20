@@ -1,0 +1,1 @@
+ktx create fatal: BCn format VK_FORMAT_BC6H_UFLOAT_BLOCK cannot be used for 1 dimensional textures (indicated by --1d). See 'ktx create --help'.

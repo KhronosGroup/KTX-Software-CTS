@@ -1,0 +1,15 @@
+{
+    "description": "Test encode command with unsupported BCn and non-BCn formats.",
+    "command": "ktx encode --testrun --threads 1 --format ${subcase[format]} input/ktx2/valid_${subcase[file]}.ktx2 output/encode/encode_error_format/output_${subcase[file]}_${subcase[format]}.ktx2",
+    "status": 2,
+    "stderr": "golden/encode/encode_error_format/bcn_${subcase[file]}_${subcase[format]}.err.txt",
+    "args": {
+        "subcase": [
+            { "format": "BC1_RGBA_UNORM_BLOCK", "file": "R8G8B8A8_UNORM_2D" },
+            { "format": "BC1_RGBA_SRGB_BLOCK",  "file": "R8G8B8A8_SRGB_2D" },
+            { "format": "BC2_UNORM_BLOCK",      "file": "R8G8B8A8_UNORM_2D" },
+            { "format": "BC2_SRGB_BLOCK",       "file": "R8G8B8A8_SRGB_2D" },
+            { "format": "BC6H_SFLOAT_BLOCK",    "file": "R16G16B16_SFLOAT_2D" }
+          ]
+    }
+}
