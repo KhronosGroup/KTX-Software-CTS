@@ -28,7 +28,32 @@
             { "type": "ktx", "format": "SR8_16x16" },
             { "type": "ktx", "format": "SRG8_16x16" },
             { "type": "ktx", "format": "SRGB8_16x16" },
-            { "type": "ktx", "format": "SRGB8_ALPHA8_16x16" }
+            { "type": "ktx", "format": "SRGB8_ALPHA8_16x16" },
+
+            { "type": "dds", "format": "compressed_BC1_SRGB_40x40" },
+            { "type": "dds", "format": "compressed_BC1_UNORM_40x40" },
+            { "type": "dds", "format": "compressed_BC2_SRGB_16x16" },
+            { "type": "dds", "format": "compressed_BC3_SRGB_40x40" },
+            { "type": "dds", "format": "compressed_BC3_UNORM_40x40" },
+            { "type": "dds", "format": "compressed_BC4_UNORM_40x40" },
+            { "type": "dds", "format": "compressed_BC4_SNORM_40x40" },
+            { "type": "dds", "format": "compressed_BC5_UNORM_40x40" },
+            { "type": "dds", "format": "compressed_BC5_SNORM_40x40" },
+            { "type": "dds", "format": "compressed_BC6H_SFLOAT_16x16" },
+            { "type": "dds", "format": "compressed_BC6H_UFLOAT_16x16" },
+            { "type": "dds", "format": "compressed_BC7_SRGB_40x40" },
+            { "type": "dds", "format": "compressed_BC7_UNORM_40x40" },
+            { "type": "dds", "format": "compressed_levels_8_BC7_SRGB_128x128" },
+            { "type": "dds", "format": "R16_UNORM_16x16" },
+            { "type": "dds", "format": "R16G16_UNORM_16x16" },
+            { "type": "dds", "format": "R16G16B16A16_UNORM_16x16" },
+            { "type": "dds", "format": "R32_FLOAT_16x16" },
+            { "type": "dds", "format": "R32G32_FLOAT_16x16" },
+            { "type": "dds", "format": "R32G32B32A32_FLOAT_16x16" },
+            { "type": "dds", "format": "R8_UNORM_40x40" },
+            { "type": "dds", "format": "R8G8_UNORM_40x40" },
+            { "type": "dds", "format": "R8G8B8A8_SRGB_40x40" },
+            { "type": "dds", "format": "R8G8B8A8_UNORM_40x40" }
         ]
     }
 }

@@ -435,6 +435,7 @@ set(CASELIST
     tests/deflate/unicode_filenames.json
 
     tests/convert/cli_errors.json
+    tests/convert/dds_unsupported_dxgi_formats.json
     tests/convert/help.json
     tests/convert/legacy.json
     tests/convert/named_output.json

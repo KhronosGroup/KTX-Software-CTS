@@ -4,7 +4,7 @@ ktx convert: Convert the non-KTX2 texture file specified as the input-file argum
 Usage:
   ktx convert [OPTION...] <input-file> <output-file>
 
-  -t, --input-type <type>     Specify the type of input file. Currently must be ktx.
+  -t, --input-type <type>     Specify the type of input file. Currently must be ktx or dds.
   -d, --drop-bad-orientation  Drop bad orientation metadata, such as "KTXOrientation", instead of 
                               fixing it.
       --stdin                 Use stdin as the input file. (Using a single dash '-' as the input 
