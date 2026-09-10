@@ -1,0 +1,1 @@
+ktx encode fatal: Encoding from BCn format VK_FORMAT_BC3_SRGB_BLOCK to another BCn format VK_FORMAT_BC7_SRGB_BLOCK is not supported. You can use the 'ktx extract' tool to decode into an uncompressed format then use 'ktx encode' to encode back into your target BCn format. Decoding and re-encoding a lossy format will result in quality loss. See 'ktx encode --help'.

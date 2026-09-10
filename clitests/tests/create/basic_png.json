@@ -87,6 +87,15 @@
             { "format": "ASTC_12x12_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
             { "format": "ASTC_12x12_SRGB_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
 
+            { "format": "BC1_RGB_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "BC1_RGB_SRGB_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "BC3_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "BC3_SRGB_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "BC4_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "BC5_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "BC7_UNORM_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+            { "format": "BC7_SRGB_BLOCK", "file": "RGBA8_16x16", "ext": ".png" },
+
             { "format": "R4G4_UNORM_PACK8", "file": "RGB8_16x16", "ext": ".png" },
             { "format": "R5G6B5_UNORM_PACK16", "file": "RGB8_16x16", "ext": ".png" },
             { "format": "B5G6R5_UNORM_PACK16", "file": "RGB8_16x16", "ext": ".png" },

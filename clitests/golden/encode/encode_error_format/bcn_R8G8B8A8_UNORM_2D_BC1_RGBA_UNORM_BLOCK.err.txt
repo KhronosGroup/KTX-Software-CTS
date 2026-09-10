@@ -1,0 +1,1 @@
+ktx encode fatal: Punch-through alpha encoding for BC1 format is not supported. Consider supplying an RGB8 input format instead.

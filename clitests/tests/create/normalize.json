@@ -15,7 +15,8 @@
             { "format": "R8_UNORM", "flags": "input/png/basic_RGB8_16x16.png" },
             { "format": "R8G8_UNORM", "flags": "input/png/basic_RGB8_16x16.png" },
             { "format": "R8G8B8_UNORM", "flags": "input/png/basic_RGBA8_16x16.png" },
-            { "format": "ASTC_4x4_UNORM_BLOCK", "flags": "input/png/basic_RGBA8_16x16.png" }
+            { "format": "ASTC_4x4_UNORM_BLOCK", "flags": "input/png/basic_RGBA8_16x16.png" },
+            { "format": "BC7_UNORM_BLOCK", "flags": "input/png/basic_RGBA8_16x16.png" }
         ]
     }
 }
