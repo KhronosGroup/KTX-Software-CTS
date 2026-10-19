@@ -127,7 +127,9 @@
             { "format": "R16G16B16_SINT", "file": "RGBA_FLOAT_HDR_50x1000", "ext": ".exr" },
             { "format": "R16G16B16_SINT", "file": "RGBA_FLOAT_HDR_1000x50", "ext": ".exr" },
             { "format": "R16G16B16A16_SINT", "file": "RGBA_FLOAT_HDR_50x1000", "ext": ".exr" },
-            { "format": "R16G16B16A16_SINT", "file": "RGBA_FLOAT_HDR_1000x50", "ext": ".exr" }
+            { "format": "R16G16B16A16_SINT", "file": "RGBA_FLOAT_HDR_1000x50", "ext": ".exr" },
+
+            { "format": "BC6H_UFLOAT_BLOCK", "file": "RGB_HALF_HDR_16x16", "ext": ".exr" }
         ]
     }
 }

@@ -1,1 +1,1 @@
-ktx encode fatal: Optional option 'format' is not an ASTC format. See 'ktx encode --help'.
+ktx encode fatal: Optional option 'format' is neither a supported ASTC nor supported BCn format. See 'ktx encode --help'.

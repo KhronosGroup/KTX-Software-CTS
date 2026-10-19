@@ -40,6 +40,8 @@
             { "format": "R8G8B8A8_SRGB", "file": "input/png/colorspace_sRGB.png" },
             { "format": "ASTC_4x4_UNORM_BLOCK", "file": "input/png/basic_RGBA8_16x16.png" },
             { "format": "ASTC_4x4_SRGB_BLOCK", "file": "input/png/colorspace_sRGB.png" },
+            { "format": "BC7_SRGB_BLOCK", "file": "input/png/colorspace_sRGB.png" },
+            { "format": "BC7_UNORM_BLOCK", "file": "input/png/basic_RGBA8_16x16.png" },
             { "format": "R4G4_UNORM_PACK8", "file": "input/png/basic_RGB8_16x16.png" },
             { "format": "R5G6B5_UNORM_PACK16", "file": "input/png/basic_RGB8_16x16.png" },
             { "format": "B5G6R5_UNORM_PACK16", "file": "input/png/basic_RGB8_16x16.png" },
