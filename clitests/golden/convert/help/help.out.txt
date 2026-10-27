@@ -5,6 +5,9 @@ Usage:
   ktx convert [OPTION...] <input-file> <output-file>
 
   -t, --input-type <type>     Specify the type of input file. Currently must be ktx.
+  -l, --map-astc-rgba-to-ldr  Map GL_COMPRESSED_RGBA_ASTC_*_KHR formats to 
+                              VK_FORMAT_ASTC_*_UNORM_BLOCK (LDR) formats. By default they will be 
+                              mapped to VK_FORMAT_ASTC_*_SFLOAT_BLOCK (HDR) formats.
   -d, --drop-bad-orientation  Drop bad orientation metadata, such as "KTXOrientation", instead of 
                               fixing it.
       --stdin                 Use stdin as the input file. (Using a single dash '-' as the input 

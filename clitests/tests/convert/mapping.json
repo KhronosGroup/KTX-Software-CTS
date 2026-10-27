@@ -1,0 +1,15 @@
+{
+    "description": "Test control of RGBA ASTC mapping.",
+    "command": "ktx convert --testrun -t ktx ${subcase[flags]} input/ktx/valid_array_7_compressed_RGBA_ASTC_8x8_256x256.ktx output/convert/mapping/${subcase[opt]}_array_7_compressed_ASTC_${subcase[type]}_8x8_256x256.ktx2",
+    "status": 0,
+    "outputs": {
+        "output/convert/mapping/${subcase[opt]}_array_7_compressed_ASTC_${subcase[type]}_8x8_256x256.ktx2": "golden/convert/ktx2/output_array_7_compressed_ASTC_${subcase[type]}_8x8_256x256.ktx2"
+    },
+    "args": {
+        "subcase": [
+            { "opt": "long_opt", "type": "UNORM", "flags": "--map-astc-rgba-to-ldr" },
+            { "opt": "short_opt", "type": "UNORM", "flags": "-l" },
+            { "opt": "none", "type": "SFLOAT", "flags": "" }
+        ]
+    }
+}

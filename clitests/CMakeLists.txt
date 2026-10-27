@@ -437,6 +437,7 @@ set(CASELIST
     tests/convert/cli_errors.json
     tests/convert/help.json
     tests/convert/legacy.json
+    tests/convert/mapping.json
     tests/convert/named_output.json
     tests/convert/named_output_unicode.json
     tests/convert/dir_implied_output.json
