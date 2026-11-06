@@ -54,6 +54,6 @@
         ]
     },
     "keyValueData": {
-        "KTXmapRange": [0, 0, -128, 63, 0, 0, 0, 0]
+        "KTXmapRange": [0, 0, 128, 63, 0, 0, 0, 0]
     }
 }
