@@ -1,0 +1,10 @@
+Validation failed
+
+error-3016: Too many mip levels.
+    levelCount is 3221225472 but for the largest image dimension which is 1 it is too many level.
+error-3021: Invalid dfdByteOffset.
+    dfdByteOffset is 104 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 77309411408.
+error-6008: Missing basic DFD block.
+    No basic data format descriptor block is found in the DFD, or it is not the first DFD block.
+fatal-1003: Unexpected end of file.
+    Unexpected end of file. Failed to read 77309411328 byte(s) at offset 80 to access the level index. Only able to read 32 byte(s).

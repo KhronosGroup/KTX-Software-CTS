@@ -23,6 +23,7 @@ set(CASELIST
     tests/validate/unicode_filenames.json
 
     tests/validate/fatal_1003_UnexpectedEOF.json
+    tests/validate/fatal_1003_UnexpectedEOFInBlock.json
     tests/validate/fatal_2001_NotKTX2.json
 
     tests/validate/error_3001_ProhibitedFormat.json
@@ -101,6 +102,7 @@ set(CASELIST
     tests/validate/error_6028_FormatMismatch.json
     tests/validate/warning_6029_TooManySamples.json
     tests/validate/warning_6030_BytesPlanesUnsized.json
+    tests/validate/error_6032_NotEnoughDataForTotalSize.json
 
     tests/validate/error_6101_InvalidChannelForModel.json
     tests/validate/error_6102_InvalidBitOffsetForUASTC.json

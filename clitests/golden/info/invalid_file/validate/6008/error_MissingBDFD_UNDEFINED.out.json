@@ -1,0 +1,50 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/info_v1.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 6008,
+            "type": "error",
+            "message": "Missing basic DFD block.",
+            "details": "No basic data format descriptor block is found in the DFD, or it is not the first DFD block."
+        }
+    ],
+    "header": {
+        "identifier": "«KTX 20»\r\n\u001A\n",
+        "vkFormat": "VK_FORMAT_UNDEFINED",
+        "typeSize": 1,
+        "pixelWidth": 1,
+        "pixelHeight": 1,
+        "pixelDepth": 0,
+        "layerCount": 0,
+        "faceCount": 1,
+        "levelCount": 1,
+        "supercompressionScheme": "KTX_SS_NONE"
+    },
+    "index": {
+        "dataFormatDescriptor": {
+            "byteOffset": 104,
+            "byteLength": 4
+        },
+        "keyValueData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "supercompressionGlobalData": {
+            "byteOffset": 0,
+            "byteLength": 0
+        },
+        "levels": [
+            {
+                "byteOffset": 108,
+                "byteLength": 4,
+                "uncompressedByteLength": 4
+            }
+        ]
+    },
+    "dataFormatDescriptor": {
+        "totalSize": 4,
+        "blocks": [
+        ]
+    }
+}

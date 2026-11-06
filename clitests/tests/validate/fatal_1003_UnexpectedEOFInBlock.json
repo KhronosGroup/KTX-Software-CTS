@@ -1,0 +1,30 @@
+{
+    "description": "The blocks the header describes must lie within the file",
+    "command": "ktx validate --testrun ${format[args]} input/validate/1003/fatal_UnexpectedEOF_${block}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/1003/fatal_UnexpectedEOF_${block}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "block": [
+            "LevelIndex",
+            "DFD"
+        ]
+    }
+}

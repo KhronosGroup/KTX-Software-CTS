@@ -24,7 +24,9 @@
         ],
         "subcase": [
             "",
-            "_notFirst"
+            "_notFirst",
+            "_KTXmapRange",
+            "_UNDEFINED"
         ]
     }
 }
