@@ -1,0 +1,4 @@
+Validation failed
+
+error-6008: Missing basic DFD block.
+    No basic data format descriptor block is found in the DFD, or it is not the first DFD block.

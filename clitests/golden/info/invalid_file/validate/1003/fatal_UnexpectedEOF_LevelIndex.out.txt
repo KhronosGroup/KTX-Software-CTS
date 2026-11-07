@@ -1,0 +1,32 @@
+Validation failed
+
+error-3016: Too many mip levels.
+    levelCount is 3221225472 but for the largest image dimension which is 1 it is too many level.
+error-3021: Invalid dfdByteOffset.
+    dfdByteOffset is 104 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 77309411408.
+error-6008: Missing basic DFD block.
+    No basic data format descriptor block is found in the DFD, or it is not the first DFD block.
+fatal-1003: Unexpected end of file.
+    Unexpected end of file. Failed to read 77309411328 byte(s) at offset 80 to access the level index. Only able to read 32 byte(s).
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 1
+pixelHeight: 1
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 3221225472
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 4
+keyValueData.byteOffset: 0
+keyValueData.byteLength: 0
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+

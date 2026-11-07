@@ -1,0 +1,31 @@
+{
+    "description": "The DFD must hold at least the 4 bytes of dfdTotalSize",
+    "command": "ktx validate --testrun ${format[args]} input/validate/6032/error_NotEnoughDataForTotalSize${subcase}.ktx2",
+    "status": 3,
+    "stdout": "golden/validate/6032/error_NotEnoughDataForTotalSize${subcase}.out.${format[ext]}",
+    "args": {
+        "format": [
+            {
+                "args": "",
+                "ext": "txt"
+            },
+            {
+                "args": "--format text",
+                "ext": "txt"
+            },
+            {
+                "args": "--format json",
+                "ext": "json"
+            },
+            {
+                "args": "--format mini-json",
+                "ext": "mini.json"
+            }
+        ],
+        "subcase": [
+            "_1",
+            "_2",
+            "_2_UNDEFINED"
+        ]
+    }
+}

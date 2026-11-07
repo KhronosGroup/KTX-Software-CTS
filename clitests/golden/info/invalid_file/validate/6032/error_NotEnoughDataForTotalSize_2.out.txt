@@ -1,0 +1,32 @@
+Validation failed
+
+error-6032: Invalid DFD data. Not enough data for dfdTotalSize.
+    dfdByteLength is 2 but the DFD must hold at least the 4 bytes of dfdTotalSize.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 1
+pixelHeight: 1
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 2
+keyValueData.byteOffset: 0
+keyValueData.byteLength: 0
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0x6c
+Level0.byteLength: 4
+Level0.uncompressedByteLength: 4
+
+Data Format Descriptor
+

@@ -1,0 +1,1 @@
+{"$schema":"https://schema.khronos.org/ktx/validate_v0.json","valid":false,"messages":[{"id":6032,"type":"error","message":"Invalid DFD data. Not enough data for dfdTotalSize.","details":"dfdByteLength is 1 but the DFD must hold at least the 4 bytes of dfdTotalSize."}]}
