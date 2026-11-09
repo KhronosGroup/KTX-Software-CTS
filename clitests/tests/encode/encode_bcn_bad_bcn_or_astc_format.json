@@ -1,0 +1,13 @@
+{
+    "description": "Test encode command with unsupported BCn-to-BCn, BCn-to-ASTC, or ASTC-to-BCn formats.",
+    "command": "ktx encode --testrun --threads 1 --format ${subcase[format]} input/ktx2/valid_${subcase[file]}.ktx2 output/encode/encode_error_format/output_${subcase[file]}_${subcase[format]}.ktx2",
+    "status": 1,
+    "stderr": "golden/encode/encode_error_format/bcn_${subcase[file]}_${subcase[format]}.err.txt",
+    "args": {
+        "subcase": [
+            { "format": "BC7_SRGB_BLOCK",       "file": "ASTC_4x4_SRGB_BLOCK_2D" },
+            { "format": "BC7_SRGB_BLOCK",       "file": "BC3_SRGB_BLOCK_2D" },
+            { "format": "ASTC_4x4_SRGB_BLOCK",  "file": "BC7_SRGB_BLOCK_2D" }
+          ]
+    }
+}

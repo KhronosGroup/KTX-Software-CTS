@@ -1,0 +1,1 @@
+ktx encode fatal: Encoding to BC2 format is not supported (yet).

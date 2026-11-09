@@ -1,1 +1,1 @@
-ktx create fatal: --compare-ssim can only be used with BasisLZ, UASTC or ASTC encoding. See 'ktx create --help'.
+ktx create fatal: --compare-ssim can only be used with BasisLZ, UASTC, ASTC or BCn encoding. See 'ktx create --help'.

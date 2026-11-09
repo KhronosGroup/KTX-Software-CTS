@@ -96,7 +96,18 @@
             "G16B16G16R16_422_UNORM_Midpoint",
             "B16G16R16G16_422_UNORM_Midpoint",
 
-            "D16_UNORM"
+            "D16_UNORM",
+
+            "BC1_RGB_UNORM_BLOCK",
+            "BC1_RGB_SRGB_BLOCK",
+            "BC1_RGBA_UNORM_BLOCK",
+            "BC1_RGBA_SRGB_BLOCK",
+            "BC3_UNORM_BLOCK",
+            "BC3_SRGB_BLOCK",
+            "BC4_UNORM_BLOCK",
+            "BC5_UNORM_BLOCK",
+            "BC7_UNORM_BLOCK",
+            "BC7_SRGB_BLOCK"
         ]
     }
 }
