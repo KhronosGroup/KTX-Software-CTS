@@ -1,0 +1,4 @@
+Validation failed
+
+error-6032: Invalid DFD data. Not enough data for dfdTotalSize.
+    dfdByteLength is 1 but the DFD must hold at least the 4 bytes of dfdTotalSize.

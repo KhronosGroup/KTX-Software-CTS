@@ -1,0 +1,6 @@
+Validation failed
+
+error-6008: Missing basic DFD block.
+    No basic data format descriptor block is found in the DFD, or it is not the first DFD block.
+warning-7125: Missing KTXwriter metadata. Writers are strongly urged to identify themselves via this.
+    KTXwriter metadata is missing. Writers are strongly urged to identify themselves via this.

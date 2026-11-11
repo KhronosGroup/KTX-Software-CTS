@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.khronos.org/ktx/validate_v0.json",
+    "valid": false,
+    "messages": [
+        {
+            "id": 3016,
+            "type": "error",
+            "message": "Too many mip levels.",
+            "details": "levelCount is 3221225472 but for the largest image dimension which is 1 it is too many level."
+        },
+        {
+            "id": 3021,
+            "type": "error",
+            "message": "Invalid dfdByteOffset.",
+            "details": "dfdByteOffset is 104 but the Data Format Descriptor must immediately follow (with 4 byte alignment) the Level Index so it must be 77309411408."
+        },
+        {
+            "id": 6008,
+            "type": "error",
+            "message": "Missing basic DFD block.",
+            "details": "No basic data format descriptor block is found in the DFD, or it is not the first DFD block."
+        },
+        {
+            "id": 1003,
+            "type": "fatal",
+            "message": "Unexpected end of file.",
+            "details": "Unexpected end of file. Failed to read 77309411328 byte(s) at offset 80 to access the level index. Only able to read 32 byte(s)."
+        }
+    ]
+}

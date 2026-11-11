@@ -1,0 +1,41 @@
+Validation failed
+
+error-6008: Missing basic DFD block.
+    No basic data format descriptor block is found in the DFD, or it is not the first DFD block.
+warning-7125: Missing KTXwriter metadata. Writers are strongly urged to identify themselves via this.
+    KTXwriter metadata is missing. Writers are strongly urged to identify themselves via this.
+
+Header
+
+identifier: «KTX 20»\r\n\x1A\n
+vkFormat: VK_FORMAT_R8G8B8A8_UNORM
+typeSize: 1
+pixelWidth: 1
+pixelHeight: 1
+pixelDepth: 0
+layerCount: 0
+faceCount: 1
+levelCount: 1
+supercompressionScheme: KTX_SS_NONE
+dataFormatDescriptor.byteOffset: 0x68
+dataFormatDescriptor.byteLength: 4
+keyValueData.byteOffset: 0x6c
+keyValueData.byteLength: 24
+supercompressionGlobalData.byteOffset: 0
+supercompressionGlobalData.byteLength: 0
+
+Level Index
+
+Level0.byteOffset: 0x84
+Level0.byteLength: 4
+Level0.uncompressedByteLength: 4
+
+Data Format Descriptor
+
+DFD total bytes: 4
+
+Key/Value Data
+
+KTXmapRange:
+    scale: 1.000000
+    offset: 0.000000
